@@ -27,7 +27,7 @@ export function generateMetadata({ params }) {
       title: product.title,
       description: product.description,
       url,
-      type: "product",
+      type: "website",
     },
   };
 }
