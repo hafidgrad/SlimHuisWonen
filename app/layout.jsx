@@ -8,6 +8,11 @@ export const metadata = {
   },
   description:
     "Maak je huis slimmer met duidelijke uitleg, tips en aanbevelingen voor slimme verlichting, sensoren, deurbellen, camera’s en meer.",
+
+  verification: {
+    google: "google-site-verification" content="0aNFzCIK8siKRIfCTQ2Ew7jkCKlw3GRKcz31o7dS6hY" />
+  },
+
   openGraph: {
     title: "SlimHuisWonen – Slimme spullen voor een slimmer huis",
     description:
