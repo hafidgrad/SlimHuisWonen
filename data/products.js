@@ -1,6 +1,6 @@
 export const products = [
   {
-    affiliateUrl: "https://www.amazon.nl/dp/B0991VHWSJ?tag=slimhuiswonen-21",
+    slug:affiliateUrl: "https://www.amazon.nl/dp/B0991VHWSJ?tag=slimhuiswonen-21",
     brand: "Philips Hue",
     title: "Philips Hue White Ambiance Starterkit",
     shortTitle: "Hue White Ambiance kit",
