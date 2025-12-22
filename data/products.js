@@ -14,7 +14,7 @@ export const products = [
       "Uitbreidbaar met extra lampen en accessoires"
     ],
     image: "/images/products/hue-starterkit.jpg",
-    affiliateUrl: "#", // Vul hier je Amazon link in met ?tag=slimhuiswonen-21
+    affiliateUrl: "https://www.amazon.nl/dp/B0991VHWSJ?tag=slimhuiswonen-21",
     priceHint: "Populaire keuze rond de €80-€120",
     rating: 4.7
   },
