@@ -118,6 +118,71 @@ export const products = [
     priceHint: "Meestal rond de €10–€20",
     rating: 4.5,
   },
+
+  {
+  slug: "philips-hue-white-ambiance-e27",
+  brand: "Philips Hue",
+  title: "Philips Hue White Ambiance E27 Lamp",
+  shortTitle: "Hue White Ambiance E27",
+  category: "slimme-verlichting",
+  tags: ["verlichting", "hue", "e27"],
+  description:
+    "Losse Philips Hue White Ambiance lamp met instelbare wittinten. Ideaal als uitbreiding van je bestaande Hue-systeem.",
+  features: [
+    "Instelbaar warm tot koel wit licht",
+    "Werkt met Hue Bridge",
+    "Bediening via app, spraak en automatiseringen"
+  ],
+  image: "/images/products/hue-white-ambiance-e27.jpg",
+  affiliateUrl: "https://www.amazon.nl/dp/B099NQFWW1?tag=slimhuiswonen-21",
+  priceHint: "Meestal rond de €20–€35",
+  rating: 4.7
+},
+
+{
+  slug: "",tp-link-tapo-l530e-slimme-lamp
+  brand: "TP-Link Tapo",
+  title: "TP-Link Tapo L530E Slimme Lamp",
+  shortTitle: "Tapo L530E",
+  category: "slimme-verlichting",
+  tags: ["verlichting", "tapo", "wifi"],
+  description:
+    "Betaalbare slimme lamp met instelbare kleurtemperatuur. Ideaal voor beginners zonder extra hub.",
+  features: [
+    "Werkt via wifi (geen hub nodig)",
+    "Instelbaar warm en koel wit",
+    "Bediening via app en spraak"
+  ],
+  image: "/images/products/tapo-l530e.jpg",
+  affiliateUrl: "https://www.amazon.nl/dp/B08QRQQ53T?tag=slimhuiswonen-21",
+  priceHint: "Ongeveer €10–€15",
+  rating: 4.5
+},
+
+{
+  slug: "philips-hue-lightstrip-plus",
+  brand: "Philips Hue",
+  title: "Philips Hue Lightstrip Plus",
+  shortTitle: "Hue Lightstrip",
+  category: "slimme-verlichting",
+  tags: ["verlichting", "ledstrip", "hue"],
+  description:
+    "Flexibele LED-strip voor sfeerverlichting onder kasten, achter tv’s of langs meubels.",
+  features: [
+    "Volledig dimbaar en uitbreidbaar",
+    "Werkt met Hue Bridge",
+    "Perfect voor indirecte verlichting"
+  ],
+  image: "/images/products/hue-lightstrip.jpg",
+  affiliateUrl: "https://www.amazon.nl/dp/B0DYF95G2D?tag=slimhuiswonen-21",
+  priceHint: "Meestal €60–€80",
+  rating: 4.6
+},
+
+
+
+
+
 ];
 
 export function getAllProducts() {
