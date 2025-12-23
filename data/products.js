@@ -107,3 +107,22 @@ export function getProductBySlug(slug) {
 export function getProductsByCategory(category) {
   return products.filter((p) => p.category === category);
 }
+{
+  slug: "tp-link-tapo-bewegingssensor",
+  brand: "TP-Link Tapo",
+  title: "TP-Link Tapo Bewegingssensor",
+  shortTitle: "Tapo bewegingssensor",
+  category: "sensoren",
+  tags: ["sensor", "beweging", "beveiliging"],
+  description:
+    "Slimme bewegingssensor voor automatiseringen en beveiliging. Ideaal om verlichting of meldingen te activeren bij beweging.",
+  features: [
+    "Snelle bewegingsdetectie",
+    "Werkt met Tapo hub",
+    "Automatiseringen en meldingen"
+  ],
+  image: "/images/products/tapo-motion.jpg",
+  affiliateUrl: "https://www.amazon.nl/dp/B0B2KXYZ12?tag=slimhuiswonen-21",
+  priceHint: "Meestal rond de €20–€30",
+  rating: 4.5
+},
