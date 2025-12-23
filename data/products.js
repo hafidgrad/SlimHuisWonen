@@ -114,7 +114,7 @@ export const products = [
       "Automatiseringen en meldingen",
     ],
     image: "/images/products/tapo-motion.jpg",
-    affiliateUrl: "https://www.amazon.nl/dp/B0B2KXYZ12?tag=slimhuiswonen-21",
+    affiliateUrl: "https://www.amazon.nl/dp/B0B7NDJW6J?tag=slimhuiswonen-21",
     priceHint: "Meestal rond de €20–€30",
     rating: 4.5,
   },
