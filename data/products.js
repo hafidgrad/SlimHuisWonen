@@ -1,3 +1,4 @@
+
 export const products = [
   {
     slug: "philips-hue-white-ambiance-starterkit",
@@ -14,6 +15,7 @@ export const products = [
       "Uitbreidbaar met extra lampen en accessoires",
     ],
     image: "/images/products/hue-starterkit.jpg",
+    // ASIN bekend (B0991VHWSJ) -> directe /dp/ link met je tag
     affiliateUrl: "https://www.amazon.nl/dp/B0991VHWSJ?tag=slimhuiswonen-21",
     priceHint: "Populaire keuze rond de €80–€120",
     rating: 4.7,
@@ -34,7 +36,9 @@ export const products = [
       "Perfect voor beveiliging en automatiseringen",
     ],
     image: "/images/products/aqara-door-window.jpg",
-    affiliateUrl: "#",
+    // Geen ASIN opgegeven -> zoek-URL met affiliate tag
+    affiliateUrl:
+      "https://www.amazon.nl/s?k=Aqara%20Deur-%20%26%20Raamsensor&tag=slimhuiswonen-21&language=nl_NL",
     priceHint: "Meestal tussen de €15–€25 per sensor",
     rating: 4.6,
   },
@@ -54,7 +58,9 @@ export const products = [
       "Werkt met Alexa",
     ],
     image: "/images/products/ring-doorbell.jpg",
-    affiliateUrl: "#",
+    // Geen ASIN -> zoeklink naar productcategorie
+    affiliateUrl:
+      "https://www.amazon.nl/s?k=Ring%20Video%20Deurbel&tag=slimhuiswonen-21&language=nl_NL",
     priceHint: "Afhankelijk van model €80–€250",
     rating: 4.5,
   },
@@ -74,7 +80,9 @@ export const products = [
       "Inzicht in energieverbruik",
     ],
     image: "/images/products/nest-thermostat.jpg",
-    affiliateUrl: "#",
+    // Geen ASIN -> zoeklink met tag
+    affiliateUrl:
+      "https://www.amazon.nl/s?k=Google%20Nest%20Learning%20Thermostaat&tag=slimhuiswonen-21&language=nl_NL",
     priceHint: "Meestal rond de €200–€280",
     rating: 4.4,
   },
@@ -94,7 +102,9 @@ export const products = [
       "Werkt met Google Assistant en Alexa",
     ],
     image: "/images/products/tapo-plug.jpg",
-    affiliateUrl: "#",
+    // Geen ASIN -> zoeklink
+    affiliateUrl:
+      "https://www.amazon.nl/s?k=TP-Link%20Tapo%20Slimme%20Stekker&tag=slimhuiswonen-21&language=nl_NL",
     priceHint: "Ongeveer €10–€20 per stuk",
     rating: 4.6,
   },
@@ -114,75 +124,76 @@ export const products = [
       "Automatiseringen en meldingen",
     ],
     image: "/images/products/tapo-motion.jpg",
-    affiliateUrl: "https://www.amazon.nl/dp/dp/B0B7NDJW6J?tag=slimhuiswonen-21",
+    // Foutje 'dp/dp' -> gecorrigeerd
+    affiliateUrl:
+      "https://www.amazon.nl/dp/B0B7NDJW6J?tag=slimhuiswonen-21&language=nl_NL",
     priceHint: "Meestal rond de €10–€20",
     rating: 4.5,
   },
 
   {
-  slug: "philips-hue-white-ambiance-e27",
-  brand: "Philips Hue",
-  title: "Philips Hue White Ambiance E27 Lamp",
-  shortTitle: "Hue White Ambiance E27",
-  category: "slimme-verlichting",
-  tags: ["verlichting", "hue", "e27"],
-  description:
-    "Losse Philips Hue White Ambiance lamp met instelbare wittinten. Ideaal als uitbreiding van je bestaande Hue-systeem.",
-  features: [
-    "Instelbaar warm tot koel wit licht",
-    "Werkt met Hue Bridge",
-    "Bediening via app, spraak en automatiseringen"
-  ],
-  image: "/images/products/hue-white-ambiance-e27.jpg",
-  affiliateUrl: "https://www.amazon.nl/dp/B099NQFWW1?tag=slimhuiswonen-21",
-  priceHint: "Meestal rond de €20–€35",
-  rating: 4.7
-},
+    slug: "philips-hue-white-ambiance-e27",
+    brand: "Philips Hue",
+    title: "Philips Hue White Ambiance E27 Lamp",
+    shortTitle: "Hue White Ambiance E27",
+    category: "slimme-verlichting",
+    tags: ["verlichting", "hue", "e27"],
+    description:
+      "Losse Philips Hue White Ambiance lamp met instelbare wittinten. Ideaal als uitbreiding van je bestaande Hue-systeem.",
+    features: [
+      "Instelbaar warm tot koel wit licht",
+      "Werkt met Hue Bridge",
+      "Bediening via app, spraak en automatiseringen",
+    ],
+    image: "/images/products/hue-white-ambiance-e27.jpg",
+    // ASIN bekend (B099NQFWW1) -> directe /dp/ link
+    affiliateUrl: "https://www.amazon.nl/dp/B099NQFWW1?tag=slimhuiswonen-21",
+    priceHint: "Meestal rond de €20–€35",
+    rating: 4.7,
+  },
 
-{
-  slug: "",tp-link-tapo-l530e-slimme-lamp
-  brand: "TP-Link Tapo",
-  title: "TP-Link Tapo L530E Slimme Lamp",
-  shortTitle: "Tapo L530E",
-  category: "slimme-verlichting",
-  tags: ["verlichting", "tapo", "wifi"],
-  description:
-    "Betaalbare slimme lamp met instelbare kleurtemperatuur. Ideaal voor beginners zonder extra hub.",
-  features: [
-    "Werkt via wifi (geen hub nodig)",
-    "Instelbaar warm en koel wit",
-    "Bediening via app en spraak"
-  ],
-  image: "/images/products/tapo-l530e.jpg",
-  affiliateUrl: "https://www.amazon.nl/dp/B08QRQQ53T?tag=slimhuiswonen-21",
-  priceHint: "Ongeveer €10–€15",
-  rating: 4.5
-},
+  {
+    // Kapotte regel gefikst + nette slug
+    slug: "tp-link-tapo-l530e-slimme-lamp",
+    brand: "TP-Link Tapo",
+    title: "TP-Link Tapo L530E Slimme Lamp",
+    shortTitle: "Tapo L530E",
+    category: "slimme-verlichting",
+    tags: ["verlichting", "tapo", "wifi"],
+    description:
+      "Betaalbare slimme lamp met instelbare kleurtemperatuur. Ideaal voor beginners zonder extra hub.",
+    features: [
+      "Werkt via wifi (geen hub nodig)",
+      "Instelbaar warm en koel wit",
+      "Bediening via app en spraak",
+    ],
+    image: "/images/products/tapo-l530e.jpg",
+    // link met ASIN uit jouw URL
+    affiliateUrl: "https://www.amazon.nl/dp/B08QRQQ53T?tag=slimhuiswonen-21",
+    priceHint: "Ongeveer €10–€15",
+    rating: 4.5,
+  },
 
-{
-  slug: "philips-hue-lightstrip-plus",
-  brand: "Philips Hue",
-  title: "Philips Hue Lightstrip Plus",
-  shortTitle: "Hue Lightstrip",
-  category: "slimme-verlichting",
-  tags: ["verlichting", "ledstrip", "hue"],
-  description:
-    "Flexibele LED-strip voor sfeerverlichting onder kasten, achter tv’s of langs meubels.",
-  features: [
-    "Volledig dimbaar en uitbreidbaar",
-    "Werkt met Hue Bridge",
-    "Perfect voor indirecte verlichting"
-  ],
-  image: "/images/products/hue-lightstrip.jpg",
-  affiliateUrl: "https://www.amazon.nl/dp/B0DYF95G2D?tag=slimhuiswonen-21",
-  priceHint: "Meestal €60–€80",
-  rating: 4.6
-},
-
-
-
-
-
+  {
+    slug: "philips-hue-lightstrip-plus",
+    brand: "Philips Hue",
+    title: "Philips Hue Lightstrip Plus",
+    shortTitle: "Hue Lightstrip",
+    category: "slimme-verlichting",
+    tags: ["verlichting", "ledstrip", "hue"],
+    description:
+      "Flexibele LED-strip voor sfeerverlichting onder kasten, achter tv’s of langs meubels.",
+    features: [
+      "Volledig dimbaar en uitbreidbaar",
+      "Werkt met Hue Bridge",
+      "Perfect voor indirecte verlichting",
+    ],
+    image: "/images/products/hue-lightstrip.jpg",
+    // ASIN uit jouw link → directe /dp/ link met tag
+    affiliateUrl: "https://www.amazon.nl/dp/B0DYF95G2D?tag=slimhuiswonen-21",
+    priceHint: "Meestal €60–€80",
+    rating: 4.6,
+  },
 ];
 
 export function getAllProducts() {
