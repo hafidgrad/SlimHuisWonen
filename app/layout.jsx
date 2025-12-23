@@ -1,4 +1,5 @@
 import "./globals.css";
+import Script from "next/script";
 
 export const metadata = {
   metadataBase: new URL("https://slimhuiswonen.nl"),
@@ -21,6 +22,7 @@ export const metadata = {
     siteName: "SlimHuisWonen.nl",
     type: "website",
   },
+
   alternates: {
     canonical: "https://slimhuiswonen.nl",
   },
@@ -29,6 +31,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="nl">
+      <head>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-CZHW882M4T"
+          strategy="afterInteractive"
+        />
+        <Script id="ga-script" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-CZHW882M4T');
+          `}
+        </Script>
+      </head>
       <body>{children}</body>
     </html>
   );
