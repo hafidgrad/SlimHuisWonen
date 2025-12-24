@@ -37,8 +37,7 @@ export const products = [
     ],
     image: "/images/products/aqara-door-window.jpg",
     // Geen ASIN opgegeven -> zoek-URL met affiliate tag
-    affiliateUrl:
-      "https://www.amazon.nl/s?k=Aqara%20Deur-%20%26%20Raamsensor&tag=slimhuiswonen-21&language=nl_NL",
+    affiliateUrl:"https://www.amazon.nl/dp/B0BTL8B72D?tag=slimhuiswonen-21",
     priceHint: "Meestal tussen de €15–€25 per sensor",
     rating: 4.6,
   },
@@ -59,8 +58,7 @@ export const products = [
     ],
     image: "/images/products/ring-doorbell.jpg",
     // Geen ASIN -> zoeklink naar productcategorie
-    affiliateUrl:
-      "https://www.amazon.nl/s?k=Ring%20Video%20Deurbel&tag=slimhuiswonen-21&language=nl_NL",
+    affiliateUrl: "https://www.amazon.nl/dp/B0BZWQP9Z1?tag=slimhuiswonen-21",
     priceHint: "Afhankelijk van model €80–€250",
     rating: 4.5,
   },
@@ -81,8 +79,7 @@ export const products = [
     ],
     image: "/images/products/nest-thermostat.jpg",
     // Geen ASIN -> zoeklink met tag
-    affiliateUrl:
-      "https://www.amazon.nl/s?k=Google%20Nest%20Learning%20Thermostaat&tag=slimhuiswonen-21&language=nl_NL",
+    affiliateUrl: "https://www.amazon.nl/dp/B0BXRYLMCC?tag=slimhuiswonen-21",
     priceHint: "Meestal rond de €200–€280",
     rating: 4.4,
   },
@@ -103,8 +100,7 @@ export const products = [
     ],
     image: "/images/products/tapo-plug.jpg",
     // Geen ASIN -> zoeklink
-    affiliateUrl:
-      "https://www.amazon.nl/s?k=TP-Link%20Tapo%20Slimme%20Stekker&tag=slimhuiswonen-21&language=nl_NL",
+    affiliateUrl: "https://www.amazon.nl/dp/B0991VHWSJ?tag=slimhuiswonen-21",
     priceHint: "Ongeveer €10–€20 per stuk",
     rating: 4.6,
   },
