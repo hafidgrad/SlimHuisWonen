@@ -1,0 +1,181 @@
+
+// scripts/update-affiliate-links.js
+// Run: node scripts/update-affiliate-links.js
+
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath, pathToFileURL } from 'url';
+import { parse } from 'csv-parse/sync';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// ==== CONFIG ====
+const PRODUCT_JS_PATH = path.resolve(__dirname, '../src/data/product.js');
+const OUTPUT_JS_PATH  = PRODUCT_JS_PATH; // overschrijf origineel
+const ASIN_CSV_PATH   = path.resolve(__dirname, '../asin_map.csv'); // optioneel
+const AFFILIATE_TAG   = 'slimhuiswonen-21';
+const AMAZON_BASE     = 'https://www.amazon.nl';
+
+// ==== HELPERS ====
+function isValidASIN(asin) {
+  return typeof asin === 'string' && /^[A-Z0-9]{10}$/.test(asin);
+}
+
+function extractASINFromUrl(u) {
+  if (!u || u === '#') return null;
+  try {
+    const url = new URL(u, AMAZON_BASE);
+
+    // Variaties zoals /dp/<ASIN> of /gp/product/<ASIN>
+    const dpMatch = url.pathname.match(/\/dp\/([A-Z0-9]{10})/i);
+    if (dpMatch) return dpMatch[1].toUpperCase();
+
+    const gpMatch = url.pathname.match(/\/gp\/product\/([A-Z0-9]{10})/i);
+    if (gpMatch) return gpMatch[1].toUpperCase();
+
+    return null;
+  } catch {
+    return null;
+  }
+}
+
+function buildAffiliateUrlFromASIN(asin) {
+  if (!isValidASIN(asin)) return null;
+  const params = new URLSearchParams({ tag: AFFILIATE_TAG, language: 'nl_NL' });
+  return `${AMAZON_BASE}/dp/${asin}?${params.toString()}`;
+}
+
+function normalizeAffiliateUrl(u) {
+  if (!u || u === '#') return null;
+  try {
+    const url = new URL(u, AMAZON_BASE);
+    url.protocol = 'https:';
+    url.host = 'www.amazon.nl';
+    // fix dubbele dp/dp
+    url.pathname = url.pathname.replace(/\/dp\/dp\//, '/dp/');
+
+    // forceer tag + taal
+    url.searchParams.set('tag', AFFILIATE_TAG);
+    url.searchParams.set('language', 'nl_NL');
+    return url.toString();
+  } catch {
+    return null;
+  }
+}
+
+function readCsvAsinMap(csvPath) {
+  if (!fs.existsSync(csvPath)) return {};
+  const content = fs.readFileSync(csvPath, 'utf-8');
+  const rows = parse(content, { columns: true, skip_empty_lines: true });
+  // Ondersteun zowel 'slug' als 'title' als key
+  const map = {};
+  for (const r of rows) {
+    const asin = String(r.asin || '').toUpperCase().trim();
+    if (!isValidASIN(asin)) continue;
+    const keySlug  = r.slug  ? String(r.slug).trim().toLowerCase()  : null;
+    const keyTitle = r.title ? String(r.title).trim().toLowerCase() : null;
+    if (keySlug)  map[`slug:${keySlug}`]   = asin;
+    if (keyTitle) map[`title:${keyTitle}`] = asin;
+  }
+  return map;
+}
+
+function findAsinForProduct(p, asinMap) {
+  // 1) Bestaand veld
+  if (p.asin && isValidASIN(String(p.asin).toUpperCase())) return String(p.asin).toUpperCase();
+
+  // 2) Uit affiliateUrl
+  const fromUrl = extractASINFromUrl(p.affiliateUrl);
+  if (fromUrl && isValidASIN(fromUrl)) return fromUrl;
+
+  // 3) Uit CSV map op basis van slug of title
+  const keySlug  = p.slug  ? `slug:${String(p.slug).toLowerCase().trim()}`   : null;
+  const keyTitle = p.title ? `title:${String(p.title).toLowerCase().trim()}` : null;
+  if (keySlug && asinMap[keySlug]) return asinMap[keySlug];
+  if (keyTitle && asinMap[keyTitle]) return asinMap[keyTitle];
+
+  // geen match
+  return null;
+}
+
+// ==== MAIN ====
+(async function main() {
+  try {
+    // Laad je bestaande product.js (als ESM module)
+    const productsModuleUrl = pathToFileURL(PRODUCT_JS_PATH).href;
+    const module = await import(productsModuleUrl);
+    let products = module.products || module.default || [];
+
+    if (!Array.isArray(products) || products.length === 0) {
+      throw new Error('Kon geen producten laden uit product.js (controleer export).');
+    }
+
+    const asinMap = readCsvAsinMap(ASIN_CSV_PATH);
+
+    // Verwerk elk product
+    const updated = products.map((p) => {
+      const copy = { ...p };
+
+      // Vind/valideer ASIN
+      const asin = findAsinForProduct(copy, asinMap);
+      if (asin) copy.asin = asin;
+
+      // Bouw affiliate URL (voorkeur: ASIN)
+      let finalUrl = null;
+      if (asin) {
+        finalUrl = buildAffiliateUrlFromASIN(asin);
+      } else if (copy.affiliateUrl) {
+        // Geen ASIN, normaliseer bestaande link (kan zoeklink zijn)
+        finalUrl = normalizeAffiliateUrl(copy.affiliateUrl);
+      }
+
+      // Fallback: als alles faalt, maak een zoeklink (minder ideaal)
+      if (!finalUrl) {
+        const keyword = copy.title || copy.shortTitle || `${copy.brand || ''} ${copy.category || ''}`.trim();
+        const params = new URLSearchParams({
+          k: keyword,
+          tag: AFFILIATE_TAG,
+          language: 'nl_NL',
+        });
+        finalUrl = `${AMAZON_BASE}/s?${params.toString()}`;
+      }
+
+      copy.affiliateUrl = finalUrl;
+      return copy;
+    });
+
+    // Schrijf terug naar product.js (mooie JSON en module wrapper)
+    const jsModule =
+`export const products = ${JSON.stringify(updated, null, 2)};
+
+export function getAllProducts() {
+  return products;
+}
+
+export function getProductBySlug(slug) {
+  return products.find((p) => p.slug === slug);
+}
+
+export function getProductsByCategory(category) {
+  return products.filter((p) => p.category === category);
+}
+`;
+
+    fs.writeFileSync(OUTPUT_JS_PATH, jsModule, 'utf-8');
+    console.log(`✔️ Bijgewerkt: ${OUTPUT_JS_PATH}`);
+    console.log(`ℹ️ Producten verwerkt: ${updated.length}`);
+    const missingAsins = updated.filter(p => !p.asin).length;
+    if (missingAsins) {
+      console.log(`⚠️ ${missingAsins} producten hebben nog geen ASIN (gebruik asin_map.csv voor betere directe /dp links).`);
+    }
+  } catch (err) {
+    console.error('❌ Fout tijdens bulk-update:', err);
+    process.exit(1);
+  }
+})();
+
+slug,asin
+Aqara-contactsensor-automatisering-ondersteunt-SmartThings/dp/B0BTL8B72D
+ring-videodeurbel-op-batterij-battery/dp/B0BZWQP9Z1
+Google-Nest-Thermostaat/dp/B0BXRYLMCC
