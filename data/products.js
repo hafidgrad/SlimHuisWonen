@@ -215,6 +215,63 @@ export const products = [
   priceHint: "€15–€25",
   rating: 4.5
 },
+{
+  slug: "tp-link-tapo-p110-slimme-stekker",
+  brand: "TP-Link Tapo",
+  title: "TP-Link Tapo P110 Slimme Stekker met Energiemeting",
+  shortTitle: "Tapo P110",
+  category: "slimme-stekkers",
+  tags: ["stekker", "energie", "wifi"],
+  description:
+    "Slimme stekker met realtime energieverbruikmeting. Ideaal om stroomverbruik inzichtelijk te maken.",
+  features: [
+    "Realtime energie-inzicht",
+    "Werkt via wifi (geen hub nodig)",
+    "Schema’s en timers"
+  ],
+  image: "/images/products/tapo-p110.jpg",
+  affiliateUrl: "https://www.amazon.nl/dp/B08WJ9KZQ2?tag=slimhuiswonen-21",
+  priceHint: "€12–€18",
+  rating: 4.6
+},
+{
+  slug: "tp-link-tapo-p100-slimme-stekker",
+  brand: "TP-Link Tapo",
+  title: "TP-Link Tapo P100 Slimme Stekker",
+  shortTitle: "Tapo P100",
+  category: "slimme-stekkers",
+  tags: ["stekker", "wifi", "budget"],
+  description:
+    "Betaalbare slimme stekker om apparaten op afstand te bedienen.",
+  features: [
+    "Geen hub nodig",
+    "Compact ontwerp",
+    "Werkt met Google Assistant en Alexa"
+  ],
+  image: "/images/products/tapo-p100.jpg",
+  affiliateUrl: "https://www.amazon.nl/dp/B089B6M47N?tag=slimhuiswonen-21",
+  priceHint: "€8–€12",
+  rating: 4.5
+},
+{
+  slug: "slimme-buitenstekker-wifi",
+  brand: "TP-Link / Tuya",
+  title: "Slimme Buitenstekker met Wifi",
+  shortTitle: "Slimme buitenstekker",
+  category: "slimme-stekkers",
+  tags: ["stekker", "buiten", "tuin"],
+  description:
+    "Weerbestendige slimme stekker voor buitengebruik. Ideaal voor tuinverlichting of vijverpomp.",
+  features: [
+    "Geschikt voor buiten (IP44/IP54)",
+    "Bediening via app",
+    "Timer en schema’s"
+  ],
+  image: "/images/products/outdoor-smart-plug.jpg",
+  affiliateUrl: "https://www.amazon.nl/s?k=slimme+buitenstekker&tag=slimhuiswonen-21",
+  priceHint: "€15–€30",
+  rating: 4.4
+},
 
 ];
 
