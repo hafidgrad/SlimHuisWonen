@@ -158,6 +158,64 @@ export const products = [
     priceHint: "€20–€30",
     rating: 4.5,
   },
+  {
+  slug: "aqara-waterleksensor",
+  brand: "Aqara",
+  title: "Aqara Waterleksensor",
+  shortTitle: "Aqara waterleksensor",
+  category: "sensoren",
+  tags: ["sensor", "waterlek", "beveiliging"],
+  description:
+    "Slimme waterleksensor die direct waarschuwt bij lekkage. Ideaal voor badkamer, keuken of wasruimte.",
+  features: [
+    "Directe melding bij waterdetectie",
+    "Zigbee (laag energieverbruik)",
+    "Werkt met Home Assistant, Homey en SmartThings"
+  ],
+  image: "/images/products/aqara-water-leak.jpg",
+  affiliateUrl: "https://www.amazon.nl/dp/B07D37FKGY?tag=slimhuiswonen-21",
+  priceHint: "€20–€30",
+  rating: 4.6
+},
+{
+  slug: "aqara-trillingssensor",
+  brand: "Aqara",
+  title: "Aqara Trillingssensor",
+  shortTitle: "Aqara vibratie sensor",
+  category: "sensoren",
+  tags: ["sensor", "trilling", "beveiliging"],
+  description:
+    "Trillingssensor voor beveiliging van ramen, deuren of waardevolle objecten.",
+  features: [
+    "Detecteert trilling, kanteling en val",
+    "Instelbare gevoeligheid",
+    "Ideaal voor alarmautomatiseringen"
+  ],
+  image: "/images/products/aqara-vibration.jpg",
+  affiliateUrl: "https://www.amazon.nl/dp/B07D1KWR78?tag=slimhuiswonen-21",
+  priceHint: "€20–€30",
+  rating: 4.5
+},
+{
+  slug: "tp-link-tapo-motion-sensor",
+  brand: "TP-Link Tapo",
+  title: "TP-Link Tapo Bewegingssensor",
+  shortTitle: "Tapo motion sensor",
+  category: "sensoren",
+  tags: ["sensor", "beweging", "tapo"],
+  description:
+    "Slimme bewegingssensor voor het Tapo-ecosysteem. Geschikt voor automatiseringen en meldingen.",
+  features: [
+    "Snelle bewegingsdetectie",
+    "Werkt met Tapo hub",
+    "Automatiseringen via Tapo app"
+  ],
+  image: "/images/products/tapo-motion.jpg",
+  affiliateUrl: "https://www.amazon.nl/dp/B0B7NDJW6J?tag=slimhuiswonen-21",
+  priceHint: "€15–€25",
+  rating: 4.5
+},
+
 ];
 
 export function getAllProducts() {
