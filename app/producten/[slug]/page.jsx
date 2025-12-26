@@ -6,8 +6,9 @@ export function generateStaticParams() {
   return getAllProducts().map((p) => ({ slug: p.slug }));
 }
 
-export function generateMetadata({ params }) {
+export async function generateMetadata({ params }) {
   const product = getProductBySlug(params.slug);
+
   if (!product) {
     return {
       title: "Product niet gevonden",
@@ -51,6 +52,7 @@ export default function ProductDetailPage({ params }) {
   }
 
   const url = `https://slimhuiswonen.nl/producten/${product.slug}`;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -61,7 +63,9 @@ export default function ProductDetailPage({ params }) {
     },
     description: product.description,
     url,
-    image: product.image ? `https://slimhuiswonen.nl${product.image}` : undefined,
+    image: product.image
+      ? `https://slimhuiswonen.nl${product.image}`
+      : undefined,
     aggregateRating: product.rating
       ? {
           "@type": "AggregateRating",
@@ -80,17 +84,21 @@ export default function ProductDetailPage({ params }) {
   return (
     <>
       <Header />
+
       <main>
         <section className="section">
           <div className="container product-detail">
             <h1>{product.title}</h1>
             <p className="product-desc">{product.description}</p>
+
             <ul className="product-bullets">
               {product.features.map((f) => (
                 <li key={f}>{f}</li>
               ))}
             </ul>
+
             <p className="muted">{product.priceHint}</p>
+
             <a
               href={product.affiliateUrl}
               className="btn btn-primary product-btn"
@@ -101,12 +109,14 @@ export default function ProductDetailPage({ params }) {
             </a>
           </div>
         </section>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
       </main>
+
       <Footer />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     </>
   );
 }
