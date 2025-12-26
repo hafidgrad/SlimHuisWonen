@@ -15,6 +15,7 @@ npm install
 npm run dev
 ```
 
+
 Ga daarna naar: http://localhost:3000
 
 ## Amazon affiliate links instellen
