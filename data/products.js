@@ -1,4 +1,3 @@
-
 export const products = [
   {
     slug: "philips-hue-white-ambiance-starterkit",
@@ -15,9 +14,8 @@ export const products = [
       "Uitbreidbaar met extra lampen en accessoires",
     ],
     image: "/images/products/hue-starterkit.jpg",
-    // ASIN bekend (B0991VHWSJ) -> directe /dp/ link met je tag
     affiliateUrl: "https://www.amazon.nl/dp/B0991VHWSJ?tag=slimhuiswonen-21",
-    priceHint: "Populaire keuze rond de €80–€120",
+    priceHint: "€80–€120",
     rating: 4.7,
   },
 
@@ -25,170 +23,140 @@ export const products = [
     slug: "aqara-deur-raamsensor",
     brand: "Aqara",
     title: "Aqara Deur- & Raamsensor",
-    shortTitle: "Aqara sensor",
+    shortTitle: "Aqara deur-raamsensor",
     category: "sensoren",
-    tags: ["sensor", "beveiliging", "zigbee"],
+    tags: ["sensor", "contact", "zigbee"],
     description:
-      "Slimme deur- en raamsensor die je direct laat weten wanneer iets open of dicht gaat. Ideaal voor notificaties en automatiseringen.",
+      "Zigbee deur- en raamsensor voor beveiliging en slimme automatiseringen.",
     features: [
-      "Werkt met Homey en Home Assistant (Zigbee)",
-      "Kleine en onopvallende vormgeving",
-      "Perfect voor beveiliging en automatiseringen",
+      "Ondersteunt SmartThings, Home Assistant en Homey",
+      "Zigbee (energiezuinig)",
+      "Compact en onopvallend",
     ],
     image: "/images/products/aqara-door-window.jpg",
-    // Geen ASIN opgegeven -> zoek-URL met affiliate tag
-    affiliateUrl:"https://www.amazon.nl/dp/B0BTL8B72D?tag=slimhuiswonen-21",
-    priceHint: "Meestal tussen de €15–€25 per sensor",
+    affiliateUrl: "https://www.amazon.nl/dp/B0BTL8B72D?tag=slimhuiswonen-21",
+    priceHint: "€15–€25",
     rating: 4.6,
   },
 
   {
     slug: "ring-video-deurbel",
     brand: "Ring",
-    title: "Ring Video Deurbel",
+    title: "Ring Video Deurbel op Batterij",
     shortTitle: "Ring deurbel",
     category: "slimme-deurbellen",
     tags: ["deurbel", "camera", "beveiliging"],
     description:
-      "Slimme video deurbel waarmee je altijd ziet wie er voor de deur staat, ook als je niet thuis bent.",
+      "Slimme videodeurbel op batterij waarmee je altijd ziet wie er aanbelt.",
     features: [
-      "Live video en terugkijken via app",
-      "Bewegingsdetectie met meldingen",
+      "Live videobeeld via app",
+      "Bewegingsdetectie",
       "Werkt met Alexa",
     ],
     image: "/images/products/ring-doorbell.jpg",
-    // Geen ASIN -> zoeklink naar productcategorie
     affiliateUrl: "https://www.amazon.nl/dp/B0BZWQP9Z1?tag=slimhuiswonen-21",
-    priceHint: "Afhankelijk van model €80–€250",
+    priceHint: "€80–€250",
     rating: 4.5,
   },
 
   {
     slug: "nest-learning-thermostaat",
     brand: "Google Nest",
-    title: "Google Nest Learning Thermostaat",
+    title: "Google Nest Thermostaat",
     shortTitle: "Nest thermostaat",
     category: "slimme-thermostaten",
-    tags: ["thermostaat", "verwarming", "energie"],
+    tags: ["thermostaat", "energie", "verwarming"],
     description:
-      "Slimme thermostaat die je gewoontes leert en helpt om energie te besparen zonder in te leveren op comfort.",
+      "Slimme thermostaat die helpt energie te besparen zonder in te leveren op comfort.",
     features: [
       "Zelflerende schema’s",
       "Bediening via app en spraak",
       "Inzicht in energieverbruik",
     ],
     image: "/images/products/nest-thermostat.jpg",
-    // Geen ASIN -> zoeklink met tag
     affiliateUrl: "https://www.amazon.nl/dp/B0BXRYLMCC?tag=slimhuiswonen-21",
-    priceHint: "Meestal rond de €200–€280",
+    priceHint: "€200–€280",
     rating: 4.4,
   },
 
   {
     slug: "tp-link-tapo-slimme-stekker",
     brand: "TP-Link Tapo",
-    title: "TP-Link Tapo Slimme Stekker",
-    shortTitle: "Slimme stekker",
+    title: "TP-Link Tapo P110 Slimme Stekker",
+    shortTitle: "Tapo slimme stekker",
     category: "slimme-stekkers",
-    tags: ["stekker", "energie", "schema"],
+    tags: ["stekker", "energie", "wifi"],
     description:
-      "Slimme stekker om bestaande apparaten slim te maken. Bedien apparaten op afstand en automatiseer energieverbruik.",
+      "Slimme stekker met energieverbruikmeting om apparaten slim te maken.",
     features: [
       "Werkt via wifi (geen hub nodig)",
-      "Schema’s en timers instelbaar",
+      "Inzicht in energieverbruik",
       "Werkt met Google Assistant en Alexa",
     ],
     image: "/images/products/tapo-plug.jpg",
-    // Geen ASIN -> zoeklink
-    affiliateUrl: "https://www.amazon.nl/dp/B0991VHWSJ?tag=slimhuiswonen-21",
-    priceHint: "Ongeveer €10–€20 per stuk",
+    affiliateUrl: "https://www.amazon.nl/dp/B08WJ9KZQ2?tag=slimhuiswonen-21",
+    priceHint: "€10–€20",
     rating: 4.6,
   },
 
   {
-    slug: "tp-link-tapo-bewegingssensor",
-    brand: "TP-Link Tapo",
-    title: "TP-Link Tapo Bewegingssensor",
-    shortTitle: "Tapo bewegingssensor",
+    slug: "aqara-bewegingssensor",
+    brand: "Aqara",
+    title: "Aqara Bewegingssensor",
+    shortTitle: "Aqara motion sensor",
     category: "sensoren",
-    tags: ["sensor", "beweging", "beveiliging"],
+    tags: ["sensor", "beweging", "zigbee"],
     description:
-      "Slimme bewegingssensor voor automatiseringen en beveiliging. Ideaal om verlichting of meldingen te activeren bij beweging.",
+      "Configureerbare bewegingssensor voor beveiliging en automatiseringen.",
     features: [
-      "Snelle bewegingsdetectie",
-      "Werkt met Tapo hub",
-      "Automatiseringen en meldingen",
+      "Instelbare detectietijd",
+      "Zigbee (laag energieverbruik)",
+      "Perfect voor automatiseringen",
     ],
-    image: "/images/products/tapo-motion.jpg",
-    // Foutje 'dp/dp' -> gecorrigeerd
-    affiliateUrl:
-      "https://www.amazon.nl/dp/B0B7NDJW6J?tag=slimhuiswonen-21&language=nl_NL",
-    priceHint: "Meestal rond de €10–€20",
-    rating: 4.5,
+    image: "/images/products/aqara-motion.jpg",
+    affiliateUrl: "https://www.amazon.nl/dp/B0B9XZ1D51?tag=slimhuiswonen-21",
+    priceHint: "€20–€30",
+    rating: 4.6,
   },
 
   {
-    slug: "philips-hue-white-ambiance-e27",
-    brand: "Philips Hue",
-    title: "Philips Hue White Ambiance E27 Lamp",
-    shortTitle: "Hue White Ambiance E27",
-    category: "slimme-verlichting",
-    tags: ["verlichting", "hue", "e27"],
+    slug: "aqara-temperatuur-luchtvochtigheid-sensor",
+    brand: "Aqara",
+    title: "Aqara Temperatuur- en Luchtvochtigheidssensor T1",
+    shortTitle: "Aqara temp sensor",
+    category: "sensoren",
+    tags: ["sensor", "temperatuur", "luchtvochtigheid"],
     description:
-      "Losse Philips Hue White Ambiance lamp met instelbare wittinten. Ideaal als uitbreiding van je bestaande Hue-systeem.",
+      "Meet nauwkeurig temperatuur en luchtvochtigheid voor slimme klimaatregeling.",
     features: [
-      "Instelbaar warm tot koel wit licht",
-      "Werkt met Hue Bridge",
-      "Bediening via app, spraak en automatiseringen",
+      "Realtime metingen",
+      "Zigbee (energiezuinig)",
+      "Compact ontwerp",
     ],
-    image: "/images/products/hue-white-ambiance-e27.jpg",
-    // ASIN bekend (B099NQFWW1) -> directe /dp/ link
-    affiliateUrl: "https://www.amazon.nl/dp/B099NQFWW1?tag=slimhuiswonen-21",
-    priceHint: "Meestal rond de €20–€35",
+    image: "/images/products/aqara-temp-humidity.jpg",
+    affiliateUrl: "https://www.amazon.nl/dp/B0CN5KHLRT?tag=slimhuiswonen-21",
+    priceHint: "€15–€25",
     rating: 4.7,
   },
 
   {
-    // Kapotte regel gefikst + nette slug
-    slug: "tp-link-tapo-l530e-slimme-lamp",
+    slug: "tp-link-tapo-t310-temperatuursensor",
     brand: "TP-Link Tapo",
-    title: "TP-Link Tapo L530E Slimme Lamp",
-    shortTitle: "Tapo L530E",
-    category: "slimme-verlichting",
-    tags: ["verlichting", "tapo", "wifi"],
+    title: "TP-Link Tapo T310 Temperatuursensor",
+    shortTitle: "Tapo T310",
+    category: "sensoren",
+    tags: ["sensor", "temperatuur", "tapo"],
     description:
-      "Betaalbare slimme lamp met instelbare kleurtemperatuur. Ideaal voor beginners zonder extra hub.",
+      "Temperatuur- en luchtvochtigheidssensor binnen het Tapo-ecosysteem.",
     features: [
-      "Werkt via wifi (geen hub nodig)",
-      "Instelbaar warm en koel wit",
-      "Bediening via app en spraak",
+      "Realtime temperatuur- en luchtvochtigheidsmeting",
+      "Werkt met Tapo hub",
+      "Automatiseringen en meldingen",
     ],
-    image: "/images/products/tapo-l530e.jpg",
-    // link met ASIN uit jouw URL
-    affiliateUrl: "https://www.amazon.nl/dp/B08QRQQ53T?tag=slimhuiswonen-21",
-    priceHint: "Ongeveer €10–€15",
+    image: "/images/products/tapo-t310.jpg",
+    affiliateUrl: "https://www.amazon.nl/dp/B0BJ28DJ7W?tag=slimhuiswonen-21",
+    priceHint: "€20–€30",
     rating: 4.5,
-  },
-
-  {
-    slug: "philips-hue-lightstrip-plus",
-    brand: "Philips Hue",
-    title: "Philips Hue Lightstrip Plus",
-    shortTitle: "Hue Lightstrip",
-    category: "slimme-verlichting",
-    tags: ["verlichting", "ledstrip", "hue"],
-    description:
-      "Flexibele LED-strip voor sfeerverlichting onder kasten, achter tv’s of langs meubels.",
-    features: [
-      "Volledig dimbaar en uitbreidbaar",
-      "Werkt met Hue Bridge",
-      "Perfect voor indirecte verlichting",
-    ],
-    image: "/images/products/hue-lightstrip.jpg",
-    // ASIN uit jouw link → directe /dp/ link met tag
-    affiliateUrl: "https://www.amazon.nl/dp/B0DYF95G2D?tag=slimhuiswonen-21",
-    priceHint: "Meestal €60–€80",
-    rating: 4.6,
   },
 ];
 
