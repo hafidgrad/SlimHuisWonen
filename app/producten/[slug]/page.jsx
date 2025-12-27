@@ -105,8 +105,11 @@ export default function ProductDetailPage({ params }) {
               target="_blank"
               rel="noreferrer"
             >
-              Naar Amazon
+              Beste prijs op Amazon
             </a>
+            <p className="muted small">
+  *Prijzen kunnen wijzigen. Bekijk actuele prijs bij Amazon.
+</p>
           </div>
         </section>
       </main>

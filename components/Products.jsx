@@ -25,8 +25,11 @@ export default function Products() {
               </ul>
               <div className="product-actions">
                 <a href={p.affiliateUrl} className="btn btn-primary product-btn" target="_blank" rel="noreferrer">
-                  Bekijk bij Amazon
+                  Beste prijs op Amazon
                 </a>
+                <p className="muted small">
+  *Prijzen kunnen wijzigen.
+</p>
                 <Link href={`/producten/${p.slug}`} className="product-details-link">
                   Meer info
                 </Link>

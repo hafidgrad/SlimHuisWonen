@@ -8,4 +8,8 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+}<p className="affiliate-disclaimer">
+  SlimHuisWonen.nl is deelnemer aan het Amazon Partnerprogramma.
+  Als Amazon Associate verdienen wij aan in aanmerking komende aankopen.
+</p>
+
