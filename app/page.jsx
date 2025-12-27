@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import TopAanraders from "@/components/TopAanraders";
 import About from "@/components/About";
 import Categories from "@/components/Categories";
 import Products from "@/components/Products";
@@ -13,6 +14,7 @@ export default function HomePage() {
       <Header />
       <main>
         <Hero />
+        <TopAanraders />   {/* ⭐ HIER ZAT DE MISSENDE REGEL */}
         <About />
         <Categories />
         <Products />
