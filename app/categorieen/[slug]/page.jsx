@@ -12,6 +12,14 @@ const categoryLabels = {
 };
 
 const categoryIntros = {
+  const relatedCategories = {
+  "slimme-verlichting": ["sensoren", "slimme-stekkers"],
+  sensoren: ["slimme-verlichting", "slimme-deurbellen"],
+  "slimme-deurbellen": ["sensoren"],
+  "slimme-thermostaten": ["slimme-stekkers", "sensoren"],
+  "slimme-stekkers": ["slimme-verlichting", "slimme-thermostaten"],
+};
+
   "slimme-verlichting":
     "Slimme verlichting maakt je huis sfeervoller én slimmer. Hieronder vind je onze aanraders.",
   sensoren:
@@ -162,6 +170,21 @@ export default function CategoryPage({ params }) {
               </div>
             </>
           )}
+{relatedCategories[slug]?.length > 0 && (
+  <section className="related-categories">
+    <h2>Gerelateerde categorieën</h2>
+
+    <ul className="category-links">
+      {relatedCategories[slug].map((cat) => (
+        <li key={cat}>
+          <Link href={`/categorieen/${cat}`}>
+            {categoryLabels[cat] ?? cat}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  </section>
+)}
 
           <p className="muted small">
             *Prijzen kunnen wijzigen. Bekijk actuele prijs bij Amazon.
