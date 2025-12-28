@@ -43,7 +43,16 @@ export function generateMetadata({ params }) {
 
 export default function CategoryPage({ params }) {
   const { slug } = params;
-  const products = getProductsByCategory(slug);
+
+  const productsRaw = getProductsByCategory(slug);
+
+  // sorteer op rating (hoog → laag)
+  const products = [...productsRaw].sort(
+    (a, b) => (b.rating ?? 0) - (a.rating ?? 0)
+  );
+
+  const topThree = products.slice(0, 3);
+  const rest = products.slice(3);
 
   const label = categoryLabels[slug] ?? slug.replace("-", " ");
   const intro =
@@ -58,44 +67,100 @@ export default function CategoryPage({ params }) {
           <h1>{label}</h1>
           <p className="section-intro">{intro}</p>
 
-          {products.length === 0 ? (
+          {products.length === 0 && (
             <p>Geen producten gevonden in deze categorie.</p>
-          ) : (
-            <div className="product-grid">
-              {products.map((p) => (
-                <article key={p.slug} className="product-card">
-                  <div className="product-tag">{p.brand}</div>
-                  <h3>{p.title}</h3>
-                  <p className="product-desc">{p.description}</p>
+          )}
 
-                  <ul className="product-bullets">
-                    {p.features?.slice(0, 3).map((f) => (
-                      <li key={f}>{f}</li>
-                    ))}
-                  </ul>
+          {/* TOP 3 */}
+          {topThree.length > 0 && (
+            <section className="top-products">
+              <h2>Beste keuzes</h2>
 
-                  <div className="product-actions">
-                    {p.affiliateUrl && p.affiliateUrl !== "#" && (
-                      <a
-                        href={p.affiliateUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="btn btn-primary product-btn"
-                      >
-                        Bekijk prijs bij Amazon
-                      </a>
+              <div className="product-grid">
+                {topThree.map((p, index) => (
+                  <article
+                    key={p.slug}
+                    className="product-card highlight"
+                  >
+                    {index === 0 && (
+                      <div className="best-choice">Beste keuze</div>
                     )}
 
-                    <Link
-                      href={`/producten/${p.slug}`}
-                      className="product-details-link"
-                    >
-                      Meer info
-                    </Link>
-                  </div>
-                </article>
-              ))}
-            </div>
+                    <div className="product-tag">{p.brand}</div>
+                    <h3>{p.title}</h3>
+                    <p className="product-desc">{p.description}</p>
+
+                    <ul className="product-bullets">
+                      {p.features?.slice(0, 3).map((f) => (
+                        <li key={f}>{f}</li>
+                      ))}
+                    </ul>
+
+                    <div className="product-actions">
+                      {p.affiliateUrl && p.affiliateUrl !== "#" && (
+                        <a
+                          href={p.affiliateUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="btn btn-primary product-btn"
+                        >
+                          Bekijk prijs bij Amazon
+                        </a>
+                      )}
+
+                      <Link
+                        href={`/producten/${p.slug}`}
+                        className="product-details-link"
+                      >
+                        Meer info
+                      </Link>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* OVERIGE PRODUCTEN */}
+          {rest.length > 0 && (
+            <>
+              <h2>Meer producten</h2>
+              <div className="product-grid">
+                {rest.map((p) => (
+                  <article key={p.slug} className="product-card">
+                    <div className="product-tag">{p.brand}</div>
+                    <h3>{p.title}</h3>
+                    <p className="product-desc">{p.description}</p>
+
+                    <ul className="product-bullets">
+                      {p.features?.slice(0, 3).map((f) => (
+                        <li key={f}>{f}</li>
+                      ))}
+                    </ul>
+
+                    <div className="product-actions">
+                      {p.affiliateUrl && p.affiliateUrl !== "#" && (
+                        <a
+                          href={p.affiliateUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="btn btn-primary product-btn"
+                        >
+                          Bekijk prijs bij Amazon
+                        </a>
+                      )}
+
+                      <Link
+                        href={`/producten/${p.slug}`}
+                        className="product-details-link"
+                      >
+                        Meer info
+                      </Link>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </>
           )}
 
           <p className="muted small">
