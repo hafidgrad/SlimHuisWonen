@@ -12,14 +12,6 @@ const categoryLabels = {
 };
 
 const categoryIntros = {
-  const relatedCategories = {
-  "slimme-verlichting": ["sensoren", "slimme-stekkers"],
-  sensoren: ["slimme-verlichting", "slimme-deurbellen"],
-  "slimme-deurbellen": ["sensoren"],
-  "slimme-thermostaten": ["slimme-stekkers", "sensoren"],
-  "slimme-stekkers": ["slimme-verlichting", "slimme-thermostaten"],
-};
-
   "slimme-verlichting":
     "Slimme verlichting maakt je huis sfeervoller én slimmer. Hieronder vind je onze aanraders.",
   sensoren:
@@ -30,6 +22,14 @@ const categoryIntros = {
     "Slimme thermostaten helpen je energie besparen zonder in te leveren op comfort.",
   "slimme-stekkers":
     "Maak apparaten slim met slimme stekkers. Ideaal voor schema’s en inzicht in verbruik.",
+};
+
+const relatedCategories = {
+  "slimme-verlichting": ["sensoren", "slimme-stekkers"],
+  sensoren: ["slimme-verlichting", "slimme-deurbellen"],
+  "slimme-deurbellen": ["sensoren"],
+  "slimme-thermostaten": ["slimme-stekkers", "sensoren"],
+  "slimme-stekkers": ["slimme-verlichting", "slimme-thermostaten"],
 };
 
 export function generateMetadata({ params }) {
@@ -53,8 +53,6 @@ export default function CategoryPage({ params }) {
   const { slug } = params;
 
   const productsRaw = getProductsByCategory(slug);
-
-  // sorteer op rating (hoog → laag)
   const products = [...productsRaw].sort(
     (a, b) => (b.rating ?? 0) - (a.rating ?? 0)
   );
@@ -79,17 +77,12 @@ export default function CategoryPage({ params }) {
             <p>Geen producten gevonden in deze categorie.</p>
           )}
 
-          {/* TOP 3 */}
           {topThree.length > 0 && (
             <section className="top-products">
               <h2>Beste keuzes</h2>
-
               <div className="product-grid">
                 {topThree.map((p, index) => (
-                  <article
-                    key={p.slug}
-                    className="product-card highlight"
-                  >
+                  <article key={p.slug} className="product-card highlight">
                     {index === 0 && (
                       <div className="best-choice">Beste keuze</div>
                     )}
@@ -105,17 +98,14 @@ export default function CategoryPage({ params }) {
                     </ul>
 
                     <div className="product-actions">
-                      {p.affiliateUrl && p.affiliateUrl !== "#" && (
-                        <a
-                          href={p.affiliateUrl}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="btn btn-primary product-btn"
-                        >
-                          Bekijk prijs bij Amazon
-                        </a>
-                      )}
-
+                      <a
+                        href={p.affiliateUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="btn btn-primary product-btn"
+                      >
+                        Bekijk prijs bij Amazon
+                      </a>
                       <Link
                         href={`/producten/${p.slug}`}
                         className="product-details-link"
@@ -129,7 +119,6 @@ export default function CategoryPage({ params }) {
             </section>
           )}
 
-          {/* OVERIGE PRODUCTEN */}
           {rest.length > 0 && (
             <>
               <h2>Meer producten</h2>
@@ -139,52 +128,26 @@ export default function CategoryPage({ params }) {
                     <div className="product-tag">{p.brand}</div>
                     <h3>{p.title}</h3>
                     <p className="product-desc">{p.description}</p>
-
-                    <ul className="product-bullets">
-                      {p.features?.slice(0, 3).map((f) => (
-                        <li key={f}>{f}</li>
-                      ))}
-                    </ul>
-
-                    <div className="product-actions">
-                      {p.affiliateUrl && p.affiliateUrl !== "#" && (
-                        <a
-                          href={p.affiliateUrl}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="btn btn-primary product-btn"
-                        >
-                          Bekijk prijs bij Amazon
-                        </a>
-                      )}
-
-                      <Link
-                        href={`/producten/${p.slug}`}
-                        className="product-details-link"
-                      >
-                        Meer info
-                      </Link>
-                    </div>
                   </article>
                 ))}
               </div>
             </>
           )}
-{relatedCategories[slug]?.length > 0 && (
-  <section className="related-categories">
-    <h2>Gerelateerde categorieën</h2>
 
-    <ul className="category-links">
-      {relatedCategories[slug].map((cat) => (
-        <li key={cat}>
-          <Link href={`/categorieen/${cat}`}>
-            {categoryLabels[cat] ?? cat}
-          </Link>
-        </li>
-      ))}
-    </ul>
-  </section>
-)}
+          {relatedCategories[slug]?.length > 0 && (
+            <section className="related-categories">
+              <h2>Gerelateerde categorieën</h2>
+              <ul className="category-links">
+                {relatedCategories[slug].map((cat) => (
+                  <li key={cat}>
+                    <Link href={`/categorieen/${cat}`}>
+                      {categoryLabels[cat] ?? cat}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
 
           <p className="muted small">
             *Prijzen kunnen wijzigen. Bekijk actuele prijs bij Amazon.
