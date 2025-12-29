@@ -110,20 +110,18 @@ export default function ProductDetailPage({ params }) {
 
             {/* Sticky CTA */}
             <div className="sticky-cta">
-              <a
   {product.affiliateUrl && product.affiliateUrl !== "#" && (
-  <a
-    href={product.affiliateUrl}
-    target="_blank"
-    rel="noreferrer"
-    className="btn btn-primary product-btn"
-    onClick={() => trackAffiliateClick(product)}
-  >
-    Bekijk beste prijs bij Amazon
-  </a>
-)}
-
-            </div>
+    <a
+      href={product.affiliateUrl}
+      target="_blank"
+      rel="noreferrer"
+      className="btn btn-primary product-btn"
+      onClick={() => trackAffiliateClick(product)}
+    >
+      Bekijk beste prijs bij Amazon
+    </a>
+  )}
+</div>
 
             <p className="muted small">
               *Prijzen kunnen wijzigen. Bekijk actuele prijs bij Amazon.
