@@ -1,6 +1,11 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { getAllProducts, getProductBySlug } from "@/data/products";
+import Link from "next/link";
+import {
+  getAllProducts,
+  getProductBySlug,
+  getProductsByCategory,
+} from "@/data/products";
 
 export function generateStaticParams() {
   return getAllProducts().map((p) => ({ slug: p.slug }));
@@ -21,9 +26,7 @@ export async function generateMetadata({ params }) {
   return {
     title: product.title,
     description: product.description,
-    alternates: {
-      canonical: url,
-    },
+    alternates: { canonical: url },
     openGraph: {
       title: product.title,
       description: product.description,
@@ -51,6 +54,10 @@ export default function ProductDetailPage({ params }) {
     );
   }
 
+  const related = getProductsByCategory(product.category)
+    .filter((p) => p.slug !== product.slug)
+    .slice(0, 3);
+
   const url = `https://slimhuiswonen.nl/producten/${product.slug}`;
 
   const jsonLd = {
@@ -76,7 +83,7 @@ export default function ProductDetailPage({ params }) {
     offers: {
       "@type": "Offer",
       priceCurrency: "EUR",
-      url: product.affiliateUrl === "#" ? undefined : product.affiliateUrl,
+      url: product.affiliateUrl,
       availability: "https://schema.org/InStock",
     },
   };
@@ -99,27 +106,57 @@ export default function ProductDetailPage({ params }) {
 
             <p className="muted">{product.priceHint}</p>
 
-            <a
-              href={product.affiliateUrl}
-              className="btn btn-primary product-btn"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Beste prijs op Amazon
-            </a>
+            {/* Sticky CTA */}
+            <div className="sticky-cta">
+              <a
+                href={product.affiliateUrl}
+                className="btn btn-primary product-btn"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Bekijk beste prijs bij Amazon
+              </a>
+            </div>
+
             <p className="muted small">
-  *Prijzen kunnen wijzigen. Bekijk actuele prijs bij Amazon.
-</p>
+              *Prijzen kunnen wijzigen. Bekijk actuele prijs bij Amazon.
+            </p>
           </div>
         </section>
+
+        {/* Vergelijkbare producten */}
+        {related.length > 0 && (
+          <section className="section related-products">
+            <div className="container">
+              <h2>Vergelijkbare producten</h2>
+
+              <div className="product-grid">
+                {related.map((p) => (
+                  <article key={p.slug} className="product-card">
+                    <div className="product-tag">{p.brand}</div>
+                    <h3>{p.title}</h3>
+
+                    <Link
+                      href={`/producten/${p.slug}`}
+                      className="product-details-link"
+                    >
+                      Bekijk product →
+                    </Link>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Structured data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </main>
 
       <Footer />
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
     </>
   );
 }

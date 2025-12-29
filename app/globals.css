@@ -452,4 +452,25 @@ code {
 .category-links a:hover {
   background: #e0e0e0;
 }
+/* Primaire Amazon CTA */
+.btn-primary {
+  background: #ff9900;
+  color: #000;
+  font-weight: 700;
+}
 
+.btn-primary:hover {
+  background: #f08c00;
+}
+
+/* Beste keuze extra aandacht */
+.product-card.highlight .btn-primary {
+  box-shadow: 0 0 0 2px rgba(255, 153, 0, 0.4);
+}
+
+.sticky-cta {
+  position: sticky;
+  bottom: 12px;
+  margin-top: 24px;
+  z-index: 10;
+}
