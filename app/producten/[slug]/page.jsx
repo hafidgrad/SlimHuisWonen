@@ -1,3 +1,4 @@
+import { trackAffiliateClick } from "@/lib/trackAffiliate";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
@@ -81,8 +82,11 @@ export default function ProductDetailPage({ params }) {
         }
       : undefined,
     offers: {
-      "@type": "Offer",
-      priceCurrency: "EUR",
+      priceSpecification: {
+  "@type": "PriceSpecification",
+  priceCurrency: "EUR",
+}
+
       url: product.affiliateUrl,
       availability: "https://schema.org/InStock",
     },
@@ -109,13 +113,18 @@ export default function ProductDetailPage({ params }) {
             {/* Sticky CTA */}
             <div className="sticky-cta">
               <a
-                href={product.affiliateUrl}
-                className="btn btn-primary product-btn"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Bekijk beste prijs bij Amazon
-              </a>
+  {product.affiliateUrl && product.affiliateUrl !== "#" && (
+  <a
+    href={product.affiliateUrl}
+    target="_blank"
+    rel="noreferrer"
+    className="btn btn-primary product-btn"
+    onClick={() => trackAffiliateClick(product)}
+  >
+    Bekijk beste prijs bij Amazon
+  </a>
+)}
+
             </div>
 
             <p className="muted small">
