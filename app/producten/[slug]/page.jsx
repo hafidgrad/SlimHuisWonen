@@ -82,14 +82,12 @@ export default function ProductDetailPage({ params }) {
         }
       : undefined,
     offers: {
-      priceSpecification: {
-  "@type": "PriceSpecification",
+  "@type": "Offer",
   priceCurrency: "EUR",
-}
+  url: product.affiliateUrl,
+  availability: "https://schema.org/InStock",
+},
 
-      url: product.affiliateUrl,
-      availability: "https://schema.org/InStock",
-    },
   };
 
   return (
