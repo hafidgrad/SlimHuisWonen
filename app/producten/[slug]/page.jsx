@@ -116,6 +116,12 @@ export default function ProductDetailPage({ params }) {
               *Prijzen kunnen wijzigen. Bekijk actuele prijs bij Amazon.
             </p>
           </div>
+          {product.bolUrl && (
+  <p className="muted small">
+    Dit product is ook verkrijgbaar bij bol.com.
+  </p>
+)}
+
         </section>
 
         {related.length > 0 && (
