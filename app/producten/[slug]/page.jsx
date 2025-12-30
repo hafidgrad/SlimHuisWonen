@@ -8,10 +8,12 @@ import {
   getProductsByCategory,
 } from "@/data/products";
 
+/* ---------- Static params ---------- */
 export function generateStaticParams() {
   return getAllProducts().map((p) => ({ slug: p.slug }));
 }
 
+/* ---------- Metadata ---------- */
 export async function generateMetadata({ params }) {
   const product = getProductBySlug(params.slug);
 
@@ -37,6 +39,7 @@ export async function generateMetadata({ params }) {
   };
 }
 
+/* ---------- Page ---------- */
 export default function ProductDetailPage({ params }) {
   const product = getProductBySlug(params.slug);
 
@@ -59,8 +62,6 @@ export default function ProductDetailPage({ params }) {
     .filter((p) => p.slug !== product.slug)
     .slice(0, 3);
 
-  const url = `https://slimhuiswonen.nl/producten/${product.slug}`;
-
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -70,7 +71,6 @@ export default function ProductDetailPage({ params }) {
       name: product.brand,
     },
     description: product.description,
-    url,
     image: product.image
       ? `https://slimhuiswonen.nl${product.image}`
       : undefined,
@@ -107,23 +107,27 @@ export default function ProductDetailPage({ params }) {
 
             <p className="muted">{product.priceHint}</p>
 
-            {/* ✅ Sticky affiliate CTA (Client Component) */}
+            {/* ✅ Affiliate CTA (Client Component) */}
             <div className="sticky-cta">
-              <AffiliateButton product={product} />
+              <AffiliateButton
+                href={product.affiliateUrl}
+                label="Bekijk beste prijs bij Amazon"
+              />
             </div>
 
             <p className="muted small">
               *Prijzen kunnen wijzigen. Bekijk actuele prijs bij Amazon.
             </p>
-          </div>
-          {product.bolUrl && (
-  <p className="muted small">
-    Dit product is ook verkrijgbaar bij bol.com.
-  </p>
-)}
 
+            {product.bolUrl && (
+              <p className="muted small">
+                Dit product is ook verkrijgbaar bij bol.com.
+              </p>
+            )}
+          </div>
         </section>
 
+        {/* Vergelijkbare producten */}
         {related.length > 0 && (
           <section className="section related-products">
             <div className="container">
@@ -148,6 +152,7 @@ export default function ProductDetailPage({ params }) {
           </section>
         )}
 
+        {/* Structured data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
