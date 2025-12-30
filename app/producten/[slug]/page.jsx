@@ -1,4 +1,3 @@
-import { trackAffiliateClick } from "@/lib/trackAffiliate";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
@@ -116,7 +115,6 @@ export default function ProductDetailPage({ params }) {
       target="_blank"
       rel="noreferrer"
       className="btn btn-primary product-btn"
-      onClick={() => trackAffiliateClick(product)}
     >
       Bekijk beste prijs bij Amazon
     </a>
