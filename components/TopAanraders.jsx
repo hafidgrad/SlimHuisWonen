@@ -24,11 +24,11 @@ export default function TopAanraders() {
                       rel="noreferrer"
                       className="btn btn-primary"
                     >
-                      Bekijk prijs bij Amazon
+                      Bekijk beste prijs bij Amazon
                     </a>
 
                     <p className={"muted small"}>
-                      *Prijzen kunnen wijzigen.
+                        *Prijzen kunnen wijzigen. Bekijk actuele prijs bij Amazon.
                     </p>
                   </>
                 )}

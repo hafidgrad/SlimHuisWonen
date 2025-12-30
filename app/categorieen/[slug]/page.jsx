@@ -104,7 +104,7 @@ export default function CategoryPage({ params }) {
                         rel="noreferrer"
                         className="btn btn-primary product-btn"
                       >
-                        Bekijk prijs bij Amazon
+                        Bekijk beste prijs bij Amazon
                       </a>
                       <Link
                         href={`/producten/${p.slug}`}

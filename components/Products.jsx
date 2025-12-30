@@ -28,7 +28,7 @@ export default function Products() {
                   Beste prijs op Amazon
                 </a>
                 <p className="muted small">
-  *Prijzen kunnen wijzigen.
+   *Prijzen kunnen wijzigen. Bekijk actuele prijs bij Amazon.
 </p>
                 <Link href={`/producten/${p.slug}`} className="product-details-link">
                   Meer info
