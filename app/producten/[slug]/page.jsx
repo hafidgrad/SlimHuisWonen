@@ -1,3 +1,4 @@
+import AffiliateButton from "@/components/AffiliateButton";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
@@ -109,8 +110,10 @@ export default function ProductDetailPage({ params }) {
 
             {/* Sticky CTA */}
             <div className="sticky-cta">
-  {product.affiliateUrl && product.affiliateUrl !== "#" && (
-    <a
+  <div className="sticky-cta">
+  <AffiliateButton product={product} />
+</div>
+
       href={product.affiliateUrl}
       target="_blank"
       rel="noreferrer"
