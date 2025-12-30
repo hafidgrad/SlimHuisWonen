@@ -1,7 +1,7 @@
-import AffiliateButton from "@/components/AffiliateButton";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import AffiliateButton from "@/components/AffiliateButton";
 import {
   getAllProducts,
   getProductBySlug,
@@ -82,12 +82,11 @@ export default function ProductDetailPage({ params }) {
         }
       : undefined,
     offers: {
-  "@type": "Offer",
-  priceCurrency: "EUR",
-  url: product.affiliateUrl,
-  availability: "https://schema.org/InStock",
-},
-
+      "@type": "Offer",
+      priceCurrency: "EUR",
+      url: product.affiliateUrl,
+      availability: "https://schema.org/InStock",
+    },
   };
 
   return (
@@ -108,21 +107,10 @@ export default function ProductDetailPage({ params }) {
 
             <p className="muted">{product.priceHint}</p>
 
-            {/* Sticky CTA */}
+            {/* ✅ Sticky affiliate CTA (Client Component) */}
             <div className="sticky-cta">
-  <div className="sticky-cta">
-  <AffiliateButton product={product} />
-</div>
-
-      href={product.affiliateUrl}
-      target="_blank"
-      rel="noreferrer"
-      className="btn btn-primary product-btn"
-    >
-      Bekijk beste prijs bij Amazon
-    </a>
-  )}
-</div>
+              <AffiliateButton product={product} />
+            </div>
 
             <p className="muted small">
               *Prijzen kunnen wijzigen. Bekijk actuele prijs bij Amazon.
@@ -130,7 +118,6 @@ export default function ProductDetailPage({ params }) {
           </div>
         </section>
 
-        {/* Vergelijkbare producten */}
         {related.length > 0 && (
           <section className="section related-products">
             <div className="container">
@@ -155,7 +142,6 @@ export default function ProductDetailPage({ params }) {
           </section>
         )}
 
-        {/* Structured data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
