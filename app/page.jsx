@@ -19,6 +19,10 @@ export default function HomePage() {
         <Categories />
         <Products />
         <Tips />
+        <Link href="/tips/beginnen-met-slimme-verlichting">
+  Beginnen met slimme verlichting (stap-voor-stap)
+</Link>
+
         <Contact />
       </main>
       <Footer />
