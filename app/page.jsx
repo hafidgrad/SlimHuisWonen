@@ -19,7 +19,7 @@ export default function HomePage() {
         <Categories />
         <Products />
         <Tips />
-        <Limport Link from href="/tips/beginnen-met-slimme-verlichting">
+        <Link href="/tips/beginnen-met-slimme-verlichting">
   Beginnen met slimme verlichting (stap-voor-stap)
 </Link>
 

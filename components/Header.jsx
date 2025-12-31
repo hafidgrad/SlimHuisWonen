@@ -21,9 +21,10 @@ export default function Header() {
           <Link href="/over">Over</Link>
           <Link href="/categorieen">Categorieën</Link>
           <Link href="/aanraders">Aanraders</Link>
-          < Link="/tips">Tips & uitleg</Link>
-          <Link="/contact">Contact</Link>
-          <Link="/producten" className="nav-highlight">
+          <Link href="/tips">Tips & uitleg</Link>
+          <Link href="/contact">Contact</Link>
+          
+          <Link href="/producten" className="nav-highlight">
             Producten
           </Link>
         </nav>
