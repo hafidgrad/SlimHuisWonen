@@ -30,7 +30,7 @@ export default function Products() {
                 <p className="muted small">
    *Prijzen kunnen wijzigen. Bekijk actuele prijs bij Amazon.
 </p>
-                <import Link from href={`/producten/${p.slug}`} className="product-details-link">
+                <Link href={`/producten/${p.slug}`} className="product-details-link">
                   Meer info
                 </Link>
               </div>
