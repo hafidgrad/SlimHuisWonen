@@ -33,7 +33,7 @@ export default function TopAanraders() {
                   </>
                 )}
 
-                <Link href={`/producten/${p.slug}`}>
+                <import Link from href={`/producten/${p.slug}`}>
                   Meer info
                 </Link>
               </div>

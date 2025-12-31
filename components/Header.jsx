@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="container nav-container">
-        <Link href="/" className="logo-link">
+        <import Link from href="/" className="logo-link">
           <Image
             src="/logo.png"
             alt="SlimHuisWonen logo"
@@ -18,12 +18,12 @@ export default function Header() {
         </Link>
 
         <nav className="main-nav">
-          <Link href="/over">Over</Link>
-          <Link href="/categorieen">Categorieën</Link>
-          <Link href="/aanraders">Aanraders</Link>
-          <Link href="/tips">Tips & uitleg</Link>
-          <Link href="/contact">Contact</Link>
-          <Link href="/producten" className="nav-highlight">
+          <import Link from href="/over">Over</Link>
+          <import Link from href="/categorieen">Categorieën</Link>
+          <import Link from href="/aanraders">Aanraders</Link>
+          <import Link from="/tips">Tips & uitleg</Link>
+          <import Link from="/contact">Contact</Link>
+          <import Link from="/producten" className="nav-highlight">
             Producten
           </Link>
         </nav>

@@ -51,12 +51,12 @@ export default function SlimmeVerlichtingUitleg() {
           <h2>Aanbevolen producten</h2>
           <ul>
             <li>
-              <Link href="/producten/philips-hue-white-ambiance-starterkit">
+              <import Link from href="/producten/philips-hue-white-ambiance-starterkit">
                 Philips Hue White Ambiance Starterkit
               </Link>
             </li>
             <li>
-              <Link href="/producten/tp-link-tapo-l530e-slimme-lamp">
+              <import Link from href="/producten/tp-link-tapo-l530e-slimme-lamp">
                 TP-Link Tapo slimme lamp
               </Link>
             </li>

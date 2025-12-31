@@ -69,12 +69,12 @@ export default function BeginnenMetSlimmeVerlichting() {
           <h2>Aanbevolen producten om te starten</h2>
           <ul>
             <li>
-              <Link href="/producten/philips-hue-white-ambiance-starterkit">
+              <import Link from href="/producten/philips-hue-white-ambiance-starterkit">
                 Philips Hue White Ambiance Starterkit
               </Link>
             </li>
             <li>
-              <Link href="/producten/tp-link-tapo-p110-slimme-stekker">
+              <import Link from href="/producten/tp-link-tapo-p110-slimme-stekker">
                 TP-Link Tapo slimme producten
               </Link>
             </li>

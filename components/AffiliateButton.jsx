@@ -1,24 +1,19 @@
 "use client";
 
-export default function AffiliateButton({ href, label = "Bekijk bij Amazon" }) {
-  const handleClick = () => {
-    if (window.gtag) {
-      window.gtag("event", "affiliate_click", {
-        event_category: "Affiliate",
-        event_label: href,
-      });
-    }
-  };
+import { trackAffiliateClick } from "@/lib/trackAffiliate";
+
+export default function AffiliateButton({ product }) {
+  if (!product?.affiliateUrl || product.affiliateUrl === "#") return null;
 
   return (
     <a
-      href={href}
+      href={product.affiliateUrl}
       target="_blank"
-      rel="noreferrer sponsored"
+      rel="noreferrer"
       className="btn btn-primary product-btn"
-      onClick={handleClick}
+      onClick={() => trackAffiliateClick(product)}
     >
-      {label}
+      Bekijk beste prijs bij Amazon
     </a>
   );
 }
