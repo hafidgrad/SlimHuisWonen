@@ -7,6 +7,7 @@ import Products from "@/components/Products";
 import Tips from "@/components/Tips";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
