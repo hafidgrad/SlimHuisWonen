@@ -47,10 +47,16 @@ export default function TipsPage() {
               </Link>
             </article>
 
-            <article className="article-card muted">
-              <h2>Beginnen met smart home in 5 stappen</h2>
-              <p>Artikel komt binnenkort</p>
-            </article>
+            <article className="tip-card">
+  <h2>Beginnen met smart home in 5 stappen</h2>
+  <p>
+    We nemen je stap voor stap mee: van eerste slimme lamp tot
+    automatiseringen zonder gedoe.
+  </p>
+  <Link href="/tips/beginnen-met-smart-home" className="tip-link">
+    Lees artikel →
+  </Link>
+</article>
 
             <article className="article-card muted">
               <h2>Wat is een smart home hub?</h2>
