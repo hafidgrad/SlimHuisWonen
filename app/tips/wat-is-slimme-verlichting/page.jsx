@@ -3,9 +3,9 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Wat is slimme verlichting? Uitleg voor beginners",
+  title: "Wat is slimme verlichting? (uitleg voor beginners)",
   description:
-    "Wat is slimme verlichting en wat kun je ermee? Ontdek hoe het werkt, wat je nodig hebt en of het iets voor jou is.",
+    "Wat is slimme verlichting en wat kun je ermee? We leggen het eenvoudig uit en helpen je bepalen of het iets voor jou is.",
   alternates: {
     canonical: "https://slimhuiswonen.nl/tips/wat-is-slimme-verlichting",
   },
@@ -21,83 +21,113 @@ export default function WatIsSlimmeVerlichting() {
           <h1>Wat is slimme verlichting?</h1>
 
           <p className="section-intro">
-            Slimme verlichting zijn lampen die je kunt bedienen via een app,
-            automatiseringen of spraakassistent. In dit artikel leggen we
-            duidelijk uit wat het is, hoe het werkt en of het iets voor jou is.
+            Slimme verlichting zijn lampen of stekkers die je kunt bedienen via
+            een app, afstandsbediening of automatiseringen. Je hebt geen
+            technische kennis nodig om te starten.
           </p>
 
-          <h2>Wat maakt verlichting ‘slim’?</h2>
+          <h2>Wat maakt verlichting “slim”?</h2>
+
           <p>
-            Een slimme lamp is verbonden met wifi of een hub. Hierdoor kun je
-            de lamp bedienen zonder fysieke schakelaar.
+            Slimme verlichting werkt niet alleen met een schakelaar, maar ook
+            via software. Hierdoor kun je:
           </p>
 
           <ul>
-            <li>Aan- en uitzetten via app</li>
-            <li>Dimmen en kleuren aanpassen</li>
-            <li>Schema’s en timers instellen</li>
-            <li>Automatiseren met sensoren</li>
+            <li>Lampen aan- en uitzetten via je telefoon</li>
+            <li>Tijdschema’s instellen</li>
+            <li>Automatisch reageren op beweging</li>
+            <li>Sfeer aanpassen met dimmen of kleuren</li>
           </ul>
+
+          <h2>Wat is het verschil met gewone verlichting?</h2>
+
+          <p>
+            Bij gewone verlichting gebruik je alleen een schakelaar. Slimme
+            verlichting geeft je extra mogelijkheden:
+          </p>
+
+          <ul>
+            <li>Bediening op afstand</li>
+            <li>Automatische routines</li>
+            <li>Koppeling met andere slimme apparaten</li>
+          </ul>
+
+          <h2>Slimme lamp of slimme stekker?</h2>
+
+          <p>
+            Je kunt verlichting op twee manieren slim maken:
+          </p>
+
+          <ul>
+            <li>
+              <strong>Slimme lamp</strong> – de lamp zelf is slim (bijvoorbeeld
+              Philips Hue)
+            </li>
+            <li>
+              <strong>Slimme stekker</strong> – maakt een gewone lamp slim
+            </li>
+          </ul>
+
+          <p>
+            Een slimme stekker is vaak goedkoper en ideaal om mee te beginnen.
+          </p>
 
           <h2>Heb je een hub nodig?</h2>
+
           <p>
-            Dat hangt af van het systeem dat je kiest. Sommige slimme lampen
-            werken direct via wifi, andere gebruiken een hub.
+            Sommige systemen werken met een hub, andere niet.
           </p>
 
           <ul>
             <li>
-              <strong>Zonder hub:</strong> eenvoudiger, ideaal voor beginners
+              <strong>Zonder hub</strong> – werkt direct via wifi (bijv.
+              TP-Link Tapo)
             </li>
             <li>
-              <strong>Met hub:</strong> stabieler en beter voor automatiseringen
+              <strong>Met hub</strong> – stabieler en beter voor uitbreiding
+              (bijv. Philips Hue, Aqara)
             </li>
           </ul>
 
           <p>
-            Twijfel je? Lees dan ook:
-            {" "}
+            Wil je hier meer over weten?{" "}
             <Link href="/tips/slim-huis-zonder-hub">
-              Slim huis zonder hub – kan dat?
+              Lees ons artikel over een slim huis zonder hub
             </Link>
+            .
           </p>
-
-          <h2>Wat kun je ermee in huis?</h2>
-          <p>
-            Slimme verlichting wordt vaak gebruikt voor comfort en sfeer, maar
-            ook voor veiligheid.
-          </p>
-
-          <ul>
-            <li>Automatisch licht bij thuiskomen</li>
-            <li>Sfeerverlichting in de avond</li>
-            <li>Lampen laten aangaan bij beweging</li>
-            <li>Simulatie van aanwezigheid</li>
-          </ul>
 
           <h2>Voor wie is slimme verlichting geschikt?</h2>
+
+          <p>Slimme verlichting is ideaal als je:</p>
+
+          <ul>
+            <li>Meer comfort wilt</li>
+            <li>Energie wilt besparen</li>
+            <li>Sfeer belangrijk vindt</li>
+            <li>Langzaam wilt uitbreiden naar een slim huis</li>
+          </ul>
+
+          <h2>Hoe begin je met slimme verlichting?</h2>
+
           <p>
-            Slimme verlichting is geschikt voor vrijwel iedereen. Je kunt klein
-            beginnen en later uitbreiden.
+            Als je nu weet wat slimme verlichting is, is de volgende stap
+            eenvoudig starten.
           </p>
 
           <p>
-            Wil je weten hoe je het beste start? Lees dan:
-            {" "}
+            👉{" "}
             <Link href="/tips/beginnen-met-slimme-verlichting">
-              Beginnen met slimme verlichting (stap-voor-stap)
+              Bekijk ons stappenplan voor beginners
             </Link>
           </p>
 
-          <h2>Conclusie</h2>
-          <p>
-            Slimme verlichting is één van de makkelijkste en meest zichtbare
-            manieren om je huis slimmer te maken.
-          </p>
+          <hr />
 
-          <p>
-            Het werkt intuïtief, is betaalbaar en direct merkbaar in dagelijks
-            gebruik.
+          <p className="muted small">
+            Slimme verlichting is vaak de eerste stap naar een compleet slim
+            huis.
           </p>
         </div>
       </main>
