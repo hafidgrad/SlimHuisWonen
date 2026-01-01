@@ -27,46 +27,79 @@ export default function BeginnenMetSlimmeVerlichting() {
             begint – zonder technische kennis.
           </p>
 
-          <h2>Stap 1: Kies het juiste systeem</h2>
+          <h2>Welke slimme verlichting past bij jou?</h2>
+
           <p>
-            Er zijn grofweg twee keuzes:
+            Slimme verlichting is er in verschillende soorten. De juiste keuze
+            hangt af van wat je belangrijk vindt: gemak, sfeer of automatisering.
           </p>
+
           <ul>
             <li>
-              <strong>Zonder hub</strong> – bijvoorbeeld TP-Link Tapo (werkt via
-              wifi)
+              <strong>Alleen aan/uit en timers</strong> – een wifi-lamp of slimme
+              stekker is vaak al genoeg
             </li>
             <li>
-              <strong>Met hub</strong> – zoals Philips Hue (stabieler en
-              uitgebreider)
+              <strong>Sfeer en kleur</strong> – kies voor slimme lampen met wit-
+              en kleurinstellingen
+            </li>
+            <li>
+              <strong>Automatiseringen</strong> – combineer verlichting met
+              sensoren
             </li>
           </ul>
 
-          <h2>Stap 2: Begin klein</h2>
+          <h2>Stap-voor-stap starten met slimme verlichting</h2>
+
+          <ol>
+            <li>Kies een ruimte (bijvoorbeeld de woonkamer of slaapkamer)</li>
+            <li>Bepaal wat je wilt: sfeer, automatisering of gemak</li>
+            <li>
+              Begin met één product, zoals een starterkit of slimme stekker
+            </li>
+            <li>Installeer de app en test scenario’s</li>
+            <li>Breid pas uit als je weet wat je mist</li>
+          </ol>
+
+          <h2>Uitbreiden zonder opnieuw te beginnen</h2>
+
           <p>
-            Je hoeft niet meteen je hele huis slim te maken. Begin met één kamer,
-            zoals de woonkamer of slaapkamer.
+            Het mooie van slimme verlichting is dat je klein kunt beginnen en
+            later kunt uitbreiden.
           </p>
 
-          <h2>Stap 3: Installeer de app</h2>
+          <ul>
+            <li>Bewegingssensoren voor automatische verlichting</li>
+            <li>Slimme stekkers voor staande lampen</li>
+            <li>Schema’s voor ochtend- en avondroutines</li>
+          </ul>
+
+          <h2>Veelgemaakte fouten bij slimme verlichting</h2>
+
           <p>
-            Download de bijbehorende app en volg de stappen om je lampen toe te
-            voegen. Dit duurt meestal maar een paar minuten.
+            Beginners maken vaak dezelfde fouten. Door deze te vermijden bespaar
+            je geld én frustratie.
           </p>
 
-          <h2>Stap 4: Maak schema’s en scènes</h2>
-          <p>
-            Stel automatische tijden in of maak scènes aan zoals “avond”,
-            “film” of “ontspannen”.
-          </p>
+          <ul>
+            <li>
+              <strong>Alles tegelijk willen</strong> – begin met één kamer
+            </li>
+            <li>
+              <strong>Schakelaars vergeten</strong> – slimme lampen werken niet
+              als de stroom eraf is
+            </li>
+            <li>
+              <strong>Geen rekening houden met uitbreiding</strong>
+            </li>
+          </ul>
 
-          <h2>Stap 5: Koppel aan spraakassistenten</h2>
           <p>
-            Slimme verlichting werkt vaak samen met Google Assistant, Alexa of
-            Siri. Zo bedien je alles met je stem.
+            Tip: test eerst één slimme lamp voordat je het hele huis aanpast.
           </p>
 
           <h2>Aanbevolen producten om te starten</h2>
+
           <ul>
             <li>
               <Link href="/producten/philips-hue-white-ambiance-starterkit">
@@ -75,7 +108,35 @@ export default function BeginnenMetSlimmeVerlichting() {
             </li>
             <li>
               <Link href="/producten/tp-link-tapo-p110-slimme-stekker">
-                TP-Link Tapo slimme producten
+                TP-Link Tapo slimme stekker
+              </Link>
+            </li>
+          </ul>
+
+          <h2>Conclusie</h2>
+
+          <p>
+            Slimme verlichting is één van de beste manieren om te starten met
+            een slim huis. Het is betaalbaar, zichtbaar en direct handig.
+          </p>
+
+          <p>
+            Begin klein, leer wat je gebruikt en breid daarna uit.
+          </p>
+
+          <hr />
+
+          <p className="muted small">Bekijk ook:</p>
+
+          <ul className="muted small">
+            <li>
+              <Link href="/tips/wat-is-slimme-verlichting">
+                Wat is slimme verlichting?
+              </Link>
+            </li>
+            <li>
+              <Link href="/tips/slim-huis-zonder-hub">
+                Slim huis zonder hub: kan dat?
               </Link>
             </li>
           </ul>
