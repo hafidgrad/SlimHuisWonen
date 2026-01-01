@@ -54,9 +54,7 @@ export default function BeginnenMetSlimmeVerlichting() {
           <ol>
             <li>Kies een ruimte (bijvoorbeeld de woonkamer of slaapkamer)</li>
             <li>Bepaal wat je wilt: sfeer, automatisering of gemak</li>
-            <li>
-              Begin met één product, zoals een starterkit of slimme stekker
-            </li>
+            <li>Begin met één product, zoals een starterkit of slimme stekker</li>
             <li>Installeer de app en test scenario’s</li>
             <li>Breid pas uit als je weet wat je mist</li>
           </ol>
@@ -113,15 +111,28 @@ export default function BeginnenMetSlimmeVerlichting() {
             </li>
           </ul>
 
-          <h2>Conclusie</h2>
+          <h2>Wat kost slimme verlichting?</h2>
 
           <p>
-            Slimme verlichting is één van de beste manieren om te starten met
-            een slim huis. Het is betaalbaar, zichtbaar en direct handig.
+            Slimme verlichting hoeft niet duur te zijn. Je bepaalt zelf hoe groot
+            je start.
+          </p>
+
+          <ul>
+            <li>Losse slimme lamp: €10 – €30</li>
+            <li>Slimme stekker: €8 – €20</li>
+            <li>Starterkit met hub: €80 – €150</li>
+          </ul>
+
+          <p>
+            Begin klein en breid alleen uit als je merkt dat je het gebruikt.
           </p>
 
           <p>
-            Begin klein, leer wat je gebruikt en breid daarna uit.
+            Weet je nog niet precies wat slimme verlichting is?{" "}
+            <Link href="/tips/wat-is-slimme-verlichting">
+              Lees hier wat slimme verlichting precies inhoudt
+            </Link>.
           </p>
 
           <hr />
@@ -143,6 +154,11 @@ export default function BeginnenMetSlimmeVerlichting() {
 
           <p className="muted small">
             *Prijzen kunnen wijzigen. Bekijk actuele prijs bij Amazon.
+          </p>
+
+          <p className="muted small">
+            Bekijk onze aanbevolen producten per categorie om rustig te
+            vergelijken welke slimme verlichting bij jouw huis past.
           </p>
         </div>
       </main>

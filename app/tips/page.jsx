@@ -3,12 +3,9 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Tips & Uitleg voor een Slim Huis",
+  title: "Tips & uitleg | SlimHuisWonen",
   description:
-    "Praktische tips, uitleg en handleidingen om je huis slimmer te maken met verlichting, sensoren en automatiseringen.",
-  alternates: {
-    canonical: "https://slimhuiswonen.nl/tips",
-  },
+    "Praktische tips en uitleg over slimme verlichting, smart home en automatiseringen.",
 };
 
 export default function TipsPage() {
@@ -19,32 +16,54 @@ export default function TipsPage() {
       <main className="section">
         <div className="container">
           <h1>Tips & uitleg</h1>
+
           <p className="section-intro">
-            Duidelijke uitleg en praktische tips om je huis slimmer te maken.
-            Geschikt voor beginners én gevorderden.
+            Praktische gidsen om slim te starten met smart home — duidelijk,
+            onafhankelijk en stap voor stap.
           </p>
 
-          <ul className="tips-list">
-            <li>
-              <Link href="/tips/wat-is-slimme-verlichting">
-                Wat is slimme verlichting en hoe werkt het?
+          <div className="article-grid">
+            {/* Artikel 1 */}
+            <article className="article-card">
+              <h2>Beginnen met slimme verlichting (stap-voor-stap)</h2>
+              <p>
+                Van je eerste slimme lamp tot automatiseringen. Perfect voor
+                beginners zonder technische kennis.
+              </p>
+              <Link
+                href="/tips/beginnen-met-slimme-verlichting"
+                className="article-link"
+              >
+                Lees artikel →
               </Link>
-            </li>
-            <li>
-              <Link href="/tips/beste-sensoren-voor-beveiliging">
-                Welke sensoren zijn het beste voor beveiliging?
-              </Link>
-            </li>
-            <li>
-              <Link href="/tips/smart-home-beginnen">
-                Beginnen met een slim huis: dit heb je nodig
-              </Link>
-            </li>
-          </ul>
+            </article>
 
-          <p className="muted small">
-            Meer artikelen volgen binnenkort.
-          </p>
+            {/* Artikel 2 */}
+            <article className="article-card">
+              <h2>Wat is slimme verlichting?</h2>
+              <p>
+                Wat maakt verlichting ‘slim’, wat heb je nodig en wat kun je
+                ermee?
+              </p>
+              <Link
+                href="/tips/wat-is-slimme-verlichting"
+                className="article-link"
+              >
+                Lees artikel →
+              </Link>
+            </article>
+
+            {/* Placeholder */}
+            <article className="article-card muted">
+              <h2>Wat is een smart home hub?</h2>
+              <p>Artikel komt binnenkort.</p>
+            </article>
+
+            <article className="article-card muted">
+              <h2>Merken combineren zonder gedoe</h2>
+              <p>Artikel komt binnenkort.</p>
+            </article>
+          </div>
         </div>
       </main>
 
