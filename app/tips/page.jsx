@@ -58,6 +58,16 @@ export default function TipsPage() {
   </Link>
 </article>
 
+<article className="tip-card">
+  <h2>Merken combineren zonder gedoe</h2>
+  <p>
+    Philips Hue, Ikea, Aqara, Nest en meer: zo laat je alles netjes samenwerken.
+  </p>
+  <Link href="/tips/merken-combineren-zonder-gedoe" className="tip-link">
+    Lees artikel →
+  </Link>
+</article>
+
             <article className="article-card muted">
               <h2>Wat is een smart home hub?</h2>
               <p>Artikel komt binnenkort</p>
