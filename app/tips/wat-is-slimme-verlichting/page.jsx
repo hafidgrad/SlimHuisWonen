@@ -87,7 +87,7 @@ export default function WatIsSlimmeVerlichting() {
           <h2>Nadelen om rekening mee te houden</h2>
 
           <ul>
-            <li>Duuder dan standaard lampen</li>
+            <li>Duurder dan standaard lampen</li>
             <li>Werkt minder goed als de stroom uit staat</li>
             <li>Even instellen kost tijd</li>
           </ul>
@@ -132,8 +132,11 @@ export default function WatIsSlimmeVerlichting() {
             Wil je weten hoe je het beste start?
             {" "}
             <Link href="/tips/beginnen-met-slimme-verlichting">
-              Lees onze stap-voor-stap handleiding
-            </Link>.
+  Beginnen met slimme verlichting (stap-voor-stap)
+</Link>
+<Link href="/tips">
+  Bekijk alle tips & uitleg
+</Link>
           </p>
 
           <hr />
