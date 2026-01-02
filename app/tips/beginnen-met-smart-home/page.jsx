@@ -130,7 +130,18 @@ export default function BeginnenMetSmartHome() {
               Bekijk onze stap-voor-stap gids voor slimme verlichting
             </Link>.
           </p>
-
+<ul>
+  <li>
+    <Link href="/tips/merken-combineren-zonder-gedoe">
+      Merken combineren zonder gedoe
+    </Link>
+  </li>
+  <li>
+    <Link href="/tips/wat-is-een-smart-home-hub">
+      Wat is een smart home hub?
+    </Link>
+  </li>
+</ul>
           <hr />
 
           <p className="muted small">
