@@ -3,15 +3,15 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Merken combineren zonder gedoe (Hue, Aqara, Tapo, Nest) | SlimHuisWonen",
+  title: "Merken combineren zonder gedoe",
   description:
-    "Philips Hue, Aqara, TP-Link Tapo en Google Nest combineren? Zo voorkom je chaos: kies je basis, ga voor Matter, gebruik Zigbee waar slim is en houd je automatiseringen overzichtelijk.",
+    "Philips Hue, Ikea, Aqara, Tapo en meer combineren? Zo laat je verschillende smart home merken probleemloos samenwerken.",
   alternates: {
     canonical: "https://slimhuiswonen.nl/tips/merken-combineren-zonder-gedoe",
   },
 };
 
-export default function MerkenCombinerenZonderGedoePage() {
+export default function MerkenCombinerenZonderGedoe() {
   return (
     <>
       <Header />
@@ -21,153 +21,136 @@ export default function MerkenCombinerenZonderGedoePage() {
           <h1>Merken combineren zonder gedoe</h1>
 
           <p className="section-intro">
-            Philips Hue, Aqara, TP-Link Tapo, Google Nest… het kan perfect samen
-            werken — als je een paar simpele keuzes maakt. In dit artikel leer je
-            hoe je merken mixt zonder dubbele apps, vreemde vertragingen of
-            automatiseringen die “soms wel / soms niet” werken.
+            Veel mensen denken dat je vastzit aan één smart home merk. Gelukkig
+            is dat niet zo. In dit artikel leggen we uit hoe je verschillende
+            merken slim combineert – zonder frustratie.
           </p>
 
-          <h2>De grootste valkuil: te veel “mini-systemen”</h2>
+          <h2>Waarom meerdere merken combineren?</h2>
+
           <p>
-            Veel beginners eindigen met meerdere eilandjes: Hue in de Hue-app,
-            Aqara in Aqara, Tapo in Tapo, Nest in Google Home. Het werkt… maar je
-            mist het voordeel van een smart home: alles reageert als één systeem.
+            Elk merk is ergens goed in. Door slim te combineren krijg je het
+            beste van alles.
           </p>
+
+          <ul>
+            <li>Philips Hue → top in verlichting</li>
+            <li>Aqara → sterke sensoren en automatiseringen</li>
+            <li>TP-Link Tapo → betaalbaar en eenvoudig</li>
+            <li>IKEA Tradfri → goede prijs-kwaliteit</li>
+          </ul>
+
+          <h2>De grootste valkuil: alles los gebruiken</h2>
+
           <p>
-            De oplossing is simpel: <strong>kies één plek waar je automatiseringen leven</strong>.
-            Dat kan een hub zijn (bijv. Homey / Home Assistant) of een platform (bijv. Apple Home / Google Home),
-            maar kies er één als “brein”.
+            Het probleem ontstaat wanneer elk merk zijn eigen app blijft
+            gebruiken. Dan krijg je:
           </p>
 
-          <h2>Stap 1: Kies je “brein” (één centrale plek)</h2>
           <ul>
-            <li>
-              <strong>Beste voor gemak:</strong> één centrale hub/app waar al je automatiseringen staan.
-            </li>
-            <li>
-              <strong>Beste voor flexibiliteit:</strong> hub die veel protocollen ondersteunt (Zigbee/Matter/Thread/Wi-Fi).
-            </li>
-            <li>
-              <strong>Beste voor “alleen basics”:</strong> platform zoals Google Home (maar let op: niet alles kan even diep).
-            </li>
+            <li>Te veel apps</li>
+            <li>Geen gezamenlijke automatiseringen</li>
+            <li>Meer onderhoud en verwarring</li>
           </ul>
 
-          <h2>Stap 2: Begrijp de 3 soorten verbindingen</h2>
-          <p>Bij bijna alle smart home merken kom je deze tegen:</p>
-          <ul>
-            <li>
-              <strong>Wi-Fi</strong> (bijv. veel Tapo-producten): makkelijk, maar kan je wifi-netwerk druk maken.
-            </li>
-            <li>
-              <strong>Zigbee</strong> (bijv. Aqara sensoren, Hue lampen via Bridge): stabiel, zuinig en vaak snel.
-            </li>
-            <li>
-              <strong>Matter / Thread</strong> (nieuwer): bedoeld om merken makkelijker te combineren met minder gedoe.
-            </li>
-          </ul>
-
-          <h2>Stap 3: Gebruik Matter waar het kan (maar forceer het niet)</h2>
           <p>
-            Matter is gemaakt om merken beter te laten samenwerken. Als je een apparaat
-            hebt met Matter-ondersteuning, is dat vaak een fijne keuze voor de toekomst.
-          </p>
-          <p className="muted small">
-            Tip: als iets al perfect werkt via Zigbee (zoals sensoren), dan is dat vaak al “goed genoeg”.
+            De oplossing? Eén centrale plek waar alles samenkomt.
           </p>
 
-          <h2>Stap 4: Houd sensoren en automatiseringen dicht bij elkaar</h2>
+          <h2>Oplossing 1: Werken zonder hub</h2>
+
           <p>
-            Voor snelheid wil je dat “sensor → lamp aan” zo direct mogelijk gaat.
-            Sensoren (zoals Aqara) zijn vaak Zigbee en reageren supersnel. Als je die
-            koppelt aan verlichting (Hue of slimme stekker) via één centraal brein,
-            krijg je snelle en betrouwbare automations.
+            Sommige mensen kiezen ervoor om zonder hub te werken. Dat kan prima
+            als je het simpel houdt.
           </p>
 
-          <h2>Praktische setup’s die bijna altijd goed werken</h2>
-
-          <h3>Setup A: Hue voor verlichting + Aqara voor sensoren</h3>
           <ul>
-            <li>Hue lampen via Hue Bridge</li>
-            <li>Aqara sensoren via Zigbee (via je centrale hub/bridge)</li>
-            <li>Automatiseringen in één plek</li>
+            <li>Wifi-producten (zoals Tapo)</li>
+            <li>Automatiseringen binnen één merk</li>
+            <li>Bediening via Google Assistant of Alexa</li>
           </ul>
 
-          <h3>Setup B: Tapo (Wi-Fi) voor stekkers + Aqara voor sensoren</h3>
+          <p>
+            Dit is vooral geschikt voor beginners.{" "}
+            <Link href="/tips/slim-huis-zonder-hub">
+              Lees hier wanneer een hub niet nodig is
+            </Link>.
+          </p>
+
+          <h2>Oplossing 2: Alles samenbrengen met een hub</h2>
+
+          <p>
+            Wil je merken écht combineren? Dan is een hub de beste keuze. Een
+            hub zorgt ervoor dat apparaten van verschillende merken met elkaar
+            kunnen samenwerken.
+          </p>
+
           <ul>
-            <li>Tapo stekkers voor eenvoudige aan/uit en energie-inzicht</li>
-            <li>Aqara sensoren voor beweging/deur/raam/temperatuur</li>
-            <li>Automatiseringen centraal (niet verspreid over apps)</li>
+            <li>Licht aan als een Aqara sensor beweging ziet</li>
+            <li>Alles uit bij het verlaten van huis</li>
+            <li>Merken combineren in één automatisering</li>
           </ul>
 
-          <h3>Setup C: Nest voor verwarming + Hue voor sfeer</h3>
+          <p>
+            Bekende hubs zijn Homey, Home Assistant en SmartThings.{" "}
+            <Link href="/tips/wat-is-een-smart-home-hub">
+              Lees hier wat een smart home hub is
+            </Link>.
+          </p>
+
+          <h2>Voorbeeld: slim combineren in de praktijk</h2>
+
+          <p>
+            Stel je voor:
+          </p>
+
           <ul>
-            <li>Nest voor temperatuur en schema’s</li>
-            <li>Hue voor verlichting en scènes</li>
-            <li>Automatiseringen centraal (bijv. “weg van huis” = verwarming lager + lichten uit)</li>
+            <li>Philips Hue lampen in de woonkamer</li>
+            <li>Aqara bewegingssensor in de gang</li>
+            <li>TP-Link Tapo stekker voor een staande lamp</li>
           </ul>
 
-          <h2>Veelgemaakte fouten (en hoe je ze voorkomt)</h2>
+          <p>
+            Met een hub kun je instellen:
+          </p>
+
           <ul>
-            <li>
-              <strong>Alles in losse apps laten staan</strong> → kies één “brein” voor automatiseringen.
-            </li>
-            <li>
-              <strong>Te veel Wi-Fi apparaten</strong> → gebruik Zigbee voor sensoren waar mogelijk.
-            </li>
-            <li>
-              <strong>Automatiseringen dubbel maken</strong> → één versie is genoeg (anders krijg je rare loops).
-            </li>
-            <li>
-              <strong>Schakelaars vergeten</strong> → slimme lampen werken niet als iemand de stroom uitzet.
-            </li>
+            <li>Beweging → Hue lampen aan</li>
+            <li>Na 10 minuten geen beweging → alles uit</li>
+            <li>Avond → warme lichtkleur</li>
           </ul>
 
-          <h2>Aanbevolen producten (begin simpel)</h2>
+          <h2>Wanneer merken combineren géén goed idee is</h2>
+
+          <p>
+            Soms is het slimmer om bij één merk te blijven:
+          </p>
+
           <ul>
-            <li>
-              <Link href="/producten/philips-hue-white-ambiance-starterkit">
-                Philips Hue White Ambiance Starterkit
-              </Link>
-            </li>
-            <li>
-              <Link href="/producten/aqara-deur-raamsensor">
-                Aqara Deur- &amp; Raamsensor
-              </Link>
-            </li>
-            <li>
-              <Link href="/producten/aqara-bewegingssensor">
-                Aqara Bewegingssensor
-              </Link>
-            </li>
-            <li>
-              <Link href="/producten/tp-link-tapo-p110-slimme-stekker">
-                TP-Link Tapo P110 Slimme Stekker (energiemeting)
-              </Link>
-            </li>
-            <li>
-              <Link href="/producten/nest-learning-thermostaat">
-                Google Nest Thermostaat
-              </Link>
-            </li>
+            <li>Als je alleen verlichting wilt</li>
+            <li>Als je geen automatiseringen gebruikt</li>
+            <li>Als eenvoud belangrijker is dan flexibiliteit</li>
           </ul>
+
+          <h2>Conclusie</h2>
+
+          <p>
+            Merken combineren hoeft geen gedoe te zijn. Begin simpel, kies een
+            duidelijke basis en breid alleen uit als je weet wat je wilt.
+          </p>
+
+          <p>
+            Twijfel je waar je moet beginnen?{" "}
+            <Link href="/tips/beginnen-met-smart-home">
+              Bekijk onze 5 stappen om met smart home te starten
+            </Link>.
+          </p>
 
           <hr />
 
-          <p className="muted small">Bekijk ook:</p>
-          <ul className="muted small">
-            <li>
-              <Link href="/tips/wat-is-slimme-verlichting">Wat is slimme verlichting?</Link>
-            </li>
-            <li>
-              <Link href="/tips/beginnen-met-slimme-verlichting">Beginnen met slimme verlichting</Link>
-            </li>
-            <li>
-              <Link href="/tips/slim-huis-zonder-hub">Slim huis zonder hub: kan dat?</Link>
-            </li>
-          </ul>
-
           <p className="muted small">
-            *Prijzen kunnen wijzigen. Bekijk actuele prijs bij Amazon.
+            *Voorbeelden zijn gebaseerd op populaire merken en veelgebruikte
+            scenario’s.
           </p>
         </div>
       </main>
