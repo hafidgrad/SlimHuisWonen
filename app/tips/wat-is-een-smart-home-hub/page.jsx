@@ -3,15 +3,15 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Wat is een smart home hub?",
+  title: "Wat is een smart home hub? Uitleg & voorbeelden",
   description:
-    "Wat is een smart home hub en heb je er één nodig? We leggen het simpel uit, met voorbeelden en tips.",
+    "Wat is een smart home hub en heb je er één nodig? We leggen uit wat een hub doet, wanneer je hem nodig hebt en welke alternatieven er zijn.",
   alternates: {
     canonical: "https://slimhuiswonen.nl/tips/wat-is-een-smart-home-hub",
   },
 };
 
-export default function WatIsSmartHomeHub() {
+export default function WatIsEenSmartHomeHub() {
   return (
     <>
       <Header />
@@ -21,91 +21,130 @@ export default function WatIsSmartHomeHub() {
           <h1>Wat is een smart home hub?</h1>
 
           <p className="section-intro">
-            Een smart home hub is het centrale brein van je slimme huis.
-            Maar heb je er écht één nodig? In dit artikel leggen we het
-            eenvoudig uit.
+            Een smart home hub is het centrale punt van je slimme huis.
+            Het zorgt ervoor dat slimme apparaten met elkaar kunnen samenwerken,
+            ook als ze van verschillende merken zijn.
           </p>
 
-          <h2>Wat doet een smart home hub?</h2>
+          <h2>Wat doet een smart home hub precies?</h2>
 
           <p>
-            Een smart home hub verbindt verschillende slimme apparaten met
-            elkaar, zodat ze samen kunnen werken — ook als ze van
-            verschillende merken zijn.
+            Zonder hub werkt elk slim apparaat meestal in zijn eigen app.
+            Met een hub kun je alles vanuit één systeem aansturen.
           </p>
 
           <ul>
-            <li>Verbindt lampen, sensoren en schakelaars</li>
+            <li>Verbindt apparaten van verschillende merken</li>
             <li>Maakt automatiseringen mogelijk</li>
-            <li>Zorgt voor stabiele communicatie</li>
+            <li>Werkt vaak sneller en stabieler dan wifi</li>
+            <li>Vermindert afhankelijkheid van cloud-diensten</li>
           </ul>
 
-          <h2>Voorbeelden van smart home hubs</h2>
+          <h2>Wanneer heb je een hub nodig?</h2>
+
+          <p>
+            Je hebt niet altijd een hub nodig. Het hangt af van wat je wilt.
+          </p>
+
+          <ul>
+            <li>❌ Alleen één slimme lamp → geen hub nodig</li>
+            <li>❌ Een paar wifi-apparaten → meestal geen hub</li>
+            <li>✅ Meerdere merken combineren → hub sterk aan te raden</li>
+            <li>✅ Automatiseringen met sensoren → hub bijna onmisbaar</li>
+          </ul>
+
+          <h2>Welke soorten hubs zijn er?</h2>
+
+          <h3>1. Merkgebonden hubs</h3>
+          <p>
+            Sommige merken hebben hun eigen hub, zoals Philips Hue.
+            Deze werken perfect binnen het eigen ecosysteem, maar minder goed
+            met andere merken.
+          </p>
+
+          <h3>2. Universele hubs</h3>
+          <p>
+            Universele hubs ondersteunen meerdere merken en protocollen.
+            Ze zijn ideaal als je wilt combineren zonder gedoe.
+          </p>
 
           <ul>
             <li>Homey</li>
-            <li>Samsung SmartThings</li>
-            <li>Aqara Hub</li>
-            <li>Philips Hue Bridge</li>
+            <li>Home Assistant</li>
+            <li>Apple HomeKit (beperkter)</li>
           </ul>
 
-          <h2>Heb je altijd een hub nodig?</h2>
+          <h2>Welke technieken gebruikt een hub?</h2>
 
           <p>
-            Nee. Veel slimme apparaten werken ook zonder hub, via wifi.
-            Denk aan slimme stekkers of wifi-lampen.
+            Veel hubs werken met speciale protocollen die beter zijn dan wifi
+            voor smart home.
+          </p>
+
+          <ul>
+            <li>Zigbee – stabiel en energiezuinig</li>
+            <li>Z-Wave – betrouwbaar, maar minder merken</li>
+            <li>Thread – nieuw en veelbelovend</li>
+          </ul>
+
+          <h2>Hub vs. geen hub: wat is beter?</h2>
+
+          <p>
+            Er is geen goed of fout. Het hangt af van je wensen.
           </p>
 
           <p>
-            Wil je echter automatiseringen maken of meerdere merken
-            combineren, dan is een hub vaak slimmer.
-          </p>
-
-          <p>
+            👉 Lees ook:{" "}
             <Link href="/tips/slim-huis-zonder-hub">
-              Lees hier wanneer je géén hub nodig hebt →
+              Slim huis zonder hub: kan dat?
             </Link>
           </p>
 
-          <h2>Wanneer is een hub wél aan te raden?</h2>
+          <h2>Praktisch voorbeeld</h2>
+
+          <p>
+            Je combineert:
+          </p>
 
           <ul>
-            <li>Je wilt merken combineren</li>
-            <li>Je gebruikt veel sensoren</li>
-            <li>Je wilt stabiele automatiseringen</li>
-            <li>Je wilt minder wifi-belasting</li>
+            <li>Philips Hue lampen</li>
+            <li>Aqara bewegingssensor</li>
+            <li>Eén centrale hub</li>
           </ul>
+
+          <p>
+            Resultaat: bij beweging gaat automatisch het licht aan,
+            zonder vertraging en zonder meerdere apps.
+          </p>
 
           <h2>Conclusie</h2>
 
           <p>
             Een smart home hub is niet verplicht, maar maakt je slimme huis
-            wel krachtiger en overzichtelijker.
+            overzichtelijker, stabieler en krachtiger.
           </p>
 
           <p>
-            Begin klein — en voeg pas een hub toe als je merkt dat je
-            automatiseringen wilt uitbreiden.
+            Wil je weten hoe je slim begint?
+            {" "}
+            <Link href="/tips/beginnen-met-smart-home">
+              Beginnen met smart home in 5 stappen
+            </Link>
+          </p>
+
+          <p>
+            Of lees:
+            {" "}
+            <Link href="/tips/merken-combineren-zonder-gedoe">
+              Merken combineren zonder gedoe
+            </Link>
           </p>
 
           <hr />
 
           <p className="muted small">
-            Bekijk ook:
+            *Ondersteuning verschilt per merk en hub.
           </p>
-
-          <ul className="muted small">
-            <li>
-              <Link href="/tips/beginnen-met-smart-home">
-                Beginnen met smart home in 5 stappen
-              </Link>
-            </li>
-            <li>
-              <Link href="/tips/merken-combineren-zonder-gedoe">
-                Merken combineren zonder gedoe
-              </Link>
-            </li>
-          </ul>
         </div>
       </main>
 
