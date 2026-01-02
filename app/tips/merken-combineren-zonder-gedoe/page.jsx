@@ -3,11 +3,12 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Merken combineren zonder gedoe",
+  title: "Merken combineren zonder gedoe in je smart home",
   description:
-    "Philips Hue, Ikea, Aqara, Tapo en meer combineren? Zo laat je verschillende smart home merken probleemloos samenwerken.",
+    "Philips Hue, Ikea, Aqara, Nest en meer combineren? Zo laat je verschillende smart home merken probleemloos samenwerken.",
   alternates: {
-    canonical: "https://slimhuiswonen.nl/tips/merken-combineren-zonder-gedoe",
+    canonical:
+      "https://slimhuiswonen.nl/tips/merken-combineren-zonder-gedoe",
   },
 };
 
@@ -21,136 +22,134 @@ export default function MerkenCombinerenZonderGedoe() {
           <h1>Merken combineren zonder gedoe</h1>
 
           <p className="section-intro">
-            Veel mensen denken dat je vastzit aan één smart home merk. Gelukkig
-            is dat niet zo. In dit artikel leggen we uit hoe je verschillende
-            merken slim combineert – zonder frustratie.
+            Veel mensen denken dat je bij een smart home vastzit aan één merk.
+            Gelukkig is dat niet waar. In dit artikel leggen we uit hoe je
+            verschillende merken zoals Philips Hue, Ikea, Aqara en Google Nest
+            kunt combineren — zonder frustratie.
           </p>
 
-          <h2>Waarom meerdere merken combineren?</h2>
+          <h2>Waarom merken combineren?</h2>
 
           <p>
-            Elk merk is ergens goed in. Door slim te combineren krijg je het
-            beste van alles.
+            Elk merk heeft zijn eigen sterke punten. Door slim te combineren,
+            krijg je het beste van alles.
           </p>
 
           <ul>
             <li>Philips Hue → top in verlichting</li>
             <li>Aqara → sterke sensoren en automatiseringen</li>
-            <li>TP-Link Tapo → betaalbaar en eenvoudig</li>
-            <li>IKEA Tradfri → goede prijs-kwaliteit</li>
+            <li>Ikea → betaalbare slimme producten</li>
+            <li>Google Nest → gebruiksvriendelijke bediening</li>
           </ul>
 
-          <h2>De grootste valkuil: alles los gebruiken</h2>
+          <h2>De grootste valkuil bij combineren</h2>
 
           <p>
-            Het probleem ontstaat wanneer elk merk zijn eigen app blijft
-            gebruiken. Dan krijg je:
+            De grootste fout is willekeurig producten kopen zonder plan.
+            Verschillende apps, losse automatiseringen en niets dat samenwerkt.
+          </p>
+
+          <p>
+            Daarom is het belangrijk om vooraf na te denken over hoe alles met
+            elkaar communiceert.
+          </p>
+
+          <h2>Drie manieren om merken te combineren</h2>
+
+          <h3>1. Via één centrale app (zonder hub)</h3>
+
+          <p>
+            Sommige platforms kunnen meerdere merken aansturen zonder aparte
+            hub.
           </p>
 
           <ul>
-            <li>Te veel apps</li>
-            <li>Geen gezamenlijke automatiseringen</li>
-            <li>Meer onderhoud en verwarring</li>
+            <li>Google Home</li>
+            <li>Amazon Alexa</li>
+            <li>Apple Home</li>
           </ul>
 
           <p>
-            De oplossing? Eén centrale plek waar alles samenkomt.
-          </p>
-
-          <h2>Oplossing 1: Werken zonder hub</h2>
-
-          <p>
-            Sommige mensen kiezen ervoor om zonder hub te werken. Dat kan prima
-            als je het simpel houdt.
-          </p>
-
-          <ul>
-            <li>Wifi-producten (zoals Tapo)</li>
-            <li>Automatiseringen binnen één merk</li>
-            <li>Bediening via Google Assistant of Alexa</li>
-          </ul>
-
-          <p>
-            Dit is vooral geschikt voor beginners.{" "}
+            Dit is ideaal als je simpel wilt starten.
+            {" "}
             <Link href="/tips/slim-huis-zonder-hub">
               Lees hier wanneer een hub niet nodig is
             </Link>.
           </p>
 
-          <h2>Oplossing 2: Alles samenbrengen met een hub</h2>
+          <h3>2. Via een smart home hub</h3>
 
           <p>
-            Wil je merken écht combineren? Dan is een hub de beste keuze. Een
-            hub zorgt ervoor dat apparaten van verschillende merken met elkaar
-            kunnen samenwerken.
+            Een hub fungeert als het brein van je smart home en verbindt
+            verschillende merken met elkaar.
           </p>
 
           <ul>
-            <li>Licht aan als een Aqara sensor beweging ziet</li>
-            <li>Alles uit bij het verlaten van huis</li>
-            <li>Merken combineren in één automatisering</li>
+            <li>Homey</li>
+            <li>Home Assistant</li>
+            <li>SmartThings</li>
           </ul>
 
           <p>
-            Bekende hubs zijn Homey, Home Assistant en SmartThings.{" "}
-            <Link href="/tips/wat-is-een-smart-home-hub">
-              Lees hier wat een smart home hub is
-            </Link>.
+            Dit geeft de meeste vrijheid, maar vraagt iets meer instelling.
           </p>
 
-          <h2>Voorbeeld: slim combineren in de praktijk</h2>
+          <h3>3. Combineren binnen één ecosysteem</h3>
 
           <p>
-            Stel je voor:
+            Je kunt ook meerdere merken gebruiken die binnen één ecosysteem
+            samenwerken, zoals Zigbee.
           </p>
 
-          <ul>
-            <li>Philips Hue lampen in de woonkamer</li>
-            <li>Aqara bewegingssensor in de gang</li>
-            <li>TP-Link Tapo stekker voor een staande lamp</li>
-          </ul>
+          <p>
+            Bijvoorbeeld: Philips Hue lampen + Aqara sensoren via dezelfde hub.
+          </p>
+
+          <h2>Praktisch voorbeeld</h2>
+
+          <p>
+            Stel: je hebt Philips Hue lampen in de woonkamer en een Aqara
+            bewegingssensor in de hal.
+          </p>
 
           <p>
             Met een hub kun je instellen:
           </p>
 
           <ul>
-            <li>Beweging → Hue lampen aan</li>
-            <li>Na 10 minuten geen beweging → alles uit</li>
-            <li>Avond → warme lichtkleur</li>
+            <li>Beweging in de hal → Hue lampen aan</li>
+            <li>Geen beweging → lampen automatisch uit</li>
           </ul>
 
-          <h2>Wanneer merken combineren géén goed idee is</h2>
-
-          <p>
-            Soms is het slimmer om bij één merk te blijven:
-          </p>
+          <h2>Wat heb je minimaal nodig?</h2>
 
           <ul>
-            <li>Als je alleen verlichting wilt</li>
-            <li>Als je geen automatiseringen gebruikt</li>
-            <li>Als eenvoud belangrijker is dan flexibiliteit</li>
+            <li>Een duidelijke keuze voor bediening (app of hub)</li>
+            <li>Producten die hetzelfde protocol gebruiken (bijv. Zigbee)</li>
+            <li>Rustig beginnen en later uitbreiden</li>
           </ul>
 
           <h2>Conclusie</h2>
 
           <p>
-            Merken combineren hoeft geen gedoe te zijn. Begin simpel, kies een
-            duidelijke basis en breid alleen uit als je weet wat je wilt.
+            Merken combineren hoeft helemaal niet ingewikkeld te zijn. Door
+            vooraf na te denken over je setup en klein te beginnen, voorkom je
+            frustratie en haal je het maximale uit je smart home.
           </p>
 
           <p>
-            Twijfel je waar je moet beginnen?{" "}
+            Wil je eerst goed begrijpen hoe je start met een smart home?
+            {" "}
             <Link href="/tips/beginnen-met-smart-home">
-              Bekijk onze 5 stappen om met smart home te starten
+              Bekijk onze 5-stappen gids
             </Link>.
           </p>
 
           <hr />
 
           <p className="muted small">
-            *Voorbeelden zijn gebaseerd op populaire merken en veelgebruikte
-            scenario’s.
+            *Merken en compatibiliteit kunnen wijzigen. Controleer altijd de
+            actuele ondersteuning.
           </p>
         </div>
       </main>
