@@ -142,9 +142,13 @@ export default function BeginnenMetSlimmeVerlichting() {
               </Link>
             </li>
             <li>
-              <Link href="/tips/slim-huis-zonder-hub">
-                Slim huis zonder hub: kan dat?
-              </Link>
+              <Link href="/tips/wat-is-slimme-verlichting">
+  Wat is slimme verlichting?
+</Link>
+<Link href="/tips/beginnen-met-smart-home">
+  Beginnen met smart home in 5 stappen
+</Link>
+
             </li>
           </ul>
 
