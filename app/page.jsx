@@ -8,6 +8,31 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 
+/* ✅ Tips data (lokaal, bewust simpel) */
+const tips = [
+  {
+    slug: "beginnen-met-smart-home",
+    title: "Beginnen met smart home in 5 stappen",
+    description:
+      "We nemen je stap voor stap mee: van eerste lamp tot slimme scènes en automatiseringen.",
+    available: true,
+  },
+  {
+    slug: "merken-combineren-zonder-gedoe",
+    title: "Merken combineren zonder gedoe",
+    description:
+      "Philips Hue, Ikea, Aqara, Nest en meer: zo laat je alles netjes samenwerken.",
+    available: true,
+  },
+  {
+    slug: "wat-is-een-smart-home-hub",
+    title: "Wat is een smart home hub?",
+    description:
+      "We leggen uit wat een hub doet, welke merken er zijn en waar je op moet letten.",
+    available: false,
+  },
+];
+
 export default function HomePage() {
   return (
     <>
