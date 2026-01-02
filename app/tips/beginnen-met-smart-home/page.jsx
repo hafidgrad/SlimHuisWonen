@@ -30,18 +30,17 @@ export default function BeginnenMetSmartHome() {
 
           <p>
             De grootste fout die beginners maken is alles tegelijk willen.
-            Begin met één product en leer hoe het werkt.
+            Begin met één product en ontdek wat je echt handig vindt.
           </p>
 
           <ul>
             <li>Een slimme lamp</li>
             <li>Een slimme stekker</li>
-            <li>Een slimme sensor</li>
+            <li>Een eenvoudige sensor</li>
           </ul>
 
           <p>
-            Slimme verlichting is vaak de makkelijkste start.
-            {" "}
+            Slimme verlichting is vaak de makkelijkste start.{" "}
             <Link href="/tips/wat-is-slimme-verlichting">
               Lees hier wat slimme verlichting is
             </Link>.
@@ -50,31 +49,31 @@ export default function BeginnenMetSmartHome() {
           <h2>Stap 2: Kies één ecosysteem</h2>
 
           <p>
-            Elk smart home werkt met een app of platform. Door één ecosysteem
-            te kiezen voorkom je frustratie.
+            Elk smart home werkt met een app of platform. Door in het begin
+            één ecosysteem te kiezen, voorkom je frustratie en dubbel werk.
           </p>
 
           <ul>
-            <li>Philips Hue (verlichting)</li>
-            <li>TP-Link Tapo (budget & wifi)</li>
-            <li>Aqara (sensoren & automatiseringen)</li>
+            <li>Philips Hue – sterk in verlichting</li>
+            <li>TP-Link Tapo – betaalbaar en wifi-gebaseerd</li>
+            <li>Aqara – ideaal voor sensoren en automatiseringen</li>
           </ul>
 
           <h2>Stap 3: Denk na over automatiseringen</h2>
 
           <p>
-            Een smart home is pas écht slim als dingen automatisch gebeuren.
+            Een smart home is pas écht slim als dingen automatisch gebeuren,
+            zonder dat je erover hoeft na te denken.
           </p>
 
           <ul>
             <li>Licht aan bij zonsondergang</li>
             <li>Licht aan bij beweging</li>
-            <li>Alles uit bij het verlaten van huis</li>
+            <li>Alles uit wanneer je het huis verlaat</li>
           </ul>
 
           <p>
-            Dit kan met of zonder hub, afhankelijk van je wensen.
-            {" "}
+            Dit kan met of zonder hub, afhankelijk van je wensen.{" "}
             <Link href="/tips/slim-huis-zonder-hub">
               Lees hier het verschil
             </Link>.
@@ -83,31 +82,32 @@ export default function BeginnenMetSmartHome() {
           <h2>Stap 4: Breid rustig uit</h2>
 
           <p>
-            Pas als je weet wat je mist, ga je uitbreiden. Denk aan:
+            Pas wanneer je merkt wat je mist, ga je uitbreiden. Denk bijvoorbeeld aan:
           </p>
 
           <ul>
             <li>Extra slimme lampen</li>
-            <li>Bewegingssensoren</li>
-            <li>Slimme stekkers voor apparaten</li>
+            <li>Bewegings- of contactsensoren</li>
+            <li>Slimme stekkers voor bestaande apparaten</li>
           </ul>
 
           <h2>Stap 5: Maak het gebruiksvriendelijk</h2>
 
           <p>
-            Een smart home moet het leven makkelijker maken, niet moeilijker.
+            Een smart home moet je leven makkelijker maken, niet ingewikkelder.
           </p>
 
           <ul>
             <li>Gebruik vaste schema’s</li>
-            <li>Maak duidelijke scènes</li>
-            <li>Laat schakelaars werken waar nodig</li>
+            <li>Maak duidelijke scènes (zoals ‘thuis’ en ‘weg’)</li>
+            <li>Zorg dat schakelaars blijven werken waar nodig</li>
           </ul>
 
           <h2>Wat kost een smart home?</h2>
 
           <p>
-            Je bepaalt zelf hoe duur het wordt. Een start kan al voor weinig.
+            Je bepaalt zelf hoe uitgebreid en duur je het maakt. Een start kan
+            al met een klein budget.
           </p>
 
           <ul>
@@ -125,8 +125,7 @@ export default function BeginnenMetSmartHome() {
           </p>
 
           <p>
-            Wil je concreet beginnen met verlichting?
-            {" "}
+            Wil je concreet beginnen met verlichting?{" "}
             <Link href="/tips/beginnen-met-slimme-verlichting">
               Bekijk onze stap-voor-stap gids voor slimme verlichting
             </Link>.
