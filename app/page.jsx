@@ -8,31 +8,6 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 
-/* ✅ Tips data (lokaal, bewust simpel) */
-const tips = [
-  {
-    slug: "beginnen-met-smart-home",
-    title: "Beginnen met smart home in 5 stappen",
-    description:
-      "We nemen je stap voor stap mee: van eerste lamp tot slimme scènes en automatiseringen.",
-    available: true,
-  },
-  {
-    slug: "merken-combineren-zonder-gedoe",
-    title: "Merken combineren zonder gedoe",
-    description:
-      "Philips Hue, Ikea, Aqara, Nest en meer: zo laat je alles netjes samenwerken.",
-    available: true,
-  },
-  {
-    slug: "wat-is-een-smart-home-hub",
-    title: "Wat is een smart home hub?",
-    description:
-      "We leggen uit wat een hub doet, welke merken er zijn en waar je op moet letten.",
-    available: false,
-  },
-];
-
 export default function HomePage() {
   return (
     <>
@@ -54,22 +29,53 @@ export default function HomePage() {
             </p>
 
             <div className="tips-grid">
-              {tips.map((tip) => (
-                <article key={tip.slug} className="tip-card">
-                  <h3>{tip.title}</h3>
-                  <p>{tip.description}</p>
+              <article className="tip-card">
+                <h3>Wat is slimme verlichting?</h3>
+                <p>
+                  We leggen uit wat slimme verlichting is, hoe het werkt en wat je ermee kunt.
+                </p>
+                <Link href="/tips/wat-is-slimme-verlichting">
+                  Lees artikel →
+                </Link>
+              </article>
 
-                  {tip.available ? (
-                    <Link href={`/tips/${tip.slug}`} className="tip-link">
-                      Lees artikel →
-                    </Link>
-                  ) : (
-                    <span className="muted small">
-                      Artikel komt binnenkort
-                    </span>
-                  )}
-                </article>
-              ))}
+              <article className="tip-card">
+                <h3>Beginnen met slimme verlichting</h3>
+                <p>
+                  Wil je starten? Volg deze eenvoudige stappen zonder technische kennis.
+                </p>
+                <Link href="/tips/beginnen-met-slimme-verlichting">
+                  Lees artikel →
+                </Link>
+              </article>
+
+              <article className="tip-card">
+                <h3>Beginnen met smart home in 5 stappen</h3>
+                <p>
+                  Van eerste slimme lamp tot automatiseringen zonder gedoe.
+                </p>
+                <Link href="/tips/beginnen-met-smart-home">
+                  Lees artikel →
+                </Link>
+              </article>
+
+              <article className="tip-card">
+                <h3>Merken combineren zonder gedoe</h3>
+                <p>
+                  Philips Hue, Ikea, Aqara, Nest en meer: zo laat je alles samenwerken.
+                </p>
+                <Link href="/tips/merken-combineren-zonder-gedoe">
+                  Lees artikel →
+                </Link>
+              </article>
+
+              <article className="tip-card">
+                <h3>Wat is een smart home hub?</h3>
+                <p>
+                  We leggen uit wat een hub doet en wanneer je er eentje nodig hebt.
+                </p>
+                <span className="muted small">Artikel komt binnenkort</span>
+              </article>
             </div>
           </div>
         </section>
