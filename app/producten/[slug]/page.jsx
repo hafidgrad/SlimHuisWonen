@@ -7,6 +7,45 @@ import {
   getProductBySlug,
   getProductsByCategory,
 } from "@/data/products";
+/* ---------- Tips per categorie ---------- */
+const tipsByCategory = {
+  "slimme-verlichting": [
+    {
+      href: "/tips/wat-is-slimme-verlichting",
+      title: "Wat is slimme verlichting?",
+    },
+    {
+      href: "/tips/beginnen-met-slimme-verlichting",
+      title: "Beginnen met slimme verlichting (stap-voor-stap)",
+    },
+    {
+      href: "/tips/beginnen-met-smart-home",
+      title: "Beginnen met smart home in 5 stappen",
+    },
+  ],
+
+  "slimme-stekkers": [
+    {
+      href: "/tips/beginnen-met-smart-home",
+      title: "Beginnen met smart home in 5 stappen",
+    },
+    {
+      href: "/tips/slim-huis-zonder-hub",
+      title: "Slim huis zonder hub: kan dat?",
+    },
+  ],
+
+  sensoren: [
+    {
+      href: "/tips/beginnen-met-smart-home",
+      title: "Beginnen met smart home in 5 stappen",
+    },
+    {
+      href: "/tips/merken-combineren-zonder-gedoe",
+      title: "Merken combineren zonder gedoe",
+    },
+  ],
+};
 
 /* ---------- Static params ---------- */
 export function generateStaticParams() {
@@ -58,9 +97,11 @@ export default function ProductDetailPage({ params }) {
     );
   }
 
-  const related = getProductsByCategory(product.category)
-    .filter((p) => p.slug !== product.slug)
-    .slice(0, 3);
+const related = getProductsByCategory(product.category)
+  .filter((p) => p.slug !== product.slug)
+  .slice(0, 3);
+
+const tipLinks = tipsByCategory[product.category] ?? [];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -151,6 +192,26 @@ export default function ProductDetailPage({ params }) {
             </div>
           </section>
         )}
+{/* ✅ Tips & uitleg bij dit product */}
+{tipLinks.length > 0 && (
+  <section className="section">
+    <div className="container">
+      <h2>Tips & uitleg bij dit product</h2>
+
+      <p className="section-intro">
+        Handige uitleg om dit product beter te begrijpen en slim te gebruiken.
+      </p>
+
+      <ul className="muted">
+        {tipLinks.map((tip) => (
+          <li key={tip.href}>
+            <Link href={tip.href}>{tip.title}</Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+)}
 
         {/* Structured data */}
         <script
