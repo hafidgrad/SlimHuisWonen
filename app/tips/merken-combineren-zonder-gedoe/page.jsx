@@ -26,6 +26,13 @@ export default function MerkenCombinerenZonderGedoe() {
             we uit hoe je verschillende merken slim combineert – zonder
             frustratie.
           </p>
+        
+  Begin je net met een slim huis? Dan is het handig om eerst klein te starten.
+  {" "}
+  <Link href="/tips/beginnen-met-slimme-verlichting">
+    Slimme verlichting is vaak de makkelijkste eerste stap
+  </Link>.
+</p>
 
           <h2>Waarom merken combineren lastig lijkt</h2>
 
