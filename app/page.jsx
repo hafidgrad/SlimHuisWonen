@@ -74,7 +74,12 @@ export default function HomePage() {
                 <p>
                   We leggen uit wat een hub doet en wanneer je er eentje nodig hebt.
                 </p>
-                <span className="muted small">Artikel komt binnenkort</span>
+                <Link
+  href="/tips/wat-is-een-smart-home-hub"
+  className="tip-link"
+>
+  Lees artikel →
+</Link>
               </article>
             </div>
           </div>
