@@ -69,6 +69,18 @@ export default function BeginnenMetSmartHome() {
               Lees hier wanneer een hub wel of niet nodig is
             </Link>.
           </p>
+          <p>
+  Elk smart home werkt met een app of platform. Door in het begin één
+  ecosysteem te kiezen, voorkom je frustratie en dubbele apps.
+</p>
+
+<p>
+  Veel beginners starten met verlichting:
+  {" "}
+  <Link href="/tips/wat-is-slimme-verlichting">
+    lees hier wat slimme verlichting precies is
+  </Link>.
+</p>
 
           {/* STAP 3 */}
           <h2>Stap 3: Denk na over automatiseringen</h2>
