@@ -7,8 +7,7 @@ export const metadata = {
   description:
     "Wil je beginnen met slimme verlichting? Volg dit praktische stappenplan en ontdek welke producten geschikt zijn voor beginners.",
   alternates: {
-    canonical:
-      "https://slimhuiswonen.nl/tips/beginnen-met-slimme-verlichting",
+    canonical: "https://slimhuiswonen.nl/tips/beginnen-met-slimme-verlichting",
   },
 };
 
@@ -41,8 +40,8 @@ export default function BeginnenMetSlimmeVerlichting() {
               is vaak al genoeg
             </li>
             <li>
-              <strong>Sfeer en kleur</strong> – kies slimme lampen met
-              wit- en kleurinstellingen
+              <strong>Sfeer en kleur</strong> – kies slimme lampen met wit- en
+              kleurinstellingen
             </li>
             <li>
               <strong>Automatiseringen</strong> – combineer verlichting met
@@ -55,7 +54,7 @@ export default function BeginnenMetSlimmeVerlichting() {
           <ol>
             <li>Kies één ruimte (bijvoorbeeld woonkamer of slaapkamer)</li>
             <li>Bepaal wat je wilt: sfeer, gemak of automatisering</li>
-            <li>Begin met één product</li>
+            <li>Begin met één product (bijvoorbeeld een starterkit of slimme stekker)</li>
             <li>Installeer de app en test scenario’s</li>
             <li>Breid pas uit als je weet wat je mist</li>
           </ol>
@@ -142,13 +141,14 @@ export default function BeginnenMetSlimmeVerlichting() {
               </Link>
             </li>
             <li>
-              <Link href="/tips/wat-is-slimme-verlichting">
-  Wat is slimme verlichting?
-</Link>
-<Link href="/tips/beginnen-met-smart-home">
-  Beginnen met smart home in 5 stappen
-</Link>
-
+              <Link href="/tips/beginnen-met-smart-home">
+                Beginnen met smart home in 5 stappen
+              </Link>
+            </li>
+            <li>
+              <Link href="/tips/merken-combineren-zonder-gedoe">
+                Merken combineren zonder gedoe
+              </Link>
             </li>
           </ul>
 
