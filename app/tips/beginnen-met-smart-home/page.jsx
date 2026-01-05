@@ -41,11 +41,11 @@ export default function BeginnenMetSmartHome() {
           </ul>
 
           <p>
-            Slimme verlichting is voor de meeste mensen de makkelijkste start.
-            </p>
+            Slimme verlichting is voor de meeste mensen de makkelijkste start.{" "}
             <Link href="/tips/beginnen-met-slimme-verlichting">
               Bekijk hier hoe je begint met slimme verlichting
             </Link>
+            .
           </p>
 
           {/* STAP 2 */}
@@ -63,24 +63,20 @@ export default function BeginnenMetSmartHome() {
           </ul>
 
           <p>
-            Vraag je je af of je meteen een hub nodig hebt?
-            </p>
+            Vraag je je af of je meteen een hub nodig hebt?{" "}
             <Link href="/tips/slim-huis-zonder-hub">
               Lees hier wanneer een hub wel of niet nodig is
             </Link>
+            .
           </p>
-          <p>
-  Elk smart home werkt met een app of platform. Door in het begin één
-  ecosysteem te kiezen, voorkom je frustratie en dubbele apps.
-</p>
 
-<p>
-  Veel beginners starten met verlichting:
-  </p>
-  <Link href="/tips/wat-is-slimme-verlichting">
-    lees hier wat slimme verlichting precies is
-  </Link>
-</p>
+          <p>
+            Veel beginners starten met verlichting.{" "}
+            <Link href="/tips/wat-is-slimme-verlichting">
+              Lees hier wat slimme verlichting precies is
+            </Link>
+            .
+          </p>
 
           {/* STAP 3 */}
           <h2>Stap 3: Denk na over automatiseringen</h2>
@@ -97,11 +93,11 @@ export default function BeginnenMetSmartHome() {
           </ul>
 
           <p>
-            Automatiseringen werken het beste als merken goed samenwerken.
-            </p>
+            Automatiseringen werken het beste als merken goed samenwerken.{" "}
             <Link href="/tips/merken-combineren-zonder-gedoe">
               Zo combineer je verschillende merken zonder gedoe
             </Link>
+            .
           </p>
 
           {/* STAP 4 */}
@@ -139,7 +135,8 @@ export default function BeginnenMetSmartHome() {
           <h2>Wat kost een smart home?</h2>
 
           <p>
-            Je bepaalt zelf hoe uitgebreid je het maakt. Een start hoeft niet duur te zijn.
+            Je bepaalt zelf hoe uitgebreid je het maakt. Een start hoeft niet
+            duur te zijn.
           </p>
 
           <ul>
@@ -155,13 +152,13 @@ export default function BeginnenMetSmartHome() {
             <li>
               <Link href="/producten/philips-hue-white-ambiance-starterkit">
                 Philips Hue White Ambiance Starterkit
-              </Link><p>
+              </Link>{" "}
               – complete start met slimme verlichting
             </li>
             <li>
               <Link href="/producten/tp-link-tapo-p110-slimme-stekker">
                 TP-Link Tapo P110 slimme stekker
-              </Link><p>
+              </Link>{" "}
               – goedkoop beginnen zonder hub
             </li>
           </ul>
@@ -176,11 +173,8 @@ export default function BeginnenMetSmartHome() {
           </p>
 
           <p>
-            Meer uitleg nodig?
-            </p>
-            <Link href="/tips">
-              Bekijk alle tips & uitleg
-            </Link>
+            Meer uitleg nodig?{" "}
+            <Link href="/tips">Bekijk alle tips & uitleg</Link>.
           </p>
 
           <hr />
