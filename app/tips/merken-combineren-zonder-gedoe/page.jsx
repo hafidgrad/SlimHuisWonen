@@ -28,16 +28,15 @@ export default function MerkenCombinerenZonderGedoe() {
           </p>
 
           <p>
-            Begin je net met slimme apparaten? Dan is het slim om eerst klein
-            te starten, bijvoorbeeld met verlichting.
-          </p>
+  Begin je net met slimme apparaten? Dan is het slim om eerst klein
+  te starten, bijvoorbeeld met verlichting.
+</p>
 
-          <p>
-            <Link href="/tips/beginnen-met-slimme-verlichting">
-              Slimme verlichting is vaak de makkelijkste eerste stap
-            </Link>
-            .
-          </p>
+<p>
+  <Link href="/tips/beginnen-met-slimme-verlichting">
+    Slimme verlichting is vaak de makkelijkste eerste stap
+  </Link>
+</p>
 
           <h2>Waarom merken combineren lastig lijkt</h2>
 
