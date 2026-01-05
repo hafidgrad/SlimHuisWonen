@@ -26,13 +26,18 @@ export default function MerkenCombinerenZonderGedoe() {
             we uit hoe je verschillende merken slim combineert – zonder
             frustratie.
           </p>
-        
-  Begin je net met een slim huis? Dan is het handig om eerst klein te starten.
-  {" "}
-  <Link href="/tips/beginnen-met-slimme-verlichting">
-    Slimme verlichting is vaak de makkelijkste eerste stap
-  </Link>.
-</p>
+
+          <p>
+            Begin je net met slimme apparaten? Dan is het slim om eerst klein
+            te starten, bijvoorbeeld met verlichting.
+          </p>
+
+          <p>
+            <Link href="/tips/beginnen-met-slimme-verlichting">
+              Slimme verlichting is vaak de makkelijkste eerste stap
+            </Link>
+            .
+          </p>
 
           <h2>Waarom merken combineren lastig lijkt</h2>
 
@@ -106,18 +111,6 @@ export default function MerkenCombinerenZonderGedoe() {
             <li>Gebruik duidelijke namen voor apparaten</li>
           </ul>
 
-          <h2>Voor wie is combineren handig?</h2>
-
-          <p>
-            Merken combineren is vooral interessant als je:
-          </p>
-
-          <ul>
-            <li>Niet vast wilt zitten aan één merk</li>
-            <li>De beste producten per categorie wilt kiezen</li>
-            <li>Meer automatiseringen wilt dan standaard apps bieden</li>
-          </ul>
-
           <h2>Conclusie</h2>
 
           <p>
@@ -127,8 +120,7 @@ export default function MerkenCombinerenZonderGedoe() {
           </p>
 
           <p>
-            Wil je eerst goed beginnen?
-            {" "}
+            Wil je eerst goed beginnen?{" "}
             <Link href="/tips/beginnen-met-smart-home">
               Bekijk onze complete gids: beginnen met smart home
             </Link>.
@@ -146,4 +138,3 @@ export default function MerkenCombinerenZonderGedoe() {
     </>
   );
 }
-
