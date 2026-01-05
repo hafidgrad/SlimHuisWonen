@@ -26,6 +26,14 @@ export default function WatIsEenSmartHomeHub() {
             samenwerken, ook als ze van verschillende merken zijn.
           </p>
 
+          <p>
+            Begin je net met slimme apparaten? Dan is het slim om eerst klein
+            te starten, bijvoorbeeld met verlichting.{" "}
+            <Link href="/tips/beginnen-met-slimme-verlichting">
+              Slimme verlichting is vaak de makkelijkste eerste stap
+            </Link>.
+          </p>
+
           <h2>Wat doet een smart home hub?</h2>
 
           <p>
@@ -48,22 +56,18 @@ export default function WatIsEenSmartHomeHub() {
             wilt bereiken met je smart home.
           </p>
 
-          <p>
-            Je hebt waarschijnlijk een hub nodig als je:
-          </p>
-
           <ul>
-            <li>Meerdere merken wilt combineren</li>
-            <li>Automatiseringen met sensoren wilt maken</li>
-            <li>Betrouwbaarheid belangrijk vindt</li>
-            <li>Niet volledig afhankelijk wilt zijn van wifi of cloud</li>
+            <li>Je wilt meerdere merken combineren</li>
+            <li>Je gebruikt sensoren voor automatiseringen</li>
+            <li>Betrouwbaarheid is belangrijk</li>
+            <li>Je wilt minder afhankelijk zijn van wifi of cloud</li>
           </ul>
 
           <h2>Voorbeelden van smart home hubs</h2>
 
           <ul>
             <li>Philips Hue Bridge – speciaal voor Hue-verlichting</li>
-            <li>Aqara Hub – sensoren en automatiseringen</li>
+            <li>Aqara Hub – ideaal voor sensoren</li>
             <li>Homey – alles-in-één oplossing</li>
             <li>Home Assistant – maximale controle (meer technisch)</li>
           </ul>
@@ -72,8 +76,8 @@ export default function WatIsEenSmartHomeHub() {
 
           <h3>Zonder hub</h3>
           <p>
-            Zonder hub gebruik je losse apps of Google Home / Alexa om
-            apparaten te koppelen. Dit werkt prima voor eenvoudige situaties.
+            Zonder hub gebruik je losse apps of Google Home / Alexa om apparaten
+            te koppelen. Dit werkt prima voor eenvoudige situaties.
           </p>
 
           <h3>Met hub</h3>
@@ -84,7 +88,7 @@ export default function WatIsEenSmartHomeHub() {
           <ul>
             <li>Automatiseringen tussen verschillende merken</li>
             <li>Snellere reacties</li>
-            <li>Minder kans op uitval</li>
+            <li>Minder kans op storingen</li>
           </ul>
 
           <p>
@@ -114,21 +118,19 @@ export default function WatIsEenSmartHomeHub() {
 
           <p>
             Een smart home hub maakt je slimme huis krachtiger en stabieler,
-            maar is niet verplicht om te beginnen. Start simpel en kies een
-            hub wanneer je merkt dat je meer wilt.
+            maar is niet verplicht om te starten. Begin simpel en kies een hub
+            wanneer je merkt dat je meer wilt automatiseren.
           </p>
 
           <p>
-            Wil je weten hoe je slim begint?
-            {" "}
+            Wil je weten hoe je slim begint?{" "}
             <Link href="/tips/beginnen-met-smart-home">
               Beginnen met smart home in 5 stappen
             </Link>.
           </p>
 
           <p>
-            Of lees:
-            {" "}
+            Of lees:{" "}
             <Link href="/tips/merken-combineren-zonder-gedoe">
               Merken combineren zonder gedoe
             </Link>.
