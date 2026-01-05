@@ -28,15 +28,16 @@ export default function MerkenCombinerenZonderGedoe() {
           </p>
 
           <p>
-  Begin je net met slimme apparaten? Dan is het slim om eerst klein
-  te starten, bijvoorbeeld met verlichting.
-</p>
+            Begin je net met slimme apparaten? Dan is het slim om eerst klein
+            te starten, bijvoorbeeld met verlichting.
+          </p>
 
-<p>
-  <Link href="/tips/beginnen-met-slimme-verlichting">
-    Slimme verlichting is vaak de makkelijkste eerste stap
-  </Link>
-</p>
+          <p>
+            <Link href="/tips/beginnen-met-slimme-verlichting">
+              Slimme verlichting is vaak de makkelijkste eerste stap
+            </Link>
+            .
+          </p>
 
           <h2>Waarom merken combineren lastig lijkt</h2>
 
@@ -60,7 +61,7 @@ export default function MerkenCombinerenZonderGedoe() {
           </p>
 
           <p>
-            👉 Lees ook:</p>
+            👉 Lees ook:{" "}
             <Link href="/tips/wat-is-een-smart-home-hub">
               Wat is een smart home hub?
             </Link>
@@ -95,7 +96,7 @@ export default function MerkenCombinerenZonderGedoe() {
           </ul>
 
           <p>
-            👉 Meer hierover lees je hier:</p>
+            👉 Meer hierover lees je hier:{" "}
             <Link href="/tips/slim-huis-zonder-hub">
               Slim huis zonder hub: kan dat?
             </Link>
@@ -119,10 +120,11 @@ export default function MerkenCombinerenZonderGedoe() {
           </p>
 
           <p>
-            Wil je eerst goed beginnen?</p>
+            Wil je eerst goed beginnen?{" "}
             <Link href="/tips/beginnen-met-smart-home">
               Bekijk onze complete gids: beginnen met smart home
             </Link>
+            .
           </p>
 
           <hr />
