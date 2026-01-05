@@ -42,10 +42,10 @@ export default function BeginnenMetSmartHome() {
 
           <p>
             Slimme verlichting is voor de meeste mensen de makkelijkste start.
-            {" "}
+            </p>
             <Link href="/tips/beginnen-met-slimme-verlichting">
               Bekijk hier hoe je begint met slimme verlichting
-            </Link>.
+            </Link>
           </p>
 
           {/* STAP 2 */}
@@ -64,10 +64,10 @@ export default function BeginnenMetSmartHome() {
 
           <p>
             Vraag je je af of je meteen een hub nodig hebt?
-            {" "}
+            </p>
             <Link href="/tips/slim-huis-zonder-hub">
               Lees hier wanneer een hub wel of niet nodig is
-            </Link>.
+            </Link>
           </p>
           <p>
   Elk smart home werkt met een app of platform. Door in het begin één
@@ -76,10 +76,10 @@ export default function BeginnenMetSmartHome() {
 
 <p>
   Veel beginners starten met verlichting:
-  {" "}
+  </p>
   <Link href="/tips/wat-is-slimme-verlichting">
     lees hier wat slimme verlichting precies is
-  </Link>.
+  </Link>
 </p>
 
           {/* STAP 3 */}
@@ -98,10 +98,10 @@ export default function BeginnenMetSmartHome() {
 
           <p>
             Automatiseringen werken het beste als merken goed samenwerken.
-            {" "}
+            </p>
             <Link href="/tips/merken-combineren-zonder-gedoe">
               Zo combineer je verschillende merken zonder gedoe
-            </Link>.
+            </Link>
           </p>
 
           {/* STAP 4 */}
@@ -155,13 +155,13 @@ export default function BeginnenMetSmartHome() {
             <li>
               <Link href="/producten/philips-hue-white-ambiance-starterkit">
                 Philips Hue White Ambiance Starterkit
-              </Link>{" "}
+              </Link><p>
               – complete start met slimme verlichting
             </li>
             <li>
               <Link href="/producten/tp-link-tapo-p110-slimme-stekker">
                 TP-Link Tapo P110 slimme stekker
-              </Link>{" "}
+              </Link><p>
               – goedkoop beginnen zonder hub
             </li>
           </ul>
@@ -177,10 +177,10 @@ export default function BeginnenMetSmartHome() {
 
           <p>
             Meer uitleg nodig?
-            {" "}
+            </p>
             <Link href="/tips">
               Bekijk alle tips & uitleg
-            </Link>.
+            </Link>
           </p>
 
           <hr />

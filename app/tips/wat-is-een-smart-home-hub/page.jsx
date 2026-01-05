@@ -28,10 +28,10 @@ export default function WatIsEenSmartHomeHub() {
 
           <p>
             Begin je net met slimme apparaten? Dan is het slim om eerst klein
-            te starten, bijvoorbeeld met verlichting.{" "}
+            te starten, bijvoorbeeld met verlichting.</p>
             <Link href="/tips/beginnen-met-slimme-verlichting">
               Slimme verlichting is vaak de makkelijkste eerste stap
-            </Link>.
+            </Link>
           </p>
 
           <h2>Wat doet een smart home hub?</h2>
@@ -92,7 +92,7 @@ export default function WatIsEenSmartHomeHub() {
           </ul>
 
           <p>
-            👉 Lees ook:{" "}
+            👉 Lees ook:</p>
             <Link href="/tips/slim-huis-zonder-hub">
               Slim huis zonder hub: kan dat?
             </Link>
@@ -123,17 +123,17 @@ export default function WatIsEenSmartHomeHub() {
           </p>
 
           <p>
-            Wil je weten hoe je slim begint?{" "}
+            Wil je weten hoe je slim begint?</p>
             <Link href="/tips/beginnen-met-smart-home">
               Beginnen met smart home in 5 stappen
-            </Link>.
+            </Link>
           </p>
 
           <p>
-            Of lees:{" "}
+            Of lees:</p>
             <Link href="/tips/merken-combineren-zonder-gedoe">
               Merken combineren zonder gedoe
-            </Link>.
+            </Link>
           </p>
 
           <hr />

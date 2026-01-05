@@ -69,7 +69,7 @@ export default function WatIsSlimmeVerlichting() {
           </p>
 
           <p>
-            👉 Lees ook:{" "}
+            👉 Lees ook:</p>
             <Link href="/tips/slim-huis-zonder-hub">
               Slim huis zonder hub: kan dat?
             </Link>
@@ -130,7 +130,7 @@ export default function WatIsSlimmeVerlichting() {
 
           <p>
             Wil je weten hoe je het beste start?
-            {" "}
+            </p>
             <Link href="/tips/beginnen-met-slimme-verlichting">
   Beginnen met slimme verlichting (stap-voor-stap)
 </Link>

@@ -56,13 +56,13 @@ export default function SlimHuisZonderHubPage() {
             <li>
               <Link href="/producten/tp-link-tapo-p110-slimme-stekker">
                 TP-Link Tapo P110 slimme stekker
-              </Link>{" "}
+              </Link><p>
               – inzicht in energieverbruik zonder extra apparatuur
             </li>
             <li>
               <Link href="/producten/tp-link-tapo-p100-slimme-stekker">
                 TP-Link Tapo P100 slimme stekker
-              </Link>{" "}
+              </Link><p>
               – eenvoudige en betaalbare instap
             </li>
             <li>
@@ -120,7 +120,7 @@ export default function SlimHuisZonderHubPage() {
           <hr />
 
           <p className="muted small">
-            Lees ook:{" "}
+            Lees ook:</p>
             <Link href="/tips/beginnen-met-slimme-verlichting">
               Beginnen met slimme verlichting (stap-voor-stap)
             </Link>

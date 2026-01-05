@@ -60,7 +60,7 @@ export default function MerkenCombinerenZonderGedoe() {
           </p>
 
           <p>
-            👉 Lees ook:{" "}
+            👉 Lees ook:</p>
             <Link href="/tips/wat-is-een-smart-home-hub">
               Wat is een smart home hub?
             </Link>
@@ -95,7 +95,7 @@ export default function MerkenCombinerenZonderGedoe() {
           </ul>
 
           <p>
-            👉 Meer hierover lees je hier:{" "}
+            👉 Meer hierover lees je hier:</p>
             <Link href="/tips/slim-huis-zonder-hub">
               Slim huis zonder hub: kan dat?
             </Link>
@@ -119,10 +119,10 @@ export default function MerkenCombinerenZonderGedoe() {
           </p>
 
           <p>
-            Wil je eerst goed beginnen?{" "}
+            Wil je eerst goed beginnen?</p>
             <Link href="/tips/beginnen-met-smart-home">
               Bekijk onze complete gids: beginnen met smart home
-            </Link>.
+            </Link>
           </p>
 
           <hr />

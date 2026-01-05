@@ -49,7 +49,7 @@ export default function SlimmeLampSchakelaar() {
           </p>
 
           <p>
-            👉 Lees ook:{" "}
+            👉 Lees ook:</p>
             <Link href="/tips/wat-is-slimme-verlichting">
               Wat is slimme verlichting?
             </Link>
@@ -107,10 +107,10 @@ export default function SlimmeLampSchakelaar() {
 
           <p>
             Wil je goed beginnen?
-            {" "}
+            </p>
             <Link href="/tips/beginnen-met-slimme-verlichting">
               Bekijk onze stap-voor-stap gids voor slimme verlichting
-            </Link>.
+            </Link>
           </p>
 
           <hr />

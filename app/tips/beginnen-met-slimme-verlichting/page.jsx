@@ -123,7 +123,7 @@ export default function BeginnenMetSlimmeVerlichting() {
           </ul>
 
           <p>
-            Weet je nog niet precies wat slimme verlichting is?{" "}
+            Weet je nog niet precies wat slimme verlichting is?</p>
             <Link href="/tips/wat-is-slimme-verlichting">
               Lees hier wat slimme verlichting precies inhoudt
             </Link>
