@@ -54,7 +54,10 @@ export default function BeginnenMetSlimmeVerlichting() {
           <ol>
             <li>Kies één ruimte (bijvoorbeeld woonkamer of slaapkamer)</li>
             <li>Bepaal wat je wilt: sfeer, gemak of automatisering</li>
-            <li>Begin met één product (bijvoorbeeld een starterkit of slimme stekker)</li>
+            <li>
+              Begin met één product (bijvoorbeeld een starterkit of slimme
+              stekker)
+            </li>
             <li>Installeer de app en test scenario’s</li>
             <li>Breid pas uit als je weet wat je mist</li>
           </ol>
@@ -123,7 +126,7 @@ export default function BeginnenMetSlimmeVerlichting() {
           </ul>
 
           <p>
-            Weet je nog niet precies wat slimme verlichting is?</p>
+            Weet je nog niet precies wat slimme verlichting is?{" "}
             <Link href="/tips/wat-is-slimme-verlichting">
               Lees hier wat slimme verlichting precies inhoudt
             </Link>
