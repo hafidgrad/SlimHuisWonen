@@ -6,6 +6,9 @@ export const metadata = {
   title: "Slim huis zonder hub: kan dat en wanneer is het slim?",
   description:
     "Een slim huis zonder hub? Ontdek wanneer dit slim is, welke producten geschikt zijn en wat de voor- en nadelen zijn.",
+  alternates: {
+    canonical: "https://slimhuiswonen.nl/tips/slim-huis-zonder-hub",
+  },
 };
 
 export default function SlimHuisZonderHubPage() {
@@ -36,9 +39,7 @@ export default function SlimHuisZonderHubPage() {
           </p>
 
           <h2>Wanneer heb je géén hub nodig?</h2>
-          <p>
-            Je hebt meestal geen hub nodig als:
-          </p>
+          <p>Je hebt meestal geen hub nodig als:</p>
 
           <ul>
             <li>Je maar een paar slimme apparaten gebruikt</li>
@@ -56,18 +57,16 @@ export default function SlimHuisZonderHubPage() {
             <li>
               <Link href="/producten/tp-link-tapo-p110-slimme-stekker">
                 TP-Link Tapo P110 slimme stekker
-              </Link><p>
+              </Link>{" "}
               – inzicht in energieverbruik zonder extra apparatuur
             </li>
             <li>
               <Link href="/producten/tp-link-tapo-p100-slimme-stekker">
                 TP-Link Tapo P100 slimme stekker
-              </Link><p>
+              </Link>{" "}
               – eenvoudige en betaalbare instap
             </li>
-            <li>
-              Slimme wifi-lampen (zoals Tapo of Wiz)
-            </li>
+            <li>Slimme wifi-lampen (zoals Tapo of Wiz)</li>
           </ul>
 
           <h2>Voordelen van een slim huis zonder hub</h2>
@@ -91,9 +90,7 @@ export default function SlimHuisZonderHubPage() {
           </p>
 
           <h2>Wanneer is een hub wél slim?</h2>
-          <p>
-            Een hub is aan te raden als je:
-          </p>
+          <p>Een hub is aan te raden als je:</p>
 
           <ul>
             <li>Veel sensoren gebruikt</li>
@@ -120,7 +117,7 @@ export default function SlimHuisZonderHubPage() {
           <hr />
 
           <p className="muted small">
-            Lees ook:</p>
+            Lees ook:{" "}
             <Link href="/tips/beginnen-met-slimme-verlichting">
               Beginnen met slimme verlichting (stap-voor-stap)
             </Link>
