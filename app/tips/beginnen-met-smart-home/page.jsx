@@ -26,9 +26,8 @@ export default function BeginnenMetSmartHome() {
           </p>
 
           <h2>Stap 1: Begin klein</h2>
-          <p>Start met één slim apparaat, zoals verlichting.</p>
-
           <p>
+            Start met één slim apparaat, zoals verlichting.{" "}
             <Link href="/tips/beginnen-met-slimme-verlichting">
               Zo begin je met slimme verlichting
             </Link>
