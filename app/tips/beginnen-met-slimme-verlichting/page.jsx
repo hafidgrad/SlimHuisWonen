@@ -30,87 +30,26 @@ export default function BeginnenMetSlimmeVerlichting() {
 
           <p>
             Slimme verlichting is er in verschillende vormen. De juiste keuze
-            hangt af van wat jij belangrijk vindt: gemak, sfeer of
-            automatisering.
+            hangt af van wat jij belangrijk vindt: gemak, sfeer of automatisering.
           </p>
 
           <ul>
-            <li>
-              <strong>Aan/uit en timers</strong> – een slimme stekker of wifi-lamp
-              is vaak al genoeg
-            </li>
-            <li>
-              <strong>Sfeer en kleur</strong> – kies slimme lampen met wit- en
-              kleurinstellingen
-            </li>
-            <li>
-              <strong>Automatiseringen</strong> – combineer verlichting met
-              sensoren
-            </li>
+            <li><strong>Aan/uit en timers</strong> – een slimme stekker of wifi-lamp</li>
+            <li><strong>Sfeer en kleur</strong> – wit- en kleurinstellingen</li>
+            <li><strong>Automatiseringen</strong> – combineer met sensoren</li>
           </ul>
 
-          <h2>Stap-voor-stap starten met slimme verlichting</h2>
+          <h2>Stap-voor-stap starten</h2>
 
           <ol>
-            <li>Kies één ruimte (bijvoorbeeld woonkamer of slaapkamer)</li>
-            <li>Bepaal wat je wilt: sfeer, gemak of automatisering</li>
-            <li>
-              Begin met één product (bijvoorbeeld een starterkit of slimme
-              stekker)
-            </li>
-            <li>Installeer de app en test scenario’s</li>
-            <li>Breid pas uit als je weet wat je mist</li>
+            <li>Kies één ruimte</li>
+            <li>Bepaal wat je wilt bereiken</li>
+            <li>Begin met één product</li>
+            <li>Installeer de app</li>
+            <li>Breid pas later uit</li>
           </ol>
 
-          <h2>Welke merken zijn geschikt voor beginners?</h2>
-
-          <p>
-            Niet alle slimme verlichting is even geschikt om mee te starten.
-            Deze merken zijn populair bij beginners:
-          </p>
-
-          <ul>
-            <li>
-              <strong>Philips Hue</strong> – stabiel, uitgebreid en ideaal voor
-              sfeer
-            </li>
-            <li>
-              <strong>TP-Link Tapo</strong> – betaalbaar en werkt zonder hub
-            </li>
-            <li>
-              <strong>Aqara</strong> – perfect voor automatiseringen met sensoren
-            </li>
-          </ul>
-
-          <h2>Uitbreiden zonder opnieuw te beginnen</h2>
-
-          <p>
-            Het fijne aan slimme verlichting is dat je klein kunt starten en
-            later eenvoudig kunt uitbreiden.
-          </p>
-
-          <ul>
-            <li>Bewegingssensoren voor automatische verlichting</li>
-            <li>Slimme stekkers voor staande lampen</li>
-            <li>Schema’s voor ochtend- en avondroutines</li>
-          </ul>
-
-          <h2>Veelgemaakte fouten bij slimme verlichting</h2>
-
-          <ul>
-            <li>
-              <strong>Alles tegelijk willen</strong> – begin met één kamer
-            </li>
-            <li>
-              <strong>Schakelaars vergeten</strong> – slimme lampen werken niet
-              als de stroom eraf is
-            </li>
-            <li>
-              <strong>Geen rekening houden met uitbreiding</strong>
-            </li>
-          </ul>
-
-          <h2>Aanbevolen producten om te starten</h2>
+          <h2>Aanbevolen producten</h2>
 
           <ul>
             <li>
@@ -126,23 +65,15 @@ export default function BeginnenMetSlimmeVerlichting() {
           </ul>
 
           <p>
-            Weet je nog niet precies wat slimme verlichting is?{" "}
+            Wil je eerst de basis begrijpen?{" "}
             <Link href="/tips/wat-is-slimme-verlichting">
-              Lees hier wat slimme verlichting precies inhoudt
-            </Link>
-            .
+              Lees wat slimme verlichting precies is
+            </Link>.
           </p>
 
           <hr />
 
-          <p className="muted small">Bekijk ook:</p>
-
           <ul className="muted small">
-            <li>
-              <Link href="/tips/wat-is-slimme-verlichting">
-                Wat is slimme verlichting?
-              </Link>
-            </li>
             <li>
               <Link href="/tips/beginnen-met-smart-home">
                 Beginnen met smart home in 5 stappen
@@ -154,10 +85,6 @@ export default function BeginnenMetSlimmeVerlichting() {
               </Link>
             </li>
           </ul>
-
-          <p className="muted small">
-            *Prijzen kunnen wijzigen. Bekijk actuele prijs bij Amazon.
-          </p>
         </div>
       </main>
 
