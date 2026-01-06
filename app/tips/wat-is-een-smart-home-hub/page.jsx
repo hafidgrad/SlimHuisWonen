@@ -28,7 +28,7 @@ export default function WatIsEenSmartHomeHub() {
 
           <p>
             Begin je net met slimme apparaten? Dan is het slim om eerst klein
-            te starten, bijvoorbeeld met verlichting.</p>
+            te starten, bijvoorbeeld met verlichting.{" "}
             <Link href="/tips/beginnen-met-slimme-verlichting">
               Slimme verlichting is vaak de makkelijkste eerste stap
             </Link>
@@ -77,74 +77,3 @@ export default function WatIsEenSmartHomeHub() {
           <h3>Zonder hub</h3>
           <p>
             Zonder hub gebruik je losse apps of Google Home / Alexa om apparaten
-            te koppelen. Dit werkt prima voor eenvoudige situaties.
-          </p>
-
-          <h3>Met hub</h3>
-          <p>
-            Met een hub kun je veel verder gaan:
-          </p>
-
-          <ul>
-            <li>Automatiseringen tussen verschillende merken</li>
-            <li>Snellere reacties</li>
-            <li>Minder kans op storingen</li>
-          </ul>
-
-          <p>
-            👉 Lees ook:</p>
-            <Link href="/tips/slim-huis-zonder-hub">
-              Slim huis zonder hub: kan dat?
-            </Link>
-          </p>
-
-          <h2>Is een hub verplicht?</h2>
-
-          <p>
-            Nee, een hub is nooit verplicht. Veel mensen beginnen zonder hub
-            en stappen later over wanneer hun smart home groeit.
-          </p>
-
-          <h2>Voor wie is een hub vooral geschikt?</h2>
-
-          <ul>
-            <li>Smart home enthousiastelingen</li>
-            <li>Mensen die merken willen combineren</li>
-            <li>Gezinnen met veel automatiseringen</li>
-            <li>Gebruikers die stabiliteit belangrijk vinden</li>
-          </ul>
-
-          <h2>Conclusie</h2>
-
-          <p>
-            Een smart home hub maakt je slimme huis krachtiger en stabieler,
-            maar is niet verplicht om te starten. Begin simpel en kies een hub
-            wanneer je merkt dat je meer wilt automatiseren.
-          </p>
-
-          <p>
-            Wil je weten hoe je slim begint?</p>
-            <Link href="/tips/beginnen-met-smart-home">
-              Beginnen met smart home in 5 stappen
-            </Link>
-          </p>
-
-          <p>
-            Of lees:</p>
-            <Link href="/tips/merken-combineren-zonder-gedoe">
-              Merken combineren zonder gedoe
-            </Link>
-          </p>
-
-          <hr />
-
-          <p className="muted small">
-            *Functionaliteit verschilt per hub en merk.
-          </p>
-        </div>
-      </main>
-
-      <Footer />
-    </>
-  );
-}

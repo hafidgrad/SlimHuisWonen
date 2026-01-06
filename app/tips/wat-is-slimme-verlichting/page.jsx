@@ -22,8 +22,9 @@ export default function WatIsSlimmeVerlichting() {
 
           <p className="section-intro">
             Slimme verlichting is verlichting die je niet alleen met een
-            schakelaar bedient, maar ook via een app, schema’s, automatiseringen
-            of spraak. Het is vaak de eerste stap richting een slim huis.
+            schakelaar bedient, maar ook via een app, schema’s,
+            automatiseringen of spraak. Het is vaak de eerste stap richting
+            een slim huis.
           </p>
 
           <h2>Wat maakt verlichting “slim”?</h2>
@@ -44,8 +45,8 @@ export default function WatIsSlimmeVerlichting() {
           <h2>Hoe werkt slimme verlichting?</h2>
 
           <p>
-            Er zijn verschillende manieren waarop slimme verlichting werkt. Dit
-            bepaalt ook hoe uitgebreid je systeem kan worden.
+            Er zijn verschillende manieren waarop slimme verlichting werkt.
+            Dit bepaalt ook hoe uitgebreid je systeem kan worden.
           </p>
 
           <h3>1. Wifi-verlichting</h3>
@@ -69,7 +70,7 @@ export default function WatIsSlimmeVerlichting() {
           </p>
 
           <p>
-            👉 Lees ook:</p>
+            👉 Lees ook:{" "}
             <Link href="/tips/slim-huis-zonder-hub">
               Slim huis zonder hub: kan dat?
             </Link>
@@ -94,9 +95,7 @@ export default function WatIsSlimmeVerlichting() {
 
           <h2>Voor wie is slimme verlichting geschikt?</h2>
 
-          <p>
-            Slimme verlichting is ideaal voor:
-          </p>
+          <p>Slimme verlichting is ideaal voor:</p>
 
           <ul>
             <li>Mensen die meer sfeer willen in huis</li>
@@ -105,50 +104,4 @@ export default function WatIsSlimmeVerlichting() {
             <li>Mensen die energie willen besparen</li>
           </ul>
 
-          <h2>Populaire voorbeelden</h2>
-
-          <ul>
-            <li>
-              <Link href="/producten/philips-hue-white-ambiance-starterkit">
-                Philips Hue White Ambiance Starterkit
-              </Link>
-            </li>
-            <li>
-              <Link href="/producten/tp-link-tapo-p110-slimme-stekker">
-                TP-Link Tapo slimme stekker
-              </Link>
-            </li>
-          </ul>
-
-          <h2>Conclusie</h2>
-
-          <p>
-            Slimme verlichting is een laagdrempelige manier om je huis slimmer te
-            maken. Je kunt klein beginnen en later uitbreiden wanneer je dat
-            wilt.
-          </p>
-
-          <p>
-            Wil je weten hoe je het beste start?
-            </p>
-            <Link href="/tips/beginnen-met-slimme-verlichting">
-  Beginnen met slimme verlichting (stap-voor-stap)
-</Link>
-<Link href="/tips">
-  Bekijk alle tips & uitleg
-</Link>
-          </p>
-
-          <hr />
-
-          <p className="muted small">
-            *Prijzen kunnen wijzigen. Bekijk altijd de actuele prijs bij de
-            aanbieder.
-          </p>
-        </div>
-      </main>
-
-      <Footer />
-    </>
-  );
-}
+          <h2>Po
