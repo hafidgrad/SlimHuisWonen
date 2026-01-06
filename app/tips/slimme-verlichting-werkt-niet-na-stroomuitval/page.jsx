@@ -71,7 +71,7 @@ export default function SlimmeVerlichtingStroomuitval() {
           </p>
 
           <p>
-            👉 Lees ook:</p>
+            👉 Lees ook:{" "}
             <Link href="/tips/wat-is-slimme-verlichting">
               Wat is slimme verlichting?
             </Link>
@@ -80,66 +80,4 @@ export default function SlimmeVerlichtingStroomuitval() {
           <h2>Zo los je het probleem stap voor stap op</h2>
 
           <ol>
-            <li>Wacht tot je router volledig is opgestart</li>
-            <li>Controleer of de hub weer online is</li>
-            <li>Zet lampen één keer uit en aan via de schakelaar</li>
-            <li>Open de app en ververs de verbinding</li>
-            <li>Herstart de hub als dat nodig is</li>
-          </ol>
-
-          <p>
-            In de meeste gevallen werken je lampen hierna weer normaal.
-          </p>
-
-          <h2>Hoe voorkom je dit in de toekomst?</h2>
-
-          <ul>
-            <li>Gebruik een hub-gebaseerd systeem</li>
-            <li>Laat schakelaars altijd aan staan</li>
-            <li>Gebruik scènes in plaats van losse lampen</li>
-            <li>Kies betrouwbare merken</li>
-          </ul>
-
-          <p>
-            Wil je stabiel starten?
-            </p>
-            <Link href="/tips/beginnen-met-slimme-verlichting">
-              Bekijk onze stap-voor-stap gids voor slimme verlichting
-            </Link>
-          </p>
-
-          <h2>Aanbevolen oplossing</h2>
-
-          <p>
-            Hub-gebaseerde systemen zijn het meest betrouwbaar bij
-            stroomuitval. Ze herstellen automatisch en blijven lokaal werken.
-          </p>
-
-          <ul>
-            <li>
-              <Link href="/producten/philips-hue-white-ambiance-starterkit">
-                Philips Hue White Ambiance Starterkit
-              </Link>
-            </li>
-          </ul>
-
-          <h2>Conclusie</h2>
-
-          <p>
-            Slimme verlichting die niet meer werkt na stroomuitval is vervelend,
-            maar bijna altijd eenvoudig op te lossen. Door slimme keuzes te
-            maken voorkom je dit probleem in de toekomst.
-          </p>
-
-          <hr />
-
-          <p className="muted small">
-            *Tips zijn algemeen. Resultaat kan verschillen per merk en situatie.
-          </p>
-        </div>
-      </main>
-
-      <Footer />
-    </>
-  );
-}
+            <li>Wacht tot je
