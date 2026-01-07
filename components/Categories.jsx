@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const categories = [
   {
     id: "slimme-verlichting",
@@ -36,14 +38,20 @@ export default function Categories() {
     <section id="categorieen" className="section section-alt">
       <div className="container">
         <h2>Categorieën slimme producten</h2>
+
         <div className="category-grid">
           {categories.map((cat) => (
             <article key={cat.id} className="card">
               <h3>{cat.title}</h3>
               <p>{cat.text}</p>
-              <a href="/producten" className="card-link">
-                Bekijk producten
-              </a>
+
+              {/* ✅ JUISTE LINK */}
+              <Link
+                href={`/categorieen/${cat.id}`}
+                className="card-link"
+              >
+                Bekijk producten →
+              </Link>
             </article>
           ))}
         </div>
