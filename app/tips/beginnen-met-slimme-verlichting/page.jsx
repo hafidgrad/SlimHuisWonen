@@ -1,41 +1,35 @@
-<div className="container article">
-  <h1>Beginnen met slimme verlichting (stap-voor-stap)</h1>
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Link from "next/link";
 
-  <p className="section-intro">
-    Slimme verlichting is één van de makkelijkste en betaalbaarste manieren om je
-    huis slimmer te maken. Je hoeft geen technische kennis te hebben en vaak
-    kun je al binnen 10 minuten aan de slag. In dit artikel nemen we je stap
-    voor stap mee: van de eerste slimme lamp tot het uitbreiden met automatiseringen.
-  </p>
+export const metadata = {
+  title: "Beginnen met slimme verlichting – stap voor stap",
+  description:
+    "Wil je beginnen met slimme verlichting? Volg dit praktische stappenplan en ontdek welke producten geschikt zijn voor beginners.",
+  alternates: {
+    canonical: "https://slimhuiswonen.nl/tips/beginnen-met-slimme-verlichting",
+  },
+};
 
-  <h2>Waarom kiezen voor slimme verlichting?</h2>
+export default function BeginnenMetSlimmeVerlichting() {
+  return (
+    <>
+      <Header />
 
-  <p>
-    Slimme verlichting biedt veel meer dan alleen een lamp die je met je telefoon
-    aan- en uitzet. Het zorgt voor comfort, sfeer en energiebesparing.
-  </p>
+      <main className="section">
+        <div className="container article">
+          <h1>Beginnen met slimme verlichting (stap-voor-stap)</h1>
 
-  <ul>
-    <li>💡 Nooit meer vergeten het licht uit te doen</li>
-    <li>🌅 Automatisch licht bij zonsondergang</li>
-    <li>🎨 De juiste sfeer voor elk moment</li>
-    <li>🔋 Inzicht in energieverbruik (bij sommige systemen)</li>
-    <li>🏠 Perfecte eerste stap richting een smart home</li>
-  </ul>
+          <p className="section-intro">
+            Slimme verlichting is één van de makkelijkste en betaalbaarste
+            manieren om je huis slimmer te maken. Je hebt geen technische
+            kennis nodig en vaak kun je al binnen enkele minuten aan de slag.
+            In dit artikel leer je stap voor stap hoe je begint — van je
+            eerste slimme lamp tot eenvoudige automatiseringen.
+          </p>
 
-  <h2>Welke slimme verlichting past bij jou?</h2>
+          <h2>Waarom kiezen voor slimme verlichting?</h2>
 
-  <p>
-    Niet elke slimme lamp is hetzelfde. De juiste keuze hangt af van wat jij
-    belangrijk vindt en hoe ver je wilt gaan.
-  </p>
-
-  <h3>1. Simpel aan/uit en timers</h3>
-  <p>
-    Wil je vooral gemak? Dan is een wifi-lamp of slimme stekker een prima start.
-    Hiermee stel je vaste tijden in of bedien je verlichting op afstand.
-  </p>
-
-  <h3>2. Sfeer en dimmen</h3>
-  <p>
-    Met slimme lampen met instel
+          <p>
+            Slimme verlichting biedt veel meer dan alleen een lamp die je met
+            je telefoon aan- en uitz
