@@ -12,30 +12,23 @@ export default function SlimHuisZonderHub() {
           <h1>Slim huis zonder hub: kan dat?</h1>
 
           <p className="section-intro">
-            Ja, een slim huis zonder hub is mogelijk — vooral voor beginners.
+            Ja, een slim huis zonder hub is zeker mogelijk — vooral als je net
+            begint met smart home. Veel slimme apparaten werken direct via wifi
+            en een app op je telefoon. Toch zijn er duidelijke voor- en nadelen
+            waar je rekening mee moet houden.
           </p>
 
-          <h2>Wanneer werkt dit goed?</h2>
+          <h2>Hoe werkt een slim huis zonder hub?</h2>
+
+          <p>
+            In een slim huis zonder hub verbindt elk apparaat rechtstreeks met
+            je wifi-netwerk. Je bedient deze apparaten via losse apps of via een
+            platform zoals Google Home of Alexa. Er is geen centraal systeem dat
+            alles aanstuurt.
+          </p>
+
+          <p>Voorbeelden van apparaten die vaak zonder hub werken:</p>
+
           <ul>
-            <li>Weinig apparaten</li>
-            <li>Wifi-producten</li>
-            <li>Eenvoudige schema’s</li>
-          </ul>
-
-          <h2>Wanneer toch een hub?</h2>
-          <p>
-            Als je meerdere merken wilt combineren of automatiseren.
-          </p>
-
-          <p>
-            <Link href="/tips/wat-is-een-smart-home-hub">
-              Lees wat een smart home hub doet
-            </Link>
-          </p>
-        </div>
-      </main>
-
-      <Footer />
-    </>
-  );
-}
+            <li>Wifi-lampen (zoals TP-Link Tapo)</li>
+            <li>Slimme stekkers
