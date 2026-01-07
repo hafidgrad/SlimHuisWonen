@@ -1,94 +1,41 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import Link from "next/link";
+<div className="container article">
+  <h1>Beginnen met slimme verlichting (stap-voor-stap)</h1>
 
-export const metadata = {
-  title: "Beginnen met slimme verlichting – stap voor stap",
-  description:
-    "Wil je beginnen met slimme verlichting? Volg dit praktische stappenplan en ontdek welke producten geschikt zijn voor beginners.",
-  alternates: {
-    canonical: "https://slimhuiswonen.nl/tips/beginnen-met-slimme-verlichting",
-  },
-};
+  <p className="section-intro">
+    Slimme verlichting is één van de makkelijkste en betaalbaarste manieren om je
+    huis slimmer te maken. Je hoeft geen technische kennis te hebben en vaak
+    kun je al binnen 10 minuten aan de slag. In dit artikel nemen we je stap
+    voor stap mee: van de eerste slimme lamp tot het uitbreiden met automatiseringen.
+  </p>
 
-export default function BeginnenMetSlimmeVerlichting() {
-  return (
-    <>
-      <Header />
+  <h2>Waarom kiezen voor slimme verlichting?</h2>
 
-      <main className="section">
-        <div className="container article">
-          <h1>Beginnen met slimme verlichting (stap-voor-stap)</h1>
+  <p>
+    Slimme verlichting biedt veel meer dan alleen een lamp die je met je telefoon
+    aan- en uitzet. Het zorgt voor comfort, sfeer en energiebesparing.
+  </p>
 
-          <p className="section-intro">
-            Slimme verlichting is één van de makkelijkste manieren om je huis
-            slimmer te maken. In dit artikel leer je stap voor stap hoe je
-            begint — zonder technische kennis.
-          </p>
+  <ul>
+    <li>💡 Nooit meer vergeten het licht uit te doen</li>
+    <li>🌅 Automatisch licht bij zonsondergang</li>
+    <li>🎨 De juiste sfeer voor elk moment</li>
+    <li>🔋 Inzicht in energieverbruik (bij sommige systemen)</li>
+    <li>🏠 Perfecte eerste stap richting een smart home</li>
+  </ul>
 
-          <h2>Welke slimme verlichting past bij jou?</h2>
+  <h2>Welke slimme verlichting past bij jou?</h2>
 
-          <p>
-            Slimme verlichting is er in verschillende vormen. De juiste keuze
-            hangt af van wat jij belangrijk vindt: gemak, sfeer of automatisering.
-          </p>
+  <p>
+    Niet elke slimme lamp is hetzelfde. De juiste keuze hangt af van wat jij
+    belangrijk vindt en hoe ver je wilt gaan.
+  </p>
 
-          <ul>
-            <li><strong>Aan/uit en timers</strong> – een slimme stekker of wifi-lamp</li>
-            <li><strong>Sfeer en kleur</strong> – wit- en kleurinstellingen</li>
-            <li><strong>Automatiseringen</strong> – combineer met sensoren</li>
-          </ul>
+  <h3>1. Simpel aan/uit en timers</h3>
+  <p>
+    Wil je vooral gemak? Dan is een wifi-lamp of slimme stekker een prima start.
+    Hiermee stel je vaste tijden in of bedien je verlichting op afstand.
+  </p>
 
-          <h2>Stap-voor-stap starten</h2>
-
-          <ol>
-            <li>Kies één ruimte</li>
-            <li>Bepaal wat je wilt bereiken</li>
-            <li>Begin met één product</li>
-            <li>Installeer de app</li>
-            <li>Breid pas later uit</li>
-          </ol>
-
-          <h2>Aanbevolen producten</h2>
-
-          <ul>
-            <li>
-              <Link href="/producten/philips-hue-white-ambiance-starterkit">
-                Philips Hue White Ambiance Starterkit
-              </Link>
-            </li>
-            <li>
-              <Link href="/producten/tp-link-tapo-p110-slimme-stekker">
-                TP-Link Tapo P110 slimme stekker
-              </Link>
-            </li>
-          </ul>
-
-          <p>
-            Wil je eerst de basis begrijpen?{" "}
-            <Link href="/tips/wat-is-slimme-verlichting">
-              Lees wat slimme verlichting precies is
-            </Link>.
-          </p>
-
-          <hr />
-
-          <ul className="muted small">
-            <li>
-              <Link href="/tips/beginnen-met-smart-home">
-                Beginnen met smart home in 5 stappen
-              </Link>
-            </li>
-            <li>
-              <Link href="/tips/merken-combineren-zonder-gedoe">
-                Merken combineren zonder gedoe
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </main>
-
-      <Footer />
-    </>
-  );
-}
+  <h3>2. Sfeer en dimmen</h3>
+  <p>
+    Met slimme lampen met instel
