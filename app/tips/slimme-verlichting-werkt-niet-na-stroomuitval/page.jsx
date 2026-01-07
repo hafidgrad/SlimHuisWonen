@@ -6,10 +6,6 @@ export const metadata = {
   title: "Slimme verlichting werkt niet na stroomuitval? Zo los je het op",
   description:
     "Werkt je slimme verlichting niet meer na een stroomstoring? Ontdek waarom dit gebeurt, hoe je het oplost en hoe je het voorkomt.",
-  alternates: {
-    canonical:
-      "https://slimhuiswonen.nl/tips/slimme-verlichting-werkt-niet-na-stroomuitval",
-  },
 };
 
 export default function SlimmeVerlichtingStroomuitval() {
@@ -19,56 +15,20 @@ export default function SlimmeVerlichtingStroomuitval() {
 
       <main className="section">
         <div className="container article">
-          <h1>Slimme verlichting werkt niet na stroomuitval? Zo los je het op</h1>
+          <h1>Slimme verlichting werkt niet na stroomuitval</h1>
 
           <p className="section-intro">
-            Na een stroomuitval werkt je slimme verlichting ineens niet meer.
-            Lampen reageren niet, apps tonen “offline” of automatiseringen
-            stoppen. Dit probleem komt vaak voor — en gelukkig is het meestal
-            eenvoudig op te lossen.
+            Na een stroomuitval kan slimme verlichting offline raken.
+            Gelukkig is dit meestal eenvoudig op te lossen.
           </p>
 
-          <h2>Hoe herken je dit probleem?</h2>
+          <h2>Waarom gebeurt dit?</h2>
 
           <ul>
-            <li>Lampen reageren niet meer in de app</li>
-            <li>Automatiseringen werken niet</li>
-            <li>Spraakbediening doet niets</li>
-            <li>Lampen blijven aan of juist uit</li>
+            <li>Router start later dan de lampen</li>
+            <li>Wifi-verbinding raakt kwijt</li>
+            <li>Hub heeft tijd nodig om opnieuw te verbinden</li>
           </ul>
-
-          <p>
-            Dit gebeurt vaak direct na een stroomstoring of wanneer de stroom
-            kort is uitgevallen.
-          </p>
-
-          <h2>Waarom werkt slimme verlichting niet na stroomuitval?</h2>
-
-          <p>
-            Slimme verlichting is afhankelijk van meerdere onderdelen. Na een
-            stroomuitval starten deze niet altijd in de juiste volgorde op.
-          </p>
-
-          <ul>
-            <li>De router start later op dan de lampen</li>
-            <li>Wifi-verbindingen raken kwijt</li>
-            <li>De hub heeft tijd nodig om apparaten opnieuw te vinden</li>
-            <li>Goedkope wifi-lampen raken “in de war”</li>
-          </ul>
-
-          <h2>Verschil tussen systemen</h2>
-
-          <h3>Wifi-lampen</h3>
-          <p>
-            Wifi-lampen zijn het meest gevoelig. Ze verbinden direct met je
-            netwerk en kunnen na stroomuitval offline blijven.
-          </p>
-
-          <h3>Verlichting met hub (zoals Zigbee)</h3>
-          <p>
-            Systemen met een hub, zoals Philips Hue, herstellen zichzelf meestal
-            automatisch. Dit is stabieler en betrouwbaarder.
-          </p>
 
           <p>
             👉 Lees ook:{" "}
@@ -77,7 +37,29 @@ export default function SlimmeVerlichtingStroomuitval() {
             </Link>
           </p>
 
-          <h2>Zo los je het probleem stap voor stap op</h2>
+          <h2>Zo los je het stap voor stap op</h2>
 
           <ol>
-            <li>Wacht tot je
+            <li>Wacht tot je router volledig is opgestart</li>
+            <li>Controleer of je hub online is</li>
+            <li>Zet lampen één keer uit en aan</li>
+            <li>Open de app en ververs</li>
+            <li>Herstart de hub indien nodig</li>
+          </ol>
+
+          <p>
+            In de meeste gevallen werkt alles hierna weer normaal.
+          </p>
+
+          <hr />
+
+          <p className="muted small">
+            *Resultaat kan per merk verschillen.
+          </p>
+        </div>
+      </main>
+
+      <Footer />
+    </>
+  );
+}
