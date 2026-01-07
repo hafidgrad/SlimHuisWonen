@@ -74,11 +74,51 @@ export default function TipsPage() {
               </Link>
             </article>
 
-            {/* Artikel 5 – binnenkort */}
-            <article className="tip-card muted">
+            {/* Artikel 5 */}
+            <article className="tip-card">
+              <h2>Slim huis zonder hub</h2>
+              <p>
+                Kan een slim huis ook zonder hub werken? Dit zijn de voor- en
+                nadelen.
+              </p>
+              <Link href="/tips/slim-huis-zonder-hub">
+                Lees artikel →
+              </Link>
+            </article>
+
+            {/* Artikel 6 */}
+            <article className="tip-card">
+              <h2>Slimme verlichting werkt niet na stroomuitval</h2>
+              <p>
+                Na een stroomstoring werkt je slimme verlichting niet meer?
+                Zo los je het op.
+              </p>
+              <Link href="/tips/slimme-verlichting-werkt-niet-na-stroomuitval">
+                Lees artikel →
+              </Link>
+            </article>
+
+            {/* Artikel 7 */}
+            <article className="tip-card">
+              <h2>Slimme lamp werkt niet met schakelaar</h2>
+              <p>
+                Werkt je slimme lamp niet meer via de wandschakelaar?
+                Dit is de oorzaak.
+              </p>
+              <Link href="/tips/slimme-lamp-werkt-niet-met-schakelaar">
+                Lees artikel →
+              </Link>
+            </article>
+
+            {/* Artikel 8 */}
+            <article className="tip-card">
               <h2>Wat is een smart home hub?</h2>
-              <p>We leggen uit wat een hub doet en wanneer je er één nodig hebt.</p>
-              <span className="muted small">Artikel komt binnenkort</span>
+              <p>
+                We leggen uit wat een hub doet en wanneer je er één nodig hebt.
+              </p>
+              <Link href="/tips/wat-is-een-smart-home-hub">
+                Lees artikel →
+              </Link>
             </article>
           </div>
         </div>
