@@ -9,8 +9,8 @@ export default function Products() {
       <div className="container">
         <h2>Onze slimme aanraders</h2>
         <p className="section-intro">
-          Deze producten zijn populaire keuzes voor een slim huis. Vervang de links hieronder door je eigen
-          Amazon affiliate links met je tracking ID <code>slimhuiswonen-21</code>.
+          Deze producten zijn zorgvuldig geselecteerd op basis van populariteit, ervaringen en compatibiliteit met slimme woningen.
+          Wanneer je via onze links bestelt, ontvangen wij mogelijk een kleine commissie – zonder extra kosten voor jou.
         </p>
         <div className="product-grid">
           {products.map((p) => (
