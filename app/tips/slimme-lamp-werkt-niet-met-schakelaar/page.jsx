@@ -12,31 +12,25 @@ export default function SlimmeLampSchakelaar() {
           <h1>Slimme lamp werkt niet met schakelaar</h1>
 
           <p className="section-intro">
-            Dit is normaal gedrag bij slimme verlichting en gelukkig makkelijk
-            op te lossen.
+            Werkt je slimme lamp niet meer zodra je de wandschakelaar gebruikt?
+            Dit voelt als een fout, maar is in werkelijkheid normaal gedrag bij
+            slimme verlichting — en gelukkig goed op te lossen.
           </p>
 
           <h2>Waarom gebeurt dit?</h2>
+
           <p>
-            Slimme lampen hebben continu stroom nodig om bereikbaar te blijven.
+            Slimme lampen hebben continu stroom nodig om bereikbaar te blijven
+            via de app, automatiseringen of spraakbediening. Wanneer je de
+            schakelaar uitzet, verliest de lamp stroom en kan deze niet meer
+            communiceren.
           </p>
 
-          <h2>Oplossingen</h2>
+          <p>Gevolgen van het uitzetten van de schakelaar:</p>
+
           <ul>
-            <li>Laat de schakelaar altijd aan</li>
-            <li>Gebruik een slimme schakelaar</li>
-            <li>Gebruik scènes of automatiseringen</li>
+            <li>De lamp is niet meer bereikbaar in de app</li>
+            <li>Automatiseringen werken niet meer</li>
+            <li>Spraakbediening reageert niet</li>
+            <li>De lamp lijkt “kapot”, maar is dat niet</li>
           </ul>
-
-          <p>
-            <Link href="/tips/beginnen-met-slimme-verlichting">
-              Zo begin je goed met slimme verlichting
-            </Link>
-          </p>
-        </div>
-      </main>
-
-      <Footer />
-    </>
-  );
-}
