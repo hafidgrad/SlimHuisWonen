@@ -9,6 +9,13 @@ function getCategory(slug) {
   return categories.find((c) => c.slug === slug);
 }
 
+/* ---------- Static params (VERPLICHT) ---------- */
+export function generateStaticParams() {
+  return categories.map((cat) => ({
+    slug: cat.slug,
+  }));
+}
+
 /* ---------- Metadata ---------- */
 export function generateMetadata({ params }) {
   const category = getCategory(params.slug);
@@ -123,6 +130,7 @@ export default function CategoryPage({ params }) {
           {rest.length > 0 && (
             <>
               <h2>Meer producten</h2>
+
               <div className="product-grid">
                 {rest.map((p) => (
                   <article key={p.slug} className="product-card">
