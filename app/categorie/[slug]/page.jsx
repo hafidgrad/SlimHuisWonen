@@ -25,11 +25,11 @@ export function generateMetadata({ params }) {
   const url = `https://slimhuiswonen.nl/categorie/${category.slug}`;
 
   return {
-    title: `${category.name} | SlimHuisWonen`,
+    title: `${category.title} | SlimHuisWonen`,
     description: category.description,
     alternates: { canonical: url },
     openGraph: {
-      title: `${category.name} | SlimHuisWonen`,
+      title: `${category.title} | SlimHuisWonen`,
       description: category.description,
       url,
       type: "website",
@@ -70,7 +70,7 @@ export default function CategoryPage({ params }) {
 
       <main className="section">
         <div className="container">
-          <h1>{category.name}</h1>
+          <h1>{category.title}</h1>
           <p className="section-intro">{category.description}</p>
 
           {products.length === 0 && (
@@ -92,11 +92,13 @@ export default function CategoryPage({ params }) {
                     <h3>{p.name}</h3>
                     <p className="product-desc">{p.description}</p>
 
-                    <ul className="product-bullets">
-                      {p.features?.slice(0, 3).map((f) => (
-                        <li key={f}>{f}</li>
-                      ))}
-                    </ul>
+                    {p.features?.length > 0 && (
+                      <ul className="product-bullets">
+                        {p.features.slice(0, 3).map((f) => (
+                          <li key={f}>{f}</li>
+                        ))}
+                      </ul>
+                    )}
 
                     <div className="product-actions">
                       {p.affiliateUrl && (
