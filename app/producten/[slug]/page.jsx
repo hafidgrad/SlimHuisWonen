@@ -7,6 +7,7 @@ import {
   getProductBySlug,
   getProductsByCategory,
 } from "@/data/products";
+
 /* ---------- Tips per categorie ---------- */
 const tipsByCategory = {
   "slimme-verlichting": [
@@ -52,7 +53,7 @@ export function generateStaticParams() {
   return getAllProducts().map((p) => ({ slug: p.slug }));
 }
 
-/* ---------- Metadata ---------- */
+/* ---------- Metadata (SEO FIX) ---------- */
 export async function generateMetadata({ params }) {
   const product = getProductBySlug(params.slug);
 
@@ -65,13 +66,18 @@ export async function generateMetadata({ params }) {
 
   const url = `https://slimhuiswonen.nl/producten/${product.slug}`;
 
+  const title = product.seo?.title ?? product.title;
+  const description = product.seo?.description ?? product.description;
+
   return {
-    title: product.title,
-    description: product.description,
-    alternates: { canonical: url },
+    title,
+    description,
+    alternates: {
+      canonical: url,
+    },
     openGraph: {
-      title: product.title,
-      description: product.description,
+      title,
+      description,
       url,
       type: "website",
     },
@@ -97,11 +103,11 @@ export default function ProductDetailPage({ params }) {
     );
   }
 
-const related = getProductsByCategory(product.category)
-  .filter((p) => p.slug !== product.slug)
-  .slice(0, 3);
+  const related = getProductsByCategory(product.category)
+    .filter((p) => p.slug !== product.slug)
+    .slice(0, 3);
 
-const tipLinks = tipsByCategory[product.category] ?? [];
+  const tipLinks = tipsByCategory[product.category] ?? [];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -138,6 +144,7 @@ const tipLinks = tipsByCategory[product.category] ?? [];
         <section className="section">
           <div className="container product-detail">
             <h1>{product.title}</h1>
+
             <p className="product-desc">{product.description}</p>
 
             <ul className="product-bullets">
@@ -148,7 +155,7 @@ const tipLinks = tipsByCategory[product.category] ?? [];
 
             <p className="muted">{product.priceHint}</p>
 
-            {/* ✅ Affiliate CTA (Client Component) */}
+            {/* Affiliate CTA */}
             <div className="sticky-cta">
               <AffiliateButton
                 href={product.affiliateUrl}
@@ -192,26 +199,28 @@ const tipLinks = tipsByCategory[product.category] ?? [];
             </div>
           </section>
         )}
-{/* ✅ Tips & uitleg bij dit product */}
-{tipLinks.length > 0 && (
-  <section className="section">
-    <div className="container">
-      <h2>Tips & uitleg bij dit product</h2>
 
-      <p className="section-intro">
-        Handige uitleg om dit product beter te begrijpen en slim te gebruiken.
-      </p>
+        {/* Tips & uitleg */}
+        {tipLinks.length > 0 && (
+          <section className="section">
+            <div className="container">
+              <h2>Tips & uitleg bij dit product</h2>
 
-      <ul className="muted">
-        {tipLinks.map((tip) => (
-          <li key={tip.href}>
-            <Link href={tip.href}>{tip.title}</Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </section>
-)}
+              <p className="section-intro">
+                Handige uitleg om dit product beter te begrijpen en slim te
+                gebruiken.
+              </p>
+
+              <ul className="muted">
+                {tipLinks.map((tip) => (
+                  <li key={tip.href}>
+                    <Link href={tip.href}>{tip.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        )}
 
         {/* Structured data */}
         <script
