@@ -251,6 +251,112 @@ export const products = [
   },
 
   /* =========================
+   SLIMME STEKKERS
+========================== */
+
+{
+  slug: "tapo-p115-slimme-stekker",
+  brand: "TP-Link Tapo",
+  name: "TP-Link Tapo P115 Slimme Stekker",
+  category: "slimme-stekkers",
+  description:
+    "Compacte slimme stekker met energiemeting. Ideaal om sluipverbruik te meten en apparaten automatisch te schakelen.",
+  features: [
+    "Energieverbruik inzicht",
+    "Geen hub nodig (Wi-Fi)",
+    "Werkt met Alexa & Google Assistant",
+  ],
+  affiliateUrl:
+    "https://www.amazon.nl/dp/B09ZBGWYH9?tag=slimhuiswonen-21",
+  rating: 4.6,
+},
+
+{
+  slug: "tapo-p110-slimme-stekker",
+  brand: "TP-Link Tapo",
+  name: "TP-Link Tapo P110 Slimme Stekker",
+  category: "slimme-stekkers",
+  description:
+    "Populaire slimme stekker met realtime energiemeting en handige schema’s via de Tapo-app.",
+  features: [
+    "Realtime energiemeting",
+    "Timers & automatiseringen",
+    "Geen hub nodig",
+  ],
+  affiliateUrl:
+    "https://www.amazon.nl/dp/B09BFT7NZJ?tag=slimhuiswonen-21",
+  rating: 4.7,
+},
+
+{
+  slug: "eve-energy-matter",
+  brand: "Eve",
+  name: "Eve Energy (Matter / Thread)",
+  category: "slimme-stekkers",
+  description:
+    "Premium slimme stekker met Matter en Thread. Volledig lokaal en ideaal voor snelle, stabiele automatiseringen.",
+  features: [
+    "Matter & Thread",
+    "Volledig lokaal (geen cloud)",
+    "Energieverbruik meten",
+  ],
+  affiliateUrl:
+    "https://www.amazon.nl/dp/B0BYTB11J3?tag=slimhuiswonen-21",
+  rating: 4.5,
+},
+
+{
+  slug: "philips-hue-smart-plug",
+  brand: "Philips Hue",
+  name: "Philips Hue Smart Plug",
+  category: "slimme-stekkers",
+  description:
+    "Maak elk apparaat slim binnen het Philips Hue ecosysteem. Perfect voor lampen en kleine apparaten.",
+  features: [
+    "Hue-integratie",
+    "Bluetooth of Hue Bridge",
+    "Betrouwbaar & stabiel",
+  ],
+  affiliateUrl:
+    "https://www.amazon.nl/dp/B09CV7QQKB?tag=slimhuiswonen-21",
+  rating: 4.4,
+},
+
+{
+  slug: "philips-hue-smart-plug-combipack",
+  brand: "Philips Hue",
+  name: "Philips Hue Smart Plug + Dimmer Switch",
+  category: "slimme-stekkers",
+  description:
+    "Combipack met slimme stekker en draadloze dimmer. Handmatige bediening en automatisering in één set.",
+  features: [
+    "Inclusief dimmer switch",
+    "Hue ecosysteem",
+    "Flexibel te plaatsen",
+  ],
+  affiliateUrl:
+    "https://www.amazon.nl/dp/B09QP98F9W?tag=slimhuiswonen-21",
+  rating: 4.5,
+},
+
+{
+  slug: "innr-zigbee-outdoor-smart-plug",
+  brand: "Innr",
+  name: "Innr Zigbee Outdoor Smart Plug",
+  category: "slimme-stekkers",
+  description:
+    "Slimme stekker voor buitengebruik. Ideaal voor tuinverlichting en andere buitentoepassingen.",
+  features: [
+    "Geschikt voor buiten (IP54)",
+    "Zigbee repeater",
+    "Werkt met Hue & Alexa",
+  ],
+  affiliateUrl:
+    "https://www.amazon.nl/dp/B0FL83D4DS?tag=slimhuiswonen-21",
+  rating: 4.4,
+},
+
+  /* =========================
      SLIMME HUBS
   ========================== */
 
