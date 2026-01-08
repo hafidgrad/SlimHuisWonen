@@ -12,7 +12,7 @@ export default function Hero() {
             <a href="#aanraders" className="btn btn-primary">
               Bekijk slimme aanraders
             </a>
-            <a href="#categorieen" className="btn btn-secondary">
+            <a href="#categorie" className="btn btn-secondary">
               Ontdek categorieën
             </a>
           </div>

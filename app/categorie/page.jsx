@@ -12,7 +12,7 @@ export const metadata = {
   },
 };
 
-export default function CategorieenPage() {
+export default function CategoriePage() {
   return (
     <>
       <Header />

@@ -3,7 +3,7 @@ import { categories } from "@/data/categories";
 
 export default function Categories() {
   return (
-    <section id="categorieen" className="section section-alt">
+    <section id="categorie" className="section section-alt">
       <div className="container">
         <h2>Categorieën slimme producten</h2>
 
