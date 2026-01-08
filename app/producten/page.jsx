@@ -4,9 +4,9 @@ import { getAllProducts } from "@/data/products";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Alle slimme producten",
+  title: "Alle slimme producten voor een slim huis",
   description:
-    "Overzicht van slimme producten die we aanraden, zoals slimme verlichting, sensoren, deurbellen, camera’s en thermostaten.",
+    "Overzicht van slimme producten voor verlichting, beveiliging, verwarming en energie. Geschikt voor Homey en Home Assistant.",
   alternates: {
     canonical: "https://slimhuiswonen.nl/producten",
   },
@@ -18,30 +18,47 @@ export default function ProductenPage() {
   return (
     <>
       <Header />
+
       <main>
         <section className="section">
           <div className="container">
             <h1>Alle slimme producten</h1>
+
             <p className="section-intro">
-              Een selectie van slimme producten die goed passen in een slim huis. Klik door naar de productpagina
-              voor meer informatie en je affiliate link.
+              Ontdek slimme producten voor verlichting, beveiliging, verwarming
+              en energie. Klik op een product voor uitgebreide informatie,
+              compatibiliteit en actuele prijzen via onze partners.
             </p>
+
             <div className="product-grid">
               {products.map((p) => (
                 <article className="product-card" key={p.slug}>
                   <div className="product-tag">{p.brand}</div>
+
                   <h3>{p.title}</h3>
+
                   <p className="product-desc">{p.description}</p>
+
                   <ul className="product-bullets">
                     {p.features.map((f) => (
                       <li key={f}>{f}</li>
                     ))}
                   </ul>
+
                   <div className="product-actions">
-                    <a href={p.affiliateUrl} className="btn btn-primary product-btn" target="_blank" rel="noreferrer">
+                    <a
+                      href={p.affiliateUrl}
+                      className="btn btn-primary product-btn"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       Bekijk bij Amazon
                     </a>
-                    <Link href={`/producten/${p.slug}`} className="product-details-link">
+
+                    <Link
+                      href={`/producten/${p.slug}`}
+                      className="product-details-link"
+                    >
                       Meer info
                     </Link>
                   </div>
@@ -51,6 +68,7 @@ export default function ProductenPage() {
           </div>
         </section>
       </main>
+
       <Footer />
     </>
   );
