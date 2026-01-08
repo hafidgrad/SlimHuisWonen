@@ -14,17 +14,7 @@ export const products = [
       "Werkt met Google Assistant, Alexa en Siri",
       "Uitbreidbaar met extra lampen",
     ],
-    seo: {
-      title: "Philips Hue White Ambiance starterkit | Slimme verlichting",
-      description:
-        "Complete Philips Hue White Ambiance starterkit met bridge. Geschikt voor Homey en Home Assistant.",
-    },
-    compatibility: {
-      homey: "native",
-      homeAssistant: "native",
-    },
     affiliateUrl: "https://www.amazon.nl/dp/B0991VHWSJ?tag=slimhuiswonen-21",
-    bolUrl: null,
     priceHint: "€80–€120",
     rating: 4.7,
   },
@@ -34,9 +24,7 @@ export const products = [
     brand: "Aqara",
     name: "Aqara Deur- & Raamsensor",
     title: "Aqara Deur- & Raamsensor",
-    shortTitle: "Aqara deur/raam",
     category: "sensoren",
-    tags: ["sensor", "contact", "zigbee"],
     description:
       "Zigbee deur- en raamsensor voor beveiliging en automatiseringen.",
     features: [
@@ -44,19 +32,55 @@ export const products = [
       "Zigbee protocol",
       "Werkt met Homey en Home Assistant",
     ],
-    seo: {
-      title: "Aqara deur- en raamsensor | Zigbee sensor",
-      description:
-        "Aqara Zigbee deur- en raamsensor voor slimme automatiseringen.",
-    },
-    compatibility: {
-      homey: "native",
-      homeAssistant: "native",
-    },
     affiliateUrl: "https://www.amazon.nl/dp/B0BTL8B72D?tag=slimhuiswonen-21",
-    bolUrl: null,
     priceHint: "€15–€25",
     rating: 4.6,
+  },
+
+  {
+    slug: "aqara-fp2-aanwezigheidssensor",
+    brand: "Aqara",
+    name: "Aqara Aanwezigheidssensor FP2",
+    title: "Aqara Aanwezigheidssensor FP2",
+    category: "sensoren",
+    description:
+      "mmWave aanwezigheidssensor met zone-detectie voor geavanceerde automatiseringen.",
+    features: ["mmWave radar", "Zone-detectie", "Zeer nauwkeurig"],
+    affiliateUrl: "https://www.amazon.nl/dp/B0BXWZMQJ3?tag=slimhuiswonen-21",
+    priceHint: "€70–€100",
+    rating: 4.5,
+  },
+
+  {
+    slug: "aqara-contact-p2",
+    brand: "Aqara",
+    name: "Aqara Contactsensor P2 (Matter)",
+    title: "Aqara Contactsensor P2 (Matter)",
+    category: "sensoren",
+    description:
+      "Matter contactsensor met Thread voor snelle en lokale automatiseringen.",
+    features: ["Matter over Thread", "Lokaal", "Toekomstbestendig"],
+    affiliateUrl: "https://www.amazon.nl/dp/B0BTL8B72D?tag=slimhuiswonen-21",
+    priceHint: "€20–€35",
+    rating: 4.6,
+  },
+
+  {
+    slug: "tp-link-tapo-t110-contactsensor",
+    brand: "TP-Link Tapo",
+    name: "TP-Link Tapo T110 Contactsensor",
+    title: "TP-Link Tapo T110 Contactsensor",
+    category: "sensoren",
+    description:
+      "Contactsensor voor deuren en ramen binnen het Tapo ecosysteem.",
+    features: [
+      "Directe meldingen",
+      "Lange batterijduur",
+      "Werkt met Tapo Hub",
+    ],
+    affiliateUrl: "https://www.amazon.nl/dp/B0BF5MC9QXJ?tag=slimhuiswonen-21",
+    priceHint: "€15–€25",
+    rating: 4.4,
   },
 
   {
@@ -64,23 +88,11 @@ export const products = [
     brand: "Ring",
     name: "Ring Video Deurbel op Batterij",
     title: "Ring Video Deurbel op Batterij",
-    shortTitle: "Ring deurbel",
     category: "slimme-deurbellen",
-    tags: ["deurbel", "camera", "beveiliging"],
     description:
       "Slimme videodeurbel op batterij met live beeld en meldingen.",
-    features: ["Live video via app", "Bewegingsdetectie", "Werkt met Alexa"],
-    seo: {
-      title: "Ring video deurbel op batterij | Slimme deurbel",
-      description:
-        "Ring slimme videodeurbel met bewegingsdetectie en live beeld.",
-    },
-    compatibility: {
-      homey: "via-cloud",
-      homeAssistant: "via-cloud",
-    },
+    features: ["Live video", "Bewegingsdetectie", "Werkt met Alexa"],
     affiliateUrl: "https://www.amazon.nl/dp/B0BZWQP9Z1?tag=slimhuiswonen-21",
-    bolUrl: null,
     priceHint: "€80–€250",
     rating: 4.5,
   },
@@ -90,9 +102,7 @@ export const products = [
     brand: "Google Nest",
     name: "Google Nest Thermostaat",
     title: "Google Nest Thermostaat",
-    shortTitle: "Nest thermostaat",
     category: "slimme-thermostaten",
-    tags: ["thermostaat", "energie", "verwarming"],
     description:
       "Slimme thermostaat die energie bespaart met zelflerende schema’s.",
     features: [
@@ -100,17 +110,7 @@ export const products = [
       "Spraakbediening",
       "Inzicht in energieverbruik",
     ],
-    seo: {
-      title: "Google Nest slimme thermostaat | Energie besparen",
-      description:
-        "Google Nest thermostaat met slimme energiebesparing.",
-    },
-    compatibility: {
-      homey: "via-cloud",
-      homeAssistant: "native",
-    },
     affiliateUrl: "https://www.amazon.nl/dp/B0BXRYLMCC?tag=slimhuiswonen-21",
-    bolUrl: null,
     priceHint: "€200–€280",
     rating: 4.4,
   },
@@ -120,27 +120,11 @@ export const products = [
     brand: "Aeotec",
     name: "Aeotec Smart Home Hub (SmartThings)",
     title: "Aeotec Smart Home Hub (SmartThings)",
-    shortTitle: "Aeotec Hub",
     category: "slimme-hubs",
-    tags: ["hub", "smartthings", "zigbee", "zwave"],
     description:
-      "Smart home hub voor het SmartThings ecosysteem met Zigbee en Z-Wave ondersteuning.",
-    features: [
-      "Ondersteunt Zigbee & Z-Wave",
-      "Werkt met SmartThings",
-      "Centrale automatiseringen",
-    ],
-    seo: {
-      title: "Aeotec Smart Home Hub | SmartThings hub",
-      description:
-        "Aeotec Smart Home Hub voor SmartThings met Zigbee en Z-Wave.",
-    },
-    compatibility: {
-      homey: "nee",
-      homeAssistant: "nee",
-    },
+      "Smart home hub met Zigbee en Z-Wave ondersteuning voor SmartThings.",
+    features: ["Zigbee & Z-Wave", "SmartThings", "Automatiseringen"],
     affiliateUrl: "https://www.amazon.nl/dp/B08NDH9NXN?tag=slimhuiswonen-21",
-    bolUrl: null,
     priceHint: "€120–€160",
     rating: 4.3,
   },
@@ -150,25 +134,27 @@ export const products = [
     brand: "Amazon",
     name: "Amazon Echo Show 5 (3e generatie)",
     title: "Amazon Echo Show 5 (3e generatie)",
-    shortTitle: "Echo Show 5",
     category: "slimme-speakers",
-    tags: ["amazon", "alexa", "speaker", "display"],
     description:
       "Slimme speaker met scherm en Alexa voor smart home bediening.",
-    features: ["Slim scherm", "Nederlandse Alexa", "Wifi & Bluetooth"],
-    seo: {
-      title: "Amazon Echo Show 5 | Slimme speaker met scherm",
-      description:
-        "Echo Show 5 met Alexa en scherm. Ideaal voor je smart home.",
-    },
-    compatibility: {
-      homey: "via-cloud",
-      homeAssistant: "via-cloud",
-    },
+    features: ["Scherm", "Alexa NL", "Wifi & Bluetooth"],
     affiliateUrl: "https://www.amazon.nl/dp/B0DJDGN3BX?tag=slimhuiswonen-21",
-    bolUrl: null,
     priceHint: "€90–€120",
     rating: 4.5,
+  },
+
+  {
+    slug: "amazon-echo-studio",
+    brand: "Amazon",
+    name: "Amazon Echo Studio",
+    title: "Amazon Echo Studio",
+    category: "slimme-speakers",
+    description:
+      "Premium Alexa speaker met Dolby Atmos en krachtig geluid.",
+    features: ["Dolby Atmos", "Krachtig geluid", "Alexa"],
+    affiliateUrl: "https://www.amazon.nl/dp/B0DXN1YWZZ?tag=slimhuiswonen-21",
+    priceHint: "€170–€220",
+    rating: 4.6,
   },
 ];
 
@@ -183,3 +169,4 @@ export function getProductBySlug(slug) {
 export function getProductsByCategory(categorySlug) {
   return products.filter((p) => p.category === categorySlug);
 }
+
