@@ -18,7 +18,9 @@ export default function HomePage() {
         <TopAanraders />
         <About />
         <Categories />
-        <Products />
+
+        {/* ✅ Toon slechts 6 producten op de homepage */}
+        <Products limit={6} />
 
         {/* ✅ Tips & uitleg – centrale CTA */}
         <section className="section">
