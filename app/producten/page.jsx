@@ -37,7 +37,7 @@ export default function ProductenPage() {
                   <p className="product-desc">{p.description}</p>
 
                   <Link
-                    href={`/product/${p.slug}`}
+                    href={`/producten/${p.slug}`}
                     className="product-details-link"
                   >
                     Meer info →
