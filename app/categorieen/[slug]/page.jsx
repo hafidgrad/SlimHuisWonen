@@ -4,16 +4,11 @@ import Link from "next/link";
 import { getProductsByCategory } from "@/data/products";
 import { categories } from "@/data/categories";
 
+export const dynamic = "force-dynamic";
+
 /* ---------- Helpers ---------- */
 function getCategory(slug) {
   return categories.find((c) => c.slug === slug);
-}
-
-/* ---------- Static params ---------- */
-export function generateStaticParams() {
-  return categories.map((cat) => ({
-    slug: cat.slug,
-  }));
 }
 
 /* ---------- Metadata ---------- */
@@ -32,9 +27,7 @@ export function generateMetadata({ params }) {
   return {
     title: `${category.name} | SlimHuisWonen`,
     description: category.description,
-    alternates: {
-      canonical: url,
-    },
+    alternates: { canonical: url },
     openGraph: {
       title: `${category.name} | SlimHuisWonen`,
       description: category.description,
@@ -64,8 +57,7 @@ export default function CategoryPage({ params }) {
     );
   }
 
-  const productsRaw = getProductsByCategory(slug);
-  const products = [...productsRaw].sort(
+  const products = getProductsByCategory(slug).sort(
     (a, b) => (b.rating ?? 0) - (a.rating ?? 0)
   );
 
@@ -114,7 +106,7 @@ export default function CategoryPage({ params }) {
                           rel="noreferrer"
                           className="btn btn-primary product-btn"
                         >
-                          Bekijk beste prijs bij Amazon
+                          Bekijk beste prijs
                         </a>
                       )}
 
@@ -153,10 +145,6 @@ export default function CategoryPage({ params }) {
               </div>
             </>
           )}
-
-          <p className="muted small">
-            *Prijzen kunnen wijzigen. Bekijk actuele prijs bij Amazon.
-          </p>
         </div>
       </main>
 
