@@ -1,140 +1,30 @@
+import { notFound } from "next/navigation";
+import { getProductBySlug, getAllProducts } from "@/data/products";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Link from "next/link";
-import AffiliateButton from "@/components/AffiliateButton";
-import {
-  getAllProducts,
-  getProductBySlug,
-  getProductsByCategory,
-} from "@/data/products";
 
-/* ---------- Tips per categorie ---------- */
-const tipsByCategory = {
-  "slimme-verlichting": [
-    {
-      href: "/tips/wat-is-slimme-verlichting",
-      title: "Wat is slimme verlichting?",
-    },
-    {
-      href: "/tips/beginnen-met-slimme-verlichting",
-      title: "Beginnen met slimme verlichting (stap-voor-stap)",
-    },
-    {
-      href: "/tips/beginnen-met-smart-home",
-      title: "Beginnen met smart home in 5 stappen",
-    },
-  ],
-
-  "slimme-stekkers": [
-    {
-      href: "/tips/beginnen-met-smart-home",
-      title: "Beginnen met smart home in 5 stappen",
-    },
-    {
-      href: "/tips/slim-huis-zonder-hub",
-      title: "Slim huis zonder hub: kan dat?",
-    },
-  ],
-
-  sensoren: [
-    {
-      href: "/tips/beginnen-met-smart-home",
-      title: "Beginnen met smart home in 5 stappen",
-    },
-    {
-      href: "/tips/merken-combineren-zonder-gedoe",
-      title: "Merken combineren zonder gedoe",
-    },
-  ],
-};
-
-/* ---------- Static params ---------- */
-export function generateStaticParams() {
-  return getAllProducts().map((p) => ({ slug: p.slug }));
+export async function generateStaticParams() {
+  return getAllProducts().map((p) => ({
+    slug: p.slug,
+  }));
 }
 
-/* ---------- Metadata (SEO FIX) ---------- */
-export async function generateMetadata({ params }) {
+export default function ProductPage({ params }) {
   const product = getProductBySlug(params.slug);
 
   if (!product) {
-    return {
-      title: "Product niet gevonden",
-      description: "Dit product staat niet (meer) in ons overzicht.",
-    };
+    notFound();
   }
 
-  const url = `https://slimhuiswonen.nl/producten/${product.slug}`;
-
-  const title = product.seo?.title ?? product.title;
-  const description = product.seo?.description ?? product.description;
-
-  return {
-    title,
+  const {
+    name,
+    brand,
     description,
-    alternates: {
-      canonical: url,
-    },
-    openGraph: {
-      title,
-      description,
-      url,
-      type: "website",
-    },
-  };
-}
-
-/* ---------- Page ---------- */
-export default function ProductDetailPage({ params }) {
-  const product = getProductBySlug(params.slug);
-
-  if (!product) {
-    return (
-      <>
-        <Header />
-        <main className="section">
-          <div className="container">
-            <h1>Product niet gevonden</h1>
-            <p>Dit product staat niet (meer) in ons overzicht.</p>
-          </div>
-        </main>
-        <Footer />
-      </>
-    );
-  }
-
-  const related = getProductsByCategory(product.category)
-    .filter((p) => p.slug !== product.slug)
-    .slice(0, 3);
-
-  const tipLinks = tipsByCategory[product.category] ?? [];
-
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: product.title,
-    brand: {
-      "@type": "Brand",
-      name: product.brand,
-    },
-    description: product.description,
-    image: product.image
-      ? `https://slimhuiswonen.nl${product.image}`
-      : undefined,
-    aggregateRating: product.rating
-      ? {
-          "@type": "AggregateRating",
-          ratingValue: product.rating,
-          reviewCount: 10,
-        }
-      : undefined,
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "EUR",
-      url: product.affiliateUrl,
-      availability: "https://schema.org/InStock",
-    },
-  };
+    features = [],
+    affiliateUrl,
+    priceHint,
+    compatibility = {},
+  } = product;
 
   return (
     <>
@@ -142,91 +32,55 @@ export default function ProductDetailPage({ params }) {
 
       <main>
         <section className="section">
-          <div className="container product-detail">
-            <h1>{product.title}</h1>
+          <div className="container">
+            <h1>{name}</h1>
 
-            <p className="product-desc">{product.description}</p>
+            <p className="product-brand">{brand}</p>
 
-            <ul className="product-bullets">
-              {product.features.map((f) => (
-                <li key={f}>{f}</li>
-              ))}
-            </ul>
+            <p className="product-desc">{description}</p>
 
-            <p className="muted">{product.priceHint}</p>
+            {features.length > 0 && (
+              <>
+                <h2>Belangrijkste kenmerken</h2>
+                <ul className="product-bullets">
+                  {features.map((f) => (
+                    <li key={f}>{f}</li>
+                  ))}
+                </ul>
+              </>
+            )}
 
-            {/* Affiliate CTA */}
-            <div className="sticky-cta">
-              <AffiliateButton
-                href={product.affiliateUrl}
-                label="Bekijk beste prijs bij Amazon"
-              />
-            </div>
-
-            <p className="muted small">
-              *Prijzen kunnen wijzigen. Bekijk actuele prijs bij Amazon.
-            </p>
-
-            {product.bolUrl && (
-              <p className="muted small">
-                Dit product is ook verkrijgbaar bij bol.com.
+            {priceHint && (
+              <p className="price-hint">
+                <strong>Prijsindicatie:</strong> {priceHint}
               </p>
+            )}
+
+            {affiliateUrl && (
+              <a
+                href={affiliateUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-primary"
+              >
+                Bekijk bij Amazon
+              </a>
+            )}
+
+            {compatibility && Object.keys(compatibility).length > 0 && (
+              <>
+                <h2>Compatibiliteit</h2>
+                <ul>
+                  {Object.entries(compatibility).map(([platform, value]) => (
+                    <li key={platform}>
+                      {platform}: {value}
+                    </li>
+                  ))}
+                </ul>
+              </>
             )}
           </div>
         </section>
-
-        {/* Vergelijkbare producten */}
-        {related.length > 0 && (
-          <section className="section related-products">
-            <div className="container">
-              <h2>Vergelijkbare producten</h2>
-
-              <div className="product-grid">
-                {related.map((p) => (
-                  <article key={p.slug} className="product-card">
-                    <div className="product-tag">{p.brand}</div>
-                    <h3>{p.title}</h3>
-
-                    <Link
-                      href={`/producten/${p.slug}`}
-                      className="product-details-link"
-                    >
-                      Bekijk product →
-                    </Link>
-                  </article>
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
-
-        {/* Tips & uitleg */}
-        {tipLinks.length > 0 && (
-          <section className="section">
-            <div className="container">
-              <h2>Tips & uitleg bij dit product</h2>
-
-              <p className="section-intro">
-                Handige uitleg om dit product beter te begrijpen en slim te
-                gebruiken.
-              </p>
-
-              <ul className="muted">
-                {tipLinks.map((tip) => (
-                  <li key={tip.href}>
-                    <Link href={tip.href}>{tip.title}</Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </section>
-        )}
-
-        {/* Structured data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
       </main>
 
       <Footer />
