@@ -3,6 +3,8 @@ import { getProductBySlug, getAllProducts } from "@/data/products";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+export const dynamic = "force-dynamic";
+
 export async function generateStaticParams() {
   return getAllProducts().map((p) => ({
     slug: p.slug,
@@ -36,7 +38,6 @@ export default function ProductPage({ params }) {
             <h1>{name}</h1>
 
             <p className="product-brand">{brand}</p>
-
             <p className="product-desc">{description}</p>
 
             {features.length > 0 && (
