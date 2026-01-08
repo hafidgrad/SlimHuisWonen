@@ -9,7 +9,7 @@ function getCategory(slug) {
   return categories.find((c) => c.slug === slug);
 }
 
-/* ---------- Static params (VERPLICHT) ---------- */
+/* ---------- Static params ---------- */
 export function generateStaticParams() {
   return categories.map((cat) => ({
     slug: cat.slug,
@@ -22,19 +22,21 @@ export function generateMetadata({ params }) {
 
   if (!category) {
     return {
-      title: "Categorie niet gevonden",
+      title: "Categorie niet gevonden | SlimHuisWonen",
       description: "Deze categorie bestaat niet.",
     };
   }
 
-  const url = `https://slimhuiswonen.nl/categorieen/${category.slug}`;
+  const url = `https://slimhuiswonen.nl/categorie/${category.slug}`;
 
   return {
-    title: `${category.title} | SlimHuisWonen`,
+    title: `${category.name} | SlimHuisWonen`,
     description: category.description,
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+    },
     openGraph: {
-      title: `${category.title} | SlimHuisWonen`,
+      title: `${category.name} | SlimHuisWonen`,
       description: category.description,
       url,
       type: "website",
@@ -76,7 +78,7 @@ export default function CategoryPage({ params }) {
 
       <main className="section">
         <div className="container">
-          <h1>{category.title}</h1>
+          <h1>{category.name}</h1>
           <p className="section-intro">{category.description}</p>
 
           {products.length === 0 && (
@@ -95,7 +97,7 @@ export default function CategoryPage({ params }) {
                     )}
 
                     <div className="product-tag">{p.brand}</div>
-                    <h3>{p.title}</h3>
+                    <h3>{p.name}</h3>
                     <p className="product-desc">{p.description}</p>
 
                     <ul className="product-bullets">
@@ -105,17 +107,19 @@ export default function CategoryPage({ params }) {
                     </ul>
 
                     <div className="product-actions">
-                      <a
-                        href={p.affiliateUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="btn btn-primary product-btn"
-                      >
-                        Bekijk beste prijs bij Amazon
-                      </a>
+                      {p.affiliateUrl && (
+                        <a
+                          href={p.affiliateUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="btn btn-primary product-btn"
+                        >
+                          Bekijk beste prijs bij Amazon
+                        </a>
+                      )}
 
                       <Link
-                        href={`/producten/${p.slug}`}
+                        href={`/product/${p.slug}`}
                         className="product-details-link"
                       >
                         Meer info
@@ -135,11 +139,11 @@ export default function CategoryPage({ params }) {
                 {rest.map((p) => (
                   <article key={p.slug} className="product-card">
                     <div className="product-tag">{p.brand}</div>
-                    <h3>{p.title}</h3>
+                    <h3>{p.name}</h3>
                     <p className="product-desc">{p.description}</p>
 
                     <Link
-                      href={`/producten/${p.slug}`}
+                      href={`/product/${p.slug}`}
                       className="product-details-link"
                     >
                       Meer info →
