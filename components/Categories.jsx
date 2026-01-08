@@ -14,7 +14,7 @@ export default function Categories() {
               <p>{cat.description}</p>
 
               <Link
-                href={`/categorieen/${cat.slug}`}
+                href={`/categorie/${cat.slug}`}
                 className="card-link"
               >
                 Bekijk producten →
