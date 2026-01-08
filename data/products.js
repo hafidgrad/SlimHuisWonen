@@ -1,11 +1,8 @@
 export const products = [
-  /* =========================
-     BESTAANDE PRODUCTEN
-  ========================== */
-
   {
     slug: "philips-hue-white-ambiance-starterkit",
     brand: "Philips Hue",
+    name: "Philips Hue White Ambiance Starterkit",
     title: "Philips Hue White Ambiance Starterkit",
     shortTitle: "Hue White Ambiance kit",
     category: "slimme-verlichting",
@@ -35,6 +32,7 @@ export const products = [
   {
     slug: "aqara-deur-raamsensor",
     brand: "Aqara",
+    name: "Aqara Deur- & Raamsensor",
     title: "Aqara Deur- & Raamsensor",
     shortTitle: "Aqara deur/raam",
     category: "sensoren",
@@ -64,17 +62,14 @@ export const products = [
   {
     slug: "ring-video-deurbel",
     brand: "Ring",
+    name: "Ring Video Deurbel op Batterij",
     title: "Ring Video Deurbel op Batterij",
     shortTitle: "Ring deurbel",
     category: "slimme-deurbellen",
     tags: ["deurbel", "camera", "beveiliging"],
     description:
       "Slimme videodeurbel op batterij met live beeld en meldingen.",
-    features: [
-      "Live video via app",
-      "Bewegingsdetectie",
-      "Werkt met Alexa",
-    ],
+    features: ["Live video via app", "Bewegingsdetectie", "Werkt met Alexa"],
     seo: {
       title: "Ring video deurbel op batterij | Slimme deurbel",
       description:
@@ -93,6 +88,7 @@ export const products = [
   {
     slug: "nest-learning-thermostaat",
     brand: "Google Nest",
+    name: "Google Nest Thermostaat",
     title: "Google Nest Thermostaat",
     shortTitle: "Nest thermostaat",
     category: "slimme-thermostaten",
@@ -119,13 +115,10 @@ export const products = [
     rating: 4.4,
   },
 
-  /* =========================
-     EXTRA PRODUCTEN TOEGEVOEGD
-  ========================== */
-
   {
     slug: "aeotec-smart-home-hub",
     brand: "Aeotec",
+    name: "Aeotec Smart Home Hub (SmartThings)",
     title: "Aeotec Smart Home Hub (SmartThings)",
     shortTitle: "Aeotec Hub",
     category: "slimme-hubs",
@@ -155,17 +148,14 @@ export const products = [
   {
     slug: "amazon-echo-show-5-3e-generatie",
     brand: "Amazon",
+    name: "Amazon Echo Show 5 (3e generatie)",
     title: "Amazon Echo Show 5 (3e generatie)",
     shortTitle: "Echo Show 5",
     category: "slimme-speakers",
     tags: ["amazon", "alexa", "speaker", "display"],
     description:
       "Slimme speaker met scherm en Alexa voor smart home bediening.",
-    features: [
-      "Slim scherm",
-      "Nederlandse Alexa",
-      "Wifi & Bluetooth",
-    ],
+    features: ["Slim scherm", "Nederlandse Alexa", "Wifi & Bluetooth"],
     seo: {
       title: "Amazon Echo Show 5 | Slimme speaker met scherm",
       description:
@@ -180,122 +170,6 @@ export const products = [
     priceHint: "€90–€120",
     rating: 4.5,
   },
-
-  {
-    slug: "amazon-echo-studio",
-    brand: "Amazon",
-    title: "Amazon Echo Studio",
-    shortTitle: "Echo Studio",
-    category: "slimme-speakers",
-    tags: ["amazon", "alexa", "speaker", "audio"],
-    description:
-      "Premium Alexa speaker met Dolby Atmos en krachtig geluid.",
-    features: [
-      "Dolby Atmos",
-      "Ruimtelijk geluid",
-      "Alexa ondersteuning",
-    ],
-    seo: {
-      title: "Amazon Echo Studio | Beste Alexa speaker",
-      description:
-        "Echo Studio met Dolby Atmos voor topgeluid en smart home bediening.",
-    },
-    compatibility: {
-      homey: "via-cloud",
-      homeAssistant: "via-cloud",
-    },
-    affiliateUrl: "https://www.amazon.nl/dp/B0DXN1YWZZ?tag=slimhuiswonen-21",
-    bolUrl: null,
-    priceHint: "€170–€220",
-    rating: 4.6,
-  },
-
-  {
-    slug: "aqara-fp2-aanwezigheidssensor",
-    brand: "Aqara",
-    title: "Aqara Aanwezigheidssensor FP2",
-    shortTitle: "Aqara FP2",
-    category: "sensoren",
-    tags: ["sensor", "presence", "mmwave"],
-    description:
-      "mmWave aanwezigheidssensor met zone-detectie voor geavanceerde automatiseringen.",
-    features: [
-      "mmWave radar",
-      "Zone-detectie",
-      "Zeer nauwkeurig",
-    ],
-    seo: {
-      title: "Aqara FP2 aanwezigheidssensor | mmWave sensor",
-      description:
-        "Aqara FP2 mmWave presence sensor voor Home Assistant.",
-    },
-    compatibility: {
-      homey: "via-cloud",
-      homeAssistant: "native",
-    },
-    affiliateUrl: "https://www.amazon.nl/dp/B0BXWZMQJ3?tag=slimhuiswonen-21",
-    bolUrl: null,
-    priceHint: "€70–€100",
-    rating: 4.5,
-  },
-
-  {
-    slug: "aqara-contact-p2",
-    brand: "Aqara",
-    title: "Aqara Contactsensor P2 (Matter)",
-    shortTitle: "Aqara P2",
-    category: "sensoren",
-    tags: ["sensor", "matter", "thread"],
-    description:
-      "Matter contactsensor met Thread voor lokale automatiseringen.",
-    features: [
-      "Matter over Thread",
-      "Lokaal & snel",
-      "Toekomstbestendig",
-    ],
-    seo: {
-      title: "Aqara P2 contactsensor | Matter sensor",
-      description:
-        "Aqara P2 Matter contactsensor voor slimme automatiseringen.",
-    },
-    compatibility: {
-      homey: "nee",
-      homeAssistant: "native",
-    },
-    affiliateUrl: "https://www.amazon.nl/dp/B0BTL8B72D?tag=slimhuiswonen-21",
-    bolUrl: null,
-    priceHint: "€20–€35",
-    rating: 4.6,
-  },
-
-  {
-    slug: "tp-link-tapo-t110-contactsensor",
-    brand: "TP-Link Tapo",
-    title: "TP-Link Tapo T110 Contactsensor",
-    shortTitle: "Tapo T110",
-    category: "sensoren",
-    tags: ["sensor", "contact", "tapo"],
-    description:
-      "Contactsensor voor deuren en ramen binnen het Tapo ecosysteem.",
-    features: [
-      "Directe meldingen",
-      "Lange batterijduur",
-      "Werkt met Tapo Hub",
-    ],
-    seo: {
-      title: "TP-Link Tapo T110 contactsensor | Deur/raam",
-      description:
-        "Tapo T110 contactsensor voor slimme deur- en raambeveiliging.",
-    },
-    compatibility: {
-      homey: "via-cloud",
-      homeAssistant: "native",
-    },
-    affiliateUrl: "https://www.amazon.nl/dp/B0BF5MC9QXJ?tag=slimhuiswonen-21",
-    bolUrl: null,
-    priceHint: "€15–€25",
-    rating: 4.4,
-  },
 ];
 
 export function getAllProducts() {
@@ -306,6 +180,6 @@ export function getProductBySlug(slug) {
   return products.find((p) => p.slug === slug);
 }
 
-export function getProductsByCategory(category) {
-  return products.filter((p) => p.category === category);
+export function getProductsByCategory(categorySlug) {
+  return products.filter((p) => p.category === categorySlug);
 }
