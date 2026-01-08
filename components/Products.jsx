@@ -1,23 +1,47 @@
 import Link from "next/link";
 import { getAllProducts } from "@/data/products";
 
-export default function Products() {
-  const products = getAllProducts();
+export default function Products({ limit }) {
+  const allProducts = getAllProducts();
+
+  // 1️⃣ Handmatig gekozen toppers
+  const featured = allProducts.filter((p) => p.featured === true);
+
+  // 2️⃣ Automatisch aanvullen (hoogste rating, geen duplicaten)
+  const autoFill = allProducts
+    .filter(
+      (p) =>
+        !p.featured &&
+        typeof p.rating === "number" &&
+        p.rating >= 4.5
+    )
+    .sort((a, b) => b.rating - a.rating);
+
+  // 3️⃣ Samenvoegen
+  const combined = [...featured, ...autoFill];
+
+  // 4️⃣ Alleen limiteren als er een limit is
+  const products = typeof limit === "number"
+    ? combined.slice(0, limit)
+    : combined;
 
   return (
     <section id="aanraders" className="section">
       <div className="container">
         <h2>Onze slimme aanraders</h2>
+
         <p className="section-intro">
-          Deze producten zijn zorgvuldig geselecteerd op basis van populariteit,
-          ervaringen en compatibiliteit met slimme woningen. Wanneer je via onze
-          links bestelt, ontvangen wij mogelijk een kleine commissie – zonder
-          extra kosten voor jou.
+          Deze slimme producten zijn populair vanwege hun betrouwbaarheid,
+          gebruiksgemak en compatibiliteit met bekende smart-home-platformen.
         </p>
 
         <div className="product-grid">
           {products.map((p) => (
             <article className="product-card" key={p.slug}>
+              {p.featured && (
+                <div className="best-choice">Populaire keuze</div>
+              )}
+
               <div className="product-tag">{p.brand}</div>
 
               <h3>{p.name}</h3>
@@ -26,7 +50,7 @@ export default function Products() {
 
               {p.features?.length > 0 && (
                 <ul className="product-bullets">
-                  {p.features.map((f) => (
+                  {p.features.slice(0, 3).map((f) => (
                     <li key={f}>{f}</li>
                   ))}
                 </ul>
@@ -44,10 +68,6 @@ export default function Products() {
                   </a>
                 )}
 
-                <p className="muted small">
-                  *Prijzen kunnen wijzigen. Bekijk actuele prijs bij Amazon.
-                </p>
-
                 <Link
                   href={`/product/${p.slug}`}
                   className="product-details-link"
@@ -57,6 +77,12 @@ export default function Products() {
               </div>
             </article>
           ))}
+        </div>
+
+        <div style={{ textAlign: "center", marginTop: "2rem" }}>
+          <Link href="/producten" className="btn btn-secondary">
+            Bekijk alle producten →
+          </Link>
         </div>
       </div>
     </section>

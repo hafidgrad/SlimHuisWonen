@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { getAllProducts } from "@/data/products";
-import Link from "next/link";
+import Products from "@/components/Products";
 
 export const metadata = {
   title: "Alle slimme producten voor een slim huis",
@@ -13,8 +12,6 @@ export const metadata = {
 };
 
 export default function ProductenPage() {
-  const products = getAllProducts();
-
   return (
     <>
       <Header />
@@ -30,45 +27,8 @@ export default function ProductenPage() {
               compatibiliteit en actuele prijzen via onze partners.
             </p>
 
-            <div className="product-grid">
-              {products.map((p) => (
-                <article className="product-card" key={p.slug}>
-                  <div className="product-tag">{p.brand}</div>
-
-                  <h3>{p.name}</h3>
-
-                  <p className="product-desc">{p.description}</p>
-
-                  {p.features?.length > 0 && (
-                    <ul className="product-bullets">
-                      {p.features.map((f) => (
-                        <li key={f}>{f}</li>
-                      ))}
-                    </ul>
-                  )}
-
-                  <div className="product-actions">
-                    {p.affiliateUrl && (
-                      <a
-                        href={p.affiliateUrl}
-                        className="btn btn-primary product-btn"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Bekijk bij Amazon
-                      </a>
-                    )}
-
-                    <Link
-                      href={`/product/${p.slug}`}
-                      className="product-details-link"
-                    >
-                      Meer info
-                    </Link>
-                  </div>
-                </article>
-              ))}
-            </div>
+            {/* ✅ Toon alle producten (geen limit) */}
+            <Products />
           </div>
         </section>
       </main>
