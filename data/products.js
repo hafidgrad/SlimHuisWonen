@@ -1,4 +1,8 @@
 export const products = [
+  /* =========================
+     SLIMME VERLICHTING
+  ========================== */
+
   {
     slug: "philips-hue-white-ambiance-starterkit",
     brand: "Philips Hue",
@@ -7,16 +11,16 @@ export const products = [
     category: "slimme-verlichting",
     tags: ["verlichting", "hue", "starterkit"],
     description:
-      "Complete starterkit met slimme lampen en bridge. Ideaal om je eerste stappen te zetten met slimme verlichting.",
+      "Complete starterkit met slimme lampen en Hue Bridge. Ideaal om te beginnen met slimme verlichting.",
     features: [
-      "Bediening via app, timer en scènes",
+      "Bediening via app, timers en scènes",
       "Werkt met Google Assistant, Alexa en Siri",
-      "Uitbreidbaar met extra lampen en accessoires",
+      "Uitbreidbaar tot 50 lampen",
     ],
     seo: {
       title: "Philips Hue White Ambiance starterkit | Slimme verlichting",
       description:
-        "Complete Philips Hue White Ambiance starterkit met bridge. Compatibel met Homey en Home Assistant.",
+        "Complete Philips Hue White Ambiance starterkit met bridge. Werkt met Homey en Home Assistant.",
     },
     compatibility: {
       homey: "native",
@@ -24,104 +28,9 @@ export const products = [
     },
     image: "/images/products/hue-starterkit.jpg",
     affiliateUrl: "https://www.amazon.nl/dp/B0991VHWSJ?tag=slimhuiswonen-21",
-    bolUrl: null,
     priceHint: "€80–€120",
     rating: 4.7,
   },
-
-  {
-    slug: "aqara-deur-raamsensor",
-    brand: "Aqara",
-    title: "Aqara Deur- & Raamsensor",
-    shortTitle: "Aqara deur-raamsensor",
-    category: "sensoren",
-    tags: ["sensor", "contact", "zigbee"],
-    description:
-      "Zigbee deur- en raamsensor voor beveiliging en slimme automatiseringen.",
-    features: [
-      "Ondersteunt SmartThings, Home Assistant en Homey",
-      "Zigbee (energiezuinig)",
-      "Compact en onopvallend",
-    ],
-    seo: {
-      title: "Aqara deur- en raamsensor | Zigbee sensor",
-      description:
-        "Aqara Zigbee deur- en raamsensor voor beveiliging en automatiseringen. Werkt met Homey en Home Assistant.",
-    },
-    compatibility: {
-      homey: "native",
-      homeAssistant: "via-zigbee",
-    },
-    image: "/images/products/aqara-door-window.jpg",
-    affiliateUrl: "https://www.amazon.nl/dp/B0BTL8B72D?tag=slimhuiswonen-21",
-    bolUrl: null,
-    priceHint: "€15–€25",
-    rating: 4.6,
-  },
-
-  {
-    slug: "ring-video-deurbel",
-    brand: "Ring",
-    title: "Ring Video Deurbel op Batterij",
-    shortTitle: "Ring deurbel",
-    category: "slimme-deurbellen",
-    tags: ["deurbel", "camera", "beveiliging"],
-    description:
-      "Slimme videodeurbel op batterij waarmee je altijd ziet wie er aanbelt.",
-    features: [
-      "Live videobeeld via app",
-      "Bewegingsdetectie",
-      "Werkt met Alexa",
-    ],
-    seo: {
-      title: "Ring video deurbel op batterij | Slimme deurbel",
-      description:
-        "Ring slimme videodeurbel op batterij met bewegingsdetectie en live beeld. Integratie via cloud.",
-    },
-    compatibility: {
-      homey: "via-cloud",
-      homeAssistant: "via-cloud",
-    },
-    image: "/images/products/ring-doorbell.jpg",
-    affiliateUrl: "https://www.amazon.nl/dp/B0BZWQP9Z1?tag=slimhuiswonen-21",
-    bolUrl: null,
-    priceHint: "€80–€250",
-    rating: 4.5,
-  },
-
-  {
-    slug: "nest-learning-thermostaat",
-    brand: "Google Nest",
-    title: "Google Nest Thermostaat",
-    shortTitle: "Nest thermostaat",
-    category: "slimme-thermostaten",
-    tags: ["thermostaat", "energie", "verwarming"],
-    description:
-      "Slimme thermostaat die helpt energie te besparen zonder in te leveren op comfort.",
-    features: [
-      "Zelflerende schema’s",
-      "Bediening via app en spraak",
-      "Inzicht in energieverbruik",
-    ],
-    seo: {
-      title: "Google Nest slimme thermostaat | Energie besparen",
-      description:
-        "Google Nest slimme thermostaat met zelflerende schema’s. Geschikt voor Home Assistant en Homey.",
-    },
-    compatibility: {
-      homey: "via-cloud",
-      homeAssistant: "native",
-    },
-    image: "/images/products/nest-thermostat.jpg",
-    affiliateUrl: "https://www.amazon.nl/dp/B0BXRYLMCC?tag=slimhuiswonen-21",
-    bolUrl: null,
-    priceHint: "€200–€280",
-    rating: 4.4,
-  },
-
-  /* =========================
-     NIEUWE PRODUCTEN
-  ========================== */
 
   {
     slug: "tapo-l530e-slimme-wifi-lamp-e27",
@@ -148,7 +57,6 @@ export const products = [
     },
     image: "/images/products/tapo-l530e.jpg",
     affiliateUrl: "https://www.amazon.nl/dp/B08QRQQ53T?tag=slimhuiswonen-21",
-    bolUrl: null,
     priceHint: "€25–€35",
     rating: 4.6,
   },
@@ -178,39 +86,99 @@ export const products = [
     },
     image: "/images/products/innr-e27.jpg",
     affiliateUrl: "https://www.amazon.nl/dp/B0CHJQDRSY?tag=slimhuiswonen-21",
-    bolUrl: null,
     priceHint: "€45–€60",
     rating: 4.5,
   },
 
+  /* =========================
+     SENSOREN
+  ========================== */
+
   {
-    slug: "tapo-d235-video-deurbel",
-    brand: "TP-Link Tapo",
-    title: "Tapo D235 Video Deurbel met Camera",
-    shortTitle: "Tapo D235",
-    category: "slimme-deurbellen",
-    tags: ["deurbel", "camera", "beveiliging", "tapo"],
+    slug: "aqara-deur-raamsensor",
+    brand: "Aqara",
+    title: "Aqara Deur- & Raamsensor",
+    shortTitle: "Aqara deur-raamsensor",
+    category: "sensoren",
+    tags: ["sensor", "contact", "zigbee"],
     description:
-      "Slimme videodeurbel met 2K camera, kleurennachtzicht en zonder abonnement.",
+      "Zigbee deur- en raamsensor voor beveiliging en automatiseringen.",
     features: [
-      "2K 5MP camera",
-      "Kleur nachtzicht",
-      "Geen abonnement nodig",
+      "Zigbee (energiezuinig)",
+      "Realtime meldingen",
+      "Compact ontwerp",
     ],
     seo: {
-      title: "Tapo D235 videodeurbel met camera (2K)",
+      title: "Aqara deur- en raamsensor | Zigbee sensor",
       description:
-        "TP-Link Tapo D235 slimme videodeurbel met 2K camera en kleurennachtzicht.",
+        "Aqara Zigbee deur- en raamsensor voor beveiliging. Werkt met Homey en Home Assistant.",
     },
     compatibility: {
-      homey: "via-cloud",
-      homeAssistant: "via-cloud",
+      homey: "native",
+      homeAssistant: "via-zigbee",
     },
-    image: "/images/products/tapo-d235.jpg",
-    affiliateUrl: "https://www.amazon.nl/dp/B0DDL95M8Z?tag=slimhuiswonen-21",
-    bolUrl: null,
-    priceHint: "€120–€160",
-    rating: 4.4,
+    image: "/images/products/aqara-door-window.jpg",
+    affiliateUrl: "https://www.amazon.nl/dp/B0BTL8B72D?tag=slimhuiswonen-21",
+    priceHint: "€15–€25",
+    rating: 4.6,
+  },
+
+  {
+    slug: "aqara-waterleksensor-t1",
+    brand: "Aqara",
+    title: "Aqara Waterleksensor T1",
+    shortTitle: "Aqara waterleksensor",
+    category: "sensoren",
+    tags: ["sensor", "waterlek", "zigbee"],
+    description:
+      "Slimme waterleksensor die direct waarschuwt bij lekkage.",
+    features: [
+      "Directe meldingen",
+      "Zigbee protocol",
+      "Tot 2 jaar batterijduur",
+    ],
+    seo: {
+      title: "Aqara waterleksensor T1 | Slimme lekkagedetectie",
+      description:
+        "Aqara waterleksensor T1 voor snelle lekkagedetectie. Geschikt voor Homey en Home Assistant.",
+    },
+    compatibility: {
+      homey: "native",
+      homeAssistant: "via-zigbee",
+    },
+    image: "/images/products/aqara-water-leak.jpg",
+    affiliateUrl: "https://www.amazon.nl/dp/B0DWXHMFQS?tag=slimhuiswonen-21",
+    priceHint: "€20–€30",
+    rating: 4.6,
+  },
+
+  {
+    slug: "aqara-vibratiesensor",
+    brand: "Aqara",
+    title: "Aqara Vibratiesensor",
+    shortTitle: "Aqara vibratiesensor",
+    category: "sensoren",
+    tags: ["sensor", "trilling", "zigbee"],
+    description:
+      "Trillingssensor voor glasbreukdetectie en objectbeveiliging.",
+    features: [
+      "Detecteert trilling, kanteling en val",
+      "Zigbee protocol",
+      "Instelbare gevoeligheid",
+    ],
+    seo: {
+      title: "Aqara vibratiesensor | Glasbreuk & beveiliging",
+      description:
+        "Aqara vibratiesensor voor slimme beveiliging. Werkt met Homey en Home Assistant.",
+    },
+    compatibility: {
+      homey: "native",
+      homeAssistant: "via-zigbee",
+    },
+    image: "/images/products/aqara-vibration.jpg",
+    affiliateUrl: "https://www.amazon.nl/dp/B07PJT939B?tag=slimhuiswonen-21",
+    priceHint: "€20–€30",
+    rating: 4.5,
   },
 
   {
@@ -221,7 +189,7 @@ export const products = [
     category: "sensoren",
     tags: ["sensor", "temperatuur", "luchtvochtigheid", "tapo"],
     description:
-      "Slimme temperatuur- en luchtvochtigheidssensor binnen het Tapo-ecosysteem.",
+      "Temperatuur- en luchtvochtigheidssensor binnen het Tapo-ecosysteem.",
     features: [
       "Realtime metingen",
       "Automatiseringen via Tapo app",
@@ -230,7 +198,7 @@ export const products = [
     seo: {
       title: "TP-Link Tapo T315 temperatuur- en RV sensor",
       description:
-        "TP-Link Tapo T315 temperatuur- en luchtvochtigheidssensor. Geschikt voor Home Assistant.",
+        "TP-Link Tapo T315 sensor voor temperatuur en luchtvochtigheid. Geschikt voor Home Assistant.",
     },
     compatibility: {
       homey: "via-cloud",
@@ -238,9 +206,248 @@ export const products = [
     },
     image: "/images/products/tapo-t315.jpg",
     affiliateUrl: "https://www.amazon.nl/dp/B0BNYSVV3J?tag=slimhuiswonen-21",
-    bolUrl: null,
     priceHint: "€20–€30",
     rating: 4.6,
+  },
+
+  {
+    slug: "tp-link-tapo-t100-bewegingssensor",
+    brand: "TP-Link Tapo",
+    title: "TP-Link Tapo T100 Bewegingssensor",
+    shortTitle: "Tapo T100",
+    category: "sensoren",
+    tags: ["sensor", "beweging", "tapo"],
+    description:
+      "Slimme bewegingssensor voor automatiseringen binnen het Tapo-ecosysteem.",
+    features: [
+      "Snelle bewegingsdetectie",
+      "Automatiseringen via Tapo app",
+      "Werkt met Tapo hub",
+    ],
+    seo: {
+      title: "TP-Link Tapo T100 bewegingssensor",
+      description:
+        "TP-Link Tapo T100 bewegingssensor voor slimme automatiseringen.",
+    },
+    compatibility: {
+      homey: "via-cloud",
+      homeAssistant: "native",
+    },
+    image: "/images/products/tapo-t100.jpg",
+    affiliateUrl: "https://www.amazon.nl/dp/B0B7NDJW6J?tag=slimhuiswonen-21",
+    priceHint: "€15–€25",
+    rating: 4.5,
+  },
+
+  /* =========================
+     SLIMME HUBS
+  ========================== */
+
+  {
+    slug: "homey-pro-early-2023",
+    brand: "Homey",
+    title: "Homey Pro (Early 2023)",
+    shortTitle: "Homey Pro",
+    category: "slimme-hubs",
+    tags: ["homey", "hub", "slimme-verlichting"],
+    description:
+      "Krachtige alles-in-één smart home hub met ondersteuning voor vrijwel alle protocollen.",
+    features: [
+      "Zigbee, Z-Wave, Wi-Fi, Bluetooth",
+      "Volledige lokale automatisering",
+      "Geen abonnement nodig",
+    ],
+    seo: {
+      title: "Homey Pro Early 2023 | Slimme hub",
+      description:
+        "Homey Pro Early 2023 smart home hub. Ondersteunt vrijwel alle slimme apparaten.",
+    },
+    compatibility: {
+      homey: "native",
+      homeAssistant: "via-mqtt",
+    },
+    image: "/images/products/homey-pro.jpg",
+    affiliateUrl: "https://www.amazon.nl/dp/B0C5R1JS91?tag=slimhuiswonen-21",
+    priceHint: "€399",
+    rating: 4.8,
+  },
+
+  {
+    slug: "homey-bridge",
+    brand: "Homey",
+    title: "Homey Bridge",
+    shortTitle: "Homey Bridge",
+    category: "slimme-hubs",
+    tags: ["homey", "hub"],
+    description:
+      "Toegankelijke smart home hub voor Homey Cloud.",
+    features: [
+      "Werkt samen met Homey Cloud",
+      "Ondersteunt Zigbee en Z-Wave",
+      "Betaalbare instap",
+    ],
+    seo: {
+      title: "Homey Bridge | Slimme hub",
+      description:
+        "Homey Bridge smart home hub als instapmodel voor Homey Cloud.",
+    },
+    compatibility: {
+      homey: "native",
+      homeAssistant: "nee",
+    },
+    image: "/images/products/homey-bridge.jpg",
+    affiliateUrl: "https://www.amazon.nl/dp/B08FRLQH75?tag=slimhuiswonen-21",
+    priceHint: "€69–€99",
+    rating: 4.4,
+  },
+
+  {
+    slug: "philips-hue-bridge",
+    brand: "Philips Hue",
+    title: "Philips Hue Bridge",
+    shortTitle: "Hue Bridge",
+    category: "slimme-hubs",
+    tags: ["hue", "hub", "slimme-verlichting"],
+    description:
+      "Centrale hub voor Philips Hue verlichting.",
+    features: [
+      "Bediening tot 50 lampen",
+      "Scènes en automatiseringen",
+      "Werkt met Alexa en Google Assistant",
+    ],
+    seo: {
+      title: "Philips Hue Bridge | Slimme verlichtingshub",
+      description:
+        "Philips Hue Bridge voor volledige controle over slimme verlichting.",
+    },
+    compatibility: {
+      homey: "native",
+      homeAssistant: "native",
+    },
+    image: "/images/products/hue-bridge.jpg",
+    affiliateUrl: "https://www.amazon.nl/dp/B09CV9F3KR?tag=slimhuiswonen-21",
+    priceHint: "€50–€65",
+    rating: 4.7,
+  },
+
+  {
+    slug: "home-assistant-green",
+    brand: "Home Assistant",
+    title: "Home Assistant Green Smart Hub",
+    shortTitle: "HA Green",
+    category: "slimme-hubs",
+    tags: ["home-assistant", "hub"],
+    description:
+      "Officiële Home Assistant hub voor lokale smart home automatisering.",
+    features: [
+      "Volledig lokaal",
+      "Geen cloud nodig",
+      "Open source platform",
+    ],
+    seo: {
+      title: "Home Assistant Green | Slimme hub",
+      description:
+        "Home Assistant Green smart home hub voor lokale automatiseringen.",
+    },
+    compatibility: {
+      homey: "nee",
+      homeAssistant: "native",
+    },
+    image: "/images/products/home-assistant-green.jpg",
+    affiliateUrl: "https://www.amazon.nl/dp/B0CXVKSG19?tag=slimhuiswonen-21",
+    priceHint: "€99–€120",
+    rating: 4.7,
+  },
+
+  /* =========================
+     SLIMME SPEAKERS
+  ========================== */
+
+  {
+    slug: "google-nest-mini-2e-generatie",
+    brand: "Google Nest",
+    title: "Google Nest Mini (2e generatie)",
+    shortTitle: "Nest Mini",
+    category: "slimme-speakers",
+    tags: ["google", "assistant", "speaker"],
+    description:
+      "Compacte slimme speaker met Google Assistant.",
+    features: [
+      "Spraakbediening",
+      "Werkt met Google Home",
+      "Compact formaat",
+    ],
+    seo: {
+      title: "Google Nest Mini 2e generatie | Slimme speaker",
+      description:
+        "Google Nest Mini slimme speaker met Google Assistant.",
+    },
+    compatibility: {
+      homey: "via-cloud",
+      homeAssistant: "via-cloud",
+    },
+    image: "/images/products/google-nest-mini.jpg",
+    affiliateUrl: "https://www.amazon.nl/dp/B0CGYFYY34?tag=slimhuiswonen-21",
+    priceHint: "€45–€60",
+    rating: 4.6,
+  },
+
+  {
+    slug: "amazon-echo-dot-5e-generatie",
+    brand: "Amazon",
+    title: "Amazon Echo Dot (5e generatie)",
+    shortTitle: "Echo Dot",
+    category: "slimme-speakers",
+    tags: ["amazon", "alexa", "speaker"],
+    description:
+      "Slimme speaker met Alexa en verbeterd geluid.",
+    features: [
+      "Alexa spraakassistent",
+      "Bluetooth en Wi-Fi",
+      "Nederlandse ondersteuning",
+    ],
+    seo: {
+      title: "Amazon Echo Dot 5e generatie | Slimme speaker",
+      description:
+        "Amazon Echo Dot slimme speaker met Alexa en indrukwekkend geluid.",
+    },
+    compatibility: {
+      homey: "via-cloud",
+      homeAssistant: "via-cloud",
+    },
+    image: "/images/products/echo-dot.jpg",
+    affiliateUrl: "https://www.amazon.nl/dp/B09B8X9RGM?tag=slimhuiswonen-21",
+    priceHint: "€55–€65",
+    rating: 4.6,
+  },
+
+  {
+    slug: "amazon-echo-show-8",
+    brand: "Amazon",
+    title: "Amazon Echo Show 8",
+    shortTitle: "Echo Show 8",
+    category: "slimme-speakers",
+    tags: ["amazon", "alexa", "speaker", "display"],
+    description:
+      "Slimme speaker met scherm en Alexa.",
+    features: [
+      "8,7 inch HD-scherm",
+      "Alexa spraakbediening",
+      "Videobellen en smart home bediening",
+    ],
+    seo: {
+      title: "Amazon Echo Show 8 | Slimme speaker met scherm",
+      description:
+        "Amazon Echo Show 8 slimme speaker met scherm en Alexa.",
+    },
+    compatibility: {
+      homey: "via-cloud",
+      homeAssistant: "via-cloud",
+    },
+    image: "/images/products/echo-show-8.jpg",
+    affiliateUrl: "https://www.amazon.nl/dp/B0DTQF1MQT?tag=slimhuiswonen-21",
+    priceHint: "€140–€160",
+    rating: 4.7,
   },
 ];
 
