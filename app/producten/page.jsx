@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Products from "@/components/Products";
+import Link from "next/link";
+import { getAllProducts } from "@/data/products";
 
 export const metadata = {
   title: "Alle slimme producten voor een slim huis",
@@ -12,6 +13,8 @@ export const metadata = {
 };
 
 export default function ProductenPage() {
+  const products = getAllProducts();
+
   return (
     <>
       <Header />
@@ -23,12 +26,25 @@ export default function ProductenPage() {
 
             <p className="section-intro">
               Ontdek slimme producten voor verlichting, beveiliging, verwarming
-              en energie. Klik op een product voor uitgebreide informatie,
-              compatibiliteit en actuele prijzen via onze partners.
+              en energie.
             </p>
 
-            {/* ✅ Toon alle producten (geen limit) */}
-            <Products />
+            <div className="product-grid">
+              {products.map((p) => (
+                <article key={p.slug} className="product-card">
+                  <div className="product-tag">{p.brand}</div>
+                  <h3>{p.name}</h3>
+                  <p className="product-desc">{p.description}</p>
+
+                  <Link
+                    href={`/product/${p.slug}`}
+                    className="product-details-link"
+                  >
+                    Meer info →
+                  </Link>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
       </main>
