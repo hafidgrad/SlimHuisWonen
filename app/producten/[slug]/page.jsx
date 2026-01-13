@@ -11,6 +11,35 @@ export async function generateStaticParams() {
   }));
 }
 
+/* ---------- YouTube helpers ---------- */
+function toYouTubeEmbedUrl(url) {
+  if (!url || typeof url !== "string") return null;
+
+  try {
+    // Shorts: https://www.youtube.com/shorts/VIDEOID
+    const shortsMatch = url.match(/youtube\.com\/shorts\/([^?]+)/);
+    if (shortsMatch?.[1]) {
+      return `https://www.youtube.com/embed/${shortsMatch[1]}`;
+    }
+
+    // Watch: https://www.youtube.com/watch?v=VIDEOID
+    const watchMatch = url.match(/[?&]v=([^&]+)/);
+    if (watchMatch?.[1]) {
+      return `https://www.youtube.com/embed/${watchMatch[1]}`;
+    }
+
+    // Short url: https://youtu.be/VIDEOID
+    const shortUrlMatch = url.match(/youtu\.be\/([^?]+)/);
+    if (shortUrlMatch?.[1]) {
+      return `https://www.youtube.com/embed/${shortUrlMatch[1]}`;
+    }
+
+    return null;
+  } catch {
+    return null;
+  }
+}
+
 export default function ProductPage({ params }) {
   const product = getProductBySlug(params.slug);
 
@@ -26,7 +55,10 @@ export default function ProductPage({ params }) {
     affiliateUrl,
     priceHint,
     compatibility = {},
+    youtubeUrl, // ✅ nieuw veld in products.js
   } = product;
+
+  const youtubeEmbedUrl = toYouTubeEmbedUrl(youtubeUrl);
 
   return (
     <>
@@ -40,9 +72,42 @@ export default function ProductPage({ params }) {
             <p className="product-brand">{brand}</p>
             <p className="product-desc">{description}</p>
 
+            {/* ✅ YouTube video (alleen als youtubeUrl bestaat) */}
+            {youtubeEmbedUrl && (
+              <section style={{ marginTop: "2rem" }}>
+                <h2>Video: zo werkt dit product</h2>
+
+                <div
+                  style={{
+                    position: "relative",
+                    paddingBottom: "56.25%", // 16:9
+                    height: 0,
+                    overflow: "hidden",
+                    borderRadius: "12px",
+                    marginTop: "1rem",
+                  }}
+                >
+                  <iframe
+                    src={youtubeEmbedUrl}
+                    title={`YouTube video van ${name}`}
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%",
+                      border: 0,
+                    }}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </section>
+            )}
+
             {features.length > 0 && (
               <>
-                <h2>Belangrijkste kenmerken</h2>
+                <h2 style={{ marginTop: "2rem" }}>Belangrijkste kenmerken</h2>
                 <ul className="product-bullets">
                   {features.map((f) => (
                     <li key={f}>{f}</li>
@@ -58,19 +123,25 @@ export default function ProductPage({ params }) {
             )}
 
             {affiliateUrl && (
-              <a
-                href={affiliateUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="btn btn-primary"
-              >
-                Bekijk bij Amazon
-              </a>
+              <div style={{ marginTop: "1.5rem" }}>
+                <a
+                  href={affiliateUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn btn-primary"
+                >
+                  Bekijk bij Amazon
+                </a>
+
+                <p style={{ marginTop: "0.75rem", fontSize: "0.95rem" }}>
+                  * Dit is een affiliate link. Jij betaalt niets extra.
+                </p>
+              </div>
             )}
 
             {compatibility && Object.keys(compatibility).length > 0 && (
               <>
-                <h2>Compatibiliteit</h2>
+                <h2 style={{ marginTop: "2rem" }}>Compatibiliteit</h2>
                 <ul>
                   {Object.entries(compatibility).map(([platform, value]) => (
                     <li key={platform}>
