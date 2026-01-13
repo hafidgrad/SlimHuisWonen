@@ -51,6 +51,7 @@ export const products = [
       "Flexibele LED-strip voor indirecte verlichting, uitbreidbaar en dimbaar.",
     features: ["Uitbreidbaar", "Wit & kleur", "Hue ecosysteem"],
     affiliateUrl: "https://www.amazon.nl/dp/B088RX9CSZ?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/b8WqkwpsRM8",
   },
 
   {
@@ -62,6 +63,7 @@ export const products = [
       "Betaalbare RGBIC LED-strip met app-bediening en muzieksynchronisatie.",
     features: ["RGBIC", "Muzieksync", "Geen hub nodig"],
     affiliateUrl: "https://www.amazon.nl/dp/B09BN2PSR8?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/h43CHLmeEXc",
   },
 
   {
@@ -91,8 +93,7 @@ export const products = [
     brand: "TP-Link Tapo",
     name: "Tapo L510E Slimme Wi-Fi Lamp",
     category: "slimme-verlichting",
-    description:
-      "Dimbare slimme Wi-Fi lamp zonder hub.",
+    description: "Dimbare slimme Wi-Fi lamp zonder hub.",
     features: ["Wi-Fi", "Dimbaar", "Geen hub nodig"],
     affiliateUrl: "https://www.amazon.nl/dp/B087RZVBQW?tag=slimhuiswonen-21",
   },
@@ -106,10 +107,10 @@ export const products = [
     brand: "Aqara",
     name: "Aqara Deur- & Raamsensor",
     category: "sensoren",
-    description:
-      "Zigbee contactsensor voor deuren en ramen.",
+    description: "Zigbee contactsensor voor deuren en ramen.",
     features: ["Zigbee", "Compact", "Automatiseringen"],
     affiliateUrl: "https://www.amazon.nl/dp/B0BTL8B72D?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/pAJQdHe2678",
   },
 
   {
@@ -148,8 +149,7 @@ export const products = [
     brand: "Aqara",
     name: "Aqara Waterleksensor T1",
     category: "sensoren",
-    description:
-      "Detecteert waterlekken en waarschuwt direct via app.",
+    description: "Detecteert waterlekken en waarschuwt direct via app.",
     affiliateUrl: "https://www.amazon.nl/dp/B0DWXHMFQS?tag=slimhuiswonen-21",
   },
 
@@ -168,8 +168,7 @@ export const products = [
     brand: "Aqara",
     name: "Aqara Vibratiesensor",
     category: "sensoren",
-    description:
-      "Detecteert trillingen, kantelen en schokken.",
+    description: "Detecteert trillingen, kantelen en schokken.",
     affiliateUrl: "https://www.amazon.nl/dp/B07PJT939B?tag=slimhuiswonen-21",
   },
 
@@ -181,6 +180,7 @@ export const products = [
     description:
       "Bewegingssensor voor beveiliging en automatisering.",
     affiliateUrl: "https://www.amazon.nl/dp/B0B7NDJW6J?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/dorW24Ba4oo",
   },
 
   /* =========================
@@ -192,9 +192,9 @@ export const products = [
     brand: "Ring",
     name: "Ring Video Deurbel (batterij)",
     category: "slimme-deurbellen",
-    description:
-      "Slimme videodeurbel met live beeld en meldingen.",
+    description: "Slimme videodeurbel met live beeld en meldingen.",
     affiliateUrl: "https://www.amazon.nl/dp/B0BZWQP9Z1?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/_Oz6c6BiMjo",
   },
 
   {
@@ -202,8 +202,7 @@ export const products = [
     brand: "TP-Link Tapo",
     name: "Tapo D235 Video Deurbel",
     category: "slimme-deurbellen",
-    description:
-      "Videodeurbel met 2K camera, accu of bekabeld.",
+    description: "Videodeurbel met 2K camera, accu of bekabeld.",
     features: ["2K camera", "Accu of bekabeld", "Nachtzicht"],
     affiliateUrl: "https://www.amazon.nl/dp/B0DDL95M8Z?tag=slimhuiswonen-21",
   },
@@ -213,9 +212,9 @@ export const products = [
     brand: "TP-Link Tapo",
     name: "Tapo Videodeurbel Pro",
     category: "slimme-deurbellen",
-    description:
-      "Videodeurbel met AI-detectie en kleurennachtzicht.",
+    description: "Videodeurbel met AI-detectie en kleurennachtzicht.",
     affiliateUrl: "https://www.amazon.nl/dp/B0DK5ZPSHH?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/1VTw4yg5QYo",
   },
 
   /* =========================
@@ -227,9 +226,9 @@ export const products = [
     brand: "Google Nest",
     name: "Google Nest Thermostaat",
     category: "slimme-thermostaten",
-    description:
-      "Slimme thermostaat die leert van je leefpatroon.",
+    description: "Slimme thermostaat die leert van je leefpatroon.",
     affiliateUrl: "https://www.amazon.nl/dp/B0BXRYLMCC?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/ddghtqKnuBw",
   },
 
   {
@@ -237,8 +236,7 @@ export const products = [
     brand: "Universeel",
     name: "Slimme Thermostaat voor Combiketel",
     category: "slimme-thermostaten",
-    description:
-      "Universele slimme thermostaat voor cv-ketels.",
+    description: "Universele slimme thermostaat voor cv-ketels.",
     affiliateUrl: "https://www.amazon.nl/dp/B0FHWDBYTF?tag=slimhuiswonen-21",
   },
 
@@ -247,9 +245,9 @@ export const products = [
     brand: "TP-Link",
     name: "TP-Link KE100 KIT Radiatorknop",
     category: "slimme-thermostaten",
-    description:
-      "Slimme radiatorknoppen met hub voor energiebesparing.",
+    description: "Slimme radiatorknoppen met hub voor energiebesparing.",
     affiliateUrl: "https://www.amazon.nl/dp/B0CKWFVQZQ?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/G1OlrOdJsX0",
   },
 
   /* =========================
@@ -261,8 +259,7 @@ export const products = [
     brand: "TP-Link Tapo",
     name: "TP-Link Tapo P115 Slimme Stekker",
     category: "slimme-stekkers",
-    description:
-      "Compacte slimme stekker met energiemeting.",
+    description: "Compacte slimme stekker met energiemeting.",
     features: ["Energieverbruik inzicht", "Wi-Fi", "Geen hub nodig"],
     affiliateUrl: "https://www.amazon.nl/dp/B09ZBGWYH9?tag=slimhuiswonen-21",
     rating: 4.6,
@@ -273,11 +270,11 @@ export const products = [
     brand: "TP-Link Tapo",
     name: "TP-Link Tapo P110 Slimme Stekker",
     category: "slimme-stekkers",
-    description:
-      "Populaire slimme stekker met realtime energiemeting.",
+    description: "Populaire slimme stekker met realtime energiemeting.",
     features: ["Realtime energiemeting", "Timers", "Geen hub nodig"],
     affiliateUrl: "https://www.amazon.nl/dp/B09BFT7NZJ?tag=slimhuiswonen-21",
     rating: 4.7,
+    youtubeUrl: "https://www.youtube.com/shorts/L5fLN4e77m8",
   },
 
   {
@@ -285,11 +282,11 @@ export const products = [
     brand: "Eve",
     name: "Eve Energy (Matter / Thread)",
     category: "slimme-stekkers",
-    description:
-      "Premium slimme stekker met Matter en Thread.",
+    description: "Premium slimme stekker met Matter en Thread.",
     features: ["Matter", "Thread", "Volledig lokaal"],
     affiliateUrl: "https://www.amazon.nl/dp/B0BYTB11J3?tag=slimhuiswonen-21",
     rating: 4.5,
+    youtubeUrl: "https://www.youtube.com/watch?v=ltf25fzyS0o",
   },
 
   {
@@ -297,8 +294,7 @@ export const products = [
     brand: "Philips Hue",
     name: "Philips Hue Smart Plug",
     category: "slimme-stekkers",
-    description:
-      "Slimme stekker binnen het Hue ecosysteem.",
+    description: "Slimme stekker binnen het Hue ecosysteem.",
     features: ["Hue integratie", "Bluetooth", "Bridge optioneel"],
     affiliateUrl: "https://www.amazon.nl/dp/B09CV7QQKB?tag=slimhuiswonen-21",
   },
@@ -308,8 +304,7 @@ export const products = [
     brand: "Philips Hue",
     name: "Philips Hue Smart Plug + Dimmer Switch",
     category: "slimme-stekkers",
-    description:
-      "Combipack met slimme stekker en dimmer.",
+    description: "Combipack met slimme stekker en dimmer.",
     features: ["Dimmer switch", "Hue ecosysteem"],
     affiliateUrl: "https://www.amazon.nl/dp/B09QP98F9W?tag=slimhuiswonen-21",
   },
@@ -319,8 +314,7 @@ export const products = [
     brand: "Innr",
     name: "Innr Zigbee Outdoor Smart Plug",
     category: "slimme-stekkers",
-    description:
-      "Slimme stekker voor buitengebruik.",
+    description: "Slimme stekker voor buitengebruik.",
     features: ["IP54", "Zigbee repeater"],
     affiliateUrl: "https://www.amazon.nl/dp/B0FL83D4DS?tag=slimhuiswonen-21",
   },
@@ -334,9 +328,9 @@ export const products = [
     brand: "Aeotec",
     name: "Aeotec Smart Home Hub (SmartThings)",
     category: "slimme-hubs",
-    description:
-      "SmartThings hub met Zigbee en Z-Wave ondersteuning.",
+    description: "SmartThings hub met Zigbee en Z-Wave ondersteuning.",
     affiliateUrl: "https://www.amazon.nl/dp/B08NDH9NXN?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/ZjyfLL9m5Bw",
   },
 
   {
@@ -345,10 +339,10 @@ export const products = [
     name: "Homey Pro (Early 2023)",
     category: "slimme-hubs",
     featured: true,
-    description:
-      "Krachtige lokale smart home hub zonder cloud-afhankelijkheid.",
+    description: "Krachtige lokale smart home hub zonder cloud-afhankelijkheid.",
     features: ["Volledig lokaal", "Zigbee, Z-Wave, Thread"],
     affiliateUrl: "https://www.amazon.nl/dp/B0C5R1JS91?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/yIQxbRQHTRo",
   },
 
   {
@@ -356,8 +350,7 @@ export const products = [
     brand: "Homey",
     name: "Homey Bridge",
     category: "slimme-hubs",
-    description:
-      "Verbindt slimme apparaten met Homey Cloud.",
+    description: "Verbindt slimme apparaten met Homey Cloud.",
     affiliateUrl: "https://www.amazon.nl/dp/B08FRLQH75?tag=slimhuiswonen-21",
   },
 
@@ -366,8 +359,7 @@ export const products = [
     brand: "Philips Hue",
     name: "Philips Hue Bridge",
     category: "slimme-hubs",
-    description:
-      "Centrale hub voor Philips Hue verlichting.",
+    description: "Centrale hub voor Philips Hue verlichting.",
     affiliateUrl: "https://www.amazon.nl/dp/B09CV9F3KR?tag=slimhuiswonen-21",
   },
 
@@ -376,8 +368,7 @@ export const products = [
     brand: "Home Assistant",
     name: "Home Assistant Green",
     category: "slimme-hubs",
-    description:
-      "Officiële Home Assistant smart home hub.",
+    description: "Officiële Home Assistant smart home hub.",
     features: ["Home Assistant OS", "Volledig lokaal"],
     affiliateUrl: "https://www.amazon.nl/dp/B0CXVKSG19?tag=slimhuiswonen-21",
   },
@@ -391,9 +382,9 @@ export const products = [
     brand: "Google",
     name: "Google Nest Mini (2e generatie)",
     category: "slimme-speakers",
-    description:
-      "Compacte slimme speaker met Google Assistant.",
+    description: "Compacte slimme speaker met Google Assistant.",
     affiliateUrl: "https://www.amazon.nl/dp/B0CGYFYY34?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/ErM7IxoY_94",
   },
 
   {
@@ -401,8 +392,7 @@ export const products = [
     brand: "Amazon",
     name: "Amazon Echo Dot (nieuwste generatie)",
     category: "slimme-speakers",
-    description:
-      "Compacte slimme speaker met Alexa.",
+    description: "Compacte slimme speaker met Alexa.",
     affiliateUrl: "https://www.amazon.nl/dp/B09B8X9RGM?tag=slimhuiswonen-21",
   },
 
@@ -411,10 +401,10 @@ export const products = [
     brand: "Amazon",
     name: "Amazon Echo Show 5 (3e generatie)",
     category: "slimme-speakers",
-    description:
-      "Slimme speaker met scherm en Alexa.",
+    description: "Slimme speaker met scherm en Alexa.",
     features: ["Slim scherm", "Alexa", "Compact formaat"],
     affiliateUrl: "https://www.amazon.nl/dp/B0DJDGN3BX?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/DQJUUFPwThI",
   },
 
   {
@@ -422,8 +412,7 @@ export const products = [
     brand: "Amazon",
     name: "Amazon Echo Show 8",
     category: "slimme-speakers",
-    description:
-      "Slimme speaker met groter HD-scherm en ruimtelijke audio.",
+    description: "Slimme speaker met groter HD-scherm en ruimtelijke audio.",
     affiliateUrl: "https://www.amazon.nl/dp/B0DTQF1MQT?tag=slimhuiswonen-21",
   },
 
@@ -432,8 +421,7 @@ export const products = [
     brand: "Amazon",
     name: "Amazon Echo Studio",
     category: "slimme-speakers",
-    description:
-      "Premium Alexa speaker met Dolby Atmos.",
+    description: "Premium Alexa speaker met Dolby Atmos.",
     affiliateUrl: "https://www.amazon.nl/dp/B0DXN1YWZZ?tag=slimhuiswonen-21",
   },
 ];
