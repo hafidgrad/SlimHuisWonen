@@ -9,21 +9,15 @@ export default function Products({ limit }) {
 
   // 2️⃣ Automatisch aanvullen (hoogste rating, geen duplicaten)
   const autoFill = allProducts
-    .filter(
-      (p) =>
-        !p.featured &&
-        typeof p.rating === "number" &&
-        p.rating >= 4.5
-    )
+    .filter((p) => !p.featured && typeof p.rating === "number" && p.rating >= 4.5)
     .sort((a, b) => b.rating - a.rating);
 
   // 3️⃣ Samenvoegen
   const combined = [...featured, ...autoFill];
 
   // 4️⃣ Alleen limiteren als er een limit is
-  const products = typeof limit === "number"
-    ? combined.slice(0, limit)
-    : combined;
+  const products =
+    typeof limit === "number" ? combined.slice(0, limit) : combined;
 
   return (
     <section id="aanraders" className="section">
@@ -38,9 +32,7 @@ export default function Products({ limit }) {
         <div className="product-grid">
           {products.map((p) => (
             <article className="product-card" key={p.slug}>
-              {p.featured && (
-                <div className="best-choice">Populaire keuze</div>
-              )}
+              {p.featured && <div className="best-choice">Populaire keuze</div>}
 
               <div className="product-tag">{p.brand}</div>
 
@@ -68,8 +60,9 @@ export default function Products({ limit }) {
                   </a>
                 )}
 
+                {/* ✅ FIX: juiste route naar productpagina */}
                 <Link
-                  href={`/product/${p.slug}`}
+                  href={`/producten/${p.slug}`}
                   className="product-details-link"
                 >
                   Meer info
