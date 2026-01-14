@@ -11,7 +11,7 @@ export async function generateStaticParams() {
   }));
 }
 
-/* ---------- YouTube helpers ---------- */
+/* ---------- Video helpers ---------- */
 function toYouTubeEmbedUrl(url) {
   if (!url || typeof url !== "string") return null;
 
@@ -55,10 +55,12 @@ export default function ProductPage({ params }) {
     affiliateUrl,
     priceHint,
     compatibility = {},
-    youtubeUrl, // ✅ nieuw veld in products.js
+    youtubeUrl,
+    videoUrl, // ✅ optioneel (fallback voor TikTok of andere platformen)
   } = product;
 
-  const youtubeEmbedUrl = toYouTubeEmbedUrl(youtubeUrl);
+  const chosenVideoUrl = youtubeUrl || videoUrl;
+  const youtubeEmbedUrl = toYouTubeEmbedUrl(chosenVideoUrl);
 
   return (
     <>
@@ -72,36 +74,54 @@ export default function ProductPage({ params }) {
             <p className="product-brand">{brand}</p>
             <p className="product-desc">{description}</p>
 
-            {/* ✅ YouTube video (alleen als youtubeUrl bestaat) */}
-            {youtubeEmbedUrl && (
+            {/* ✅ Video blok */}
+            {chosenVideoUrl && (
               <section style={{ marginTop: "2rem" }}>
                 <h2>Video: zo werkt dit product</h2>
 
-                <div
-                  style={{
-                    position: "relative",
-                    paddingBottom: "56.25%", // 16:9
-                    height: 0,
-                    overflow: "hidden",
-                    borderRadius: "12px",
-                    marginTop: "1rem",
-                  }}
-                >
-                  <iframe
-                    src={youtubeEmbedUrl}
-                    title={`YouTube video van ${name}`}
+                {/* YouTube embed */}
+                {youtubeEmbedUrl ? (
+                  <div
                     style={{
-                      position: "absolute",
-                      top: 0,
-                      left: 0,
-                      width: "100%",
-                      height: "100%",
-                      border: 0,
+                      position: "relative",
+                      paddingBottom: "56.25%", // 16:9
+                      height: 0,
+                      overflow: "hidden",
+                      borderRadius: "12px",
+                      marginTop: "1rem",
                     }}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
-                </div>
+                  >
+                    <iframe
+                      src={youtubeEmbedUrl}
+                      title={`Video van ${name}`}
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "100%",
+                        border: 0,
+                      }}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
+                ) : (
+                  // Fallback: geen YouTube (bijv. TikTok link)
+                  <div style={{ marginTop: "1rem" }}>
+                    <a
+                      href={chosenVideoUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="btn btn-secondary"
+                    >
+                      Bekijk video →
+                    </a>
+                    <p style={{ marginTop: "0.75rem", fontSize: "0.95rem" }}>
+                      (Deze video opent in een nieuw tabblad.)
+                    </p>
+                  </div>
+                )}
               </section>
             )}
 

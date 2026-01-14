@@ -18,6 +18,7 @@ export const products = [
     ],
     affiliateUrl: "https://www.amazon.nl/dp/B0991VHWSJ?tag=slimhuiswonen-21",
     rating: 4.7,
+    youtubeUrl: "https://www.youtube.com/watch?v=wm9IsHKN-ZQ",
   },
 
   {
@@ -29,6 +30,7 @@ export const products = [
       "Losse slimme E27 lamp met warm wit licht, dimbaar en app-gestuurd.",
     features: ["Warm wit licht", "Dimbaar", "Werkt met Hue Bridge"],
     affiliateUrl: "https://www.amazon.nl/dp/B09TCNXYXJ?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/iUsm0cBeMiA",
   },
 
   {
@@ -40,6 +42,7 @@ export const products = [
       "Slimme lamp met wit én gekleurd licht, bedienbaar via Bluetooth of Hue Bridge.",
     features: ["16 miljoen kleuren", "Dimbaar", "Bluetooth & Bridge"],
     affiliateUrl: "https://www.amazon.nl/dp/B099P3CP1K?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/mwye3iuxo7Q",
   },
 
   {
@@ -75,6 +78,7 @@ export const products = [
       "Slimme Wi-Fi lampen met kleur en wit licht, geen hub nodig.",
     features: ["Wi-Fi", "Kleur & wit", "Alexa & Google"],
     affiliateUrl: "https://www.amazon.nl/dp/B08QRQQ53T?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/ISkg6oerWgE",
   },
 
   {
@@ -86,6 +90,7 @@ export const products = [
       "Zigbee slimme lampen, compatibel met Philips Hue en SmartThings.",
     features: ["Zigbee", "Dimbaar", "Warm wit"],
     affiliateUrl: "https://www.amazon.nl/dp/B0CHJQDRSY?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/VbaTma08sMc",
   },
 
   {
@@ -96,6 +101,7 @@ export const products = [
     description: "Dimbare slimme Wi-Fi lamp zonder hub.",
     features: ["Wi-Fi", "Dimbaar", "Geen hub nodig"],
     affiliateUrl: "https://www.amazon.nl/dp/B087RZVBQW?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/Up756rCbJkw",
   },
 
   /* =========================
@@ -110,7 +116,7 @@ export const products = [
     description: "Zigbee contactsensor voor deuren en ramen.",
     features: ["Zigbee", "Compact", "Automatiseringen"],
     affiliateUrl: "https://www.amazon.nl/dp/B0BTL8B72D?tag=slimhuiswonen-21",
-    youtubeUrl: "https://www.youtube.com/shorts/pAJQdHe2678",
+    youtubeUrl: "https://www.youtube.com/shorts/j2NIXDy3yI8",
   },
 
   {
@@ -122,6 +128,7 @@ export const products = [
       "Geavanceerde mmWave aanwezigheidssensor met zone-detectie.",
     features: ["mmWave radar", "Zone-detectie", "Zeer nauwkeurig"],
     affiliateUrl: "https://www.amazon.nl/dp/B0BXWZMQJ3?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/LPven_LKoT8",
   },
 
   {
@@ -132,6 +139,7 @@ export const products = [
     description:
       "Temperatuur- en luchtvochtigheidssensor voor slimme automatiseringen.",
     affiliateUrl: "https://www.amazon.nl/dp/B0DM23Q1VB?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/2gnel7Aku3c",
   },
 
   {
@@ -142,6 +150,7 @@ export const products = [
     description:
       "Contactsensor voor deuren en ramen binnen het Tapo ecosysteem.",
     affiliateUrl: "https://www.amazon.nl/dp/B0BF5MC9QX?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/rUPcVT878V4",
   },
 
   {
@@ -151,6 +160,7 @@ export const products = [
     category: "sensoren",
     description: "Detecteert waterlekken en waarschuwt direct via app.",
     affiliateUrl: "https://www.amazon.nl/dp/B0DWXHMFQS?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/sKgjw-64WVg",
   },
 
   {
@@ -161,6 +171,7 @@ export const products = [
     description:
       "Slimme temperatuur- en luchtvochtigheidsmeter met display.",
     affiliateUrl: "https://www.amazon.nl/dp/B0BNYSVV3J?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/96W-aKT8vPk",
   },
 
   {
@@ -177,8 +188,7 @@ export const products = [
     brand: "TP-Link Tapo",
     name: "Tapo T100 Bewegingssensor",
     category: "sensoren",
-    description:
-      "Bewegingssensor voor beveiliging en automatisering.",
+    description: "Bewegingssensor voor beveiliging en automatisering.",
     affiliateUrl: "https://www.amazon.nl/dp/B0B7NDJW6J?tag=slimhuiswonen-21",
     youtubeUrl: "https://www.youtube.com/shorts/dorW24Ba4oo",
   },
@@ -205,6 +215,7 @@ export const products = [
     description: "Videodeurbel met 2K camera, accu of bekabeld.",
     features: ["2K camera", "Accu of bekabeld", "Nachtzicht"],
     affiliateUrl: "https://www.amazon.nl/dp/B0DDL95M8Z?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/5wVHfrHFqwE",
   },
 
   {
@@ -238,6 +249,7 @@ export const products = [
     category: "slimme-thermostaten",
     description: "Universele slimme thermostaat voor cv-ketels.",
     affiliateUrl: "https://www.amazon.nl/dp/B0FHWDBYTF?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/watch?v=-xF6Ok9YNsg",
   },
 
   {
@@ -263,6 +275,7 @@ export const products = [
     features: ["Energieverbruik inzicht", "Wi-Fi", "Geen hub nodig"],
     affiliateUrl: "https://www.amazon.nl/dp/B09ZBGWYH9?tag=slimhuiswonen-21",
     rating: 4.6,
+    youtubeUrl: "https://www.youtube.com/shorts/l6WrOy4wRhU",
   },
 
   {
@@ -297,6 +310,7 @@ export const products = [
     description: "Slimme stekker binnen het Hue ecosysteem.",
     features: ["Hue integratie", "Bluetooth", "Bridge optioneel"],
     affiliateUrl: "https://www.amazon.nl/dp/B09CV7QQKB?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/watch?v=SQ3ClKGRbq8",
   },
 
   {
@@ -307,6 +321,7 @@ export const products = [
     description: "Combipack met slimme stekker en dimmer.",
     features: ["Dimmer switch", "Hue ecosysteem"],
     affiliateUrl: "https://www.amazon.nl/dp/B09QP98F9W?tag=slimhuiswonen-21",
+    videoUrl: "https://www.tiktok.com/@charisathome/video/7490491717045603616",
   },
 
   {
@@ -317,6 +332,7 @@ export const products = [
     description: "Slimme stekker voor buitengebruik.",
     features: ["IP54", "Zigbee repeater"],
     affiliateUrl: "https://www.amazon.nl/dp/B0FL83D4DS?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/watch?v=EZeoW8ZK2vs",
   },
 
   /* =========================
@@ -352,6 +368,7 @@ export const products = [
     category: "slimme-hubs",
     description: "Verbindt slimme apparaten met Homey Cloud.",
     affiliateUrl: "https://www.amazon.nl/dp/B08FRLQH75?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/_fRsj0azjVI",
   },
 
   {
@@ -361,6 +378,7 @@ export const products = [
     category: "slimme-hubs",
     description: "Centrale hub voor Philips Hue verlichting.",
     affiliateUrl: "https://www.amazon.nl/dp/B09CV9F3KR?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/isaMt7n0Vhw",
   },
 
   {
@@ -371,6 +389,7 @@ export const products = [
     description: "Officiële Home Assistant smart home hub.",
     features: ["Home Assistant OS", "Volledig lokaal"],
     affiliateUrl: "https://www.amazon.nl/dp/B0CXVKSG19?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/u8sk6B8_Qkc",
   },
 
   /* =========================
@@ -394,6 +413,7 @@ export const products = [
     category: "slimme-speakers",
     description: "Compacte slimme speaker met Alexa.",
     affiliateUrl: "https://www.amazon.nl/dp/B09B8X9RGM?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/0ctoSg9lqpg",
   },
 
   {
@@ -414,6 +434,7 @@ export const products = [
     category: "slimme-speakers",
     description: "Slimme speaker met groter HD-scherm en ruimtelijke audio.",
     affiliateUrl: "https://www.amazon.nl/dp/B0DTQF1MQT?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/_0om_hydnsk",
   },
 
   {
@@ -423,6 +444,7 @@ export const products = [
     category: "slimme-speakers",
     description: "Premium Alexa speaker met Dolby Atmos.",
     affiliateUrl: "https://www.amazon.nl/dp/B0DXN1YWZZ?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/VNuw4d2OaPY",
   },
 ];
 
