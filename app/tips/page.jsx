@@ -120,6 +120,54 @@ export default function TipsPage() {
                 Lees artikel →
               </Link>
             </article>
+
+            {/* Artikel 9 - NIEUW */}
+            <article className="tip-card">
+              <h2>Wi-Fi verbeteren voor smart home (10 tips)</h2>
+              <p>
+                Smart home valt offline of reageert traag? Met deze 10 tips maak
+                je je Wi-Fi stabieler: 2.4GHz, mesh, kanaalkeuze en router-instellingen.
+              </p>
+              <Link href="/tips/wifi-verbeteren-voor-smart-home">
+                Lees artikel →
+              </Link>
+            </article>
+
+            {/* Artikel 10 - NIEUW */}
+            <article className="tip-card">
+              <h2>2.4 GHz vs 5 GHz voor smart home</h2>
+              <p>
+                Welke Wi-Fi band is het beste voor slimme apparaten? Zo voorkom
+                je koppelproblemen en offline meldingen.
+              </p>
+              <Link href="/tips/2-4ghz-vs-5ghz-smart-home">
+                Lees artikel →
+              </Link>
+            </article>
+
+            {/* Artikel 11 - NIEUW */}
+            <article className="tip-card">
+              <h2>Smart home apparaat koppelt niet met Wi-Fi?</h2>
+              <p>
+                Lukt koppelen niet? Check 2.4 GHz, WPA3-only, SSID en router-instellingen.
+                Dit stappenplan werkt bijna altijd.
+              </p>
+              <Link href="/tips/smart-home-koppelt-niet-wifi">
+                Lees artikel →
+              </Link>
+            </article>
+
+            {/* Artikel 12 - NIEUW */}
+            <article className="tip-card">
+              <h2>Wi-Fi bereik verbeteren zonder nieuwe router</h2>
+              <p>
+                Dode hoeken in huis? 7 slimme oplossingen om je Wi-Fi bereik te verbeteren
+                zonder direct een nieuwe router te kopen.
+              </p>
+              <Link href="/tips/wifi-bereik-verbeteren-zonder-nieuwe-router">
+                Lees artikel →
+              </Link>
+            </article>
           </div>
         </div>
       </main>
