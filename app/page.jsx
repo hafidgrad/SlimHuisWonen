@@ -32,15 +32,21 @@ export default function HomePage() {
                   De beste smart home producten, tips en automatiseringen op één plek.
                 </p>
 
+                {/* ✅ Knoppen */}
                 <div className="hero-banner-actions">
-                  <Link href="/categorie" className="btn hero-btn hero-secondary">
-                    Ontdek categorieën
+                  <Link href="/producten" className="btn hero-btn hero-secondary">
+                    Ontdek producten
                   </Link>
 
                   <Link href="/tips" className="btn hero-btn hero-primary">
                     Start met tips →
                   </Link>
                 </div>
+
+                {/* ✅ Scroll indicator */}
+                <a href="#top-aanraders" className="scroll-indicator">
+                  Ontdek meer <span className="scroll-arrow">↓</span>
+                </a>
               </div>
             </div>
           </div>
@@ -48,6 +54,9 @@ export default function HomePage() {
 
         {/* ✅ Spacer zodat er NOOIT overlap is */}
         <div className="hero-spacer" />
+
+        {/* ✅ Scroll target */}
+        <div id="top-aanraders" />
 
         <TopAanraders />
 
