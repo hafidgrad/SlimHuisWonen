@@ -26,20 +26,19 @@ export default function HomePage() {
           <div className="hero-banner-content">
             <div className="container">
               <div className="hero-banner-inner">
-                <h1>Slim wonen begint bij de juiste smart home keuzes</h1>
+                <h1>Maak je huis slim — zonder gedoe</h1>
 
                 <p>
-                  Vergelijk slimme producten, ontdek handige automatiseringen en bouw
-                  jouw smart home stap voor stap — zonder gedoe.
+                  De beste smart home producten, tips en automatiseringen op één plek.
                 </p>
 
                 <div className="hero-banner-actions">
                   <Link href="/categorieen" className="btn hero-btn hero-secondary">
-                    Bekijk categorieën
+                    Ontdek categorieën
                   </Link>
 
-                 <Link href="/tips" className="btn hero-btn hero-primary">
-                    Lees tips & uitleg →
+                  <Link href="/tips" className="btn hero-btn hero-primary">
+                    Start met tips →
                   </Link>
                 </div>
               </div>
@@ -55,8 +54,10 @@ export default function HomePage() {
         <About />
         <Categories />
 
+        {/* ✅ Toon slechts 6 producten op de homepage */}
         <Products limit={6} />
 
+        {/* ✅ Tips & uitleg – centrale CTA */}
         <section className="section">
           <div className="container">
             <h2>Tips & uitleg</h2>
