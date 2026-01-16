@@ -33,7 +33,7 @@ export default function HomePage() {
                 </p>
 
                 <div className="hero-banner-actions">
-                  <Link href="/categorieen" className="btn hero-btn hero-secondary">
+                  <Link href="/categorie" className="btn hero-btn hero-secondary">
                     Ontdek categorieën
                   </Link>
 

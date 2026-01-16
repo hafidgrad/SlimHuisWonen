@@ -634,3 +634,48 @@ code {
 .hero-secondary:hover {
   background: rgba(255, 255, 255, 0.20) !important;
 }
+
+/* ✅ Mobiel: hero content centreren + buttons full width */
+@media (max-width: 768px) {
+  .hero-banner-content {
+    align-items: flex-end; /* tekst iets lager in beeld */
+    padding-bottom: 28px;
+  }
+
+  .hero-banner-inner {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .hero-banner-actions {
+    justify-content: center;
+  }
+
+  .hero-banner-actions .btn {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .hero-banner-content h1 {
+    font-size: 2.05rem;
+  }
+
+  .hero-banner-content p {
+    font-size: 1rem;
+  }
+}
+
+/* ✅ Extra klein mobiel */
+@media (max-width: 420px) {
+  .hero-banner {
+    height: 340px;
+  }
+
+  .hero-banner-content h1 {
+    font-size: 1.8rem;
+  }
+}
+
+.hero-banner-inner--mobile {
+  padding-right: 0;
+}
