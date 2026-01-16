@@ -679,3 +679,52 @@ code {
 .hero-banner-inner--mobile {
   padding-right: 0;
 }
+
+/* ✅ Scroll indicator onder hero CTA */
+.scroll-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.scroll-indicator:hover {
+  opacity: 1;
+  transform: translateY(1px);
+}
+
+.scroll-arrow {
+  display: inline-block;
+  font-size: 1.15rem;
+  animation: scrollBounce 1.2s infinite;
+}
+
+@keyframes scrollBounce {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+/* ✅ Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ✅ Categories titel afbeelding */
+.categories-title-image {
+  width: 100%;
+  max-width: 860px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1.25rem;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+}
