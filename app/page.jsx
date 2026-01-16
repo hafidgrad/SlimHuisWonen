@@ -34,11 +34,11 @@ export default function HomePage() {
                 </p>
 
                 <div className="hero-banner-actions">
-                  <Link href="/categorieen" className="btn btn-secondary hero-btn">
+                  <Link href="/categorieen" className="btn hero-btn hero-secondary">
                     Bekijk categorieën
                   </Link>
 
-                  <Link href="/tips" className="btn btn-primary hero-btn">
+                 <Link href="/tips" className="btn hero-btn hero-primary">
                     Lees tips & uitleg →
                   </Link>
                 </div>

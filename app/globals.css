@@ -596,3 +596,41 @@ code {
     font-size: 2rem;
   }
 }
+
+/* ✅ SlimHuisWonen kleuren (logo style) */
+:root {
+  --shw-teal: #13b7c6;   /* turquoise */
+  --shw-green: #22c55e;  /* groen */
+  --shw-dark: #0f172a;
+}
+
+/* Hero knoppen */
+.hero-btn {
+  border-radius: 14px;
+  padding: 0.75rem 1.25rem;
+  font-weight: 800;
+}
+
+/* Primary = turquoise */
+.hero-primary {
+  background: var(--shw-teal) !important;
+  color: #ffffff !important;
+  border: 1px solid transparent !important;
+}
+
+.hero-primary:hover {
+  filter: brightness(0.92);
+  transform: translateY(-1px);
+}
+
+/* Secondary = transparant met witte border */
+.hero-secondary {
+  background: rgba(255, 255, 255, 0.12) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.45) !important;
+  backdrop-filter: blur(6px);
+}
+
+.hero-secondary:hover {
+  background: rgba(255, 255, 255, 0.20) !important;
+}
