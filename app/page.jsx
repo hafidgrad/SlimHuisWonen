@@ -6,7 +6,6 @@ import Products from "@/components/Products";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -15,64 +14,49 @@ export default function HomePage() {
 
       <main>
         {/* ✅ HERO BANNER */}
-        <section className="relative w-full overflow-hidden z-0">
-          <div className="relative w-full h-[320px] sm:h-[420px] md:h-[520px]">
-            <Image
-              src="/images/hero-smarthome.png"
-              alt="SlimHuisWonen.nl - Smart home producten"
-              fill
-              priority
-              className="object-cover"
-            />
+        <section className="hero-banner">
+          <img
+            src="/images/hero-smarthome.png"
+            alt="SlimHuisWonen.nl - Smart home producten"
+            className="hero-banner-img"
+          />
 
-            {/* ✅ Gradient overlay (mooier + betere leesbaarheid) */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-black/10" />
+          <div className="hero-banner-overlay" />
 
-            {/* ✅ Content */}
-            <div className="absolute inset-0 flex items-center">
-              <div className="container px-4">
-                <div className="max-w-2xl text-white">
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight">
-                    Slim wonen begint bij de juiste smart home keuzes
-                  </h1>
+          <div className="hero-banner-content">
+            <div className="container">
+              <div className="hero-banner-inner">
+                <h1>Slim wonen begint bij de juiste smart home keuzes</h1>
 
-                  <p className="mt-4 text-base sm:text-lg opacity-95">
-                    Vergelijk slimme producten, ontdek handige automatiseringen en bouw jouw smart home stap voor stap — zonder gedoe.
-                  </p>
+                <p>
+                  Vergelijk slimme producten, ontdek handige automatiseringen en bouw
+                  jouw smart home stap voor stap — zonder gedoe.
+                </p>
 
-                  <div className="mt-6 flex flex-col sm:flex-row gap-3">
-                    <Link
-                      href="/categorieen"
-                      className="inline-flex items-center justify-center rounded-xl bg-white text-black px-6 py-3 font-semibold hover:opacity-90 transition"
-                    >
-                      Bekijk categorieën
-                    </Link>
+                <div className="hero-banner-actions">
+                  <Link href="/categorieen" className="btn btn-secondary hero-btn">
+                    Bekijk categorieën
+                  </Link>
 
-                    <Link
-                      href="/tips"
-                      className="inline-flex items-center justify-center rounded-xl bg-white/15 text-white px-6 py-3 font-semibold border border-white/40 hover:bg-white/25 transition"
-                    >
-                      Lees tips & uitleg →
-                    </Link>
-                  </div>
+                  <Link href="/tips" className="btn btn-primary hero-btn">
+                    Lees tips & uitleg →
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* ✅ TopAanraders netjes onder hero (met gecontroleerde overlap) */}
-        <div className="relative z-10 -mt-12 sm:-mt-16">
-          <TopAanraders />
-        </div>
+        {/* ✅ Spacer zodat er NOOIT overlap is */}
+        <div className="hero-spacer" />
+
+        <TopAanraders />
 
         <About />
         <Categories />
 
-        {/* ✅ Toon slechts 6 producten op de homepage */}
         <Products limit={6} />
 
-        {/* ✅ Tips & uitleg – centrale CTA */}
         <section className="section">
           <div className="container">
             <h2>Tips & uitleg</h2>
@@ -82,7 +66,7 @@ export default function HomePage() {
               Van slimme verlichting tot complete smart home automatiseringen.
             </p>
 
-            <Link href="/tips" className="btn-primary">
+            <Link href="/tips" className="btn btn-primary">
               Bekijk alle tips & uitleg →
             </Link>
           </div>

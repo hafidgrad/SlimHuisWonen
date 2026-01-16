@@ -513,6 +513,7 @@ code {
 .tip-link:hover {
   text-decoration: underline;
 }
+
 /* ✅ HERO BANNER (homepage intro) */
 .hero-banner {
   position: relative;
@@ -520,6 +521,7 @@ code {
   height: 520px;
   overflow: hidden;
   background: #0b1220;
+  z-index: 1;
 }
 
 .hero-banner-img {
@@ -538,6 +540,7 @@ code {
     rgba(0, 0, 0, 0.35) 45%,
     rgba(0, 0, 0, 0.10) 100%
   );
+  z-index: 2;
 }
 
 .hero-banner-content {
@@ -545,22 +548,24 @@ code {
   inset: 0;
   display: flex;
   align-items: center;
-  z-index: 2;
+  z-index: 3;
+}
+
+.hero-banner-inner {
+  max-width: 720px;
+  color: #fff;
 }
 
 .hero-banner-content h1 {
-  color: #fff;
   font-size: 2.6rem;
   line-height: 1.15;
   margin-bottom: 1rem;
   font-weight: 800;
-  max-width: 700px;
 }
 
 .hero-banner-content p {
-  color: rgba(255,255,255,0.92);
+  color: rgba(255, 255, 255, 0.92);
   font-size: 1.05rem;
-  max-width: 650px;
   margin-bottom: 1.5rem;
 }
 
@@ -573,6 +578,12 @@ code {
 .hero-btn {
   border-radius: 14px;
   padding: 0.75rem 1.25rem;
+}
+
+/* ✅ Spacer zodat TopAanraders nooit over de hero komt */
+.hero-spacer {
+  height: 40px;
+  background: #f3f4f6;
 }
 
 /* Responsive */
