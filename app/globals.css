@@ -513,3 +513,75 @@ code {
 .tip-link:hover {
   text-decoration: underline;
 }
+/* ✅ HERO BANNER (homepage intro) */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+  background: #0b1220;
+}
+
+.hero-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.70) 0%,
+    rgba(0, 0, 0, 0.35) 45%,
+    rgba(0, 0, 0, 0.10) 100%
+  );
+}
+
+.hero-banner-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.hero-banner-content h1 {
+  color: #fff;
+  font-size: 2.6rem;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  max-width: 700px;
+}
+
+.hero-banner-content p {
+  color: rgba(255,255,255,0.92);
+  font-size: 1.05rem;
+  max-width: 650px;
+  margin-bottom: 1.5rem;
+}
+
+.hero-banner-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero-btn {
+  border-radius: 14px;
+  padding: 0.75rem 1.25rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 380px;
+  }
+
+  .hero-banner-content h1 {
+    font-size: 2rem;
+  }
+}
