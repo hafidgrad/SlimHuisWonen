@@ -1,5 +1,4 @@
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
 import TopAanraders from "@/components/TopAanraders";
 import About from "@/components/About";
 import Categories from "@/components/Categories";
@@ -15,8 +14,8 @@ export default function HomePage() {
       <Header />
 
       <main>
-        {/* ✅ NIEUWE HERO BANNER MET AFBEELDING */}
-        <section className="relative w-full overflow-hidden">
+        {/* ✅ HERO BANNER */}
+        <section className="relative w-full overflow-hidden z-0">
           <div className="relative w-full h-[320px] sm:h-[420px] md:h-[520px]">
             <Image
               src="/images/hero-smarthome.png"
@@ -26,10 +25,10 @@ export default function HomePage() {
               className="object-cover"
             />
 
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-black/40" />
+            {/* ✅ Gradient overlay (mooier + betere leesbaarheid) */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-black/10" />
 
-            {/* Content */}
+            {/* ✅ Content */}
             <div className="absolute inset-0 flex items-center">
               <div className="container px-4">
                 <div className="max-w-2xl text-white">
@@ -38,8 +37,7 @@ export default function HomePage() {
                   </h1>
 
                   <p className="mt-4 text-base sm:text-lg opacity-95">
-                    Vergelijk slimme producten, ontdek handige automatiseringen en
-                    bouw jouw smart home stap voor stap — zonder gedoe.
+                    Vergelijk slimme producten, ontdek handige automatiseringen en bouw jouw smart home stap voor stap — zonder gedoe.
                   </p>
 
                   <div className="mt-6 flex flex-col sm:flex-row gap-3">
@@ -63,13 +61,11 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ❌ OUDE HERO UITZETTEN (anders 2 hero's onder elkaar)
-            Als je hem toch wilt houden, haal dan deze comment weg */}
-        {/*
-        <Hero />
-        */}
+        {/* ✅ TopAanraders netjes onder hero (met gecontroleerde overlap) */}
+        <div className="relative z-10 -mt-12 sm:-mt-16">
+          <TopAanraders />
+        </div>
 
-        <TopAanraders />
         <About />
         <Categories />
 
@@ -99,4 +95,3 @@ export default function HomePage() {
     </>
   );
 }
-
