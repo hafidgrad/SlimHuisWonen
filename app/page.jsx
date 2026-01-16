@@ -25,7 +25,7 @@ export default function HomePage() {
 
           <div className="hero-banner-content">
             <div className="container">
-              <div className="hero-banner-inner">
+              <div className="hero-banner-inner hero-banner-inner--mobile">
                 <h1>Maak je huis slim — zonder gedoe</h1>
 
                 <p>
