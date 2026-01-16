@@ -7,6 +7,7 @@ import Products from "@/components/Products";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -14,7 +15,60 @@ export default function HomePage() {
       <Header />
 
       <main>
+        {/* ✅ NIEUWE HERO BANNER MET AFBEELDING */}
+        <section className="relative w-full overflow-hidden">
+          <div className="relative w-full h-[320px] sm:h-[420px] md:h-[520px]">
+            <Image
+              src="/images/hero-smarthome.png"
+              alt="SlimHuisWonen.nl - Smart home producten"
+              fill
+              priority
+              className="object-cover"
+            />
+
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/40" />
+
+            {/* Content */}
+            <div className="absolute inset-0 flex items-center">
+              <div className="container px-4">
+                <div className="max-w-2xl text-white">
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight">
+                    Slim wonen begint bij de juiste smart home keuzes
+                  </h1>
+
+                  <p className="mt-4 text-base sm:text-lg opacity-95">
+                    Vergelijk slimme producten, ontdek handige automatiseringen en
+                    bouw jouw smart home stap voor stap — zonder gedoe.
+                  </p>
+
+                  <div className="mt-6 flex flex-col sm:flex-row gap-3">
+                    <Link
+                      href="/categorieen"
+                      className="inline-flex items-center justify-center rounded-xl bg-white text-black px-6 py-3 font-semibold hover:opacity-90 transition"
+                    >
+                      Bekijk categorieën
+                    </Link>
+
+                    <Link
+                      href="/tips"
+                      className="inline-flex items-center justify-center rounded-xl bg-white/15 text-white px-6 py-3 font-semibold border border-white/40 hover:bg-white/25 transition"
+                    >
+                      Lees tips & uitleg →
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ❌ OUDE HERO UITZETTEN (anders 2 hero's onder elkaar)
+            Als je hem toch wilt houden, haal dan deze comment weg */}
+        {/*
         <Hero />
+        */}
+
         <TopAanraders />
         <About />
         <Categories />
