@@ -7,7 +7,12 @@ export default function TopAanraders() {
   return (
     <section className="section">
       <div className="container">
-        <h2>Onze Top Aanraders</h2>
+        {/* ✅ Titel vervangen door afbeelding */}
+        <img
+          src="/images/onze-slimme-aanraders.png"
+          alt="Onze slimme aanraders"
+          className="categories-title-image"
+        />
 
         <div className="product-grid">
           {products.map((p) => (
@@ -27,13 +32,13 @@ export default function TopAanraders() {
                       Bekijk beste prijs bij Amazon
                     </a>
 
-                    <p className={"muted small"}>
-                        *Prijzen kunnen wijzigen. Bekijk actuele prijs bij Amazon.
+                    <p className="muted small">
+                      *Prijzen kunnen wijzigen. Bekijk actuele prijs bij Amazon.
                     </p>
                   </>
                 )}
 
-                <Link href={`/producten/${p.slug}`}>
+                <Link href={`/producten/${p.slug}`} className="product-details-link">
                   Meer info
                 </Link>
               </div>
