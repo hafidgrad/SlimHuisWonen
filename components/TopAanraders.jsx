@@ -5,15 +5,23 @@ export default function TopAanraders() {
   const products = getAllProducts().slice(0, 4);
 
   return (
-    <section className="section">
+    <section className="section" id="aanraders">
       <div className="container">
-        {/* ✅ Banner titel: breder + iets hoger */}
-        <div className="aanraders-banner">
-          <img
-            src="/images/onze-slimme-aanraders.png"
-            alt="Onze slimme aanraders"
-          />
+        {/* ✅ Banner (gecentreerd) */}
+        <div className="banner-center">
+          <div className="aanraders-banner">
+            <img
+              src="/images/banner_onze_slimme_aanraders.png"
+              alt="Onze slimme aanraders"
+            />
+          </div>
         </div>
+
+        {/* ✅ Titel + korte tekst los (niet in de afbeelding) */}
+        <h2 className="section-title">Onze slimme aanraders</h2>
+        <p className="section-intro">
+          Onze favoriete smart home producten: betrouwbaar, populair en makkelijk te installeren.
+        </p>
 
         <div className="product-grid">
           {products.map((p) => (
