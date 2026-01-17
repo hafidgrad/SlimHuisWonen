@@ -7,12 +7,15 @@ export default function TopAanraders() {
   return (
     <section className="section">
       <div className="container">
-        {/* ✅ Titel vervangen door afbeelding */}
-        <img
-          src="/images/onze-slimme-aanraders.png"
-          alt="Onze slimme aanraders"
-          className="categories-title-image"
-        />
+        {/* ✅ Banner titel (afbeelding + subtiele overlay) */}
+        <div className="section-banner-wrap">
+          <img
+            src="/images/onze-slimme-aanraders.png"
+            alt="Onze slimme aanraders"
+            className="section-banner-img"
+          />
+          <div className="section-banner-overlay" />
+        </div>
 
         <div className="product-grid">
           {products.map((p) => (

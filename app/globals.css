@@ -728,3 +728,64 @@ html {
   border-radius: 18px;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
 }
+
+/* ✅ Section banners (voor titels zoals Categorieën / Aanraders) */
+.section-banner {
+  width: 100%;
+  max-width: 1100px;      /* zelfde als container */
+  height: 160px;          /* banner hoogte (pas aan indien gewenst) */
+  object-fit: cover;      /* crop zoals een banner */
+  display: block;
+  margin: 0 auto 1.5rem;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+}
+
+/* Mobiel iets lager */
+@media (max-width: 768px) {
+  .section-banner {
+    height: 120px;
+    border-radius: 16px;
+    margin-bottom: 1.25rem;
+  }
+}
+
+/* ✅ Section banner (breed + laag zoals hero) */
+.section-banner-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;      /* zelfde als container */
+  height: 160px;          /* bannerhoogte */
+  margin: 0 auto 1.5rem;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+}
+
+.section-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ✅ Subtiele overlay (premium look) */
+.section-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.30) 0%,
+    rgba(0, 0, 0, 0.12) 45%,
+    rgba(0, 0, 0, 0.06) 100%
+  );
+}
+
+/* Mobiel */
+@media (max-width: 768px) {
+  .section-banner-wrap {
+    height: 120px;
+    border-radius: 16px;
+    margin-bottom: 1.25rem;
+  }
+}
