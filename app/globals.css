@@ -733,20 +733,10 @@ html {
    ✅ HOME SECTION BANNERS (netjes & consistent)
    ========================================================= */
 
-/* ✅ Wrapper om banners altijd te centreren
-   + compenseert container padding (1.5rem links/rechts)
-*/
+/* ✅ Wrapper om banners altijd te centreren (simpel & stabiel) */
 .banner-center {
-  box-sizing: border-box;
-  width: calc(100% + 3rem); /* 1.5rem + 1.5rem */
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  overflow: hidden; /* voorkomt horizontaal schuiven */
+  width: 100%;
+  display: block;
 }
 
 /* --- AANRADERS banner --- */
@@ -755,7 +745,7 @@ html {
   width: 100%;
   max-width: 920px;
   height: 200px;
-  margin: 0 auto 1.25rem;
+  margin: 0 auto 1.25rem;     /* ✅ centering */
   border-radius: 18px;
   overflow: hidden;
   background: #0b1220;
@@ -789,7 +779,7 @@ html {
   width: 100%;
   max-width: 920px;
   height: 210px;
-  margin: 0 auto 1.25rem;
+  margin: 0 auto 1.25rem;     /* ✅ centering */
   border-radius: 18px;
   overflow: hidden;
   background: #0b1220;
