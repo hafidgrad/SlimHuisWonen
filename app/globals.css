@@ -752,6 +752,20 @@ html {
   box-shadow: 0 10px 26px rgba(15, 23, 42, 0.12);
 }
 
+/* --- AANRADERS banner (zonder blok erachter) --- */
+.aanraders-banner {
+  position: relative;
+  width: 100%;
+  max-width: 920px;
+  height: 200px;
+  margin: 0 auto 1.25rem;
+
+  border-radius: 0;     /* ✅ geen card look */
+  overflow: hidden;
+  background: transparent; /* ✅ geen blok */
+  box-shadow: none;        /* ✅ geen schaduw */
+}
+
 .aanraders-banner img {
   width: 100%;
   height: 100%;
@@ -760,30 +774,18 @@ html {
   object-position: center;
 }
 
-.aanraders-banner::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(0,0,0,0.22) 0%,
-    rgba(0,0,0,0.10) 45%,
-    rgba(0,0,0,0.06) 100%
-  );
-  pointer-events: none;
-}
-
-/* --- CATEGORIEEN banner --- */
+/* --- CATEGORIEEN banner (zonder blok erachter) --- */
 .categorie-banner {
   position: relative;
   width: 100%;
   max-width: 920px;
   height: 210px;
-  margin: 0 auto 1.25rem;     /* ✅ centering */
-  border-radius: 18px;
+  margin: 0 auto 1.25rem;
+
+  border-radius: 0;
   overflow: hidden;
-  background: #0b1220;
-  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.12);
+  background: transparent;
+  box-shadow: none;
 }
 
 .categorie-banner img {
@@ -794,26 +796,27 @@ html {
   object-position: center;
 }
 
+/* ✅ Overlay subtiel (kan blijven, optioneel) */
+.aanraders-banner::after,
 .categorie-banner::after {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(0,0,0,0.22) 0%,
-    rgba(0,0,0,0.10) 45%,
-    rgba(0,0,0,0.06) 100%
+    rgba(0,0,0,0.14) 0%,
+    rgba(0,0,0,0.06) 45%,
+    rgba(0,0,0,0.03) 100%
   );
   pointer-events: none;
 }
 
-/* --- Mobiel --- */
+/* Mobiel */
 @media (max-width: 768px) {
   .aanraders-banner,
   .categorie-banner {
     max-width: 100%;
     height: 150px;
-    border-radius: 16px;
     margin-bottom: 1.1rem;
   }
 }
