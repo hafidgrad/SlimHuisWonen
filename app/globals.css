@@ -737,12 +737,16 @@ html {
    + compenseert container padding (1.5rem links/rechts)
 */
 .banner-center {
+  box-sizing: border-box;
   width: calc(100% + 3rem); /* 1.5rem + 1.5rem */
   margin-left: -1.5rem;
   margin-right: -1.5rem;
 
-  display: flex !important;
-  justify-content: center !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden; /* voorkomt horizontaal schuiven */
 }
 
 /* --- AANRADERS banner --- */
@@ -761,9 +765,9 @@ html {
 .aanraders-banner img {
   width: 100%;
   height: 100%;
+  display: block;
   object-fit: cover;
   object-position: center;
-  display: block;
 }
 
 .aanraders-banner::after {
@@ -795,9 +799,9 @@ html {
 .categorie-banner img {
   width: 100%;
   height: 100%;
+  display: block;
   object-fit: cover;
   object-position: center;
-  display: block;
 }
 
 .categorie-banner::after {
