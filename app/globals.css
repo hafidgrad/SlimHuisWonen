@@ -729,49 +729,92 @@ html {
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
 }
 
-/* ✅ Section banners (voor titels zoals Categorieën / Aanraders) */
-.section-banner-wrap {
-  position: relative;
-  width: 100%;
-  max-width: 1100px;    /* zelfde als container */
-  height: 180px;        /* bannerhoogte */
-  margin: 0 auto 1.5rem;
-  border-radius: 18px;
-  overflow: hidden;
-  background: #0b1220;  /* opvulkleur achter de afbeelding */
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+/* =========================================================
+   ✅ SECTION BANNERS (Categorieën + Aanraders)
+   ========================================================= */
+
+/* Kleine tekst helper */
+.small {
+  font-size: 0.85rem;
 }
 
-/* ✅ Afbeelding: géén crop, tekst blijft zichtbaar */
-.section-banner-img {
+/* --- AANRADERS: compacter --- */
+.aanraders-banner {
+  position: relative;
+  width: 100%;
+  max-width: 860px;      /* ✅ kleiner */
+  height: 170px;         /* ✅ lager */
+  margin: 0 auto 1.25rem;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #0b1220;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.10);
+}
+
+.aanraders-banner img {
   width: 100%;
   height: 100%;
-  object-fit: contain;        /* ✅ belangrijk */
+  object-fit: cover;
   object-position: center;
   display: block;
 }
 
-/* ✅ Subtiele overlay (premium look) */
-.section-banner-overlay {
+.aanraders-banner::after {
+  content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 0.20) 0%,
-    rgba(0, 0, 0, 0.10) 45%,
-    rgba(0, 0, 0, 0.05) 100%
+    rgba(0,0,0,0.22) 0%,
+    rgba(0,0,0,0.10) 45%,
+    rgba(0,0,0,0.05) 100%
   );
   pointer-events: none;
 }
 
-/* Mobiel */
-@media (max-width: 768px) {
-  .section-banner-wrap {
-    height: 140px;
-    border-radius: 16px;
-    margin-bottom: 1.25rem;
-  }
+
+/* --- CATEGORIEËN: iets groter dan aanraders, maar niet huge --- */
+.categorie-banner {
+  position: relative;
+  width: 100%;
+  max-width: 900px;      /* ✅ iets groter dan aanraders */
+  height: 185px;         /* ✅ lager */
+  margin: 0 auto 1.25rem;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #0b1220;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.10);
 }
- .small {
-  font-size: 0.85rem;
+
+.categorie-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.categorie-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0,0,0,0.22) 0%,
+    rgba(0,0,0,0.10) 45%,
+    rgba(0,0,0,0.05) 100%
+  );
+  pointer-events: none;
+}
+
+
+/* --- Mobiel --- */
+@media (max-width: 768px) {
+  .aanraders-banner,
+  .categorie-banner {
+    max-width: 100%;
+    height: 125px;      /* ✅ veel compacter op mobiel */
+    border-radius: 16px;
+    margin-bottom: 1.1rem;
+  }
 }
