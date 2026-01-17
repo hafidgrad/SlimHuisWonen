@@ -807,3 +807,10 @@ html {
     margin-bottom: 1.1rem;
   }
 }
+
+.aanraders-banner,
+.categorie-banner {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+}
