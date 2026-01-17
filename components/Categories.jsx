@@ -5,12 +5,13 @@ export default function Categories() {
   return (
     <section id="categorie" className="section section-alt">
       <div className="container">
-        {/* ✅ Titel vervangen door afbeelding */}
-        <img
-          src="/images/categorieen-slimme-producten.png"
-          alt="Categorieën slimme producten"
-          className="categories-title-image"
-        />
+        {/* ✅ Banner titel: breder + overlay */}
+        <div className="categorie-banner">
+          <img
+            src="/images/categorieen-slimme-producten.png"
+            alt="Categorieën slimme producten"
+          />
+        </div>
 
         <div className="category-grid">
           {categories.map((cat) => (

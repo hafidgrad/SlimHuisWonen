@@ -7,14 +7,12 @@ export default function TopAanraders() {
   return (
     <section className="section">
       <div className="container">
-        {/* ✅ Banner titel (afbeelding + subtiele overlay) */}
-        <div className="section-banner-wrap">
+        {/* ✅ Banner titel: breder + iets hoger */}
+        <div className="aanraders-banner">
           <img
             src="/images/onze-slimme-aanraders.png"
             alt="Onze slimme aanraders"
-            className="section-banner-img"
           />
-          <div className="section-banner-overlay" />
         </div>
 
         <div className="product-grid">
