@@ -13,6 +13,8 @@ export default function TopAanraders() {
             <img
               src="/images/banner_onze_slimme_aanraders.png"
               alt="Onze slimme aanraders"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
@@ -35,7 +37,7 @@ export default function TopAanraders() {
                     <a
                       href={p.affiliateUrl}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       className="btn btn-primary"
                     >
                       Bekijk beste prijs bij Amazon

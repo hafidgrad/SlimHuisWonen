@@ -3,6 +3,7 @@ import { categories } from "@/data/categories";
 
 export default function Categories() {
   return (
+    // ✅ Dit id wordt gebruikt voor navigatie (#categorie)
     <section id="categorie" className="section section-alt">
       <div className="container">
         {/* ✅ Banner (gecentreerd) */}
@@ -11,6 +12,8 @@ export default function Categories() {
             <img
               src="/images/banner_categorieen_slimme_producten.png"
               alt="Categorieën slimme producten"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
