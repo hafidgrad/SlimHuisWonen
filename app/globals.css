@@ -733,9 +733,14 @@ html {
    ✅ HOME SECTION BANNERS (netjes & consistent)
    ========================================================= */
 
-/* ✅ Wrapper om banners altijd te centreren */
+/* ✅ Wrapper om banners altijd te centreren
+   + compenseert container padding (1.5rem links/rechts)
+*/
 .banner-center {
-  width: 100%;
+  width: calc(100% + 3rem); /* 1.5rem + 1.5rem */
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+
   display: flex !important;
   justify-content: center !important;
 }
@@ -744,8 +749,8 @@ html {
 .aanraders-banner {
   position: relative;
   width: 100%;
-  max-width: 920px;     /* breed, maar niet mega */
-  height: 200px;        /* iets hoger */
+  max-width: 920px;
+  height: 200px;
   margin: 0 auto 1.25rem;
   border-radius: 18px;
   overflow: hidden;
@@ -756,7 +761,7 @@ html {
 .aanraders-banner img {
   width: 100%;
   height: 100%;
-  object-fit: cover;     /* vult altijd mooi */
+  object-fit: cover;
   object-position: center;
   display: block;
 }
@@ -773,7 +778,6 @@ html {
   );
   pointer-events: none;
 }
-
 
 /* --- CATEGORIEEN banner --- */
 .categorie-banner {
@@ -808,7 +812,6 @@ html {
   );
   pointer-events: none;
 }
-
 
 /* --- Mobiel --- */
 @media (max-width: 768px) {
