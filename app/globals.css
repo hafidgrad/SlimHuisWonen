@@ -733,39 +733,35 @@ html {
    ✅ SECTION BANNERS (Categorieën + Aanraders)
    ========================================================= */
 
-/* Kleine tekst helper */
-.small {
-  font-size: 0.85rem;
-}
-
-/* --- AANRADERS: compacter --- */
+/* --- AANRADERS banner (tekst blijft zichtbaar) --- */
 .aanraders-banner {
   position: relative;
   width: 100%;
-  max-width: 860px;      /* ✅ kleiner */
-  height: 170px;         /* ✅ lager */
+  max-width: 860px;
+  height: 190px;
   margin: 0 auto 1.25rem;
   border-radius: 18px;
   overflow: hidden;
-  background: #0b1220;
+  background: #0b1220; /* opvulling links/rechts indien nodig */
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.10);
 }
 
 .aanraders-banner img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;      /* ✅ GEEN CROP */
   object-position: center;
   display: block;
 }
 
+/* overlay subtiel */
 .aanraders-banner::after {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(0,0,0,0.22) 0%,
+    rgba(0,0,0,0.18) 0%,
     rgba(0,0,0,0.10) 45%,
     rgba(0,0,0,0.05) 100%
   );
@@ -773,12 +769,12 @@ html {
 }
 
 
-/* --- CATEGORIEËN: iets groter dan aanraders, maar niet huge --- */
+/* --- CATEGORIEEN banner (iets groter) --- */
 .categorie-banner {
   position: relative;
   width: 100%;
-  max-width: 900px;      /* ✅ iets groter dan aanraders */
-  height: 185px;         /* ✅ lager */
+  max-width: 900px;
+  height: 210px;
   margin: 0 auto 1.25rem;
   border-radius: 18px;
   overflow: hidden;
@@ -789,7 +785,7 @@ html {
 .categorie-banner img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;      /* ✅ GEEN CROP */
   object-position: center;
   display: block;
 }
@@ -800,7 +796,7 @@ html {
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(0,0,0,0.22) 0%,
+    rgba(0,0,0,0.18) 0%,
     rgba(0,0,0,0.10) 45%,
     rgba(0,0,0,0.05) 100%
   );
@@ -810,11 +806,15 @@ html {
 
 /* --- Mobiel --- */
 @media (max-width: 768px) {
-  .aanraders-banner,
+  .aanraders-banner {
+    max-width: 100%;
+    height: 140px;
+    border-radius: 16px;
+  }
+
   .categorie-banner {
     max-width: 100%;
-    height: 125px;      /* ✅ veel compacter op mobiel */
+    height: 150px;
     border-radius: 16px;
-    margin-bottom: 1.1rem;
   }
 }
