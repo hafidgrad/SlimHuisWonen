@@ -730,29 +730,16 @@ html {
 }
 
 /* =========================================================
-   ✅ HOME SECTION BANNERS (netjes & consistent)
+   ✅ HOME SECTION BANNERS (clean, zonder blok erachter)
    ========================================================= */
 
-/* ✅ Wrapper om banners altijd te centreren (simpel & stabiel) */
+/* Wrapper (mag blijven) */
 .banner-center {
   width: 100%;
   display: block;
 }
 
-/* --- AANRADERS banner --- */
-.aanraders-banner {
-  position: relative;
-  width: 100%;
-  max-width: 920px;
-  height: 200px;
-  margin: 0 auto 1.25rem;     /* ✅ centering */
-  border-radius: 18px;
-  overflow: hidden;
-  background: #0b1220;
-  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.12);
-}
-
-/* --- AANRADERS banner (zonder blok erachter) --- */
+/* --- AANRADERS banner (clean) --- */
 .aanraders-banner {
   position: relative;
   width: 100%;
@@ -760,10 +747,10 @@ html {
   height: 200px;
   margin: 0 auto 1.25rem;
 
-  border-radius: 0;     /* ✅ geen card look */
+  border-radius: 0;         /* geen card look */
   overflow: hidden;
-  background: transparent; /* ✅ geen blok */
-  box-shadow: none;        /* ✅ geen schaduw */
+  background: transparent;  /* geen blok */
+  box-shadow: none;         /* geen schaduw */
 }
 
 .aanraders-banner img {
@@ -774,7 +761,7 @@ html {
   object-position: center;
 }
 
-/* --- CATEGORIEEN banner (zonder blok erachter) --- */
+/* --- CATEGORIEEN banner (clean) --- */
 .categorie-banner {
   position: relative;
   width: 100%;
@@ -796,7 +783,7 @@ html {
   object-position: center;
 }
 
-/* ✅ Overlay subtiel (kan blijven, optioneel) */
+/* ✅ Subtiele overlay (optioneel, premium look) */
 .aanraders-banner::after,
 .categorie-banner::after {
   content: "";
