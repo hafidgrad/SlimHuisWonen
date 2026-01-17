@@ -821,3 +821,8 @@ html {
   margin-right: auto !important;
   display: block;
 }
+
+.banner-center {
+  display: flex;
+  justify-content: center;
+}
