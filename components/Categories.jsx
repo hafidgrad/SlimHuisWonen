@@ -4,7 +4,7 @@ import { categories } from "@/data/categories";
 export default function Categories() {
   return (
     <section id="categorie" className="section section-alt">
-      {/* ✅ Banner buiten container */}
+      {/* ✅ Banner buiten container = altijd gecentreerd */}
       <div className="banner-shell">
         <div className="categorie-banner">
           <img

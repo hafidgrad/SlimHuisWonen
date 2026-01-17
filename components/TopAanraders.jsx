@@ -6,7 +6,7 @@ export default function TopAanraders() {
 
   return (
     <section className="section" id="aanraders">
-      {/* ✅ Banner staat buiten container → altijd exact gecentreerd */}
+      {/* ✅ Banner buiten container = altijd gecentreerd */}
       <div className="banner-shell">
         <div className="aanraders-banner">
           <img
