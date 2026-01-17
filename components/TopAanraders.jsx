@@ -41,7 +41,10 @@ export default function TopAanraders() {
                   </>
                 )}
 
-                <Link href={`/producten/${p.slug}`} className="product-details-link">
+                <Link
+                  href={`/producten/${p.slug}`}
+                  className="product-details-link"
+                >
                   Meer info
                 </Link>
               </div>
