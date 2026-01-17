@@ -730,62 +730,61 @@ html {
 }
 
 /* =========================================================
-   ✅ SECTION BANNERS (Categorieën + Aanraders)
+   ✅ HOME SECTION BANNERS (netjes & consistent)
    ========================================================= */
 
-/* --- AANRADERS banner (tekst blijft zichtbaar) --- */
+/* --- AANRADERS banner --- */
 .aanraders-banner {
   position: relative;
   width: 100%;
-  max-width: 860px;
-  height: 190px;
+  max-width: 920px;     /* ✅ breed, maar niet mega */
+  height: 200px;        /* ✅ iets hoger */
   margin: 0 auto 1.25rem;
   border-radius: 18px;
   overflow: hidden;
-  background: #0b1220; /* opvulling links/rechts indien nodig */
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.10);
+  background: #0b1220;
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.12);
 }
 
 .aanraders-banner img {
   width: 100%;
   height: 100%;
-  object-fit: contain;      /* ✅ GEEN CROP */
+  object-fit: cover;     /* ✅ vult altijd mooi */
   object-position: center;
   display: block;
 }
 
-/* overlay subtiel */
 .aanraders-banner::after {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(0,0,0,0.18) 0%,
+    rgba(0,0,0,0.22) 0%,
     rgba(0,0,0,0.10) 45%,
-    rgba(0,0,0,0.05) 100%
+    rgba(0,0,0,0.06) 100%
   );
   pointer-events: none;
 }
 
 
-/* --- CATEGORIEEN banner (iets groter) --- */
+/* --- CATEGORIEEN banner --- */
 .categorie-banner {
   position: relative;
   width: 100%;
-  max-width: 900px;
+  max-width: 920px;
   height: 210px;
   margin: 0 auto 1.25rem;
   border-radius: 18px;
   overflow: hidden;
   background: #0b1220;
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.10);
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.12);
 }
 
 .categorie-banner img {
   width: 100%;
   height: 100%;
-  object-fit: contain;      /* ✅ GEEN CROP */
+  object-fit: cover;
   object-position: center;
   display: block;
 }
@@ -796,9 +795,9 @@ html {
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(0,0,0,0.18) 0%,
+    rgba(0,0,0,0.22) 0%,
     rgba(0,0,0,0.10) 45%,
-    rgba(0,0,0,0.05) 100%
+    rgba(0,0,0,0.06) 100%
   );
   pointer-events: none;
 }
@@ -806,15 +805,11 @@ html {
 
 /* --- Mobiel --- */
 @media (max-width: 768px) {
-  .aanraders-banner {
-    max-width: 100%;
-    height: 140px;
-    border-radius: 16px;
-  }
-
+  .aanraders-banner,
   .categorie-banner {
     max-width: 100%;
     height: 150px;
     border-radius: 16px;
+    margin-bottom: 1.1rem;
   }
 }
