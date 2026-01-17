@@ -813,3 +813,11 @@ html {
     margin-bottom: 1.1rem;
   }
 }
+
+/* ✅ Banner altijd centreren */
+.aanraders-banner,
+.categorie-banner {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block;
+}
