@@ -6,20 +6,20 @@ export default function TopAanraders() {
 
   return (
     <section className="section" id="aanraders">
-      <div className="container">
-        {/* ✅ Banner (gecentreerd) */}
-        <div className="banner-center">
-          <div className="aanraders-banner">
-            <img
-              src="/images/banner_onze_slimme_aanraders.png"
-              alt="Onze slimme aanraders"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
+      {/* ✅ Banner staat buiten container → altijd exact gecentreerd */}
+      <div className="banner-shell">
+        <div className="aanraders-banner">
+          <img
+            src="/images/banner_onze_slimme_aanraders.png"
+            alt="Onze slimme aanraders"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
+      </div>
 
-        {/* ✅ Titel + korte tekst los (niet in de afbeelding) */}
+      {/* ✅ Content in container */}
+      <div className="container">
         <h2 className="section-title">Onze slimme aanraders</h2>
         <p className="section-intro">
           Onze favoriete smart home producten: betrouwbaar, populair en makkelijk te installeren.
@@ -49,10 +49,7 @@ export default function TopAanraders() {
                   </>
                 )}
 
-                <Link
-                  href={`/producten/${p.slug}`}
-                  className="product-details-link"
-                >
+                <Link href={`/producten/${p.slug}`} className="product-details-link">
                   Meer info
                 </Link>
               </div>

@@ -3,22 +3,21 @@ import { categories } from "@/data/categories";
 
 export default function Categories() {
   return (
-    // ✅ Dit id wordt gebruikt voor navigatie (#categorie)
     <section id="categorie" className="section section-alt">
-      <div className="container">
-        {/* ✅ Banner (gecentreerd) */}
-        <div className="banner-center">
-          <div className="categorie-banner">
-            <img
-              src="/images/banner_categorieen_slimme_producten.png"
-              alt="Categorieën slimme producten"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
+      {/* ✅ Banner buiten container */}
+      <div className="banner-shell">
+        <div className="categorie-banner">
+          <img
+            src="/images/banner_categorieen_slimme_producten.png"
+            alt="Categorieën slimme producten"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
+      </div>
 
-        {/* ✅ Titel + korte tekst los (niet in de afbeelding) */}
+      {/* ✅ Content in container */}
+      <div className="container">
         <h2 className="section-title">Categorieën slimme producten</h2>
         <p className="section-intro">
           Bekijk per categorie welke slimme producten het beste bij jouw woning passen.
