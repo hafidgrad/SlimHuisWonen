@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function TopAanraders() {
   // ✅ extra veilig: voorkomt build crash als products undefined is
-  const topProducts = (products ?? []).slice(0, 3);
+  const topProducts = (products ?? []).slice(0, 6);
 
   return (
     <section className="section section-alt">
