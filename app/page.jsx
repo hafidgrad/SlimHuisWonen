@@ -29,7 +29,8 @@ export default function HomePage() {
                 <h1>Maak je huis slim — zonder gedoe</h1>
 
                 <p>
-                  De beste smart home producten, tips en automatiseringen op één plek.
+                  De beste smart home producten, tips en automatiseringen op één
+                  plek.
                 </p>
 
                 {/* ✅ Knoppen */}
@@ -63,8 +64,8 @@ export default function HomePage() {
         <About />
         <Categories />
 
-        {/* ✅ Toon slechts 6 producten op de homepage */}
-        <Products limit={6} />
+        {/* ✅ Toon slechts 6 producten op de homepage (zonder dubbele kop/intro) */}
+        <Products limit={6} showHeader={false} />
 
         {/* ✅ Tips & uitleg – centrale CTA */}
         <section className="section">
@@ -72,8 +73,9 @@ export default function HomePage() {
             <h2>Tips & uitleg</h2>
 
             <p className="section-intro">
-              Stap-voor-stap uitleg en praktische tips om je huis slimmer te maken.
-              Van slimme verlichting tot complete smart home automatiseringen.
+              Stap-voor-stap uitleg en praktische tips om je huis slimmer te
+              maken. Van slimme verlichting tot complete smart home
+              automatiseringen.
             </p>
 
             <Link href="/tips" className="btn btn-primary">
