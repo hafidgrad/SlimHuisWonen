@@ -4,12 +4,14 @@ export default function Categories() {
   return (
     <section className="section">
       <div className="container">
-        {/* ✅ Banner exact gecentreerd, zonder balk */}
+
+        {/* ✅ Banner */}
         <div className="banner-center">
           <div className="categorie-banner">
             <img
               src="/images/categorieen-banner.png"
               alt="Categorieën slimme producten"
+              className="banner-img"
             />
           </div>
         </div>
@@ -52,6 +54,7 @@ export default function Categories() {
             </Link>
           </div>
         </div>
+
       </div>
     </section>
   );

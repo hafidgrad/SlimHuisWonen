@@ -1,19 +1,20 @@
-import products from "@/data/products";
+import { products } from "@/data/products"; // ✅ named export
 import Link from "next/link";
 
 export default function TopAanraders() {
-  // Pak bijvoorbeeld 3 aanraders (pas aan naar jouw logica)
-  const topProducts = products.slice(0, 3);
+  // ✅ extra veilig: voorkomt build crash als products undefined is
+  const topProducts = (products ?? []).slice(0, 3);
 
   return (
     <section className="section section-alt">
       <div className="container">
-        {/* ✅ Banner exact gecentreerd, zonder balk */}
+        {/* ✅ Banner exact gecentreerd */}
         <div className="banner-center">
           <div className="aanraders-banner">
             <img
               src="/images/aanraders-banner.png"
               alt="Onze slimme aanraders"
+              className="banner-img"
             />
           </div>
         </div>
@@ -25,7 +26,10 @@ export default function TopAanraders() {
 
         <div className="product-grid">
           {topProducts.map((product) => (
-            <div key={product.slug} className={`product-card ${product.highlight ? "highlight" : ""}`}>
+            <div
+              key={product.slug}
+              className={`product-card ${product.highlight ? "highlight" : ""}`}
+            >
               {product.highlight && <span className="best-choice">Beste keuze</span>}
 
               <h3>{product.name}</h3>
@@ -49,7 +53,10 @@ export default function TopAanraders() {
                   Bekijk beste prijs bij Amazon
                 </a>
 
-                <Link href={`/producten/${product.slug}`} className="product-details-link">
+                <Link
+                  href={`/producten/${product.slug}`}
+                  className="product-details-link"
+                >
                   Meer info
                 </Link>
               </div>
