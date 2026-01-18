@@ -7,8 +7,20 @@ import { categories } from "@/data/categories";
 export const dynamic = "force-dynamic";
 
 /* ---------- Helpers ---------- */
+const CATEGORY_ALIASES = {
+  verlichting: "slimme-verlichting",
+  beveiliging: "sensoren",
+  cameras: "slimme-deurbellen",
+  energie: "slimme-thermostaten",
+};
+
+function normalizeCategorySlug(slug) {
+  return CATEGORY_ALIASES[slug] ?? slug;
+}
+
 function getCategory(slug) {
-  return categories.find((c) => c.slug === slug);
+  const normalized = normalizeCategorySlug(slug);
+  return categories.find((c) => c.slug === normalized);
 }
 
 /* ---------- Metadata ---------- */
@@ -25,11 +37,11 @@ export function generateMetadata({ params }) {
   const url = `https://slimhuiswonen.nl/categorie/${category.slug}`;
 
   return {
-    title: `${category.title} | SlimHuisWonen`,
+    title: `${category.name} | SlimHuisWonen`,
     description: category.description,
     alternates: { canonical: url },
     openGraph: {
-      title: `${category.title} | SlimHuisWonen`,
+      title: `${category.name} | SlimHuisWonen`,
       description: category.description,
       url,
       type: "website",
@@ -40,6 +52,10 @@ export function generateMetadata({ params }) {
 /* ---------- Page ---------- */
 export default function CategoryPage({ params }) {
   const { slug } = params;
+
+  // ✅ normalize slug: hierdoor werken /categorie/verlichting enz.
+  const normalizedSlug = normalizeCategorySlug(slug);
+
   const category = getCategory(slug);
 
   if (!category) {
@@ -57,7 +73,8 @@ export default function CategoryPage({ params }) {
     );
   }
 
-  const products = getProductsByCategory(slug).sort(
+  // ✅ producten ophalen via normalizedSlug
+  const products = getProductsByCategory(normalizedSlug).sort(
     (a, b) => (b.rating ?? 0) - (a.rating ?? 0)
   );
 
@@ -70,7 +87,7 @@ export default function CategoryPage({ params }) {
 
       <main className="section">
         <div className="container">
-          <h1>{category.title}</h1>
+          <h1>{category.name}</h1>
           <p className="section-intro">{category.description}</p>
 
           {products.length === 0 && (
@@ -106,14 +123,14 @@ export default function CategoryPage({ params }) {
                           href={p.affiliateUrl}
                           target="_blank"
                           rel="noreferrer"
-                          className="btn btn-primary product-btn"
+                          className="btn btn-amazon product-btn"
                         >
                           Bekijk beste prijs
                         </a>
                       )}
 
                       <Link
-                        href={`/product/${p.slug}`}
+                        href={`/producten/${p.slug}`}
                         className="product-details-link"
                       >
                         Meer info
@@ -137,7 +154,7 @@ export default function CategoryPage({ params }) {
                     <p className="product-desc">{p.description}</p>
 
                     <Link
-                      href={`/product/${p.slug}`}
+                      href={`/producten/${p.slug}`}
                       className="product-details-link"
                     >
                       Meer info →
