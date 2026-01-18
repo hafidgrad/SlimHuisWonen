@@ -1,39 +1,56 @@
 import Link from "next/link";
-import { categories } from "@/data/categories";
 
 export default function Categories() {
   return (
-    <section id="categorie" className="section section-alt">
-      {/* ✅ Banner buiten container = altijd gecentreerd */}
-      <div className="banner-shell">
-        <div className="categorie-banner">
-          <img
-            src="/images/banner_categorieen_slimme_producten.png"
-            alt="Categorieën slimme producten"
-            loading="lazy"
-            decoding="async"
-          />
-        </div>
-      </div>
-
-      {/* ✅ Content in container */}
+    <section className="section">
       <div className="container">
-        <h2 className="section-title">Categorieën slimme producten</h2>
+        {/* ✅ Banner exact gecentreerd, zonder balk */}
+        <div className="banner-center">
+          <div className="categorie-banner">
+            <img
+              src="/images/categorieen-banner.png"
+              alt="Categorieën slimme producten"
+            />
+          </div>
+        </div>
+
+        <h2>Categorieën slimme producten</h2>
         <p className="section-intro">
           Bekijk per categorie welke slimme producten het beste bij jouw woning passen.
         </p>
 
         <div className="category-grid">
-          {categories.map((cat) => (
-            <article key={cat.slug} className="card">
-              <h3>{cat.title}</h3>
-              <p>{cat.description}</p>
+          <div className="card">
+            <h3>Slimme verlichting</h3>
+            <p>Lampjes, spots en LED-strips die je bedient met app, sensor of spraak.</p>
+            <Link href="/categorie/verlichting" className="card-link">
+              Bekijk producten →
+            </Link>
+          </div>
 
-              <Link href={`/categorie/${cat.slug}`} className="card-link">
-                Bekijk producten →
-              </Link>
-            </article>
-          ))}
+          <div className="card">
+            <h3>Sensoren & beveiliging</h3>
+            <p>Deur-, raam-, bewegings- en temperatuursensoren voor automatisering en veiligheid.</p>
+            <Link href="/categorie/beveiliging" className="card-link">
+              Bekijk producten →
+            </Link>
+          </div>
+
+          <div className="card">
+            <h3>Camera’s & deurbel</h3>
+            <p>Altijd zien wie er aanbelt, zelfs als je niet thuis bent.</p>
+            <Link href="/categorie/cameras" className="card-link">
+              Bekijk producten →
+            </Link>
+          </div>
+
+          <div className="card">
+            <h3>Klimaat & energie</h3>
+            <p>Bespaar energie met een thermostaat die met je meedenkt.</p>
+            <Link href="/categorie/energie" className="card-link">
+              Bekijk producten →
+            </Link>
+          </div>
         </div>
       </div>
     </section>
