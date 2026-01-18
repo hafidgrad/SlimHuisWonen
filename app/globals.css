@@ -1,4 +1,10 @@
+/* =========================================================
+   ✅ SlimHuisWonen.nl – globals.css (opgeschoond)
+   ========================================================= */
 
+/* -----------------------------
+   Base reset
+------------------------------ */
 *,
 *::before,
 *::after {
@@ -12,11 +18,16 @@ body {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.6;
   color: #111827;
   background-color: #f3f4f6;
+  overflow-x: hidden;
 }
 
 img {
@@ -26,24 +37,73 @@ img {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 code {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+/* -----------------------------
+   Theme (SlimHuisWonen kleuren)
+------------------------------ */
+:root {
+  --shw-teal: #13b7c6;   /* turquoise */
+  --shw-green: #22c55e;  /* groen */
+  --shw-dark: #0f172a;
+
+  --text-muted: #4b5563;
+  --border: #e5e7eb;
+  --bg: #f3f4f6;
+  --white: #ffffff;
+
+  --shadow-soft: 0 6px 18px rgba(15, 23, 42, 0.06);
+  --shadow-premium: 0 10px 25px rgba(15, 23, 42, 0.10);
+}
+
+/* -----------------------------
+   Layout
+------------------------------ */
 .container {
   width: 100%;
   max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-/* Header & navigatie */
+.section {
+  width: 100%;
+  padding: 3rem 0;
+}
 
+.section-alt {
+  background-color: var(--white);
+}
+
+.section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.section-intro {
+  margin-bottom: 1.5rem;
+  color: var(--text-muted);
+}
+
+.muted {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+/* =========================================================
+   Header & navigatie
+   ========================================================= */
 .site-header {
-  background-color: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -72,7 +132,7 @@ code {
 }
 
 .site-title {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 1.1rem;
 }
 
@@ -99,65 +159,9 @@ code {
   border: 1px solid #2563eb;
 }
 
-/* Hero */
-
-.hero {
-  background: linear-gradient(135deg, #e0ecff, #f9fafb);
-  padding: 3.5rem 0 3rem;
-}
-
-.hero-content {
-  display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
-  gap: 2rem;
-  align-items: center;
-}
-
-.hero h1 {
-  font-size: 2.2rem;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1rem;
-  color: #4b5563;
-  margin-bottom: 1.5rem;
-}
-
-.hero-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.hero-highlight {
-  background-color: #ffffff;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
-}
-
-.hero-highlight h2 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero-highlight p {
-  margin-bottom: 0.75rem;
-}
-
-.hero-highlight ul {
-  list-style: none;
-}
-
-.hero-highlight li {
-  font-size: 0.95rem;
-  margin-bottom: 0.25rem;
-}
-
-/* Buttons */
-
+/* =========================================================
+   Buttons (algemeen)
+   ========================================================= */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -165,7 +169,7 @@ code {
   padding: 0.6rem 1.3rem;
   border-radius: 999px;
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 700;
   border: 1px solid transparent;
   cursor: pointer;
   transition: background-color 0.15s, color 0.15s, border-color 0.15s, transform 0.05s;
@@ -192,329 +196,79 @@ code {
   color: #1d4ed8;
 }
 
-/* Algemene secties */
-
-.section {
-  padding: 3rem 0;
-}
-
-.section-alt {
-  background-color: #ffffff;
-}
-
-.section h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-}
-
-.section-intro {
-  margin-bottom: 1.5rem;
-  color: #4b5563;
-}
-
-.muted {
-  font-size: 0.85rem;
-  color: #6b7280;
-  margin-top: 0.5rem;
-}
-
-/* Categorieën */
-
-.category-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-.card {
-  background-color: #f9fafb;
-  border-radius: 0.9rem;
-  padding: 1rem 1.1rem;
-  border: 1px solid #e5e7eb;
-}
-
-.card h3 {
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-}
-
-.card p {
-  font-size: 0.95rem;
-  color: #4b5563;
-  margin-bottom: 0.75rem;
-}
-
-.card-link {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #2563eb;
-}
-
-/* Product grid */
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-.product-card {
-  background-color: #ffffff;
-  border-radius: 1rem;
-  padding: 1.25rem 1.25rem 1.5rem;
-  border: 1px solid #e5e7eb;
-  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
-  position: relative;
-}
-
-.product-tag {
-  position: absolute;
-  top: 0.9rem;
-  right: 1rem;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  background-color: #eff6ff;
-  color: #1d4ed8;
-  padding: 0.2rem 0.6rem;
-  border-radius: 999px;
-}
-
-.product-card h3 {
-  font-size: 1.1rem;
-  margin-bottom: 0.4rem;
-  padding-right: 4rem;
-}
-
-.product-desc {
-  font-size: 0.95rem;
-  color: #4b5563;
-  margin-bottom: 0.75rem;
-}
-
-.product-bullets {
-  list-style: none;
-  font-size: 0.9rem;
-  color: #4b5563;
-  margin-bottom: 1rem;
-}
-
-.product-bullets li::before {
-  content: "• ";
-  color: #2563eb;
-}
-
-.product-btn {
-  width: 100%;
-  text-align: center;
-}
-
-.product-actions {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.product-details-link {
-  font-size: 0.9rem;
-  text-align: center;
-  color: #2563eb;
-}
-
-/* Blog */
-
-.blog-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-.card-link.disabled {
-  color: #9ca3af;
-  cursor: default;
-}
-
-/* Contactformulier */
-
-.contact-form {
-  margin-top: 1.5rem;
-  max-width: 500px;
-}
-
-.form-row {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem;
-}
-
-.form-row label {
-  font-size: 0.9rem;
-  margin-bottom: 0.3rem;
-}
-
-.form-row input,
-.form-row textarea {
-  font: inherit;
-  padding: 0.55rem 0.7rem;
-  border-radius: 0.5rem;
-  border: 1px solid #d1d5db;
-  background-color: #f9fafb;
-}
-
-.form-row input:focus,
-.form-row textarea:focus {
-  outline: none;
-  border-color: #2563eb;
-  box-shadow: 0 0 0 1px #2563eb33;
-}
-
-/* Footer */
-
-.site-footer {
-  background-color: #111827;
-  color: #e5e7eb;
-  padding: 1.5rem 0;
-  margin-top: 2rem;
-}
-
-.footer-content {
-  text-align: center;
-  font-size: 0.9rem;
-}
-
-.footer-content .muted {
-  color: #9ca3af;
-}
-
-/* Product detail */
-
-.product-detail {
-  max-width: 650px;
-}
-
-/* Responsief */
-
-@media (max-width: 768px) {
-  .hero-content {
-    grid-template-columns: 1fr;
-  }
-
-  .nav-container {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-
-  .main-nav {
-    flex-wrap: wrap;
-  }
-}
-.best-choice {
-  background: #ffb703;
-  color: #000;
-  font-weight: 700;
-  padding: 6px 10px;
-  border-radius: 6px;
-  display: inline-block;
-  margin-bottom: 8px;
-}
-
-.product-card.highlight {
-  border: 2px solid #ffb703;
-}
-
-.top-products h2 {
-  margin-bottom: 1rem;
-}
-.related-categories {
-  margin-top: 3rem;
-}
-
-.category-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  list-style: none;
-  padding: 0;
-}
-
-.category-links a {
-  background: #f2f2f2;
-  padding: 8px 14px;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  text-decoration: none;
-}
-
-.category-links a:hover {
-  background: #e0e0e0;
-}
-/* Primaire Amazon CTA */
-.btn-primary {
+/* ✅ Amazon knop apart houden (zodat je site consistent blijft) */
+.btn-amazon {
   background: #ff9900;
   color: #000;
-  font-weight: 700;
+  font-weight: 900;
 }
 
-.btn-primary:hover {
+.btn-amazon:hover {
   background: #f08c00;
+  transform: translateY(-1px);
 }
 
-/* Beste keuze extra aandacht */
-.product-card.highlight .btn-primary {
-  box-shadow: 0 0 0 2px rgba(255, 153, 0, 0.4);
+/* =========================================================
+   Hero (oude “hero” section – mag blijven als je dit nog gebruikt)
+   ========================================================= */
+.hero {
+  background: linear-gradient(135deg, #e0ecff, #f9fafb);
+  padding: 3.5rem 0 3rem;
 }
 
-.sticky-cta {
-  position: sticky;
-  bottom: 12px;
-  margin-top: 24px;
-  z-index: 10;
-}
-
-/* Tips grid */
-.tips-grid {
+.hero-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
+  gap: 2rem;
+  align-items: center;
 }
 
-.tip-card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+.hero h1 {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.hero-buttons {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
-.tip-card h3 {
-  margin-top: 0;
+.hero-highlight {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+.hero-highlight h2 {
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 
-.tip-card p {
-  flex-grow: 1;
-  color: #555;
+.hero-highlight p {
+  margin-bottom: 0.75rem;
 }
 
-.tip-link {
-  margin-top: 1rem;
-  font-weight: 600;
-  color: #2563eb;
-  text-decoration: none;
+.hero-highlight ul {
+  list-style: none;
 }
 
-.tip-link:hover {
-  text-decoration: underline;
+.hero-highlight li {
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
 }
 
-/* ✅ HERO BANNER (homepage intro) */
+/* =========================================================
+   ✅ HERO BANNER (homepage intro)
+   ========================================================= */
 .hero-banner {
   position: relative;
   width: 100%;
@@ -560,7 +314,7 @@ code {
   font-size: 2.6rem;
   line-height: 1.15;
   margin-bottom: 1rem;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .hero-banner-content p {
@@ -578,37 +332,7 @@ code {
 .hero-btn {
   border-radius: 14px;
   padding: 0.75rem 1.25rem;
-}
-
-/* ✅ Spacer zodat TopAanraders nooit over de hero komt */
-.hero-spacer {
-  height: 40px;
-  background: #f3f4f6;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .hero-banner {
-    height: 380px;
-  }
-
-  .hero-banner-content h1 {
-    font-size: 2rem;
-  }
-}
-
-/* ✅ SlimHuisWonen kleuren (logo style) */
-:root {
-  --shw-teal: #13b7c6;   /* turquoise */
-  --shw-green: #22c55e;  /* groen */
-  --shw-dark: #0f172a;
-}
-
-/* Hero knoppen */
-.hero-btn {
-  border-radius: 14px;
-  padding: 0.75rem 1.25rem;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 /* Primary = turquoise */
@@ -635,10 +359,407 @@ code {
   background: rgba(255, 255, 255, 0.20) !important;
 }
 
-/* ✅ Mobiel: hero content centreren + buttons full width */
+/* Spacer zodat TopAanraders nooit over hero komt */
+.hero-spacer {
+  height: 40px;
+  background: var(--bg);
+}
+
+/* Scroll indicator */
+.scroll-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 800;
+  font-size: 0.95rem;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.scroll-indicator:hover {
+  opacity: 1;
+  transform: translateY(1px);
+}
+
+.scroll-arrow {
+  display: inline-block;
+  font-size: 1.15rem;
+  animation: scrollBounce 1.2s infinite;
+}
+
+@keyframes scrollBounce {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(6px); }
+}
+
+/* =========================================================
+   Categorieën
+   ========================================================= */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  justify-items: center;
+}
+
+.card {
+  background-color: #f9fafb;
+  border-radius: 0.9rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border);
+  width: 100%;
+  max-width: 360px;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.card-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.card-link.disabled {
+  color: #9ca3af;
+  cursor: default;
+}
+
+/* =========================================================
+   Products grid
+   ========================================================= */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  justify-items: center;
+}
+
+.product-card {
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 1.25rem 1.25rem 1.5rem;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-soft);
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+}
+
+.product-tag {
+  position: absolute;
+  top: 0.9rem;
+  right: 1rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: #eff6ff;
+  color: #1d4ed8;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  padding-right: 4rem;
+}
+
+.product-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.product-bullets {
+  list-style: none;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.product-bullets li::before {
+  content: "• ";
+  color: #2563eb;
+}
+
+.product-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.product-btn {
+  width: 100%;
+  text-align: center;
+}
+
+.product-details-link {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #2563eb;
+}
+
+/* Beste keuze */
+.best-choice {
+  background: #ffb703;
+  color: #000;
+  font-weight: 900;
+  padding: 6px 10px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.product-card.highlight {
+  border: 2px solid #ffb703;
+}
+
+.product-card.highlight .btn-amazon {
+  box-shadow: 0 0 0 2px rgba(255, 153, 0, 0.35);
+}
+
+/* Sticky CTA */
+.sticky-cta {
+  position: sticky;
+  bottom: 12px;
+  margin-top: 24px;
+  z-index: 10;
+}
+
+/* =========================================================
+   Blog / Tips grids
+   ========================================================= */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  justify-items: center;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  justify-items: center;
+}
+
+.tip-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 360px;
+}
+
+.tip-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.tip-card p {
+  flex-grow: 1;
+  color: #555;
+}
+
+.tip-link {
+  margin-top: 1rem;
+  font-weight: 800;
+  color: #2563eb;
+}
+
+.tip-link:hover {
+  text-decoration: underline;
+}
+
+/* =========================================================
+   Contactformulier
+   ========================================================= */
+.contact-form {
+  margin-top: 1.5rem;
+  max-width: 500px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-row label {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.form-row input,
+.form-row textarea {
+  font: inherit;
+  padding: 0.55rem 0.7rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  background-color: #f9fafb;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 1px #2563eb33;
+}
+
+/* =========================================================
+   Footer
+   ========================================================= */
+.site-footer {
+  background-color: #111827;
+  color: #e5e7eb;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
+
+.footer-content {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-content .muted {
+  color: #9ca3af;
+}
+
+/* =========================================================
+   Product detail
+   ========================================================= */
+.product-detail {
+  max-width: 650px;
+}
+
+/* =========================================================
+   Categories banner / section banners (netjes gecentreerd)
+   ========================================================= */
+.banner-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.aanraders-banner,
+.categorie-banner {
+  width: 100%;
+  max-width: 920px;
+  height: 210px;
+  margin: 0 auto 1.25rem;
+  border-radius: 18px;
+  overflow: hidden;
+  background: transparent;
+  box-shadow: var(--shadow-premium);
+  position: relative;
+}
+
+.aanraders-banner {
+  height: 200px;
+}
+
+.aanraders-banner img,
+.categorie-banner img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Subtiele overlay */
+.aanraders-banner::after,
+.categorie-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0,0,0,0.14) 0%,
+    rgba(0,0,0,0.06) 45%,
+    rgba(0,0,0,0.03) 100%
+  );
+  pointer-events: none;
+}
+
+/* Titel afbeelding */
+.categories-title-image {
+  width: 100%;
+  max-width: 860px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1.25rem;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+}
+
+/* =========================================================
+   Related categories (tags)
+   ========================================================= */
+.related-categories {
+  margin-top: 3rem;
+}
+
+.category-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+}
+
+.category-links a {
+  background: #f2f2f2;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.category-links a:hover {
+  background: #e0e0e0;
+}
+
+/* =========================================================
+   Responsive
+   ========================================================= */
 @media (max-width: 768px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+  }
+
+  .hero-banner {
+    height: 380px;
+  }
+
   .hero-banner-content {
-    align-items: flex-end; /* tekst iets lager in beeld */
+    align-items: flex-end;
     padding-bottom: 28px;
   }
 
@@ -663,9 +784,16 @@ code {
   .hero-banner-content p {
     font-size: 1rem;
   }
+
+  .aanraders-banner,
+  .categorie-banner {
+    max-width: 100%;
+    height: 150px;
+    margin-bottom: 1.1rem;
+    border-radius: 16px;
+  }
 }
 
-/* ✅ Extra klein mobiel */
 @media (max-width: 420px) {
   .hero-banner {
     height: 340px;
@@ -674,143 +802,4 @@ code {
   .hero-banner-content h1 {
     font-size: 1.8rem;
   }
-}
-
-.hero-banner-inner--mobile {
-  padding-right: 0;
-}
-
-/* ✅ Scroll indicator onder hero CTA */
-.scroll-indicator {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 18px;
-  color: rgba(255, 255, 255, 0.85);
-  font-weight: 700;
-  font-size: 0.95rem;
-  text-decoration: none;
-  transition: opacity 0.2s, transform 0.2s;
-}
-
-.scroll-indicator:hover {
-  opacity: 1;
-  transform: translateY(1px);
-}
-
-.scroll-arrow {
-  display: inline-block;
-  font-size: 1.15rem;
-  animation: scrollBounce 1.2s infinite;
-}
-
-@keyframes scrollBounce {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(6px);
-  }
-}
-
-/* ✅ Smooth scroll */
-html {
-  scroll-behavior: smooth;
-}
-
-/* ✅ Categories titel afbeelding */
-.categories-title-image {
-  width: 100%;
-  max-width: 860px;
-  height: auto;
-  display: block;
-  margin: 0 auto 1.25rem;
-  border-radius: 18px;
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
-}
-
-/* =========================================================
-   ✅ HOME SECTION BANNERS (clean, zonder blok erachter)
-   ========================================================= */
-
-/* Wrapper (mag blijven) */
-.banner-center {
-  width: 100%;
-  display: block;
-}
-
-/* --- AANRADERS banner (clean) --- */
-.aanraders-banner {
-  position: relative;
-  width: 100%;
-  max-width: 920px;
-  height: 200px;
-  margin: 0 auto 1.25rem;
-
-  border-radius: 0;         /* geen card look */
-  overflow: hidden;
-  background: transparent;  /* geen blok */
-  box-shadow: none;         /* geen schaduw */
-}
-
-.aanraders-banner img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  object-position: center;
-}
-
-/* --- CATEGORIEEN banner (clean) --- */
-.categorie-banner {
-  position: relative;
-  width: 100%;
-  max-width: 920px;
-  height: 210px;
-  margin: 0 auto 1.25rem;
-
-  border-radius: 0;
-  overflow: hidden;
-  background: transparent;
-  box-shadow: none;
-}
-
-.categorie-banner img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  object-position: center;
-}
-
-/* ✅ Subtiele overlay (optioneel, premium look) */
-.aanraders-banner::after,
-.categorie-banner::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(0,0,0,0.14) 0%,
-    rgba(0,0,0,0.06) 45%,
-    rgba(0,0,0,0.03) 100%
-  );
-  pointer-events: none;
-}
-
-/* Mobiel */
-@media (max-width: 768px) {
-  .aanraders-banner,
-  .categorie-banner {
-    max-width: 100%;
-    height: 150px;
-    margin-bottom: 1.1rem;
-  }
-}
-
-.aanraders-banner,
-.categorie-banner {
-  margin-left: auto !important;
-  margin-right: auto !important;
-  display: block !important;
 }
