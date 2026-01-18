@@ -2,7 +2,6 @@ import Header from "@/components/Header";
 import TopAanraders from "@/components/TopAanraders";
 import About from "@/components/About";
 import Categories from "@/components/Categories";
-import Products from "@/components/Products";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Link from "next/link";
@@ -64,9 +63,20 @@ export default function HomePage() {
         <About />
         <Categories />
 
-        {/* ✅ Tips & uitleg – centrale CTA */}
+        {/* ✅ Tips & uitleg – banner + CTA */}
         <section className="section">
           <div className="container">
+            {/* ✅ Clickable banner in zelfde stijl/maat als categorie-banner */}
+            <Link href="/tips" className="banner-center tips-banner-link">
+              <div className="categorie-banner tips-banner">
+                <img
+                  src="/images/banner_tips_uitleg.png"
+                  alt="Tips & uitleg"
+                  className="banner-img"
+                />
+              </div>
+            </Link>
+
             <h2>Tips & uitleg</h2>
 
             <p className="section-intro">
