@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { getAllProducts } from "@/data/products";
 
-export default function Products({ limit }) {
+export default function Products({ limit, showHeader = true }) {
   const allProducts = getAllProducts();
 
   // 1️⃣ Handmatig gekozen toppers
@@ -22,12 +22,17 @@ export default function Products({ limit }) {
   return (
     <section id="aanraders" className="section">
       <div className="container">
-        <h2>Onze slimme aanraders</h2>
+        {/* ✅ Header optioneel (dus weg op homepage) */}
+        {showHeader && (
+          <>
+            <h2>Onze slimme aanraders</h2>
 
-        <p className="section-intro">
-          Deze slimme producten zijn populair vanwege hun betrouwbaarheid,
-          gebruiksgemak en compatibiliteit met bekende smart-home-platformen.
-        </p>
+            <p className="section-intro">
+              Deze slimme producten zijn populair vanwege hun betrouwbaarheid,
+              gebruiksgemak en compatibiliteit met bekende smart-home-platformen.
+            </p>
+          </>
+        )}
 
         <div className="product-grid">
           {products.map((p) => (
@@ -52,7 +57,7 @@ export default function Products({ limit }) {
                 {p.affiliateUrl && (
                   <a
                     href={p.affiliateUrl}
-                    className="btn btn-primary product-btn"
+                    className="btn btn-amazon product-btn"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -60,7 +65,6 @@ export default function Products({ limit }) {
                   </a>
                 )}
 
-                {/* ✅ FIX: juiste route naar productpagina */}
                 <Link
                   href={`/producten/${p.slug}`}
                   className="product-details-link"
