@@ -710,3 +710,30 @@ code {
     border-radius: 16px;
   }
 }
+
+/* =========================================================
+   ✅ Clickable Tips banner (hover + cursor)
+   ========================================================= */
+.tips-banner-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.tips-banner-link .categorie-banner {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.tips-banner-link:hover .categorie-banner {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.14);
+}
+
+/* ✅ toegankelijkheid (toetsenbord focus) */
+.tips-banner-link:focus-visible .categorie-banner {
+  outline: 3px solid rgba(37, 99, 235, 0.55);
+  outline-offset: 4px;
+}
+
+.tips-banner {
+  height: 210px; /* exact gelijk aan categorie-banner */
+}
