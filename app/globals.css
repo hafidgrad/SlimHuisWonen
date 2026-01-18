@@ -650,12 +650,13 @@ code {
 }
 
 /* =========================================================
-   Categories banner / section banners (netjes gecentreerd)
+   ✅ Section banners (perfect gecentreerd)
    ========================================================= */
 .banner-center {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 1.25rem;
 }
 
 .aanraders-banner,
@@ -663,7 +664,7 @@ code {
   width: 100%;
   max-width: 920px;
   height: 210px;
-  margin: 0 auto 1.25rem;
+  margin: 0 auto;
   border-radius: 18px;
   overflow: hidden;
   background: transparent;
@@ -675,6 +676,7 @@ code {
   height: 200px;
 }
 
+.banner-img,
 .aanraders-banner img,
 .categorie-banner img {
   width: 100%;
@@ -684,7 +686,7 @@ code {
   object-position: center;
 }
 
-/* Subtiele overlay */
+/* Subtiele overlay (premium look) */
 .aanraders-banner::after,
 .categorie-banner::after {
   content: "";
@@ -699,139 +701,12 @@ code {
   pointer-events: none;
 }
 
-/* Titel afbeelding */
-.categories-title-image {
-  width: 100%;
-  max-width: 860px;
-  height: auto;
-  display: block;
-  margin: 0 auto 1.25rem;
-  border-radius: 18px;
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
-}
-
-/* =========================================================
-   Related categories (tags)
-   ========================================================= */
-.related-categories {
-  margin-top: 3rem;
-}
-
-.category-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  list-style: none;
-  padding: 0;
-}
-
-.category-links a {
-  background: #f2f2f2;
-  padding: 8px 14px;
-  border-radius: 20px;
-  font-size: 0.9rem;
-}
-
-.category-links a:hover {
-  background: #e0e0e0;
-}
-
-/* =========================================================
-   Responsive
-   ========================================================= */
+/* Mobiel */
 @media (max-width: 768px) {
-  .hero-content {
-    grid-template-columns: 1fr;
-  }
-
-  .nav-container {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-
-  .main-nav {
-    flex-wrap: wrap;
-  }
-
-  .hero-banner {
-    height: 380px;
-  }
-
-  .hero-banner-content {
-    align-items: flex-end;
-    padding-bottom: 28px;
-  }
-
-  .hero-banner-inner {
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  .hero-banner-actions {
-    justify-content: center;
-  }
-
-  .hero-banner-actions .btn {
-    width: 100%;
-    max-width: 360px;
-  }
-
-  .hero-banner-content h1 {
-    font-size: 2.05rem;
-  }
-
-  .hero-banner-content p {
-    font-size: 1rem;
-  }
-
   .aanraders-banner,
   .categorie-banner {
     max-width: 100%;
     height: 150px;
-    margin-bottom: 1.1rem;
     border-radius: 16px;
   }
-}
-
-@media (max-width: 420px) {
-  .hero-banner {
-    height: 340px;
-  }
-
-  .hero-banner-content h1 {
-    font-size: 1.8rem;
-  }
-}
-
-/* ✅ HARD FIX: banners altijd exact gecentreerd */
-.aanraders-banner,
-.categorie-banner {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  width: min(920px, calc(100% - 3rem)); /* 3rem = 1.5rem links + rechts */
-  margin-top: 0;
-  margin-bottom: 1.25rem;
-}
-
-/* ✅ Als Next/Image fill gebruikt wordt */
-.aanraders-banner > span,
-.categorie-banner > span {
-  position: absolute !important;
-  inset: 0 !important;
-}
-
-.aanraders-banner img,
-.categorie-banner img {
-  object-fit: cover !important;
-  object-position: center !important;
-}
-
-/* ✅ Banner nooit in een card/block laten zitten */
-.banner-center,
-.section .banner-center {
-  background: transparent !important;
-  padding: 0 !important;
-  margin: 0 !important;
 }
