@@ -803,3 +803,35 @@ code {
     font-size: 1.8rem;
   }
 }
+
+/* ✅ HARD FIX: banners altijd exact gecentreerd */
+.aanraders-banner,
+.categorie-banner {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(920px, calc(100% - 3rem)); /* 3rem = 1.5rem links + rechts */
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+/* ✅ Als Next/Image fill gebruikt wordt */
+.aanraders-banner > span,
+.categorie-banner > span {
+  position: absolute !important;
+  inset: 0 !important;
+}
+
+.aanraders-banner img,
+.categorie-banner img {
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+/* ✅ Banner nooit in een card/block laten zitten */
+.banner-center,
+.section .banner-center {
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
