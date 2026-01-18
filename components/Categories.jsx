@@ -9,7 +9,7 @@ export default function Categories() {
         <div className="banner-center">
           <div className="categorie-banner">
             <img
-              src="/images/categorieen-banner.png"
+              src="/images/banner_categorieen_slimme_producten.png"
               alt="Categorieën slimme producten"
               className="banner-img"
             />
