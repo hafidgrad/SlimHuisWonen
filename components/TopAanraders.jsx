@@ -12,7 +12,7 @@ export default function TopAanraders() {
         <div className="banner-center">
           <div className="aanraders-banner">
             <img
-              src="/images/aanraders-banner.png"
+              src="/images/banner_onze_slimme_aanraders.png"
               alt="Onze slimme aanraders"
               className="banner-img"
             />
