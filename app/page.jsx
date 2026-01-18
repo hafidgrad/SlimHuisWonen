@@ -64,9 +64,6 @@ export default function HomePage() {
         <About />
         <Categories />
 
-        {/* ✅ Toon slechts 6 producten op de homepage (zonder dubbele kop/intro) */}
-        <Products limit={6} showHeader={false} />
-
         {/* ✅ Tips & uitleg – centrale CTA */}
         <section className="section">
           <div className="container">
