@@ -19,8 +19,8 @@ export default function TopAanraders() {
           </div>
         </div>
 
-        <h2>Onze slimme aanraders</h2>
-        <p className="section-intro">
+        {/* ✅ Titel staat al in de banner-afbeelding, daarom geen H2 meer */}
+        <p className="section-intro" style={{ textAlign: "center" }}>
           Onze favoriete smart home producten: betrouwbaar, populair en makkelijk te installeren.
         </p>
 
@@ -30,7 +30,9 @@ export default function TopAanraders() {
               key={product.slug}
               className={`product-card ${product.highlight ? "highlight" : ""}`}
             >
-              {product.highlight && <span className="best-choice">Beste keuze</span>}
+              {product.highlight && (
+                <span className="best-choice">Beste keuze</span>
+              )}
 
               <h3>{product.name}</h3>
               <p className="product-desc">{product.description}</p>
