@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { categories } from "@/data/categories";
 
 export default function Categories() {
   return (
@@ -21,37 +22,16 @@ export default function Categories() {
         </p>
 
         <div className="category-grid">
-          <div className="card">
-            <h3>Slimme verlichting</h3>
-            <p>Lampjes, spots en LED-strips die je bedient met app, sensor of spraak.</p>
-            <Link href="/categorie/verlichting" className="card-link">
-              Bekijk producten →
-            </Link>
-          </div>
+          {categories.map((cat) => (
+            <div key={cat.slug} className="card">
+              <h3>{cat.name}</h3>
+              <p>{cat.description}</p>
 
-          <div className="card">
-            <h3>Sensoren & beveiliging</h3>
-            <p>Deur-, raam-, bewegings- en temperatuursensoren voor automatisering en veiligheid.</p>
-            <Link href="/categorie/beveiliging" className="card-link">
-              Bekijk producten →
-            </Link>
-          </div>
-
-          <div className="card">
-            <h3>Camera’s & deurbel</h3>
-            <p>Altijd zien wie er aanbelt, zelfs als je niet thuis bent.</p>
-            <Link href="/categorie/cameras" className="card-link">
-              Bekijk producten →
-            </Link>
-          </div>
-
-          <div className="card">
-            <h3>Klimaat & energie</h3>
-            <p>Bespaar energie met een thermostaat die met je meedenkt.</p>
-            <Link href="/categorie/energie" className="card-link">
-              Bekijk producten →
-            </Link>
-          </div>
+              <Link href={`/categorie/${cat.slug}`} className="card-link">
+                Bekijk producten →
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
     </section>
