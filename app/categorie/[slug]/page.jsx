@@ -90,7 +90,11 @@ export default function CategoryPage({ params }) {
           {/* ✅ Categorie banner afbeelding */}
           {category.image && (
             <div className="banner-center">
-              <div className="categorie-banner category-hero-banner">
+              <div
+             className="categorie-banner category-hero-banner"
+             style={{ "--category-bg": `url(${category.image})` }}
+            >
+
                 <img
                   src={category.image}
                   alt={category.name}

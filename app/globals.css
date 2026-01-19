@@ -751,3 +751,33 @@ code {
   transform: translateY(-1px);
   box-shadow: 0 14px 35px rgba(15, 23, 42, 0.14);
 }
+
+/* ✅ Categoriepagina banner: premium contain + blur backdrop */
+.category-hero-banner {
+  background: #0f172a;
+}
+
+.category-hero-banner img {
+  object-fit: contain !important;
+  position: relative;
+  z-index: 2;
+}
+
+/* mooie blur achtergrond */
+.category-hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--category-bg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(18px);
+  transform: scale(1.08);
+  opacity: 0.55;
+  z-index: 1;
+}
+
+/* overlay blijft werken */
+.category-hero-banner::after {
+  z-index: 3;
+}
