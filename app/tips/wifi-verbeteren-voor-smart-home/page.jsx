@@ -1,3 +1,5 @@
+import TipBanner from "@/components/TipBanner";
+
 export const metadata = {
   title: "Wi-Fi verbeteren voor smart home: 10 tips voor een stabiel slim huis",
   description:
@@ -8,8 +10,14 @@ export const metadata = {
 };
 
 export default function Page() {
+  const tipImg =
+    "/images/Tips%20%26%20uitleg/Wi-Fi%20verbeteren%20voor%20smart%20home.png";
+
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
+      {/* Banner met blur zijkanten */}
+      <TipBanner src={tipImg} alt="Wi-Fi verbeteren voor smart home" />
+
       <header className="mb-8">
         <p className="text-sm opacity-70">Tips • Netwerk</p>
         <h1 className="mt-2 text-3xl font-bold leading-tight">
@@ -71,7 +79,8 @@ export default function Page() {
         <h3>7) Geef belangrijke apparaten een vast IP (DHCP reservation)</h3>
         <p>
           Geef vaste IP’s aan je hubs (Homey/Hue/Home Assistant), camera’s en
-          deurbellen. Dat voorkomt “zoek raken” en maakt troubleshooten makkelijker.
+          deurbellen. Dat voorkomt “zoek raken” en maakt troubleshooten
+          makkelijker.
         </p>
 
         <h3>8) Overweeg mesh als je dode hoeken hebt</h3>
@@ -109,8 +118,8 @@ export default function Page() {
         <p>
           Krijg je alsnog “offline” apparaten? Dan is het bijna altijd één van
           deze drie: <strong>bereik</strong>, <strong>2.4/5 GHz</strong> of{" "}
-          <strong>beveiliging (WPA3)</strong>. Begin met de simpele fixes en breid
-          daarna uit met mesh of access points.
+          <strong>beveiliging (WPA3)</strong>. Begin met de simpele fixes en
+          breid daarna uit met mesh of access points.
         </p>
       </article>
     </main>

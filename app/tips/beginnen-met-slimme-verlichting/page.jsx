@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import TipBanner from "@/components/TipBanner";
 
 export const metadata = {
   title: "Beginnen met slimme verlichting – stap voor stap",
@@ -12,28 +13,34 @@ export const metadata = {
 };
 
 export default function BeginnenMetSlimmeVerlichting() {
+  const tipImg =
+    "/images/Tips%20%26%20uitleg/Beginnen%20met%20slimme%20verlichting.png";
+
   return (
     <>
       <Header />
 
       <main className="section">
+        {/* Banner met blur zijkanten */}
+        <TipBanner src={tipImg} alt="Beginnen met slimme verlichting" />
+
         <div className="container article">
           <h1>Beginnen met slimme verlichting (stap-voor-stap)</h1>
 
           <p className="section-intro">
             Slimme verlichting is één van de makkelijkste en betaalbaarste
-            manieren om je huis slimmer te maken. Je hebt geen technische
-            kennis nodig en vaak kun je al binnen enkele minuten aan de slag.
-            In dit artikel leer je stap voor stap hoe je begint — van je
-            eerste slimme lamp tot eenvoudige automatiseringen.
+            manieren om je huis slimmer te maken. Je hebt geen technische kennis
+            nodig en vaak kun je al binnen enkele minuten aan de slag. In dit
+            artikel leer je stap voor stap hoe je begint — van je eerste slimme
+            lamp tot eenvoudige automatiseringen.
           </p>
 
           <h2>Waarom kiezen voor slimme verlichting?</h2>
 
           <p>
-            Slimme verlichting biedt veel meer dan alleen een lamp die je met
-            je telefoon aan- en uitzet. Het verhoogt het comfort, verbetert
-            de sfeer in huis en kan helpen energie te besparen.
+            Slimme verlichting biedt veel meer dan alleen een lamp die je met je
+            telefoon aan- en uitzet. Het verhoogt het comfort, verbetert de
+            sfeer in huis en kan helpen energie te besparen.
           </p>
 
           <ul>
@@ -47,23 +54,23 @@ export default function BeginnenMetSlimmeVerlichting() {
           <h2>Welke slimme verlichting past bij jou?</h2>
 
           <p>
-            Slimme verlichting is verkrijgbaar in verschillende soorten.
-            De juiste keuze hangt af van jouw wensen en hoe ver je wilt gaan
-            met automatiseren.
+            Slimme verlichting is verkrijgbaar in verschillende soorten. De
+            juiste keuze hangt af van jouw wensen en hoe ver je wilt gaan met
+            automatiseren.
           </p>
 
           <h3>1. Simpel aan/uit en timers</h3>
           <p>
             Wil je vooral gemak? Dan zijn wifi-lampen of slimme stekkers een
-            uitstekende keuze. Hiermee zet je verlichting op afstand aan of
-            uit en stel je eenvoudige tijdschema’s in.
+            uitstekende keuze. Hiermee zet je verlichting op afstand aan of uit
+            en stel je eenvoudige tijdschema’s in.
           </p>
 
           <h3>2. Sfeer en dimmen</h3>
           <p>
-            Met slimme lampen met instelbaar wit licht (van warm tot koel)
-            pas je de sfeer aan per moment van de dag. Ideaal voor de
-            woonkamer, keuken of slaapkamer.
+            Met slimme lampen met instelbaar wit licht (van warm tot koel) pas
+            je de sfeer aan per moment van de dag. Ideaal voor de woonkamer,
+            keuken of slaapkamer.
           </p>
 
           <h3>3. Kleur en automatisering</h3>
@@ -77,8 +84,8 @@ export default function BeginnenMetSlimmeVerlichting() {
 
           <h3>Stap 1: Kies één ruimte</h3>
           <p>
-            Begin klein en kies één ruimte, zoals de woonkamer of hal.
-            Zo houd je overzicht en leer je hoe slimme verlichting werkt.
+            Begin klein en kies één ruimte, zoals de woonkamer of hal. Zo houd
+            je overzicht en leer je hoe slimme verlichting werkt.
           </p>
 
           <h3>Stap 2: Bepaal wat je wilt bereiken</h3>
@@ -90,27 +97,27 @@ export default function BeginnenMetSlimmeVerlichting() {
 
           <h3>Stap 3: Begin met één product</h3>
           <p>
-            Start met één slimme lamp of stekker. Dit voorkomt onnodige
-            kosten en maakt het makkelijker om ervaring op te doen.
+            Start met één slimme lamp of stekker. Dit voorkomt onnodige kosten
+            en maakt het makkelijker om ervaring op te doen.
           </p>
 
           <h3>Stap 4: Installeer de app</h3>
           <p>
-            Elke fabrikant gebruikt een eigen app. Volg de stappen in de app
-            om de verlichting te koppelen aan je wifi of bridge.
+            Elke fabrikant gebruikt een eigen app. Volg de stappen in de app om
+            de verlichting te koppelen aan je wifi of bridge.
           </p>
 
           <h3>Stap 5: Maak je eerste automatisering</h3>
           <p>
             Stel bijvoorbeeld in dat het licht automatisch aangaat bij
-            zonsondergang of op vaste tijden. Hier merk je het gemak van
-            slimme verlichting.
+            zonsondergang of op vaste tijden. Hier merk je het gemak van slimme
+            verlichting.
           </p>
 
           <h3>Stap 6: Breid later uit</h3>
           <p>
-            Ben je tevreden? Dan kun je uitbreiden met extra lampen,
-            dimmers, bewegingssensoren of een smart home hub.
+            Ben je tevreden? Dan kun je uitbreiden met extra lampen, dimmers,
+            bewegingssensoren of een smart home hub.
           </p>
 
           <h2>Veelgemaakte beginnersfouten</h2>
@@ -143,7 +150,8 @@ export default function BeginnenMetSlimmeVerlichting() {
             Wil je eerst goed begrijpen wat slimme verlichting is?{" "}
             <Link href="/tips/wat-is-slimme-verlichting">
               Lees hier wat slimme verlichting precies inhoudt
-            </Link>.
+            </Link>
+            .
           </p>
 
           <hr />

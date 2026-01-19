@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import TipBanner from "@/components/TipBanner";
 
 export const metadata = {
   title: "Merken combineren zonder gedoe",
@@ -12,11 +13,17 @@ export const metadata = {
 };
 
 export default function MerkenCombinerenZonderGedoe() {
+  const tipImg =
+    "/images/Tips%20%26%20uitleg/Merken%20combineren%20zonder%20gedoe.png";
+
   return (
     <>
       <Header />
 
       <main className="section">
+        {/* Banner met blur zijkanten */}
+        <TipBanner src={tipImg} alt="Merken combineren zonder gedoe" />
+
         <div className="container article">
           <h1>Merken combineren zonder gedoe</h1>
 
@@ -53,9 +60,7 @@ export default function MerkenCombinerenZonderGedoe() {
             <li>Meer onderhoud en verwarring</li>
           </ul>
 
-          <p>
-            De oplossing? Eén centrale plek waar alles samenkomt.
-          </p>
+          <p>De oplossing? Eén centrale plek waar alles samenkomt.</p>
 
           <h2>Oplossing 1: Werken zonder hub</h2>
 
@@ -74,7 +79,8 @@ export default function MerkenCombinerenZonderGedoe() {
             Dit is vooral geschikt voor beginners.{" "}
             <Link href="/tips/slim-huis-zonder-hub">
               Lees hier wanneer een hub niet nodig is
-            </Link>.
+            </Link>
+            .
           </p>
 
           <h2>Oplossing 2: Alles samenbrengen met een hub</h2>
@@ -95,14 +101,13 @@ export default function MerkenCombinerenZonderGedoe() {
             Bekende hubs zijn Homey, Home Assistant en SmartThings.{" "}
             <Link href="/tips/wat-is-een-smart-home-hub">
               Lees hier wat een smart home hub is
-            </Link>.
+            </Link>
+            .
           </p>
 
           <h2>Voorbeeld: slim combineren in de praktijk</h2>
 
-          <p>
-            Stel je voor:
-          </p>
+          <p>Stel je voor:</p>
 
           <ul>
             <li>Philips Hue lampen in de woonkamer</li>
@@ -110,9 +115,7 @@ export default function MerkenCombinerenZonderGedoe() {
             <li>TP-Link Tapo stekker voor een staande lamp</li>
           </ul>
 
-          <p>
-            Met een hub kun je instellen:
-          </p>
+          <p>Met een hub kun je instellen:</p>
 
           <ul>
             <li>Beweging → Hue lampen aan</li>
@@ -122,9 +125,7 @@ export default function MerkenCombinerenZonderGedoe() {
 
           <h2>Wanneer merken combineren géén goed idee is</h2>
 
-          <p>
-            Soms is het slimmer om bij één merk te blijven:
-          </p>
+          <p>Soms is het slimmer om bij één merk te blijven:</p>
 
           <ul>
             <li>Als je alleen verlichting wilt</li>
@@ -143,7 +144,8 @@ export default function MerkenCombinerenZonderGedoe() {
             Twijfel je waar je moet beginnen?{" "}
             <Link href="/tips/beginnen-met-smart-home">
               Bekijk onze 5 stappen om met smart home te starten
-            </Link>.
+            </Link>
+            .
           </p>
 
           <hr />

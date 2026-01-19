@@ -1,3 +1,5 @@
+import TipBanner from "@/components/TipBanner";
+
 export const metadata = {
   title: "2.4 GHz vs 5 GHz voor smart home: zo kies je de juiste band",
   description:
@@ -8,8 +10,14 @@ export const metadata = {
 };
 
 export default function Page() {
+  const tipImg =
+    "/images/Tips%20%26%20uitleg/2.4%20GHz%20vs%205%20GHz%20voor%20smart%20home.png";
+
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
+      {/* Banner met blur zijkanten */}
+      <TipBanner src={tipImg} alt="2.4 GHz vs 5 GHz voor smart home" />
+
       <header className="mb-8">
         <p className="text-sm opacity-70">Tips • Wi-Fi</p>
         <h1 className="mt-2 text-3xl font-bold leading-tight">

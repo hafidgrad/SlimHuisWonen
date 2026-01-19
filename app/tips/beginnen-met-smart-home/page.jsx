@@ -1,22 +1,29 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import TipBanner from "@/components/TipBanner";
 
 export const metadata = {
   title: "Beginnen met smart home in 5 stappen (complete gids)",
   description:
-    "Wil je beginnen met een smart home? Volg deze 5 eenvoudige stappen en voorkom dure beginnersfouten. პრაქტisch en duidelijk uitgelegd.",
+    "Wil je beginnen met een smart home? Volg deze 5 eenvoudige stappen en voorkom dure beginnersfouten. Praktisch en duidelijk uitgelegd.",
   alternates: {
     canonical: "https://slimhuiswonen.nl/tips/beginnen-met-smart-home",
   },
 };
 
 export default function BeginnenMetSmartHome() {
+  const tipImg =
+    "/images/Tips%20%26%20uitleg/Beginnen%20met%20smart%20home%20in%205%20stappen.png";
+
   return (
     <>
       <Header />
 
       <main className="section">
+        {/* Banner met blur zijkanten */}
+        <TipBanner src={tipImg} alt="Beginnen met smart home in 5 stappen" />
+
         <div className="container article">
           <h1>Beginnen met smart home in 5 stappen</h1>
 
@@ -30,8 +37,8 @@ export default function BeginnenMetSmartHome() {
           <h2>Stap 1: Begin klein</h2>
 
           <p>
-            De grootste fout die beginners maken is alles tegelijk willen.
-            Begin met één slim apparaat en ontdek wat je écht handig vindt.
+            De grootste fout die beginners maken is alles tegelijk willen. Begin
+            met één slim apparaat en ontdek wat je écht handig vindt.
           </p>
 
           <ul>
@@ -93,7 +100,8 @@ export default function BeginnenMetSmartHome() {
           <h2>Stap 4: Breid rustig uit</h2>
 
           <p>
-            Pas als je weet wat je mist, ga je uitbreiden. Denk bijvoorbeeld aan:
+            Pas als je weet wat je mist, ga je uitbreiden. Denk bijvoorbeeld
+            aan:
           </p>
 
           <ul>
@@ -103,8 +111,8 @@ export default function BeginnenMetSmartHome() {
           </ul>
 
           <p>
-            Door stap voor stap uit te breiden blijft je smart home overzichtelijk
-            én betaalbaar.
+            Door stap voor stap uit te breiden blijft je smart home
+            overzichtelijk én betaalbaar.
           </p>
 
           {/* STAP 5 */}
@@ -162,10 +170,7 @@ export default function BeginnenMetSmartHome() {
           </p>
 
           <p>
-            Meer uitleg nodig?{" "}
-            <Link href="/tips">
-              Bekijk alle tips & uitleg
-            </Link>
+            Meer uitleg nodig? <Link href="/tips">Bekijk alle tips & uitleg</Link>
           </p>
 
           <hr />

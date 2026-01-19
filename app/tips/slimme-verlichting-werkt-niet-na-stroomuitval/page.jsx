@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import TipBanner from "@/components/TipBanner";
 
 export const metadata = {
   title: "Slimme verlichting werkt niet na stroomuitval? Zo los je het op",
@@ -9,11 +10,20 @@ export const metadata = {
 };
 
 export default function SlimmeVerlichtingStroomuitval() {
+  const tipImg =
+    "/images/Tips%20%26%20uitleg/Slimme%20verlichting%20werkt%20niet%20na%20stroomuitval.png";
+
   return (
     <>
       <Header />
 
       <main className="section">
+        {/* Banner met blur zijkanten */}
+        <TipBanner
+          src={tipImg}
+          alt="Slimme verlichting werkt niet na stroomuitval"
+        />
+
         <div className="container article">
           <h1>Slimme verlichting werkt niet na stroomuitval</h1>
 
@@ -48,9 +58,7 @@ export default function SlimmeVerlichtingStroomuitval() {
             <li>Herstart de hub als laatste stap</li>
           </ol>
 
-          <p>
-            In de meeste gevallen werkt alles hierna weer normaal.
-          </p>
+          <p>In de meeste gevallen werkt alles hierna weer normaal.</p>
 
           <h2>Hoe voorkom je dit?</h2>
 

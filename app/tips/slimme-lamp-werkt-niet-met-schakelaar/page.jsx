@@ -1,13 +1,20 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import TipBanner from "@/components/TipBanner";
 
 export default function SlimmeLampSchakelaar() {
+  const tipImg =
+    "/images/Tips%20%26%20uitleg/Slimme%20lamp%20werkt%20niet%20met%20schakelaar.png";
+
   return (
     <>
       <Header />
 
       <main className="section">
+        {/* Banner met blur zijkanten */}
+        <TipBanner src={tipImg} alt="Slimme lamp werkt niet met schakelaar" />
+
         <div className="container article">
           <h1>Slimme lamp werkt niet met schakelaar</h1>
 

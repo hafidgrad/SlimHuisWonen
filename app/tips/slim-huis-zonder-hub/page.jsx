@@ -1,13 +1,19 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import TipBanner from "@/components/TipBanner";
 
 export default function SlimHuisZonderHub() {
+  const tipImg = "/images/Tips%20%26%20uitleg/Slim%20huis%20zonder%20hub.png";
+
   return (
     <>
       <Header />
 
       <main className="section">
+        {/* Banner met blur zijkanten */}
+        <TipBanner src={tipImg} alt="Slim huis zonder hub" />
+
         <div className="container article">
           <h1>Slim huis zonder hub: kan dat?</h1>
 

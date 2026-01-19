@@ -1,3 +1,5 @@
+import TipBanner from "@/components/TipBanner";
+
 export const metadata = {
   title: "Wi-Fi bereik verbeteren zonder nieuwe router: 7 slimme oplossingen",
   description:
@@ -8,8 +10,17 @@ export const metadata = {
 };
 
 export default function Page() {
+  const tipImg =
+    "/images/Tips%20%26%20uitleg/Wi-Fi%20bereik%20verbeteren%20zonder%20nieuwe%20router.png";
+
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
+      {/* Banner met blur zijkanten */}
+      <TipBanner
+        src={tipImg}
+        alt="Wi-Fi bereik verbeteren zonder nieuwe router"
+      />
+
       <header className="mb-8">
         <p className="text-sm opacity-70">Tips • Wi-Fi</p>
         <h1 className="mt-2 text-3xl font-bold leading-tight">
@@ -32,7 +43,8 @@ export default function Page() {
 
         <h3>2) Zet 2.4 GHz kanaal vast (1, 6 of 11)</h3>
         <p>
-          Automatisch kanaal wisselen kan instabiliteit geven. Kies één vast kanaal.
+          Automatisch kanaal wisselen kan instabiliteit geven. Kies één vast
+          kanaal.
         </p>
 
         <h3>3) Update je router firmware</h3>
@@ -55,7 +67,8 @@ export default function Page() {
 
         <h3>6) Gebruik mesh als kabel niet kan</h3>
         <p>
-          Mesh is meestal stabieler dan een goedkope extender en roamt beter door het huis.
+          Mesh is meestal stabieler dan een goedkope extender en roamt beter door
+          het huis.
         </p>
 
         <h3>7) Zet hubs en vaste apparaten bekabeld</h3>
@@ -65,9 +78,9 @@ export default function Page() {
         </p>
 
         <p>
-          Als je na deze stappen nog steeds dode hoeken hebt, is de kans groot dat
-          je woning (beton/vloerverwarming/verdiepingen) een mesh of access points
-          echt nodig heeft.
+          Als je na deze stappen nog steeds dode hoeken hebt, is de kans groot
+          dat je woning (beton/vloerverwarming/verdiepingen) een mesh of access
+          points echt nodig heeft.
         </p>
       </article>
     </main>
