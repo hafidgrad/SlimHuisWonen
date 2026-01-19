@@ -19,11 +19,14 @@ export default function Header() {
 
         <nav className="main-nav">
           <Link href="/over">Over</Link>
-          <Link href="/categorie">Categorieën</Link>
+
+          {/* ✅ Scroll naar categorieën sectie op homepage */}
+          <Link href="/#categorieen">Categorieën</Link>
+
           <Link href="/aanraders">Aanraders</Link>
           <Link href="/tips">Tips & uitleg</Link>
           <Link href="/contact">Contact</Link>
-          
+
           <Link href="/producten" className="nav-highlight">
             Producten
           </Link>
