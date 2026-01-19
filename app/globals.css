@@ -737,3 +737,17 @@ code {
 .tips-banner {
   height: 210px; /* exact gelijk aan categorie-banner */
 }
+
+/* ✅ Banner op categoriepagina */
+.category-hero-banner {
+  margin-bottom: 1.25rem;
+}
+
+.category-hero-banner {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.category-hero-banner:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.14);
+}

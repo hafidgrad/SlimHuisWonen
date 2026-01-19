@@ -87,6 +87,19 @@ export default function CategoryPage({ params }) {
 
       <main className="section">
         <div className="container">
+          {/* ✅ Categorie banner afbeelding */}
+          {category.image && (
+            <div className="banner-center">
+              <div className="categorie-banner category-hero-banner">
+                <img
+                  src={category.image}
+                  alt={category.name}
+                  className="banner-img"
+                />
+              </div>
+            </div>
+          )}
+
           <h1>{category.name}</h1>
           <p className="section-intro">{category.description}</p>
 
