@@ -712,120 +712,75 @@ code {
 }
 
 /* =========================================================
-   ✅ Clickable Tips banner (hover + cursor)
+   ✅ TipBanner (blur zijkanten + strak uitlijnen)
+   Werkt goed in Tailwind pages + gewone pages
    ========================================================= */
-.tips-banner-link {
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.tips-banner-link .categorie-banner {
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
-}
-
-.tips-banner-link:hover .categorie-banner {
-  transform: translateY(-2px);
-  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.14);
-}
-
-/* ✅ toegankelijkheid (toetsenbord focus) */
-.tips-banner-link:focus-visible .categorie-banner {
-  outline: 3px solid rgba(37, 99, 235, 0.55);
-  outline-offset: 4px;
-}
-
-.tips-banner {
-  height: 210px; /* exact gelijk aan categorie-banner */
-}
-
-/* ✅ Banner op categoriepagina */
-.category-hero-banner {
-  margin-bottom: 1.25rem;
-}
-
-.category-hero-banner {
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
-}
-
-.category-hero-banner:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.14);
-}
-
-/* ✅ Categoriepagina banner: premium contain + blur backdrop */
-.category-hero-banner {
-  background: #0f172a;
-}
-
-.category-hero-banner img {
-  object-fit: contain !important;
-  position: relative;
-  z-index: 2;
-}
-
-/* mooie blur achtergrond */
-.category-hero-banner::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: var(--category-bg);
-  background-size: cover;
-  background-position: center;
-  filter: blur(18px);
-  transform: scale(1.08);
-  opacity: 0.55;
-  z-index: 1;
-}
-
-/* overlay blijft werken */
-.category-hero-banner::after {
-  z-index: 3;
-}
 
 .tipBanner {
   position: relative;
   width: 100%;
-  max-width: 1100px;
-  margin: 0 auto 28px auto;
-  height: 260px;
-  border-radius: 22px;
+  height: 240px;
+  border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-  background: #000;
+  background: #0b0f1a;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.12);
 }
 
-/* Blur layer fills entire banner */
+/* links/rechts blur */
 .tipBannerBlur {
   position: absolute;
-  inset: 0;
-  transform: scale(1.08);
+  top: 0;
+  bottom: 0;
+  width: 50%;
   filter: blur(18px);
   opacity: 0.85;
+  transform: scale(1.08);
+  background-size: cover;
+  background-position: center;
 }
 
-/* extra dark overlay like your screenshot */
+.tipBannerBlurLeft {
+  left: 0;
+}
+
+.tipBannerBlurRight {
+  right: 0;
+}
+
+/* donkere overlay zoals jouw voorbeeld */
 .tipBanner::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.28);
+  background: rgba(0, 0, 0, 0.18);
+  z-index: 2;
 }
 
-/* Sharp image centered */
+/* center image scherp */
 .tipBannerInner {
   position: absolute;
   inset: 0;
-  z-index: 2;
-  padding: 18px;
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+}
+
+.tipBannerInner img {
+  height: 100%;
+  width: auto;
+  max-width: 360px;
+  object-fit: contain;
+  display: block;
 }
 
 /* mobile */
 @media (max-width: 768px) {
   .tipBanner {
     height: 190px;
-    border-radius: 18px;
+    border-radius: 16px;
   }
-  .tipBannerInner {
-    padding: 12px;
+  .tipBannerInner img {
+    max-width: 280px;
   }
 }
