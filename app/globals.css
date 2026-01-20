@@ -782,10 +782,10 @@ code {
 .category-hero-banner::after {
   z-index: 3;
 }
-
 /* =========================================================
-   ✅ TipBanner (perfect center + blur zijkanten) — Next/Image proof
+   ✅ TipBanner (blur zijkanten + strak banner formaat)
    ========================================================= */
+
 .tipBanner {
   position: relative;
   width: 100%;
@@ -796,7 +796,7 @@ code {
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.12);
 }
 
-/* blur zijkanten */
+/* Blur layer links/rechts */
 .tipBannerBlur {
   position: absolute;
   top: 0;
@@ -804,7 +804,7 @@ code {
   width: 50%;
   filter: blur(18px);
   opacity: 0.85;
-  transform: scale(1.08);
+  transform: scale(1.12);
   background-size: cover;
   background-position: center;
   z-index: 1;
@@ -818,40 +818,44 @@ code {
   right: 0;
 }
 
-/* overlay */
+/* Dark overlay */
 .tipBanner::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.18);
+  background: rgba(0, 0, 0, 0.22);
   z-index: 2;
 }
 
-/* center container */
+/* Center sharp image */
 .tipBannerInner {
   position: absolute;
   inset: 0;
   z-index: 3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
+  display: grid;
+  place-items: center;
+  padding: 12px;
 }
 
-/* ✅ Next/Image wrapper fix */
-.tipBannerInner > span {
-  display: block !important;
-  height: 100% !important;
-  width: auto !important;
-  max-width: 360px !important;
-}
-
-/* ✅ echte image fix */
+/* ✅ Belangrijk: center afbeelding VEEL groter */
 .tipBannerInner img {
-  height: 100% !important;
-  width: auto !important;
-  object-fit: contain !important;
-  display: block !important;
+  height: 100%;
+  width: auto;
+  max-width: 520px;        /* <-- groter */
+  object-fit: contain;
+  display: block;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .tipBanner {
+    height: 190px;
+    border-radius: 16px;
+  }
+
+  .tipBannerInner img {
+    max-width: 380px;      /* <-- groter op mobiel */
+  }
 }
 
 /* Mobile */
