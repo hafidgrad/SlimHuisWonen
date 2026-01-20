@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function Page() {
   const tipImg =
-    "/images/Tips%20%26%20uitleg/Smart%20home%20apparaat%20koppelt%20niet%20met%20Wi-Fi.png";
+    "/images/Tips%20%26%20uitleg/Smart%20home%20apparaat%20koppelt%20niet%20met%20WiFi.png";
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
