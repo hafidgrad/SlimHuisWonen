@@ -41,15 +41,16 @@ a {
 }
 
 code {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
 }
 
 /* -----------------------------
    Theme (SlimHuisWonen kleuren)
 ------------------------------ */
 :root {
-  --shw-teal: #13b7c6;   /* turquoise */
-  --shw-green: #22c55e;  /* groen */
+  --shw-teal: #13b7c6; /* turquoise */
+  --shw-green: #22c55e; /* groen */
   --shw-dark: #0f172a;
 
   --text-muted: #4b5563;
@@ -172,7 +173,8 @@ code {
   font-weight: 700;
   border: 1px solid transparent;
   cursor: pointer;
-  transition: background-color 0.15s, color 0.15s, border-color 0.15s, transform 0.05s;
+  transition: background-color 0.15s, color 0.15s, border-color 0.15s,
+    transform 0.05s;
 }
 
 .btn-primary {
@@ -196,7 +198,7 @@ code {
   color: #1d4ed8;
 }
 
-/* ✅ Amazon knop apart houden (zodat je site consistent blijft) */
+/* ✅ Amazon knop apart houden */
 .btn-amazon {
   background: #ff9900;
   color: #000;
@@ -209,7 +211,7 @@ code {
 }
 
 /* =========================================================
-   Hero (oude “hero” section – mag blijven als je dit nog gebruikt)
+   Hero (oude hero section – mag blijven)
    ========================================================= */
 .hero {
   background: linear-gradient(135deg, #e0ecff, #f9fafb);
@@ -389,8 +391,13 @@ code {
 }
 
 @keyframes scrollBounce {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(6px); }
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(6px);
+  }
 }
 
 /* =========================================================
@@ -694,9 +701,9 @@ code {
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(0,0,0,0.14) 0%,
-    rgba(0,0,0,0.06) 45%,
-    rgba(0,0,0,0.03) 100%
+    rgba(0, 0, 0, 0.14) 0%,
+    rgba(0, 0, 0, 0.06) 45%,
+    rgba(0, 0, 0, 0.03) 100%
   );
   pointer-events: none;
 }
@@ -735,7 +742,7 @@ code {
 }
 
 .tips-banner {
-  height: 210px; /* exact gelijk aan categorie-banner */
+  height: 210px;
 }
 
 /* ✅ Banner op categoriepagina */
@@ -777,11 +784,8 @@ code {
 }
 
 /* =========================================================
-   ✅ TipBanner (blur zijkanten + strak uitlijnen)
-   Past exact binnen container (Tailwind + normale pages)
-   Matcht met TipBanner.jsx die jij nu gebruikt
+   ✅ TipBanner (perfect center + blur zijkanten) — Next/Image proof
    ========================================================= */
-
 .tipBanner {
   position: relative;
   width: 100%;
@@ -792,7 +796,7 @@ code {
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.12);
 }
 
-/* Blur layer links/rechts */
+/* blur zijkanten */
 .tipBannerBlur {
   position: absolute;
   top: 0;
@@ -814,7 +818,7 @@ code {
   right: 0;
 }
 
-/* Dark overlay */
+/* overlay */
 .tipBanner::after {
   content: "";
   position: absolute;
@@ -823,22 +827,31 @@ code {
   z-index: 2;
 }
 
-/* Center sharp image */
+/* center container */
 .tipBannerInner {
   position: absolute;
   inset: 0;
   z-index: 3;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 16px;
 }
 
+/* ✅ Next/Image wrapper fix */
+.tipBannerInner > span {
+  display: block !important;
+  height: 100% !important;
+  width: auto !important;
+  max-width: 360px !important;
+}
+
+/* ✅ echte image fix */
 .tipBannerInner img {
-  height: 100%;
-  width: auto;
-  max-width: 360px;
-  object-fit: contain;
-  display: block;
+  height: 100% !important;
+  width: auto !important;
+  object-fit: contain !important;
+  display: block !important;
 }
 
 /* Mobile */
@@ -848,7 +861,7 @@ code {
     border-radius: 16px;
   }
 
-  .tipBannerInner img {
-    max-width: 280px;
+  .tipBannerInner > span {
+    max-width: 280px !important;
   }
 }
