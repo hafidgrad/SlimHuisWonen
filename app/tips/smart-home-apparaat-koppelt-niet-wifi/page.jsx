@@ -1,4 +1,6 @@
 import TipBanner from "@/components/TipBanner";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Smart home apparaat koppelt niet met Wi-Fi? (snelle fixes)",
@@ -14,26 +16,26 @@ export default function Page() {
     "/images/Tips%20%26%20uitleg/smart%20home%20apparaat%20koppelt%20niet%20met%20wifi.png";
 
   return (
-    <main className="py-10">
-      {/* ✅ Banner netjes breed */}
-      <div className="mx-auto max-w-5xl px-4 mb-10">
-        <TipBanner src={tipImg} alt="Smart home apparaat koppelt niet met Wi-Fi" />
-      </div>
+    <>
+      <Header />
 
-      {/* ✅ Content strak uitgelijnd */}
-      <div className="mx-auto max-w-3xl px-4">
-        <header className="mb-8">
-          <p className="text-sm opacity-70">Tips • Wi-Fi</p>
-          <h1 className="mt-2 text-3xl font-bold leading-tight">
+      <main className="section">
+        <div className="container article">
+          {/* ✅ Banner zoals andere tips */}
+          <TipBanner
+            src={tipImg}
+            alt="Smart home apparaat koppelt niet met Wi-Fi"
+          />
+
+          <h1 style={{ marginTop: 18 }}>
             Smart home apparaat koppelt niet met Wi-Fi? (WPA3, 2.4 GHz en SSID fix)
           </h1>
-          <p className="mt-4 text-lg opacity-80">
+
+          <p className="section-intro">
             Als koppelen faalt, ligt het zelden aan het apparaat. Meestal is het
             een Wi-Fi instelling. Dit is de snelle checklist die bijna altijd werkt.
           </p>
-        </header>
 
-        <article className="prose prose-zinc max-w-none">
           <h2>De 5 meest voorkomende oorzaken</h2>
           <ol>
             <li>
@@ -76,8 +78,10 @@ export default function Page() {
             voordat je opnieuw koppelt. Veel apparaten “onthouden” een mislukte
             poging.
           </p>
-        </article>
-      </div>
-    </main>
+        </div>
+      </main>
+
+      <Footer />
+    </>
   );
 }

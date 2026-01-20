@@ -1,4 +1,6 @@
 import TipBanner from "@/components/TipBanner";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Wi-Fi verbeteren voor smart home: 10 tips voor een stabiel slim huis",
@@ -14,30 +16,27 @@ export default function Page() {
     "/images/Tips%20%26%20uitleg/Wi-Fi%20verbeteren%20voor%20smart%20home.png";
 
   return (
-    <main className="py-10">
-      {/* ✅ Banner full width */}
-      <div className="mx-auto max-w-5xl px-4 mb-10">
-        <TipBanner src={tipImg} alt="Wi-Fi verbeteren voor smart home" />
-      </div>
+    <>
+      <Header />
 
-      {/* ✅ Content in dezelfde stijl als andere Tailwind tips */}
-      <div className="mx-auto max-w-3xl px-4">
-        <header className="mb-8">
-          <p className="text-sm opacity-70">Tips • Netwerk</p>
-          <h1 className="mt-2 text-3xl font-bold leading-tight">
+      <main className="section">
+        <div className="container article">
+          {/* ✅ Banner precies zoals alle andere pagina’s */}
+          <TipBanner src={tipImg} alt="Wi-Fi verbeteren voor smart home" />
+
+          <h1 style={{ marginTop: 18 }}>
             Wi-Fi verbeteren voor smart home: 10 tips voor een stabiel slim huis
           </h1>
-          <p className="mt-4 text-lg opacity-80">
+
+          <p className="section-intro">
             Lampen offline, camera’s die haperen, apps die blijven laden? In veel
             gevallen is je Wi-Fi de echte boosdoener. Met deze gids maak je jouw
             netwerk smart-home-proof.
           </p>
-        </header>
 
-        <article className="prose prose-zinc max-w-none">
           <p>
-            Veel smart home “problemen” zijn eigenlijk Wi-Fi-problemen. Lampen die
-            offline gaan, speakers met vertraging, deurbellen die soms niet
+            Veel smart home “problemen” zijn eigenlijk Wi-Fi-problemen. Lampen
+            die offline gaan, speakers met vertraging, deurbellen die soms niet
             reageren… het komt vaak door instabiel bereik of router-instellingen
             die niet lekker werken met IoT.
           </p>
@@ -58,14 +57,15 @@ export default function Page() {
 
           <h3>3) Split 2.4 GHz en 5 GHz als apparaten vaak offline gaan</h3>
           <p>
-            Eén SSID voor beide banden is handig, maar sommige IoT-apparaten raken
-            in de war. Maak desnoods twee netwerken: <em>…-2G</em> en <em>…-5G</em>.
+            Eén SSID voor beide banden is handig, maar sommige IoT-apparaten
+            raken in de war. Maak desnoods twee netwerken: <em>…-2G</em> en{" "}
+            <em>…-5G</em>.
           </p>
 
           <h3>4) Gebruik WPA2 (of WPA2/WPA3 mixed)</h3>
           <p>
-            Veel smart home apparatuur ondersteunt geen WPA3-only. Kies WPA2 of een
-            mixed modus op je IoT-netwerk.
+            Veel smart home apparatuur ondersteunt geen WPA3-only. Kies WPA2 of
+            een mixed modus op je IoT-netwerk.
           </p>
 
           <h3>5) Kies een vast 2.4 GHz kanaal (1, 6 of 11)</h3>
@@ -89,8 +89,8 @@ export default function Page() {
 
           <h3>8) Overweeg mesh als je dode hoeken hebt</h3>
           <p>
-            Mesh is meestal beter dan een losse extender: minder gedoe, stabieler
-            roaming, betere dekking.
+            Mesh is meestal beter dan een losse extender: minder gedoe,
+            stabieler roaming, betere dekking.
           </p>
 
           <h3>9) Gebruik kabel waar het kan (backhaul)</h3>
@@ -101,8 +101,8 @@ export default function Page() {
 
           <h3>10) Maak een apart IoT-netwerk (optioneel)</h3>
           <p>
-            Zet IoT op één 2.4 GHz netwerk en je “normale” apparaten op een ander.
-            Overzichtelijker en vaak stabieler.
+            Zet IoT op één 2.4 GHz netwerk en je “normale” apparaten op een
+            ander. Overzichtelijker en vaak stabieler.
           </p>
 
           <h2>Snelle checklist</h2>
@@ -125,8 +125,10 @@ export default function Page() {
             <strong>beveiliging (WPA3)</strong>. Begin met de simpele fixes en
             breid daarna uit met mesh of access points.
           </p>
-        </article>
-      </div>
-    </main>
+        </div>
+      </main>
+
+      <Footer />
+    </>
   );
 }

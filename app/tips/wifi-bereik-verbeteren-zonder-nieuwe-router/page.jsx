@@ -1,4 +1,6 @@
 import TipBanner from "@/components/TipBanner";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Wi-Fi bereik verbeteren zonder nieuwe router: 7 slimme oplossingen",
@@ -14,29 +16,26 @@ export default function Page() {
     "/images/Tips%20%26%20uitleg/Wi-Fi%20bereik%20verbeteren%20zonder%20nieuwe%20router.png";
 
   return (
-    <main className="py-10">
-      {/* ✅ Banner netjes breed */}
-      <div className="mx-auto max-w-5xl px-4 mb-10">
-        <TipBanner
-          src={tipImg}
-          alt="Wi-Fi bereik verbeteren zonder nieuwe router"
-        />
-      </div>
+    <>
+      <Header />
 
-      {/* ✅ Content strak gecentreerd */}
-      <div className="mx-auto max-w-3xl px-4">
-        <header className="mb-8">
-          <p className="text-sm opacity-70">Tips • Wi-Fi</p>
-          <h1 className="mt-2 text-3xl font-bold leading-tight">
+      <main className="section">
+        <div className="container article">
+          {/* ✅ Banner zoals andere tips */}
+          <TipBanner
+            src={tipImg}
+            alt="Wi-Fi bereik verbeteren zonder nieuwe router"
+          />
+
+          <h1 style={{ marginTop: 18 }}>
             Wi-Fi bereik verbeteren zonder nieuwe router: 7 slimme oplossingen
           </h1>
-          <p className="mt-4 text-lg opacity-80">
+
+          <p className="section-intro">
             Dode hoeken in huis? Je hoeft niet meteen een nieuwe router te kopen.
             Met deze stappen haal je vaak al enorme winst — vooral voor smart home.
           </p>
-        </header>
 
-        <article className="prose prose-zinc max-w-none">
           <h2>7 oplossingen die vaak direct helpen</h2>
 
           <h3>1) Plaats je router hoger en vrij</h3>
@@ -59,20 +58,20 @@ export default function Page() {
 
           <h3>4) Zet “te slimme” functies uit bij IoT-problemen</h3>
           <p>
-            Band steering, fast roaming of Airtime Fairness kan IoT verstoren. Test
-            of uitschakelen stabiliteit geeft.
+            Band steering, fast roaming of Airtime Fairness kan IoT verstoren.
+            Test of uitschakelen stabiliteit geeft.
           </p>
 
           <h3>5) Voeg een access point toe via kabel</h3>
           <p>
-            Dit is vaak de beste upgrade: één extra access point op een slimme plek
-            geeft topdekking zonder compleet nieuw systeem.
+            Dit is vaak de beste upgrade: één extra access point op een slimme
+            plek geeft topdekking zonder compleet nieuw systeem.
           </p>
 
           <h3>6) Gebruik mesh als kabel niet kan</h3>
           <p>
-            Mesh is meestal stabieler dan een goedkope extender en roamt beter door
-            het huis.
+            Mesh is meestal stabieler dan een goedkope extender en roamt beter
+            door het huis.
           </p>
 
           <h3>7) Zet hubs en vaste apparaten bekabeld</h3>
@@ -86,8 +85,10 @@ export default function Page() {
             dat je woning (beton/vloerverwarming/verdiepingen) een mesh of access
             points echt nodig heeft.
           </p>
-        </article>
-      </div>
-    </main>
+        </div>
+      </main>
+
+      <Footer />
+    </>
   );
 }

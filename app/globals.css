@@ -719,70 +719,6 @@ code {
 }
 
 /* =========================================================
-   ✅ Clickable Tips banner (hover + cursor)
-   ========================================================= */
-.tips-banner-link {
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.tips-banner-link .categorie-banner {
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
-}
-
-.tips-banner-link:hover .categorie-banner {
-  transform: translateY(-2px);
-  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.14);
-}
-
-/* ✅ toegankelijkheid (toetsenbord focus) */
-.tips-banner-link:focus-visible .categorie-banner {
-  outline: 3px solid rgba(37, 99, 235, 0.55);
-  outline-offset: 4px;
-}
-
-.tips-banner {
-  height: 210px;
-}
-
-/* ✅ Banner op categoriepagina */
-.category-hero-banner {
-  margin-bottom: 1.25rem;
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
-  background: #0f172a;
-}
-
-.category-hero-banner:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.14);
-}
-
-/* ✅ contain + blur backdrop */
-.category-hero-banner img {
-  object-fit: contain !important;
-  position: relative;
-  z-index: 2;
-}
-
-/* blur achtergrond */
-.category-hero-banner::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: var(--category-bg);
-  background-size: cover;
-  background-position: center;
-  filter: blur(18px);
-  transform: scale(1.08);
-  opacity: 0.55;
-  z-index: 1;
-}
-
-/* overlay blijft werken */
-.category-hero-banner::after {
-  z-index: 3;
-}
-/* =========================================================
    ✅ TipBanner (blur zijkanten + strak banner formaat)
    ========================================================= */
 
@@ -799,8 +735,7 @@ code {
 /* Blur layer links/rechts */
 .tipBannerBlur {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  inset: 0;
   width: 50%;
   filter: blur(18px);
   opacity: 0.85;
@@ -818,12 +753,12 @@ code {
   right: 0;
 }
 
-/* Dark overlay */
+/* Overlay minder donker (belangrijk!) */
 .tipBanner::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.22);
+  background: rgba(0, 0, 0, 0.14);
   z-index: 2;
 }
 
@@ -834,28 +769,23 @@ code {
   z-index: 3;
   display: grid;
   place-items: center;
-  padding: 12px;
+  padding: 16px;
 }
 
-/* ✅ Belangrijk: center afbeelding VEEL groter */
-.tipBannerInner img {
-  height: 100%;
-  width: auto;
-  max-width: 520px;        /* <-- groter */
-  object-fit: contain;
-  display: block;
+/* ✅ dit lost Next/Image wrapper probleem op */
+.tipBannerInner span {
+  height: 100% !important;
+  width: auto !important;
+  max-width: 560px !important;
+  display: block !important;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .tipBanner {
-    height: 190px;
-    border-radius: 16px;
-  }
-
-  .tipBannerInner img {
-    max-width: 380px;      /* <-- groter op mobiel */
-  }
+/* ✅ class op Image */
+.tipBannerImg {
+  height: 100% !important;
+  width: auto !important;
+  object-fit: contain !important;
+  display: block !important;
 }
 
 /* Mobile */
@@ -865,7 +795,7 @@ code {
     border-radius: 16px;
   }
 
-  .tipBannerInner > span {
-    max-width: 280px !important;
+  .tipBannerInner span {
+    max-width: 380px !important;
   }
 }
