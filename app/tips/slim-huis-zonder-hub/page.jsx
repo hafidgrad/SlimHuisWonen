@@ -11,10 +11,13 @@ export default function SlimHuisZonderHub() {
       <Header />
 
       <main className="section">
-        {/* Banner met blur zijkanten */}
-        <TipBanner src={tipImg} alt="Slim huis zonder hub" />
+  {/* ✅ Banner netjes in dezelfde breedte als site */}
+  <div className="container" style={{ marginBottom: "1.25rem" }}>
+    <TipBanner src={tipImg} alt="Slim huis zonder hub" />
+  </div>
 
-        <div className="container article">
+  <div className="container article">
+
           <h1>Slim huis zonder hub: kan dat?</h1>
 
           <p className="section-intro">

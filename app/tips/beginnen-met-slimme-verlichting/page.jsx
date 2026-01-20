@@ -21,10 +21,13 @@ export default function BeginnenMetSlimmeVerlichting() {
       <Header />
 
       <main className="section">
-        {/* Banner met blur zijkanten */}
-        <TipBanner src={tipImg} alt="Beginnen met slimme verlichting" />
+  {/* ✅ Banner netjes in dezelfde breedte als site */}
+  <div className="container" style={{ marginBottom: "1.25rem" }}>
+    <TipBanner src={tipImg} alt="Beginnen met slimme verlichting" />
+  </div>
 
-        <div className="container article">
+  <div className="container article">
+
           <h1>Beginnen met slimme verlichting (stap-voor-stap)</h1>
 
           <p className="section-intro">

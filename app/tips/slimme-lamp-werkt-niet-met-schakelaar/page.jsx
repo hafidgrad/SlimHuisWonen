@@ -12,10 +12,13 @@ export default function SlimmeLampSchakelaar() {
       <Header />
 
       <main className="section">
-        {/* Banner met blur zijkanten */}
-        <TipBanner src={tipImg} alt="Slimme lamp werkt niet met schakelaar" />
+  {/* ✅ Banner netjes in dezelfde breedte als site */}
+  <div className="container" style={{ marginBottom: "1.25rem" }}>
+    <TipBanner src={tipImg} alt="Slimme lamp werkt niet met schakelaar" />
+  </div>
 
-        <div className="container article">
+  <div className="container article">
+
           <h1>Slimme lamp werkt niet met schakelaar</h1>
 
           <p className="section-intro">

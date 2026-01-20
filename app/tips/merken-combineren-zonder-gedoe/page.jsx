@@ -21,10 +21,13 @@ export default function MerkenCombinerenZonderGedoe() {
       <Header />
 
       <main className="section">
-        {/* Banner met blur zijkanten */}
-        <TipBanner src={tipImg} alt="Merken combineren zonder gedoe" />
+  {/* ✅ Banner netjes in dezelfde breedte als site */}
+  <div className="container" style={{ marginBottom: "1.25rem" }}>
+    <TipBanner src={tipImg} alt="merken combineren zonder gedoe" />
+  </div>
 
-        <div className="container article">
+  <div className="container article">
+
           <h1>Merken combineren zonder gedoe</h1>
 
           <p className="section-intro">

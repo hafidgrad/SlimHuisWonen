@@ -21,10 +21,12 @@ export default function WatIsEenSmartHomeHub() {
       <Header />
 
       <main className="section">
-        {/* Banner met blur zijkanten */}
-        <TipBanner src={tipImg} alt="Wat is een smart home hub?" />
+  {/* ✅ Banner netjes in dezelfde breedte als site */}
+  <div className="container" style={{ marginBottom: "1.25rem" }}>
+    <TipBanner src={tipImg} alt="Wat is een smart home hub" />
+  </div>
 
-        <div className="container article">
+  <div className="container article">
           <h1>Wat is een smart home hub?</h1>
 
           <p className="section-intro">
