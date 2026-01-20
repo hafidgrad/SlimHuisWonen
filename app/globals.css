@@ -719,7 +719,7 @@ code {
 }
 
 /* =========================================================
-   ✅ TipBanner (blur zijkanten + strak banner formaat)
+   ✅ TipBanner (blur zijkanten + echte banner look)
    ========================================================= */
 
 .tipBanner {
@@ -735,11 +735,12 @@ code {
 /* Blur layer links/rechts */
 .tipBannerBlur {
   position: absolute;
-  inset: 0;
+  top: 0;
+  bottom: 0;
   width: 50%;
-  filter: blur(18px);
+  filter: blur(22px);
   opacity: 0.85;
-  transform: scale(1.12);
+  transform: scale(1.2);
   background-size: cover;
   background-position: center;
   z-index: 1;
@@ -753,39 +754,32 @@ code {
   right: 0;
 }
 
-/* Overlay minder donker (belangrijk!) */
+/* Dark overlay */
 .tipBanner::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.14);
+  background: rgba(0, 0, 0, 0.22);
   z-index: 2;
 }
 
-/* Center sharp image */
+/* Inner = center image */
 .tipBannerInner {
   position: absolute;
   inset: 0;
   z-index: 3;
-  display: grid;
-  place-items: center;
-  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
 }
 
-/* ✅ dit lost Next/Image wrapper probleem op */
-.tipBannerInner span {
-  height: 100% !important;
-  width: auto !important;
-  max-width: 560px !important;
-  display: block !important;
-}
-
-/* ✅ class op Image */
+/* ✅ DE FIX: Next/Image altijd groot & netjes */
 .tipBannerImg {
   height: 100% !important;
   width: auto !important;
+  max-width: 100% !important;
   object-fit: contain !important;
-  display: block !important;
 }
 
 /* Mobile */
@@ -795,7 +789,7 @@ code {
     border-radius: 16px;
   }
 
-  .tipBannerInner span {
-    max-width: 380px !important;
+  .tipBannerInner {
+    padding: 12px;
   }
 }
