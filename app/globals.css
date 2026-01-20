@@ -719,7 +719,8 @@ code {
 }
 
 /* =========================================================
-   ✅ TipBanner (blur zijkanten + echte banner look)
+   ✅ TipBanner (blur zijkanten + strak banner formaat)
+   Next/Image proof (span wrapper fix)
    ========================================================= */
 
 .tipBanner {
@@ -738,21 +739,16 @@ code {
   top: 0;
   bottom: 0;
   width: 50%;
-  filter: blur(22px);
+  filter: blur(18px);
   opacity: 0.85;
-  transform: scale(1.2);
+  transform: scale(1.12);
   background-size: cover;
   background-position: center;
   z-index: 1;
 }
 
-.tipBannerBlurLeft {
-  left: 0;
-}
-
-.tipBannerBlurRight {
-  right: 0;
-}
+.tipBannerBlurLeft { left: 0; }
+.tipBannerBlurRight { right: 0; }
 
 /* Dark overlay */
 .tipBanner::after {
@@ -763,23 +759,32 @@ code {
   z-index: 2;
 }
 
-/* Inner = center image */
+/* Center sharp image */
 .tipBannerInner {
   position: absolute;
   inset: 0;
   z-index: 3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 18px;
+  display: grid;
+  place-items: center;
+  padding: 12px;
 }
 
-/* ✅ DE FIX: Next/Image altijd groot & netjes */
-.tipBannerImg {
+/* ✅ DE BELANGRIJKSTE FIX:
+   Next/Image zit in een span wrapper -> die beperken we NIET meer
+*/
+.tipBannerInner > span {
   height: 100% !important;
   width: auto !important;
-  max-width: 1200px !important; /* <-- groter (was 100%) */
+  max-width: 680px !important;   /* ✅ GROTER! (was 280/360/520) */
+  display: block !important;
+}
+
+/* img zelf */
+.tipBannerInner img {
+  height: 100% !important;
+  width: auto !important;
   object-fit: contain !important;
+  display: block !important;
 }
 
 /* Mobile */
@@ -789,7 +794,7 @@ code {
     border-radius: 16px;
   }
 
-  .tipBannerInner {
-    padding: 12px;
+  .tipBannerInner > span {
+    max-width: 460px !important; /* ✅ groter op mobiel */
   }
 }
