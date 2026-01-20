@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function TipBanner({ src, alt }) {
   return (
     <div className="tipBanner">
@@ -11,7 +13,14 @@ export default function TipBanner({ src, alt }) {
       />
 
       <div className="tipBannerInner">
-        <img src={src} alt={alt} className="tipBannerImg" />
+        <Image
+          src={src}
+          alt={alt}
+          width={1200}
+          height={600}
+          priority
+          className="tipBannerImg"
+        />
       </div>
     </div>
   );

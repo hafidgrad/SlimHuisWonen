@@ -719,20 +719,21 @@ code {
 }
 
 /* =========================================================
-   ✅ TipBanner (stabiel + groot + blur)
-   werkt met gewone <img> (GEEN Next/Image)
+   ✅ TipBanner (blur zijkanten + grote afbeelding)
+   Werkt PERFECT met Next/Image wrapper
    ========================================================= */
 
 .tipBanner {
   position: relative;
   width: 100%;
-  height: 240px;
+  height: 260px;                 /* ✅ banner hoogte */
   border-radius: 18px;
   overflow: hidden;
   background: #0b0f1a;
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.12);
 }
 
+/* Blur layers */
 .tipBannerBlur {
   position: absolute;
   top: 0;
@@ -746,9 +747,15 @@ code {
   z-index: 1;
 }
 
-.tipBannerBlurLeft { left: 0; }
-.tipBannerBlurRight { right: 0; }
+.tipBannerBlurLeft {
+  left: 0;
+}
 
+.tipBannerBlurRight {
+  right: 0;
+}
+
+/* Donkere overlay */
 .tipBanner::after {
   content: "";
   position: absolute;
@@ -757,31 +764,43 @@ code {
   z-index: 2;
 }
 
+/* Center content */
 .tipBannerInner {
   position: absolute;
   inset: 0;
   z-index: 3;
-  display: grid;
-  place-items: center;
-  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
 }
 
-/* ✅ afbeelding groot en stabiel */
+/* ✅ Next/Image wrapper fix */
+.tipBannerInner > span {
+  height: 100% !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* ✅ Foto echt groter maken */
 .tipBannerImg {
-  height: 100%;
-  width: auto;
-  max-width: 700px; /* ✅ groter */
-  object-fit: contain;
-  display: block;
+  height: 100% !important;
+  width: auto !important;
+  max-width: 620px !important;     /* ✅ groter beeld */
+  object-fit: contain !important;
+  display: block !important;
 }
 
+/* Mobile */
 @media (max-width: 768px) {
   .tipBanner {
-    height: 190px;
+    height: 200px;
     border-radius: 16px;
   }
 
   .tipBannerImg {
-    max-width: 460px;
+    max-width: 420px !important;
   }
 }
