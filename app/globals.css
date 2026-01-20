@@ -712,8 +712,74 @@ code {
 }
 
 /* =========================================================
+   ✅ Clickable Tips banner (hover + cursor)
+   ========================================================= */
+.tips-banner-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.tips-banner-link .categorie-banner {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.tips-banner-link:hover .categorie-banner {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.14);
+}
+
+/* ✅ toegankelijkheid (toetsenbord focus) */
+.tips-banner-link:focus-visible .categorie-banner {
+  outline: 3px solid rgba(37, 99, 235, 0.55);
+  outline-offset: 4px;
+}
+
+.tips-banner {
+  height: 210px; /* exact gelijk aan categorie-banner */
+}
+
+/* ✅ Banner op categoriepagina */
+.category-hero-banner {
+  margin-bottom: 1.25rem;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  background: #0f172a;
+}
+
+.category-hero-banner:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.14);
+}
+
+/* ✅ contain + blur backdrop */
+.category-hero-banner img {
+  object-fit: contain !important;
+  position: relative;
+  z-index: 2;
+}
+
+/* blur achtergrond */
+.category-hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--category-bg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(18px);
+  transform: scale(1.08);
+  opacity: 0.55;
+  z-index: 1;
+}
+
+/* overlay blijft werken */
+.category-hero-banner::after {
+  z-index: 3;
+}
+
+/* =========================================================
    ✅ TipBanner (blur zijkanten + strak uitlijnen)
-   Werkt goed in Tailwind pages + gewone pages
+   Past exact binnen container (Tailwind + normale pages)
+   Matcht met TipBanner.jsx die jij nu gebruikt
    ========================================================= */
 
 .tipBanner {
@@ -726,7 +792,7 @@ code {
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.12);
 }
 
-/* links/rechts blur */
+/* Blur layer links/rechts */
 .tipBannerBlur {
   position: absolute;
   top: 0;
@@ -737,6 +803,7 @@ code {
   transform: scale(1.08);
   background-size: cover;
   background-position: center;
+  z-index: 1;
 }
 
 .tipBannerBlurLeft {
@@ -747,7 +814,7 @@ code {
   right: 0;
 }
 
-/* donkere overlay zoals jouw voorbeeld */
+/* Dark overlay */
 .tipBanner::after {
   content: "";
   position: absolute;
@@ -756,7 +823,7 @@ code {
   z-index: 2;
 }
 
-/* center image scherp */
+/* Center sharp image */
 .tipBannerInner {
   position: absolute;
   inset: 0;
@@ -774,12 +841,13 @@ code {
   display: block;
 }
 
-/* mobile */
+/* Mobile */
 @media (max-width: 768px) {
   .tipBanner {
     height: 190px;
     border-radius: 16px;
   }
+
   .tipBannerInner img {
     max-width: 280px;
   }
