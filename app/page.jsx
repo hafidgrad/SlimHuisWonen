@@ -56,7 +56,7 @@ export default function HomePage() {
         <div className="hero-spacer" />
 
         {/* ✅ Scroll target */}
-        <div id="top-aanraders" />
+        <span id="top-aanraders" />
 
         <TopAanraders />
 

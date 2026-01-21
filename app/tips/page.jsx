@@ -1,5 +1,5 @@
-import Link from "next/link";
 import TipBanner from "@/components/TipBanner";
+import TipCard from "@/components/TipCard";
 
 export default function TipsPage() {
   const tips = [
@@ -68,46 +68,24 @@ export default function TipsPage() {
   const headerImg = "/images/Tips%20%26%20uitleg/Tips%20%26%20uitleg.png";
 
   return (
-    <main style={{ maxWidth: 1100, margin: "0 auto", padding: "40px 20px" }}>
-      {/* Header banner met blur zijkanten */}
-      <TipBanner src={headerImg} alt="Tips & uitleg" />
+    <main className="section">
+      <div className="container">
+        {/* ✅ Header banner met blur zijkanten */}
+        <TipBanner src={headerImg} alt="Tips & uitleg" />
 
-      {/* Titel + intro */}
-      <h1 style={{ fontSize: 42, marginBottom: 8 }}>Tips & uitleg</h1>
-      <p style={{ opacity: 0.75, marginBottom: 24, lineHeight: 1.6 }}>
-        Stap-voor-stap uitleg en praktische tips om je huis slimmer te maken.
-        Geschikt voor beginners én gevorderden.
-      </p>
+        {/* Titel + intro */}
+        <h1 style={{ fontSize: 42, marginBottom: 8 }}>Tips & uitleg</h1>
+        <p className="section-intro">
+          Stap-voor-stap uitleg en praktische tips om je huis slimmer te maken.
+          Geschikt voor beginners én gevorderden.
+        </p>
 
-      {/* Cards */}
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-          gap: 18,
-        }}
-      >
-        {tips.map((tip) => (
-          <Link
-            key={tip.slug}
-            href={`/tips/${tip.slug}`}
-            style={{
-              background: "#fff",
-              borderRadius: 16,
-              padding: 22,
-              textDecoration: "none",
-              color: "inherit",
-              border: "1px solid rgba(0,0,0,0.06)",
-              boxShadow: "0 10px 25px rgba(0,0,0,0.06)",
-            }}
-          >
-            <h2 style={{ fontSize: 22, marginBottom: 10 }}>{tip.title}</h2>
-            <p style={{ opacity: 0.75, lineHeight: 1.55, marginBottom: 18 }}>
-              {tip.desc}
-            </p>
-            <span style={{ fontWeight: 600 }}>Lees artikel →</span>
-          </Link>
-        ))}
+        {/* Cards */}
+        <div className="tips-grid">
+          {tips.map((tip) => (
+            <TipCard key={tip.slug} tip={tip} />
+          ))}
+        </div>
       </div>
     </main>
   );
