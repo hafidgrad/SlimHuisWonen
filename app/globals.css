@@ -776,6 +776,13 @@ code {
   object-position: center;
 }
 
+/* ✅ Fix: categorie banners NIET ingezoomd (geen crop) */
+.category-hero-banner .banner-img,
+.category-hero-banner img {
+  object-fit: contain !important;
+  background: #0b0f1a; /* vult lege ruimte premium */
+}
+
 /* Subtiele overlay (premium look) */
 .aanraders-banner::after,
 .categorie-banner::after {
@@ -804,6 +811,7 @@ code {
 /* ✅ Category banner extra premium look */
 .category-hero-banner {
   position: relative;
+  background: #0b0f1a;
 }
 
 .category-hero-banner::before {
@@ -832,7 +840,7 @@ code {
 .tipBanner {
   position: relative;
   width: 100%;
-  height: 260px;                 /* ✅ banner hoogte */
+  height: 260px; /* ✅ banner hoogte */
   border-radius: 18px;
   overflow: hidden;
   background: #0b0f1a;
@@ -894,7 +902,7 @@ code {
 .tipBannerImg {
   height: 100% !important;
   width: auto !important;
-  max-width: 620px !important;     /* ✅ groter beeld */
+  max-width: 620px !important; /* ✅ groter beeld */
   object-fit: contain !important;
   display: block !important;
 }
