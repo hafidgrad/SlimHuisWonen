@@ -1,5 +1,5 @@
 /* =========================================================
-   ✅ SlimHuisWonen.nl – globals.css (opgeschoond)
+   ✅ SlimHuisWonen.nl – globals.css (opgeschoond + gefixt)
    ========================================================= */
 
 /* -----------------------------
@@ -59,7 +59,7 @@ code {
   --white: #ffffff;
 
   --shadow-soft: 0 6px 18px rgba(15, 23, 42, 0.06);
-  --shadow-premium: 0 10px 25px rgba(15, 23, 42, 0.10);
+  --shadow-premium: 0 10px 25px rgba(15, 23, 42, 0.1);
 }
 
 /* -----------------------------
@@ -292,9 +292,9 @@ code {
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 0.70) 0%,
+    rgba(0, 0, 0, 0.7) 0%,
     rgba(0, 0, 0, 0.35) 45%,
-    rgba(0, 0, 0, 0.10) 100%
+    rgba(0, 0, 0, 0.1) 100%
   );
   z-index: 2;
 }
@@ -358,7 +358,7 @@ code {
 }
 
 .hero-secondary:hover {
-  background: rgba(255, 255, 255, 0.20) !important;
+  background: rgba(255, 255, 255, 0.2) !important;
 }
 
 /* Spacer zodat TopAanraders nooit over hero komt */
@@ -401,9 +401,8 @@ code {
 }
 
 /* =========================================================
-   Categorieën (zelfde stijl als Tip & Uitleg)
+   ✅ Categorieën (premium cards)
    ========================================================= */
-
 .category-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -510,7 +509,7 @@ code {
 }
 
 /* =========================================================
-   Products grid
+   ✅ Products grid
    ========================================================= */
 .product-grid {
   display: grid;
@@ -613,35 +612,40 @@ code {
 }
 
 /* =========================================================
-   Blog / Tips grids
+   ✅ Tips grid + tip cards (EXACT zoals categorieën)
    ========================================================= */
-.blog-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-  justify-items: center;
-}
-
 .tips-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-  justify-items: center;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.25rem;
 }
 
+@media (max-width: 980px) {
+  .tips-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   ✅ Tip cards – exact categorie look (MET image header)
+   ========================================================= */
+
 .tip-card {
-  background: #ffffff;
-  border-radius: 18px;
-  padding: 1.25rem 1.25rem 1.15rem;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 360px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 18px;
+  overflow: hidden;
+  background: #ffffff;
   text-decoration: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
   transform: translateY(0);
   transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
@@ -651,31 +655,89 @@ code {
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
 }
 
+/* ✅ Image header zoals categorie cards (BELANGRIJK VOOR Next/Image fill) */
+.tip-card__imageWrap {
+  position: relative;
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+  background: #f4f6f8;
+}
+
+@media (max-width: 640px) {
+  .tip-card__imageWrap {
+    height: 170px;
+  }
+}
+
+/* ✅ Next/Image fill: image moet absoluut gevuld worden */
+.tip-card__image {
+  object-fit: cover !important;
+  object-position: center center !important; /* ✅ exact zoals categorie */
+  transform: scale(1);
+  transition: transform 0.25s ease;
+}
+
+.tip-card:hover .tip-card__image {
+  transform: scale(1.05);
+}
+
+/* overlay op afbeelding */
+.tip-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.35)
+  );
+  z-index: 1;
+}
+
+/* badge linksboven */
+.tip-card__badge {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  font-size: 0.75rem;
+  font-weight: 900;
+  padding: 0.35rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #111;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  z-index: 2;
+}
+
+/* ✅ Content onder de afbeelding */
+.tip-card__content {
+  padding: 1rem 1.1rem 1.05rem;
+  background: #ffffff;
+}
+
 .tip-card__title {
-  margin: 0 0 0.5rem;
-  font-size: 1.1rem;
-  line-height: 1.25;
+  margin: 0 0 0.35rem;
+  font-size: 1.08rem;
+  line-height: 1.2;
+  font-weight: 900;
   color: #111;
 }
 
 .tip-card__desc {
-  margin: 0 0 0.9rem;
+  margin: 0 0 0.75rem;
   color: rgba(0, 0, 0, 0.68);
   line-height: 1.55;
   font-size: 0.95rem;
 }
 
 .tip-card__cta {
-  font-weight: 900;
-  color: var(--shw-teal);
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.4rem;
+  font-weight: 900;
+  color: var(--shw-teal);
+  font-size: 0.95rem;
   margin-top: auto;
-}
-
-.tip-link:hover {
-  text-decoration: underline;
 }
 
 /* =========================================================
@@ -780,7 +842,7 @@ code {
 .category-hero-banner .banner-img,
 .category-hero-banner img {
   object-fit: contain !important;
-  background: #0b0f1a; /* vult lege ruimte premium */
+  background: #0b0f1a;
 }
 
 /* Subtiele overlay (premium look) */
@@ -856,13 +918,11 @@ code {
 
 /* =========================================================
    ✅ TipBanner (blur zijkanten + grote afbeelding)
-   Werkt PERFECT met Next/Image wrapper
    ========================================================= */
-
 .tipBanner {
   position: relative;
   width: 100%;
-  height: 260px; /* ✅ banner hoogte */
+  height: 260px;
   border-radius: 18px;
   overflow: hidden;
   background: #0b0f1a;
@@ -920,11 +980,11 @@ code {
   justify-content: center !important;
 }
 
-/* ✅ Foto echt groter maken */
+/* ✅ Foto groter */
 .tipBannerImg {
   height: 100% !important;
   width: auto !important;
-  max-width: 620px !important; /* ✅ groter beeld */
+  max-width: 620px !important;
   object-fit: contain !important;
   display: block !important;
 }
