@@ -670,12 +670,11 @@ code {
   }
 }
 
-/* ✅ Next/Image fill: image moet absoluut gevuld worden */
+/* ✅ tips thumbnails hebben tekst -> NIET croppen */
 .tip-card__image {
-  object-fit: cover !important;
-  object-position: center center !important; /* ✅ exact zoals categorie */
-  transform: scale(1);
-  transition: transform 0.25s ease;
+  object-fit: contain !important;
+  object-position: center center !important;
+  background: #0b0f1a;              /* premium donkere fill */
 }
 
 .tip-card:hover .tip-card__image {
