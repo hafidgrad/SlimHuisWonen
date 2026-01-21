@@ -808,28 +808,50 @@ code {
   }
 }
 
-/* ✅ Category banner extra premium look */
+/* ✅ Category banner (TipBanner style blur zijkanten) */
 .category-hero-banner {
   position: relative;
   background: #0b0f1a;
+  overflow: hidden;
 }
 
-.category-hero-banner::before {
+/* Blur links + rechts */
+.category-hero-banner::before,
+.category-hero-banner::after {
   content: "";
   position: absolute;
-  inset: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
   background-image: var(--category-bg);
   background-size: cover;
   background-position: center;
   filter: blur(18px);
-  transform: scale(1.06);
-  opacity: 0.55;
+  opacity: 0.85;
+  transform: scale(1.12);
   z-index: 0;
 }
 
+.category-hero-banner::before {
+  left: 0;
+}
+
+.category-hero-banner::after {
+  right: 0;
+}
+
+/* Donkere overlay */
+.category-hero-banner .category-darken {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.22);
+  z-index: 1;
+}
+
+/* ✅ Afbeelding zelf in het midden */
 .category-hero-banner img {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* =========================================================

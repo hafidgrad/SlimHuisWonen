@@ -56,7 +56,7 @@ export default function CategoryPage({ params }) {
   // ✅ normalize slug: hierdoor werken /categorie/verlichting enz.
   const normalizedSlug = normalizeCategorySlug(slug);
 
-  // ✅ category ophalen op normalized slug (veiligste)
+  // ✅ category ophalen op normalized slug
   const category = getCategory(normalizedSlug);
 
   if (!category) {
@@ -88,13 +88,14 @@ export default function CategoryPage({ params }) {
 
       <main className="section">
         <div className="container">
-          {/* ✅ Categorie banner afbeelding */}
+          {/* ✅ Categorie banner afbeelding (TipBanner style blur zijkanten) */}
           {category.image && (
             <div className="banner-center">
               <div
                 className="categorie-banner category-hero-banner"
                 style={{ "--category-bg": `url(${category.image})` }}
               >
+                <div className="category-darken" />
                 <img
                   src={category.image}
                   alt={category.name}
