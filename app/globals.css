@@ -672,9 +672,11 @@ code {
 
 /* ✅ tips thumbnails hebben tekst -> NIET croppen */
 .tip-card__image {
-  object-fit: contain !important;
-  object-position: center center !important;
-  background: #0b0f1a;              /* premium donkere fill */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  background: transparent;
 }
 
 .tip-card:hover .tip-card__image {
