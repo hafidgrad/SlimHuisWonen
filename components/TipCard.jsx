@@ -14,8 +14,15 @@ export default function TipCard({ tip }) {
             className="tip-card__image"
             sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 33vw"
           />
+
+          {/* ✅ gradient overlay */}
           <div className="tip-card__overlay" />
+
+          {/* ✅ badge */}
           <div className="tip-card__badge">Tip</div>
+
+          {/* ✅ titel op afbeelding (altijd zichtbaar) */}
+          <div className="tip-card__imgTitle">{tip.title}</div>
         </div>
       )}
 
