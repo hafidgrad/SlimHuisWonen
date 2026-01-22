@@ -635,6 +635,7 @@ code {
 
 /* =========================================================
    ✅ Tip cards – exact categorie look (MET image header)
+   + Fix: tekst in afbeelding blijft zichtbaar
    ========================================================= */
 
 .tip-card {
@@ -659,23 +660,29 @@ code {
 .tip-card__imageWrap {
   position: relative;
   width: 100%;
-  height: 170px;
+  height: 190px;              /* 🔥 iets hoger zodat tekst beter in beeld blijft */
   overflow: hidden;
   background: #f4f6f8;
 }
 
+/* Mobile: iets minder hoog */
 @media (max-width: 640px) {
   .tip-card__imageWrap {
     height: 170px;
   }
 }
 
-/* ✅ tips thumbnails hebben tekst -> NIET croppen */
+/* ✅ REAL FOTO covers: vullend (cover) */
 .tip-card__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+
+  /* 🔥 belangrijk: focus hoger, zodat tekst onderin niet wegvalt */
+  object-position: 50% 35%;
+
+  transform: scale(1);
+  transition: transform 0.25s ease;
   background: transparent;
 }
 
@@ -683,19 +690,23 @@ code {
   transform: scale(1.05);
 }
 
-/* overlay op afbeelding */
+/* ✅ Overlay op afbeelding: extra donker onderin voor leesbaarheid */
 .tip-card__overlay {
   position: absolute;
   inset: 0;
+
+  /* 🔥 sterker onderin dan bovenin */
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.05),
-    rgba(0, 0, 0, 0.35)
+    rgba(0, 0, 0, 0.02) 0%,
+    rgba(0, 0, 0, 0.08) 45%,
+    rgba(0, 0, 0, 0.50) 100%
   );
+
   z-index: 1;
 }
 
-/* badge linksboven */
+/* ✅ Badge linksboven */
 .tip-card__badge {
   position: absolute;
   left: 12px;
