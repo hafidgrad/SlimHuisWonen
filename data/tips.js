@@ -1,23 +1,47 @@
-export const tips = [
-  {
-    slug: "beginnen-met-smart-home",
-    title: "Beginnen met smart home in 5 stappen",
-    description:
-      "We nemen je stap voor stap mee: van eerste slimme lamp tot automatiseringen zonder gedoe.",
-    available: true,
-  },
-  {
-    slug: "wat-is-een-smart-home-hub",
-    title: "Wat is een smart home hub?",
-    description:
-      "We leggen uit wat een hub doet, welke merken er zijn en waar je op moet letten.",
-    available: false,
-  },
-  {
-    slug: "merken-combineren-zonder-gedoe",
-    title: "Merken combineren zonder gedoe",
-    description:
-      "Philips Hue, Ikea, Aqara, Nest en meer: zo laat je alles netjes samenwerken.",
-    available: true,
-  },
-];
+import { getAllProducts } from "@/data/products";
+import { tips } from "@/data/tips";
+
+export default function sitemap() {
+  const baseUrl = "https://slimhuiswonen.nl";
+  const lastModified = new Date();
+
+  // ✅ Statische pagina’s
+  const staticRoutes = [
+    "",
+    "/producten",
+    "/tips",
+    "/blog",
+    "/aanraders",
+    "/over",
+    "/contact",
+  ].map((path) => ({
+    url: `${baseUrl}${path}`,
+    lastModified,
+  }));
+
+  // ✅ Product pagina’s
+  const productRoutes = getAllProducts().map((p) => ({
+    url: `${baseUrl}/producten/${p.slug}`,
+    lastModified,
+  }));
+
+  // ✅ Tip pagina’s (alleen available === true)
+  const tipRoutes = (tips || [])
+    .filter((t) => t.available)
+    .map((t) => ({
+      url: `${baseUrl}/tips/${t.slug}`,
+      lastModified,
+    }));
+
+  // ✅ Blog pagina’s (hardcoded lijst — later kunnen we dynamisch maken)
+  const blogRoutes = [
+    "/blog/wat-is-zigbee",
+    "/blog/aqara-vs-tapo",
+    "/blog/beste-slimme-stekkers",
+  ].map((path) => ({
+    url: `${baseUrl}${path}`,
+    lastModified,
+  }));
+
+  return [...staticRoutes, ...productRoutes, ...tipRoutes, ...blogRoutes];
+}
