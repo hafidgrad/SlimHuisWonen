@@ -1,13 +1,14 @@
 import TipBanner from "@/components/TipBanner";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 export const metadata = {
   title: "Wi-Fi verbeteren voor smart home: 10 tips voor een stabiel slim huis",
   description:
     "Smart home valt offline of reageert traag? Verbeter je Wi-Fi met 10 praktische tips: 2.4GHz vs 5GHz, mesh, kanaalkeuze, router-instellingen en vaste IP’s.",
   alternates: {
-    canonical: "/tips/wifi-verbeteren-voor-smart-home",
+    canonical: "https://slimhuiswonen.nl/tips/wifi-verbeteren-voor-smart-home",
   },
 };
 
@@ -15,18 +16,61 @@ export default function Page() {
   const tipImg =
     "/images/Tips%20%26%20uitleg/Wi-Fi%20verbeteren%20voor%20smart%20home.png";
 
+  // ✅ FAQ schema
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Waarom gaan smart home apparaten vaak offline?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Vaak komt dit door wifi-bereik, band steering (2.4/5 GHz), WPA3-only beveiliging of een router die te ver weg staat. Begin met 2.4 GHz, routerplaatsing en WPA2/mixed modus.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is 2.4 GHz beter dan 5 GHz voor smart home?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Voor veel smart home apparaten wel: 2.4 GHz heeft meer bereik en gaat beter door muren. 5 GHz is sneller, maar heeft minder bereik en is beter voor telefoons/laptops/TV’s.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Helpt mesh wifi bij smart home?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja, mesh helpt vooral bij dode hoeken. Het is meestal stabieler dan een losse wifi extender en geeft betere dekking door het hele huis.",
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <Header />
 
       <main className="section">
-        <div className="container article">
-          {/* ✅ Banner precies zoals alle andere pagina’s */}
+        {/* ✅ Banner netjes in dezelfde breedte als site */}
+        <div className="container" style={{ marginBottom: "1.25rem" }}>
           <TipBanner src={tipImg} alt="Wi-Fi verbeteren voor smart home" />
+        </div>
 
-          <h1 style={{ marginTop: 18 }}>
-            Wi-Fi verbeteren voor smart home: 10 tips voor een stabiel slim huis
-          </h1>
+        <div className="container article">
+          {/* ✅ Cluster links */}
+          <p className="muted small" style={{ marginBottom: "0.75rem" }}>
+            Gerelateerd:{" "}
+            <Link href="/tips/smart-home-apparaat-koppelt-niet-wifi">
+              Apparaat koppelt niet met Wi-Fi
+            </Link>{" "}
+            •{" "}
+            <Link href="/tips/2-4ghz-vs-5ghz-smart-home">2.4 vs 5 GHz</Link> •{" "}
+            <Link href="/tips/beginnen-met-smart-home">Beginnen met smart home</Link>
+          </p>
+
+          <h1>Wi-Fi verbeteren voor smart home: 10 tips voor een stabiel slim huis</h1>
 
           <p className="section-intro">
             Lampen offline, camera’s die haperen, apps die blijven laden? In veel
@@ -125,6 +169,33 @@ export default function Page() {
             <strong>beveiliging (WPA3)</strong>. Begin met de simpele fixes en
             breid daarna uit met mesh of access points.
           </p>
+
+          <hr />
+
+          <h2>Gerelateerde tips</h2>
+          <ul>
+            <li>
+              <Link href="/tips/2-4ghz-vs-5ghz-smart-home">
+                2.4 GHz vs 5 GHz voor smart home
+              </Link>
+            </li>
+            <li>
+              <Link href="/tips/smart-home-apparaat-koppelt-niet-wifi">
+                Smart home apparaat koppelt niet met Wi-Fi?
+              </Link>
+            </li>
+            <li>
+              <Link href="/tips/wifi-bereik-verbeteren-zonder-nieuwe-router">
+                Wi-Fi bereik verbeteren zonder nieuwe router
+              </Link>
+            </li>
+          </ul>
+
+          {/* ✅ Structured data */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+          />
         </div>
       </main>
 

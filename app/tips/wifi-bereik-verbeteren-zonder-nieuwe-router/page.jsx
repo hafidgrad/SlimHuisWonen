@@ -1,13 +1,15 @@
 import TipBanner from "@/components/TipBanner";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 export const metadata = {
   title: "Wi-Fi bereik verbeteren zonder nieuwe router: 7 slimme oplossingen",
   description:
     "Slechte Wi-Fi in huis? Verbeter je bereik zonder meteen een nieuwe router te kopen. 7 praktische tips voor meer dekking en stabiel smart home.",
   alternates: {
-    canonical: "/tips/wifi-bereik-verbeteren-zonder-nieuwe-router",
+    canonical:
+      "https://slimhuiswonen.nl/tips/wifi-bereik-verbeteren-zonder-nieuwe-router",
   },
 };
 
@@ -15,21 +17,66 @@ export default function Page() {
   const tipImg =
     "/images/Tips%20%26%20uitleg/Wi-Fi%20bereik%20verbeteren%20zonder%20nieuwe%20router.png";
 
+  // ✅ FAQ schema
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Hoe verbeter ik Wi-Fi bereik zonder nieuwe router?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Begin met routerplaatsing (centraal en vrij), zet een vast 2.4 GHz kanaal (1/6/11), update firmware en zet ‘slimme’ functies uit als IoT instabiel is. De beste upgrade is een extra access point via kabel of een mesh systeem.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is mesh beter dan een wifi extender?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Meestal wel. Mesh is doorgaans stabieler, roamt beter door het huis en geeft minder gedoe dan een losse extender.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Wat is de beste oplossing bij dode hoeken?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Een extra access point via kabel is vaak de beste oplossing. Als kabel niet kan, kies dan voor mesh met goede plaatsing van de units.",
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <Header />
 
       <main className="section">
-        <div className="container article">
-          {/* ✅ Banner zoals andere tips */}
+        {/* ✅ Banner netjes in dezelfde breedte als site */}
+        <div className="container" style={{ marginBottom: "1.25rem" }}>
           <TipBanner
             src={tipImg}
             alt="Wi-Fi bereik verbeteren zonder nieuwe router"
           />
+        </div>
 
-          <h1 style={{ marginTop: 18 }}>
-            Wi-Fi bereik verbeteren zonder nieuwe router: 7 slimme oplossingen
-          </h1>
+        <div className="container article">
+          {/* ✅ Cluster links */}
+          <p className="muted small" style={{ marginBottom: "0.75rem" }}>
+            Gerelateerd:{" "}
+            <Link href="/tips/wifi-verbeteren-voor-smart-home">
+              Wi-Fi verbeteren
+            </Link>{" "}
+            •{" "}
+            <Link href="/tips/2-4ghz-vs-5ghz-smart-home">2.4 vs 5 GHz</Link> •{" "}
+            <Link href="/tips/smart-home-apparaat-koppelt-niet-wifi">
+              Koppelt niet met Wi-Fi
+            </Link>
+          </p>
+
+          <h1>Wi-Fi bereik verbeteren zonder nieuwe router: 7 slimme oplossingen</h1>
 
           <p className="section-intro">
             Dode hoeken in huis? Je hoeft niet meteen een nieuwe router te kopen.
@@ -80,11 +127,46 @@ export default function Page() {
             verlaagt de Wi-Fi druk en verhoogt stabiliteit.
           </p>
 
+          <h2>Conclusie</h2>
           <p>
-            Als je na deze stappen nog steeds dode hoeken hebt, is de kans groot
-            dat je woning (beton/vloerverwarming/verdiepingen) een mesh of access
-            points echt nodig heeft.
+            Begin altijd met de simpele fixes (routerplaatsing + 2.4 GHz kanaal
+            vast + firmware update). Heb je nog steeds dode hoeken? Dan is een
+            extra access point of mesh meestal de beste upgrade.
           </p>
+
+          <p>
+            Wil je je hele netwerk smart-home-proof maken?{" "}
+            <Link href="/tips/wifi-verbeteren-voor-smart-home">
+              Bekijk de 10 Wi-Fi tips →
+            </Link>
+          </p>
+
+          <hr />
+
+          <h2>Gerelateerde tips</h2>
+          <ul>
+            <li>
+              <Link href="/tips/wifi-verbeteren-voor-smart-home">
+                Wi-Fi verbeteren voor smart home (10 tips)
+              </Link>
+            </li>
+            <li>
+              <Link href="/tips/2-4ghz-vs-5ghz-smart-home">
+                2.4 GHz vs 5 GHz voor smart home
+              </Link>
+            </li>
+            <li>
+              <Link href="/tips/smart-home-apparaat-koppelt-niet-wifi">
+                Smart home apparaat koppelt niet met Wi-Fi?
+              </Link>
+            </li>
+          </ul>
+
+          {/* ✅ Structured data */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+          />
         </div>
       </main>
 
