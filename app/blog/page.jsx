@@ -15,7 +15,9 @@ export const metadata = {
 
 export default function BlogOverviewPage() {
   // ✅ Alleen public posts tonen
-  const posts = (Array.isArray(blogPosts) ? blogPosts : []).filter((p) => p?.available);
+  const posts = (Array.isArray(blogPosts) ? blogPosts : []).filter(
+    (p) => p?.available
+  );
 
   return (
     <>
@@ -23,11 +25,25 @@ export default function BlogOverviewPage() {
 
       <main className="section">
         <div className="container article">
-          <h1>Blog</h1>
-          <p className="section-intro">
-            Hier delen we handige uitleg, vergelijkingen en koopgidsen over smart
-            home. Praktisch, duidelijk en zonder marketingpraat.
-          </p>
+          {/* ✅ Blog header afbeelding */}
+          <div className="blog-hero">
+            <Image
+              src="/images/blog/blog-header.png"
+              alt="SlimHuisWonen blog"
+              fill
+              priority
+              className="blog-hero__img"
+              sizes="(max-width: 980px) 100vw, 980px"
+            />
+            <div className="blog-hero__overlay" />
+            <div className="blog-hero__content">
+              <h1>Blog</h1>
+              <p className="section-intro">
+                Hier delen we handige uitleg, vergelijkingen en koopgidsen over
+                smart home. Praktisch, duidelijk en zonder marketingpraat.
+              </p>
+            </div>
+          </div>
 
           <div className="tips-grid">
             {posts.map((post) => (
@@ -47,7 +63,9 @@ export default function BlogOverviewPage() {
                       sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 33vw"
                     />
                     <div className="tip-card__overlay" />
-                    <div className="tip-card__badge">{post.category || "Blog"}</div>
+                    <div className="tip-card__badge">
+                      {post.category || "Blog"}
+                    </div>
                     <div className="tip-card__imgTitle">{post.title}</div>
                   </div>
                 )}
