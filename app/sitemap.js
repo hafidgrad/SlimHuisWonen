@@ -1,10 +1,12 @@
 import { getAllProducts } from "@/data/products";
 import { tips } from "@/data/tips";
+import { blogPosts } from "@/data/blog";
 
 export default function sitemap() {
   const baseUrl = "https://slimhuiswonen.nl";
   const lastModified = new Date();
 
+  // ✅ Statische routes
   const staticRoutes = [
     "",
     "/producten",
@@ -18,7 +20,8 @@ export default function sitemap() {
     lastModified,
   }));
 
-  const allProducts = getAllProducts?.();
+  // ✅ Product routes (veilig)
+  const allProducts = typeof getAllProducts === "function" ? getAllProducts() : [];
   const productsArray = Array.isArray(allProducts) ? allProducts : [];
 
   const productRoutes = productsArray
@@ -28,6 +31,7 @@ export default function sitemap() {
       lastModified,
     }));
 
+  // ✅ Tips routes (alleen available: true)
   const tipsArray = Array.isArray(tips) ? tips : [];
 
   const tipRoutes = tipsArray
@@ -37,14 +41,15 @@ export default function sitemap() {
       lastModified,
     }));
 
-  const blogRoutes = [
-    "/blog/wat-is-zigbee",
-    "/blog/aqara-vs-tapo",
-    "/blog/beste-slimme-stekkers",
-  ].map((path) => ({
-    url: `${baseUrl}${path}`,
-    lastModified,
-  }));
+  // ✅ Blog routes (alleen available: true)
+  const blogArray = Array.isArray(blogPosts) ? blogPosts : [];
+
+  const blogRoutes = blogArray
+    .filter((b) => b?.available && b?.slug)
+    .map((b) => ({
+      url: `${baseUrl}/blog/${b.slug}`,
+      lastModified,
+    }));
 
   return [...staticRoutes, ...productRoutes, ...tipRoutes, ...blogRoutes];
 }

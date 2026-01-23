@@ -1,38 +1,21 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Image from "next/image";
+import { blogPosts } from "@/data/blog";
 
 export const metadata = {
   title: "Blog – SlimHuisWonen.nl",
   description:
-    "Smart home blog met handige uitleg, vergelijkingen en koopgidsen over slimme verlichting, hubs, Zigbee en meer.",
+    "Smart home blog met handige uitleg, vergelijkingen en koopgidsen over slimme verlichting, hubs, Zigbee, Matter en meer.",
   alternates: {
     canonical: "https://slimhuiswonen.nl/blog",
   },
 };
 
 export default function BlogOverviewPage() {
-  // 👉 Later kunnen we dit dynamisch maken, maar nu eerst stabiel en simpel
-  const posts = [
-    {
-      title: "Aqara vs Tapo: wat past bij jou?",
-      href: "/blog/aqara-vs-tapo",
-      description:
-        "Vergelijk Aqara en TP-Link Tapo: verschillen, voordelen en wat het beste past bij jouw smart home.",
-    },
-    {
-      title: "Beste slimme stekkers (koopgids)",
-      href: "/blog/beste-slimme-stekkers",
-      description:
-        "Welke slimme stekker moet je kiezen? Dit zijn de beste opties + waar je op moet letten.",
-    },
-    {
-      title: "Wat is Zigbee?",
-      href: "/blog/wat-is-zigbee",
-      description:
-        "Uitleg over Zigbee: wat het is, hoe het werkt en waarom het vaak beter is dan wifi voor smart home.",
-    },
-  ];
+  // ✅ Alleen public posts tonen
+  const posts = (Array.isArray(blogPosts) ? blogPosts : []).filter((p) => p?.available);
 
   return (
     <>
@@ -46,27 +29,40 @@ export default function BlogOverviewPage() {
             home. Praktisch, duidelijk en zonder marketingpraat.
           </p>
 
-          <div style={{ display: "grid", gap: "1rem", marginTop: "1.5rem" }}>
+          <div className="tips-grid">
             {posts.map((post) => (
-              <article
-                key={post.href}
-                style={{
-                  padding: "1.25rem",
-                  border: "1px solid rgba(255,255,255,0.08)",
-                  borderRadius: "16px",
-                }}
+              <Link
+                key={post.slug}
+                href={`/blog/${post.slug}`}
+                className="tip-card tip-card--media"
               >
-                <h2 style={{ marginBottom: "0.35rem" }}>
-                  <Link href={post.href}>{post.title}</Link>
-                </h2>
-                <p className="muted" style={{ margin: 0 }}>
-                  {post.description}
-                </p>
+                {/* ✅ Image header zoals tips */}
+                {post.image && (
+                  <div className="tip-card__imageWrap">
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      fill
+                      className="tip-card__image"
+                      sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 33vw"
+                    />
+                    <div className="tip-card__overlay" />
+                    <div className="tip-card__badge">{post.category || "Blog"}</div>
+                    <div className="tip-card__imgTitle">{post.title}</div>
+                  </div>
+                )}
 
-                <p style={{ marginTop: "0.75rem" }}>
-                  <Link href={post.href}>Lees artikel →</Link>
-                </p>
-              </article>
+                <div className="tip-card__content">
+                  <h2 className="tip-card__title">{post.title}</h2>
+                  {post.description && (
+                    <p className="tip-card__desc">{post.description}</p>
+                  )}
+
+                  <span className="tip-card__cta">
+                    Lees artikel <span aria-hidden="true">→</span>
+                  </span>
+                </div>
+              </Link>
             ))}
           </div>
 
