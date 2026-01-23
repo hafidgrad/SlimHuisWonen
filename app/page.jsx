@@ -91,6 +91,34 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* ✅ Blog – banner + CTA (zoals tips, zonder blur) */}
+        <section className="section">
+          <div className="container">
+            {/* ✅ Clickable banner */}
+            <Link href="/blog" className="banner-center blog-banner-link">
+              <div className="categorie-banner blog-banner">
+                <img
+                  src="/images/blog/blog-header.png"
+                  alt="SlimHuisWonen blog"
+                  className="banner-img"
+                />
+              </div>
+            </Link>
+
+            <h2>Blog</h2>
+
+            <p className="section-intro">
+              Uitleg, vergelijkingen en koopgidsen over Zigbee, Matter, slimme
+              stekkers, hubs en verlichting. Praktisch, duidelijk en zonder
+              marketingpraat.
+            </p>
+
+            <Link href="/blog" className="btn btn-primary">
+              Bekijk alle blogs →
+            </Link>
+          </div>
+        </section>
+
         <Contact />
       </main>
 
