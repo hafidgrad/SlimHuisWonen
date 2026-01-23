@@ -5,7 +5,6 @@ export default function sitemap() {
   const baseUrl = "https://slimhuiswonen.nl";
   const lastModified = new Date();
 
-  // ✅ Statische pagina’s
   const staticRoutes = [
     "",
     "/producten",
@@ -19,7 +18,6 @@ export default function sitemap() {
     lastModified,
   }));
 
-  // ✅ Product pagina’s (veilig)
   const allProducts = getAllProducts?.();
   const productsArray = Array.isArray(allProducts) ? allProducts : [];
 
@@ -30,7 +28,6 @@ export default function sitemap() {
       lastModified,
     }));
 
-  // ✅ Tip pagina’s (alleen available === true) (veilig)
   const tipsArray = Array.isArray(tips) ? tips : [];
 
   const tipRoutes = tipsArray
@@ -40,7 +37,6 @@ export default function sitemap() {
       lastModified,
     }));
 
-  // ✅ Blog pagina’s (hardcoded lijst — later kunnen we dit dynamisch maken)
   const blogRoutes = [
     "/blog/wat-is-zigbee",
     "/blog/aqara-vs-tapo",
