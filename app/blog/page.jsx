@@ -25,25 +25,37 @@ export default function BlogOverviewPage() {
 
       <main className="section">
         <div className="container article">
-          {/* ✅ Blog header afbeelding */}
-          <div className="blog-hero">
-            <Image
-              src="/images/blog/blog-header.png"
-              alt="SlimHuisWonen blog"
-              fill
-              priority
-              className="blog-hero__img"
-              sizes="(max-width: 980px) 100vw, 980px"
+          {/* ✅ Blog header banner (blur zoals TipBanner) */}
+          <div
+            className="blogBanner"
+            style={{ "--blog-bg": "url(/images/blog/blog-header.png)" }}
+          >
+            <div
+              className="blogBannerBlur blogBannerBlurLeft"
+              style={{ backgroundImage: "var(--blog-bg)" }}
             />
-            <div className="blog-hero__overlay" />
-            <div className="blog-hero__content">
-              <h1>Blog</h1>
-              <p className="section-intro">
-                Hier delen we handige uitleg, vergelijkingen en koopgidsen over
-                smart home. Praktisch, duidelijk en zonder marketingpraat.
-              </p>
+            <div
+              className="blogBannerBlur blogBannerBlurRight"
+              style={{ backgroundImage: "var(--blog-bg)" }}
+            />
+
+            <div className="blogBannerInner">
+              <Image
+                src="/images/blog/blog-header.png"
+                alt="SlimHuisWonen blog"
+                width={1400}
+                height={520}
+                priority
+                className="blogBannerImg"
+              />
             </div>
           </div>
+
+          <h1>Blog</h1>
+          <p className="section-intro">
+            Hier delen we handige uitleg, vergelijkingen en koopgidsen over smart
+            home. Praktisch, duidelijk en zonder marketingpraat.
+          </p>
 
           <div className="tips-grid">
             {posts.map((post) => (
@@ -72,6 +84,7 @@ export default function BlogOverviewPage() {
 
                 <div className="tip-card__content">
                   <h2 className="tip-card__title">{post.title}</h2>
+
                   {post.description && (
                     <p className="tip-card__desc">{post.description}</p>
                   )}

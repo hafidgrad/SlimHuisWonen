@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "Wat is Zigbee? Uitleg voor smart home (plus voordelen/nadelen) – 2026",
@@ -50,11 +51,38 @@ export default function WatIsZigbeeBlogPage() {
 
       <main className="section">
         <div className="container article">
+          {/* ✅ Blog banner met blur effect */}
+          <div
+            className="blogBanner"
+            style={{ "--blog-bg": "url(/images/blog/wat-is-zigbee.png)" }}
+          >
+            <div
+              className="blogBannerBlur blogBannerBlurLeft"
+              style={{ backgroundImage: "var(--blog-bg)" }}
+            />
+            <div
+              className="blogBannerBlur blogBannerBlurRight"
+              style={{ backgroundImage: "var(--blog-bg)" }}
+            />
+
+            <div className="blogBannerInner">
+              <Image
+                src="/images/blog/wat-is-zigbee.png"
+                alt="Wat is Zigbee?"
+                width={1400}
+                height={520}
+                priority
+                className="blogBannerImg"
+              />
+            </div>
+          </div>
+
           {/* ✅ Cluster navigatie */}
           <p className="muted small" style={{ marginBottom: "0.75rem" }}>
             Gerelateerd:{" "}
             <Link href="/tips/wat-is-een-smart-home-hub">Smart home hub</Link> •{" "}
-            <Link href="/tips/wat-is-slimme-verlichting">Slimme verlichting</Link> •{" "}
+            <Link href="/tips/wat-is-slimme-verlichting">Slimme verlichting</Link>{" "}
+            •{" "}
             <Link href="/tips/merken-combineren-zonder-gedoe">
               Merken combineren
             </Link>

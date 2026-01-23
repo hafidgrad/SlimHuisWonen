@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "Home Assistant vs Homey: wat is beter? (2026 vergelijking)",
@@ -58,6 +59,32 @@ export default function HomeAssistantVsHomeyPage() {
 
       <main className="section">
         <div className="container article">
+          {/* ✅ Blog banner met blur effect */}
+          <div
+            className="blogBanner"
+            style={{ "--blog-bg": "url(/images/blog/home-assistant-vs-homey.png)" }}
+          >
+            <div
+              className="blogBannerBlur blogBannerBlurLeft"
+              style={{ backgroundImage: "var(--blog-bg)" }}
+            />
+            <div
+              className="blogBannerBlur blogBannerBlurRight"
+              style={{ backgroundImage: "var(--blog-bg)" }}
+            />
+
+            <div className="blogBannerInner">
+              <Image
+                src="/images/blog/home-assistant-vs-homey.png"
+                alt="Home Assistant vs Homey"
+                width={1400}
+                height={520}
+                priority
+                className="blogBannerImg"
+              />
+            </div>
+          </div>
+
           {/* ✅ Cluster navigatie */}
           <p className="muted small" style={{ marginBottom: "0.75rem" }}>
             Onderdeel van:{" "}

@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "Beste slimme stekkers (koopgids) – 2026",
@@ -49,6 +50,32 @@ export default function BesteSlimmeStekkersPage() {
 
       <main className="section">
         <div className="container article">
+          {/* ✅ Blog banner met blur effect */}
+          <div
+            className="blogBanner"
+            style={{ "--blog-bg": "url(/images/blog/beste-slimme-stekkers.png)" }}
+          >
+            <div
+              className="blogBannerBlur blogBannerBlurLeft"
+              style={{ backgroundImage: "var(--blog-bg)" }}
+            />
+            <div
+              className="blogBannerBlur blogBannerBlurRight"
+              style={{ backgroundImage: "var(--blog-bg)" }}
+            />
+
+            <div className="blogBannerInner">
+              <Image
+                src="/images/blog/beste-slimme-stekkers.png"
+                alt="Beste slimme stekkers (koopgids)"
+                width={1400}
+                height={520}
+                priority
+                className="blogBannerImg"
+              />
+            </div>
+          </div>
+
           <p className="muted small" style={{ marginBottom: "0.75rem" }}>
             Handig om te lezen:{" "}
             <Link href="/tips/beginnen-met-smart-home">
@@ -96,9 +123,7 @@ export default function BesteSlimmeStekkersPage() {
           </p>
 
           <h2>Onze aanraders</h2>
-          <p className="muted">
-            (Tip: jij kunt hier later affiliate-producten in zetten.)
-          </p>
+          <p className="muted">(Tip: jij kunt hier later affiliate-producten in zetten.)</p>
 
           <ul>
             <li>

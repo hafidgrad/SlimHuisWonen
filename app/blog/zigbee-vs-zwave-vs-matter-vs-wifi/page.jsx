@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "Zigbee vs Z-Wave vs Matter vs Wi-Fi: wat moet je kiezen? (2026)",
@@ -59,6 +60,35 @@ export default function VergelijkingSmartHomeProtocollenPage() {
 
       <main className="section">
         <div className="container article">
+          {/* ✅ Blog banner met blur effect */}
+          <div
+            className="blogBanner"
+            style={{
+              "--blog-bg":
+                "url(/images/blog/zigbee-vs-zwave-vs-matter-vs-wifi.png)",
+            }}
+          >
+            <div
+              className="blogBannerBlur blogBannerBlurLeft"
+              style={{ backgroundImage: "var(--blog-bg)" }}
+            />
+            <div
+              className="blogBannerBlur blogBannerBlurRight"
+              style={{ backgroundImage: "var(--blog-bg)" }}
+            />
+
+            <div className="blogBannerInner">
+              <Image
+                src="/images/blog/zigbee-vs-zwave-vs-matter-vs-wifi.png"
+                alt="Zigbee vs Z-Wave vs Matter vs Wi-Fi"
+                width={1400}
+                height={520}
+                priority
+                className="blogBannerImg"
+              />
+            </div>
+          </div>
+
           {/* ✅ Cluster navigatie */}
           <p className="muted small" style={{ marginBottom: "0.75rem" }}>
             Onderdeel van:{" "}
@@ -252,9 +282,7 @@ export default function VergelijkingSmartHomeProtocollenPage() {
           </p>
 
           <h3>Is Matter een protocol?</h3>
-          <p>
-            Nee, Matter is een standaard. Het werkt vaak via Wi-Fi of Thread.
-          </p>
+          <p>Nee, Matter is een standaard. Het werkt vaak via Wi-Fi of Thread.</p>
 
           <h3>Moet ik alles vervangen voor Matter?</h3>
           <p>

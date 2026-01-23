@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "Aqara vs Tapo: wat is beter voor jouw smart home? – 2026",
@@ -49,6 +50,32 @@ export default function AqaraVsTapoPage() {
 
       <main className="section">
         <div className="container article">
+          {/* ✅ Blog banner met blur effect */}
+          <div
+            className="blogBanner"
+            style={{ "--blog-bg": "url(/images/blog/aqara-vs-tapo.png)" }}
+          >
+            <div
+              className="blogBannerBlur blogBannerBlurLeft"
+              style={{ backgroundImage: "var(--blog-bg)" }}
+            />
+            <div
+              className="blogBannerBlur blogBannerBlurRight"
+              style={{ backgroundImage: "var(--blog-bg)" }}
+            />
+
+            <div className="blogBannerInner">
+              <Image
+                src="/images/blog/aqara-vs-tapo.png"
+                alt="Aqara vs Tapo"
+                width={1400}
+                height={520}
+                priority
+                className="blogBannerImg"
+              />
+            </div>
+          </div>
+
           <p className="muted small" style={{ marginBottom: "0.75rem" }}>
             Gerelateerd:{" "}
             <Link href="/tips/merken-combineren-zonder-gedoe">
@@ -157,9 +184,7 @@ export default function AqaraVsTapoPage() {
           </p>
 
           <h3>Heb je bij Aqara een hub nodig?</h3>
-          <p>
-            Vaak wel, omdat veel Aqara sensoren via Zigbee werken.
-          </p>
+          <p>Vaak wel, omdat veel Aqara sensoren via Zigbee werken.</p>
 
           <h3>Is Tapo geschikt voor veel apparaten?</h3>
           <p>
