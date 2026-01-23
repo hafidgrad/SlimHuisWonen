@@ -1,5 +1,5 @@
 import { getAllProducts } from "@/data/products";
-import tips from "@/data/tips";
+import { tips } from "@/data/tips";
 
 export default function sitemap() {
   const baseUrl = "https://slimhuiswonen.nl";
@@ -19,17 +19,26 @@ export default function sitemap() {
     lastModified,
   }));
 
-  // ✅ Product pagina’s
-  const productRoutes = getAllProducts().map((p) => ({
-    url: `${baseUrl}/producten/${p.slug}`,
-    lastModified,
-  }));
+  // ✅ Product pagina’s (veilig)
+  const allProducts = getAllProducts?.();
+  const productsArray = Array.isArray(allProducts) ? allProducts : [];
 
-  // ✅ Tip pagina’s (uit data/tips.js)
-  const tipRoutes = (tips || []).map((t) => ({
-    url: `${baseUrl}/tips/${t.slug}`,
-    lastModified,
-  }));
+  const productRoutes = productsArray
+    .filter((p) => p?.slug)
+    .map((p) => ({
+      url: `${baseUrl}/producten/${p.slug}`,
+      lastModified,
+    }));
+
+  // ✅ Tip pagina’s (alleen available === true) (veilig)
+  const tipsArray = Array.isArray(tips) ? tips : [];
+
+  const tipRoutes = tipsArray
+    .filter((t) => t?.available && t?.slug)
+    .map((t) => ({
+      url: `${baseUrl}/tips/${t.slug}`,
+      lastModified,
+    }));
 
   // ✅ Blog pagina’s (hardcoded lijst — later kunnen we dit dynamisch maken)
   const blogRoutes = [
