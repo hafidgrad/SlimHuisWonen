@@ -4,9 +4,9 @@ import Link from "next/link";
 import TipBanner from "@/components/TipBanner";
 
 export const metadata = {
-  title: "Merken combineren zonder gedoe",
+  title: "Smart home merken combineren zonder gedoe (Hue, Aqara, Tapo) – 2026",
   description:
-    "Philips Hue, Ikea, Aqara, Tapo en meer combineren? Zo laat je verschillende smart home merken probleemloos samenwerken.",
+    "Verschillende smart home merken combineren zoals Philips Hue, Aqara, IKEA Tradfri en TP-Link Tapo? Zo laat je alles samenwerken via één app met of zonder hub.",
   alternates: {
     canonical: "https://slimhuiswonen.nl/tips/merken-combineren-zonder-gedoe",
   },
@@ -16,17 +16,68 @@ export default function MerkenCombinerenZonderGedoe() {
   const tipImg =
     "/images/Tips%20%26%20uitleg/Merken%20combineren%20zonder%20gedoe.png";
 
+  // ✅ FAQ schema (structured data) — helpt bij rich results in Google
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Kun je smart home merken combineren?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja, je kunt smart home merken prima combineren. De beste manier is om alles samen te brengen via één centrale hub (zoals Homey of Home Assistant) zodat apparaten van verschillende merken samen kunnen automatiseren.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Heb je altijd een hub nodig om merken te combineren?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nee. Als je het simpel houdt (bijvoorbeeld alleen wifi-producten) kun je zonder hub werken. Maar zodra je merken écht wilt combineren met gezamenlijke automatiseringen, is een hub vrijwel altijd de beste keuze.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Welke merken werken goed samen?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Veel populaire merken zijn goed te combineren, zoals Philips Hue, Aqara, IKEA Tradfri en TP-Link Tapo. Vooral via een hub kun je ze probleemloos aan elkaar koppelen in één app en één automatisering.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Wat is het voordeel van Zigbee bij merken combineren?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Zigbee is een stabiel protocol speciaal voor smart home. Apparaten bouwen samen een mesh-netwerk waardoor verbinding vaak betrouwbaarder is dan wifi. Veel merken gebruiken Zigbee (zoals Hue, IKEA en Aqara).",
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <Header />
 
       <main className="section">
-  {/* ✅ Banner netjes in dezelfde breedte als site */}
-  <div className="container" style={{ marginBottom: "1.25rem" }}>
-    <TipBanner src={tipImg} alt="merken combineren zonder gedoe" />
-  </div>
+        {/* ✅ Banner netjes in dezelfde breedte als site */}
+        <div className="container" style={{ marginBottom: "1.25rem" }}>
+          <TipBanner src={tipImg} alt="merken combineren zonder gedoe" />
+        </div>
 
-  <div className="container article">
+        <div className="container article">
+          {/* ✅ Pillar link / topic cluster */}
+          <p className="muted small" style={{ marginBottom: "0.75rem" }}>
+            Onderdeel van:{" "}
+            <Link href="/tips/beginnen-met-smart-home">
+              Smart home starten (basis)
+            </Link>{" "}
+            •{" "}
+            <Link href="/tips/wat-is-een-smart-home-hub">
+              Smart home hubs
+            </Link>
+          </p>
 
           <h1>Merken combineren zonder gedoe</h1>
 
@@ -108,6 +159,14 @@ export default function MerkenCombinerenZonderGedoe() {
             .
           </p>
 
+          <h3>Tip: Zigbee maakt combineren makkelijker</h3>
+          <p>
+            Veel apparaten van Hue, IKEA en Aqara werken via Zigbee. Dat is vaak
+            stabieler dan wifi en ideaal als je verschillende merken wilt
+            koppelen.{" "}
+            <Link href="/blog/wat-is-zigbee">Lees hier wat Zigbee is</Link>.
+          </p>
+
           <h2>Voorbeeld: slim combineren in de praktijk</h2>
 
           <p>Stel je voor:</p>
@@ -153,10 +212,61 @@ export default function MerkenCombinerenZonderGedoe() {
 
           <hr />
 
+          {/* ✅ Gerelateerde tips blok (interne links) */}
+          <h2>Gerelateerde tips</h2>
+          <ul>
+            <li>
+              <Link href="/tips/wat-is-een-smart-home-hub">
+                Wat is een smart home hub?
+              </Link>
+            </li>
+            <li>
+              <Link href="/tips/slim-huis-zonder-hub">
+                Slim huis zonder hub: wanneer kan dat?
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog/aqara-vs-tapo">Aqara vs Tapo: wat past bij jou?</Link>
+            </li>
+            <li>
+              <Link href="/blog/wat-is-zigbee">Wat is Zigbee?</Link>
+            </li>
+          </ul>
+
+          {/* ✅ FAQ sectie (ook voor bezoekers) */}
+          <h2>Veelgestelde vragen</h2>
+          <h3>Kun je smart home merken combineren?</h3>
+          <p>
+            Ja. De beste aanpak is om alles te verbinden via één centrale plek
+            (liefst een hub), zodat merken samenwerken in één automatisering.
+          </p>
+
+          <h3>Heb je altijd een hub nodig?</h3>
+          <p>
+            Nee. Voor simpele wifi-producten kan het zonder hub. Voor echte
+            merk-combinaties (Hue + Aqara + IKEA) is een hub meestal de beste
+            keuze.
+          </p>
+
+          <h3>Welke rol speelt Zigbee?</h3>
+          <p>
+            Zigbee is een stabiele smart home verbinding die vaak betrouwbaarder
+            is dan wifi. Veel grote merken ondersteunen Zigbee, waardoor
+            combineren makkelijker wordt.
+          </p>
+
+          <hr />
+
           <p className="muted small">
             *Voorbeelden zijn gebaseerd op populaire merken en veelgebruikte
             scenario’s.
           </p>
+
+          {/* ✅ Structured data inject */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+          />
         </div>
       </main>
 

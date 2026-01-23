@@ -4,9 +4,9 @@ import Link from "next/link";
 import TipBanner from "@/components/TipBanner";
 
 export const metadata = {
-  title: "Wat is een smart home hub?",
+  title: "Wat is een smart home hub? (+ wanneer je er één nodig hebt) – 2026",
   description:
-    "Wat is een smart home hub en heb je er één nodig? We leggen uit wat een hub doet, wanneer hij handig is en wanneer niet.",
+    "Wat is een smart home hub en heb je er één nodig? Lees wat een hub doet, wat het verschil is met wifi, en wanneer Homey/Home Assistant of Hue Bridge handig is.",
   alternates: {
     canonical: "https://slimhuiswonen.nl/tips/wat-is-een-smart-home-hub",
   },
@@ -16,17 +16,69 @@ export default function WatIsEenSmartHomeHub() {
   const tipImg =
     "/images/Tips%20%26%20uitleg/Wat%20is%20een%20smart%20home%20hub.png";
 
+  // ✅ FAQ schema (structured data) — helpt bij rich results in Google
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Wat is een smart home hub?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Een smart home hub is een centraal systeem dat slimme apparaten met elkaar verbindt. In plaats van losse apps per merk beheer je alles op één plek en kun je merken combineren in één automatisering.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Heb je altijd een smart home hub nodig?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nee. Als je alleen wifi-producten gebruikt (zoals sommige slimme stekkers) of maar één merk hebt, kun je prima zonder hub starten. Een hub wordt vooral interessant als je meerdere merken wilt combineren of met sensoren wilt automatiseren.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Waarom gebruiken veel smart home apparaten Zigbee of Z-Wave?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Veel apparaten gebruiken Zigbee of Z-Wave omdat deze protocollen energiezuinig, stabiel en snel zijn. Je hebt vaak een hub nodig om Zigbee/Z-Wave apparaten te koppelen aan je smart home systeem.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Welke smart home hubs zijn populair?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Bekende hubs zijn Homey, Home Assistant, Samsung SmartThings en de Philips Hue Bridge (voor verlichting). Welke het beste is hangt af van je wensen en merken.",
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <Header />
 
       <main className="section">
-  {/* ✅ Banner netjes in dezelfde breedte als site */}
-  <div className="container" style={{ marginBottom: "1.25rem" }}>
-    <TipBanner src={tipImg} alt="Wat is een smart home hub" />
-  </div>
+        {/* ✅ Banner netjes in dezelfde breedte als site */}
+        <div className="container" style={{ marginBottom: "1.25rem" }}>
+          <TipBanner src={tipImg} alt="Wat is een smart home hub" />
+        </div>
 
-  <div className="container article">
+        <div className="container article">
+          {/* ✅ Topic cluster / smart home basis */}
+          <p className="muted small" style={{ marginBottom: "0.75rem" }}>
+            Onderdeel van:{" "}
+            <Link href="/tips/beginnen-met-smart-home">
+              Beginnen met smart home
+            </Link>{" "}
+            •{" "}
+            <Link href="/tips/merken-combineren-zonder-gedoe">
+              Merken combineren
+            </Link>
+          </p>
+
           <h1>Wat is een smart home hub?</h1>
 
           <p className="section-intro">
@@ -45,31 +97,44 @@ export default function WatIsEenSmartHomeHub() {
 
           <ul>
             <li>Verbindt apparaten van verschillende merken</li>
-            <li>Maakt geavanceerde automatiseringen mogelijk</li>
-            <li>Zorgt dat apparaten lokaal met elkaar praten</li>
+            <li>Maakt automatiseringen en routines mogelijk</li>
+            <li>Zorgt dat apparaten lokaal met elkaar kunnen communiceren</li>
           </ul>
+
+          <p>
+            Wil je dus merken combineren (bijvoorbeeld Hue + Aqara + Tapo)? Dan is
+            een hub meestal de beste stap.{" "}
+            <Link href="/tips/merken-combineren-zonder-gedoe">
+              Lees hier hoe je merken combineert zonder gedoe
+            </Link>
+            .
+          </p>
 
           <h2>Waarom gebruiken merken een hub?</h2>
 
           <p>
-            Veel slimme apparaten gebruiken geen wifi, maar protocollen zoals
-            Zigbee of Z-Wave. Deze zijn:
+            Veel slimme apparaten gebruiken geen wifi, maar protocollen zoals{" "}
+            <strong>Zigbee</strong> of <strong>Z-Wave</strong>. Deze zijn:
           </p>
 
           <ul>
-            <li>Energiezuinig</li>
-            <li>Betrouwbaar</li>
-            <li>Sneller dan wifi</li>
+            <li>Energiezuinig (ideaal voor sensoren op batterij)</li>
+            <li>Betrouwbaar en stabiel</li>
+            <li>Vaak sneller dan wifi</li>
           </ul>
 
-          <p>Een hub is nodig om deze apparaten met je netwerk en apps te verbinden.</p>
+          <p>
+            Een hub is nodig om Zigbee/Z-Wave apparaten met je netwerk en apps te
+            verbinden.{" "}
+            <Link href="/blog/wat-is-zigbee">Lees hier wat Zigbee is</Link>.
+          </p>
 
           <h2>Voorbeelden van populaire hubs</h2>
 
           <ul>
-            <li>Philips Hue Bridge</li>
-            <li>Homey</li>
-            <li>Home Assistant</li>
+            <li>Philips Hue Bridge (voor Hue verlichting)</li>
+            <li>Homey (voor veel merken en automatiseringen)</li>
+            <li>Home Assistant (meest uitgebreid, iets technischer)</li>
             <li>Samsung SmartThings</li>
           </ul>
 
@@ -137,10 +202,61 @@ export default function WatIsEenSmartHomeHub() {
 
           <hr />
 
+          {/* ✅ Gerelateerde tips / interne links */}
+          <h2>Gerelateerde tips</h2>
+          <ul>
+            <li>
+              <Link href="/tips/merken-combineren-zonder-gedoe">
+                Merken combineren zonder gedoe
+              </Link>
+            </li>
+            <li>
+              <Link href="/tips/slim-huis-zonder-hub">
+                Slim huis zonder hub: wanneer kan dat?
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog/wat-is-zigbee">Wat is Zigbee?</Link>
+            </li>
+            <li>
+              <Link href="/tips/beginnen-met-smart-home">
+                Beginnen met smart home in 5 stappen
+              </Link>
+            </li>
+          </ul>
+
+          {/* ✅ FAQ sectie (ook voor bezoekers) */}
+          <h2>Veelgestelde vragen</h2>
+          <h3>Wat is een smart home hub?</h3>
+          <p>
+            Een hub is een centraal systeem dat je apparaten samenbrengt in één
+            app. Zo kun je merken combineren en automatiseringen bouwen.
+          </p>
+
+          <h3>Heb je altijd een hub nodig?</h3>
+          <p>
+            Nee. Met alleen wifi-producten of één merk kun je prima zonder hub
+            starten. Voor meerdere merken en sensoren is een hub meestal wél handig.
+          </p>
+
+          <h3>Waarom Zigbee/Z-Wave?</h3>
+          <p>
+            Omdat deze protocollen stabiel en energiezuinig zijn. Ideaal voor
+            sensoren, schakelaars en apparaten die betrouwbaar moeten werken.
+          </p>
+
+          <hr />
+
           <p className="muted small">
             *De keuze voor een hub hangt af van je wensen, budget en
             toekomstplannen.
           </p>
+
+          {/* ✅ Structured data inject */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+          />
         </div>
       </main>
 

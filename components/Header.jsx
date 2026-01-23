@@ -25,6 +25,10 @@ export default function Header() {
 
           <Link href="/aanraders">Aanraders</Link>
           <Link href="/tips">Tips & uitleg</Link>
+
+          {/* ✅ Nieuw: Blog zichtbaar maken */}
+          <Link href="/blog">Blog</Link>
+
           <Link href="/contact">Contact</Link>
 
           <Link href="/producten" className="nav-highlight">
