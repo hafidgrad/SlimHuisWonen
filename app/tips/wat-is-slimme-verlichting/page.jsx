@@ -16,7 +16,7 @@ export default function WatIsSlimmeVerlichtingPage() {
   const tipImg =
     "/images/Tips%20%26%20uitleg/Wat%20is%20slimme%20verlichting.png";
 
-  // ✅ FAQ schema (structured data) — helpt bij rich results in Google
+  // ✅ FAQ schema
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -26,7 +26,7 @@ export default function WatIsSlimmeVerlichtingPage() {
         name: "Wat is slimme verlichting?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Slimme verlichting is verlichting die je bedient via een app, schema’s, automatiseringen of spraak. Je kunt lampen op afstand aan/uit zetten, dimmen, kleuren aanpassen en routines maken voor extra comfort.",
+          text: "Slimme verlichting is verlichting die je bedient via een app, schema’s, automatiseringen of spraak. Je kunt lampen op afstand aan- en uitzetten, dimmen, kleuren aanpassen en routines instellen.",
         },
       },
       {
@@ -34,7 +34,7 @@ export default function WatIsSlimmeVerlichtingPage() {
         name: "Hoe werkt slimme verlichting?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Slimme verlichting werkt via wifi of via een hub/bridge (vaak Zigbee). Wifi-lampen verbinden direct met je router, terwijl Zigbee-lampen via een bridge/hub werken, wat vaak stabieler is voor grotere installaties.",
+          text: "Slimme verlichting werkt via wifi of via een hub/bridge (vaak Zigbee). Wifi-lampen verbinden direct met je router, terwijl Zigbee-lampen via een hub werken en meestal stabieler zijn.",
         },
       },
       {
@@ -42,7 +42,7 @@ export default function WatIsSlimmeVerlichtingPage() {
         name: "Heb je een hub nodig voor slimme verlichting?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Niet altijd. Voor simpele wifi-verlichting heb je geen hub nodig. Maar als je meerdere lampen hebt, betrouwbare automatiseringen wilt of merken wilt combineren, is een hub/bridge meestal aan te raden.",
+          text: "Niet altijd. Voor eenvoudige wifi-verlichting is geen hub nodig. Bij meerdere lampen, automatiseringen of het combineren van merken is een hub meestal aan te raden.",
         },
       },
       {
@@ -50,7 +50,7 @@ export default function WatIsSlimmeVerlichtingPage() {
         name: "Wat is beter: wifi of Zigbee verlichting?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Wifi is makkelijk om mee te beginnen, maar kan bij veel apparaten instabiel worden. Zigbee is vaak stabieler, sneller en schaalbaarder—vooral als je later uitbreidt met sensoren en automatiseringen.",
+          text: "Wifi is makkelijk om mee te starten. Zigbee is vaak stabieler, schaalbaarder en beter geschikt voor grotere installaties en automatiseringen.",
         },
       },
     ],
@@ -61,13 +61,13 @@ export default function WatIsSlimmeVerlichtingPage() {
       <Header />
 
       <main className="section">
-        {/* ✅ Banner netjes in dezelfde breedte als site */}
+        {/* ✅ Banner */}
         <div className="container" style={{ marginBottom: "1.25rem" }}>
           <TipBanner src={tipImg} alt="Wat is slimme verlichting?" />
         </div>
 
         <div className="container article">
-          {/* ✅ Topic cluster / slimme verlichting */}
+          {/* ✅ Topic cluster */}
           <p className="muted small" style={{ marginBottom: "0.75rem" }}>
             Onderdeel van:{" "}
             <Link href="/tips/beginnen-met-slimme-verlichting">
@@ -82,106 +82,105 @@ export default function WatIsSlimmeVerlichtingPage() {
           <h1>Wat is slimme verlichting?</h1>
 
           <p className="section-intro">
-            Slimme verlichting is verlichting die je niet alleen met een schakelaar
-            bedient, maar ook via een app, schema’s, automatiseringen of spraak.
-            Het is vaak de eerste stap richting een slim huis.
+            Slimme verlichting is verlichting die je niet alleen met een
+            wandschakelaar bedient, maar ook via een app, schema’s,
+            automatiseringen of spraak. Voor veel mensen is dit de eerste stap
+            richting een slim huis.
           </p>
 
           <h2>Wat maakt verlichting “slim”?</h2>
-
           <p>
-            Slimme verlichting is verbonden met internet of een hub. Daardoor kun je
-            lampen bedienen wanneer je wilt, automatisch laten reageren of combineren
-            met andere slimme apparaten.
+            Slimme verlichting is verbonden met internet of een hub. Daardoor
+            kun je lampen automatisch laten reageren op tijd, beweging of andere
+            slimme apparaten.
           </p>
 
           <ul>
-            <li>Aan- en uitzetten via een app</li>
-            <li>Timers en schema’s instellen</li>
-            <li>Dimmen of kleur aanpassen</li>
-            <li>Automatisch reageren op beweging of tijdstip</li>
+            <li>aan- en uitzetten via een app</li>
+            <li>timers en schema’s instellen</li>
+            <li>dimmen of kleuren aanpassen</li>
+            <li>automatisch reageren op tijdstip of beweging</li>
           </ul>
 
           <h2>Hoe werkt slimme verlichting?</h2>
-
           <p>
-            Er zijn verschillende manieren waarop slimme verlichting werkt. Dit bepaalt
-            ook hoe uitgebreid je systeem kan worden.
+            Er zijn twee veelgebruikte manieren waarop slimme verlichting werkt.
+            De keuze bepaalt hoe stabiel en uitbreidbaar je systeem is.
           </p>
 
           <h3>1. Wifi-verlichting</h3>
           <p>
-            Deze lampen verbinden direct met je wifi. Ze zijn goedkoop en eenvoudig,
-            maar minder geschikt voor grote installaties of huizen met zwakke wifi.
+            Wifi-lampen verbinden direct met je router. Ze zijn goedkoop en
+            eenvoudig om mee te beginnen, maar kunnen bij veel apparaten of
+            zwakke wifi instabiel worden.
           </p>
 
           <p>
-            👉 Heb je wifi-problemen met smart home?{" "}
+            Heb je vaak verbindingsproblemen?{" "}
             <Link href="/tips/wifi-verbeteren-voor-smart-home">
-              Lees hoe je wifi verbetert voor smart home
+              Zo verbeter je wifi voor smart home
             </Link>
             .
           </p>
 
-          <h3>2. Verlichting met hub (vaak Zigbee)</h3>
+          <h3>2. Verlichting met hub (meestal Zigbee)</h3>
           <p>
-            Systemen zoals Philips Hue of Aqara gebruiken een hub/bridge. Dit is vaak
-            stabieler, sneller en beter geschikt voor automatiseringen.
+            Systemen zoals Philips Hue en Aqara werken via een hub of bridge.
+            Dit is meestal stabieler, sneller en beter geschikt voor
+            automatiseringen en meerdere lampen.
           </p>
 
           <p>
-            Zigbee is een populair protocol voor verlichting en sensoren.{" "}
-            <Link href="/blog/wat-is-zigbee">Lees hier wat Zigbee is</Link>.
+            Zigbee is een veelgebruikt protocol voor verlichting en sensoren.{" "}
+            <Link href="/blog/wat-is-zigbee">Wat is Zigbee?</Link>
           </p>
 
           <h2>Heb je altijd een hub nodig?</h2>
           <p>
-            Nee. Voor eenvoudige toepassingen is een hub niet nodig. Wil je meerdere
-            merken combineren of automatiseringen maken met sensoren, dan is een hub
-            wel aan te raden.
+            Nee. Voor eenvoudige toepassingen kun je prima starten zonder hub.
+            Wil je meerdere ruimtes automatiseren, sensoren gebruiken of merken
+            combineren, dan is een hub sterk aan te raden.
           </p>
 
           <p>
-            Wil je precies weten wanneer je een hub nodig hebt?{" "}
+            Meer hierover?{" "}
             <Link href="/tips/wat-is-een-smart-home-hub">
-              Lees wat een smart home hub is
+              Wat doet een smart home hub precies?
             </Link>
-            .
           </p>
 
-          <h2>Veelgemaakte beginnersfout: lampen via schakelaar uitzetten</h2>
+          <h2>Veelgemaakte beginnersfout: schakelaars gebruiken</h2>
           <p>
-            Slimme lampen hebben vaak continu stroom nodig. Als je ze via de fysieke
-            schakelaar uitzet, kunnen ze “offline” lijken.{" "}
+            Slimme lampen hebben vaak continu stroom nodig. Zet je ze uit via de
+            fysieke schakelaar, dan lijken ze offline of kapot.{" "}
             <Link href="/tips/slimme-lamp-werkt-niet-met-schakelaar">
-              Lees waarom slimme lampen niet goed werken met een schakelaar
+              Daarom werken slimme lampen niet goed met een schakelaar
             </Link>
             .
           </p>
 
           <h2>Conclusie</h2>
           <p>
-            Slimme verlichting is een eenvoudige en betaalbare manier om je huis slimmer
-            te maken. Je kunt starten met wifi-lampen, maar als je later wilt uitbreiden
-            (meerdere ruimtes, sensoren, routines) is Zigbee met een hub vaak de beste
-            keuze.
+            Slimme verlichting is een laagdrempelige manier om je huis slimmer
+            te maken. Je kunt starten met wifi-lampen, maar als je later wilt
+            uitbreiden met meerdere lampen, sensoren en automatiseringen, is
+            Zigbee met een hub vaak de beste keuze.
           </p>
 
           <p>
-            Wil je meteen starten?{" "}
+            Klaar om te beginnen?{" "}
             <Link href="/tips/beginnen-met-slimme-verlichting">
-              Volg ons stappenplan voor beginners →
+              Volg het stappenplan voor slimme verlichting →
             </Link>
           </p>
 
           <hr />
 
-          {/* ✅ Gerelateerde tips / interne links */}
           <h2>Gerelateerde tips</h2>
           <ul>
             <li>
               <Link href="/tips/beginnen-met-slimme-verlichting">
-                Beginnen met slimme verlichting (stappenplan)
+                Beginnen met slimme verlichting
               </Link>
             </li>
             <li>
@@ -204,35 +203,6 @@ export default function WatIsSlimmeVerlichtingPage() {
             </li>
           </ul>
 
-          {/* ✅ FAQ sectie (ook voor bezoekers) */}
-          <h2>Veelgestelde vragen</h2>
-          <h3>Wat is slimme verlichting?</h3>
-          <p>
-            Slimme verlichting is verlichting die je via een app, schema’s of spraak
-            kunt bedienen. Je kunt ook automatiseringen instellen zoals licht bij
-            zonsondergang.
-          </p>
-
-          <h3>Wifi of Zigbee: wat is beter?</h3>
-          <p>
-            Wifi is makkelijk om mee te beginnen. Zigbee is meestal stabieler en beter
-            als je later wilt uitbreiden met sensoren en routines.
-          </p>
-
-          <h3>Heb ik een hub nodig?</h3>
-          <p>
-            Niet altijd, maar het is vaak wel aan te raden als je meerdere lampen hebt
-            of merken wilt combineren.
-          </p>
-
-          <hr />
-
-          <p className="muted small">
-            *Let op: de beste keuze hangt af van je woning, wifi-kwaliteit en hoeveel
-            lampen je wilt gebruiken.
-          </p>
-
-          {/* ✅ Structured data inject */}
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

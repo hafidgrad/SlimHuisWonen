@@ -4,7 +4,8 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Wi-Fi verbeteren voor smart home: 10 tips voor een stabiel slim huis",
+  title:
+    "Wi-Fi verbeteren voor smart home (10 tips voor stabiel slim huis) – 2026",
   description:
     "Smart home valt offline of reageert traag? Verbeter je Wi-Fi met 10 praktische tips: 2.4GHz vs 5GHz, mesh, kanaalkeuze, router-instellingen en vaste IP’s.",
   alternates: {
@@ -34,7 +35,7 @@ export default function Page() {
         name: "Is 2.4 GHz beter dan 5 GHz voor smart home?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Voor veel smart home apparaten wel: 2.4 GHz heeft meer bereik en gaat beter door muren. 5 GHz is sneller, maar heeft minder bereik en is beter voor telefoons/laptops/TV’s.",
+          text: "Voor veel smart home apparaten wel: 2.4 GHz heeft meer bereik en gaat beter door muren. 5 GHz is sneller, maar heeft minder bereik en is beter voor telefoons, laptops en tv’s.",
         },
       },
       {
@@ -42,7 +43,7 @@ export default function Page() {
         name: "Helpt mesh wifi bij smart home?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Ja, mesh helpt vooral bij dode hoeken. Het is meestal stabieler dan een losse wifi extender en geeft betere dekking door het hele huis.",
+          text: "Ja, vooral bij dode hoeken. Mesh is meestal stabieler dan een losse wifi extender en geeft betere dekking door het hele huis.",
         },
       },
     ],
@@ -67,22 +68,24 @@ export default function Page() {
             </Link>{" "}
             •{" "}
             <Link href="/tips/2-4ghz-vs-5ghz-smart-home">2.4 vs 5 GHz</Link> •{" "}
-            <Link href="/tips/beginnen-met-smart-home">Beginnen met smart home</Link>
+            <Link href="/tips/beginnen-met-smart-home">
+              Beginnen met smart home
+            </Link>
           </p>
 
           <h1>Wi-Fi verbeteren voor smart home: 10 tips voor een stabiel slim huis</h1>
 
           <p className="section-intro">
-            Lampen offline, camera’s die haperen, apps die blijven laden? In veel
-            gevallen is je Wi-Fi de echte boosdoener. Met deze gids maak je jouw
-            netwerk smart-home-proof.
+            Lampen die offline gaan, camera’s die haperen of apps die blijven
+            laden? In veel gevallen is je Wi-Fi de echte boosdoener. Met deze
+            gids maak je jouw netwerk echt smart-home-proof.
           </p>
 
           <p>
-            Veel smart home “problemen” zijn eigenlijk Wi-Fi-problemen. Lampen
-            die offline gaan, speakers met vertraging, deurbellen die soms niet
-            reageren… het komt vaak door instabiel bereik of router-instellingen
-            die niet lekker werken met IoT.
+            Veel smart home “problemen” zijn eigenlijk Wi-Fi problemen. Lampen
+            die offline gaan, speakers met vertraging en deurbellen die soms niet
+            reageren komen vaak door instabiel bereik of router-instellingen die
+            niet goed werken met IoT-apparaten.
           </p>
 
           <h2>10 tips om je Wi-Fi smart-home-proof te maken</h2>
@@ -101,8 +104,8 @@ export default function Page() {
 
           <h3>3) Split 2.4 GHz en 5 GHz als apparaten vaak offline gaan</h3>
           <p>
-            Eén SSID voor beide banden is handig, maar sommige IoT-apparaten
-            raken in de war. Maak desnoods twee netwerken: <em>…-2G</em> en{" "}
+            Eén SSID voor beide banden is handig, maar sommige IoT-apparaten raken
+            in de war. Maak desnoods twee netwerken: <em>…-2G</em> en{" "}
             <em>…-5G</em>.
           </p>
 
@@ -114,58 +117,59 @@ export default function Page() {
 
           <h3>5) Kies een vast 2.4 GHz kanaal (1, 6 of 11)</h3>
           <p>
-            Zet kanaalkeuze liever vast op 1/6/11 om overlap en rare wissels te
-            voorkomen.
+            Zet kanaalkeuze liever vast op 1, 6 of 11 om overlap en instabiliteit
+            te voorkomen.
           </p>
 
-          <h3>6) Schakel agressieve “optimalisaties” uit als het instabiel is</h3>
+          <h3>6) Schakel agressieve “optimalisaties” uit bij IoT-problemen</h3>
           <p>
             Denk aan Airtime Fairness, Smart Connect/Band Steering, 802.11r fast
-            roaming of “AX only”. Test of zet uit als IoT wegvalt.
+            roaming of “AX only”. Deze kunnen vooral slimme lampen, stekkers en
+            sensoren verstoren.
           </p>
 
-          <h3>7) Geef belangrijke apparaten een vast IP (DHCP reservation)</h3>
+          <h3>7) Geef belangrijke apparaten een vast IP (DHCP-reservering)</h3>
           <p>
-            Geef vaste IP’s aan je hubs (Homey/Hue/Home Assistant), camera’s en
-            deurbellen. Dat voorkomt “zoek raken” en maakt troubleshooten
-            makkelijker.
+            Geef vaste IP’s aan hubs (Homey, Hue Bridge, Home Assistant),
+            camera’s en deurbellen. Dat voorkomt verbindingsproblemen en maakt
+            troubleshooting makkelijker.
           </p>
 
           <h3>8) Overweeg mesh als je dode hoeken hebt</h3>
           <p>
-            Mesh is meestal beter dan een losse extender: minder gedoe,
-            stabieler roaming, betere dekking.
+            Mesh is meestal beter dan een losse extender: stabieler roaming,
+            minder gedoe en betere dekking.
           </p>
 
           <h3>9) Gebruik kabel waar het kan (backhaul)</h3>
           <p>
-            Kabel voor hubs/TV/mesh-backhaul vermindert Wi-Fi druk en verhoogt
-            stabiliteit voor IoT.
+            Bekabel je hubs, tv’s en mesh-backhaul waar mogelijk. Dat verlaagt
+            Wi-Fi belasting en verhoogt stabiliteit.
           </p>
 
           <h3>10) Maak een apart IoT-netwerk (optioneel)</h3>
           <p>
-            Zet IoT op één 2.4 GHz netwerk en je “normale” apparaten op een
-            ander. Overzichtelijker en vaak stabieler.
+            Zet IoT-apparaten op één 2.4 GHz netwerk en je “normale” apparaten op
+            een ander netwerk. Dat geeft overzicht en vaak extra stabiliteit.
           </p>
 
           <h2>Snelle checklist</h2>
           <ul>
             <li>Smart home op 2.4 GHz</li>
             <li>Router centraal en vrij geplaatst</li>
-            <li>2.4/5 GHz gesplitst als koppelen lastig is</li>
+            <li>2.4/5 GHz gesplitst bij koppelproblemen</li>
             <li>WPA2 of WPA2/WPA3 mixed</li>
             <li>Kanaal 1/6/11 vast op 2.4 GHz</li>
             <li>Band steering/fast roaming getest of uit</li>
-            <li>Vaste IP’s voor hubs/camera’s</li>
-            <li>Mesh/AP’s voor dode hoeken</li>
+            <li>Vaste IP’s voor hubs en camera’s</li>
+            <li>Mesh of access points bij dode hoeken</li>
             <li>Kabel/backhaul waar mogelijk</li>
             <li>Optioneel: apart IoT-netwerk</li>
           </ul>
 
           <p>
-            Krijg je alsnog “offline” apparaten? Dan is het bijna altijd één van
-            deze drie: <strong>bereik</strong>, <strong>2.4/5 GHz</strong> of{" "}
+            Blijven apparaten offline? Dan is het bijna altijd één van deze drie:
+            <strong> bereik</strong>, <strong>2.4/5 GHz</strong> of{" "}
             <strong>beveiliging (WPA3)</strong>. Begin met de simpele fixes en
             breid daarna uit met mesh of access points.
           </p>

@@ -4,9 +4,10 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Wi-Fi bereik verbeteren zonder nieuwe router: 7 slimme oplossingen",
+  title:
+    "Wi-Fi bereik verbeteren zonder nieuwe router (7 slimme oplossingen) – 2026",
   description:
-    "Slechte Wi-Fi in huis? Verbeter je bereik zonder meteen een nieuwe router te kopen. 7 praktische tips voor meer dekking en stabiel smart home.",
+    "Slechte Wi-Fi in huis of slimme apparaten die offline gaan? Verbeter je bereik zonder meteen een nieuwe router te kopen. 7 praktische tips voor stabiel smart home.",
   alternates: {
     canonical:
       "https://slimhuiswonen.nl/tips/wifi-bereik-verbeteren-zonder-nieuwe-router",
@@ -76,11 +77,14 @@ export default function Page() {
             </Link>
           </p>
 
-          <h1>Wi-Fi bereik verbeteren zonder nieuwe router: 7 slimme oplossingen</h1>
+          <h1>
+            Wi-Fi bereik verbeteren zonder nieuwe router: 7 slimme oplossingen
+          </h1>
 
           <p className="section-intro">
-            Dode hoeken in huis? Je hoeft niet meteen een nieuwe router te kopen.
-            Met deze stappen haal je vaak al enorme winst — vooral voor smart home.
+            Dode hoeken in huis of slimme apparaten die steeds offline gaan?
+            Je hoeft niet meteen een nieuwe router te kopen. Met deze stappen
+            haal je vaak al enorme winst — vooral voor smart home.
           </p>
 
           <h2>7 oplossingen die vaak direct helpen</h2>
@@ -88,13 +92,13 @@ export default function Page() {
           <h3>1) Plaats je router hoger en vrij</h3>
           <p>
             Niet in een kast, niet achter de tv, niet in de meterkast. Zet ‘m
-            centraal en op hoogte.
+            centraal en op hoogte voor betere verspreiding.
           </p>
 
           <h3>2) Zet 2.4 GHz kanaal vast (1, 6 of 11)</h3>
           <p>
-            Automatisch kanaal wisselen kan instabiliteit geven. Kies één vast
-            kanaal.
+            Automatisch kanaal wisselen kan instabiliteit geven, vooral bij
+            slimme apparaten. Kies één vast kanaal.
           </p>
 
           <h3>3) Update je router firmware</h3>
@@ -105,8 +109,9 @@ export default function Page() {
 
           <h3>4) Zet “te slimme” functies uit bij IoT-problemen</h3>
           <p>
-            Band steering, fast roaming of Airtime Fairness kan IoT verstoren.
-            Test of uitschakelen stabiliteit geeft.
+            Band steering, fast roaming of Airtime Fairness kan IoT verstoren
+            (vooral slimme lampen, stekkers en sensoren). Test of uitschakelen
+            stabiliteit geeft.
           </p>
 
           <h3>5) Voeg een access point toe via kabel</h3>
@@ -123,15 +128,15 @@ export default function Page() {
 
           <h3>7) Zet hubs en vaste apparaten bekabeld</h3>
           <p>
-            Hue Bridge, Homey, Home Assistant, tv’s: bekabeld waar mogelijk. Dat
-            verlaagt de Wi-Fi druk en verhoogt stabiliteit.
+            Hue Bridge, Homey, Home Assistant en tv’s: bekabeld waar mogelijk.
+            Dat verlaagt Wi-Fi belasting en verhoogt stabiliteit.
           </p>
 
           <h2>Conclusie</h2>
           <p>
-            Begin altijd met de simpele fixes (routerplaatsing + 2.4 GHz kanaal
-            vast + firmware update). Heb je nog steeds dode hoeken? Dan is een
-            extra access point of mesh meestal de beste upgrade.
+            Begin altijd met de simpele fixes (routerplaatsing, vast 2.4 GHz
+            kanaal en firmware update). Heb je nog steeds dode hoeken? Dan is
+            een extra access point of mesh meestal de beste upgrade.
           </p>
 
           <p>

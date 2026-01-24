@@ -4,9 +4,9 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata = {
-  title: "2.4 GHz vs 5 GHz voor smart home: zo kies je de juiste band",
+  title: "2.4 GHz vs 5 GHz voor smart home – voorkom offline apparaten",
   description:
-    "Welke Wi-Fi band is het beste voor smart home? 2.4 GHz is vaak stabieler voor IoT. Zo voorkom je offline apparaten en koppelproblemen.",
+    "Welke Wi-Fi band is het beste voor smart home? 2.4 GHz is vaak stabieler voor IoT-apparaten. Zo voorkom je offline meldingen en koppelproblemen.",
   alternates: {
     canonical: "https://slimhuiswonen.nl/tips/2-4ghz-vs-5ghz-smart-home",
   },
@@ -26,7 +26,7 @@ export default function Page() {
         name: "Is 2.4 GHz beter dan 5 GHz voor smart home apparaten?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "In de meeste gevallen wel. 2.4 GHz heeft meer bereik en gaat beter door muren, waardoor smart home apparaten stabieler verbonden blijven.",
+          text: "Ja, in de meeste gevallen wel. 2.4 GHz heeft meer bereik en gaat beter door muren, waardoor smart home apparaten stabieler verbonden blijven.",
         },
       },
       {
@@ -34,7 +34,7 @@ export default function Page() {
         name: "Waarom koppelen sommige apparaten niet met 5 GHz?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Veel IoT-apparaten ondersteunen alleen 2.4 GHz. Als je telefoon op 5 GHz zit tijdens het koppelen (of je router band steering gebruikt), kan het koppelen mislukken.",
+          text: "Veel smart home apparaten ondersteunen alleen 2.4 GHz. Als je telefoon op 5 GHz zit tijdens het koppelen of je router band steering gebruikt, kan het koppelen mislukken.",
         },
       },
       {
@@ -42,7 +42,15 @@ export default function Page() {
         name: "Moet ik 2.4 GHz en 5 GHz splitsen in twee netwerken?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Als je vaak offline apparaten hebt of koppelen niet lukt, kan splitsen helpen. Maak een apart 2.4 GHz netwerk (bijv. ...-2G) en 5 GHz netwerk (...-5G).",
+          text: "Als je vaak offline apparaten hebt of koppelen niet lukt, kan het helpen om twee aparte netwerken te maken: één voor 2.4 GHz en één voor 5 GHz.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Wat is band steering en waarom kan dit problemen geven?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Band steering laat je router automatisch kiezen tussen 2.4 en 5 GHz. Voor smart home apparaten kan dit verwarrend zijn, waardoor ze slecht koppelen of offline gaan.",
         },
       },
     ],
@@ -75,18 +83,22 @@ export default function Page() {
             </Link>
           </p>
 
-          <h1>2.4 GHz vs 5 GHz voor smart home: zo kies je de juiste band</h1>
+          <h1>
+            2.4 GHz vs 5 GHz voor smart home – zo voorkom je offline apparaten
+          </h1>
 
           <p className="section-intro">
-            Offline apparaten of koppelen dat niet lukt? Vaak zit het ‘m in de
-            verkeerde Wi-Fi band. Dit is de simpele keuzehulp.
+            Gaan je slimme lampen of stekkers regelmatig offline? Of lukt
+            koppelen maar niet? In veel gevallen ligt dat niet aan het apparaat,
+            maar aan de verkeerde Wi-Fi band.
           </p>
 
           <p>
-            2.4 GHz is meestal de beste keuze voor smart home apparaten. Niet
-            omdat het sneller is, maar omdat het <strong>verder reikt</strong>{" "}
-            en beter door muren gaat. 5 GHz is sneller, maar heeft minder bereik
-            en kan instabiel zijn in huizen met meerdere kamers of verdiepingen.
+            Voor smart home apparaten is <strong>2.4 GHz meestal de beste
+            keuze</strong>. Niet omdat het sneller is, maar omdat het{" "}
+            <strong>meer bereik heeft</strong> en beter door muren en vloeren
+            gaat. 5 GHz is sneller, maar heeft een korter bereik en is daardoor
+            minder betrouwbaar voor IoT-apparaten.
           </p>
 
           <h2>Gebruik 2.4 GHz voor</h2>
@@ -94,31 +106,39 @@ export default function Page() {
             <li>slimme stekkers</li>
             <li>Wi-Fi lampen</li>
             <li>slimme schakelaars</li>
-            <li>thermostaten (vaak)</li>
-            <li>apparaten die “soms offline” gaan</li>
+            <li>thermostaten</li>
+            <li>apparaten die soms offline gaan</li>
           </ul>
 
           <h2>Gebruik 5 GHz voor</h2>
           <ul>
             <li>telefoon en laptop</li>
-            <li>tv/streaming</li>
+            <li>tv en streaming</li>
             <li>gameconsole</li>
             <li>downloads en hoge bandbreedte</li>
           </ul>
 
-          <h2>Veelgemaakte fout: één netwerknaam voor alles</h2>
+          <h2>Wanneer gaat het vaak mis?</h2>
           <p>
-            Als je router één SSID gebruikt met band steering, kunnen sommige
-            IoT-apparaten verkeerd koppelen of de verbinding verliezen. De beste
-            workaround: maak twee SSID’s (<em>…-2G</em> en <em>…-5G</em>) of zorg
-            dat je telefoon tijdens koppelen op 2.4 GHz zit.
+            Problemen ontstaan vooral wanneer je router één netwerknaam (SSID)
+            gebruikt voor zowel 2.4 als 5 GHz. Tijdens het koppelen kan je
+            telefoon op 5 GHz zitten, terwijl het smart home apparaat alleen
+            2.4 GHz ondersteunt.
+          </p>
+
+          <h2>Veelgemaakte fout: één netwerk voor alles</h2>
+          <p>
+            Routers met band steering schakelen automatisch tussen 2.4 en 5 GHz.
+            Dat werkt prima voor telefoons, maar niet altijd voor slimme
+            apparaten. De beste oplossing is om twee aparte netwerken aan te
+            maken, bijvoorbeeld <em>thuis-2G</em> en <em>thuis-5G</em>.
           </p>
 
           <h2>Conclusie</h2>
           <p>
-            Voor smart home is <strong>2.4 GHz bijna altijd de beste keuze</strong>.
-            Alleen apparaten met hoge snelheid (zoals streaming en gaming) hebben
-            echt voordeel van 5 GHz.
+            Voor smart home toepassingen is{" "}
+            <strong>2.4 GHz bijna altijd de juiste keuze</strong>. Alleen
+            apparaten die veel snelheid nodig hebben profiteren echt van 5 GHz.
           </p>
 
           <p>

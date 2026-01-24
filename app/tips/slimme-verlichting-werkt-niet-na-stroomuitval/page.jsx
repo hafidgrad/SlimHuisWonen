@@ -4,9 +4,9 @@ import Link from "next/link";
 import TipBanner from "@/components/TipBanner";
 
 export const metadata = {
-  title: "Slimme verlichting werkt niet na stroomuitval? (Oplossing in 5 stappen) – 2026",
+  title: "Slimme verlichting werkt niet na stroomuitval? Oplossing in 5 stappen – 2026",
   description:
-    "Werkt je slimme verlichting niet meer na stroomuitval? Lampen offline of automatiseringen weg? Volg deze 5 stappen om het direct op te lossen + tips om het te voorkomen.",
+    "Werkt je slimme verlichting niet meer na stroomuitval? Lampen offline of automatiseringen weg? Volg deze 5 stappen om het direct op te lossen en problemen te voorkomen.",
   alternates: {
     canonical:
       "https://slimhuiswonen.nl/tips/slimme-verlichting-werkt-niet-na-stroomuitval",
@@ -17,7 +17,7 @@ export default function SlimmeVerlichtingStroomuitval() {
   const tipImg =
     "/images/Tips%20%26%20uitleg/Slimme%20verlichting%20werkt%20niet%20na%20stroomuitval.png";
 
-  // ✅ FAQ schema (structured data) — helpt bij rich results in Google
+  // ✅ FAQ schema
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -27,7 +27,7 @@ export default function SlimmeVerlichtingStroomuitval() {
         name: "Waarom werkt slimme verlichting niet meer na stroomuitval?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Na stroomuitval starten lampen vaak sneller op dan je modem/router of hub. Daardoor raken wifi- of Zigbee-verbindingen tijdelijk kwijt en reageren lampen niet meer op de app of automatiseringen.",
+          text: "Na een stroomuitval starten slimme lampen vaak sneller op dan je router of hub. Daardoor raken ze tijdelijk de verbinding kwijt en reageren ze niet meer via app of automatiseringen.",
         },
       },
       {
@@ -35,7 +35,7 @@ export default function SlimmeVerlichtingStroomuitval() {
         name: "Hoe krijg ik slimme lampen weer online na stroomuitval?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Wacht eerst tot modem en router volledig opgestart zijn. Controleer daarna of je hub online is, zet de lamp één keer uit/aan, ververs de app en herstart als laatste stap de hub. In de meeste gevallen zijn je lampen dan weer bereikbaar.",
+          text: "Wacht tot modem, router en hub volledig zijn opgestart. Zet daarna de lamp één keer uit en aan, ververs de app en herstart als laatste stap de hub.",
         },
       },
       {
@@ -43,7 +43,7 @@ export default function SlimmeVerlichtingStroomuitval() {
         name: "Hoe voorkom je problemen met slimme verlichting na stroomstoring?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Gebruik bij voorkeur een hub (zoals Hue Bridge), laat wandschakelaars aan staan, verbeter je wifi-netwerk en gebruik scènes/automatiseringen. Een stabiel netwerk en hub beperken uitval na stroomstoring.",
+          text: "Gebruik bij voorkeur een hub, laat wandschakelaars aan staan, zorg voor stabiele wifi en werk met scènes en automatiseringen.",
         },
       },
     ],
@@ -54,7 +54,7 @@ export default function SlimmeVerlichtingStroomuitval() {
       <Header />
 
       <main className="section">
-        {/* ✅ Banner netjes in dezelfde breedte als site */}
+        {/* ✅ Banner */}
         <div className="container" style={{ marginBottom: "1.25rem" }}>
           <TipBanner
             src={tipImg}
@@ -63,7 +63,7 @@ export default function SlimmeVerlichtingStroomuitval() {
         </div>
 
         <div className="container article">
-          {/* ✅ Topic cluster / slimme verlichting */}
+          {/* ✅ Topic cluster */}
           <p className="muted small" style={{ marginBottom: "0.75rem" }}>
             Onderdeel van:{" "}
             <Link href="/tips/wat-is-slimme-verlichting">Slimme verlichting</Link>{" "}
@@ -76,83 +76,67 @@ export default function SlimmeVerlichtingStroomuitval() {
           <h1>Slimme verlichting werkt niet na stroomuitval</h1>
 
           <p className="section-intro">
-            Na een stroomuitval kan slimme verlichting offline raken. Lampen
-            reageren niet meer en automatiseringen stoppen. Gelukkig is het vaak
-            snel op te lossen.
+            Na een stroomuitval kan slimme verlichting ineens offline zijn.
+            Lampen reageren niet meer, automatiseringen stoppen en de app lijkt
+            niets meer te doen. Gelukkig is dit meestal snel en eenvoudig op te
+            lossen.
           </p>
 
           <h2>Waarom gebeurt dit?</h2>
-
           <ul>
-            <li>Router start later op dan de lampen</li>
-            <li>Wifi-verbinding raakt tijdelijk kwijt</li>
-            <li>De hub heeft tijd nodig om opnieuw te verbinden</li>
-            <li>Lampen starten sneller dan het netwerk</li>
+            <li>lampen starten sneller op dan modem en router</li>
+            <li>wifi- of Zigbee-verbinding raakt tijdelijk kwijt</li>
+            <li>de hub heeft tijd nodig om opnieuw te verbinden</li>
+            <li>het netwerk is nog niet volledig beschikbaar</li>
           </ul>
 
-          <p>
-            👉{" "}
-            <Link href="/tips/wat-is-slimme-verlichting">
-              Lees wat slimme verlichting precies is
-            </Link>
-          </p>
-
           <h2>Oplossing: zo los je het stap voor stap op</h2>
-
           <ol>
             <li>
-              <strong>Wacht 2–5 minuten</strong> tot modem en router volledig zijn
-              opgestart.
+              <strong>Wacht 2–5 minuten</strong> tot modem en router volledig
+              zijn opgestart.
             </li>
             <li>
-              <strong>Controleer of je hub online is</strong> (bijv. Hue Bridge of
-              Homey).
+              <strong>Controleer of je hub online is</strong> (zoals Hue Bridge
+              of Homey).
             </li>
             <li>
-              <strong>Zet de lamp één keer uit en aan</strong> (via app of stekker).
+              <strong>Zet de lamp één keer uit en aan</strong> via app of stekker.
             </li>
             <li>
-              <strong>Open de app en ververs</strong> (zoeken naar apparaten /
-              verbinding vernieuwen).
+              <strong>Ververs de app</strong> en laat apparaten opnieuw verbinden.
             </li>
             <li>
-              <strong>Herstart de hub als laatste stap</strong> (hub of bridge
-              opnieuw opstarten).
+              <strong>Herstart de hub als laatste stap</strong>.
             </li>
           </ol>
 
           <p>
-            In de meeste gevallen werkt alles hierna weer normaal. Als je lampen
-            via een wandschakelaar uit stonden, kan het ook helpen om die
-            <strong> permanent aan</strong> te laten.
+            In de meeste gevallen werkt je verlichting hierna weer normaal.
+            Stonden lampen uit via een wandschakelaar? Zorg dan dat deze{" "}
+            <strong>permanent aan</strong> blijft.
           </p>
 
-          <h3>Werkt je lamp niet met schakelaar?</h3>
+          <h3>Problemen met schakelaars?</h3>
           <p>
-            Dit gebeurt vaak: een slimme lamp heeft continu stroom nodig.{" "}
+            Slimme lampen hebben continu stroom nodig.{" "}
             <Link href="/tips/slimme-lamp-werkt-niet-met-schakelaar">
-              Lees hier waarom slimme lampen niet goed werken met een schakelaar
+              Daarom werken slimme lampen niet goed met een schakelaar
             </Link>
             .
           </p>
 
-          <h2>Hoe voorkom je dit in de toekomst?</h2>
-
+          <h2>Zo voorkom je problemen bij een volgende stroomstoring</h2>
           <ul>
-            <li>
-              Gebruik een <strong>hub-gebaseerd systeem</strong> (stabieler dan alleen wifi)
-            </li>
-            <li>Laat schakelaars altijd aan staan (slimme lampen hebben stroom nodig)</li>
-            <li>Gebruik scènes/automatiseringen in plaats van losse lampen</li>
-            <li>
-              Zorg voor een stabiel netwerk (sterkere wifi op 2.4 GHz / mesh)
-            </li>
+            <li>gebruik een <strong>hub-gebaseerd systeem</strong> (stabieler)</li>
+            <li>laat wandschakelaars altijd aan</li>
+            <li>werk met scènes en automatiseringen</li>
+            <li>zorg voor stabiele 2.4 GHz wifi of mesh</li>
           </ul>
 
-          <h3>Tip: verbeter je wifi (als je wifi-lampen gebruikt)</h3>
+          <h3>Gebruik je wifi-lampen?</h3>
           <p>
-            Als je verlichting op wifi werkt (zoals Tapo/Wiz), dan kan wifi na een
-            stroomstoring instabiel zijn.{" "}
+            Dan is je netwerk extra belangrijk.{" "}
             <Link href="/tips/wifi-verbeteren-voor-smart-home">
               Zo verbeter je wifi voor smart home
             </Link>{" "}
@@ -171,7 +155,6 @@ export default function SlimmeVerlichtingStroomuitval() {
 
           <hr />
 
-          {/* ✅ Gerelateerde tips / interne links */}
           <h2>Gerelateerde tips</h2>
           <ul>
             <li>
@@ -181,7 +164,7 @@ export default function SlimmeVerlichtingStroomuitval() {
             </li>
             <li>
               <Link href="/tips/slimme-lamp-werkt-niet-met-schakelaar">
-                Slimme lamp werkt niet met schakelaar: zo zit het
+                Slimme lamp werkt niet met schakelaar
               </Link>
             </li>
             <li>
@@ -196,33 +179,6 @@ export default function SlimmeVerlichtingStroomuitval() {
             </li>
           </ul>
 
-          {/* ✅ FAQ sectie (ook voor bezoekers) */}
-          <h2>Veelgestelde vragen</h2>
-          <h3>Waarom werkt slimme verlichting niet na stroomuitval?</h3>
-          <p>
-            Omdat lampen vaak sneller opstarten dan je netwerk of hub. Daardoor
-            kunnen ze tijdelijk offline zijn en niet reageren.
-          </p>
-
-          <h3>Hoe krijg ik mijn lampen weer online?</h3>
-          <p>
-            Wacht tot router/hub opgestart zijn, zet lamp 1x uit/aan, ververs de
-            app en herstart als laatste stap de hub/bridge.
-          </p>
-
-          <h3>Hoe voorkom ik dit?</h3>
-          <p>
-            Gebruik een hub (zoals Hue Bridge), laat schakelaars aan, verbeter
-            je wifi en gebruik scènes/automatiseringen.
-          </p>
-
-          <hr />
-
-          <p className="muted small">
-            *Resultaat kan per merk en netwerk verschillen.
-          </p>
-
-          {/* ✅ Structured data inject */}
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
