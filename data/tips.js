@@ -1,5 +1,13 @@
 export const tips = [
   {
+  slug: "privacy-en-veiligheid-smart-home",
+  title: "Privacy & veiligheid in je smart home",
+  description:
+    "Zo maak je slimme apparaten, camera’s en deurbellen veiliger en minder gevoelig voor hackers.",
+  image: "/images/tips/privacy-en-veiligheid-smart-home.png",
+  available: true,
+},
+  {
     slug: "wat-is-slimme-verlichting",
     title: "Wat is slimme verlichting?",
     description:
