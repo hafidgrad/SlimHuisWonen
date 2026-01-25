@@ -1,7 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
+import SearchBar from "@/components/SearchBar";
+import { getSearchItems } from "@/data/searchItems";
 
 export default function Header() {
+  const searchItems = getSearchItems();
+
   return (
     <header className="site-header">
       <div className="container nav-container">
@@ -16,6 +20,11 @@ export default function Header() {
           />
           <span className="site-title">SlimHuisWonen.nl</span>
         </Link>
+
+        {/* 🔍 Zoeken (desktop) */}
+        <div className="nav-search">
+          <SearchBar items={searchItems} placeholder="Zoek…" />
+        </div>
 
         <nav className="main-nav">
           <Link href="/over">Over</Link>

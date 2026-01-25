@@ -1192,3 +1192,85 @@ code {
     max-width: 100%;
   }
 }
+
+/* SlimHuisWonen Search */
+.shw-search {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+}
+
+.shw-search__input {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(11, 15, 26, 0.55);
+  color: #fff;
+  outline: none;
+}
+
+.shw-search__input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.shw-search__input:focus {
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.shw-search__dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  z-index: 50;
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(15, 20, 34, 0.98);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+}
+
+.shw-search__item {
+  display: block;
+  padding: 0.8rem 0.9rem;
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.shw-search__item:last-child {
+  border-bottom: none;
+}
+
+.shw-search__item:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.shw-search__title {
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0.2rem;
+}
+
+.shw-search__meta {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  opacity: 0.75;
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+.shw-search__type {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.75rem;
+  opacity: 0.85;
+}
+
+.shw-search__desc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
