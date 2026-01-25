@@ -147,6 +147,17 @@ export default function WatIsSlimmeVerlichtingPage() {
             <Link href="/tips/wat-is-een-smart-home-hub">
               Wat doet een smart home hub precies?
             </Link>
+            .
+          </p>
+
+          {/* ✅ NIEUWE INTERNE LINK – veilig toegevoegd */}
+          <p>
+            Door verlichting te automatiseren kun je niet alleen comfort
+            verhogen, maar ook onnodig energieverbruik voorkomen.{" "}
+            <Link href="/tips/energie-besparen-met-smart-home">
+              Zo bespaar je energie met een smart home
+            </Link>
+            .
           </p>
 
           <h2>Veelgemaakte beginnersfout: schakelaars gebruiken</h2>

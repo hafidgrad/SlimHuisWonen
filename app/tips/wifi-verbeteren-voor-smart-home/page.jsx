@@ -153,6 +153,18 @@ export default function Page() {
             een ander netwerk. Dat geeft overzicht en vaak extra stabiliteit.
           </p>
 
+          {/* ✅ NIEUWE INTERNE LINK – veilig toegevoegd */}
+          <p>
+            Een stabiel netwerk is extra belangrijk als je slimme apparaten
+            gebruikt om energie te besparen. Slimme thermostaten,
+            radiatorknoppen en stekkers werken alleen goed als ze betrouwbaar
+            verbonden zijn.{" "}
+            <Link href="/tips/energie-besparen-met-smart-home">
+              Zo bespaar je energie met een smart home
+            </Link>
+            .
+          </p>
+
           <h2>Snelle checklist</h2>
           <ul>
             <li>Smart home op 2.4 GHz</li>

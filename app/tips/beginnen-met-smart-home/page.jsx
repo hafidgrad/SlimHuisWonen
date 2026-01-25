@@ -147,6 +147,17 @@ export default function BeginnenMetSmartHome() {
             .
           </p>
 
+          {/* ✅ NIEUWE INTERNE LINK – veilig toegevoegd */}
+          <p>
+            Door automatiseringen slim in te zetten kun je niet alleen comfort
+            verhogen, maar ook energie besparen. Denk aan verwarming die
+            automatisch lager gaat of apparaten die vanzelf uitschakelen.{" "}
+            <Link href="/tips/energie-besparen-met-smart-home">
+              Zo bespaar je energie met een smart home
+            </Link>
+            .
+          </p>
+
           <h2>Stap 4: Breid rustig uit</h2>
           <p>
             Pas als je weet wat je mist, ga je uitbreiden.

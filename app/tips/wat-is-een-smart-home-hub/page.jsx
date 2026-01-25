@@ -159,8 +159,22 @@ export default function WatIsEenSmartHomeHub() {
           <ul>
             <li>als je meerdere merken wilt combineren</li>
             <li>als je met sensoren wilt automatiseren</li>
-            <li>als je een betrouwbaarder systeem wilt (minder cloud-afhankelijk)</li>
+            <li>
+              als je comfort en energiebesparing wilt combineren met
+              automatiseringen
+            </li>
           </ul>
+
+          {/* ✅ NIEUWE INTERNE LINK – veilig toegevoegd */}
+          <p>
+            Vooral bij het automatiseren van verwarming en apparaten speelt een
+            hub een grote rol. Hiermee kun je slimmer omgaan met energie en
+            onnodig verbruik voorkomen.{" "}
+            <Link href="/tips/energie-besparen-met-smart-home">
+              Zo bespaar je energie met een smart home
+            </Link>
+            .
+          </p>
 
           <h2>Hub vs geen hub: wat past bij jou?</h2>
           <ul>
