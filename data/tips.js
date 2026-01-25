@@ -7,6 +7,14 @@ export const tips = [
   image: "/images/tips/privacy-en-veiligheid-smart-home.png",
   available: true,
 },
+{
+  slug: "energie-besparen-met-smart-home",
+  title: "Energie besparen met smart home",
+  description:
+    "Ontdek hoe slimme thermostaten, radiatorknoppen en slimme stekkers helpen om energie te besparen zonder gedoe.",
+  image: "/images/tips/energie-besparen-met-smart-home.png",
+  available: true,
+},
   {
     slug: "wat-is-slimme-verlichting",
     title: "Wat is slimme verlichting?",
