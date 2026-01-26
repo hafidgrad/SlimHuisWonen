@@ -1,20 +1,56 @@
 export const tips = [
   {
-  slug: "privacy-en-veiligheid-smart-home",
-  title: "Privacy & veiligheid in je smart home",
-  description:
-    "Zo maak je slimme apparaten, camera’s en deurbellen veiliger en minder gevoelig voor hackers.",
-  image: "/images/tips/privacy-en-veiligheid-smart-home.png",
-  available: true,
-},
-{
-  slug: "energie-besparen-met-smart-home",
-  title: "Energie besparen met smart home",
-  description:
-    "Ontdek hoe slimme thermostaten, radiatorknoppen en slimme stekkers helpen om energie te besparen zonder gedoe.",
-  image: "/images/tips/energie-besparen-met-smart-home.png",
-  available: true,
-},
+    slug: "privacy-en-veiligheid-smart-home",
+    title: "Privacy & veiligheid in je smart home",
+    description:
+      "Zo maak je slimme apparaten, camera’s en deurbellen veiliger en minder gevoelig voor hackers.",
+    image: "/images/tips/privacy-en-veiligheid-smart-home.png",
+    available: true,
+  },
+  {
+    slug: "energie-besparen-met-smart-home",
+    title: "Energie besparen met smart home",
+    description:
+      "Ontdek hoe slimme thermostaten, radiatorknoppen en slimme stekkers helpen om energie te besparen zonder gedoe.",
+    image: "/images/tips/energie-besparen-met-smart-home.png",
+    available: true,
+  },
+
+  // ✅ Beveiliging (nieuw cluster)
+  {
+    slug: "slim-huis-beveiligen",
+    title: "Slim huis beveiligen",
+    description:
+      "Zo beveilig je je huis slim met camera’s, deurbellen en sensoren.",
+    image: "/images/tips/slim-huis-beveiligen.png",
+    available: true,
+  },
+  {
+    slug: "slimme-camera-uitleg",
+    title: "Slimme camera’s uitgelegd",
+    description:
+      "Uitleg over slimme camera’s voor binnen en buiten, privacy en aandachtspunten.",
+    image: "/images/tips/slimme-camera-uitleg.png",
+    available: true,
+  },
+  {
+    slug: "slimme-deurbel-uitleg",
+    title: "Slimme deurbel uitgelegd",
+    description:
+      "Wat is een slimme deurbel en waar moet je op letten bij privacy, wifi en abonnementen?",
+    image: "/images/tips/slimme-deurbel-uitleg.png",
+    available: true,
+  },
+  {
+    slug: "slimme-sensoren-uitleg",
+    title: "Slimme sensoren uitgelegd",
+    description:
+      "Alles over bewegingssensoren, deur- en raamsensoren en slimme toepassingen.",
+    image: "/images/tips/slimme-sensoren-uitleg.png",
+    available: true,
+  },
+
+  // ✅ Verlichting
   {
     slug: "wat-is-slimme-verlichting",
     title: "Wat is slimme verlichting?",
@@ -31,6 +67,8 @@ export const tips = [
     image: "/images/tips/beginnen-met-slimme-verlichting.png",
     available: true,
   },
+
+  // ✅ Starten
   {
     slug: "beginnen-met-smart-home",
     title: "Beginnen met smart home in 5 stappen",
@@ -55,6 +93,8 @@ export const tips = [
     image: "/images/tips/slim-huis-zonder-hub.png",
     available: true,
   },
+
+  // ✅ Problemen
   {
     slug: "slimme-verlichting-werkt-niet-na-stroomuitval",
     title: "Slimme verlichting werkt niet na stroomuitval",
@@ -71,15 +111,18 @@ export const tips = [
     image: "/images/tips/schakelaar.png",
     available: true,
   },
+
+  // ✅ Hubs
   {
     slug: "wat-is-een-smart-home-hub",
     title: "Wat is een smart home hub?",
-    description: "Wat doet een hub precies en wanneer heb je die echt nodig?",
+    description:
+      "Wat doet een hub precies en wanneer heb je die echt nodig?",
     image: "/images/tips/wat-is-een-hub.png",
     available: true,
   },
 
-  // ✅ Wifi / netwerk tips (allemaal op jouw /tips pagina aanwezig)
+  // ✅ Wifi / netwerk
   {
     slug: "wifi-verbeteren-voor-smart-home",
     title: "Wi-Fi verbeteren voor smart home",
