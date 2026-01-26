@@ -76,4 +76,31 @@ export const blogPosts = [
     category: "Koopgids",
     available: true,
   },
+  {
+    slug: "beste-slimme-camera",
+    title: "Beste slimme camera’s voor thuis (2026)",
+    description:
+      "Welke slimme camera past bij jouw situatie? Binnen, buiten, met of zonder abonnement – dit zijn de beste keuzes.",
+    image: "/images/blog/beste-slimme-camera.png",
+    category: "Koopgids",
+    available: true,
+  },
+  {
+    slug: "beste-slimme-deurbel",
+    title: "Beste slimme deurbellen (koopgids)",
+    description:
+      "Ontdek de beste slimme deurbellen met camera, zonder abonnement en met slimme integraties.",
+    image: "/images/blog/beste-slimme-deurbel.png",
+    category: "Koopgids",
+    available: true,
+  },
+  {
+    slug: "beste-slimme-sensoren",
+    title: "Beste slimme sensoren voor je smart home",
+    description:
+      "Bewegingssensoren, deur- en raamsensoren en klimaatsensoren: dit zijn de beste slimme sensoren.",
+    image: "/images/blog/beste-slimme-sensoren.png",
+    category: "Koopgids",
+    available: true,
+  },
 ];
