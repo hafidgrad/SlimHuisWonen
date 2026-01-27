@@ -4,53 +4,22 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Beste slimme stekkers (koopgids) – 2026",
+  title: "Beste slimme stekkers: waar moet je op letten? (2026)",
   description:
-    "Op zoek naar de beste slimme stekker? Bekijk waar je op moet letten (energiemeting, wifi vs Zigbee) en ontdek welke slimme stekkers het beste zijn voor smart home.",
+    "Twijfel je over slimme stekkers? Lees waar je op moet letten (energiemeting, wifi vs Zigbee, veiligheid) en maak daarna de juiste keuze.",
   alternates: {
     canonical: "https://slimhuiswonen.nl/blog/beste-slimme-stekkers",
   },
 };
 
-export default function BesteSlimmeStekkersPage() {
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "Welke slimme stekker is het beste?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "De beste slimme stekker hangt af van je wensen. Voor beginners is een wifi stekker simpel, voor stabiele smart home setups is Zigbee vaak beter. Een stekker met energiemeting is ideaal om verbruik te monitoren.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Wat is beter: wifi of Zigbee slimme stekker?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Wifi is makkelijker om mee te starten, maar kan bij veel apparaten instabiel worden. Zigbee is energiezuinig en stabieler in grotere smart homes (wel vaak hub nodig).",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Is een slimme stekker veilig?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Ja, zolang je een stekker kiest met CE-markering en het juiste vermogen (watt). Gebruik geen goedkope onbekende merken voor zware apparaten.",
-        },
-      },
-    ],
-  };
-
+export default function BesteSlimmeStekkersBlogPage() {
   return (
     <>
       <Header />
 
       <main className="section">
         <div className="container article">
-          {/* ✅ Blog banner met blur effect */}
+          {/* Banner */}
           <div
             className="blogBanner"
             style={{ "--blog-bg": "url(/images/blog/beste-slimme-stekkers.png)" }}
@@ -67,7 +36,7 @@ export default function BesteSlimmeStekkersPage() {
             <div className="blogBannerInner">
               <Image
                 src="/images/blog/beste-slimme-stekkers.png"
-                alt="Beste slimme stekkers (koopgids)"
+                alt="Beste slimme stekkers"
                 width={1400}
                 height={520}
                 priority
@@ -76,80 +45,114 @@ export default function BesteSlimmeStekkersPage() {
             </div>
           </div>
 
+          {/* Context / cluster */}
           <p className="muted small" style={{ marginBottom: "0.75rem" }}>
-            Handig om te lezen:{" "}
+            Gerelateerd:{" "}
             <Link href="/tips/beginnen-met-smart-home">
               Beginnen met smart home
             </Link>{" "}
             •{" "}
-            <Link href="/tips/wifi-verbeteren-voor-smart-home">
-              Wifi verbeteren
-            </Link>{" "}
-            • <Link href="/blog/wat-is-zigbee">Wat is Zigbee?</Link>
+            <Link href="/blog/wat-is-zigbee">Wat is Zigbee?</Link> •{" "}
+            <Link href="/blog/beste-smart-home-hub">
+              Beste smart home hub
+            </Link>
           </p>
 
-          <h1>Beste slimme stekkers (koopgids)</h1>
+          <h1>Beste slimme stekkers: waar moet je op letten?</h1>
 
           <p className="section-intro">
-            Een slimme stekker is vaak de goedkoopste manier om je huis slimmer
-            te maken. Je schakelt apparaten op afstand aan/uit en kunt soms ook
-            energieverbruik meten.
+            Een slimme stekker is vaak de makkelijkste manier om apparaten slim
+            te maken. Maar niet elke slimme stekker is hetzelfde. In dit artikel
+            leggen we uit waar je op moet letten voordat je er één koopt.
           </p>
 
-          <h2>Waar moet je op letten?</h2>
+          <h2>1. Wil je energieverbruik meten?</h2>
+          <p>
+            Sommige slimme stekkers meten hoeveel stroom een apparaat verbruikt.
+            Dat is handig om sluipverbruik te ontdekken of gericht te besparen.
+            Niet elke stekker heeft deze functie.
+          </p>
+
+          <h2>2. Wi-Fi of Zigbee?</h2>
+          <p>
+            Slimme stekkers werken meestal via <strong>Wi-Fi</strong> of{" "}
+            <strong>Zigbee</strong>.
+          </p>
           <ul>
             <li>
-              <strong>Energieverbruik meten:</strong> handig voor inzicht en besparen
+              <strong>Wi-Fi:</strong> makkelijk om mee te starten, geen hub nodig
             </li>
             <li>
-              <strong>Wifi of Zigbee:</strong> wifi is simpel, Zigbee vaak stabieler
-            </li>
-            <li>
-              <strong>Maximaal vermogen:</strong> let op bij kachels / wasmachines
-            </li>
-            <li>
-              <strong>Integratie:</strong> werkt het met Homey / Home Assistant?
+              <strong>Zigbee:</strong> vaak stabieler bij meerdere apparaten
             </li>
           </ul>
 
-          <h2>Wifi vs Zigbee slimme stekker</h2>
           <p>
-            Voor beginners is wifi ideaal. Maar heb je veel apparaten? Dan is
-            Zigbee vaak betrouwbaarder (wel hub nodig).{" "}
+            Meer uitleg?{" "}
+            <Link href="/blog/wat-is-zigbee">
+              Wat is Zigbee en wanneer kies je het?
+            </Link>
+          </p>
+
+          <h2>3. Let op het maximale vermogen</h2>
+          <p>
+            Niet elke slimme stekker is geschikt voor zware apparaten zoals
+            wasmachines, drogers of elektrische kachels. Check altijd het
+            maximale wattage en gebruik alleen stekkers met CE-markering.
+          </p>
+
+          <h2>4. Integratie met je smart home</h2>
+          <p>
+            Gebruik je Homey, Home Assistant of een ander platform? Controleer
+            dan of de slimme stekker hiermee samenwerkt. Dat maakt
+            automatiseringen een stuk krachtiger.
+          </p>
+
+          <p>
+            Lees ook:{" "}
             <Link href="/tips/wat-is-een-smart-home-hub">
-              Lees hier wat een hub is
-            </Link>
-            .
-          </p>
-
-          <h2>Onze aanraders</h2>
-          <p className="muted">(Tip: jij kunt hier later affiliate-producten in zetten.)</p>
-
-          <ul>
-            <li>
-              <strong>TP-Link Tapo P110</strong> – betaalbaar + energiemeting
-            </li>
-            <li>
-              <strong>HomeWizard Energy Socket</strong> – top voor verbruik inzicht
-            </li>
-            <li>
-              <strong>Zigbee stekker</strong> – stabiel in combinatie met een hub
-            </li>
-          </ul>
-
-          <h2>Conclusie</h2>
-          <p>
-            Wil je simpel starten? Kies een wifi stekker. Wil je stabiliteit en
-            uitbreiden? Kies Zigbee + hub. Met energiemeting haal je het meeste
-            voordeel uit je slimme stekker.
-          </p>
-
-          <p>
-            Nog niet begonnen met smart home?{" "}
-            <Link href="/tips/beginnen-met-smart-home">
-              Start met onze 5 stappen gids →
+              wat is een smart home hub?
             </Link>
           </p>
+
+          <h2>Klaar om te kiezen?</h2>
+          <p>
+            We hebben onze beste slimme stekkers overzichtelijk voor je op een
+            rij gezet, inclusief verschillen tussen Wi-Fi en Zigbee en opties
+            met energiemeting.
+          </p>
+
+          {/* CTA */}
+          <div
+            style={{
+              marginTop: "1.5rem",
+              padding: "1.25rem",
+              borderRadius: "16px",
+              border: "1px solid rgba(255,255,255,0.12)",
+              background: "rgba(255,255,255,0.03)",
+            }}
+          >
+            <h3 style={{ marginTop: 0 }}>
+              👉 Bekijk onze koopgids: beste slimme stekkers
+            </h3>
+            <p className="muted">
+              Inclusief onze aanraders met en zonder energiemeting, voor Wi-Fi en
+              Zigbee.
+            </p>
+            <Link
+              href="/aanraders/beste-slimme-stekkers"
+              style={{
+                display: "inline-block",
+                marginTop: "0.5rem",
+                padding: "0.6rem 1rem",
+                borderRadius: "12px",
+                border: "1px solid rgba(255,255,255,0.16)",
+                textDecoration: "none",
+              }}
+            >
+              Naar de koopgids →
+            </Link>
+          </div>
 
           <hr />
 
@@ -159,38 +162,16 @@ export default function BesteSlimmeStekkersPage() {
               <Link href="/blog/wat-is-zigbee">Wat is Zigbee?</Link>
             </li>
             <li>
-              <Link href="/tips/wat-is-een-smart-home-hub">
-                Wat is een smart home hub?
+              <Link href="/tips/beginnen-met-smart-home">
+                Beginnen met smart home
               </Link>
             </li>
             <li>
-              <Link href="/tips/wifi-verbeteren-voor-smart-home">
-                Wifi verbeteren voor smart home
+              <Link href="/blog/beste-smart-home-hub">
+                Beste smart home hub
               </Link>
             </li>
           </ul>
-
-          <h2>Veelgestelde vragen</h2>
-          <h3>Welke slimme stekker is het beste?</h3>
-          <p>
-            Dat hangt af van je wensen. Wifi is makkelijk, Zigbee is vaak stabieler.
-            Energimeting is handig om te besparen.
-          </p>
-
-          <h3>Wifi of Zigbee: wat kies je?</h3>
-          <p>
-            Wifi voor simpel starten. Zigbee voor stabiele setups met veel apparaten.
-          </p>
-
-          <h3>Is een slimme stekker veilig?</h3>
-          <p>
-            Ja, zolang je een stekker kiest met CE-markering en passend vermogen.
-          </p>
-
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-          />
         </div>
       </main>
 

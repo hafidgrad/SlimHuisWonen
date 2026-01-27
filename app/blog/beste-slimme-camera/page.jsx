@@ -4,47 +4,16 @@ import Link from "next/link";
 import TipBanner from "@/components/TipBanner";
 
 export const metadata = {
-  title: "Beste slimme camera (2026) – keuzehulp & aandachtspunten",
+  title: "Beste slimme camera: waar moet je op letten? (2026)",
   description:
-    "Wat is de beste slimme camera voor jouw huis? Ontdek waar je op moet letten: binnen of buiten, wifi vs PoE, opslag, abonnementen en privacy.",
+    "Welke slimme camera past bij jouw huis? Lees waar je op moet letten: binnen of buiten, wifi vs PoE, opslag, privacy en beveiliging.",
   alternates: {
     canonical: "https://slimhuiswonen.nl/blog/beste-slimme-camera",
   },
 };
 
-export default function BesteSlimmeCameraPage() {
+export default function BesteSlimmeCameraBlogPage() {
   const blogImg = "/images/blog/beste-slimme-camera.png";
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "Wat is de beste slimme camera?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "De beste slimme camera hangt af van jouw situatie. Let vooral op of je een camera voor binnen of buiten nodig hebt, hoe stabiel je wifi is, en of je lokale opslag of cloudopslag wilt gebruiken.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Heb je een abonnement nodig voor een slimme camera?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Niet altijd. Sommige camera’s werken met lokale opslag via SD-kaart of hub. Cloudopslag en geavanceerde detectie vereisen vaak een abonnement.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Is wifi of PoE beter voor slimme camera’s?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "PoE is het meest stabiel omdat stroom en data via één kabel lopen. Wifi is makkelijker te installeren, maar gevoeliger voor storingen en bereikproblemen.",
-        },
-      },
-    ],
-  };
 
   return (
     <>
@@ -68,77 +37,103 @@ export default function BesteSlimmeCameraPage() {
           <h1>Beste slimme camera: waar moet je op letten?</h1>
 
           <p className="section-intro">
-            Slimme camera’s verhogen je veiligheid, maar alleen als je de juiste
-            kiest. In deze gids leggen we uit waar je écht op moet letten zodat
-            je geen miskoop doet.
+            Slimme camera’s kunnen je huis veiliger maken, maar alleen als je de
+            juiste kiest. In dit artikel leggen we uit waar je op moet letten,
+            zodat je geen miskoop doet.
           </p>
 
-          <h2>Binnen of buiten camera?</h2>
+          <h2>Binnen- of buitencamera?</h2>
           <p>
-            De eerste keuze is simpel maar belangrijk. Binnen-camera’s zijn
-            compacter en goedkoper. Buitencamera’s zijn weerbestendig en hebben
-            vaak beter nachtzicht.
+            Binnen­camera’s zijn compacter en goedkoper. Buitencamera’s zijn
+            weerbestendig en hebben vaak beter nachtzicht. Kies altijd een camera
+            die past bij de plek waar je hem wilt gebruiken.
           </p>
 
           <h2>Stroomvoorziening</h2>
           <ul>
-            <li>Netstroom: stabiel en onderhoudsvrij</li>
-            <li>Accu: flexibel plaatsen, maar opladen nodig</li>
-            <li>Zonnepaneel: handig buiten, afhankelijk van zonlicht</li>
+            <li><strong>Netstroom:</strong> stabiel en onderhoudsvrij</li>
+            <li><strong>Accu:</strong> flexibel plaatsen, maar opladen nodig</li>
+            <li><strong>Zonnepaneel:</strong> handig buiten, afhankelijk van zon</li>
           </ul>
 
           <h2>Wifi of bekabeld (PoE)</h2>
           <p>
-            Wifi is eenvoudig, maar PoE (Power over Ethernet) is betrouwbaarder.
-            Vooral bij buitencamera’s is een kabel vaak de beste keuze.
+            Wifi-camera’s zijn eenvoudig te installeren, maar gevoelig voor
+            bereikproblemen. PoE (Power over Ethernet) is betrouwbaarder, vooral
+            bij buitencamera’s.
           </p>
 
           <p>
-            Problemen met bereik?{" "}
+            Heb je wifi-problemen?{" "}
             <Link href="/tips/wifi-verbeteren-voor-smart-home">
               Zo verbeter je wifi voor smart home →
             </Link>
           </p>
 
-          <h2>Beeldkwaliteit & nachtzicht</h2>
-          <ul>
-            <li>Minimaal 2K resolutie</li>
-            <li>Goed nachtzicht (IR of kleur)</li>
-            <li>HDR voor situaties met tegenlicht</li>
-          </ul>
-
-          <h2>Opslag: lokaal of cloud</h2>
+          <h2>Opslag & privacy</h2>
           <p>
-            Cloud is makkelijk maar vaak betaald. Lokale opslag is goedkoper en
-            privacyvriendelijker, zeker met een hub of NVR.
+            Sommige camera’s slaan beelden lokaal op (bijv. SD-kaart of NVR),
+            andere gebruiken cloudopslag. Lokale opslag is vaak
+            privacyvriendelijker en goedkoper op de lange termijn.
           </p>
 
-          <h2>Privacy & beveiliging</h2>
+          <h2>Beveiliging & instellingen</h2>
           <ul>
             <li>Gebruik sterke wachtwoorden</li>
             <li>Activeer tweestapsverificatie</li>
-            <li>Gebruik privacyzones</li>
-            <li>Houd firmware automatisch up-to-date</li>
+            <li>Stel privacyzones in</li>
+            <li>Houd firmware up-to-date</li>
           </ul>
 
           <p>
-            Meer hierover lees je in{" "}
+            Lees ook:{" "}
             <Link href="/tips/privacy-en-veiligheid-smart-home">
-              Privacy & veiligheid in je smart home
+              privacy & veiligheid in je smart home
             </Link>
             .
           </p>
 
-          <h2>Conclusie</h2>
+          <h2>Klaar om te kiezen?</h2>
           <p>
-            De beste slimme camera is betrouwbaar, past bij jouw woning en
-            respecteert je privacy. Kies liever voor stabiliteit en goede
-            instellingen dan alleen voor hoge resolutie.
+            We hebben onze beste slimme camera’s overzichtelijk voor je op een
+            rij gezet — per situatie en zonder verkooppraat.
           </p>
+
+          {/* CTA */}
+          <div
+            style={{
+              marginTop: "1.5rem",
+              padding: "1.25rem",
+              borderRadius: "16px",
+              border: "1px solid rgba(255,255,255,0.12)",
+              background: "rgba(255,255,255,0.03)",
+            }}
+          >
+            <h3 style={{ marginTop: 0 }}>
+              👉 Bekijk onze koopgids: beste slimme camera
+            </h3>
+            <p className="muted">
+              Inclusief onze aanraders voor binnen, buiten, PoE en
+              privacyvriendelijke camera’s.
+            </p>
+            <Link
+              href="/aanraders/beste-slimme-camera"
+              style={{
+                display: "inline-block",
+                marginTop: "0.5rem",
+                padding: "0.6rem 1rem",
+                borderRadius: "12px",
+                border: "1px solid rgba(255,255,255,0.16)",
+                textDecoration: "none",
+              }}
+            >
+              Naar de koopgids →
+            </Link>
+          </div>
 
           <hr />
 
-          <h2>Gerelateerde blogs</h2>
+          <h2>Gerelateerde artikelen</h2>
           <ul>
             <li>
               <Link href="/blog/beste-slimme-deurbel">
@@ -151,11 +146,6 @@ export default function BesteSlimmeCameraPage() {
               </Link>
             </li>
           </ul>
-
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-          />
         </div>
       </main>
 

@@ -4,62 +4,22 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Beste smart home hub (2026): Homey vs Home Assistant vs SmartThings",
+  title: "Smart home hub kiezen: waar moet je op letten? (2026)",
   description:
-    "Welke smart home hub is het beste? Vergelijk Homey, Home Assistant en SmartThings op gemak, stabiliteit, kosten en mogelijkheden.",
+    "Welke smart home hub past bij jou? Lees waar je op moet letten bij Homey, Home Assistant en SmartThings: gemak, controle, lokaal werken en uitbreiden.",
   alternates: {
     canonical: "https://slimhuiswonen.nl/blog/beste-smart-home-hub",
   },
 };
 
-export default function BesteSmartHomeHubPage() {
-  // ✅ FAQ schema
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "Wat is de beste smart home hub voor beginners?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Voor beginners is Homey vaak de makkelijkste keuze: alles in één app, veel integraties en krachtige automatiseringen zonder technisch gedoe.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Wat is beter: Homey of Home Assistant?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Homey is makkelijker en sneller klaar. Home Assistant is krachtiger en flexibeler, maar vraagt meer tijd en technische kennis.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Heb je altijd een hub nodig voor smart home?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Nee. Met Wi-Fi apparaten kun je zonder hub starten. Maar als je meerdere merken wilt combineren of betrouwbare automatiseringen wilt, is een hub sterk aan te raden.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Werkt een hub ook zonder internet?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Sommige hubs werken (deels) lokaal en blijven functioneren bij internetproblemen. Dat hangt af van het platform en de apparaten die je gebruikt.",
-        },
-      },
-    ],
-  };
-
+export default function BesteSmartHomeHubBlogPage() {
   return (
     <>
       <Header />
 
       <main className="section">
         <div className="container article">
-          {/* ✅ Blog banner */}
+          {/* Banner */}
           <div
             className="blogBanner"
             style={{ "--blog-bg": "url(/images/blog/beste-smart-home-hub.png)" }}
@@ -76,7 +36,7 @@ export default function BesteSmartHomeHubPage() {
             <div className="blogBannerInner">
               <Image
                 src="/images/blog/beste-smart-home-hub.png"
-                alt="Beste smart home hub"
+                alt="Smart home hub kiezen"
                 width={1400}
                 height={520}
                 priority
@@ -85,7 +45,7 @@ export default function BesteSmartHomeHubPage() {
             </div>
           </div>
 
-          {/* ✅ Cluster navigatie */}
+          {/* Cluster navigatie */}
           <p className="muted small" style={{ marginBottom: "0.75rem" }}>
             Onderdeel van:{" "}
             <Link href="/blog/zigbee-vs-zwave-vs-matter-vs-wifi">
@@ -101,82 +61,111 @@ export default function BesteSmartHomeHubPage() {
             </Link>
           </p>
 
-          <h1>Beste smart home hub (2026): Homey vs Home Assistant vs SmartThings</h1>
+          <h1>Smart home hub kiezen: waar moet je op letten?</h1>
 
           <p className="section-intro">
-            Wil je merken combineren (Hue, Aqara, Tapo) en betrouwbare
-            automatiseringen bouwen? Dan is een smart home hub bijna onmisbaar.
-            Deze pagina is het <strong>keuzepunt</strong> voor de juiste hub.
+            Wil je meerdere smart home merken combineren en betrouwbare
+            automatiseringen bouwen? Dan is een smart home hub vaak de juiste
+            keuze. In deze gids leggen we uit waar je op moet letten, zodat je
+            weet welk type hub bij jou past.
           </p>
 
-          <h2>Snelle keuzehulp</h2>
-          <ul>
-            <li><strong>Meest gebruiksvriendelijk:</strong> Homey</li>
-            <li><strong>Meest krachtig / flexibel:</strong> Home Assistant</li>
-            <li><strong>Samsung ecosysteem:</strong> SmartThings</li>
-          </ul>
-
-          <h2>Waarom een hub gebruiken?</h2>
+          <h2>Wat doet een smart home hub?</h2>
           <p>
-            Zonder hub gebruik je losse apps per merk. Met een hub breng je alles
-            samen en kun je protocollen zoals{" "}
-            <Link href="/blog/wat-is-zigbee">Zigbee</Link> en{" "}
-            <Link href="/blog/wat-is-matter">Matter</Link> slim combineren.
+            Een smart home hub brengt al je slimme apparaten samen in één
+            systeem. In plaats van losse apps per merk, krijg je één centrale
+            plek voor bediening en automatiseringen.
           </p>
 
           <p>
-            Uitleg nodig?{" "}
+            Meer uitleg nodig?{" "}
             <Link href="/tips/wat-is-een-smart-home-hub">
               Wat is een smart home hub?
             </Link>
           </p>
 
-          <h2>Vergelijking in één tabel</h2>
-          <div style={{ overflowX: "auto", marginTop: "1rem" }}>
-            <table style={{ width: "100%", borderCollapse: "collapse", minWidth: 720 }}>
-              <thead>
-                <tr>
-                  <th style={thStyle}>Hub</th>
-                  <th style={thStyle}>Beste voor</th>
-                  <th style={thStyle}>Pluspunten</th>
-                  <th style={thStyle}>Minpunten</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style={tdStyle}><strong>Homey</strong></td>
-                  <td style={tdStyle}>Gemak + combineren</td>
-                  <td style={tdStyle}>Gebruiksvriendelijk, veel integraties</td>
-                  <td style={tdStyle}>Aanschafprijs</td>
-                </tr>
-                <tr>
-                  <td style={tdStyle}><strong>Home Assistant</strong></td>
-                  <td style={tdStyle}>Power users</td>
-                  <td style={tdStyle}>Extreem flexibel, lokaal</td>
-                  <td style={tdStyle}>Technisch, kost tijd</td>
-                </tr>
-                <tr>
-                  <td style={tdStyle}><strong>SmartThings</strong></td>
-                  <td style={tdStyle}>Samsung gebruikers</td>
-                  <td style={tdStyle}>Makkelijk, Samsung integratie</td>
-                  <td style={tdStyle}>Minder diep</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <h2>Welke hub past bij jou?</h2>
+          <h2>Wanneer heb je een hub nodig?</h2>
           <ul>
-            <li><strong>Ik wil gemak:</strong> Homey</li>
-            <li><strong>Ik wil maximale controle:</strong> Home Assistant</li>
-            <li><strong>Ik zit in Samsung:</strong> SmartThings</li>
+            <li>je meerdere merken wilt combineren (Hue, Aqara, Tapo)</li>
+            <li>je werkt met Zigbee, Z-Wave of Matter</li>
+            <li>je stabiele automatiseringen wilt</li>
+            <li>je minder afhankelijk wilt zijn van cloud/apps</li>
           </ul>
 
-          <h2>Conclusie</h2>
+          <h2>Waar moet je op letten bij het kiezen?</h2>
+          <ul>
+            <li>
+              <strong>Gebruiksgemak:</strong> hoe snel ben je klaar?
+            </li>
+            <li>
+              <strong>Flexibiliteit:</strong> hoeveel wil je aanpassen?
+            </li>
+            <li>
+              <strong>Lokaal werken:</strong> blijft alles werken zonder internet?
+            </li>
+            <li>
+              <strong>Ondersteuning:</strong> Zigbee, Z-Wave, Matter, Wi-Fi
+            </li>
+          </ul>
+
+          <h2>Globaal verschil tussen de bekendste hubs</h2>
+          <ul>
+            <li>
+              <strong>Homey:</strong> gebruiksvriendelijk, alles-in-één
+            </li>
+            <li>
+              <strong>Home Assistant:</strong> maximale controle, technisch
+            </li>
+            <li>
+              <strong>SmartThings:</strong> vooral interessant binnen Samsung
+            </li>
+          </ul>
+
           <p>
-            Zie deze pagina als je startpunt. Daarna kun je verdiepen per platform
-            of direct producten vergelijken.
+            Wil je precies weten wat de verschillen zijn? Bekijk ook{" "}
+            <Link href="/blog/home-assistant-vs-homey">
+              Home Assistant vs Homey
+            </Link>
+            .
           </p>
+
+          <h2>Klaar om te kiezen?</h2>
+          <p>
+            We hebben onze aanraders per type gebruiker overzichtelijk voor je
+            op een rij gezet — zonder verkooppraat.
+          </p>
+
+          {/* CTA */}
+          <div
+            style={{
+              marginTop: "1.5rem",
+              padding: "1.25rem",
+              borderRadius: "16px",
+              border: "1px solid rgba(255,255,255,0.12)",
+              background: "rgba(255,255,255,0.03)",
+            }}
+          >
+            <h3 style={{ marginTop: 0 }}>
+              👉 Bekijk onze koopgids: beste smart home hub
+            </h3>
+            <p className="muted">
+              Inclusief onze aanraders voor beginners, power users en
+              Samsung-gebruikers.
+            </p>
+            <Link
+              href="/aanraders/beste-smart-home-hub"
+              style={{
+                display: "inline-block",
+                marginTop: "0.5rem",
+                padding: "0.6rem 1rem",
+                borderRadius: "12px",
+                border: "1px solid rgba(255,255,255,0.16)",
+                textDecoration: "none",
+              }}
+            >
+              Naar de koopgids →
+            </Link>
+          </div>
 
           <hr />
 
@@ -198,11 +187,6 @@ export default function BesteSmartHomeHubPage() {
               </Link>
             </li>
           </ul>
-
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-          />
         </div>
       </main>
 
@@ -210,17 +194,3 @@ export default function BesteSmartHomeHubPage() {
     </>
   );
 }
-
-const thStyle = {
-  textAlign: "left",
-  padding: "0.75rem",
-  borderBottom: "1px solid rgba(255,255,255,0.08)",
-  opacity: 0.9,
-};
-
-const tdStyle = {
-  verticalAlign: "top",
-  padding: "0.75rem",
-  borderBottom: "1px solid rgba(255,255,255,0.06)",
-  opacity: 0.9,
-};
