@@ -60,7 +60,7 @@ export default function VergelijkingSmartHomeProtocollenPage() {
 
       <main className="section">
         <div className="container article">
-          {/* ✅ Blog banner met blur effect */}
+          {/* ✅ Blog banner */}
           <div
             className="blogBanner"
             style={{
@@ -102,8 +102,8 @@ export default function VergelijkingSmartHomeProtocollenPage() {
           <p className="section-intro">
             Als je een smart home bouwt, kom je al snel termen tegen zoals Zigbee,
             Z-Wave, Matter en Wi-Fi. Maar wat is nou echt het verschil — en wat is
-            het beste voor jouw situatie? In dit artikel leggen we het helder uit
-            (zonder marketingpraat).
+            het beste voor jouw situatie? Deze vergelijking vormt het
+            **overzichtspunt** binnen onze smart home protocollen.
           </p>
 
           <h2>Snelle keuzehulp (kort)</h2>
@@ -115,10 +115,10 @@ export default function VergelijkingSmartHomeProtocollenPage() {
               ✅ <strong>Veel apparaten / stabiliteit:</strong> Zigbee of Z-Wave
             </li>
             <li>
-              ✅ <strong>Toekomstbestendig combineren:</strong> Matter (met Thread/Wi-Fi)
+              ✅ <strong>Toekomstbestendig combineren:</strong> Matter
             </li>
             <li>
-              ✅ <strong>Beste dekking door muren:</strong> Z-Wave (vaak sterke penetratie)
+              ✅ <strong>Beste dekking door muren:</strong> Z-Wave
             </li>
           </ul>
 
@@ -145,33 +145,33 @@ export default function VergelijkingSmartHomeProtocollenPage() {
                 <tr>
                   <td style={tdStyle}><strong>Wi-Fi</strong></td>
                   <td style={tdStyle}>Router</td>
-                  <td style={tdStyle}>Makkelijk starten, goedkoop, veel keuze</td>
-                  <td style={tdStyle}>Kan instabiel worden bij veel apparaten, afhankelijk van wifi</td>
-                  <td style={tdStyle}>Beginners / kleine setup</td>
+                  <td style={tdStyle}>Makkelijk starten, goedkoop</td>
+                  <td style={tdStyle}>Kan instabiel worden bij veel apparaten</td>
+                  <td style={tdStyle}>Beginners</td>
                 </tr>
 
                 <tr>
                   <td style={tdStyle}><strong>Zigbee</strong></td>
                   <td style={tdStyle}>Hub/bridge</td>
-                  <td style={tdStyle}>Stabiel mesh netwerk, energiezuinig, ideaal voor sensoren</td>
-                  <td style={tdStyle}>Hub nodig, compatibiliteit per hub verschilt</td>
-                  <td style={tdStyle}>Grote setup + sensoren</td>
+                  <td style={tdStyle}>Mesh netwerk, energiezuinig</td>
+                  <td style={tdStyle}>Hub nodig</td>
+                  <td style={tdStyle}>Grotere setup + sensoren</td>
                 </tr>
 
                 <tr>
                   <td style={tdStyle}><strong>Z-Wave</strong></td>
-                  <td style={tdStyle}>Hub (Z-Wave)</td>
-                  <td style={tdStyle}>Betrouwbaar, vaak goed door muren, minder interferentie</td>
-                  <td style={tdStyle}>Minder productkeuze, vaak duurder</td>
-                  <td style={tdStyle}>Serieuze smart home installatie</td>
+                  <td style={tdStyle}>Hub</td>
+                  <td style={tdStyle}>Zeer betrouwbaar, goede muurpenetratie</td>
+                  <td style={tdStyle}>Duurder, minder keuze</td>
+                  <td style={tdStyle}>Serieuze installaties</td>
                 </tr>
 
                 <tr>
                   <td style={tdStyle}><strong>Matter</strong></td>
                   <td style={tdStyle}>Wi-Fi / Thread</td>
-                  <td style={tdStyle}>Merken samenwerken, toekomstbestendig, minder gedoe</td>
-                  <td style={tdStyle}>Nog groeiend, niet elk product ondersteunt Matter</td>
-                  <td style={tdStyle}>Merken combineren / toekomstvast</td>
+                  <td style={tdStyle}>Merken samenwerken</td>
+                  <td style={tdStyle}>Nog in ontwikkeling</td>
+                  <td style={tdStyle}>Toekomstbestendig combineren</td>
                 </tr>
               </tbody>
             </table>
@@ -179,116 +179,54 @@ export default function VergelijkingSmartHomeProtocollenPage() {
 
           <h2>Uitleg per techniek</h2>
 
-          <h3>1) Wi-Fi (de makkelijke start)</h3>
+          <h3>Wi-Fi</h3>
           <p>
-            Wi-Fi smart home apparaten verbinden direct met je router. Dit is makkelijk
-            en goedkoop. Maar als je veel apparaten hebt (20+), kan wifi instabieler
-            worden. Zeker bij dode hoeken of drukke kanalen.
+            Wi-Fi is ideaal om te starten, maar bij grotere setups kan het
+            instabieler worden. Overweeg dan Zigbee of Z-Wave.
           </p>
 
+          <h3>Zigbee</h3>
           <p>
-            👉 Heb je wifi issues?{" "}
-            <Link href="/tips/wifi-verbeteren-voor-smart-home">
-              Wi-Fi verbeteren voor smart home (10 tips)
-            </Link>
-            .
+            Zigbee is energiezuinig en werkt via een mesh netwerk. Ideaal voor
+            sensoren en grote smart homes.{" "}
+            <Link href="/blog/wat-is-zigbee">Lees hier de volledige uitleg</Link>.
           </p>
 
-          <h3>2) Zigbee (ideaal voor sensoren)</h3>
+          <h3>Z-Wave</h3>
           <p>
-            Zigbee is super populair in smart home. Waarom? Omdat het energiezuinig
-            is en als mesh werkt: apparaten versterken het signaal. Daardoor is het
-            vaak stabieler dan wifi.
+            Z-Wave staat bekend om betrouwbaarheid en stabiele verbindingen,
+            vooral in huizen met dikke muren.
           </p>
 
+          <h3>Matter</h3>
           <p>
-            Meer uitleg? <Link href="/blog/wat-is-zigbee">Wat is Zigbee?</Link>
+            Matter maakt het combineren van merken eenvoudiger.{" "}
+            <Link href="/blog/wat-is-matter">Lees wat Matter precies is</Link>.
           </p>
-
-          <h3>3) Z-Wave (betrouwbaarheid)</h3>
-          <p>
-            Z-Wave lijkt op Zigbee (mesh), maar draait op andere frequenties en heeft
-            vaak een sterke reputatie op betrouwbaarheid. Vooral populair bij
-            domotica setups met veel sensoren, schakelaars en automatiseringen.
-          </p>
-
-          <h3>4) Matter (merken combineren zonder gedoe)</h3>
-          <p>
-            Matter is de nieuwe standaard. Het doel: smart home apparaten van
-            verschillende merken makkelijker laten samenwerken. Matter werkt vaak
-            via Wi-Fi of Thread (modern mesh protocol).
-          </p>
-
-          <p>
-            Lees ook: <Link href="/blog/wat-is-matter">Wat is Matter?</Link>
-          </p>
-
-          <h2>Wat moet jij kiezen? (beste keuze per situatie)</h2>
-          <ul>
-            <li>
-              <strong>Ik wil simpel starten:</strong> Wi-Fi / Matter apparaten
-            </li>
-            <li>
-              <strong>Ik wil uitbreiden met sensoren:</strong> Zigbee
-            </li>
-            <li>
-              <strong>Ik wil maximale betrouwbaarheid:</strong> Z-Wave of Zigbee met sterke hub
-            </li>
-            <li>
-              <strong>Ik wil Hue + Aqara + Tapo combineren:</strong> Matter (of hub zoals Homey)
-            </li>
-          </ul>
 
           <h2>Conclusie</h2>
           <p>
-            Voor de meeste mensen is Zigbee de “sweet spot”: stabiel, energiezuinig,
-            veel aanbod. Wi-Fi is ideaal om te starten. Matter wordt dé standaard
-            voor merken combineren. Z-Wave is vooral interessant voor setups waar
-            betrouwbaarheid boven alles staat.
-          </p>
-
-          <p>
-            Wil je écht merken combineren zonder frustratie?{" "}
-            <Link href="/tips/merken-combineren-zonder-gedoe">
-              Merken combineren zonder gedoe →
-            </Link>
+            Zie deze pagina als je **keuzepunt**. Daarna kun je per techniek
+            verdiepen of gericht producten kiezen.
           </p>
 
           <hr />
 
           <h2>Gerelateerde artikelen</h2>
           <ul>
-            <li>
-              <Link href="/blog/wat-is-zigbee">Wat is Zigbee?</Link>
-            </li>
-            <li>
-              <Link href="/blog/wat-is-matter">Wat is Matter?</Link>
-            </li>
+            <li><Link href="/blog/wat-is-zigbee">Wat is Zigbee?</Link></li>
+            <li><Link href="/blog/wat-is-matter">Wat is Matter?</Link></li>
             <li>
               <Link href="/blog/beste-smart-home-hub">
-                Beste smart home hub (vergelijking)
+                Beste smart home hub
               </Link>
             </li>
             <li>
-              <Link href="/tips/wat-is-een-smart-home-hub">Wat is een smart home hub?</Link>
+              <Link href="/tips/merken-combineren-zonder-gedoe">
+                Merken combineren zonder gedoe
+              </Link>
             </li>
           </ul>
-
-          <h2>Veelgestelde vragen</h2>
-          <h3>Is Zigbee beter dan Wi-Fi?</h3>
-          <p>
-            Vaak wel, vooral als je veel apparaten of sensoren gebruikt. Zigbee is
-            energiezuinig en stabieler doordat het een mesh netwerk bouwt.
-          </p>
-
-          <h3>Is Matter een protocol?</h3>
-          <p>Nee, Matter is een standaard. Het werkt vaak via Wi-Fi of Thread.</p>
-
-          <h3>Moet ik alles vervangen voor Matter?</h3>
-          <p>
-            Nee. Matter komt er bij. Je huidige Zigbee/Wi-Fi apparaten blijven vaak
-            gewoon werken.
-          </p>
 
           <script
             type="application/ld+json"

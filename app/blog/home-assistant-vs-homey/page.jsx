@@ -31,7 +31,7 @@ export default function HomeAssistantVsHomeyPage() {
         name: "Is Home Assistant gratis?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "De software van Home Assistant is gratis. Je hebt wel hardware nodig om het te draaien (bijv. Home Assistant Green of een mini-pc).",
+          text: "De software van Home Assistant is gratis. Je hebt wel hardware nodig om het te draaien, zoals Home Assistant Green of een mini-pc.",
         },
       },
       {
@@ -39,7 +39,7 @@ export default function HomeAssistantVsHomeyPage() {
         name: "Werkt Homey zonder internet?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Veel Homey automatiseringen werken lokaal. Toch kan de werking per apparaat verschillen, omdat sommige merken cloud-afhankelijk zijn.",
+          text: "Veel Homey automatiseringen werken lokaal. De exacte werking hangt af van de gebruikte apparaten en integraties.",
         },
       },
       {
@@ -47,7 +47,7 @@ export default function HomeAssistantVsHomeyPage() {
         name: "Heb ik Zigbee of Z-Wave nodig?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Niet verplicht, maar Zigbee/Z-Wave maken je systeem meestal stabieler en energiezuiniger (vooral bij sensoren). Zowel Homey als Home Assistant kunnen hiermee werken.",
+          text: "Niet verplicht, maar Zigbee en Z-Wave maken je smart home vaak stabieler en energiezuiniger, vooral bij sensoren. Beide hubs ondersteunen dit.",
         },
       },
     ],
@@ -59,7 +59,7 @@ export default function HomeAssistantVsHomeyPage() {
 
       <main className="section">
         <div className="container article">
-          {/* ✅ Blog banner met blur effect */}
+          {/* ✅ Blog banner */}
           <div
             className="blogBanner"
             style={{ "--blog-bg": "url(/images/blog/home-assistant-vs-homey.png)" }}
@@ -88,36 +88,36 @@ export default function HomeAssistantVsHomeyPage() {
           {/* ✅ Cluster navigatie */}
           <p className="muted small" style={{ marginBottom: "0.75rem" }}>
             Onderdeel van:{" "}
-            <Link href="/blog/beste-smart-home-hub">Beste smart home hub</Link> •{" "}
-            <Link href="/tips/wat-is-een-smart-home-hub">Wat is een hub?</Link> •{" "}
+            <Link href="/blog/beste-smart-home-hub">
+              Beste smart home hub
+            </Link>{" "}
+            •{" "}
+            <Link href="/tips/wat-is-een-smart-home-hub">
+              Wat is een smart home hub?
+            </Link>{" "}
+            •{" "}
             <Link href="/blog/zigbee-vs-zwave-vs-matter-vs-wifi">
-              Zigbee vs Z-Wave vs Matter vs Wi-Fi
+              Smart home protocollen
             </Link>
           </p>
 
           <h1>Home Assistant vs Homey: wat is beter?</h1>
 
           <p className="section-intro">
-            Dit is één van de meest gezochte smart home vragen:{" "}
-            <strong>Home Assistant of Homey?</strong> Beide zijn top, maar ze passen
-            bij totaal verschillende types gebruikers. In deze vergelijking krijg je
-            een duidelijke keuzehulp.
+            Dit is één van de meest gezochte smart-home-vragen. Zie deze pagina als
+            de <strong>verdieping</strong> onder de keuze-gids{" "}
+            <Link href="/blog/beste-smart-home-hub">
+              beste smart home hub
+            </Link>
+            .
           </p>
 
           <h2>Snelle keuzehulp</h2>
           <ul>
-            <li>
-              ✅ <strong>Ik wil gemak en snel klaar:</strong> Homey
-            </li>
-            <li>
-              ✅ <strong>Ik wil maximale controle:</strong> Home Assistant
-            </li>
-            <li>
-              ✅ <strong>Ik wil weinig onderhoud:</strong> Homey
-            </li>
-            <li>
-              ✅ <strong>Ik vind tweaken leuk:</strong> Home Assistant
-            </li>
+            <li><strong>Ik wil gemak en snel klaar:</strong> Homey</li>
+            <li><strong>Ik wil maximale controle:</strong> Home Assistant</li>
+            <li><strong>Ik wil weinig onderhoud:</strong> Homey</li>
+            <li><strong>Ik vind tweaken leuk:</strong> Home Assistant</li>
           </ul>
 
           <h2>Vergelijking in één tabel</h2>
@@ -137,52 +137,47 @@ export default function HomeAssistantVsHomeyPage() {
                   <th style={thStyle}>Home Assistant</th>
                 </tr>
               </thead>
-
               <tbody>
                 <tr>
                   <td style={tdStyle}><strong>Installatie</strong></td>
-                  <td style={tdStyle}>Supersnel, gebruiksvriendelijk</td>
-                  <td style={tdStyle}>Meer stappen, kost tijd</td>
+                  <td style={tdStyle}>Supersnel</td>
+                  <td style={tdStyle}>Meer stappen</td>
                 </tr>
                 <tr>
                   <td style={tdStyle}><strong>Gebruiksgemak</strong></td>
-                  <td style={tdStyle}>Heel makkelijk (app)</td>
-                  <td style={tdStyle}>Kan complex worden (UI/instellingen)</td>
+                  <td style={tdStyle}>Zeer hoog</td>
+                  <td style={tdStyle}>Technischer</td>
                 </tr>
                 <tr>
                   <td style={tdStyle}><strong>Automatiseringen</strong></td>
-                  <td style={tdStyle}>Flows (krachtig + simpel)</td>
-                  <td style={tdStyle}>Extreem krachtig (maar technisch)</td>
+                  <td style={tdStyle}>Flows (simpel + krachtig)</td>
+                  <td style={tdStyle}>Extreem krachtig</td>
                 </tr>
                 <tr>
                   <td style={tdStyle}><strong>Lokaal</strong></td>
-                  <td style={tdStyle}>Veel lokaal mogelijk</td>
-                  <td style={tdStyle}>Volledig lokaal mogelijk</td>
+                  <td style={tdStyle}>Grotendeels lokaal</td>
+                  <td style={tdStyle}>Volledig lokaal</td>
                 </tr>
                 <tr>
                   <td style={tdStyle}><strong>Flexibiliteit</strong></td>
-                  <td style={tdStyle}>Groot, maar binnen ecosystemen</td>
-                  <td style={tdStyle}>Onbeperkt (DIY / integraties)</td>
-                </tr>
-                <tr>
-                  <td style={tdStyle}><strong>Onderhoud</strong></td>
-                  <td style={tdStyle}>Weinig</td>
-                  <td style={tdStyle}>Updates/config onderhoud</td>
+                  <td style={tdStyle}>Groot</td>
+                  <td style={tdStyle}>Onbeperkt</td>
                 </tr>
                 <tr>
                   <td style={tdStyle}><strong>Voor wie?</strong></td>
-                  <td style={tdStyle}>Iedereen / gezinnen / gemak</td>
-                  <td style={tdStyle}>Tech-liefhebbers / power users</td>
+                  <td style={tdStyle}>Gemak & gezinnen</td>
+                  <td style={tdStyle}>Tech-liefhebbers</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <h2>Homey: ideaal als je gemak wilt</h2>
+          <h2>Homey: gemak en snel resultaat</h2>
           <p>
-            Homey is “alles-in-één”. Je installeert, koppelt je apparaten en je bent
-            klaar. Flows maken is simpel en toch krachtig. Daardoor is Homey perfect
-            voor mensen die willen dat het gewoon werkt.
+            Homey is ideaal als je meerdere merken wilt combineren zonder gedoe.
+            Het werkt uitstekend met protocollen zoals{" "}
+            <Link href="/blog/wat-is-zigbee">Zigbee</Link> en steeds vaker ook{" "}
+            <Link href="/blog/wat-is-matter">Matter</Link>.
           </p>
 
           <p>
@@ -192,11 +187,11 @@ export default function HomeAssistantVsHomeyPage() {
             </Link>
           </p>
 
-          <h2>Home Assistant: ideaal als je maximale controle wilt</h2>
+          <h2>Home Assistant: maximale controle</h2>
           <p>
-            Home Assistant is het krachtigste platform voor smart home. Je kunt alles
-            aanpassen: dashboards, automatiseringen, integraties, logica. Maar je moet
-            er wel tijd en interesse voor hebben.
+            Home Assistant is perfect als je volledige vrijheid wilt. Je kunt
+            alles lokaal draaien en complexe logica bouwen. Het vraagt wel meer
+            kennis en onderhoud.
           </p>
 
           <p>
@@ -206,34 +201,15 @@ export default function HomeAssistantVsHomeyPage() {
             </Link>
           </p>
 
-          <h2>Welke kies je? (beste keuze per type gebruiker)</h2>
-          <ul>
-            <li>
-              <strong>Ik wil gemak:</strong> Homey
-            </li>
-            <li>
-              <strong>Ik wil alles custom bouwen:</strong> Home Assistant
-            </li>
-            <li>
-              <strong>Ik wil weinig onderhoud:</strong> Homey
-            </li>
-            <li>
-              <strong>Ik wil eindeloos tweaken:</strong> Home Assistant
-            </li>
-          </ul>
-
           <h2>Conclusie</h2>
           <p>
-            Homey is de beste keuze voor de meeste mensen: makkelijk, krachtig en
-            toekomstvast. Home Assistant is de beste keuze voor tech-liefhebbers die
-            maximale vrijheid willen.
-          </p>
-
-          <p>
-            Wil je eerst weten wat een hub precies doet?{" "}
-            <Link href="/tips/wat-is-een-smart-home-hub">
-              Lees: wat is een smart home hub →
+            Zie Homey als de beste keuze voor de meeste mensen. Home Assistant is
+            ideaal als je graag diep in je smart home duikt. Twijfel je nog?
+            Begin bij de{" "}
+            <Link href="/blog/beste-smart-home-hub">
+              beste smart home hub-vergelijking
             </Link>
+            .
           </p>
 
           <hr />
@@ -241,7 +217,9 @@ export default function HomeAssistantVsHomeyPage() {
           <h2>Gerelateerde artikelen</h2>
           <ul>
             <li>
-              <Link href="/blog/beste-smart-home-hub">Beste smart home hub (vergelijking)</Link>
+              <Link href="/blog/beste-smart-home-hub">
+                Beste smart home hub
+              </Link>
             </li>
             <li>
               <Link href="/blog/wat-is-matter">Wat is Matter?</Link>

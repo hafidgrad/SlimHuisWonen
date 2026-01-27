@@ -51,7 +51,7 @@ export default function WatIsZigbeeBlogPage() {
 
       <main className="section">
         <div className="container article">
-          {/* ✅ Blog banner met blur effect */}
+          {/* ✅ Blog banner */}
           <div
             className="blogBanner"
             style={{ "--blog-bg": "url(/images/blog/wat-is-zigbee.png)" }}
@@ -77,11 +77,16 @@ export default function WatIsZigbeeBlogPage() {
             </div>
           </div>
 
-          {/* ✅ Cluster navigatie */}
+          {/* ✅ Cluster navigatie (topical context) */}
           <p className="muted small" style={{ marginBottom: "0.75rem" }}>
             Gerelateerd:{" "}
-            <Link href="/tips/wat-is-een-smart-home-hub">Smart home hub</Link> •{" "}
-            <Link href="/tips/wat-is-slimme-verlichting">Slimme verlichting</Link>{" "}
+            <Link href="/blog/zigbee-vs-zwave-vs-matter-vs-wifi">
+              Zigbee vs Z-Wave vs Matter
+            </Link>{" "}
+            •{" "}
+            <Link href="/tips/wat-is-een-smart-home-hub">
+              Smart home hub
+            </Link>{" "}
             •{" "}
             <Link href="/tips/merken-combineren-zonder-gedoe">
               Merken combineren
@@ -101,7 +106,11 @@ export default function WatIsZigbeeBlogPage() {
           <p>
             Veel mensen starten met wifi-smart home producten. Dat werkt prima,
             maar Zigbee is speciaal gemaakt voor smart home en heeft een paar
-            grote voordelen.
+            grote voordelen. In onze vergelijking{" "}
+            <Link href="/blog/zigbee-vs-zwave-vs-matter-vs-wifi">
+              Zigbee vs Z-Wave vs Matter vs wifi
+            </Link>{" "}
+            gaan we hier dieper op in.
           </p>
 
           <ul>
@@ -118,27 +127,31 @@ export default function WatIsZigbeeBlogPage() {
 
           <h2>Hoe werkt Zigbee? (simpel uitgelegd)</h2>
           <p>
-            Zigbee-apparaten communiceren meestal via een hub/bridge. Die hub
-            koppelt Zigbee aan je netwerk en app.
+            Zigbee-apparaten communiceren meestal via een hub of bridge. Zo’n hub
+            vormt het hart van je smart home. Lees ook:{" "}
+            <Link href="/tips/wat-is-een-smart-home-hub">
+              wat is een smart home hub?
+            </Link>
+            .
           </p>
 
           <p>Veelgebruikte hubs/bridges zijn:</p>
           <ul>
             <li>Philips Hue Bridge (voor Hue verlichting)</li>
-            <li>Homey (veel merken combineren)</li>
+            <li>Homey (meerdere merken combineren)</li>
             <li>Home Assistant (met Zigbee dongle / Zigbee2MQTT)</li>
           </ul>
 
           <h2>Wat is een Zigbee mesh netwerk?</h2>
           <p>
-            Een groot voordeel: Zigbee kan een <strong>mesh netwerk</strong>{" "}
-            vormen. Dat betekent dat apparaten elkaar kunnen doorgeven en het
-            bereik groter wordt.
+            Een groot voordeel van Zigbee is het{" "}
+            <strong>mesh netwerk</strong>. Apparaten geven signalen aan elkaar
+            door, waardoor je bereik automatisch groter wordt.
           </p>
 
           <p className="muted">
-            Tip: apparaten op stroom (zoals lampen/stekkers) zijn vaak “repeaters”
-            in het mesh netwerk.
+            Tip: apparaten op stroom (zoals lampen en slimme stekkers) fungeren
+            vaak als versterkers binnen het mesh netwerk.
           </p>
 
           <h2>Wanneer kies je Zigbee (en wanneer wifi)?</h2>
@@ -146,20 +159,20 @@ export default function WatIsZigbeeBlogPage() {
           <h3>Kies Zigbee als:</h3>
           <ul>
             <li>je veel slimme apparaten hebt</li>
-            <li>je sensoren gebruikt (bewegingssensor, deurcontact, etc.)</li>
-            <li>je betrouwbaarheid wilt</li>
+            <li>je sensoren gebruikt</li>
+            <li>je betrouwbaarheid belangrijk vindt</li>
             <li>je merken wilt combineren</li>
           </ul>
 
           <h3>Kies wifi als:</h3>
           <ul>
-            <li>je simpel begint met een paar apparaten</li>
-            <li>je geen hub wil kopen</li>
-            <li>je alles via één merk/app gebruikt</li>
+            <li>je klein en simpel begint</li>
+            <li>je geen extra hub wilt</li>
+            <li>je alles binnen één merk gebruikt</li>
           </ul>
 
           <p>
-            Start je net? Bekijk dan ook:{" "}
+            Start je net? Bekijk dan ook{" "}
             <Link href="/tips/beginnen-met-smart-home">
               beginnen met smart home in 5 stappen
             </Link>
@@ -168,24 +181,29 @@ export default function WatIsZigbeeBlogPage() {
 
           <h2>Conclusie</h2>
           <p>
-            Zigbee is een slimme keuze als je een betrouwbaar smart home wil dat
-            kan meegroeien. Voor beginners kan wifi prima zijn, maar zodra je meer
-            apparaten en automatiseringen wilt, wordt Zigbee vaak de betere basis.
+            Zigbee is een sterke basis voor een betrouwbaar en uitbreidbaar
+            smart home. Zeker wanneer je meerdere merken wilt combineren of
+            later wilt opschalen.
           </p>
 
           <hr />
 
-          {/* ✅ Gerelateerde links / interne links */}
+          {/* ✅ Gerelateerde artikelen (blog + tips mix) */}
           <h2>Gerelateerde artikelen</h2>
           <ul>
             <li>
-              <Link href="/tips/wat-is-een-smart-home-hub">
-                Wat is een smart home hub?
+              <Link href="/blog/zigbee-vs-zwave-vs-matter-vs-wifi">
+                Zigbee vs Z-Wave vs Matter vs wifi
               </Link>
             </li>
             <li>
-              <Link href="/tips/beginnen-met-slimme-verlichting">
-                Beginnen met slimme verlichting
+              <Link href="/blog/aqara-vs-tapo">
+                Aqara vs Tapo: verschillen uitgelegd
+              </Link>
+            </li>
+            <li>
+              <Link href="/tips/wat-is-een-smart-home-hub">
+                Wat is een smart home hub?
               </Link>
             </li>
             <li>
@@ -193,32 +211,29 @@ export default function WatIsZigbeeBlogPage() {
                 Merken combineren zonder gedoe
               </Link>
             </li>
-            <li>
-              <Link href="/blog/aqara-vs-tapo">Aqara vs Tapo</Link>
-            </li>
           </ul>
 
-          {/* ✅ FAQ (ook zichtbaar) */}
+          {/* ✅ FAQ zichtbaar */}
           <h2>Veelgestelde vragen</h2>
+
           <h3>Wat is Zigbee?</h3>
           <p>
-            Zigbee is een smart home protocol dat veel gebruikt wordt voor lampen,
-            sensoren en schakelaars. Het is energiezuinig en betrouwbaar.
+            Zigbee is een energiezuinig smart home protocol voor lampen,
+            sensoren en schakelaars.
           </p>
 
           <h3>Heb je een hub nodig voor Zigbee?</h3>
           <p>
-            Meestal wel. Zigbee werkt vaak via een hub/bridge zoals Hue Bridge,
-            Homey of Home Assistant.
+            Meestal wel. Zigbee werkt via een hub of bridge zoals Homey, Hue
+            Bridge of Home Assistant.
           </p>
 
           <h3>Is Zigbee beter dan wifi?</h3>
           <p>
-            Voor grote smart home setups meestal wel: stabieler en beter schaalbaar.
-            Wifi is eenvoudiger om mee te starten.
+            Voor grotere smart homes wel: stabieler en beter schaalbaar dan wifi.
           </p>
 
-          {/* ✅ Structured data inject */}
+          {/* ✅ Structured data */}
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

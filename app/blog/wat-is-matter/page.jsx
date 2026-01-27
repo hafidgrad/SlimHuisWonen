@@ -31,7 +31,7 @@ export default function WatIsMatterPage() {
         name: "Heb ik een hub nodig voor Matter?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Niet altijd. Sommige Matter apparaten werken direct via je platform (bijv. Google Home, Apple Home, Alexa). In veel gevallen heb je wel een Matter controller nodig, vaak ingebouwd in een hub of speaker.",
+          text: "Niet altijd. Veel Matter apparaten werken via een ingebouwde controller zoals Google Home, Apple Home of een hub zoals Homey. Soms is een Thread border router nodig.",
         },
       },
       {
@@ -39,7 +39,7 @@ export default function WatIsMatterPage() {
         name: "Is Matter hetzelfde als Zigbee?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Nee. Zigbee is een draadloos protocol. Matter is een standaard die bepaalt hoe apparaten communiceren en samenwerken. Matter kan werken via Wi-Fi of Thread.",
+          text: "Nee. Zigbee is een draadloos protocol. Matter is een standaard die bepaalt hoe apparaten samenwerken en kan werken via Wi-Fi of Thread.",
         },
       },
       {
@@ -47,7 +47,7 @@ export default function WatIsMatterPage() {
         name: "Werkt Matter met Philips Hue, Aqara en Tapo?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Steeds meer merken ondersteunen Matter. Sommige werken via een update (bijv. via bridge/hub), anderen hebben nieuwe Matter-producten. Check altijd of een specifiek product Matter support heeft.",
+          text: "Steeds meer merken ondersteunen Matter. Soms via een software-update of bridge, soms via nieuwe Matter-apparaten. Controleer altijd per product.",
         },
       },
     ],
@@ -59,7 +59,7 @@ export default function WatIsMatterPage() {
 
       <main className="section">
         <div className="container article">
-          {/* ✅ Blog banner met blur effect */}
+          {/* ✅ Blog banner */}
           <div
             className="blogBanner"
             style={{ "--blog-bg": "url(/images/blog/wat-is-matter.png)" }}
@@ -93,116 +93,105 @@ export default function WatIsMatterPage() {
               Zigbee vs Z-Wave vs Matter vs Wi-Fi
             </Link>{" "}
             •{" "}
-            <Link href="/tips/merken-combineren-zonder-gedoe">
-              Merken combineren
+            <Link href="/blog/beste-smart-home-hub">
+              Beste smart home hub
             </Link>
           </p>
 
           <h1>Wat is Matter?</h1>
 
           <p className="section-intro">
-            Matter is dé nieuwe smart home standaard die ervoor moet zorgen dat
-            apparaten van verschillende merken makkelijker samenwerken. Minder
-            gedoe met apps, meer compatibiliteit en makkelijker koppelen.
+            Matter is de nieuwe smart home standaard die ervoor moet zorgen dat
+            apparaten van verschillende merken makkelijker samenwerken. Zie
+            Matter als de **verbindende laag** bovenop technieken zoals Zigbee,
+            Thread en Wi-Fi.
           </p>
 
           <h2>Waarom is Matter zo belangrijk?</h2>
           <p>
-            In smart home loop je vaak tegen hetzelfde probleem aan: elk merk
-            heeft zijn eigen app, eigen koppelingen en eigen “ecosysteem”.
-            Matter probeert dat op te lossen door één universele taal te maken
-            voor smart home apparaten.
+            In smart home zit je vaak vast aan één ecosysteem. Matter probeert
+            dat te doorbreken. In onze vergelijking{" "}
+            <Link href="/blog/zigbee-vs-zwave-vs-matter-vs-wifi">
+              Zigbee vs Z-Wave vs Matter vs Wi-Fi
+            </Link>{" "}
+            zie je hoe Matter zich verhoudt tot andere technieken.
           </p>
 
           <ul>
             <li>✅ makkelijker koppelen</li>
             <li>✅ betere samenwerking tussen merken</li>
-            <li>✅ minder afhankelijk van cloud/apps</li>
-            <li>✅ toekomstvaster systeem</li>
+            <li>✅ minder afhankelijk van losse apps</li>
+            <li>✅ toekomstbestendiger smart home</li>
           </ul>
 
           <h2>Hoe werkt Matter?</h2>
           <p>
-            Matter is geen “signaal” zoals Zigbee of Z-Wave. Het is een{" "}
-            <strong>standaard</strong> die bepaalt hoe apparaten communiceren.
-            Matter werkt over bestaande technieken zoals:
+            Matter is geen radiosignaal zoals{" "}
+            <Link href="/blog/wat-is-zigbee">Zigbee</Link> of Z-Wave. Het is een{" "}
+            <strong>standaard</strong> die bepaalt hoe apparaten met elkaar
+            communiceren.
           </p>
 
           <ul>
             <li>
-              <strong>Wi-Fi</strong> – veel smart home apparaten gebruiken dit al
+              <strong>Wi-Fi</strong> – veel bestaande apparaten
             </li>
             <li>
-              <strong>Thread</strong> – energiezuinig mesh netwerk (vergelijkbaar
-              met Zigbee, maar moderner)
+              <strong>Thread</strong> – modern, energiezuinig mesh netwerk
             </li>
           </ul>
 
-          <h2>Thread, Matter en hubs: hoe zit dat?</h2>
+          <h2>Thread, Matter en hubs</h2>
           <p>
-            Veel Matter apparaten werken via <strong>Thread</strong>. Daarvoor
-            heb je vaak een “Thread border router” nodig. Dat klinkt ingewikkeld,
-            maar het zit vaak al in apparaten zoals:
+            Veel Matter-apparaten werken via Thread. Daarvoor is een zogeheten
+            <em>Thread border router</em> nodig. Die zit vaak al ingebouwd in:
           </p>
 
           <ul>
             <li>Apple HomePod / Apple TV</li>
             <li>Google Nest Hub / Nest Wifi</li>
-            <li>Amazon Echo (sommige modellen)</li>
+            <li>Amazon Echo (selecte modellen)</li>
             <li>Homey Pro (nieuwere generatie)</li>
           </ul>
 
           <p>
-            Dus: je hoeft niet altijd een aparte hub te kopen, maar je hebt wel
-            een centrale controller nodig. Wil je weten wat een hub precies doet?{" "}
+            Wil je precies weten wat een hub doet?{" "}
             <Link href="/tips/wat-is-een-smart-home-hub">
-              Lees hier wat een smart home hub is
+              Wat is een smart home hub?
             </Link>
-            .
           </p>
 
           <h2>Moet je al je apparaten vervangen?</h2>
           <p>
-            Nee. Matter komt er vooral “bij”. Veel bestaande systemen blijven
-            gewoon werken. Sommige merken voegen Matter toe via updates (zoals
-            bridges), maar niet alles krijgt automatisch Matter support.
+            Nee. Matter komt er vooral <em>naast</em>. Veel bestaande Zigbee- en
+            Wi-Fi-apparaten blijven gewoon werken, soms via een bridge of update.
           </p>
 
           <h2>Voor wie is Matter interessant?</h2>
           <ul>
             <li>
-              <strong>Beginners</strong> die straks minder gedoe willen met apps
+              <strong>Beginners</strong> die minder apps willen
             </li>
             <li>
-              <strong>Merken-mixers</strong> die Hue + Aqara + Tapo willen combineren
+              <strong>Merken-mixers</strong> (Hue + Aqara + Tapo)
             </li>
             <li>
-              <strong>Smart home bouwers</strong> die toekomstvast willen uitbreiden
+              <strong>Toekomstgerichte bouwers</strong>
             </li>
           </ul>
 
           <h2>Conclusie</h2>
           <p>
-            Matter is een grote stap richting “smart home zonder gedoe”. Het is
-            vooral interessant als je merken wilt combineren en je systeem
-            toekomstbestendig wilt maken. Het vervangt Zigbee/Wi-Fi niet direct,
-            maar maakt samenwerken makkelijker.
-          </p>
-
-          <p>
-            Wil je merken combineren zonder frustratie?{" "}
-            <Link href="/tips/merken-combineren-zonder-gedoe">
-              Lees: merken combineren zonder gedoe →
-            </Link>
+            Matter vervangt bestaande protocollen niet direct, maar maakt
+            samenwerken eenvoudiger. Het is dé logische stap richting een smart
+            home zonder merk-lock-in.
           </p>
 
           <hr />
 
           <h2>Gerelateerde artikelen</h2>
           <ul>
-            <li>
-              <Link href="/blog/wat-is-zigbee">Wat is Zigbee?</Link>
-            </li>
+            <li><Link href="/blog/wat-is-zigbee">Wat is Zigbee?</Link></li>
             <li>
               <Link href="/blog/zigbee-vs-zwave-vs-matter-vs-wifi">
                 Zigbee vs Z-Wave vs Matter vs Wi-Fi
@@ -210,34 +199,15 @@ export default function WatIsMatterPage() {
             </li>
             <li>
               <Link href="/blog/beste-smart-home-hub">
-                Beste smart home hub (Homey vs Home Assistant vs SmartThings)
+                Beste smart home hub
               </Link>
             </li>
             <li>
-              <Link href="/tips/wat-is-een-smart-home-hub">
-                Wat is een smart home hub?
+              <Link href="/tips/merken-combineren-zonder-gedoe">
+                Merken combineren zonder gedoe
               </Link>
             </li>
           </ul>
-
-          <h2>Veelgestelde vragen</h2>
-          <h3>Wat is Matter?</h3>
-          <p>
-            Matter is een smart home standaard die ervoor zorgt dat apparaten van
-            verschillende merken makkelijker samenwerken.
-          </p>
-
-          <h3>Heb ik een hub nodig?</h3>
-          <p>
-            Niet altijd, maar je hebt meestal wel een controller/border router in
-            huis (zoals een speaker, hub of Homey).
-          </p>
-
-          <h3>Is Matter hetzelfde als Zigbee?</h3>
-          <p>
-            Nee. Zigbee is een protocol, Matter is een standaard. Matter werkt
-            vaak via Wi-Fi of Thread.
-          </p>
 
           <script
             type="application/ld+json"
