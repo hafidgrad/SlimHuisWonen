@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import TopAanraders from "@/components/TopAanraders";
+import TopKoopgidsen from "@/components/TopKoopgidsen";
 import About from "@/components/About";
 import Categories from "@/components/Categories";
 import Contact from "@/components/Contact";
@@ -32,9 +32,11 @@ export default function HomePage() {
                   plek.
                 </p>
 
-                {/* ✅ Knoppen */}
                 <div className="hero-banner-actions">
-                  <Link href="/producten" className="btn hero-btn hero-secondary">
+                  <Link
+                    href="/producten"
+                    className="btn hero-btn hero-secondary"
+                  >
                     Ontdek producten
                   </Link>
 
@@ -43,8 +45,7 @@ export default function HomePage() {
                   </Link>
                 </div>
 
-                {/* ✅ Scroll indicator */}
-                <a href="#top-aanraders" className="scroll-indicator">
+                <a href="#koopgidsen" className="scroll-indicator">
                   Ontdek meer <span className="scroll-arrow">↓</span>
                 </a>
               </div>
@@ -56,17 +57,17 @@ export default function HomePage() {
         <div className="hero-spacer" />
 
         {/* ✅ Scroll target */}
-        <span id="top-aanraders" />
+        <span id="koopgidsen" />
 
-        <TopAanraders />
+        {/* ✅ KOOPGIDSEN (vervangt Onze slimme aanraders) */}
+        <TopKoopgidsen />
 
         <About />
         <Categories />
 
-        {/* ✅ Tips & uitleg – banner + CTA */}
+        {/* ✅ Tips & uitleg */}
         <section className="section">
           <div className="container">
-            {/* ✅ Clickable banner in zelfde stijl/maat als categorie-banner */}
             <Link href="/tips" className="banner-center tips-banner-link">
               <div className="categorie-banner tips-banner">
                 <img
@@ -91,10 +92,9 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ✅ Blog – banner + CTA (zoals tips, zonder blur) */}
+        {/* ✅ Blog */}
         <section className="section">
           <div className="container">
-            {/* ✅ Clickable banner */}
             <Link href="/blog" className="banner-center blog-banner-link">
               <div className="categorie-banner blog-banner">
                 <img

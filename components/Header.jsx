@@ -32,7 +32,7 @@ export default function Header() {
           {/* ✅ Scroll naar categorieën sectie op homepage */}
           <Link href="/#categorieen">Categorieën</Link>
 
-          <Link href="/aanraders">Aanraders</Link>
+          <Link href="/aanraders">Koopgidsen</Link>
           <Link href="/tips">Tips & uitleg</Link>
 
           {/* ✅ Nieuw: Blog zichtbaar maken */}

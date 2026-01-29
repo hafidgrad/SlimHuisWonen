@@ -1,0 +1,81 @@
+import Link from "next/link";
+
+const koopgidsen = [
+  {
+    title: "Beste slimme verlichting",
+    description: "Hue, IKEA, Tapo & Govee vergeleken",
+    href: "/blog/beste-slimme-verlichting",
+    image: "/images/blog/beste-slimme-verlichting.png",
+  },
+  {
+    title: "Beste slimme stekkers",
+    description: "Met en zonder energiemeting",
+    href: "/blog/beste-slimme-stekkers",
+    image: "/images/blog/beste-slimme-stekkers.png",
+  },
+  {
+    title: "Beste slimme camera",
+    description: "Binnen, buiten & privacy",
+    href: "/blog/beste-slimme-camera",
+    image: "/images/blog/beste-slimme-camera.png",
+  },
+  {
+    title: "Beste slimme deurbel",
+    description: "Bedraad, accu & abonnementen",
+    href: "/blog/beste-slimme-deurbel",
+    image: "/images/blog/beste-slimme-deurbel.png",
+  },
+  {
+    title: "Beste smart home hub",
+    description: "Homey, Home Assistant & SmartThings",
+    href: "/blog/beste-smart-home-hub",
+    image: "/images/blog/beste-smart-home-hub.png",
+  },
+];
+
+export default function TopKoopgidsen() {
+  return (
+    <section className="section">
+      <div className="container">
+        <h2>Onze koopgidsen</h2>
+
+        <p className="section-intro">
+          Twijfel je wat je moet kiezen? In onze koopgidsen vergelijken we de
+          beste opties per categorie — helder, onafhankelijk en praktisch.
+        </p>
+
+        <div className="categories-grid">
+          {koopgidsen.map((gids) => (
+            <Link
+              key={gids.href}
+              href={gids.href}
+              className="category-card"
+            >
+              <div className="category-image">
+                <img src={gids.image} alt={gids.title} />
+                <span className="category-badge">Koopgids</span>
+              </div>
+
+              <div className="category-content">
+                <h3>{gids.title}</h3>
+                <p>{gids.description}</p>
+
+                <span className="category-link">
+                  Bekijk koopgids →
+                </span>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        <Link
+          href="/blog"
+          className="btn btn-primary"
+          style={{ marginTop: "1.5rem" }}
+        >
+          Bekijk alle koopgidsen →
+        </Link>
+      </div>
+    </section>
+  );
+}

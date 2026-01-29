@@ -7,7 +7,7 @@ import BuyGuideProductCard from "@/components/BuyGuideProductCard";
 export const metadata = {
   title: "Beste slimme sensoren (2026) – onze aanraders",
   description:
-    "Op zoek naar de beste slimme sensoren? Bekijk onze aanraders voor beweging, deuren, temperatuur en waterdetectie. Duidelijke keuzes, zonder spam.",
+    "De beste slimme sensoren voor je smart home. Bekijk onze aanraders voor beweging, deuren/ramen, temperatuur en aanwezigheid.",
   alternates: {
     canonical: "https://slimhuiswonen.nl/aanraders/beste-slimme-sensoren",
   },
@@ -17,62 +17,55 @@ export default function BesteSlimmeSensorenKoopgidsPage() {
   const guide = {
     title: "Beste slimme sensoren (2026)",
     intro:
-      "Slimme sensoren vormen de basis van een écht slim huis. In deze koopgids laten we je onze beste keuzes zien voor beweging, aanwezigheid, klimaat en beveiliging.",
+      "Slimme sensoren vormen de basis van een écht slim huis. Ze zorgen voor automatiseringen, energiebesparing en beveiliging. In deze koopgids vind je onze beste keuzes per type sensor.",
     image: "/images/blog/beste-slimme-sensoren.png",
     whatToLookFor: [
-      "Type sensor (beweging, deur/raam, temperatuur, water)",
-      "Protocol: Zigbee, Thread/Matter of Wi-Fi",
+      "Type sensor (beweging, deur/raam, temperatuur, aanwezigheid)",
+      "Protocol: Zigbee, Thread, Wi-Fi",
       "Batterijduur en betrouwbaarheid",
-      "Integratie met Homey / Home Assistant",
+      "Lokale werking via hub",
+      "Compatibiliteit met Homey / Home Assistant",
     ],
     picks: [
       {
-        title: "Beste aanwezigheidssensor: Aqara FP2",
+        title: "Beste allround sensoren: Aqara",
         description:
-          "Geavanceerde aanwezigheidssensor die zones herkent. Perfect voor slimme verlichting en automatiseringen zonder valse triggers.",
-        image: "/images/products/aqara-fp2.png",
-        href: "/producten/aqara-fp2-aanwezigheidssensor",
-        badges: ["Beste keuze", "Aanwezigheid"],
-      },
-      {
-        title: "Beste bewegingssensor (Zigbee): Aqara Motion",
-        description:
-          "Betrouwbare en betaalbare bewegingssensor. Ideaal voor verlichting, beveiliging en routines.",
+          "Uitstekende prijs-kwaliteit, zeer stabiel en breed inzetbaar. Aqara sensoren werken perfect met Homey en Home Assistant.",
         image: "/images/products/aqara-motion-sensor.png",
         href: "/producten/aqara-motion-sensor",
-        badges: ["Zigbee", "Betrouwbaar"],
+        badges: ["Beste keuze", "Zigbee"],
       },
       {
-        title: "Beste deur/raamsensor: Aqara Door & Window",
+        title: "Beste aanwezigheidssensor: Aqara FP2",
         description:
-          "Compacte sensor voor deuren en ramen. Handig voor beveiliging en slimme verwarmingsregels.",
-        image: "/images/products/aqara-door-window.png",
-        href: "/producten/aqara-door-window-sensor",
-        badges: ["Deur & raam", "Zigbee"],
+          "Detecteert aanwezigheid extreem nauwkeurig (mmWave). Ideaal voor verlichting en automatiseringen zonder valse triggers.",
+        image: "/images/products/aqara-fp2.png",
+        href: "/producten/aqara-fp2-aanwezigheidssensor",
+        badges: ["Aanwezigheid", "Geavanceerd"],
       },
       {
-        title: "Beste klimaat sensor: Aqara Temp & Humidity",
+        title: "Beste temperatuur & klimaat: Eve Weather",
         description:
-          "Meet temperatuur en luchtvochtigheid. Ideaal voor comfort en energiebesparing.",
-        image: "/images/products/aqara-temp-humidity.png",
-        href: "/producten/aqara-temperature-humidity",
-        badges: ["Klimaat", "Energie besparen"],
+          "Premium sensor met focus op privacy. Werkt via Thread en HomeKit, lokaal en zonder cloud.",
+        image: "/images/products/eve-weather.png",
+        href: "/producten/eve-weather",
+        badges: ["Klimaat", "Thread"],
       },
       {
-        title: "Beste waterleksensor: Aqara Water Leak",
+        title: "Beste budget sensor (Wi-Fi): Tapo",
         description:
-          "Waarschuwt direct bij lekkage. Onmisbaar bij wasmachine, vaatwasser of cv-ketel.",
-        image: "/images/products/aqara-water-leak.png",
-        href: "/producten/aqara-water-leak-sensor",
-        badges: ["Waterlek", "Beveiliging"],
+          "Eenvoudige en betaalbare sensoren zonder hub. Ideaal om laagdrempelig te starten.",
+        image: "/images/products/tapo-sensor.png",
+        href: "/producten/tapo-sensor",
+        badges: ["Budget", "Wi-Fi"],
       },
       {
-        title: "Beste Matter/Thread sensor: Eve Motion",
+        title: "Beste premium sensoren: Eve",
         description:
-          "Premium sensor met Matter & Thread. Werkt lokaal en perfect binnen Apple / Matter-ecosystemen.",
-        image: "/images/products/eve-motion.png",
-        href: "/producten/eve-motion",
-        badges: ["Matter", "Thread"],
+          "Hoogwaardige sensoren met focus op privacy, lokale verwerking en Matter/Thread-ondersteuning.",
+        image: "/images/products/eve-door-window.png",
+        href: "/producten/eve-door-window",
+        badges: ["Premium", "Privacy"],
       },
     ],
   };
@@ -83,38 +76,24 @@ export default function BesteSlimmeSensorenKoopgidsPage() {
 
       <main className="section">
         <div className="container article">
-          {/* Hero */}
-          <div
-            className="blogBanner"
-            style={{ "--blog-bg": `url(${guide.image})` }}
-          >
-            <div
-              className="blogBannerBlur blogBannerBlurLeft"
-              style={{ backgroundImage: "var(--blog-bg)" }}
+          {/* ✅ Compacte koopgids hero */}
+          <div className="koopgids-hero">
+            <Image
+              src={guide.image}
+              alt={guide.title}
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 1200px"
+              style={{ objectFit: "cover" }}
             />
-            <div
-              className="blogBannerBlur blogBannerBlurRight"
-              style={{ backgroundImage: "var(--blog-bg)" }}
-            />
-            <div className="blogBannerInner">
-              <Image
-                src={guide.image}
-                alt={guide.title}
-                width={1400}
-                height={520}
-                priority
-                className="blogBannerImg"
-              />
-            </div>
           </div>
 
           {/* Context */}
           <p className="muted small" style={{ marginBottom: "0.75rem" }}>
-            Handig om te lezen:{" "}
-            <Link href="/blog/wat-is-zigbee">Wat is Zigbee?</Link> •{" "}
-            <Link href="/blog/beste-smart-home-hub">Beste smart home hub</Link> •{" "}
-            <Link href="/tips/merken-combineren-zonder-gedoe">
-              Merken combineren
+            Beveiliging & automatisering:{" "}
+            <Link href="/blog/beste-slimme-camera">slimme camera’s</Link> •{" "}
+            <Link href="/aanraders/beste-smart-home-hub">
+              beste smart home hub
             </Link>
           </p>
 
@@ -130,7 +109,7 @@ export default function BesteSlimmeSensorenKoopgidsPage() {
 
           <h2>Onze aanraders</h2>
           <p className="muted">
-            Alleen sensoren die zich in de praktijk bewezen hebben.
+            Alleen sensoren die betrouwbaar zijn en in de praktijk goed werken.
           </p>
 
           <div style={{ display: "grid", gap: "1rem", marginTop: "1rem" }}>
@@ -141,21 +120,21 @@ export default function BesteSlimmeSensorenKoopgidsPage() {
 
           <hr />
 
-          <h2>Gerelateerde artikelen</h2>
+          <h2>Gerelateerde koopgidsen</h2>
           <ul>
             <li>
-              <Link href="/tips/slim-huis-beveiligen">
-                Slim huis beveiligen
+              <Link href="/aanraders/beste-slimme-camera">
+                Beste slimme camera
               </Link>
             </li>
             <li>
-              <Link href="/blog/beste-smart-home-hub">
+              <Link href="/aanraders/beste-slimme-deurbel">
+                Beste slimme deurbel
+              </Link>
+            </li>
+            <li>
+              <Link href="/aanraders/beste-smart-home-hub">
                 Beste smart home hub
-              </Link>
-            </li>
-            <li>
-              <Link href="/blog/wat-is-matter">
-                Wat is Matter?
               </Link>
             </li>
           </ul>

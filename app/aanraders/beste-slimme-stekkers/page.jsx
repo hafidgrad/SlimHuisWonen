@@ -7,7 +7,7 @@ import BuyGuideProductCard from "@/components/BuyGuideProductCard";
 export const metadata = {
   title: "Beste slimme stekkers (2026) – onze aanraders",
   description:
-    "Zoek je de beste slimme stekker? Bekijk onze aanraders met en zonder energiemeting, voor Wi-Fi en Zigbee. Duidelijke keuzes, zonder spam.",
+    "Op zoek naar de beste slimme stekker? Bekijk onze aanraders met en zonder energiemeting, voor Home Assistant, Homey en beginners.",
   alternates: {
     canonical: "https://slimhuiswonen.nl/aanraders/beste-slimme-stekkers",
   },
@@ -17,43 +17,44 @@ export default function BesteSlimmeStekkersKoopgidsPage() {
   const guide = {
     title: "Beste slimme stekkers (2026)",
     intro:
-      "Een slimme stekker is een makkelijke manier om apparaten slim te maken en energie te besparen. In deze koopgids laten we je onze beste keuzes zien per situatie.",
+      "Met een slimme stekker maak je bestaande apparaten in één klap slim. Maar kies je voor Wi-Fi of Zigbee? Met of zonder energiemeting? In deze koopgids zetten we onze beste keuzes op een rij.",
     image: "/images/blog/beste-slimme-stekkers.png",
     whatToLookFor: [
-      "Energieverbruik meten (watt / kWh)",
       "Wi-Fi of Zigbee (met of zonder hub)",
-      "Maximaal vermogen (voor zware apparaten)",
-      "Compatibiliteit met Homey / Home Assistant",
+      "Energieverbruik meten",
+      "Betrouwbaarheid bij automatiseringen",
+      "Compatibiliteit met Home Assistant / Homey",
+      "Fysieke knop & formaat (past hij naast andere stekkers?)",
     ],
     picks: [
       {
-        title: "Beste overall (Wi-Fi + energiemeting): TP-Link Tapo P110",
+        title: "Beste totaalpakket: TP-Link Tapo P110",
         description:
-          "Betaalbare slimme stekker met energiemeting. Ideaal om verbruik te monitoren en makkelijk te starten zonder hub.",
+          "Betrouwbare Wi-Fi stekker met energiemeting. Ideaal voor beginners en eenvoudig te koppelen aan Home Assistant.",
         image: "/images/products/tapo-p110.png",
         href: "/producten/tapo-p110",
         badges: ["Beste keuze", "Energieverbruik"],
       },
       {
-        title: "Beste voor energie-inzicht: HomeWizard Energy Socket",
+        title: "Beste Zigbee stekker: Aqara Smart Plug",
         description:
-          "Perfect als je serieus inzicht wilt in stroomverbruik en wilt koppelen aan HomeWizard Energy.",
-        image: "/images/products/homewizard-energy-socket.png",
-        href: "/producten/homewizard-energy-socket",
-        badges: ["Energie-inzicht", "Monitoring"],
-      },
-      {
-        title: "Beste Zigbee stekker: Aqara / IKEA",
-        description:
-          "Zigbee stekkers zijn stabieler in grotere smart homes en ideaal in combinatie met een hub zoals Homey of Home Assistant.",
+          "Zeer stabiele Zigbee-stekker voor gebruik met Homey, Home Assistant of Aqara Hub.",
         image: "/images/products/aqara-smart-plug.png",
         href: "/producten/aqara-smart-plug",
         badges: ["Zigbee", "Stabiel"],
       },
       {
-        title: "Beste budget stekker: Tapo P100",
+        title: "Beste voor Home Assistant: HomeWizard Energy Socket",
         description:
-          "Geen energiemeting, maar wel goedkoop en simpel. Prima keuze voor lampen of kleine apparaten.",
+          "Perfect voor wie energieverbruik serieus wil monitoren en lokaal wil automatiseren.",
+        image: "/images/products/homewizard-energy-socket.png",
+        href: "/producten/homewizard-energy-socket",
+        badges: ["Home Assistant", "Energiemeting"],
+      },
+      {
+        title: "Beste budget stekker: TP-Link Tapo P100",
+        description:
+          "Geen energiemeting, wel betrouwbaar en goedkoop. Ideaal voor simpele automatiseringen.",
         image: "/images/products/tapo-p100.png",
         href: "/producten/tapo-p100",
         badges: ["Budget", "Wi-Fi"],
@@ -67,38 +68,24 @@ export default function BesteSlimmeStekkersKoopgidsPage() {
 
       <main className="section">
         <div className="container article">
-          {/* Hero */}
-          <div
-            className="blogBanner"
-            style={{ "--blog-bg": `url(${guide.image})` }}
-          >
-            <div
-              className="blogBannerBlur blogBannerBlurLeft"
-              style={{ backgroundImage: "var(--blog-bg)" }}
+          {/* ✅ VASTE KOOPGIDS HERO */}
+          <div className="koopgids-hero">
+            <Image
+              src={guide.image}
+              alt={guide.title}
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 1200px"
+              style={{ objectFit: "cover" }}
             />
-            <div
-              className="blogBannerBlur blogBannerBlurRight"
-              style={{ backgroundImage: "var(--blog-bg)" }}
-            />
-            <div className="blogBannerInner">
-              <Image
-                src={guide.image}
-                alt={guide.title}
-                width={1400}
-                height={520}
-                priority
-                className="blogBannerImg"
-              />
-            </div>
           </div>
 
           {/* Context */}
           <p className="muted small" style={{ marginBottom: "0.75rem" }}>
             Handig om te lezen:{" "}
             <Link href="/blog/wat-is-zigbee">Wat is Zigbee?</Link> •{" "}
-            <Link href="/blog/beste-smart-home-hub">Beste smart home hub</Link> •{" "}
-            <Link href="/tips/merken-combineren-zonder-gedoe">
-              Merken combineren
+            <Link href="/aanraders/beste-smart-home-hub">
+              Beste smart home hub
             </Link>
           </p>
 
@@ -114,7 +101,8 @@ export default function BesteSlimmeStekkersKoopgidsPage() {
 
           <h2>Onze aanraders</h2>
           <p className="muted">
-            Alleen stekkers die logisch zijn voor hun prijs en gebruik.
+            Alleen slimme stekkers die betrouwbaar zijn en logisch voor hun
+            gebruikssituatie.
           </p>
 
           <div style={{ display: "grid", gap: "1rem", marginTop: "1rem" }}>
@@ -125,34 +113,19 @@ export default function BesteSlimmeStekkersKoopgidsPage() {
 
           <hr />
 
-          <h2>Veelgestelde vragen</h2>
-          <h3>Heb ik een hub nodig?</h3>
-          <p>
-            Wi-Fi stekkers werken zonder hub. Zigbee stekkers hebben meestal een
-            hub nodig, maar zijn stabieler bij meerdere apparaten.
-          </p>
-
-          <h3>Is energiemeting nuttig?</h3>
-          <p>
-            Ja. Je ziet precies welke apparaten stroom verbruiken en kunt
-            automatiseringen maken om te besparen.
-          </p>
-
-          <hr />
-
           <h2>Gerelateerde artikelen</h2>
           <ul>
+            <li>
+              <Link href="/blog/beste-slimme-verlichting">
+                Beste slimme verlichting
+              </Link>
+            </li>
             <li>
               <Link href="/blog/wat-is-zigbee">Wat is Zigbee?</Link>
             </li>
             <li>
-              <Link href="/tips/wat-is-een-smart-home-hub">
-                Wat is een smart home hub?
-              </Link>
-            </li>
-            <li>
-              <Link href="/tips/beginnen-met-smart-home">
-                Beginnen met smart home
+              <Link href="/tips/slim-huis-energie-besparen">
+                Slim energie besparen
               </Link>
             </li>
           </ul>

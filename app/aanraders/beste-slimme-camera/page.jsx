@@ -44,28 +44,28 @@ export default function BesteSlimmeCameraKoopgidsPage() {
         badges: ["Buiten", "Accu"],
       },
       {
-        title: "Beste PoE camera (maximale stabiliteit): Reolink PoE",
+        title: "Beste PoE camera: Reolink",
         description:
           "Bekabelde camera met hoge betrouwbaarheid en lokale opslag via NVR. Geen wifi-problemen.",
         image: "/images/products/reolink-poe-camera.png",
         href: "/producten/reolink-poe-camera",
-        badges: ["PoE", "Max stabiliteit"],
+        badges: ["PoE", "Maximale stabiliteit"],
       },
       {
         title: "Beste budget camera: Tapo C200",
         description:
-          "Goedkope wifi-camera voor binnen met verrassend goede functies voor de prijs.",
+          "Goede wifi-camera voor binnen met verrassend veel functies voor de prijs.",
         image: "/images/products/tapo-c200.png",
         href: "/producten/tapo-c200",
         badges: ["Budget", "Wi-Fi"],
       },
       {
-        title: "Beste privacy-vriendelijk: Eve Cam",
+        title: "Beste privacyvriendelijk: Eve Cam",
         description:
-          "Premium binnencamera met focus op privacy, lokale verwerking en Apple HomeKit Secure Video.",
+          "Premium binnencamera met focus op privacy en lokale verwerking (HomeKit Secure Video).",
         image: "/images/products/eve-cam.png",
         href: "/producten/eve-cam",
-        badges: ["Privacy", "Matter-ready"],
+        badges: ["Privacy", "HomeKit"],
       },
     ],
   };
@@ -76,29 +76,16 @@ export default function BesteSlimmeCameraKoopgidsPage() {
 
       <main className="section">
         <div className="container article">
-          {/* Hero */}
-          <div
-            className="blogBanner"
-            style={{ "--blog-bg": `url(${guide.image})` }}
-          >
-            <div
-              className="blogBannerBlur blogBannerBlurLeft"
-              style={{ backgroundImage: "var(--blog-bg)" }}
+          {/* ✅ VASTE KOOPGIDS HERO */}
+          <div className="koopgids-hero">
+            <Image
+              src={guide.image}
+              alt={guide.title}
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 1200px"
+              style={{ objectFit: "cover" }}
             />
-            <div
-              className="blogBannerBlur blogBannerBlurRight"
-              style={{ backgroundImage: "var(--blog-bg)" }}
-            />
-            <div className="blogBannerInner">
-              <Image
-                src={guide.image}
-                alt={guide.title}
-                width={1400}
-                height={520}
-                priority
-                className="blogBannerImg"
-              />
-            </div>
           </div>
 
           {/* Context */}
