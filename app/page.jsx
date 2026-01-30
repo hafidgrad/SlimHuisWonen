@@ -12,7 +12,7 @@ export default function HomePage() {
       <Header />
 
       <main>
-        {/* ✅ HERO BANNER */}
+        {/* ✅ ORIGINELE HERO BANNER (ongewijzigd) */}
         <section className="hero-banner">
           <img
             src="/images/hero-smarthome.png"
@@ -59,13 +59,13 @@ export default function HomePage() {
         {/* ✅ Scroll target */}
         <span id="koopgidsen" />
 
-        {/* ✅ KOOPGIDSEN (vervangt Onze slimme aanraders) */}
+        {/* ✅ KOOPGIDSEN */}
         <TopKoopgidsen />
 
         <About />
         <Categories />
 
-        {/* ✅ Tips & uitleg */}
+        {/* ✅ Tips & uitleg (deze was al goed) */}
         <section className="section">
           <div className="container">
             <Link href="/tips" className="banner-center tips-banner-link">
@@ -92,7 +92,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ✅ Blog */}
+        {/* ✅ Blog (deze was ook al goed) */}
         <section className="section">
           <div className="container">
             <Link href="/blog" className="banner-center blog-banner-link">

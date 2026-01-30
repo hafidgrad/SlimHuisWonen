@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const koopgidsen = [
   {
@@ -44,24 +45,35 @@ export default function TopKoopgidsen() {
           beste opties per categorie — helder, onafhankelijk en praktisch.
         </p>
 
-        <div className="categories-grid">
+        {/* ✅ IDENTIEK aan Categories.jsx */}
+        <div className="category-grid">
           {koopgidsen.map((gids) => (
             <Link
               key={gids.href}
               href={gids.href}
-              className="category-card"
+              className="cat-card"
             >
-              <div className="category-image">
-                <img src={gids.image} alt={gids.title} />
-                <span className="category-badge">Koopgids</span>
+              {/* Afbeelding */}
+              <div className="cat-card__imageWrap">
+                <Image
+                  src={gids.image}
+                  alt={gids.title}
+                  fill
+                  className="cat-card__image"
+                  sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 33vw"
+                />
+
+                <div className="cat-card__overlay" />
+                <div className="cat-card__badge">Koopgids</div>
               </div>
 
-              <div className="category-content">
-                <h3>{gids.title}</h3>
-                <p>{gids.description}</p>
+              {/* Content */}
+              <div className="cat-card__content">
+                <h3 className="cat-card__title">{gids.title}</h3>
+                <p className="cat-card__desc">{gids.description}</p>
 
-                <span className="category-link">
-                  Bekijk koopgids →
+                <span className="cat-card__cta">
+                  Bekijk koopgids <span aria-hidden="true">→</span>
                 </span>
               </div>
             </Link>
