@@ -88,14 +88,17 @@ export default function BesteSlimmeSensorenKoopgidsPage() {
             />
           </div>
 
-          {/* Context */}
-          <p className="muted small" style={{ marginBottom: "0.75rem" }}>
-            Beveiliging & automatisering:{" "}
-            <Link href="/blog/beste-slimme-camera">slimme camera’s</Link> •{" "}
-            <Link href="/aanraders/beste-smart-home-hub">
-              beste smart home hub
-            </Link>
-          </p>
+          {/* ✅ Koopgids hero – vaste hoogte */}
+<div className="koopgids-hero">
+  <Image
+    src={guide.image}
+    alt={guide.title}
+    fill
+    priority
+    sizes="(max-width: 768px) 100vw, 1200px"
+    style={{ objectFit: "cover" }}
+  />
+</div>
 
           <h1>{guide.title}</h1>
           <p className="section-intro">{guide.intro}</p>

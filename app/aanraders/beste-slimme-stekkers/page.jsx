@@ -1,13 +1,12 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
-import Image from "next/image";
 import BuyGuideProductCard from "@/components/BuyGuideProductCard";
 
 export const metadata = {
   title: "Beste slimme stekkers (2026) – onze aanraders",
   description:
-    "Op zoek naar de beste slimme stekker? Bekijk onze aanraders met en zonder energiemeting, voor Home Assistant, Homey en beginners.",
+    "Op zoek naar de beste slimme stekker? Bekijk onze aanraders met en zonder energiemeting, voor Wi-Fi en Zigbee smart homes.",
   alternates: {
     canonical: "https://slimhuiswonen.nl/aanraders/beste-slimme-stekkers",
   },
@@ -16,45 +15,38 @@ export const metadata = {
 export default function BesteSlimmeStekkersKoopgidsPage() {
   const guide = {
     title: "Beste slimme stekkers (2026)",
-    intro:
-      "Met een slimme stekker maak je bestaande apparaten in één klap slim. Maar kies je voor Wi-Fi of Zigbee? Met of zonder energiemeting? In deze koopgids zetten we onze beste keuzes op een rij.",
     image: "/images/blog/beste-slimme-stekkers.png",
-    whatToLookFor: [
-      "Wi-Fi of Zigbee (met of zonder hub)",
-      "Energieverbruik meten",
-      "Betrouwbaarheid bij automatiseringen",
-      "Compatibiliteit met Home Assistant / Homey",
-      "Fysieke knop & formaat (past hij naast andere stekkers?)",
-    ],
+    intro:
+      "Een slimme stekker is vaak de makkelijkste manier om je huis slimmer te maken. In deze koopgids vind je onze beste keuzes voor energiemeting, stabiliteit en uitbreiden.",
     picks: [
       {
-        title: "Beste totaalpakket: TP-Link Tapo P110",
+        title: "Beste totaalpakket (wifi): TP-Link Tapo P110",
         description:
-          "Betrouwbare Wi-Fi stekker met energiemeting. Ideaal voor beginners en eenvoudig te koppelen aan Home Assistant.",
+          "Betaalbare slimme stekker met energiemeting. Ideaal om inzicht te krijgen in verbruik en eenvoudig te starten.",
         image: "/images/products/tapo-p110.png",
         href: "/producten/tapo-p110",
-        badges: ["Beste keuze", "Energieverbruik"],
+        badges: ["Beste keuze", "Energie­meting"],
       },
       {
         title: "Beste Zigbee stekker: Aqara Smart Plug",
         description:
-          "Zeer stabiele Zigbee-stekker voor gebruik met Homey, Home Assistant of Aqara Hub.",
+          "Zeer stabiel in combinatie met een hub zoals Homey of Home Assistant. Ideaal voor automatiseringen.",
         image: "/images/products/aqara-smart-plug.png",
         href: "/producten/aqara-smart-plug",
         badges: ["Zigbee", "Stabiel"],
       },
       {
-        title: "Beste voor Home Assistant: HomeWizard Energy Socket",
+        title: "Beste inzicht in verbruik: HomeWizard Energy Socket",
         description:
-          "Perfect voor wie energieverbruik serieus wil monitoren en lokaal wil automatiseren.",
+          "Perfect als je energieverbruik wilt monitoren via een duidelijk dashboard.",
         image: "/images/products/homewizard-energy-socket.png",
         href: "/producten/homewizard-energy-socket",
-        badges: ["Home Assistant", "Energiemeting"],
+        badges: ["Energie", "Inzicht"],
       },
       {
-        title: "Beste budget stekker: TP-Link Tapo P100",
+        title: "Beste budget stekker: Tapo P100",
         description:
-          "Geen energiemeting, wel betrouwbaar en goedkoop. Ideaal voor simpele automatiseringen.",
+          "Goedkoop en simpel. Geen energiemeting, maar ideaal voor aan/uit-schakelingen.",
         image: "/images/products/tapo-p100.png",
         href: "/producten/tapo-p100",
         badges: ["Budget", "Wi-Fi"],
@@ -68,41 +60,22 @@ export default function BesteSlimmeStekkersKoopgidsPage() {
 
       <main className="section">
         <div className="container article">
-          {/* ✅ VASTE KOOPGIDS HERO */}
-          <div className="koopgids-hero">
-            <Image
+
+          {/* ✅ CATEGORIE-BANNER (zelfde als homepage) */}
+          <div className="categorie-banner" style={{ marginBottom: "1.25rem" }}>
+            <img
               src={guide.image}
               alt={guide.title}
-              fill
-              priority
-              sizes="(max-width: 768px) 100vw, 1200px"
-              style={{ objectFit: "cover" }}
+              className="banner-img"
             />
           </div>
-
-          {/* Context */}
-          <p className="muted small" style={{ marginBottom: "0.75rem" }}>
-            Handig om te lezen:{" "}
-            <Link href="/blog/wat-is-zigbee">Wat is Zigbee?</Link> •{" "}
-            <Link href="/aanraders/beste-smart-home-hub">
-              Beste smart home hub
-            </Link>
-          </p>
 
           <h1>{guide.title}</h1>
           <p className="section-intro">{guide.intro}</p>
 
-          <h2>Waar moet je op letten?</h2>
-          <ul>
-            {guide.whatToLookFor.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-
           <h2>Onze aanraders</h2>
           <p className="muted">
-            Alleen slimme stekkers die betrouwbaar zijn en logisch voor hun
-            gebruikssituatie.
+            Alleen slimme stekkers die logisch zijn voor hun prijs en gebruik.
           </p>
 
           <div style={{ display: "grid", gap: "1rem", marginTop: "1rem" }}>
@@ -113,22 +86,13 @@ export default function BesteSlimmeStekkersKoopgidsPage() {
 
           <hr />
 
-          <h2>Gerelateerde artikelen</h2>
-          <ul>
-            <li>
-              <Link href="/blog/beste-slimme-verlichting">
-                Beste slimme verlichting
-              </Link>
-            </li>
-            <li>
-              <Link href="/blog/wat-is-zigbee">Wat is Zigbee?</Link>
-            </li>
-            <li>
-              <Link href="/tips/slim-huis-energie-besparen">
-                Slim energie besparen
-              </Link>
-            </li>
-          </ul>
+          <p>
+            Meer uitleg nodig? Lees ook{" "}
+            <Link href="/blog/beste-slimme-stekkers">
+              onze uitgebreide koopgids over slimme stekkers
+            </Link>
+            .
+          </p>
         </div>
       </main>
 
