@@ -17,9 +17,15 @@ export default function AanradersPage() {
       <Header />
 
       <main className="section">
-        {/* ✅ BANNER – zelfde systeem als categorieën */}
+        {/* ✅ BANNER – zelfde als categorie-pagina’s (GEEN crop) */}
         <div className="banner-center">
-          <div className="categorie-banner">
+          <div
+            className="categorie-banner category-hero-banner"
+            style={{
+              "--category-bg": "url(/images/aanraders-banner.png)",
+            }}
+          >
+            <div className="category-darken" />
             <img
               src="/images/aanraders-banner.png"
               alt="Onze koopgidsen en slimme aanraders"
