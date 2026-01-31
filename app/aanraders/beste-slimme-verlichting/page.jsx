@@ -6,7 +6,7 @@ import BuyGuideProductCard from "@/components/BuyGuideProductCard";
 export const metadata = {
   title: "Beste slimme verlichting (2026) – onze aanraders",
   description:
-    "Op zoek naar de beste slimme verlichting? Bekijk onze aanraders voor Philips Hue, IKEA, Tapo en Govee. Duidelijke keuzes, zonder spam.",
+    "Op zoek naar de beste slimme verlichting? Bekijk onze aanraders voor Philips Hue, Tapo en Govee. Duidelijke keuzes, zonder spam.",
   alternates: {
     canonical: "https://slimhuiswonen.nl/aanraders/beste-slimme-verlichting",
   },
@@ -17,7 +17,7 @@ export default function BesteSlimmeVerlichtingKoopgidsPage() {
     title: "Beste slimme verlichting (2026)",
     image: "/images/blog/beste-slimme-verlichting.png",
     intro:
-      "Wil je slimme verlichting kopen maar twijfel je tussen Hue, IKEA, Tapo of Govee? In deze koopgids vind je onze beste keuzes per situatie.",
+      "Wil je slimme verlichting kopen maar twijfel je tussen Hue, Tapo of Govee? In deze koopgids vind je onze beste keuzes per situatie.",
     picks: [
       {
         title: "Beste totaalpakket: Philips Hue",
@@ -28,7 +28,7 @@ export default function BesteSlimmeVerlichtingKoopgidsPage() {
         badges: ["Beste keuze", "Meest stabiel"],
       },
       {
-        title: "Beste budget Zigbee: IKEA / Innr",
+        title: "Beste budget Zigbee: Innr",
         description:
           "Goede Zigbee-verlichting zonder de hoge prijs van Hue. Werkt prima met Homey en Home Assistant.",
         image: "/images/products/innr-zigbee-e27.png",
