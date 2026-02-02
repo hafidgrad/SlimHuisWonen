@@ -20,17 +20,17 @@ export default function BesteSlimmeStekkersKoopgidsPage() {
       "Een slimme stekker is vaak de makkelijkste manier om je huis slimmer te maken. In deze koopgids vind je onze beste keuzes voor energiemeting, stabiliteit en uitbreiden.",
     picks: [
       {
-        title: "Beste totaalpakket (wifi): TP-Link Tapo P110",
+        title: "Beste totaalpakket (Wi-Fi): TP-Link Tapo P110",
         description:
           "Betaalbare slimme stekker met energiemeting. Ideaal om inzicht te krijgen in verbruik en eenvoudig te starten.",
         image: "/images/products/tapo-p110.png",
         href: "/producten/tapo-p110",
-        badges: ["Beste keuze", "Energie­meting"],
+        badges: ["Beste keuze", "Energiemeting"],
       },
       {
         title: "Beste Zigbee stekker: Aqara Smart Plug",
         description:
-          "Zeer stabiel in combinatie met een hub zoals Homey of Home Assistant. Ideaal voor automatiseringen.",
+          "Zeer stabiele Zigbee-stekker. Werkt via een Aqara hub en is perfect voor automatiseringen in HomeKit, Home Assistant of Homey.",
         image: "/images/products/aqara-smart-plug.png",
         href: "/producten/aqara-smart-plug",
         badges: ["Zigbee", "Stabiel"],
@@ -44,12 +44,12 @@ export default function BesteSlimmeStekkersKoopgidsPage() {
         badges: ["Energie", "Inzicht"],
       },
       {
-        title: "Beste budget stekker: Tapo P100",
+        title: "Beste Matter stekker: SwitchBot Matter Plug Mini",
         description:
-          "Goedkoop en simpel. Geen energiemeting, maar ideaal voor aan/uit-schakelingen.",
-        image: "/images/products/tapo-p100.png",
-        href: "/producten/tapo-p100",
-        badges: ["Budget", "Wi-Fi"],
+          "Compacte slimme stekker met Matter-ondersteuning en energiemeting. Werkt met Apple Home, Google Home, Alexa en Home Assistant.",
+        image: "/images/products/switchbot-matter-plug-mini.png",
+        href: "/producten/switchbot-matter-plug-mini",
+        badges: ["Matter", "Energiemeting"],
       },
     ],
   };
@@ -60,14 +60,8 @@ export default function BesteSlimmeStekkersKoopgidsPage() {
 
       <main className="section">
         <div className="container article">
-
-          {/* ✅ CATEGORIE-BANNER (zelfde als homepage) */}
           <div className="categorie-banner" style={{ marginBottom: "1.25rem" }}>
-            <img
-              src={guide.image}
-              alt={guide.title}
-              className="banner-img"
-            />
+            <img src={guide.image} alt={guide.title} className="banner-img" />
           </div>
 
           <h1>{guide.title}</h1>

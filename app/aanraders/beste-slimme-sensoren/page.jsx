@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
-import Image from "next/image";
 import BuyGuideProductCard from "@/components/BuyGuideProductCard";
 
 export const metadata = {
@@ -16,15 +15,15 @@ export const metadata = {
 export default function BesteSlimmeSensorenKoopgidsPage() {
   const guide = {
     title: "Beste slimme sensoren (2026)",
+    image: "/images/blog/beste-slimme-sensoren.png",
     intro:
       "Slimme sensoren vormen de basis van een écht slim huis. Ze zorgen voor automatiseringen, energiebesparing en beveiliging. In deze koopgids vind je onze beste keuzes per type sensor.",
-    image: "/images/blog/beste-slimme-sensoren.png",
     whatToLookFor: [
       "Type sensor (beweging, deur/raam, temperatuur, aanwezigheid)",
-      "Protocol: Zigbee, Thread, Wi-Fi",
+      "Protocol: Zigbee, Thread of Wi-Fi",
       "Batterijduur en betrouwbaarheid",
       "Lokale werking via hub",
-      "Compatibiliteit met Homey / Home Assistant",
+      "Compatibiliteit met Homey en Home Assistant",
     ],
     picks: [
       {
@@ -38,15 +37,15 @@ export default function BesteSlimmeSensorenKoopgidsPage() {
       {
         title: "Beste aanwezigheidssensor: Aqara FP2",
         description:
-          "Detecteert aanwezigheid extreem nauwkeurig (mmWave). Ideaal voor verlichting en automatiseringen zonder valse triggers.",
+          "Detecteert aanwezigheid extreem nauwkeurig via mmWave. Ideaal voor verlichting en automatiseringen zonder valse triggers.",
         image: "/images/products/aqara-fp2.png",
         href: "/producten/aqara-fp2-aanwezigheidssensor",
         badges: ["Aanwezigheid", "Geavanceerd"],
       },
       {
-        title: "Beste temperatuur & klimaat: Eve Weather",
+        title: "Beste klimaat & temperatuur: Eve Weather",
         description:
-          "Premium sensor met focus op privacy. Werkt via Thread en HomeKit, lokaal en zonder cloud.",
+          "Premium buitensensor met focus op privacy. Werkt lokaal via Thread en HomeKit Secure Video.",
         image: "/images/products/eve-weather.png",
         href: "/producten/eve-weather",
         badges: ["Klimaat", "Thread"],
@@ -76,29 +75,14 @@ export default function BesteSlimmeSensorenKoopgidsPage() {
 
       <main className="section">
         <div className="container article">
-          {/* ✅ Compacte koopgids hero */}
-          <div className="koopgids-hero">
-            <Image
+          {/* ✅ Consistente categorie-banner */}
+          <div className="categorie-banner" style={{ marginBottom: "1.25rem" }}>
+            <img
               src={guide.image}
               alt={guide.title}
-              fill
-              priority
-              sizes="(max-width: 768px) 100vw, 1200px"
-              style={{ objectFit: "cover" }}
+              className="banner-img"
             />
           </div>
-
-          {/* ✅ Koopgids hero – vaste hoogte */}
-<div className="koopgids-hero">
-  <Image
-    src={guide.image}
-    alt={guide.title}
-    fill
-    priority
-    sizes="(max-width: 768px) 100vw, 1200px"
-    style={{ objectFit: "cover" }}
-  />
-</div>
 
           <h1>{guide.title}</h1>
           <p className="section-intro">{guide.intro}</p>

@@ -17,47 +17,47 @@ export default function BesteSlimmeDeurbelKoopgidsPage() {
     title: "Beste slimme deurbel (2026)",
     image: "/images/blog/beste-slimme-deurbel.png",
     intro:
-      "Een slimme deurbel laat je zien wie er voor de deur staat — waar je ook bent. In deze koopgids vind je onze beste keuzes per situatie, zonder marketingpraat.",
+      "Een slimme deurbel laat je zien wie er voor de deur staat — waar je ook bent. In deze koopgids vind je onze beste keuzes per situatie, gebaseerd op functies, privacy en smart home integratie.",
     picks: [
       {
         title: "Beste bedrade slimme deurbel",
         description:
-          "Altijd online, stabiel en geen gedoe met opladen. Ideaal als je bestaande bedrading hebt.",
-        image: "/images/products/google-nest-doorbell-wired.png",
-        href: "/producten/google-nest-doorbell-wired",
-        badges: ["Bedraad", "Meest stabiel"],
+          "Hoge beeldkwaliteit, stabiele verbinding en geen gedoe met opladen. Ideaal als je bestaande deurbelbedrading hebt.",
+        image: "/images/products/aqara-doorbell-g410-grey.png",
+        href: "/producten/aqara-doorbell-g410-grey",
+        badges: ["Bedraad", "Matter", "HomeKit"],
       },
       {
         title: "Beste slimme deurbel op accu",
         description:
-          "Makkelijk te installeren zonder kabels. Populair en gebruiksvriendelijk, wel opladen nodig.",
-        image: "/images/products/ring-battery-doorbell-plus.png",
-        href: "/producten/ring-battery-doorbell-plus",
-        badges: ["Accu", "Eenvoudig"],
+          "Eenvoudig te installeren zonder bekabeling, met lange batterijduur en scherpe 2K-beelden.",
+        image: "/images/products/tapo-d205.png",
+        href: "/producten/tapo-d205",
+        badges: ["Accu", "2K"],
       },
       {
         title: "Beste slimme deurbel zonder abonnement",
         description:
-          "Lokale opslag, geen maandelijkse kosten en privacyvriendelijk.",
-        image: "/images/products/eufy-video-doorbell.png",
-        href: "/producten/eufy-video-doorbell",
-        badges: ["Geen abonnement", "Privacy"],
+          "Geen maandelijkse kosten en veel functies, inclusief kleurennachtzicht en brede kijkhoek.",
+        image: "/images/products/tapo-d235.png",
+        href: "/producten/tapo-d235",
+        badges: ["Geen abonnement", "Accu/Bedraad"],
       },
       {
         title: "Beste slimme deurbel voor smart home",
         description:
-          "Betaalbaar en goed te integreren met Home Assistant en andere smart home systemen.",
-        image: "/images/products/tapo-video-doorbell.png",
-        href: "/producten/tapo-video-doorbell",
-        badges: ["Smart home", "Wi-Fi"],
+          "Uitstekende integratie met Apple Home, Alexa, Google Home en Home Assistant dankzij ingebouwde Matter hub.",
+        image: "/images/products/aqara-doorbell-g410-black.png",
+        href: "/producten/aqara-doorbell-g410-black",
+        badges: ["Smart home", "Matter"],
       },
       {
         title: "Beste premium slimme deurbel",
         description:
-          "Bedraad, lokale opslag en sterke focus op privacy. Duurder, maar zonder abonnement.",
-        image: "/images/products/netatmo-smart-video-doorbell.png",
-        href: "/producten/netatmo-smart-video-doorbell",
-        badges: ["Premium", "Geen abonnement"],
+          "Hoogwaardige videokwaliteit, hoofd-tot-teen zicht en betrouwbare detectie zonder abonnement.",
+        image: "/images/products/reolink-video-doorbell-wifi.png",
+        href: "/producten/reolink-video-doorbell-wifi",
+        badges: ["Premium", "Bedraad"],
       },
     ],
   };
@@ -68,8 +68,6 @@ export default function BesteSlimmeDeurbelKoopgidsPage() {
 
       <main className="section">
         <div className="container article">
-
-          {/* ✅ CATEGORIE-BANNER (zelfde als categorieën & andere koopgidsen) */}
           <div className="categorie-banner" style={{ marginBottom: "1.25rem" }}>
             <img
               src={guide.image}
@@ -83,7 +81,7 @@ export default function BesteSlimmeDeurbelKoopgidsPage() {
 
           <h2>Onze aanraders</h2>
           <p className="muted">
-            Geselecteerd op betrouwbaarheid, gebruiksgemak en prijs-kwaliteit.
+            Geselecteerd op betrouwbaarheid, privacy en smart home-mogelijkheden.
           </p>
 
           <div style={{ display: "grid", gap: "1rem", marginTop: "1rem" }}>

@@ -17,18 +17,18 @@ export default function BesteSmartHomeHubKoopgidsPage() {
     title: "Beste smart home hub (2026)",
     image: "/images/blog/beste-smart-home-hub.png",
     intro:
-      "Een smart home hub is het hart van je slimme huis. In deze koopgids vind je onze beste keuzes, afhankelijk van hoeveel controle en gemak je wilt.",
+      "Een smart home hub is het hart van je slimme huis. In deze koopgids vind je onze beste keuzes, afhankelijk van hoeveel controle, flexibiliteit en gemak je wilt.",
     picks: [
       {
-        title: "Beste smart home hub voor de meeste mensen",
+        title: "Beste smart home hub voor de meeste mensen: Homey Pro",
         description:
-          "Gebruiksvriendelijk, veel integraties (Zigbee, Z-Wave, Matter, Wi-Fi) en krachtige automatiseringen zonder technisch gedoe.",
+          "Gebruiksvriendelijk, zeer veel integraties (Zigbee, Z-Wave, Matter, Wi-Fi) en krachtige automatiseringen zonder technisch gedoe.",
         image: "/images/products/homey-pro-early-2023.png",
         href: "/producten/homey-pro-early-2023",
         badges: ["Beste keuze", "All-in-one"],
       },
       {
-        title: "Beste smart home hub voor power users",
+        title: "Beste smart home hub voor power users: Home Assistant",
         description:
           "Maximale controle, volledig lokaal en eindeloos uitbreidbaar. Kost meer tijd, maar biedt de meeste vrijheid.",
         image: "/images/products/home-assistant-green.png",
@@ -38,7 +38,7 @@ export default function BesteSmartHomeHubKoopgidsPage() {
       {
         title: "Beste smart home hub voor Samsung-gebruikers",
         description:
-          "Makkelijk in gebruik en ideaal als je al veel Samsung-apparaten gebruikt.",
+          "Makkelijk in gebruik en ideaal als je al veel Samsung-apparaten gebruikt via SmartThings.",
         image: "/images/products/samsung-smartthings-hub.png",
         href: "/producten/samsung-smartthings-hub",
         badges: ["Samsung", "Eenvoudig"],
@@ -52,8 +52,7 @@ export default function BesteSmartHomeHubKoopgidsPage() {
 
       <main className="section">
         <div className="container article">
-
-          {/* ✅ CATEGORIE-BANNER (zelfde als andere koopgidsen & categorieën) */}
+          {/* ✅ Consistente categorie-banner */}
           <div className="categorie-banner" style={{ marginBottom: "1.25rem" }}>
             <img
               src={guide.image}

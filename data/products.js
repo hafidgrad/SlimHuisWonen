@@ -193,7 +193,7 @@ export const products = [
     youtubeUrl: "https://www.youtube.com/shorts/dorW24Ba4oo",
   },
 
-  /* =========================
+   /* =========================
      SLIMME DEURBELLEN
   ========================== */
 
@@ -229,38 +229,41 @@ export const products = [
   },
 
   /* =========================
-     SLIMME THERMOSTATEN
-  ========================== */
+   SLIMME THERMOSTATEN
+========================== */
 
-  {
-    slug: "google-nest-thermostaat",
-    brand: "Google Nest",
-    name: "Google Nest Thermostaat",
-    category: "slimme-thermostaten",
-    description: "Slimme thermostaat die leert van je leefpatroon.",
-    affiliateUrl: "https://www.amazon.nl/dp/B0BXRYLMCC?tag=slimhuiswonen-21",
-    youtubeUrl: "https://www.youtube.com/shorts/ddghtqKnuBw",
-  },
+{
+  slug: "google-nest-thermostaat",
+  brand: "Google Nest",
+  name: "Google Nest Thermostaat",
+  category: "slimme-thermostaten",
+  description: "Slimme thermostaat die leert van je leefpatroon.",
+  features: ["Zelflerend", "Energie besparen", "Google Home"],
+  affiliateUrl: "https://www.amazon.nl/dp/B0BXRYLMCC?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/ddghtqKnuBw",
+},
 
-  {
-    slug: "slimme-thermostaat-combiketel",
-    brand: "Universeel",
-    name: "Slimme Thermostaat voor Combiketel",
-    category: "slimme-thermostaten",
-    description: "Universele slimme thermostaat voor cv-ketels.",
-    affiliateUrl: "https://www.amazon.nl/dp/B0FHWDBYTF?tag=slimhuiswonen-21",
-    youtubeUrl: "https://www.youtube.com/watch?v=-xF6Ok9YNsg",
-  },
+{
+  slug: "slimme-thermostaat-combiketel",
+  brand: "Universeel",
+  name: "Slimme Thermostaat voor Combiketel",
+  category: "slimme-thermostaten",
+  description: "Universele slimme thermostaat voor cv-ketels.",
+  features: ["Geschikt voor combiketel", "Energie besparen", "Slim schema"],
+  affiliateUrl: "https://www.amazon.nl/dp/B0FHWDBYTF?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/watch?v=-xF6Ok9YNsg",
+},
 
-  {
-    slug: "tapo-ke100-kit",
-    brand: "TP-Link",
-    name: "TP-Link KE100 KIT Radiatorknop",
-    category: "slimme-thermostaten",
-    description: "Slimme radiatorknoppen met hub voor energiebesparing.",
-    affiliateUrl: "https://www.amazon.nl/dp/B0CKWFVQZQ?tag=slimhuiswonen-21",
-    youtubeUrl: "https://www.youtube.com/shorts/G1OlrOdJsX0",
-  },
+{
+  slug: "tapo-ke100-kit",
+  brand: "TP-Link",
+  name: "TP-Link KE100 KIT Radiatorknop",
+  category: "slimme-thermostaten",
+  description: "Slimme radiatorknoppen met hub voor energiebesparing.",
+  features: ["Radiatorknoppen", "Hub inbegrepen", "Energie besparen"],
+  affiliateUrl: "https://www.amazon.nl/dp/B0CKWFVQZQ?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/G1OlrOdJsX0",
+},
 
   /* =========================
      SLIMME STEKKERS
@@ -321,7 +324,7 @@ export const products = [
     description: "Combipack met slimme stekker en dimmer.",
     features: ["Dimmer switch", "Hue ecosysteem"],
     affiliateUrl: "https://www.amazon.nl/dp/B09QP98F9W?tag=slimhuiswonen-21",
-    videoUrl: "https://www.tiktok.com/@charisathome/video/7490491717045603616",
+    youtubeUrl: "https://www.tiktok.com/@charisathome/video/7490491717045603616",
   },
 
   {
@@ -336,63 +339,66 @@ export const products = [
   },
 
   /* =========================
-     SLIMME HUBS
-  ========================== */
+   SLIMME HUBS
+========================== */
 
-  {
-    slug: "aeotec-smart-home-hub",
-    brand: "Aeotec",
-    name: "Aeotec Smart Home Hub (SmartThings)",
-    category: "slimme-hubs",
-    description: "SmartThings hub met Zigbee en Z-Wave ondersteuning.",
-    affiliateUrl: "https://www.amazon.nl/dp/B08NDH9NXN?tag=slimhuiswonen-21",
-    youtubeUrl: "https://www.youtube.com/shorts/ZjyfLL9m5Bw",
-  },
+{
+  slug: "aeotec-smart-home-hub",
+  brand: "Aeotec",
+  name: "Aeotec Smart Home Hub (SmartThings)",
+  category: "slimme-hubs",
+  description: "SmartThings hub met Zigbee en Z-Wave ondersteuning.",
+  features: ["SmartThings", "Zigbee", "Z-Wave"],
+  affiliateUrl: "https://www.amazon.nl/dp/B08NDH9NXN?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/ZjyfLL9m5Bw",
+},
 
-  {
-    slug: "homey-pro-early-2023",
-    brand: "Homey",
-    name: "Homey Pro (Early 2023)",
-    category: "slimme-hubs",
-    featured: true,
-    description: "Krachtige lokale smart home hub zonder cloud-afhankelijkheid.",
-    features: ["Volledig lokaal", "Zigbee, Z-Wave, Thread"],
-    affiliateUrl: "https://www.amazon.nl/dp/B0C5R1JS91?tag=slimhuiswonen-21",
-    youtubeUrl: "https://www.youtube.com/shorts/yIQxbRQHTRo",
-  },
+{
+  slug: "homey-pro-early-2023",
+  brand: "Homey",
+  name: "Homey Pro (Early 2023)",
+  category: "slimme-hubs",
+  featured: true,
+  description: "Krachtige lokale smart home hub zonder cloud-afhankelijkheid.",
+  features: ["Volledig lokaal", "Zigbee", "Z-Wave", "Thread"],
+  affiliateUrl: "https://www.amazon.nl/dp/B0C5R1JS91?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/yIQxbRQHTRo",
+},
 
-  {
-    slug: "homey-bridge",
-    brand: "Homey",
-    name: "Homey Bridge",
-    category: "slimme-hubs",
-    description: "Verbindt slimme apparaten met Homey Cloud.",
-    affiliateUrl: "https://www.amazon.nl/dp/B08FRLQH75?tag=slimhuiswonen-21",
-    youtubeUrl: "https://www.youtube.com/shorts/_fRsj0azjVI",
-  },
+{
+  slug: "homey-bridge",
+  brand: "Homey",
+  name: "Homey Bridge",
+  category: "slimme-hubs",
+  description: "Verbindt slimme apparaten met Homey Cloud.",
+  features: ["Homey Cloud", "Uitbreiding Homey", "Geen lokale flows"],
+  affiliateUrl: "https://www.amazon.nl/dp/B08FRLQH75?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/_fRsj0azjVI",
+},
 
-  {
-    slug: "philips-hue-bridge",
-    brand: "Philips Hue",
-    name: "Philips Hue Bridge",
-    category: "slimme-hubs",
-    description: "Centrale hub voor Philips Hue verlichting.",
-    affiliateUrl: "https://www.amazon.nl/dp/B09CV9F3KR?tag=slimhuiswonen-21",
-    youtubeUrl: "https://www.youtube.com/shorts/isaMt7n0Vhw",
-  },
+{
+  slug: "philips-hue-bridge",
+  brand: "Philips Hue",
+  name: "Philips Hue Bridge",
+  category: "slimme-hubs",
+  description: "Centrale hub voor Philips Hue verlichting.",
+  features: ["Hue ecosysteem", "Zigbee", "Lokale automatiseringen"],
+  affiliateUrl: "https://www.amazon.nl/dp/B09CV9F3KR?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/isaMt7n0Vhw",
+},
 
-  {
-    slug: "home-assistant-green",
-    brand: "Home Assistant",
-    name: "Home Assistant Green",
-    category: "slimme-hubs",
-    description: "Officiële Home Assistant smart home hub.",
-    features: ["Home Assistant OS", "Volledig lokaal"],
-    affiliateUrl: "https://www.amazon.nl/dp/B0CXVKSG19?tag=slimhuiswonen-21",
-    youtubeUrl: "https://www.youtube.com/shorts/u8sk6B8_Qkc",
-  },
+{
+  slug: "home-assistant-green",
+  brand: "Home Assistant",
+  name: "Home Assistant Green",
+  category: "slimme-hubs",
+  description: "Officiële Home Assistant smart home hub.",
+  features: ["Home Assistant OS", "Volledig lokaal", "Geen cloud vereist"],
+  affiliateUrl: "https://www.amazon.nl/dp/B0CXVKSG19?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/u8sk6B8_Qkc",
+},
 
-  /* =========================
+    /* =========================
      SLIMME SPEAKERS
   ========================== */
 
@@ -446,7 +452,372 @@ export const products = [
     affiliateUrl: "https://www.amazon.nl/dp/B0DXN1YWZZ?tag=slimhuiswonen-21",
     youtubeUrl: "https://www.youtube.com/shorts/VNuw4d2OaPY",
   },
+
+  /* =========================
+   SLIMME STEKKERS (extra lijst)
+========================== */
+
+{
+  slug: "tapo-p110",
+  name: "TP-Link Tapo P110",
+  brand: "TP-Link",
+  category: "slimme stekkers",
+  image: "/images/products/tapo-p110.png",
+  description:
+    "Betaalbare slimme stekker met energiemeting via Wi-Fi. Ideaal om inzicht te krijgen in stroomverbruik zonder extra hub.",
+  features: ["Wi-Fi", "Energiemeting", "Geen hub nodig"],
+  affiliateUrl:
+    "https://www.amazon.nl/TP-Link-Tapo-P110-energiemeting/dp/B09BFT7NZJ?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/L5fLN4e77m8",
+},
+
+{
+  slug: "aqara-smart-plug",
+  name: "Aqara Smart Plug",
+  brand: "Aqara",
+  category: "slimme stekkers",
+  image: "/images/products/aqara-smart-plug.png",
+  description:
+    "Zigbee slimme stekker die werkt via een Aqara hub. Zeer stabiel en perfect voor automatiseringen.",
+  features: ["Zigbee 3.0", "Vereist hub", "Automatiseringen"],
+  affiliateUrl:
+    "https://www.amazon.nl/Aqara-timerstand-spraakbediening-Assistant-SmartThings/dp/B087M8LF63?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/watch?v=eUS_OWHaJAs",
+},
+
+{
+  slug: "homewizard-energy-socket",
+  name: "HomeWizard Energy Socket",
+  brand: "HomeWizard",
+  category: "slimme stekkers",
+  image: "/images/products/homewizard-energy-socket.png",
+  description:
+    "Slimme stekker met uitgebreide energiemeting en overzichtelijk energie-dashboard.",
+  features: ["Energiemeting", "Wi-Fi", "Inzicht"],
+  affiliateUrl:
+    "https://www.amazon.nl/HomeWizard-Energy-Socket-energiemeting/dp/B08JQ4SK2F?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/watch?v=5xkQmZ9Qp1I",
+},
+
+{
+  slug: "switchbot-matter-plug-mini",
+  name: "SwitchBot Matter Plug Mini",
+  brand: "SwitchBot",
+  category: "slimme stekkers",
+  image: "/images/products/switchbot-matter-plug-mini.png",
+  description:
+    "Compacte Matter-compatibele slimme stekker met energiemeting. Werkt met vrijwel elk smart home platform.",
+  features: ["Matter", "Energiemeting", "Wi-Fi & Bluetooth"],
+  affiliateUrl:
+    "https://www.amazon.nl/SwitchBot-Energiemeting-Bluetooth-Compatibel-HomeAssistant/dp/B0FFN2FKD6?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/watch?v=A7iH-PR5By4",
+},
+
+/* =========================
+   SLIMME DEURBELLEN (extra lijst)
+========================== */
+
+{
+  slug: "aqara-doorbell-g410-grey",
+  name: "Aqara Video Doorbell G410 (Grijs)",
+  brand: "Aqara",
+  category: "slimme deurbellen",
+  image: "/images/products/aqara-doorbell-g410-grey.png",
+  description:
+    "Bedrade of draadloze slimme deurbel met 2K-beeld, ingebouwde Matter hub en HomeKit Secure Video.",
+  features: ["2K", "Matter", "Bedraad / Accu"],
+  affiliateUrl:
+    "https://www.amazon.nl/Aqara-ingebouwde-Draadloos-Compatibel-Assistant/dp/B0F6CJF9M9?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/uGFFXvbUAnU",
+},
+
+{
+  slug: "aqara-doorbell-g410-black",
+  name: "Aqara Video Doorbell G410 (Zwart)",
+  brand: "Aqara",
+  category: "slimme deurbellen",
+  image: "/images/products/aqara-doorbell-g410-black.png",
+  description:
+    "Slimme deurbel met sterke smart home integratie via Matter, geschikt voor Apple Home, Google en Home Assistant.",
+  features: ["2K", "Matter", "Smart home"],
+  affiliateUrl:
+    "https://www.amazon.nl/Aqara-Ingebouwde-Draadloos-Compatibel-Assistant/dp/B0F6CJ93GS?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/KVS6asoEDyM",
+},
+
+{
+  slug: "tapo-d205",
+  name: "Tapo D205",
+  brand: "TP-Link",
+  category: "slimme deurbellen",
+  image: "/images/products/tapo-d205.png",
+  description:
+    "Draadloze slimme deurbel op accu met scherpe 2K-beelden en eenvoudige installatie.",
+  features: ["Accu", "2K", "Geen abonnement"],
+  affiliateUrl:
+    "https://www.amazon.nl/Tapo-D205-video-deurintercom-gezichtsveld-USB-C-aansluiting/dp/B0FHXVX9W9?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/dsKyD2p0BUE",
+},
+
+{
+  slug: "tapo-d235",
+  name: "Tapo D235",
+  brand: "TP-Link",
+  category: "slimme deurbellen",
+  image: "/images/products/tapo-d235.png",
+  description:
+    "Slimme deurbel met kleurennachtzicht, brede kijkhoek en zonder verplichte abonnementskosten.",
+  features: ["Geen abonnement", "Accu / Bedraad", "2K"],
+  affiliateUrl:
+    "https://www.amazon.nl/Tapo-D235-videodeurbel-gezichtsveld-niet-verwijderbare/dp/B0DDL95M8Z?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/5wVHfrHFqwE",
+},
+
+{
+  slug: "reolink-video-doorbell-wifi",
+  name: "Reolink Video Doorbell Wi-Fi",
+  brand: "Reolink",
+  category: "slimme deurbellen",
+  image: "/images/products/reolink-video-doorbell-wifi.png",
+  description:
+    "Premium bedrade deurbel met hoofd-tot-teen beeld, lokale opslag en betrouwbare detectie.",
+  features: ["Bedraad", "Lokale opslag", "Premium"],
+  affiliateUrl:
+    "https://www.amazon.nl/Reolink-Videodeurbel-Wi-Fi-camera-beltoon-Hoofd-aan-teen/dp/B0CN95V61Y?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/chwqRQrgYyY",
+},
+
+ /* =========================
+   SLIMME CAMERA’S
+========================== */
+
+{
+  slug: "eufy-indoor-cam",
+  name: "Eufy Indoor Cam",
+  brand: "Eufy",
+  category: "slimme-cameras",
+  image: "/images/products/eufy-indoor-cam.png",
+  description:
+    "Betaalbare binnencamera met lokale opslag en zonder abonnement.",
+  features: ["Binnen", "Geen abonnement", "Lokale opslag"],
+  affiliateUrl:
+    "https://www.amazon.nl/eufy-Binnencamera-UHD-bewakingscamera-kleur-nachtzicht-auto-tracking/dp/B0FMRCM9D2?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/RQWhYv7T5CQ",
+},
+
+{
+  slug: "eufy-solo-outdoor-cam",
+  name: "Eufy Solo Outdoor Cam",
+  brand: "Eufy",
+  category: "slimme-cameras",
+  image: "/images/products/eufy-solo-outdoor.png",
+  description:
+    "Weerbestendige buitencamera met accu en lokale opslag.",
+  features: ["Buiten", "Accu", "Geen abonnement"],
+  affiliateUrl:
+    "https://www.amazon.nl/eufy-Bewakingscamera-bewakingscamera-zonne-energie-beveiligingscamera/dp/B0DT6WMJD6?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/r31OVIk5XCM",
+},
+
+{
+  slug: "reolink-poe-camera",
+  name: "Reolink PoE Camera",
+  brand: "Reolink",
+  category: "slimme-cameras",
+  image: "/images/products/reolink-poe-camera.png",
+  description:
+    "Bekabelde PoE camera voor maximale stabiliteit en betrouwbaarheid.",
+  features: ["PoE", "Bekabeld", "Lokale opslag"],
+  affiliateUrl:
+    "https://www.amazon.nl/PoE-vandaalbestendig-nachtzicht-Duo-2V/dp/B0D2XQV692?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/61ERlRmhpbA",
+},
+
+{
+  slug: "tapo-c200",
+  name: "TP-Link Tapo C200",
+  brand: "TP-Link",
+  category: "slimme-cameras",
+  image: "/images/products/tapo-c200.png",
+  description:
+    "Budget Wi-Fi camera voor binnen met verrassend veel functies.",
+  features: ["Budget", "Wi-Fi", "Binnen"],
+  affiliateUrl:
+    "https://www.amazon.nl/Tapo-C200P2-bewakingscamera-nachtzicht-bewegingsdetectie/dp/B0CDCL38KZ?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/4hLvY_Fj8bg",
+},
+
+{
+  slug: "eve-cam",
+  name: "Eve Cam",
+  brand: "Eve",
+  category: "slimme-cameras",
+  image: "/images/products/eve-cam.png",
+  description:
+    "Privacygerichte binnencamera met HomeKit Secure Video en lokale verwerking.",
+  features: ["Privacy", "HomeKit", "Binnen"],
+  affiliateUrl:
+    "https://www.amazon.nl/Eve-Cam-beveiligingscamera-iPhone-meldingen-luidspreker/dp/B0CHJCZSJP?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/8Kmoas7Ct30",
+},
+
+  /* =========================
+     SLIMME SENSOREN
+  ========================= */
+
+  {
+    slug: "aqara-motion-sensor",
+    name: "Aqara Bewegingssensor",
+    brand: "Aqara",
+    category: "slimme-sensoren",
+    image: "/images/products/aqara-motion-sensor.png",
+    description:
+      "Zeer betrouwbare Zigbee bewegingssensor voor automatiseringen.",
+    features: ["Zigbee", "Beweging", "Automatiseringen"],
+  },
+
+  {
+    slug: "aqara-fp2-aanwezigheidssensor",
+    name: "Aqara FP2 Aanwezigheidssensor",
+    brand: "Aqara",
+    category: "slimme-sensoren",
+    image: "/images/products/aqara-fp2.png",
+    description:
+      "Geavanceerde aanwezigheidssensor met mmWave-technologie.",
+    features: ["Aanwezigheid", "mmWave", "Geavanceerd"],
+  },
+
+  {
+    slug: "eve-weather",
+    name: "Eve Weather",
+    brand: "Eve",
+    category: "slimme-sensoren",
+    image: "/images/products/eve-weather.png",
+    description:
+      "Slimme buitensensor voor temperatuur en luchtvochtigheid via Thread.",
+    features: ["Klimaat", "Thread", "Privacy"],
+  },
+
+  {
+    slug: "tapo-sensor",
+    name: "Tapo Sensor",
+    brand: "TP-Link",
+    category: "slimme-sensoren",
+    image: "/images/products/tapo-sensor.png",
+    description:
+      "Betaalbare Wi-Fi sensoren zonder hub, ideaal voor beginners.",
+    features: ["Budget", "Wi-Fi", "Zonder hub"],
+  },
+
+  {
+    slug: "eve-door-window",
+    name: "Eve Door & Window",
+    brand: "Eve",
+    category: "slimme-sensoren",
+    image: "/images/products/eve-door-window.png",
+    description:
+      "Premium deur- en raamsensor met focus op privacy en lokale verwerking.",
+    features: ["Privacy", "Thread", "Premium"],
+  },
+
+  /* =========================
+     SLIMME VERLICHTING (extra)
+  ========================= */
+
+  {
+    slug: "philips-hue-white-ambiance-starterkit",
+    name: "Philips Hue White Ambiance Starterkit",
+    brand: "Philips Hue",
+    category: "slimme-verlichting",
+    image: "/images/products/philips-hue-white-ambiance.png",
+    description:
+      "Het meest complete en stabiele slimme verlichtingssysteem.",
+    features: ["Zigbee", "Ecosysteem", "Stabiel"],
+  },
+
+  {
+    slug: "innr-zigbee-e27",
+    name: "Innr Zigbee E27",
+    brand: "Innr",
+    category: "slimme-verlichting",
+    image: "/images/products/innr-zigbee-e27.png",
+    description:
+      "Betaalbare Zigbee lampen die goed samenwerken met Hue en Homey.",
+    features: ["Zigbee", "Budget", "E27"],
+  },
+
+  {
+    slug: "tapo-l510e",
+    name: "Tapo L510E",
+    brand: "TP-Link",
+    category: "slimme-verlichting",
+    image: "/images/products/tapo-l510e.png",
+    description:
+      "Wi-Fi slimme lamp zonder hub, ideaal voor starters.",
+    features: ["Wi-Fi", "Geen hub", "Budget"],
+  },
+
+  {
+    slug: "tapo-l530e",
+    name: "Tapo L530E",
+    brand: "TP-Link",
+    category: "slimme-verlichting",
+    image: "/images/products/tapo-l530e.png",
+    description:
+      "Slimme Wi-Fi kleurverlichting met veel functies.",
+    features: ["Kleur", "Wi-Fi", "Geen hub"],
+  },
+
+  {
+    slug: "govee-rgbic-ledstrip",
+    name: "Govee RGBIC LED Strip",
+    brand: "Govee",
+    category: "slimme-verlichting",
+    image: "/images/products/govee-rgbic-ledstrip.png",
+    description:
+      "LED-strips met sterke lichteffecten en sfeer.",
+    features: ["LED-strip", "Sfeer", "RGBIC"],
+  },
+
+  /* =========================
+     SMART HOME HUBS
+  ========================= */
+
+  {
+    slug: "homey-pro-early-2023",
+    name: "Homey Pro (Early 2023)",
+    brand: "Homey",
+    category: "smart-home-hubs",
+    image: "/images/products/homey-pro-early-2023.png",
+    description:
+      "Alles-in-één smart home hub met ondersteuning voor vrijwel alle protocollen.",
+    features: ["Zigbee", "Z-Wave", "Matter", "All-in-one"],
+  },
+
+  {
+    slug: "home-assistant-green",
+    name: "Home Assistant Green",
+    brand: "Home Assistant",
+    category: "smart-home-hubs",
+    image: "/images/products/home-assistant-green.png",
+    description:
+      "Krachtige lokale smart home hub voor maximale controle.",
+    features: ["Lokaal", "Power users", "Uitbreidbaar"],
+  },
+
+  {
+    slug: "samsung-smartthings-hub",
+    name: "Samsung SmartThings Hub",
+    brand: "Samsung",
+    category: "smart-home-hubs",
+    image: "/images/products/samsung-smartthings-hub.png",
+    description:
+      "Gebruiksvriendelijke hub voor Samsung-ecosysteem.",
+    features: ["Samsung", "Eenvoudig", "Cloud"],
+  },
 ];
+
+export default products;
 
 /* =========================
    HELPERS

@@ -20,7 +20,7 @@ export default function BesteSlimmeCameraKoopgidsPage() {
       "Een slimme camera verhoogt je veiligheid, maar alleen als je de juiste kiest. In deze koopgids vind je onze beste keuzes voor binnen, buiten en maximale betrouwbaarheid.",
     picks: [
       {
-        title: "Beste totaalpakket (binnen): Eufy Indoor Cam",
+        title: "Beste binnencamera (totaalpakket): Eufy Indoor Cam",
         description:
           "Betaalbare binnencamera met lokale opslag, goede beeldkwaliteit en geen verplicht abonnement.",
         image: "/images/products/eufy-indoor-cam.png",
@@ -28,7 +28,7 @@ export default function BesteSlimmeCameraKoopgidsPage() {
         badges: ["Beste keuze", "Geen abonnement"],
       },
       {
-        title: "Beste buitencamera (wifi): Eufy Solo Outdoor",
+        title: "Beste buitencamera (Wi-Fi): Eufy Solo Outdoor",
         description:
           "Weerbestendige camera met accu en lokale opslag. Ideaal als je geen kabel wilt trekken.",
         image: "/images/products/eufy-solo-outdoor.png",
@@ -36,7 +36,7 @@ export default function BesteSlimmeCameraKoopgidsPage() {
         badges: ["Buiten", "Accu"],
       },
       {
-        title: "Beste PoE camera: Reolink",
+        title: "Beste PoE camera: Reolink PoE Camera",
         description:
           "Bekabelde camera met maximale stabiliteit en lokale opslag via NVR. Geen wifi-problemen.",
         image: "/images/products/reolink-poe-camera.png",
@@ -44,17 +44,17 @@ export default function BesteSlimmeCameraKoopgidsPage() {
         badges: ["PoE", "Maximale stabiliteit"],
       },
       {
-        title: "Beste budget camera: Tapo C200",
+        title: "Beste budget camera: TP-Link Tapo C200",
         description:
-          "Goede wifi-camera voor binnen met verrassend veel functies voor de prijs.",
+          "Goede Wi-Fi camera voor binnen met verrassend veel functies voor de prijs.",
         image: "/images/products/tapo-c200.png",
         href: "/producten/tapo-c200",
         badges: ["Budget", "Wi-Fi"],
       },
       {
-        title: "Beste privacyvriendelijk: Eve Cam",
+        title: "Beste privacyvriendelijke camera: Eve Cam",
         description:
-          "Premium binnencamera met focus op privacy en lokale verwerking (HomeKit Secure Video).",
+          "Premium binnencamera met focus op privacy en lokale verwerking via HomeKit Secure Video.",
         image: "/images/products/eve-cam.png",
         href: "/producten/eve-cam",
         badges: ["Privacy", "HomeKit"],
@@ -68,8 +68,6 @@ export default function BesteSlimmeCameraKoopgidsPage() {
 
       <main className="section">
         <div className="container article">
-
-          {/* ✅ CATEGORIE-BANNER (zelfde als homepage & categories) */}
           <div className="categorie-banner" style={{ marginBottom: "1.25rem" }}>
             <img
               src={guide.image}

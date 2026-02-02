@@ -6,7 +6,7 @@ import BuyGuideProductCard from "@/components/BuyGuideProductCard";
 export const metadata = {
   title: "Beste slimme verlichting (2026) – onze aanraders",
   description:
-    "Op zoek naar de beste slimme verlichting? Bekijk onze aanraders voor Philips Hue, Tapo en Govee. Duidelijke keuzes, zonder spam.",
+    "Op zoek naar de beste slimme verlichting? Bekijk onze aanraders voor Philips Hue, Innr, Tapo en Govee. Duidelijke keuzes, zonder spam.",
   alternates: {
     canonical: "https://slimhuiswonen.nl/aanraders/beste-slimme-verlichting",
   },
@@ -17,7 +17,7 @@ export default function BesteSlimmeVerlichtingKoopgidsPage() {
     title: "Beste slimme verlichting (2026)",
     image: "/images/blog/beste-slimme-verlichting.png",
     intro:
-      "Wil je slimme verlichting kopen maar twijfel je tussen Hue, Tapo of Govee? In deze koopgids vind je onze beste keuzes per situatie.",
+      "Wil je slimme verlichting kopen maar twijfel je tussen Hue, Tapo of Govee? In deze koopgids vind je onze beste keuzes per situatie en budget.",
     picks: [
       {
         title: "Beste totaalpakket: Philips Hue",
@@ -28,25 +28,25 @@ export default function BesteSlimmeVerlichtingKoopgidsPage() {
         badges: ["Beste keuze", "Meest stabiel"],
       },
       {
-        title: "Beste budget Zigbee: Innr",
+        title: "Beste budget Zigbee verlichting: Innr",
         description:
-          "Goede Zigbee-verlichting zonder de hoge prijs van Hue. Werkt prima met Homey en Home Assistant.",
+          "Goede Zigbee-verlichting zonder de hoge prijs van Hue. Werkt uitstekend met Homey en Home Assistant.",
         image: "/images/products/innr-zigbee-e27.png",
         href: "/producten/innr-zigbee-e27",
         badges: ["Budget", "Zigbee"],
       },
       {
-        title: "Beste zonder hub: Tapo (Wi-Fi)",
+        title: "Beste zonder hub (Wi-Fi): Tapo L510E",
         description:
-          "Perfect om goedkoop te starten zonder extra hub. Simpel en snel opgezet.",
+          "Perfect om goedkoop te starten zonder extra hub. Simpel, snel opgezet en betrouwbaar.",
         image: "/images/products/tapo-l510e.png",
         href: "/producten/tapo-l510e",
         badges: ["Goedkoop", "Geen hub"],
       },
       {
-        title: "Beste Wi-Fi kleur: Tapo L530E",
+        title: "Beste Wi-Fi kleurverlichting: Tapo L530E",
         description:
-          "Kleurverlichting zonder hub, veel functies voor een scherpe prijs.",
+          "Kleurverlichting zonder hub, met veel functies voor een scherpe prijs.",
         image: "/images/products/tapo-l530e.png",
         href: "/producten/tapo-l530e",
         badges: ["Kleur", "Wi-Fi"],
@@ -54,7 +54,7 @@ export default function BesteSlimmeVerlichtingKoopgidsPage() {
       {
         title: "Beste LED-strips & sfeer: Govee",
         description:
-          "Sterk in sfeer en effecten. Ideaal voor TV, bureau of indirecte verlichting.",
+          "Sterk in sfeer en lichteffecten. Ideaal voor tv, bureau of indirecte verlichting.",
         image: "/images/products/govee-rgbic-ledstrip.png",
         href: "/producten/govee-rgbic-ledstrip",
         badges: ["LED-strips", "Sfeer"],
@@ -68,8 +68,7 @@ export default function BesteSlimmeVerlichtingKoopgidsPage() {
 
       <main className="section">
         <div className="container article">
-
-          {/* ✅ CATEGORIE-BANNER (zelfde als homepage) */}
+          {/* ✅ Consistente categorie-banner */}
           <div className="categorie-banner" style={{ marginBottom: "1.25rem" }}>
             <img
               src={guide.image}
