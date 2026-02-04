@@ -264,253 +264,72 @@ export const products = [
   affiliateUrl: "https://www.amazon.nl/dp/B0CKWFVQZQ?tag=slimhuiswonen-21",
   youtubeUrl: "https://www.youtube.com/shorts/G1OlrOdJsX0",
 },
-
-  /* =========================
-     SLIMME STEKKERS
-  ========================== */
-
-  {
-    slug: "tapo-p115-slimme-stekker",
-    brand: "TP-Link Tapo",
-    name: "TP-Link Tapo P115 Slimme Stekker",
-    category: "slimme-stekkers",
-    description: "Compacte slimme stekker met energiemeting.",
-    features: ["Energieverbruik inzicht", "Wi-Fi", "Geen hub nodig"],
-    affiliateUrl: "https://www.amazon.nl/dp/B09ZBGWYH9?tag=slimhuiswonen-21",
-    rating: 4.6,
-    youtubeUrl: "https://www.youtube.com/shorts/l6WrOy4wRhU",
-  },
-
-  {
-    slug: "tapo-p110-slimme-stekker",
-    brand: "TP-Link Tapo",
-    name: "TP-Link Tapo P110 Slimme Stekker",
-    category: "slimme-stekkers",
-    description: "Populaire slimme stekker met realtime energiemeting.",
-    features: ["Realtime energiemeting", "Timers", "Geen hub nodig"],
-    affiliateUrl: "https://www.amazon.nl/dp/B09BFT7NZJ?tag=slimhuiswonen-21",
-    rating: 4.7,
-    youtubeUrl: "https://www.youtube.com/shorts/L5fLN4e77m8",
-  },
-
-  {
-    slug: "eve-energy-matter",
-    brand: "Eve",
-    name: "Eve Energy (Matter / Thread)",
-    category: "slimme-stekkers",
-    description: "Premium slimme stekker met Matter en Thread.",
-    features: ["Matter", "Thread", "Volledig lokaal"],
-    affiliateUrl: "https://www.amazon.nl/dp/B0BYTB11J3?tag=slimhuiswonen-21",
-    rating: 4.5,
-    youtubeUrl: "https://www.youtube.com/watch?v=ltf25fzyS0o",
-  },
-
-  {
-    slug: "philips-hue-smart-plug",
-    brand: "Philips Hue",
-    name: "Philips Hue Smart Plug",
-    category: "slimme-stekkers",
-    description: "Slimme stekker binnen het Hue ecosysteem.",
-    features: ["Hue integratie", "Bluetooth", "Bridge optioneel"],
-    affiliateUrl: "https://www.amazon.nl/dp/B09CV7QQKB?tag=slimhuiswonen-21",
-    youtubeUrl: "https://www.youtube.com/watch?v=SQ3ClKGRbq8",
-  },
-
-  {
-    slug: "philips-hue-smart-plug-combipack",
-    brand: "Philips Hue",
-    name: "Philips Hue Smart Plug + Dimmer Switch",
-    category: "slimme-stekkers",
-    description: "Combipack met slimme stekker en dimmer.",
-    features: ["Dimmer switch", "Hue ecosysteem"],
-    affiliateUrl: "https://www.amazon.nl/dp/B09QP98F9W?tag=slimhuiswonen-21",
-    youtubeUrl: "https://www.tiktok.com/@charisathome/video/7490491717045603616",
-  },
-
-  {
-    slug: "innr-zigbee-outdoor-smart-plug",
-    brand: "Innr",
-    name: "Innr Zigbee Outdoor Smart Plug",
-    category: "slimme-stekkers",
-    description: "Slimme stekker voor buitengebruik.",
-    features: ["IP54", "Zigbee repeater"],
-    affiliateUrl: "https://www.amazon.nl/dp/B0FL83D4DS?tag=slimhuiswonen-21",
-    youtubeUrl: "https://www.youtube.com/watch?v=EZeoW8ZK2vs",
-  },
-
-  /* =========================
-   SLIMME HUBS
-========================== */
-
-{
-  slug: "aeotec-smart-home-hub",
-  brand: "Aeotec",
-  name: "Aeotec Smart Home Hub (SmartThings)",
-  category: "slimme-hubs",
-  description: "SmartThings hub met Zigbee en Z-Wave ondersteuning.",
-  features: ["SmartThings", "Zigbee", "Z-Wave"],
-  affiliateUrl: "https://www.amazon.nl/dp/B08NDH9NXN?tag=slimhuiswonen-21",
-  youtubeUrl: "https://www.youtube.com/shorts/ZjyfLL9m5Bw",
-},
-
-{
-  slug: "homey-pro-early-2023",
-  brand: "Homey",
-  name: "Homey Pro (Early 2023)",
-  category: "slimme-hubs",
-  featured: true,
-  description: "Krachtige lokale smart home hub zonder cloud-afhankelijkheid.",
-  features: ["Volledig lokaal", "Zigbee", "Z-Wave", "Thread"],
-  affiliateUrl: "https://www.amazon.nl/dp/B0C5R1JS91?tag=slimhuiswonen-21",
-  youtubeUrl: "https://www.youtube.com/shorts/yIQxbRQHTRo",
-},
-
-{
-  slug: "homey-bridge",
-  brand: "Homey",
-  name: "Homey Bridge",
-  category: "slimme-hubs",
-  description: "Verbindt slimme apparaten met Homey Cloud.",
-  features: ["Homey Cloud", "Uitbreiding Homey", "Geen lokale flows"],
-  affiliateUrl: "https://www.amazon.nl/dp/B08FRLQH75?tag=slimhuiswonen-21",
-  youtubeUrl: "https://www.youtube.com/shorts/_fRsj0azjVI",
-},
-
-{
-  slug: "philips-hue-bridge",
-  brand: "Philips Hue",
-  name: "Philips Hue Bridge",
-  category: "slimme-hubs",
-  description: "Centrale hub voor Philips Hue verlichting.",
-  features: ["Hue ecosysteem", "Zigbee", "Lokale automatiseringen"],
-  affiliateUrl: "https://www.amazon.nl/dp/B09CV9F3KR?tag=slimhuiswonen-21",
-  youtubeUrl: "https://www.youtube.com/shorts/isaMt7n0Vhw",
-},
-
-{
-  slug: "home-assistant-green",
-  brand: "Home Assistant",
-  name: "Home Assistant Green",
-  category: "slimme-hubs",
-  description: "Officiële Home Assistant smart home hub.",
-  features: ["Home Assistant OS", "Volledig lokaal", "Geen cloud vereist"],
-  affiliateUrl: "https://www.amazon.nl/dp/B0CXVKSG19?tag=slimhuiswonen-21",
-  youtubeUrl: "https://www.youtube.com/shorts/u8sk6B8_Qkc",
-},
-
-    /* =========================
-     SLIMME SPEAKERS
-  ========================== */
-
-  {
-    slug: "google-nest-mini-2",
-    brand: "Google",
-    name: "Google Nest Mini (2e generatie)",
-    category: "slimme-speakers",
-    description: "Compacte slimme speaker met Google Assistant.",
-    affiliateUrl: "https://www.amazon.nl/dp/B0CGYFYY34?tag=slimhuiswonen-21",
-    youtubeUrl: "https://www.youtube.com/shorts/ErM7IxoY_94",
-  },
-
-  {
-    slug: "amazon-echo-dot",
-    brand: "Amazon",
-    name: "Amazon Echo Dot (nieuwste generatie)",
-    category: "slimme-speakers",
-    description: "Compacte slimme speaker met Alexa.",
-    affiliateUrl: "https://www.amazon.nl/dp/B09B8X9RGM?tag=slimhuiswonen-21",
-    youtubeUrl: "https://www.youtube.com/shorts/0ctoSg9lqpg",
-  },
-
-  {
-    slug: "amazon-echo-show-5",
-    brand: "Amazon",
-    name: "Amazon Echo Show 5 (3e generatie)",
-    category: "slimme-speakers",
-    description: "Slimme speaker met scherm en Alexa.",
-    features: ["Slim scherm", "Alexa", "Compact formaat"],
-    affiliateUrl: "https://www.amazon.nl/dp/B0DJDGN3BX?tag=slimhuiswonen-21",
-    youtubeUrl: "https://www.youtube.com/shorts/DQJUUFPwThI",
-  },
-
-  {
-    slug: "amazon-echo-show-8",
-    brand: "Amazon",
-    name: "Amazon Echo Show 8",
-    category: "slimme-speakers",
-    description: "Slimme speaker met groter HD-scherm en ruimtelijke audio.",
-    affiliateUrl: "https://www.amazon.nl/dp/B0DTQF1MQT?tag=slimhuiswonen-21",
-    youtubeUrl: "https://www.youtube.com/shorts/_0om_hydnsk",
-  },
-
-  {
-    slug: "amazon-echo-studio",
-    brand: "Amazon",
-    name: "Amazon Echo Studio",
-    category: "slimme-speakers",
-    description: "Premium Alexa speaker met Dolby Atmos.",
-    affiliateUrl: "https://www.amazon.nl/dp/B0DXN1YWZZ?tag=slimhuiswonen-21",
-    youtubeUrl: "https://www.youtube.com/shorts/VNuw4d2OaPY",
-  },
-
-  /* =========================
-   SLIMME STEKKERS (extra lijst)
+/* =========================
+   SLIMME STEKKERS (gecorrigeerd)
 ========================== */
 
 {
   slug: "tapo-p110",
   name: "TP-Link Tapo P110",
   brand: "TP-Link",
-  category: "slimme stekkers",
+  category: "slimme-stekkers",
   image: "/images/products/tapo-p110.png",
   description:
     "Betaalbare slimme stekker met energiemeting via Wi-Fi. Ideaal om inzicht te krijgen in stroomverbruik zonder extra hub.",
   features: ["Wi-Fi", "Energiemeting", "Geen hub nodig"],
-  affiliateUrl:
-    "https://www.amazon.nl/TP-Link-Tapo-P110-energiemeting/dp/B09BFT7NZJ?tag=slimhuiswonen-21",
-  youtubeUrl: "https://www.youtube.com/shorts/L5fLN4e77m8",
+  affiliate: {
+    amazon:
+      "https://www.amazon.nl/TP-Link-Tapo-P110-energiemeting/dp/B09BFT7NZJ?tag=slimhuiswonen-21",
+  },
+  videoUrl: "https://www.youtube.com/shorts/L5fLN4e77m8",
 },
 
 {
   slug: "aqara-smart-plug",
   name: "Aqara Smart Plug",
   brand: "Aqara",
-  category: "slimme stekkers",
+  category: "slimme-stekkers",
   image: "/images/products/aqara-smart-plug.png",
   description:
     "Zigbee slimme stekker die werkt via een Aqara hub. Zeer stabiel en perfect voor automatiseringen.",
   features: ["Zigbee 3.0", "Vereist hub", "Automatiseringen"],
-  affiliateUrl:
-    "https://www.amazon.nl/Aqara-timerstand-spraakbediening-Assistant-SmartThings/dp/B087M8LF63?tag=slimhuiswonen-21",
-  youtubeUrl: "https://www.youtube.com/watch?v=eUS_OWHaJAs",
+  affiliate: {
+    amazon:
+      "https://www.amazon.nl/Aqara-timerstand-spraakbediening-Assistant-SmartThings/dp/B087M8LF63?tag=slimhuiswonen-21",
+  },
+  videoUrl: "https://www.youtube.com/watch?v=eUS_OWHaJAs",
 },
 
 {
   slug: "homewizard-energy-socket",
   name: "HomeWizard Energy Socket",
   brand: "HomeWizard",
-  category: "slimme stekkers",
+  category: "slimme-stekkers",
   image: "/images/products/homewizard-energy-socket.png",
   description:
     "Slimme stekker met uitgebreide energiemeting en overzichtelijk energie-dashboard.",
   features: ["Energiemeting", "Wi-Fi", "Inzicht"],
-  affiliateUrl:
-    "https://www.amazon.nl/HomeWizard-Energy-Socket-energiemeting/dp/B08JQ4SK2F?tag=slimhuiswonen-21",
-  youtubeUrl: "https://www.youtube.com/watch?v=5xkQmZ9Qp1I",
+  affiliate: {
+    amazon:
+      "https://www.amazon.nl/HomeWizard-Energy-Socket-energiemeting/dp/B08JQ4SK2F?tag=slimhuiswonen-21",
+  },
+  videoUrl: "https://www.youtube.com/watch?v=5xkQmZ9Qp1I",
 },
 
 {
   slug: "switchbot-matter-plug-mini",
   name: "SwitchBot Matter Plug Mini",
   brand: "SwitchBot",
-  category: "slimme stekkers",
+  category: "slimme-stekkers",
   image: "/images/products/switchbot-matter-plug-mini.png",
   description:
     "Compacte Matter-compatibele slimme stekker met energiemeting. Werkt met vrijwel elk smart home platform.",
   features: ["Matter", "Energiemeting", "Wi-Fi & Bluetooth"],
-  affiliateUrl:
-    "https://www.amazon.nl/SwitchBot-Energiemeting-Bluetooth-Compatibel-HomeAssistant/dp/B0FFN2FKD6?tag=slimhuiswonen-21",
-  youtubeUrl: "https://www.youtube.com/watch?v=A7iH-PR5By4",
+  affiliate: {
+    amazon:
+      "https://www.amazon.nl/SwitchBot-Energiemeting-Bluetooth-Compatibel-HomeAssistant/dp/B0FFN2FKD6?tag=slimhuiswonen-21",
+  },
+  videoUrl: "https://www.youtube.com/watch?v=A7iH-PR5By4",
 },
 
 /* =========================
@@ -783,41 +602,53 @@ export const products = [
      SMART HOME HUBS
   ========================= */
 
-  {
-    slug: "homey-pro-early-2023",
-    name: "Homey Pro (Early 2023)",
-    brand: "Homey",
-    category: "smart-home-hubs",
-    image: "/images/products/homey-pro-early-2023.png",
-    description:
-      "Alles-in-één smart home hub met ondersteuning voor vrijwel alle protocollen.",
-    features: ["Zigbee", "Z-Wave", "Matter", "All-in-one"],
+{
+  slug: "homey-pro-early-2023",
+  name: "Homey Pro (Early 2023)",
+  brand: "Homey",
+  category: "smart-home-hubs",
+  image: "/images/products/homey-pro-early-2023.png",
+  description:
+    "Alles-in-één smart home hub met ondersteuning voor vrijwel alle protocollen.",
+  features: ["Zigbee", "Z-Wave", "Matter", "All-in-one"],
+  affiliate: {
+    amazon:
+      "https://www.amazon.nl/dp/B0C5R1JS91?tag=slimhuiswonen-21",
   },
+  videoUrl: "https://www.youtube.com/shorts/yIQxbRQHTRo",
+},
 
-  {
-    slug: "home-assistant-green",
-    name: "Home Assistant Green",
-    brand: "Home Assistant",
-    category: "smart-home-hubs",
-    image: "/images/products/home-assistant-green.png",
-    description:
-      "Krachtige lokale smart home hub voor maximale controle.",
-    features: ["Lokaal", "Power users", "Uitbreidbaar"],
+{
+  slug: "home-assistant-green",
+  name: "Home Assistant Green",
+  brand: "Home Assistant",
+  category: "smart-home-hubs",
+  image: "/images/products/home-assistant-green.png",
+  description:
+    "Krachtige lokale smart home hub voor maximale controle.",
+  features: ["Lokaal", "Power users", "Uitbreidbaar"],
+  affiliate: {
+    amazon:
+      "https://www.amazon.nl/dp/B0CXVKSG19?tag=slimhuiswonen-21",
   },
+  videoUrl: "https://www.youtube.com/shorts/u8sk6B8_Qkc",
+},
 
-  {
-    slug: "samsung-smartthings-hub",
-    name: "Samsung SmartThings Hub",
-    brand: "Samsung",
-    category: "smart-home-hubs",
-    image: "/images/products/samsung-smartthings-hub.png",
-    description:
-      "Gebruiksvriendelijke hub voor Samsung-ecosysteem.",
-    features: ["Samsung", "Eenvoudig", "Cloud"],
+{
+  slug: "samsung-smartthings-hub",
+  name: "Samsung SmartThings Hub",
+  brand: "Samsung",
+  category: "smart-home-hubs",
+  image: "/images/products/samsung-smartthings-hub.png",
+  description:
+    "Gebruiksvriendelijke hub voor Samsung-ecosysteem.",
+  features: ["Samsung", "Eenvoudig", "Cloud"],
+  affiliate: {
+    amazon:
+      "https://www.amazon.nl/dp/B08NDH9NXN?tag=slimhuiswonen-21",
   },
-];
-
-export default products;
+  videoUrl: "https://www.youtube.com/shorts/ZjyfLL9m5Bw",
+},
 
 /* =========================
    HELPERS
