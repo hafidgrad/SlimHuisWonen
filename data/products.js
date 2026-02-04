@@ -539,66 +539,66 @@ export const products = [
     features: ["Privacy", "Thread", "Premium"],
   },
 
-  /* =========================
+  /* ========================= 
      SLIMME VERLICHTING (extra)
   ========================= */
 
-  {
-    slug: "philips-hue-white-ambiance-starterkit",
-    name: "Philips Hue White Ambiance Starterkit",
-    brand: "Philips Hue",
-    category: "slimme-verlichting",
-    image: "/images/products/philips-hue-white-ambiance.png",
-    description:
-      "Het meest complete en stabiele slimme verlichtingssysteem.",
-    features: ["Zigbee", "Ecosysteem", "Stabiel"],
-  },
+{
+  slug: "philips-hue-white-ambiance-starterkit",
+  name: "Philips Hue White Ambiance Starterkit",
+  brand: "Philips Hue",
+  category: "slimme-verlichting",
+  image: "/images/products/philips-hue-white-ambiance.png",
+  description:
+    "Het meest complete en stabiele slimme verlichtingssysteem.",
+  features: ["Zigbee", "Ecosysteem", "Stabiel"],
+},
 
-  {
-    slug: "innr-zigbee-e27",
-    name: "Innr Zigbee E27",
-    brand: "Innr",
-    category: "slimme-verlichting",
-    image: "/images/products/innr-zigbee-e27.png",
-    description:
-      "Betaalbare Zigbee lampen die goed samenwerken met Hue en Homey.",
-    features: ["Zigbee", "Budget", "E27"],
-  },
+{
+  slug: "innr-zigbee-e27",
+  name: "Innr Zigbee E27",
+  brand: "Innr",
+  category: "slimme-verlichting",
+  image: "/images/products/innr-zigbee-e27.png",
+  description:
+    "Betaalbare Zigbee lampen die goed samenwerken met Hue en Homey.",
+  features: ["Zigbee", "Budget", "E27"],
+},
 
-  {
-    slug: "tapo-l510e",
-    name: "Tapo L510E",
-    brand: "TP-Link",
-    category: "slimme-verlichting",
-    image: "/images/products/tapo-l510e.png",
-    description:
-      "Wi-Fi slimme lamp zonder hub, ideaal voor starters.",
-    features: ["Wi-Fi", "Geen hub", "Budget"],
-  },
+{
+  slug: "tapo-l510e",
+  name: "Tapo L510E",
+  brand: "TP-Link",
+  category: "slimme-verlichting",
+  image: "/images/products/tapo-l510e.png",
+  description:
+    "Wi-Fi slimme lamp zonder hub, ideaal voor starters.",
+  features: ["Wi-Fi", "Geen hub", "Budget"],
+},
 
-  {
-    slug: "tapo-l530e",
-    name: "Tapo L530E",
-    brand: "TP-Link",
-    category: "slimme-verlichting",
-    image: "/images/products/tapo-l530e.png",
-    description:
-      "Slimme Wi-Fi kleurverlichting met veel functies.",
-    features: ["Kleur", "Wi-Fi", "Geen hub"],
-  },
+{
+  slug: "tapo-l530e",
+  name: "Tapo L530E",
+  brand: "TP-Link",
+  category: "slimme-verlichting",
+  image: "/images/products/tapo-l530e.png",
+  description:
+    "Slimme Wi-Fi kleurverlichting met veel functies.",
+  features: ["Kleur", "Wi-Fi", "Geen hub"],
+},
 
-  {
-    slug: "govee-rgbic-ledstrip",
-    name: "Govee RGBIC LED Strip",
-    brand: "Govee",
-    category: "slimme-verlichting",
-    image: "/images/products/govee-rgbic-ledstrip.png",
-    description:
-      "LED-strips met sterke lichteffecten en sfeer.",
-    features: ["LED-strip", "Sfeer", "RGBIC"],
-  },
+{
+  slug: "govee-rgbic-ledstrip",
+  name: "Govee RGBIC LED Strip",
+  brand: "Govee",
+  category: "slimme-verlichting",
+  image: "/images/products/govee-rgbic-ledstrip.png",
+  description:
+    "LED-strips met sterke lichteffecten en sfeer.",
+  features: ["LED-strip", "Sfeer", "RGBIC"],
+},
 
-  /* =========================
+/* =========================
      SMART HOME HUBS
   ========================= */
 
@@ -650,6 +650,8 @@ export const products = [
   videoUrl: "https://www.youtube.com/shorts/ZjyfLL9m5Bw",
 },
 
+];
+
 /* =========================
    HELPERS
 ========================== */
@@ -665,3 +667,5 @@ export function getProductBySlug(slug) {
 export function getProductsByCategory(categorySlug) {
   return products.filter((p) => p.category === categorySlug);
 }
+
+export default products;
