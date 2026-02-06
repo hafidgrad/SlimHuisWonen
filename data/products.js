@@ -270,7 +270,7 @@ export const products = [
 ========================== */
 
 {
-  slug: "tapo-p115-slimme-stekker",
+  slug: "tapo-p115",
   brand: "TP-Link Tapo",
   name: "TP-Link Tapo P115 Slimme Stekker",
   category: "slimme-stekkers",
@@ -283,7 +283,7 @@ export const products = [
 },
 
 {
-  slug: "tapo-p110-slimme-stekker",
+  slug: "tapo-p110",
   brand: "TP-Link Tapo",
   name: "TP-Link Tapo P110 Slimme Stekker",
   category: "slimme-stekkers",
@@ -296,7 +296,7 @@ export const products = [
 },
 
 {
-  slug: "eve-energy-matter",
+  slug: "eve-energy",
   brand: "Eve",
   name: "Eve Energy (Matter / Thread)",
   category: "slimme-stekkers",
@@ -347,8 +347,8 @@ export const products = [
 
 {
   slug: "switchbot-matter-plug-mini",
-  name: "SwitchBot Matter Plug Mini",
   brand: "SwitchBot",
+  name: "SwitchBot Matter Plug Mini",
   category: "slimme-stekkers",
   description:
     "Matter slimme stekker met energiemonitoring en brede platformondersteuning.",
@@ -356,6 +356,32 @@ export const products = [
   affiliateUrl:
     "https://www.amazon.nl/SwitchBot-Energiemonitoring-Bluetooth-Compatibel-HomeAssistant/dp/B0FFN2FKD6?tag=slimhuiswonen-21",
   youtubeUrl: "https://www.youtube.com/watch?v=A7iH-PR5By4",
+},
+
+{
+  slug: "aqara-smart-plug",
+  brand: "Aqara",
+  name: "Aqara Smart Plug",
+  category: "slimme-stekkers",
+  description:
+    "Zeer stabiele Zigbee-stekker. Werkt via een Aqara hub en is perfect voor automatiseringen in HomeKit, Home Assistant of Homey.",
+  features: ["Zigbee 3.0", "Vereist hub", "Automatiseringen"],
+  affiliateUrl:
+    "https://www.amazon.nl/Aqara-timerstand-spraakbediening-Assistant-SmartThings/dp/B087M8LF63?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/watch?v=eUS_OWHaJAs",
+},
+
+{
+  slug: "homewizard-energy-socket",
+  brand: "HomeWizard",
+  name: "HomeWizard Energy Socket",
+  category: "slimme-stekkers",
+  description:
+    "Perfect als je energieverbruik wilt monitoren via een duidelijk dashboard.",
+  features: ["Energiemeting", "Wi-Fi", "Energie-dashboard"],
+  affiliateUrl:
+    "https://www.amazon.nl/HomeWizard-Energy-Socket-energiemeting/dp/B08JQ4SK2F?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/watch?v=5xkQmZ9Qp1I",
 },
 
 /* =========================
@@ -629,7 +655,7 @@ export const products = [
 ========================== */
 
 {
-  slug: "aeotec-smart-home-hub",
+  slug: "samsung-smartthings-hub",
   brand: "Aeotec",
   name: "Aeotec Smart Home Hub (SmartThings)",
   category: "smart-home-hubs",
