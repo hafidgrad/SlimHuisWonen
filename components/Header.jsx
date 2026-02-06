@@ -29,13 +29,15 @@ export default function Header() {
         <nav className="main-nav">
           <Link href="/over">Over</Link>
 
-          {/* ✅ Scroll naar categorieën sectie op homepage */}
+          {/* Scroll naar categorieën sectie op homepage */}
           <Link href="/#categorieen">Categorieën</Link>
 
           <Link href="/aanraders">Koopgidsen</Link>
           <Link href="/tips">Tips & uitleg</Link>
 
-          {/* ✅ Nieuw: Blog zichtbaar maken */}
+          {/* 🔥 NIEUW: How To */}
+          <Link href="/how-to">How To</Link>
+
           <Link href="/blog">Blog</Link>
 
           <Link href="/contact">Contact</Link>

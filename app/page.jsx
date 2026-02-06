@@ -65,7 +65,7 @@ export default function HomePage() {
         <About />
         <Categories />
 
-        {/* ✅ Tips & uitleg (deze was al goed) */}
+        {/* ✅ Tips & uitleg */}
         <section className="section">
           <div className="container">
             <Link href="/tips" className="banner-center tips-banner-link">
@@ -92,7 +92,24 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ✅ Blog (deze was ook al goed) */}
+        {/* ✅ NIEUWE HOW TO SECTIE */}
+        <section className="section">
+          <div className="container">
+            <h2>How To Smart Home</h2>
+
+            <p className="section-intro">
+              Praktische handleidingen om je smart home stap voor stap in te
+              stellen. Van wifi optimaliseren tot het installeren van een
+              slimme hub — duidelijk uitgelegd zonder technisch gedoe.
+            </p>
+
+            <Link href="/how-to" className="btn btn-primary">
+              Bekijk alle How To handleidingen →
+            </Link>
+          </div>
+        </section>
+
+        {/* ✅ Blog */}
         <section className="section">
           <div className="container">
             <Link href="/blog" className="banner-center blog-banner-link">
