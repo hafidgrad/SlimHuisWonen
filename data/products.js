@@ -371,19 +371,6 @@ export const products = [
   youtubeUrl: "https://www.youtube.com/watch?v=eUS_OWHaJAs",
 },
 
-{
-  slug: "homewizard-energy-socket",
-  brand: "HomeWizard",
-  name: "HomeWizard Energy Socket",
-  category: "slimme-stekkers",
-  description:
-    "Perfect als je energieverbruik wilt monitoren via een duidelijk dashboard.",
-  features: ["Energiemeting", "Wi-Fi", "Energie-dashboard"],
-  affiliateUrl:
-    "https://www.amazon.nl/HomeWizard-Energy-Socket-energiemeting/dp/B08JQ4SK2F?tag=slimhuiswonen-21",
-  youtubeUrl: "https://www.youtube.com/watch?v=5xkQmZ9Qp1I",
-},
-
 /* =========================
    SLIMME DEURBELLEN (extra lijst)
 ========================== */

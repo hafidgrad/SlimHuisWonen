@@ -36,14 +36,6 @@ export default function BesteSlimmeStekkersKoopgidsPage() {
         badges: ["Zigbee", "Stabiel"],
       },
       {
-        title: "Beste inzicht in verbruik: HomeWizard Energy Socket",
-        description:
-          "Perfect als je energieverbruik wilt monitoren via een duidelijk dashboard.",
-        image: "/images/products/homewizard-energy-socket.png",
-        href: "/producten/homewizard-energy-socket",
-        badges: ["Energie", "Inzicht"],
-      },
-      {
         title: "Beste Matter stekker: SwitchBot Matter Plug Mini",
         description:
           "Compacte slimme stekker met Matter-ondersteuning en energiemeting. Werkt met Apple Home, Google Home, Alexa en Home Assistant.",
