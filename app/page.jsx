@@ -92,9 +92,19 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ✅ NIEUWE HOW TO SECTIE */}
+        {/* ✅ How To (nu met banner, zelfde opzet als Tips & Blog) */}
         <section className="section">
           <div className="container">
+            <Link href="/how-to" className="banner-center howto-banner-link">
+              <div className="categorie-banner howto-banner">
+                <img
+                  src="/images/banner_how-to.png"
+                  alt="How To Smart Home"
+                  className="banner-img"
+                />
+              </div>
+            </Link>
+
             <h2>How To Smart Home</h2>
 
             <p className="section-intro">
