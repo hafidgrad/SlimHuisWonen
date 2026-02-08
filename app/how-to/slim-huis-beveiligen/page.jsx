@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import TipBanner from "@/components/TipBanner"; // ✅ toegevoegd
 import Link from "next/link";
 
 export const metadata = {
@@ -9,12 +10,22 @@ export const metadata = {
 };
 
 export default function SlimHuisBeveiligen() {
+
+  const headerImg = "/images/how-to/slim-huis-beveiligen.png"; // ✅ toegevoegd
+
   return (
     <>
       <Header />
 
       <main className="section">
         <div className="container article">
+
+          {/* ✅ Banner toegevoegd */}
+          <TipBanner
+            src={headerImg}
+            alt="Hoe beveilig je je slimme huis?"
+          />
+
           <h1>Hoe beveilig je je slimme huis?</h1>
 
           <p>

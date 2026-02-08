@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import TipBanner from "@/components/TipBanner"; // ✅ toegevoegd
 import Link from "next/link";
 
 export const metadata = {
@@ -9,12 +10,22 @@ export const metadata = {
 };
 
 export default function SlimmeVerlichtingInstalleren() {
+
+  const headerImg = "/images/how-to/slimme-verlichting-installeren.png"; // ✅ toegevoegd
+
   return (
     <>
       <Header />
 
       <main className="section">
         <div className="container article">
+
+          {/* ✅ Banner toegevoegd */}
+          <TipBanner
+            src={headerImg}
+            alt="Hoe installeer je slimme verlichting?"
+          />
+
           <h1>Hoe installeer je slimme verlichting?</h1>
 
           <p>
