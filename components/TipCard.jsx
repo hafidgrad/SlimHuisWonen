@@ -1,9 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function TipCard({ tip }) {
+export default function TipCard({ tip, basePath = "/tips" }) {
   return (
-    <Link href={`/tips/${tip.slug}`} className="tip-card tip-card--media">
+    <Link
+      href={`${basePath}/${tip.slug}`}
+      className="tip-card tip-card--media"
+    >
       {/* ✅ Image header zoals categorie kaart */}
       {tip.image && (
         <div className="tip-card__imageWrap">

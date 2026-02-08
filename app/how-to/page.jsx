@@ -19,6 +19,7 @@ export default function HowToPage() {
   );
 
   const headerImg = "/images/banner_how-to.png";
+
   return (
     <>
       <Header />
@@ -40,6 +41,7 @@ export default function HowToPage() {
             {howtos.map((item) => (
               <TipCard
                 key={item.slug}
+                basePath="/how-to"
                 tip={{
                   title: item.title,
                   slug: item.slug,
