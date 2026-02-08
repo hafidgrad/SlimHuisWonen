@@ -13,14 +13,15 @@ export default function TipBanner({ src, alt }) {
       />
 
       <div className="tipBannerInner">
+        
         <Image
-          src={src}
-          alt={alt}
-          width={1200}
-          height={600}
-          priority
-          className="tipBannerImg"
-        />
+  src={src}
+  alt={alt}
+  width={1200}
+  height={600}
+  priority
+  className="tipBannerImg"
+/>
       </div>
     </div>
   );

@@ -1,74 +1,53 @@
-import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import TipBanner from "@/components/TipBanner";
+import TipCard from "@/components/TipCard";
+import { howto as howtoData } from "@/data/howto";
 
 export const metadata = {
-  title: "How To Smart Home | SlimHuisWonen",
+  title: "How To Smart Home – SlimHuisWonen.nl",
   description:
-    "Praktische stap-voor-stap handleidingen om je slimme huis in te stellen.",
+    "Stap-voor-stap handleidingen voor je smart home. Van wifi verbeteren tot het installeren van een slimme hub.",
+  alternates: {
+    canonical: "https://slimhuiswonen.nl/how-to",
+  },
 };
 
 export default function HowToPage() {
+  const howtos = (Array.isArray(howtoData) ? howtoData : []).filter(
+    (h) => h?.available
+  );
+
+  const headerImg = "/images/banner_how-to.png";
   return (
     <>
       <Header />
 
       <main className="section">
         <div className="container">
-          <h1>How To Smart Home</h1>
+          <TipBanner src={headerImg} alt="How To Smart Home" />
+
+          <h1 style={{ fontSize: 42, marginBottom: 8 }}>
+            How To Smart Home
+          </h1>
 
           <p className="section-intro">
             Praktische handleidingen om je slimme huis stap voor stap in te
             stellen. Duidelijk uitgelegd, zonder technisch gedoe.
           </p>
 
-          <div className="grid">
-            <Link href="/how-to/beginnen-met-smart-home">
-              <div className="card">
-                <h2>Hoe begin je met een smart home?</h2>
-                <p>
-                  Complete startersgids om zonder fouten te beginnen met je
-                  slimme huis.
-                </p>
-              </div>
-            </Link>
-
-            <Link href="/how-to/slimme-verlichting-installeren">
-              <div className="card">
-                <h2>Hoe installeer je slimme verlichting?</h2>
-                <p>
-                  Stap-voor-stap uitleg voor het installeren en instellen van
-                  slimme lampen.
-                </p>
-              </div>
-            </Link>
-
-            <Link href="/how-to/wifi-verbeteren-voor-smart-home">
-              <div className="card">
-                <h2>Hoe verbeter je wifi voor je smart home?</h2>
-                <p>
-                  Voorkom verbindingsproblemen en optimaliseer je netwerk.
-                </p>
-              </div>
-            </Link>
-
-            <Link href="/how-to/smart-home-hub-installeren">
-              <div className="card">
-                <h2>Hoe installeer je een smart home hub?</h2>
-                <p>
-                  Leer hoe je een hub aansluit en al je apparaten koppelt.
-                </p>
-              </div>
-            </Link>
-
-            <Link href="/how-to/slim-huis-beveiligen">
-              <div className="card">
-                <h2>Hoe beveilig je je slimme huis?</h2>
-                <p>
-                  Bescherm je smart home tegen ongewenste toegang en hackers.
-                </p>
-              </div>
-            </Link>
+          <div className="tips-grid">
+            {howtos.map((item) => (
+              <TipCard
+                key={item.slug}
+                tip={{
+                  title: item.title,
+                  slug: item.slug,
+                  desc: item.description,
+                  image: item.image,
+                }}
+              />
+            ))}
           </div>
         </div>
       </main>

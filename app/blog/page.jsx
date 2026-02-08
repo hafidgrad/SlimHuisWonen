@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import TipBanner from "@/components/TipBanner";
 import Image from "next/image";
 import { blogPosts } from "@/data/blog";
 
@@ -14,44 +15,22 @@ export const metadata = {
 };
 
 export default function BlogOverviewPage() {
-  // ✅ Alleen public posts tonen
   const posts = (Array.isArray(blogPosts) ? blogPosts : []).filter(
     (p) => p?.available
   );
+
+  const headerImg = "/images/blog/blog-header.png";
 
   return (
     <>
       <Header />
 
       <main className="section">
-        <div className="container article">
-          {/* ✅ Blog header banner (blur zoals TipBanner) */}
-          <div
-            className="blogBanner"
-            style={{ "--blog-bg": "url(/images/blog/blog-header.png)" }}
-          >
-            <div
-              className="blogBannerBlur blogBannerBlurLeft"
-              style={{ backgroundImage: "var(--blog-bg)" }}
-            />
-            <div
-              className="blogBannerBlur blogBannerBlurRight"
-              style={{ backgroundImage: "var(--blog-bg)" }}
-            />
+        <div className="container">
+          <TipBanner src={headerImg} alt="SlimHuisWonen blog" />
 
-            <div className="blogBannerInner">
-              <Image
-                src="/images/blog/blog-header.png"
-                alt="SlimHuisWonen blog"
-                width={1400}
-                height={520}
-                priority
-                className="blogBannerImg"
-              />
-            </div>
-          </div>
+          <h1 style={{ fontSize: 42, marginBottom: 8 }}>Blog</h1>
 
-          <h1>Blog</h1>
           <p className="section-intro">
             Hier delen we handige uitleg, vergelijkingen en koopgidsen over smart
             home. Praktisch, duidelijk en zonder marketingpraat.
@@ -64,7 +43,6 @@ export default function BlogOverviewPage() {
                 href={`/blog/${post.slug}`}
                 className="tip-card tip-card--media"
               >
-                {/* ✅ Image header zoals tips */}
                 {post.image && (
                   <div className="tip-card__imageWrap">
                     <Image
