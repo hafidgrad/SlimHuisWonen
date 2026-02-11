@@ -12,14 +12,8 @@ export default function HomePage() {
       <Header />
 
       <main>
-        {/* ✅ ORIGINELE HERO BANNER (ongewijzigd) */}
+        {/* ✅ HERO BANNER (met background-image via CSS) */}
         <section className="hero-banner">
-          <img
-            src="/images/hero-smarthome.png"
-            alt="SlimHuisWonen.nl - Smart home producten"
-            className="hero-banner-img"
-          />
-
           <div className="hero-banner-overlay" />
 
           <div className="hero-banner-content">
@@ -53,19 +47,16 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ✅ Spacer zodat er NOOIT overlap is */}
+        {/* Spacer */}
         <div className="hero-spacer" />
 
-        {/* ✅ Scroll target */}
         <span id="koopgidsen" />
 
-        {/* ✅ KOOPGIDSEN */}
         <TopKoopgidsen />
-
         <About />
         <Categories />
 
-        {/* ✅ Tips & uitleg */}
+        {/* Tips */}
         <section className="section">
           <div className="container">
             <Link href="/tips" className="banner-center tips-banner-link">
@@ -92,7 +83,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ✅ How To (nu met banner, zelfde opzet als Tips & Blog) */}
+        {/* How To */}
         <section className="section">
           <div className="container">
             <Link href="/how-to" className="banner-center howto-banner-link">
@@ -119,7 +110,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ✅ Blog */}
+        {/* Blog */}
         <section className="section">
           <div className="container">
             <Link href="/blog" className="banner-center blog-banner-link">
