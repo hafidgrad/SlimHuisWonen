@@ -12,7 +12,7 @@ export default function HomePage() {
       <Header />
 
       <main>
-        {/* ✅ HERO BANNER (met background-image via CSS) */}
+        {/* ================= HERO ================= */}
         <section className="hero-banner">
           <div className="hero-banner-overlay" />
 
@@ -22,20 +22,22 @@ export default function HomePage() {
                 <h1>Maak je huis slim — zonder gedoe</h1>
 
                 <p>
-                  De beste smart home producten, tips en automatiseringen op één
-                  plek.
+                  De beste smart home producten, tips en automatiseringen op één plek.
                 </p>
 
                 <div className="hero-banner-actions">
                   <Link
-                    href="/producten"
-                    className="btn hero-btn hero-secondary"
+                    href="/aanraders"
+                    className="btn hero-btn hero-primary"
                   >
-                    Ontdek producten
+                    Bekijk koopgidsen →
                   </Link>
 
-                  <Link href="/tips" className="btn hero-btn hero-primary">
-                    Start met tips →
+                  <Link
+                    href="/categorie"
+                    className="btn hero-btn hero-secondary"
+                  >
+                    Ontdek categorieën
                   </Link>
                 </div>
 
@@ -47,23 +49,23 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Spacer */}
         <div className="hero-spacer" />
 
+        {/* ================= KOOPGIDSEN ================= */}
         <span id="koopgidsen" />
-
         <TopKoopgidsen />
-        <About />
+
+        {/* ================= CATEGORIEËN ================= */}
         <Categories />
 
-        {/* Tips */}
+        {/* ================= TIPS ================= */}
         <section className="section">
           <div className="container">
             <Link href="/tips" className="banner-center tips-banner-link">
               <div className="categorie-banner tips-banner">
                 <img
                   src="/images/banner_tips_uitleg.png"
-                  alt="Tips & uitleg"
+                  alt="Tips en uitleg voor je smart home"
                   className="banner-img"
                 />
               </div>
@@ -72,18 +74,17 @@ export default function HomePage() {
             <h2>Tips & uitleg</h2>
 
             <p className="section-intro">
-              Stap-voor-stap uitleg en praktische tips om je huis slimmer te
-              maken. Van slimme verlichting tot complete smart home
-              automatiseringen.
+              Praktische uitleg over slimme verlichting, sensoren, hubs en
+              netwerken. Begrijp hoe je smart home werkt.
             </p>
 
             <Link href="/tips" className="btn btn-primary">
-              Bekijk alle tips & uitleg →
+              Bekijk alle tips →
             </Link>
           </div>
         </section>
 
-        {/* How To */}
+        {/* ================= HOW TO ================= */}
         <section className="section">
           <div className="container">
             <Link href="/how-to" className="banner-center howto-banner-link">
@@ -99,9 +100,8 @@ export default function HomePage() {
             <h2>How To Smart Home</h2>
 
             <p className="section-intro">
-              Praktische handleidingen om je smart home stap voor stap in te
-              stellen. Van wifi optimaliseren tot het installeren van een
-              slimme hub — duidelijk uitgelegd zonder technisch gedoe.
+              Stap-voor-stap handleidingen om je smart home correct in te
+              stellen — zonder technisch gedoe.
             </p>
 
             <Link href="/how-to" className="btn btn-primary">
@@ -110,7 +110,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Blog */}
+        {/* ================= BLOG ================= */}
         <section className="section">
           <div className="container">
             <Link href="/blog" className="banner-center blog-banner-link">
@@ -126,9 +126,8 @@ export default function HomePage() {
             <h2>Blog</h2>
 
             <p className="section-intro">
-              Uitleg, vergelijkingen en koopgidsen over Zigbee, Matter, slimme
-              stekkers, hubs en verlichting. Praktisch, duidelijk en zonder
-              marketingpraat.
+              Vergelijkingen en diepgaande uitleg over Zigbee, Matter,
+              automatiseringen en slimme keuzes.
             </p>
 
             <Link href="/blog" className="btn btn-primary">
@@ -137,6 +136,10 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* ================= OVER ================= */}
+        <About />
+
+        {/* ================= CONTACT ================= */}
         <Contact />
       </main>
 
