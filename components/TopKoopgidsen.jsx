@@ -45,7 +45,6 @@ export default function TopKoopgidsen() {
           beste opties per categorie — helder, onafhankelijk en praktisch.
         </p>
 
-        {/* ✅ IDENTIEK aan Categories.jsx */}
         <div className="category-grid">
           {koopgidsen.map((gids) => (
             <Link
@@ -53,7 +52,6 @@ export default function TopKoopgidsen() {
               href={gids.href}
               className="cat-card"
             >
-              {/* Afbeelding */}
               <div className="cat-card__imageWrap">
                 <Image
                   src={gids.image}
@@ -62,12 +60,10 @@ export default function TopKoopgidsen() {
                   className="cat-card__image"
                   sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 33vw"
                 />
-
                 <div className="cat-card__overlay" />
                 <div className="cat-card__badge">Koopgids</div>
               </div>
 
-              {/* Content */}
               <div className="cat-card__content">
                 <h3 className="cat-card__title">{gids.title}</h3>
                 <p className="cat-card__desc">{gids.description}</p>
@@ -80,8 +76,9 @@ export default function TopKoopgidsen() {
           ))}
         </div>
 
+        {/* ✅ FIXED */}
         <Link
-          href="/blog"
+          href="/aanraders"
           className="btn btn-primary"
           style={{ marginTop: "1.5rem" }}
         >
