@@ -36,10 +36,10 @@ export default function BlogPostPage({ params }) {
 
       <main className="section">
         <div className="container article">
-          {/* ✅ Blog banner zoals overzicht (blur effect) */}
+          {/* ✅ Compacte banner */}
           {post.image && (
             <div
-              className="blogBanner"
+              className="blogBanner compact"
               style={{ "--blog-bg": `url(${post.image})` }}
             >
               <div
@@ -51,20 +51,19 @@ export default function BlogPostPage({ params }) {
                 style={{ backgroundImage: "var(--blog-bg)" }}
               />
 
-              <div className="blogBannerInner">
+              <div className="blogBannerInner compact">
                 <Image
                   src={post.image}
                   alt={post.title}
-                  width={1400}
-                  height={520}
+                  fill
                   priority
                   className="blogBannerImg"
+                  sizes="(max-width: 1200px) 100vw, 1200px"
                 />
               </div>
             </div>
           )}
 
-          {/* Breadcrumb / terug link */}
           <p className="muted small" style={{ marginBottom: "0.75rem" }}>
             <Link href="/blog">← Terug naar blog</Link>
           </p>
@@ -79,7 +78,6 @@ export default function BlogPostPage({ params }) {
 
           <hr style={{ marginTop: "2rem" }} />
 
-          {/* ✅ Placeholder zodat de pagina niet leeg is */}
           <p className="muted">
             (Hier komt straks de inhoud van deze blogpost te staan.)
           </p>
