@@ -979,14 +979,20 @@ code {
   }
 }
 
-/* =========================================================
-   BLOG BANNER (DYNAMISCHE BLOGPAGINA)
-   ========================================================= */
+.blogBanner {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+/* =====================================
+   BLOG BANNER UNIFORM (PREMIUM)
+===================================== */
 
 .blogBanner {
   position: relative;
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .blogBannerBlur {
@@ -996,37 +1002,36 @@ code {
   width: 50%;
   background-size: cover;
   background-position: center;
-  filter: blur(60px);
-  opacity: 0.5;
+  filter: blur(80px);
+  opacity: 0.65;
   z-index: 1;
 }
 
-.blogBannerBlurLeft {
-  left: 0;
-}
-
-.blogBannerBlurRight {
-  right: 0;
-}
+.blogBannerBlurLeft { left: 0; }
+.blogBannerBlurRight { right: 0; }
 
 .blogBannerInner {
   position: relative;
   z-index: 2;
   width: 100%;
-  height: 360px; /* 👈 nieuwe banner hoogte */
-  border-radius: 18px;
+  height: 240px; /* iets compacter */
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .blogBannerImg {
-  object-fit: cover;
+  object-fit: contain; /* 👈 geen crop meer */
+  max-height: 100%;
+  max-width: 100%;
 }
 
 @media (max-width: 768px) {
   .blogBannerInner {
-    height: 240px;
-    border-radius: 16px;
+    height: 220px;
   }
 }
 
@@ -1081,4 +1086,63 @@ code {
   .koopgids-hero {
     height: 220px;
   }
+}
+
+.article p {
+  font-size: 1.05rem;   /* ±17px */
+  line-height: 1.75;
+}
+
+.article li {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.section-intro {
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+/* =====================================
+   BLOG CONTENT SPACING (ARTICLE)
+===================================== */
+
+.article h1 {
+  margin-bottom: 1.5rem;
+}
+
+.article h2 {
+  margin-top: 2.75rem;
+  margin-bottom: 1rem;
+}
+
+.article h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.article p {
+  margin-bottom: 1.4rem;
+}
+
+.article ul {
+  margin: 1rem 0 1.75rem 1.25rem;
+}
+
+.article li {
+  margin-bottom: 0.6rem;
+}
+
+.article hr {
+  margin: 3rem 0;
+}
+
+.blogCategoryBadge {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
 }

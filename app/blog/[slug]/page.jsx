@@ -17,10 +17,20 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: `${post.title} – SlimHuisWonen.nl`,
+    title: `${post.title} | SlimHuisWonen`,
     description: post.description,
     alternates: {
       canonical: `https://slimhuiswonen.nl/blog/${post.slug}`,
+    },
+    openGraph: {
+      title: post.title,
+      description: post.description,
+      url: `https://slimhuiswonen.nl/blog/${post.slug}`,
+      images: [
+        {
+          url: `https://slimhuiswonen.nl${post.image}`,
+        },
+      ],
     },
   };
 }
@@ -30,16 +40,55 @@ export default function BlogPostPage({ params }) {
 
   if (!post) return notFound();
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.description,
+    image: `https://slimhuiswonen.nl${post.image}`,
+    author: {
+      "@type": "Organization",
+      name: "SlimHuisWonen.nl",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "SlimHuisWonen.nl",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://slimhuiswonen.nl/blog/${post.slug}`,
+    },
+  };
+
   return (
     <>
       <Header />
 
+      {/* Article Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleSchema),
+        }}
+      />
+
+      {/* FAQ Structured Data (alleen als aanwezig in data/blog.js) */}
+      {post.faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(post.faqSchema),
+          }}
+        />
+      )}
+
       <main className="section">
         <div className="container article">
-          {/* ✅ Compacte banner */}
+
+          {/* Banner */}
           {post.image && (
             <div
-              className="blogBanner compact"
+              className="blogBanner"
               style={{ "--blog-bg": `url(${post.image})` }}
             >
               <div
@@ -58,29 +107,55 @@ export default function BlogPostPage({ params }) {
                   fill
                   priority
                   className="blogBannerImg"
-                  sizes="(max-width: 1200px) 100vw, 1200px"
+                  sizes="100vw"
                 />
               </div>
             </div>
           )}
 
+          {/* Breadcrumb */}
           <p className="muted small" style={{ marginBottom: "0.75rem" }}>
-            <Link href="/blog">← Terug naar blog</Link>
+            <Link href="/blog">Blog</Link> / {post.title}
           </p>
+
+          {/* Category badge */}
+          {post.category && (
+            <div className="blogCategoryBadge">
+              {post.category}
+            </div>
+          )}
 
           <h1>{post.title}</h1>
 
           {post.description && (
-            <p className="section-intro" style={{ marginTop: "0.75rem" }}>
+            <p className="section-intro">
               {post.description}
             </p>
           )}
 
-          <hr style={{ marginTop: "2rem" }} />
+          <hr />
 
-          <p className="muted">
-            (Hier komt straks de inhoud van deze blogpost te staan.)
-          </p>
+          {post.content}
+
+          {post.related && (
+            <>
+              <hr />
+              <h2>Gerelateerde artikelen</h2>
+              <ul>
+                {post.related.map((slug) => {
+                  const relatedPost = blogPosts.find((p) => p.slug === slug);
+                  if (!relatedPost) return null;
+                  return (
+                    <li key={slug}>
+                      <Link href={`/blog/${slug}`}>
+                        {relatedPost.title}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </>
+          )}
         </div>
       </main>
 

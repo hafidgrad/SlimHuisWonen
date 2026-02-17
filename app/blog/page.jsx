@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
-import TipBanner from "@/components/TipBanner";
 import Image from "next/image";
 import { blogPosts } from "@/data/blog";
 
@@ -26,8 +25,33 @@ export default function BlogOverviewPage() {
       <Header />
 
       <main className="section">
-        <div className="container">
-          <TipBanner src={headerImg} alt="SlimHuisWonen blog" />
+        <div className="container article">
+          
+          {/* 🔥 Nieuwe blur banner */}
+          <div
+            className="blogBanner"
+            style={{ "--blog-bg": `url(${headerImg})` }}
+          >
+            <div
+              className="blogBannerBlur blogBannerBlurLeft"
+              style={{ backgroundImage: "var(--blog-bg)" }}
+            />
+            <div
+              className="blogBannerBlur blogBannerBlurRight"
+              style={{ backgroundImage: "var(--blog-bg)" }}
+            />
+
+            <div className="blogBannerInner compact">
+              <Image
+                src={headerImg}
+                alt="SlimHuisWonen blog"
+                fill
+                priority
+                className="blogBannerImg"
+                sizes="100vw"
+              />
+            </div>
+          </div>
 
           <h1 style={{ fontSize: 42, marginBottom: 8 }}>Blog</h1>
 
@@ -56,15 +80,21 @@ export default function BlogOverviewPage() {
                     <div className="tip-card__badge">
                       {post.category || "Blog"}
                     </div>
-                    <div className="tip-card__imgTitle">{post.title}</div>
+                    <div className="tip-card__imgTitle">
+                      {post.title}
+                    </div>
                   </div>
                 )}
 
                 <div className="tip-card__content">
-                  <h2 className="tip-card__title">{post.title}</h2>
+                  <h2 className="tip-card__title">
+                    {post.title}
+                  </h2>
 
                   {post.description && (
-                    <p className="tip-card__desc">{post.description}</p>
+                    <p className="tip-card__desc">
+                      {post.description}
+                    </p>
                   )}
 
                   <span className="tip-card__cta">
