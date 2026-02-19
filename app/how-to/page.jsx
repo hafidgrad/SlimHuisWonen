@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import TipBanner from "@/components/TipBanner";
 import TipCard from "@/components/TipCard";
+import Image from "next/image";
 import { howto as howtoData } from "@/data/howto";
 
 export const metadata = {
@@ -25,8 +25,33 @@ export default function HowToPage() {
       <Header />
 
       <main className="section">
-        <div className="container">
-          <TipBanner src={headerImg} alt="How To Smart Home" />
+        <div className="container article">
+
+          {/* 🔥 Blog-style blur banner */}
+          <div
+            className="blogBanner"
+            style={{ "--blog-bg": `url(${headerImg})` }}
+          >
+            <div
+              className="blogBannerBlur blogBannerBlurLeft"
+              style={{ backgroundImage: "var(--blog-bg)" }}
+            />
+            <div
+              className="blogBannerBlur blogBannerBlurRight"
+              style={{ backgroundImage: "var(--blog-bg)" }}
+            />
+
+            <div className="blogBannerInner compact">
+              <Image
+                src={headerImg}
+                alt="How To Smart Home"
+                fill
+                priority
+                className="blogBannerImg"
+                sizes="100vw"
+              />
+            </div>
+          </div>
 
           <h1 style={{ fontSize: 42, marginBottom: 8 }}>
             How To Smart Home
@@ -51,6 +76,7 @@ export default function HowToPage() {
               />
             ))}
           </div>
+
         </div>
       </main>
 
