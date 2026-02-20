@@ -1172,6 +1172,131 @@ export const blogPosts = [
     </>
   ),
 },
+{
+  slug: "klikaanklikuit-smart-home",
+  title: "KlikAanKlikUit slim maken: de overstap naar een echt smart home",
+  description:
+    "Heb je KlikAanKlikUit? Ontdek hoe je eenvoudig overstapt naar een smart home met Homey of Home Assistant inclusief automatiseringen, voordelen en nadelen.",
+  image: "/images/blog/klikaanklikuit-smart-home.png",
+  category: "Smart Home",
+  available: true,
+
+  related: [
+    "beste-smart-home-hub",
+    "homey-vs-home-assistant",
+    "beste-slimme-stekker"
+  ],
+
+  content: (
+    <>
+      <p className="section-intro">
+        Veel huishoudens in Nederland gebruiken al jaren KlikAanKlikUit
+        voor draadloze schakelaars en stopcontacten. Wat veel mensen niet
+        weten, is dat dit een perfecte eerste stap is richting een volledig
+        smart home.
+      </p>
+
+      <p>
+        Door KlikAanKlikUit te koppelen aan een smart hub zoals
+        <strong> Homey</strong> of <strong>Home Assistant</strong> kun je
+        automatiseringen maken, apparaten combineren en je woning écht
+        slim maken zonder alles te vervangen.
+      </p>
+
+      <h2>Waarom KlikAanKlikUit ideaal is als startpunt</h2>
+      <p>
+        Omdat veel huizen al KlikAanKlikUit gebruiken, hoef je niet opnieuw
+        te beginnen. Je bestaande schakelaars en stekkers kunnen vaak gewoon
+        blijven werken.
+      </p>
+
+      <ul>
+        <li>Geen nieuwe bedrading nodig</li>
+        <li>Betaalbare apparaten</li>
+        <li>Grote kans dat je al apparatuur hebt</li>
+        <li>Perfect voor beginners in smart home</li>
+      </ul>
+
+      <h2>Werkt KlikAanKlikUit met Homey?</h2>
+      <p>
+        Homey ondersteunt KlikAanKlikUit via een officiële app. Hierdoor kun
+        je apparaten centraal bedienen en opnemen in automatiseringen
+        (Flows).
+      </p>
+
+      <h3>Voorbeelden automatisering met Homey</h3>
+      <ul>
+        <li> Lampen automatisch aan bij zonsondergang</li>
+        <li> Alles uitschakelen wanneer je weggaat</li>
+        <li> Nachtmodus met één knop</li>
+        <li> Bediening via smartphone of spraak</li>
+      </ul>
+
+      <h2>Werkt KlikAanKlikUit met Home Assistant?</h2>
+      <p>
+        Ook Home Assistant kan KlikAanKlikUit aansturen. Hiervoor gebruik je
+        meestal een RF-zender zoals RFXtrx of RFLink. Daarna kun je dezelfde
+        slimme automatiseringen maken als met moderne smart home apparaten.
+      </p>
+
+      <h3>Mogelijke automatiseringen</h3>
+      <ul>
+        <li> Lamp aan bij thuiskomst</li>
+        <li> Verlichting simuleren tijdens vakantie</li>
+        <li> Apparaten automatisch uitschakelen in de nacht</li>
+        <li> Sensoren laten reageren op verlichting</li>
+      </ul>
+
+      <h2>De grote voordelen</h2>
+      <ul>
+        <li> Lage instapkosten</li>
+        <li> Ideaal om smart home te leren</li>
+        <li> Werkt naast moderne slimme apparaten</li>
+        <li>    Geen verbouwing nodig</li>
+      </ul>
+
+      <h2>De nadelen (belangrijk om te weten)</h2>
+      <p>
+        KlikAanKlikUit gebruikt een ouder RF-signaal zonder terugkoppeling.
+        Daardoor weet je smart home systeem niet altijd of een apparaat
+        daadwerkelijk aan of uit staat.
+      </p>
+
+      <ul>
+        <li> Status vaak niet zichtbaar in Homey of Home Assistant</li>
+        <li> Minder geschikt voor complexe automatiseringen</li>
+        <li> Geen energieverbruik of feedback</li>
+      </ul>
+
+      <h2>Wanneer is upgraden slim?</h2>
+      <p>
+        KlikAanKlikUit is perfect om te starten. Wanneer je later meer
+        stabiliteit en statusinformatie wilt, kun je stap voor stap
+        overstappen naar Zigbee, Z-Wave of Matter apparaten zonder alles
+        tegelijk te vervangen.
+      </p>
+
+      <h2>Conclusie</h2>
+      <p>
+        Heb je al KlikAanKlikUit? Dan heb je eigenlijk al de basis van een
+        smart home. Door het te koppelen aan Homey of Home Assistant voeg je
+        automatisering, bediening op afstand en slimme scenario’s toe zonder
+        grote investeringen.
+      </p>
+
+      <div className="blogCtaBox">
+        <h3>👉 Begin met je slimme woning</h3>
+        <p className="muted">
+          Bekijk welke smart home hub het beste past bij jouw situatie en
+          haal meer uit je bestaande apparaten.
+        </p>
+        <Link href="/aanraders/beste-smart-home-hub">
+          Bekijk de koopgids →
+        </Link>
+      </div>
+    </>
+  ),
+},
   {
   slug: "beste-slimme-sensoren",
   title: "Beste slimme sensoren: welke heb je echt nodig?",
