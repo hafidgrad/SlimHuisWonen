@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { blogPosts } from "@/data/blog";
+import RelatedPosts from "@/components/RelatedPosts";
 
 export async function generateMetadata({ params }) {
   const post = blogPosts.find((p) => p.slug === params.slug && p.available);
@@ -64,7 +65,6 @@ export default function BlogPostPage({ params }) {
     <>
       <Header />
 
-      {/* Article Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -72,7 +72,6 @@ export default function BlogPostPage({ params }) {
         }}
       />
 
-      {/* FAQ Structured Data (alleen als aanwezig in data/blog.js) */}
       {post.faqSchema && (
         <script
           type="application/ld+json"
@@ -85,7 +84,6 @@ export default function BlogPostPage({ params }) {
       <main className="section">
         <div className="container article">
 
-          {/* Banner */}
           {post.image && (
             <div
               className="blogBanner"
@@ -113,12 +111,10 @@ export default function BlogPostPage({ params }) {
             </div>
           )}
 
-          {/* Breadcrumb */}
           <p className="muted small" style={{ marginBottom: "0.75rem" }}>
             <Link href="/blog">Blog</Link> / {post.title}
           </p>
 
-          {/* Category badge */}
           {post.category && (
             <div className="blogCategoryBadge">
               {post.category}
@@ -137,25 +133,9 @@ export default function BlogPostPage({ params }) {
 
           {post.content}
 
-          {post.related && (
-            <>
-              <hr />
-              <h2>Gerelateerde artikelen</h2>
-              <ul>
-                {post.related.map((slug) => {
-                  const relatedPost = blogPosts.find((p) => p.slug === slug);
-                  if (!relatedPost) return null;
-                  return (
-                    <li key={slug}>
-                      <Link href={`/blog/${slug}`}>
-                        {relatedPost.title}
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
-            </>
-          )}
+          {/* ✅ Nieuwe professionele related posts */}
+          <RelatedPosts related={post.related} />
+
         </div>
       </main>
 

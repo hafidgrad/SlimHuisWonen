@@ -1146,3 +1146,54 @@ code {
   background: rgba(255,255,255,0.08);
   border: 1px solid rgba(255,255,255,0.12);
 }
+/* RELATED POSTS */
+
+.relatedPosts {
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border-color);
+}
+
+.relatedPosts h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.relatedGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.relatedCard {
+  display: block;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--card-bg);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.relatedCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+}
+
+.imageWrap {
+  position: relative;
+  width: 100%;
+  height: 160px;
+}
+
+.relatedCard h3 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.relatedCard p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.relatedCard .content {
+  padding: 14px;
+}
