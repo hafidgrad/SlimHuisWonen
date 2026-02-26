@@ -1,22 +1,20 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import TipBanner from "@/components/TipBanner";
-import TipCard from "@/components/TipCard";
-import { tips as tipsData } from "@/data/tips";
+import Link from "next/link";
+import Image from "next/image";
+import { getAllTips } from "@/data/tips";
 
 export const metadata = {
-  title: "Tips & uitleg – SlimHuisWonen.nl",
+  title: "Tips & Uitleg | SlimHuisWonen",
   description:
-    "Praktische smart home tips en uitleg: slimme verlichting, hubs, wifi, automatiseringen en meer. Stap-voor-stap en geschikt voor beginners.",
+    "Handige smart home tips en uitleg: wifi, privacy, automatiseringen en meer.",
   alternates: {
     canonical: "https://slimhuiswonen.nl/tips",
   },
 };
 
 export default function TipsPage() {
-  const tips = (Array.isArray(tipsData) ? tipsData : []).filter((t) => t?.available);
-
-  const headerImg = "/images/Tips%20%26%20uitleg/Tips%20%26%20uitleg.png";
+  const tips = getAllTips();
 
   return (
     <>
@@ -24,25 +22,65 @@ export default function TipsPage() {
 
       <main className="section">
         <div className="container">
-          <TipBanner src={headerImg} alt="Tips & uitleg" />
+          {/* ✅ Banner (zelfde stijl als blog) */}
+          <div
+            className="blogBanner"
+            style={{ "--blog-bg": "url(/images/banner_tips_uitleg.png)" }}
+          >
+            <div
+              className="blogBannerBlur blogBannerBlurLeft"
+              style={{ backgroundImage: "var(--blog-bg)" }}
+            />
+            <div
+              className="blogBannerBlur blogBannerBlurRight"
+              style={{ backgroundImage: "var(--blog-bg)" }}
+            />
 
-          <h1 style={{ fontSize: 42, marginBottom: 8 }}>Tips & uitleg</h1>
+            <div className="blogBannerInner compact">
+              <Image
+                src="/images/banner_tips_uitleg.png"
+                alt="Tips & uitleg smart home"
+                fill
+                priority
+                className="blogBannerImg"
+                sizes="100vw"
+              />
+            </div>
+          </div>
+
+          <h1>Tips & Uitleg</h1>
+
           <p className="section-intro">
-            Stap-voor-stap uitleg en praktische tips om je huis slimmer te maken.
-            Geschikt voor beginners én gevorderden.
+            Korte, praktische tips om je smart home stabieler, veiliger en
+            slimmer te maken.
           </p>
 
-          <div className="tips-grid">
+          {/* ✅ Tips grid */}
+          <div className="blogGrid">
             {tips.map((tip) => (
-              <TipCard
+              <Link
                 key={tip.slug}
-                tip={{
-                  title: tip.title,
-                  slug: tip.slug,
-                  desc: tip.description,
-                  image: tip.image,
-                }}
-              />
+                href={`/tips/${tip.slug}`}
+                className="blogCard"
+              >
+                <div className="blogCardImage">
+                  <Image
+                    src={tip.image}
+                    alt={tip.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    style={{ objectFit: "cover" }}
+                  />
+
+                  {/* ✅ Titel overlay op afbeelding */}
+                  <h3 className="blogCardTitleOverlay">{tip.title}</h3>
+                </div>
+
+                {/* ✅ Beschrijving onder de afbeelding */}
+                <div className="blogCardBody">
+                  <p className="muted">{tip.description}</p>
+                </div>
+              </Link>
             ))}
           </div>
         </div>

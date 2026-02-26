@@ -940,16 +940,16 @@ code {
 
 /* =========================================================
    TIP BANNER (LOS SYSTEEM)
-   ========================================================= */
+========================================================= */
 
 .tipBanner {
   position: relative;
   width: 100%;
   height: 260px;
-  border-radius: 18px;
+  border-radius: 20px;
   overflow: hidden;
-  background: #0b0f1a;
-  box-shadow: 0 14px 34px rgba(0,0,0,0.12);
+  background: #ffffff; /* ✅ zelfde witte basis als blog */
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
 }
 
 .tipBannerInner {
@@ -963,7 +963,7 @@ code {
 
 .tipBannerImg {
   height: 100%;
-  max-width: 620px;
+  max-width: 640px;
   object-fit: contain;
   display: block;
 }
@@ -979,15 +979,10 @@ code {
   }
 }
 
-.blogBanner {
-  position: relative;
-  width: 100%;
-  margin-bottom: 2.5rem;
-}
 
-/* =====================================
-   BLOG BANNER UNIFORM (PREMIUM)
-===================================== */
+/* =========================================================
+   BLOG BANNER (UNIFORM PREMIUM)
+========================================================= */
 
 .blogBanner {
   position: relative;
@@ -1014,17 +1009,17 @@ code {
   position: relative;
   z-index: 2;
   width: 100%;
-  height: 240px; /* iets compacter */
+  height: 240px;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .blogBannerImg {
-  object-fit: contain; /* 👈 geen crop meer */
+  object-fit: contain;
   max-height: 100%;
   max-width: 100%;
 }
@@ -1033,6 +1028,135 @@ code {
   .blogBannerInner {
     height: 220px;
   }
+}
+
+/* =========================================================
+   BLOG / TIPS / HOW-TO GRID
+========================================================= */
+
+.blogGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .blogGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .blogGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   FIX: dubbele titels in cards (alleen overlay laten zien)
+========================================================= */
+.blogGrid .blogCard h3:not(.blogCardTitleOverlay) {
+  display: none !important;
+}
+
+/* Extra zekerheid: overlay altijd wit */
+.blogCardTitleOverlay {
+  color: #fff !important;
+}
+
+/* =========================================================
+   CONTENT CARDS (BLOG / TIPS / HOW-TO)
+========================================================= */
+
+.blogCard {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.blogCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.15);
+}
+
+/* Image wrapper (ESSENTIEEL voor next/image fill) */
+.blogCardImage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+/* Subtiele overlay voor leesbaarheid */
+.blogCardImage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.35) 0%,
+    rgba(0, 0, 0, 0.15) 40%,
+    rgba(0, 0, 0, 0.05) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.blogCard:hover .blogCardImage::after {
+  opacity: 0.85;
+}
+
+/* =========================================================
+   TITLE OVERLAY (WIT, ALTIJD)
+========================================================= */
+
+.blogCardTitleOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0.9rem 1.1rem;
+  color: #ffffff;           /* ✅ blijft wit */
+  font-size: 1.05rem;
+  line-height: 1.35;
+  z-index: 2;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0.35) 45%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+/* =========================================================
+   CARD CONTENT (onder de afbeelding)
+========================================================= */
+
+.blogCardBody {
+  position: relative;
+  padding: 1rem 1.1rem 1.25rem;
+}
+
+/* ✅ Donkere titel ALLEEN in de body (niet op overlay) */
+.blogCardBody h3 {
+  margin: 0 0 0.4rem;
+  line-height: 1.3;
+  color: #0b0f1a;
+  text-shadow: none;
+}
+
+.blogCard .muted {
+  display: block;
+  color: #5f6b7a;
 }
 
 /* =========================================================

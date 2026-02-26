@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { blogPosts } from "@/data/blog";
-import RelatedPosts from "@/components/RelatedPosts";
+import RelatedContent from "@/components/RelatedContent";
 
 export async function generateMetadata({ params }) {
   const post = blogPosts.find((p) => p.slug === params.slug && p.available);
@@ -38,7 +38,6 @@ export async function generateMetadata({ params }) {
 
 export default function BlogPostPage({ params }) {
   const post = blogPosts.find((p) => p.slug === params.slug && p.available);
-
   if (!post) return notFound();
 
   const articleSchema = {
@@ -60,6 +59,11 @@ export default function BlogPostPage({ params }) {
       "@id": `https://slimhuiswonen.nl/blog/${post.slug}`,
     },
   };
+
+  // ✅ veilig: als related ontbreekt of leeg is -> []
+  const relatedItems = (post.related || [])
+    .map((slug) => blogPosts.find((p) => p.slug === slug && p.available))
+    .filter(Boolean);
 
   return (
     <>
@@ -83,7 +87,6 @@ export default function BlogPostPage({ params }) {
 
       <main className="section">
         <div className="container article">
-
           {post.image && (
             <div
               className="blogBanner"
@@ -116,26 +119,19 @@ export default function BlogPostPage({ params }) {
           </p>
 
           {post.category && (
-            <div className="blogCategoryBadge">
-              {post.category}
-            </div>
+            <div className="blogCategoryBadge">{post.category}</div>
           )}
 
           <h1>{post.title}</h1>
 
-          {post.description && (
-            <p className="section-intro">
-              {post.description}
-            </p>
-          )}
+          {post.description && <p className="section-intro">{post.description}</p>}
 
           <hr />
 
           {post.content}
 
-          {/* ✅ Nieuwe professionele related posts */}
-          <RelatedPosts related={post.related} />
-
+          {/* ✅ Verder lezen (alleen als er items zijn) */}
+          <RelatedContent items={relatedItems} basePath="blog" />
         </div>
       </main>
 
