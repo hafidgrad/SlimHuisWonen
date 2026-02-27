@@ -53,6 +53,12 @@ export default function HowToDetailPage({ params }) {
   );
 
   if (!article) return notFound();
+  /* ================= AI SUMMARY ================= */
+
+const aiSummary =
+  article.description?.length > 160
+    ? article.description.slice(0, 157) + "..."
+    : article.description;
 
   /* ================= RELATED CONTENT ================= */
 
@@ -80,19 +86,70 @@ export default function HowToDetailPage({ params }) {
     )
     .slice(0, 3);
 
-  /* ================= HOWTO SCHEMA ================= */
+  /* ================= KOOPGIDS MATCHING ================= */
 
-  const howToSchema = {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-    name: article.title,
-    description: article.description,
-    image: `https://slimhuiswonen.nl${article.image}`,
-    author: {
-      "@type": "Organization",
-      name: "SlimHuisWonen.nl",
-    },
+  const koopgidsMap = {
+    verlichting: [
+      { title: "Beste slimme verlichting", slug: "beste-slimme-verlichting" },
+    ],
+    hub: [
+      { title: "Beste smart home hub", slug: "beste-smart-home-hub" },
+    ],
+    veiligheid: [
+      { title: "Beste slimme camera", slug: "beste-slimme-camera" },
+      { title: "Beste slimme deurbel", slug: "beste-slimme-deurbel" },
+    ],
+    wifi: [
+      { title: "Beste smart home hub", slug: "beste-smart-home-hub" },
+    ],
+    energie: [
+      { title: "Beste slimme stekkers", slug: "beste-slimme-stekkers" },
+    ],
   };
+
+  const relatedKoopgidsen = relatedKeys
+    .flatMap((key) => koopgidsMap[key] || [])
+    .slice(0, 3);
+
+  /* ================= STRUCTURED DATA ================= */
+
+  const structuredData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: article.title,
+      description: article.description,
+      image: `https://slimhuiswonen.nl${article.image}`,
+      author: {
+        "@type": "Organization",
+        name: "SlimHuisWonen.nl",
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://slimhuiswonen.nl",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "How-To",
+          item: "https://slimhuiswonen.nl/how-to",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: article.title,
+          item: `https://slimhuiswonen.nl/how-to/${article.slug}`,
+        },
+      ],
+    },
+  ];
 
   return (
     <>
@@ -101,13 +158,13 @@ export default function HowToDetailPage({ params }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(howToSchema),
+          __html: JSON.stringify(structuredData),
         }}
       />
 
       <main className="section">
 
-        {/* ================= ARTICLE ================= */}
+        {/* ARTICLE */}
         <div className="container article">
 
           {article.image && (
@@ -115,14 +172,8 @@ export default function HowToDetailPage({ params }) {
               className="blogBanner"
               style={{ "--blog-bg": `url(${article.image})` }}
             >
-              <div
-                className="blogBannerBlur blogBannerBlurLeft"
-                style={{ backgroundImage: "var(--blog-bg)" }}
-              />
-              <div
-                className="blogBannerBlur blogBannerBlurRight"
-                style={{ backgroundImage: "var(--blog-bg)" }}
-              />
+              <div className="blogBannerBlur blogBannerBlurLeft" />
+              <div className="blogBannerBlur blogBannerBlurRight" />
 
               <div className="blogBannerInner compact">
                 <Image
@@ -137,32 +188,36 @@ export default function HowToDetailPage({ params }) {
             </div>
           )}
 
-          <p className="muted small" style={{ marginBottom: "0.75rem" }}>
+          <p className="muted small">
             <Link href="/how-to">How-To</Link> / {article.title}
           </p>
 
           <h1>{article.title}</h1>
+          <p className="section-intro">{article.description}</p>
+          {/* ================= KORT ANTWOORD (AI OPTIMALISATIE) ================= */}
 
-          <p className="section-intro">
-            {article.description}
-          </p>
+{aiSummary && (
+  <div
+    style={{
+      background: "#f5f7fa",
+      padding: "1rem 1.25rem",
+      borderRadius: "8px",
+      marginBottom: "1.5rem",
+      border: "1px solid #e2e8f0",
+    }}
+  >
+    <strong>Kort antwoord:</strong>
+    <p style={{ margin: "0.5rem 0 0 0" }}>{aiSummary}</p>
+  </div>
+)}
 
           <hr />
 
           {article.content}
 
-          {!article.content && (
-            <>
-              <hr />
-              <p>
-                Deze handleiding wordt binnenkort volledig uitgewerkt.
-              </p>
-            </>
-          )}
-
         </div>
 
-        {/* ================= RELATED CONTENT ================= */}
+        {/* RELATED CONTENT */}
         {(relatedTips.length > 0 || relatedBlogs.length > 0) && (
           <section className="section">
             <div className="container">
@@ -172,18 +227,8 @@ export default function HowToDetailPage({ params }) {
                   <h2>Gerelateerde Tips & Uitleg</h2>
                   <div className="grid-3">
                     {relatedTips.map((tip) => (
-                      <Link
-                        key={tip.slug}
-                        href={`/tips/${tip.slug}`}
-                        className="card"
-                      >
-                        <Image
-                          src={tip.image}
-                          alt={tip.title}
-                          width={400}
-                          height={240}
-                          className="card-image"
-                        />
+                      <Link key={tip.slug} href={`/tips/${tip.slug}`} className="card">
+                        <Image src={tip.image} alt={tip.title} width={400} height={240} />
                         <h3>{tip.title}</h3>
                       </Link>
                     ))}
@@ -193,23 +238,11 @@ export default function HowToDetailPage({ params }) {
 
               {relatedBlogs.length > 0 && (
                 <>
-                  <h2 style={{ marginTop: "2.5rem" }}>
-                    Gerelateerde Artikelen
-                  </h2>
+                  <h2 style={{ marginTop: "2.5rem" }}>Gerelateerde Artikelen</h2>
                   <div className="grid-3">
                     {relatedBlogs.map((blog) => (
-                      <Link
-                        key={blog.slug}
-                        href={`/blog/${blog.slug}`}
-                        className="card"
-                      >
-                        <Image
-                          src={blog.image}
-                          alt={blog.title}
-                          width={400}
-                          height={240}
-                          className="card-image"
-                        />
+                      <Link key={blog.slug} href={`/blog/${blog.slug}`} className="card">
+                        <Image src={blog.image} alt={blog.title} width={400} height={240} />
                         <h3>{blog.title}</h3>
                       </Link>
                     ))}
@@ -221,7 +254,29 @@ export default function HowToDetailPage({ params }) {
           </section>
         )}
 
-        {/* ================= BACK BUTTON ================= */}
+        {/* KOOPGIDSEN */}
+        {relatedKoopgidsen.length > 0 && (
+          <section className="section">
+            <div className="container">
+              <h2>Aanbevolen koopgidsen</h2>
+
+              <div className="grid-3">
+                {relatedKoopgidsen.map((guide) => (
+                  <Link
+                    key={guide.slug}
+                    href={`/aanraders/${guide.slug}`}
+                    className="card"
+                  >
+                    <h3>{guide.title}</h3>
+                    <p>Bekijk onze aanbevelingen →</p>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* BACK BUTTON */}
         <div className="container" style={{ marginTop: "2rem" }}>
           <Link href="/how-to" className="btn btn-primary">
             ← Terug naar How-To overzicht
