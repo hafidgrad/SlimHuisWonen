@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { howto } from "@/data/howto";
+import { getAllTips } from "@/data/tips";
+import { blogPosts } from "@/data/blog";
 
 /* ================= METADATA ================= */
 
@@ -29,11 +31,16 @@ export async function generateMetadata({ params }) {
       title: article.title,
       description: article.description,
       url: `https://slimhuiswonen.nl/how-to/${article.slug}`,
+      siteName: "SlimHuisWonen",
       images: [
         {
           url: `https://slimhuiswonen.nl${article.image}`,
+          width: 1200,
+          height: 630,
         },
       ],
+      locale: "nl_NL",
+      type: "article",
     },
   };
 }
@@ -47,7 +54,34 @@ export default function HowToDetailPage({ params }) {
 
   if (!article) return notFound();
 
-  /* ✅ SEO HowTo schema */
+  /* ================= RELATED CONTENT ================= */
+
+  const relatedKeys =
+    article.categories ||
+    (article.category ? [article.category] : []);
+
+  const relatedTips = getAllTips()
+    .filter((tip) =>
+      relatedKeys.some(
+        (key) =>
+          tip.category === key ||
+          tip.categories?.includes?.(key)
+      )
+    )
+    .slice(0, 3);
+
+  const relatedBlogs = blogPosts
+    .filter((blog) =>
+      relatedKeys.some(
+        (key) =>
+          blog.category === key ||
+          blog.categories?.includes?.(key)
+      )
+    )
+    .slice(0, 3);
+
+  /* ================= HOWTO SCHEMA ================= */
+
   const howToSchema = {
     "@context": "https://schema.org",
     "@type": "HowTo",
@@ -64,7 +98,6 @@ export default function HowToDetailPage({ params }) {
     <>
       <Header />
 
-      {/* Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -73,9 +106,10 @@ export default function HowToDetailPage({ params }) {
       />
 
       <main className="section">
+
+        {/* ================= ARTICLE ================= */}
         <div className="container article">
 
-          {/* ✅ Blog-style banner */}
           {article.image && (
             <div
               className="blogBanner"
@@ -103,7 +137,6 @@ export default function HowToDetailPage({ params }) {
             </div>
           )}
 
-          {/* Breadcrumb */}
           <p className="muted small" style={{ marginBottom: "0.75rem" }}>
             <Link href="/how-to">How-To</Link> / {article.title}
           </p>
@@ -116,10 +149,8 @@ export default function HowToDetailPage({ params }) {
 
           <hr />
 
-          {/* ✅ CONTENT UIT data/howto.js */}
           {article.content}
 
-          {/* ✅ Alleen tonen als content ontbreekt */}
           {!article.content && (
             <>
               <hr />
@@ -129,13 +160,74 @@ export default function HowToDetailPage({ params }) {
             </>
           )}
 
-          <hr style={{ marginTop: "2rem" }} />
+        </div>
 
+        {/* ================= RELATED CONTENT ================= */}
+        {(relatedTips.length > 0 || relatedBlogs.length > 0) && (
+          <section className="section">
+            <div className="container">
+
+              {relatedTips.length > 0 && (
+                <>
+                  <h2>Gerelateerde Tips & Uitleg</h2>
+                  <div className="grid-3">
+                    {relatedTips.map((tip) => (
+                      <Link
+                        key={tip.slug}
+                        href={`/tips/${tip.slug}`}
+                        className="card"
+                      >
+                        <Image
+                          src={tip.image}
+                          alt={tip.title}
+                          width={400}
+                          height={240}
+                          className="card-image"
+                        />
+                        <h3>{tip.title}</h3>
+                      </Link>
+                    ))}
+                  </div>
+                </>
+              )}
+
+              {relatedBlogs.length > 0 && (
+                <>
+                  <h2 style={{ marginTop: "2.5rem" }}>
+                    Gerelateerde Artikelen
+                  </h2>
+                  <div className="grid-3">
+                    {relatedBlogs.map((blog) => (
+                      <Link
+                        key={blog.slug}
+                        href={`/blog/${blog.slug}`}
+                        className="card"
+                      >
+                        <Image
+                          src={blog.image}
+                          alt={blog.title}
+                          width={400}
+                          height={240}
+                          className="card-image"
+                        />
+                        <h3>{blog.title}</h3>
+                      </Link>
+                    ))}
+                  </div>
+                </>
+              )}
+
+            </div>
+          </section>
+        )}
+
+        {/* ================= BACK BUTTON ================= */}
+        <div className="container" style={{ marginTop: "2rem" }}>
           <Link href="/how-to" className="btn btn-primary">
             ← Terug naar How-To overzicht
           </Link>
-
         </div>
+
       </main>
 
       <Footer />

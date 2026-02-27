@@ -12,6 +12,7 @@ export const tips = [
     "Praktische tips om je smart home veiliger te maken. Zo bescherm je slimme apparaten, camera’s en deurbellen tegen hackers.",
   image: "/images/tips/privacy-en-veiligheid-smart-home.png",
   category: "Privacy & veiligheid",
+  categories: ["veiligheid"],
   available: true,
 
   related: [
@@ -161,6 +162,7 @@ export const tips = [
     "Energie besparen met een smart home? Ontdek hoe slimme thermostaten, radiatorknoppen en slimme stekkers helpen om je energieverbruik te verlagen.",
   image: "/images/tips/energie-besparen-met-smart-home.png",
   category: "Energie & besparen",
+  categories: ["energie"],
   available: true,
 
   related: [
@@ -298,6 +300,7 @@ export const tips = [
     "Hoe beveilig je je huis slim? Complete uitleg over slimme camera’s, videodeurbellen, sensoren en privacy. Praktische tips voor een veilig smart home.",
   image: "/images/tips/slim-huis-beveiligen.png",
   category: "Beveiliging",
+  categories: ["veiligheid"],
   available: true,
 
   related: [
@@ -442,6 +445,7 @@ export const tips = [
     "Alles wat je moet weten over slimme camera’s voor binnen en buiten. Uitleg, privacytips, opslagmogelijkheden en waar je op moet letten.",
   image: "/images/tips/slimme-camera-uitleg.png",
   category: "Beveiliging",
+  categories: ["veiligheid"],
   available: true,
 
   related: [
@@ -595,6 +599,7 @@ export const tips = [
     "Wat is een slimme deurbel en waar moet je op letten? Uitleg over werking, wifi, privacy, abonnementen en integratie met je smart home.",
   image: "/images/tips/slimme-deurbel-uitleg.png",
   category: "Beveiliging",
+  categories: ["veiligheid"],
   available: true,
 
   related: [
@@ -756,6 +761,7 @@ export const tips = [
     "Wat zijn slimme sensoren en wat kun je ermee? Uitleg over bewegings-, deur-, temperatuur- en andere sensoren voor beveiliging, comfort en energiebesparing.",
   image: "/images/tips/slimme-sensoren-uitleg.png",
   category: "Beveiliging & sensoren",
+  categories: ["sensoren", "veiligheid"],
   available: true,
 
   related: [
@@ -922,6 +928,7 @@ export const tips = [
   image:
     "/images/Tips%20%26%20uitleg/Wat%20is%20slimme%20verlichting.png",
   category: "Slimme verlichting",
+  categories: ["verlichting", "basis"],
   available: true,
 
   related: [
@@ -1084,6 +1091,7 @@ export const tips = [
     "Wil je beginnen met slimme verlichting? Volg deze stap-voor-stap gids: welke lampen kies je, wifi of Zigbee, heb je een hub nodig en hoe voorkom je beginnersfouten.",
   image: "/images/tips/beginnen-met-slimme-verlichting.png",
   category: "Slimme verlichting",
+  categories: ["verlichting", "basis"],
   available: true,
 
   related: [
@@ -1254,6 +1262,7 @@ export const tips = [
   image:
     "/images/tips/Beginnen%20met%20smart%20home%20in%205%20stappen.png",
   category: "Beginnen",
+  categories: ["basis", "hub"],
   available: true,
 
   related: [
@@ -1455,6 +1464,7 @@ export const tips = [
     "Verschillende smart home merken combineren zoals Philips Hue, Aqara, IKEA Tradfri en TP-Link Tapo? Zo laat je alles samenwerken via één app, met of zonder hub.",
   image: "/images/tips/merken-combineren.png",
   category: "Smart home basis",
+  categories: ["merken", "basis"],
   available: true,
 
   related: [
@@ -1639,6 +1649,7 @@ export const tips = [
     "Een slim huis zonder hub is mogelijk met wifi-apparaten zoals slimme stekkers en lampen. Ontdek wanneer dit goed werkt, wat de nadelen zijn en wanneer een hub slimmer is.",
   image: "/images/tips/slim-huis-zonder-hub.png",
   category: "Smart home basis",
+  categories: ["basis", "hub"],
   available: true,
 
   related: [
@@ -1934,6 +1945,7 @@ export const tips = [
   image:
     "/images/Tips%20%26%20uitleg/Slimme%20lamp%20werkt%20niet%20met%20schakelaar.png",
   category: "Slimme verlichting",
+  categories: ["verlichting", "wifi"],
   available: true,
 
   related: [
@@ -2068,6 +2080,7 @@ export const tips = [
   image:
     "/images/Tips%20%26%20uitleg/Wat%20is%20een%20smart%20home%20hub.png",
   category: "Smart home basis",
+  categories: ["hub", "basis"],
   available: true,
 
   related: [
@@ -2243,6 +2256,7 @@ export const tips = [
   image:
     "/images/Tips%20%26%20uitleg/Wi-Fi%20verbeteren%20voor%20smart%20home.png",
   category: "Wifi & netwerk",
+  categories: ["wifi", "basis"],
   available: true,
 
   related: [
@@ -2385,6 +2399,7 @@ export const tips = [
     "Welke Wi-Fi band is het beste voor smart home? 2.4 GHz is vaak stabieler voor IoT-apparaten en voorkomt offline meldingen en koppelproblemen.",
   image: "/images/tips/2-4-vs-5ghz.png",
   category: "Wifi & Netwerk",
+  categories: ["wifi", "basis"],
   available: true,
 
   related: [
@@ -2502,6 +2517,7 @@ export const tips = [
   image:
     "/images/Tips%20%26%20uitleg/smart%20home%20apparaat%20koppelt%20niet%20met%20wifi.png",
   category: "Wifi & netwerk",
+  categories: ["wifi"],
   available: true,
 
   related: [
@@ -2625,6 +2641,7 @@ export const tips = [
   image:
     "/images/Tips%20%26%20uitleg/Wi-Fi%20bereik%20verbeteren%20zonder%20nieuwe%20router.png",
   category: "Wifi & netwerk",
+  categories: ["wifi"],
   available: true,
 
   related: [

@@ -1,242 +1,224 @@
 import Link from "next/link";
+
 export const howto = [
   {
-  slug: "beginnen-met-smart-home",
-  title: "Hoe begin je met een smart home?",
-  description:
-    "Stap-voor-stap uitleg om zonder fouten te beginnen met een smart home. Praktisch, duidelijk en zonder technisch gedoe.",
-  image: "/images/how-to/beginnen-met-smart-home.png",
-  available: true,
+    slug: "beginnen-met-smart-home",
+    title: "Hoe begin je met een smart home?",
+    categories: ["basis", "hub"],
+    description:
+      "Stap-voor-stap uitleg om zonder fouten te beginnen met een smart home. Praktisch, duidelijk en zonder technisch gedoe.",
+    image: "/images/how-to/beginnen-met-smart-home.png",
+    available: true,
 
-  content: (
-    <>
-      <p>
-        Een smart home klinkt ingewikkeld. Veel mensen denken dat je meteen
-        een compleet systeem nodig hebt met dure hubs, sensoren en
-        automatiseringen. Dat is niet zo.
-      </p>
+    content: (
+      <>
+        <p>
+          Een smart home klinkt ingewikkeld. Veel mensen denken dat je meteen
+          een compleet systeem nodig hebt met dure hubs, sensoren en
+          automatiseringen. Dat is niet zo.
+        </p>
 
-      <p>
-        Je kunt klein beginnen. En slim opbouwen. In deze handleiding leg ik
-        stap voor stap uit hoe je zonder stress start met een smart home —
-        en welke keuzes belangrijk zijn om later geen spijt te krijgen.
-      </p>
+        <p>
+          Je kunt klein beginnen. En slim opbouwen. In deze handleiding leg ik
+          stap voor stap uit hoe je zonder stress start met een smart home — en
+          welke keuzes belangrijk zijn om later geen spijt te krijgen.
+        </p>
 
-      <h2>Stap 1: Bepaal wat je wilt automatiseren</h2>
+        <h2>Stap 1: Bepaal wat je wilt automatiseren</h2>
 
-      <p>
-        Begin niet met technologie. Begin met een probleem. Wil je energie
-        besparen? Meer comfort? Meer veiligheid? Of gewoon gemak?
-      </p>
+        <p>
+          Begin niet met technologie. Begin met een probleem. Wil je energie
+          besparen? Meer comfort? Meer veiligheid? Of gewoon gemak?
+        </p>
 
-      <p>De meeste mensen starten met:</p>
+        <p>De meeste mensen starten met:</p>
 
-      <ul>
-        <li>Slimme verlichting</li>
-        <li>Slimme stekkers</li>
-        <li>Een slimme deurbel</li>
-      </ul>
+        <ul>
+          <li>Slimme verlichting</li>
+          <li>Slimme stekkers</li>
+          <li>Een slimme deurbel</li>
+        </ul>
 
-      <h2>Stap 2: Kies je ecosysteem</h2>
+        <h2>Stap 2: Kies je ecosysteem</h2>
 
-      <p>
-        Dit is de fout die veel beginners maken: losse apparaten kopen zonder
-        te kijken of ze samenwerken.
-      </p>
+        <p>
+          Dit is de fout die veel beginners maken: losse apparaten kopen zonder
+          te kijken of ze samenwerken.
+        </p>
 
-      <p>
-        Wil je flexibiliteit en uitbreidingsmogelijkheden? Dan is een smart
-        home hub een goede keuze.
-      </p>
+        <p>
+          Wil je flexibiliteit en uitbreidingsmogelijkheden? Dan is een smart
+          home hub een goede keuze.
+        </p>
 
-      <p>
-        Bekijk bijvoorbeeld onze{" "}
-        <a href="/aanraders/beste-smart-home-hub">
-          beste smart home hubs
-        </a>{" "}
-        om te zien welke het meest geschikt zijn.
-      </p>
+        <p>
+          Bekijk bijvoorbeeld onze{" "}
+          <a href="/aanraders/beste-smart-home-hub">beste smart home hubs</a>{" "}
+          om te zien welke het meest geschikt zijn.
+        </p>
 
-      <h2>Stap 3: Begin met slimme verlichting</h2>
+        <h2>Stap 3: Begin met slimme verlichting</h2>
 
-      <p>
-        Slimme verlichting is de perfecte start omdat installatie simpel is
-        en je direct resultaat ziet.
-      </p>
+        <p>
+          Slimme verlichting is de perfecte start omdat installatie simpel is
+          en je direct resultaat ziet.
+        </p>
 
-      <p>
-        Binnen 10 minuten kun je lampen dimmen, tijdschema’s instellen en ze
-        automatisch laten inschakelen bij zonsondergang.
-      </p>
+        <p>
+          Binnen 10 minuten kun je lampen dimmen, tijdschema’s instellen en ze
+          automatisch laten inschakelen bij zonsondergang.
+        </p>
 
-      <p>
-        Bekijk ook onze{" "}
-        <a href="/aanraders/beste-slimme-verlichting">
-          beste slimme verlichting
-        </a>{" "}
-        als je direct goed wilt beginnen.
-      </p>
+        <p>
+          Bekijk ook onze{" "}
+          <a href="/aanraders/beste-slimme-verlichting">
+            beste slimme verlichting
+          </a>{" "}
+          als je direct goed wilt beginnen.
+        </p>
 
-      <h2>Stap 4: Voeg slimme stekkers toe</h2>
+        <h2>Stap 4: Voeg slimme stekkers toe</h2>
 
-      <p>
-        Met slimme stekkers maak je bestaande apparaten slim. Denk aan een
-        staande lamp, koffiezetapparaat of ventilator.
-      </p>
+        <p>
+          Met slimme stekkers maak je bestaande apparaten slim. Denk aan een
+          staande lamp, koffiezetapparaat of ventilator.
+        </p>
 
-      <p>
-        Bekijk hier de{" "}
-        <a href="/aanraders/beste-slimme-stekkers">
-          beste slimme stekkers
-        </a>{" "}
-        om eenvoudig te starten.
-      </p>
+        <p>
+          Bekijk hier de{" "}
+          <a href="/aanraders/beste-slimme-stekkers">beste slimme stekkers</a>{" "}
+          om eenvoudig te starten.
+        </p>
 
-      <h2>Stap 5: Zorg voor stabiele wifi</h2>
+        <h2>Stap 5: Zorg voor stabiele wifi</h2>
 
-      <p>
-        Veel smart home problemen ontstaan door slechte wifi. Plaats je
-        router centraal en gebruik bij voorkeur 2.4GHz voor smart home
-        apparaten.
-      </p>
+        <p>
+          Veel smart home problemen ontstaan door slechte wifi. Plaats je router
+          centraal en gebruik bij voorkeur 2.4GHz voor smart home apparaten.
+        </p>
 
-      <p>
-        Heb je een groter huis? Dan kan een mesh-systeem uitkomst bieden.
-      </p>
+        <p>Heb je een groter huis? Dan kan een mesh-systeem uitkomst bieden.</p>
 
-      <h2>Conclusie</h2>
+        <h2>Conclusie</h2>
 
-      <p>
-        Een smart home hoeft niet duur of ingewikkeld te zijn. Begin klein,
-        bouw logisch uit en kies apparaten die goed samenwerken.
-      </p>
+        <p>
+          Een smart home hoeft niet duur of ingewikkeld te zijn. Begin klein,
+          bouw logisch uit en kies apparaten die goed samenwerken.
+        </p>
 
-      <p>
-        Zo bouw je stap voor stap een slim huis — zonder gedoe.
-      </p>
-    </>
-  ),
-},
+        <p>Zo bouw je stap voor stap een slim huis — zonder gedoe.</p>
+      </>
+    ),
+  },
   {
-  slug: "slimme-verlichting-installeren",
-  title: "Hoe installeer je slimme verlichting?",
-  description:
-    "Stap-voor-stap uitleg voor het installeren en instellen van slimme verlichting. Inclusief tips om fouten te voorkomen.",
-  image: "/images/how-to/slimme-verlichting-installeren.png",
-  available: true,
+    slug: "slimme-verlichting-installeren",
+    title: "Hoe installeer je slimme verlichting?",
+    categories: ["verlichting", "basis"],
+    description:
+      "Stap-voor-stap uitleg voor het installeren en instellen van slimme verlichting. Inclusief tips om fouten te voorkomen.",
+    image: "/images/how-to/slimme-verlichting-installeren.png",
+    available: true,
 
-  content: (
-    <>
-      <p>
-        Slimme verlichting is voor veel mensen de eerste stap naar een smart
-        home. Het is relatief goedkoop, eenvoudig te installeren en je ziet
-        direct resultaat.
-      </p>
+    content: (
+      <>
+        <p>
+          Slimme verlichting is voor veel mensen de eerste stap naar een smart
+          home. Het is relatief goedkoop, eenvoudig te installeren en je ziet
+          direct resultaat.
+        </p>
 
-      <p>
-        In deze handleiding leggen we stap voor stap uit hoe je slimme
-        verlichting installeert en waar je op moet letten.
-      </p>
+        <p>
+          In deze handleiding leggen we stap voor stap uit hoe je slimme
+          verlichting installeert en waar je op moet letten.
+        </p>
 
-      <h2>Stap 1: Controleer je fitting</h2>
+        <h2>Stap 1: Controleer je fitting</h2>
 
-      <p>
-        Kijk eerst welke fitting je lamp heeft. De meest voorkomende zijn:
-      </p>
+        <p>Kijk eerst welke fitting je lamp heeft. De meest voorkomende zijn:</p>
 
-      <ul>
-        <li>E27 (grote fitting)</li>
-        <li>E14 (kleine fitting)</li>
-        <li>GU10 (spotjes)</li>
-      </ul>
+        <ul>
+          <li>E27 (grote fitting)</li>
+          <li>E14 (kleine fitting)</li>
+          <li>GU10 (spotjes)</li>
+        </ul>
 
-      <p>
-        Koop altijd een slimme lamp die past bij jouw huidige armatuur.
-      </p>
+        <p>Koop altijd een slimme lamp die past bij jouw huidige armatuur.</p>
 
-      <h2>Stap 2: Kies het juiste systeem</h2>
+        <h2>Stap 2: Kies het juiste systeem</h2>
 
-      <p>
-        Sommige slimme lampen werken via wifi, andere via Zigbee met een
-        hub.
-      </p>
+        <p>Sommige slimme lampen werken via wifi, andere via Zigbee met een hub.</p>
 
-      <p>
-        Wil je meerdere lampen combineren en automatiseren? Dan is een hub
-        vaak stabieler.
-      </p>
+        <p>
+          Wil je meerdere lampen combineren en automatiseren? Dan is een hub
+          vaak stabieler.
+        </p>
 
-      <p>
-        Bekijk onze{" "}
-        <Link href="/aanraders/beste-slimme-verlichting">
-          beste slimme verlichting
-        </Link>{" "}
-        om een goede keuze te maken.
-      </p>
+        <p>
+          Bekijk onze{" "}
+          <Link href="/aanraders/beste-slimme-verlichting">
+            beste slimme verlichting
+          </Link>{" "}
+          om een goede keuze te maken.
+        </p>
 
-      <h2>Stap 3: Draai de oude lamp eruit</h2>
+        <h2>Stap 3: Draai de oude lamp eruit</h2>
 
-      <p>
-        Zet eerst de schakelaar uit. Draai daarna de oude lamp eruit en
-        plaats de slimme lamp in dezelfde fitting.
-      </p>
+        <p>
+          Zet eerst de schakelaar uit. Draai daarna de oude lamp eruit en plaats
+          de slimme lamp in dezelfde fitting.
+        </p>
 
-      <h2>Stap 4: Installeer de app</h2>
+        <h2>Stap 4: Installeer de app</h2>
 
-      <p>
-        Download de bijbehorende app van de fabrikant en volg de
-        installatiestappen.
-      </p>
+        <p>
+          Download de bijbehorende app van de fabrikant en volg de
+          installatiestappen.
+        </p>
 
-      <p>
-        Meestal moet je de lamp een paar seconden aan en uit zetten om hem
-        in koppelmodus te zetten.
-      </p>
+        <p>
+          Meestal moet je de lamp een paar seconden aan en uit zetten om hem in
+          koppelmodus te zetten.
+        </p>
 
-      <h2>Stap 5: Stel automatiseringen in</h2>
+        <h2>Stap 5: Stel automatiseringen in</h2>
 
-      <p>
-        Zodra de lamp is gekoppeld, kun je schema’s instellen zoals:
-      </p>
+        <p>Zodra de lamp is gekoppeld, kun je schema’s instellen zoals:</p>
 
-      <ul>
-        <li>Lampen aan bij zonsondergang</li>
-        <li>Lampen uit om 23:00 uur</li>
-        <li>Dimbaar licht in de avond</li>
-      </ul>
+        <ul>
+          <li>Lampen aan bij zonsondergang</li>
+          <li>Lampen uit om 23:00 uur</li>
+          <li>Dimbaar licht in de avond</li>
+        </ul>
 
-      <p>
-        Wil je meerdere apparaten combineren? Dan kun je later uitbreiden
-        met een{" "}
-        <Link href="/aanraders/beste-smart-home-hub">
-          smart home hub
-        </Link>.
-      </p>
+        <p>
+          Wil je meerdere apparaten combineren? Dan kun je later uitbreiden met
+          een{" "}
+          <Link href="/aanraders/beste-smart-home-hub">smart home hub</Link>.
+        </p>
 
-      <h2>Veelgemaakte fouten</h2>
+        <h2>Veelgemaakte fouten</h2>
 
-      <ul>
-        <li>De wandschakelaar uitzetten (lamp moet altijd stroom hebben)</li>
-        <li>Wifi signaal te zwak</li>
-        <li>Te veel verschillende merken combineren</li>
-      </ul>
+        <ul>
+          <li>De wandschakelaar uitzetten (lamp moet altijd stroom hebben)</li>
+          <li>Wifi signaal te zwak</li>
+          <li>Te veel verschillende merken combineren</li>
+        </ul>
 
-      <h2>Conclusie</h2>
+        <h2>Conclusie</h2>
 
-      <p>
-        Slimme verlichting installeren is eenvoudig en een perfecte eerste
-        stap richting een slim huis.
-      </p>
+        <p>
+          Slimme verlichting installeren is eenvoudig en een perfecte eerste
+          stap richting een slim huis.
+        </p>
 
-      <p>
-        Begin met één ruimte, test wat voor jou werkt en breid daarna uit.
-      </p>
-    </>
-  ),
-},
+        <p>Begin met één ruimte, test wat voor jou werkt en breid daarna uit.</p>
+      </>
+    ),
+  },
   {
   slug: "wifi-verbeteren-voor-smart-home",
   title: "Hoe verbeter je wifi voor je smart home?",
+  categories: ["wifi", "basis"],
   description:
     "Verbeter je wifi voor een stabiel smart home. Praktische tips om verbindingsproblemen en uitval te voorkomen.",
   image: "/images/how-to/wifi-verbeteren-voor-smart-home.png",
@@ -337,9 +319,10 @@ export const howto = [
     </>
   ),
 },
-  {
+{
   slug: "smart-home-hub-installeren",
   title: "Hoe installeer je een smart home hub?",
+  categories: ["hub", "basis"],
   description:
     "Stap-voor-stap uitleg voor het installeren en instellen van een smart home hub. Leer hoe je apparaten koppelt en automatiseringen maakt.",
   image: "/images/how-to/smart-home-hub-installeren.png",
@@ -441,6 +424,7 @@ export const howto = [
   {
   slug: "slim-huis-beveiligen",
   title: "Hoe beveilig je je slimme huis?",
+  categories: ["veiligheid", "basis"],
   description:
     "Leer hoe je je smart home beveiligt tegen hackers en ongewenste toegang. Praktische tips voor een veilig en stabiel slim huis.",
   image: "/images/how-to/slim-huis-beveiligen.png",
