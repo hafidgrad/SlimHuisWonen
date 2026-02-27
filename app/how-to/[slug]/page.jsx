@@ -113,43 +113,60 @@ const aiSummary =
 
   /* ================= STRUCTURED DATA ================= */
 
-  const structuredData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      name: article.title,
-      description: article.description,
-      image: `https://slimhuiswonen.nl${article.image}`,
-      author: {
-        "@type": "Organization",
-        name: "SlimHuisWonen.nl",
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: article.title,
+    description: article.description,
+    image: `https://slimhuiswonen.nl${article.image}`,
+    author: {
+      "@type": "Organization",
+      name: "SlimHuisWonen.nl",
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://slimhuiswonen.nl",
       },
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "How-To",
+        item: "https://slimhuiswonen.nl/how-to",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: article.title,
+        item: `https://slimhuiswonen.nl/how-to/${article.slug}`,
+      },
+    ],
+  },
+
+  ...(article.faq
+    ? [
         {
-          "@type": "ListItem",
-          position: 1,
-          name: "Home",
-          item: "https://slimhuiswonen.nl",
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: article.faq.map((item) => ({
+            "@type": "Question",
+            name: item.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: item.answer,
+            },
+          })),
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "How-To",
-          item: "https://slimhuiswonen.nl/how-to",
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          name: article.title,
-          item: `https://slimhuiswonen.nl/how-to/${article.slug}`,
-        },
-      ],
-    },
-  ];
+      ]
+    : []),
+];
 
   return (
     <>
@@ -214,6 +231,22 @@ const aiSummary =
           <hr />
 
           {article.content}
+          {/* ================= FAQ ================= */}
+
+{article.faq && (
+  <>
+    <h2>Veelgestelde vragen</h2>
+
+    <div className="faq-list">
+      {article.faq.map((item, index) => (
+        <div key={index} style={{ marginBottom: "1.25rem" }}>
+          <h3>{item.question}</h3>
+          <p>{item.answer}</p>
+        </div>
+      ))}
+    </div>
+  </>
+)}
 
         </div>
 
