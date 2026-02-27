@@ -211,7 +211,7 @@ const structuredData = [
 
           <h1>{article.title}</h1>
           <p className="section-intro">{article.description}</p>
-          {/* ================= KORT ANTWOORD (AI OPTIMALISATIE) ================= */}
+         {/* ================= KORT ANTWOORD (AI OPTIMALISATIE) ================= */}
 
 {aiSummary && (
   <div
@@ -228,12 +228,13 @@ const structuredData = [
   </div>
 )}
 
-          <hr />
+<hr />
 
-          {article.content}
-          {/* ================= FAQ ================= */}
+{article.content}
 
-{article.faq && (
+{/* ================= FAQ ================= */}
+
+{article.faq && article.faq.length > 0 && (
   <>
     <h2>Veelgestelde vragen</h2>
 
@@ -248,77 +249,98 @@ const structuredData = [
   </>
 )}
 
-        </div>
+</div>
 
-        {/* RELATED CONTENT */}
-        {(relatedTips.length > 0 || relatedBlogs.length > 0) && (
-          <section className="section">
-            <div className="container">
+{/* ================= RELATED CONTENT ================= */}
+{(relatedTips.length > 0 || relatedBlogs.length > 0) && (
+  <section className="section">
+    <div className="container">
 
-              {relatedTips.length > 0 && (
-                <>
-                  <h2>Gerelateerde Tips & Uitleg</h2>
-                  <div className="grid-3">
-                    {relatedTips.map((tip) => (
-                      <Link key={tip.slug} href={`/tips/${tip.slug}`} className="card">
-                        <Image src={tip.image} alt={tip.title} width={400} height={240} />
-                        <h3>{tip.title}</h3>
-                      </Link>
-                    ))}
-                  </div>
-                </>
-              )}
+      {relatedTips.length > 0 && (
+        <>
+          <h2>Gerelateerde Tips & Uitleg</h2>
+          <div className="grid-3">
+            {relatedTips.map((tip) => (
+              <Link
+                key={tip.slug}
+                href={`/tips/${tip.slug}`}
+                className="card"
+              >
+                <Image
+                  src={tip.image}
+                  alt={tip.title}
+                  width={400}
+                  height={240}
+                />
+                <h3>{tip.title}</h3>
+              </Link>
+            ))}
+          </div>
+        </>
+      )}
 
-              {relatedBlogs.length > 0 && (
-                <>
-                  <h2 style={{ marginTop: "2.5rem" }}>Gerelateerde Artikelen</h2>
-                  <div className="grid-3">
-                    {relatedBlogs.map((blog) => (
-                      <Link key={blog.slug} href={`/blog/${blog.slug}`} className="card">
-                        <Image src={blog.image} alt={blog.title} width={400} height={240} />
-                        <h3>{blog.title}</h3>
-                      </Link>
-                    ))}
-                  </div>
-                </>
-              )}
+      {relatedBlogs.length > 0 && (
+        <>
+          <h2 style={{ marginTop: "2.5rem" }}>
+            Gerelateerde Artikelen
+          </h2>
 
-            </div>
-          </section>
-        )}
+          <div className="grid-3">
+            {relatedBlogs.map((blog) => (
+              <Link
+                key={blog.slug}
+                href={`/blog/${blog.slug}`}
+                className="card"
+              >
+                <Image
+                  src={blog.image}
+                  alt={blog.title}
+                  width={400}
+                  height={240}
+                />
+                <h3>{blog.title}</h3>
+              </Link>
+            ))}
+          </div>
+        </>
+      )}
 
-        {/* KOOPGIDSEN */}
-        {relatedKoopgidsen.length > 0 && (
-          <section className="section">
-            <div className="container">
-              <h2>Aanbevolen koopgidsen</h2>
+    </div>
+  </section>
+)}
 
-              <div className="grid-3">
-                {relatedKoopgidsen.map((guide) => (
-                  <Link
-                    key={guide.slug}
-                    href={`/aanraders/${guide.slug}`}
-                    className="card"
-                  >
-                    <h3>{guide.title}</h3>
-                    <p>Bekijk onze aanbevelingen →</p>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
+{/* ================= KOOPGIDSEN ================= */}
+{relatedKoopgidsen.length > 0 && (
+  <section className="section">
+    <div className="container">
+      <h2>Aanbevolen koopgidsen</h2>
 
-        {/* BACK BUTTON */}
-        <div className="container" style={{ marginTop: "2rem" }}>
-          <Link href="/how-to" className="btn btn-primary">
-            ← Terug naar How-To overzicht
+      <div className="grid-3">
+        {relatedKoopgidsen.map((guide) => (
+          <Link
+            key={guide.slug}
+            href={`/aanraders/${guide.slug}`}
+            className="card"
+          >
+            <h3>{guide.title}</h3>
+            <p>Bekijk onze aanbevelingen →</p>
           </Link>
-        </div>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
 
-      </main>
+{/* ================= BACK BUTTON ================= */}
+<div className="container" style={{ marginTop: "2rem" }}>
+  <Link href="/how-to" className="btn btn-primary">
+    ← Terug naar How-To overzicht
+  </Link>
+</div>
 
-      <Footer />
-    </>
-  );
+</main>
+
+<Footer />
+</>
+);
 }
