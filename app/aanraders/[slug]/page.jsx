@@ -6,12 +6,25 @@ import { notFound } from "next/navigation";
 import { aanraders } from "@/data/aanraders";
 import { blogPosts } from "@/data/blog";
 import BuyGuideProductCard from "@/components/BuyGuideProductCard";
+import AmazonSearchCta from "@/components/AmazonSearchCta";
+
+/* ================= Amazon zoekterm mapping ================= */
+
+const KOOPGIDS_AMAZON_TERMS = {
+  "beste-slimme-camera": "slimme beveiligingscamera wifi",
+  "beste-slimme-stekkers": "slimme stekker wifi",
+  "beste-slimme-verlichting": "slimme verlichting",
+  "beste-smart-home-hub": "smart home hub",
+  "beste-slimme-deurbel": "slimme deurbel met camera",
+};
+
+function getAmazonSearchTerm(slug) {
+  return KOOPGIDS_AMAZON_TERMS[slug] ?? slug.replace(/-/g, " ");
+}
 
 /* ================= METADATA ================= */
 
 export async function generateMetadata({ params }) {
-  console.log("Slug:", params.slug);
-console.log("Available slugs:", aanraders.map(a => a.slug));
   const guide = aanraders.find((g) => g.slug === params.slug);
 
   if (!guide) {
@@ -44,12 +57,13 @@ console.log("Available slugs:", aanraders.map(a => a.slug));
 
 export default function AanraderDetailPage({ params }) {
   const guide = aanraders.find((g) => g.slug === params.slug);
-
   if (!guide) return notFound();
 
   const relatedBlog = blogPosts.find(
     (b) => b.slug === guide.relatedBlog
   );
+
+  const amazonSearchTerm = getAmazonSearchTerm(params.slug);
 
   /* Structured Data: ItemList */
   const itemListSchema = {
@@ -120,16 +134,18 @@ export default function AanraderDetailPage({ params }) {
               {guide.intro}
             </p>
           )}
+
           {guide.whatToLookFor && (
-  <>
-    <h2>Waar moet je op letten?</h2>
-    <ul>
-      {guide.whatToLookFor.map((item) => (
-        <li key={item}>{item}</li>
-      ))}
-    </ul>
-  </>
-)}
+            <>
+              <h2>Waar moet je op letten?</h2>
+              <ul>
+                {guide.whatToLookFor.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </>
+          )}
+
           <hr />
 
           <h2>Onze aanraders</h2>
@@ -155,6 +171,10 @@ export default function AanraderDetailPage({ params }) {
               </p>
             </>
           )}
+
+          {/* ✅ Subtiele Amazon zoek CTA onder koopgids */}
+          <hr style={{ marginTop: "2rem" }} />
+          <AmazonSearchCta searchTerm={amazonSearchTerm} />
 
         </div>
       </main>

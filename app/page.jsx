@@ -50,6 +50,50 @@ export default function HomePage() {
         </section>
 
         <div className="hero-spacer" />
+        {/* ================= KENNISCLUSTERS ================= */}
+
+<section className="section">
+  <div className="container">
+
+    <h2>Onze Kennisclusters</h2>
+
+    <p className="section-intro">
+      Ontdek onze complete kennisgebieden binnen smart home.
+      Hier vind je handleidingen, tips en koopadvies per onderwerp.
+    </p>
+
+    <div className="grid-3">
+
+      {/* Smart Home Basis */}
+      <Link href="/topic/smart-home-basis" className="card">
+        <h3>Smart Home Basis</h3>
+        <p>
+          Beginnen met een smart home? Leer hoe je slim en zonder fouten start.
+        </p>
+        <span>Bekijk kenniscluster →</span>
+      </Link>
+
+      {/* Wifi */}
+      <Link href="/topic/wifi-netwerk" className="card">
+        <h3>Wifi & Netwerk</h3>
+        <p>
+          Verbeter je wifi en zorg voor een stabiel smart home netwerk.
+        </p>
+        <span>Bekijk kenniscluster →</span>
+      </Link>
+
+      {/* Beveiliging */}
+      <Link href="/topic/beveiliging" className="card">
+        <h3>Beveiliging</h3>
+        <p>
+          Houd je slimme huis veilig met camera’s, deurbellen en sensoren.
+        </p>
+        <span>Bekijk kenniscluster →</span>
+      </Link>
+
+    </div>
+  </div>
+</section>
 
         {/* ================= KOOPGIDSEN ================= */}
         <span id="koopgidsen" />

@@ -85,6 +85,36 @@ const aiSummary =
       )
     )
     .slice(0, 3);
+    /* ================= HUB MATCHING ================= */
+
+/* ================= HUB MATCHING ================= */
+
+const hubMap = {
+  basis: {
+    title: "Smart Home Basis",
+    slug: "smart-home-basis",
+  },
+  hub: {
+    title: "Smart Home Basis",
+    slug: "smart-home-basis",
+  },
+  wifi: {
+    title: "Wifi & Netwerk",
+    slug: "wifi-netwerk",
+  },
+  veiligheid: {
+    title: "Beveiliging",
+    slug: "beveiliging",
+  },
+};
+
+const matchedHub =
+  relatedKeys.find((key) => hubMap[key]) &&
+  hubMap[relatedKeys.find((key) => hubMap[key])];
+
+const matchedHub =
+  relatedKeys.find((key) => hubMap[key]) &&
+  hubMap[relatedKeys.find((key) => hubMap[key])];
 
   /* ================= KOOPGIDS MATCHING ================= */
 
@@ -208,6 +238,25 @@ const structuredData = [
           <p className="muted small">
             <Link href="/how-to">How-To</Link> / {article.title}
           </p>
+          {/* ================= HUB LINK ================= */}
+
+{matchedHub && (
+  <p
+    style={{
+      background: "#f1f5f9",
+      padding: "0.75rem 1rem",
+      borderRadius: "6px",
+      marginTop: "0.75rem",
+      marginBottom: "1.25rem",
+      fontSize: "0.9rem",
+    }}
+  >
+    📚 Onderdeel van:{" "}
+    <Link href={`/topic/${matchedHub.slug}`}>
+      {matchedHub.title}
+    </Link>
+  </p>
+)}
 
           <h1>{article.title}</h1>
           <p className="section-intro">{article.description}</p>

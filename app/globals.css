@@ -1348,3 +1348,20 @@ code {
     grid-template-columns: 1fr;
   }
 }
+.amazonCtaBox {
+  margin-top: 2rem;
+  padding: 1.25rem;
+  background: #f5f7fa;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.amazonCtaBox a {
+  font-weight: 600;
+  color: #111827;
+  text-decoration: none;
+}
+
+.amazonCtaBox a:hover {
+  text-decoration: underline;
+}

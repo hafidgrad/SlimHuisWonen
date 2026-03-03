@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import { getProductsByCategory } from "@/data/products";
 import { categories } from "@/data/categories";
+import AmazonSearchCta from "@/components/AmazonSearchCta";
 
 export const dynamic = "force-dynamic";
 
@@ -21,6 +22,21 @@ function normalizeCategorySlug(slug) {
 function getCategory(slug) {
   const normalized = normalizeCategorySlug(slug);
   return categories.find((c) => c.slug === normalized);
+}
+
+/* ---------- Amazon zoekterm mapping ---------- */
+const AMAZON_SEARCH_TERMS = {
+  "slimme-verlichting": "slimme verlichting",
+  "slimme-stekkers": "slimme stekker wifi",
+  "slimme-deurbellen": "slimme deurbel met camera",
+  "sensoren": "bewegingssensor wifi",
+  "slimme-thermostaten": "slimme thermostaat wifi",
+  "slimme-camera": "slimme beveiligingscamera wifi",
+  "smart-home-hub": "smart home hub",
+};
+
+function getAmazonSearchTerm(slug) {
+  return AMAZON_SEARCH_TERMS[slug] ?? slug.replace("-", " ");
 }
 
 /* ---------- Metadata ---------- */
@@ -53,10 +69,7 @@ export function generateMetadata({ params }) {
 export default function CategoryPage({ params }) {
   const { slug } = params;
 
-  // ✅ normalize slug: hierdoor werken /categorie/verlichting enz.
   const normalizedSlug = normalizeCategorySlug(slug);
-
-  // ✅ category ophalen op normalized slug
   const category = getCategory(normalizedSlug);
 
   if (!category) {
@@ -74,7 +87,6 @@ export default function CategoryPage({ params }) {
     );
   }
 
-  // ✅ producten ophalen via normalizedSlug
   const products = getProductsByCategory(normalizedSlug).sort(
     (a, b) => (b.rating ?? 0) - (a.rating ?? 0)
   );
@@ -82,13 +94,15 @@ export default function CategoryPage({ params }) {
   const topThree = products.slice(0, 3);
   const rest = products.slice(3);
 
+  const amazonSearchTerm = getAmazonSearchTerm(normalizedSlug);
+
   return (
     <>
       <Header />
 
       <main className="section">
         <div className="container">
-          {/* ✅ Categorie banner afbeelding (TipBanner style blur zijkanten) */}
+          {/* Banner */}
           {category.image && (
             <div className="banner-center">
               <div
@@ -140,7 +154,7 @@ export default function CategoryPage({ params }) {
                         <a
                           href={p.affiliateUrl}
                           target="_blank"
-                          rel="noreferrer"
+                          rel="nofollow sponsored noopener"
                           className="btn btn-amazon product-btn"
                         >
                           Bekijk beste prijs
@@ -181,6 +195,11 @@ export default function CategoryPage({ params }) {
                 ))}
               </div>
             </>
+          )}
+
+          {/* ✅ Subtiele Amazon zoek CTA */}
+          {products.length > 0 && (
+            <AmazonSearchCta searchTerm={amazonSearchTerm} />
           )}
         </div>
       </main>

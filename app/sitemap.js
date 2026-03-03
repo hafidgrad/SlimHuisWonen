@@ -1,6 +1,7 @@
 import { getAllProducts } from "@/data/products";
 import { tips } from "@/data/tips";
 import { blogPosts } from "@/data/blog";
+import { howto } from "@/data/howto";
 
 export default function sitemap() {
   const baseUrl = "https://slimhuiswonen.nl";
@@ -13,6 +14,7 @@ export default function sitemap() {
     "/tips",
     "/blog",
     "/aanraders",
+    "/how-to",
     "/over",
     "/contact",
   ].map((path) => ({
@@ -20,14 +22,35 @@ export default function sitemap() {
     lastModified,
   }));
 
+  // ✅ Topic hub routes
+  const topicRoutes = [
+    "/topic/smart-home-basis",
+    "/topic/wifi-netwerk",
+    "/topic/beveiliging",
+  ].map((path) => ({
+    url: `${baseUrl}${path}`,
+    lastModified,
+  }));
+
   // ✅ Product routes (veilig)
-  const allProducts = typeof getAllProducts === "function" ? getAllProducts() : [];
+  const allProducts =
+    typeof getAllProducts === "function" ? getAllProducts() : [];
   const productsArray = Array.isArray(allProducts) ? allProducts : [];
 
   const productRoutes = productsArray
     .filter((p) => p?.slug)
     .map((p) => ({
       url: `${baseUrl}/producten/${p.slug}`,
+      lastModified,
+    }));
+
+  // ✅ How-To routes (alleen available: true)
+  const howtoArray = Array.isArray(howto) ? howto : [];
+
+  const howtoRoutes = howtoArray
+    .filter((h) => h?.available && h?.slug)
+    .map((h) => ({
+      url: `${baseUrl}/how-to/${h.slug}`,
       lastModified,
     }));
 
@@ -51,5 +74,12 @@ export default function sitemap() {
       lastModified,
     }));
 
-  return [...staticRoutes, ...productRoutes, ...tipRoutes, ...blogRoutes];
+  return [
+    ...staticRoutes,
+    ...topicRoutes,
+    ...productRoutes,
+    ...howtoRoutes,
+    ...tipRoutes,
+    ...blogRoutes,
+  ];
 }

@@ -1297,6 +1297,279 @@ export const blogPosts = [
     </>
   ),
 },
+{
+  slug: "smart-home-voor-huisdieren",
+  title: "Smart Home voor Huisdieren: veiligheid, comfort en controle",
+  description:
+    "Ontdek hoe je een smart home gebruikt voor huisdieren. Van slimme camera’s en automatische voerbakken tot temperatuurcontrole en notificaties.",
+  image: "/images/blog/huisdieren.png",
+  category: "Smart Home",
+  available: true,
+
+  related: [
+    "beste-slimme-camera",
+    "beste-slimme-stekkers",
+    "beste-smart-home-hub"
+  ],
+
+  content: (
+    <>
+      <p className="section-intro">
+        Ben je vaak van huis en wil je toch zeker weten dat je hond of kat
+        veilig en comfortabel is? Met een smart home kun je toezicht houden,
+        voeren automatiseren en zelfs de temperatuur bewaken.
+      </p>
+
+      <p>
+        Een slim huis draait niet alleen om gemak voor mensen. Ook
+        huisdieren kunnen profiteren van slimme technologie. In deze gids
+        ontdek je hoe je een smart home inzet voor meer rust — voor jou én
+        je dier.
+      </p>
+
+      <h2>Slimme camera’s voor toezicht</h2>
+      <p>
+        Met een slimme beveiligingscamera kun je live meekijken via je
+        smartphone. Je ziet direct of alles rustig is in huis en ontvangt
+        meldingen bij beweging.
+      </p>
+
+      <ul>
+        <li>Live meekijken via app</li>
+        <li>Bewegingsmeldingen</li>
+        <li>Tweeweg-audio om tegen je hond te praten</li>
+        <li>Nachtzicht voor avond en nacht</li>
+      </ul>
+
+      <p>
+        Ideaal voor honden met verlatingsangst of om te controleren of je kat
+        niet op plekken komt waar dat niet mag.
+      </p>
+
+      <h2>Automatische voerbakken</h2>
+      <p>
+        Een automatische voerbak met wifi zorgt voor vaste voedertijden,
+        zelfs wanneer je niet thuis bent. Dit voorkomt overvoeren en houdt
+        het voedingsschema strak.
+      </p>
+
+      <ul>
+        <li>Voeding op vaste tijden</li>
+        <li>Op afstand extra portie geven</li>
+        <li>Geschikt voor meerdere huisdieren</li>
+        <li>Ideaal bij onregelmatige werktijden</li>
+      </ul>
+
+      <h2>Temperatuur en klimaatcontrole</h2>
+      <p>
+        Huisdieren zijn gevoelig voor hitte en kou. Met slimme
+        temperatuursensoren en een slimme thermostaat kun je automatisch
+        ingrijpen wanneer het te warm of te koud wordt.
+      </p>
+
+      <ul>
+        <li>Ventilator automatisch inschakelen via slimme stekker</li>
+        <li>Melding bij extreme temperaturen</li>
+        <li>Airco of verwarming automatisch regelen</li>
+      </ul>
+
+      <h2>Aquarium of terrarium automatiseren</h2>
+      <p>
+        Heb je vissen of reptielen? Dan is stabiliteit extra belangrijk.
+        Met slimme stekkers kun je verlichting, verwarming en pompen
+        automatiseren.
+      </p>
+
+      <ul>
+        <li>Verlichting automatisch aan/uit</li>
+        <li>Constante temperatuur behouden</li>
+        <li>Minder risico bij vakantie of weekend weg</li>
+      </ul>
+
+      <h2>Sensoren en notificaties</h2>
+      <p>
+        Met bewegingssensoren of deursensoren kun je meldingen krijgen
+        wanneer een achterdeur open gaat of wanneer je huisdier in een
+        bepaalde ruimte komt.
+      </p>
+
+      <ul>
+        <li>Melding bij geopende achterdeur</li>
+        <li>Automatisch licht inschakelen</li>
+        <li>Extra beveiliging wanneer je niet thuis bent</li>
+      </ul>
+
+      <h2>Automatiseringen met een smart hub</h2>
+      <p>
+        Gebruik je een smart home hub zoals Homey of Home Assistant?
+        Dan kun je geavanceerde automatiseringen maken.
+      </p>
+
+      <ul>
+        <li>Als niemand thuis is + beweging → pushmelding</li>
+        <li>Als temperatuur stijgt → ventilator aan</li>
+        <li>Als voerbak leeg raakt → notificatie</li>
+      </ul>
+
+      <h2>Voordelen van een smart home voor huisdieren</h2>
+      <ul>
+        <li>Meer controle op afstand</li>
+        <li>Extra veiligheid bij hitte of noodsituaties</li>
+        <li>Rust wanneer je niet thuis bent</li>
+        <li>Strakke routines en minder zorgen</li>
+      </ul>
+
+      <h2>Conclusie</h2>
+      <p>
+        Een smart home voor huisdieren zorgt niet alleen voor gemak, maar
+        vooral voor veiligheid en rust. Je hoeft niet alles tegelijk te
+        installeren. Begin met een slimme camera of stekker en breid
+        stap voor stap uit.
+      </p>
+
+      <div className="blogCtaBox">
+        <h3>👉 Bekijk de beste smart home producten</h3>
+        <p className="muted">
+          Ontdek welke slimme camera’s, stekkers en hubs het beste passen
+          bij jouw situatie en maak je woning veiliger voor je huisdieren.
+        </p>
+        <Link href="/aanraders/beste-slimme-camera">
+          Bekijk de koopgids →
+        </Link>
+      </div>
+    </>
+  ),
+},
+{
+  slug: "smart-home-voor-kinderen",
+  title: "Smart Home voor Kinderen: meer veiligheid en rust in huis",
+  description:
+    "Ontdek hoe je een smart home gebruikt voor jonge kinderen. Van automatische nachtverlichting tot babycamera’s en slimme notificaties.",
+  image: "/images/blog/kinderen.png",
+  category: "Smart Home",
+  available: true,
+
+  related: [
+    "beste-slimme-camera",
+    "beste-slimme-verlichting",
+    "beste-smart-home-hub"
+  ],
+
+  content: (
+    <>
+      <p className="section-intro">
+        Een smart home draait niet alleen om gemak. Voor gezinnen met jonge
+        kinderen kan slimme technologie zorgen voor extra veiligheid, rust
+        en overzicht — vooral in de avond en nacht.
+      </p>
+
+      <p>
+        Denk aan automatische nachtverlichting wanneer je kind uit bed
+        stapt, een melding bij beweging in de kinderkamer of een babycamera
+        waarmee je op afstand kunt meekijken. In deze gids ontdek je hoe je
+        een smart home slim inzet voor je gezin.
+      </p>
+
+      <h2>Automatische nachtverlichting</h2>
+      <p>
+        Veel kinderen worden ’s nachts wakker om naar het toilet te gaan.
+        Met een bewegingssensor kun je zachte verlichting automatisch laten
+        inschakelen zodra je kind uit bed stapt.
+      </p>
+
+      <ul>
+        <li>Zacht licht in slaapkamer of gang</li>
+        <li>Geen fel plafondlicht nodig</li>
+        <li>Automatisch weer uitschakelen</li>
+        <li>Minder kans op struikelen</li>
+      </ul>
+
+      <h2>Babycamera met meldingen</h2>
+      <p>
+        Een slimme camera in de kinderkamer geeft rust. Je kunt live
+        meekijken via je smartphone en ontvangt een melding bij beweging
+        of geluid.
+      </p>
+
+      <ul>
+        <li>Live meekijken via app</li>
+        <li>Nachtzicht</li>
+        <li>Tweeweg-audio</li>
+        <li>Meldingen bij beweging of geluid</li>
+      </ul>
+
+      <h2>Bewegingsmeldingen in de kinderkamer</h2>
+      <p>
+        Met een bewegingssensor kun je instellen dat je een notificatie
+        krijgt wanneer er beweging is op bepaalde tijden, bijvoorbeeld
+        na bedtijd.
+      </p>
+
+      <ul>
+        <li>Melding wanneer kind uit bed komt</li>
+        <li>Extra controle tijdens slaaptraining</li>
+        <li>Handig bij peuters die zelfstandig op pad gaan</li>
+      </ul>
+
+      <h2>Automatische routines voor ochtend en avond</h2>
+      <p>
+        Met een smart hub kun je vaste routines instellen. Bijvoorbeeld:
+      </p>
+
+      <ul>
+        <li>Rustige verlichting bij bedtijd</li>
+        <li>Ochtendroutine met zacht oplopend licht</li>
+        <li>Alles uitschakelen met één druk op de knop</li>
+        <li>Nachtmodus voor het hele huis</li>
+      </ul>
+
+      <h2>Extra veiligheid met deursensoren</h2>
+      <p>
+        Plaats een deursensor op een buitendeur of trapdeur. Je ontvangt
+        direct een melding wanneer een deur onverwacht wordt geopend.
+      </p>
+
+      <ul>
+        <li>Melding bij geopende achterdeur</li>
+        <li>Extra veiligheid bij jonge kinderen</li>
+        <li>Automatische verlichting bij openen deur</li>
+      </ul>
+
+      <h2>Werkt dit zonder technisch gedoe?</h2>
+      <p>
+        Veel slimme apparaten werken direct via wifi en zijn eenvoudig
+        te installeren. Wil je geavanceerde automatiseringen? Dan kun
+        je een smart hub gebruiken om alles samen te brengen.
+      </p>
+
+      <h2>Voordelen van een smart home voor gezinnen</h2>
+      <ul>
+        <li>Meer veiligheid in en rond het huis</li>
+        <li>Rustigere avonden en nachten</li>
+        <li>Minder handmatige handelingen</li>
+        <li>Meer controle via je smartphone</li>
+      </ul>
+
+      <h2>Conclusie</h2>
+      <p>
+        Een smart home voor kinderen draait vooral om veiligheid en rust.
+        Je hoeft niet alles tegelijk te installeren. Begin met slimme
+        verlichting of een camera en breid daarna stap voor stap uit.
+      </p>
+
+      <div className="blogCtaBox">
+        <h3>👉 Bekijk de beste smart home oplossingen</h3>
+        <p className="muted">
+          Ontdek welke slimme camera’s, verlichting en hubs het beste passen
+          bij jouw gezinssituatie.
+        </p>
+        <Link href="/aanraders/beste-slimme-verlichting">
+          Bekijk de koopgids →
+        </Link>
+      </div>
+    </>
+  ),
+},
   {
   slug: "beste-slimme-sensoren",
   title: "Beste slimme sensoren: welke heb je echt nodig?",
