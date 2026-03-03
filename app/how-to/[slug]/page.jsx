@@ -108,13 +108,8 @@ const hubMap = {
   },
 };
 
-const matchedHub =
-  relatedKeys.find((key) => hubMap[key]) &&
-  hubMap[relatedKeys.find((key) => hubMap[key])];
-
-const matchedHub =
-  relatedKeys.find((key) => hubMap[key]) &&
-  hubMap[relatedKeys.find((key) => hubMap[key])];
+const matchedHubKey = relatedKeys.find((key) => hubMap[key]);
+const matchedHub = matchedHubKey ? hubMap[matchedHubKey] : null;
 
   /* ================= KOOPGIDS MATCHING ================= */
 
