@@ -1,12 +1,14 @@
 {
   "name": "slimhuiswonen",
   "version": "1.0.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "validate:products": "node scripts/validateProducts.js"
   },
   "dependencies": {
     "csv-parse": "^6.1.0",

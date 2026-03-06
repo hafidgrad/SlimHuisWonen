@@ -189,17 +189,6 @@ export const products = [
     youtubeUrl: "https://www.youtube.com/shorts/dwRf4hPIUEM",
   },
 
-  {
-    slug: "tapo-t100",
-    brand: "TP-Link Tapo",
-    name: "Tapo T100 Bewegingssensor",
-    category: "sensoren",
-    description: "Bewegingssensor voor beveiliging en automatisering.",
-    features: ["Beweging", "Slimme meldingen", "Automatiseringen"],
-    affiliateUrl: "https://www.amazon.nl/dp/B0B7NDJW6J?tag=slimhuiswonen-21",
-    youtubeUrl: "https://www.youtube.com/shorts/dorW24Ba4oo",
-  },
-
     /* =========================
      SLIMME DEURBELLEN
   ========================== */
@@ -543,20 +532,6 @@ export const products = [
 },
 
 {
-  slug: "aqara-fp2-aanwezigheidssensor",
-  name: "Aqara FP2 Aanwezigheidssensor",
-  brand: "Aqara",
-  category: "sensoren",
-  image: "/images/products/aqara-fp2.png",
-  description:
-    "Geavanceerde aanwezigheidssensor met mmWave-technologie.",
-  features: ["Aanwezigheid", "mmWave", "Geavanceerd"],
-  affiliateUrl:
-    "https://www.amazon.nl/Aqara-Aanwezigheids-zonepositionering-multi-persoon-val-detectie/dp/B0BXWZMQJ3?tag=slimhuiswonen-21",
-  youtubeUrl: "https://www.youtube.com/shorts/xOi0FKf7jmg",
-},
-
-{
   slug: "eve-weather",
   name: "Eve Weather",
   brand: "Eve",
@@ -681,6 +656,10 @@ export function getProductBySlug(slug) {
 
 export function getProductsByCategory(categorySlug) {
   return products.filter((p) => p.category === categorySlug);
+}
+
+export function getFeaturedProducts() {
+  return products.filter((p) => p.featured);
 }
 
 export default products;
