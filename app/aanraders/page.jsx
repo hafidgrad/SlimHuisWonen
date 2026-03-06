@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
+import { aanraders as aanradersData } from "@/data/aanraders";
 
 export const metadata = {
   title: "Onze slimme aanraders – SlimHuisWonen.nl",
@@ -12,7 +13,8 @@ export const metadata = {
   },
 };
 
-const koopgidsen = [
+/* ✅ Fallback lijst (jouw huidige hardcoded koopgidsen) */
+const fallbackKoopgidsen = [
   {
     slug: "beste-slimme-verlichting",
     title: "Beste slimme verlichting",
@@ -53,13 +55,29 @@ const koopgidsen = [
 export default function AanradersPage() {
   const headerImg = "/images/aanraders-banner.png";
 
+  /* ✅ Gebruik data/aanraders.js als bron, anders fallback */
+  const koopgidsen =
+    Array.isArray(aanradersData) && aanradersData.length > 0
+      ? aanradersData.map((g) => ({
+          slug: g.slug,
+          title: g.title,
+          description: g.description,
+          image: g.image,
+          category: "Koopgids",
+        }))
+      : fallbackKoopgidsen;
+
+  /* ✅ Netjes sorteren (optioneel) */
+  const sortedKoopgidsen = [...koopgidsen].sort((a, b) =>
+    (a.title ?? "").localeCompare(b.title ?? "", "nl")
+  );
+
   return (
     <>
       <Header />
 
       <main className="section">
         <div className="container article">
-
           {/* 🔥 Exact dezelfde blogBanner */}
           <div
             className="blogBanner"
@@ -86,9 +104,7 @@ export default function AanradersPage() {
             </div>
           </div>
 
-          <h1 style={{ fontSize: 42, marginBottom: 8 }}>
-            Onze Aanraders
-          </h1>
+          <h1 style={{ fontSize: 42, marginBottom: 8 }}>Onze Aanraders</h1>
 
           <p className="section-intro">
             Op zoek naar de beste smart home producten? Hier vind je onze
@@ -97,7 +113,7 @@ export default function AanradersPage() {
           </p>
 
           <div className="tips-grid">
-            {koopgidsen.map((item) => (
+            {sortedKoopgidsen.map((item) => (
               <Link
                 key={item.slug}
                 href={`/aanraders/${item.slug}`}
@@ -113,24 +129,16 @@ export default function AanradersPage() {
                       sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 33vw"
                     />
                     <div className="tip-card__overlay" />
-                    <div className="tip-card__badge">
-                      {item.category}
-                    </div>
-                    <div className="tip-card__imgTitle">
-                      {item.title}
-                    </div>
+                    <div className="tip-card__badge">{item.category}</div>
+                    <div className="tip-card__imgTitle">{item.title}</div>
                   </div>
                 )}
 
                 <div className="tip-card__content">
-                  <h2 className="tip-card__title">
-                    {item.title}
-                  </h2>
+                  <h2 className="tip-card__title">{item.title}</h2>
 
                   {item.description && (
-                    <p className="tip-card__desc">
-                      {item.description}
-                    </p>
+                    <p className="tip-card__desc">{item.description}</p>
                   )}
 
                   <span className="tip-card__cta">
@@ -150,7 +158,6 @@ export default function AanradersPage() {
             </Link>
             .
           </p>
-
         </div>
       </main>
 

@@ -138,6 +138,7 @@ export const products = [
     category: "sensoren",
     description:
       "Temperatuur- en luchtvochtigheidssensor voor slimme automatiseringen.",
+    features: ["Temperatuur", "Luchtvochtigheid", "Zigbee"],
     affiliateUrl: "https://www.amazon.nl/dp/B0DM23Q1VB?tag=slimhuiswonen-21",
     youtubeUrl: "https://www.youtube.com/shorts/2gnel7Aku3c",
   },
@@ -149,6 +150,7 @@ export const products = [
     category: "sensoren",
     description:
       "Contactsensor voor deuren en ramen binnen het Tapo ecosysteem.",
+    features: ["Deur / raam detectie", "Slimme meldingen", "Automatiseringen"],
     affiliateUrl: "https://www.amazon.nl/dp/B0BF5MC9QX?tag=slimhuiswonen-21",
     youtubeUrl: "https://www.youtube.com/shorts/rUPcVT878V4",
   },
@@ -159,6 +161,7 @@ export const products = [
     name: "Aqara Waterleksensor T1",
     category: "sensoren",
     description: "Detecteert waterlekken en waarschuwt direct via app.",
+    features: ["Waterdetectie", "Zigbee", "Automatiseringen"],
     affiliateUrl: "https://www.amazon.nl/dp/B0DWXHMFQS?tag=slimhuiswonen-21",
     youtubeUrl: "https://www.youtube.com/shorts/sKgjw-64WVg",
   },
@@ -170,6 +173,7 @@ export const products = [
     category: "sensoren",
     description:
       "Slimme temperatuur- en luchtvochtigheidsmeter met display.",
+    features: ["Temperatuur", "Luchtvochtigheid", "Display"],
     affiliateUrl: "https://www.amazon.nl/dp/B0BNYSVV3J?tag=slimhuiswonen-21",
     youtubeUrl: "https://www.youtube.com/shorts/96W-aKT8vPk",
   },
@@ -180,7 +184,9 @@ export const products = [
     name: "Aqara Vibratiesensor",
     category: "sensoren",
     description: "Detecteert trillingen, kantelen en schokken.",
+    features: ["Trilling detectie", "Kantelen", "Schokken"],
     affiliateUrl: "https://www.amazon.nl/dp/B07PJT939B?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/dwRf4hPIUEM",
   },
 
   {
@@ -189,11 +195,12 @@ export const products = [
     name: "Tapo T100 Bewegingssensor",
     category: "sensoren",
     description: "Bewegingssensor voor beveiliging en automatisering.",
+    features: ["Beweging", "Slimme meldingen", "Automatiseringen"],
     affiliateUrl: "https://www.amazon.nl/dp/B0B7NDJW6J?tag=slimhuiswonen-21",
     youtubeUrl: "https://www.youtube.com/shorts/dorW24Ba4oo",
   },
 
-   /* =========================
+    /* =========================
      SLIMME DEURBELLEN
   ========================== */
 
@@ -203,19 +210,9 @@ export const products = [
     name: "Ring Video Deurbel (batterij)",
     category: "slimme-deurbellen",
     description: "Slimme videodeurbel met live beeld en meldingen.",
+    features: ["Live beeld", "Meldingen", "Smartphone bediening"],
     affiliateUrl: "https://www.amazon.nl/dp/B0BZWQP9Z1?tag=slimhuiswonen-21",
     youtubeUrl: "https://www.youtube.com/shorts/_Oz6c6BiMjo",
-  },
-
-  {
-    slug: "tapo-d235",
-    brand: "TP-Link Tapo",
-    name: "Tapo D235 Video Deurbel",
-    category: "slimme-deurbellen",
-    description: "Videodeurbel met 2K camera, accu of bekabeld.",
-    features: ["2K camera", "Accu of bekabeld", "Nachtzicht"],
-    affiliateUrl: "https://www.amazon.nl/dp/B0DDL95M8Z?tag=slimhuiswonen-21",
-    youtubeUrl: "https://www.youtube.com/shorts/5wVHfrHFqwE",
   },
 
   {
@@ -224,230 +221,224 @@ export const products = [
     name: "Tapo Videodeurbel Pro",
     category: "slimme-deurbellen",
     description: "Videodeurbel met AI-detectie en kleurennachtzicht.",
+    features: ["AI detectie", "Kleur nachtzicht", "Smart meldingen"],
     affiliateUrl: "https://www.amazon.nl/dp/B0DK5ZPSHH?tag=slimhuiswonen-21",
     youtubeUrl: "https://www.youtube.com/shorts/1VTw4yg5QYo",
   },
 
   /* =========================
-   SLIMME THERMOSTATEN
-========================== */
+     SLIMME THERMOSTATEN
+  ========================== */
 
-{
-  slug: "google-nest-thermostaat",
-  brand: "Google Nest",
-  name: "Google Nest Thermostaat",
-  category: "slimme-thermostaten",
-  description: "Slimme thermostaat die leert van je leefpatroon.",
-  features: ["Zelflerend", "Energie besparen", "Google Home"],
-  affiliateUrl: "https://www.amazon.nl/dp/B0BXRYLMCC?tag=slimhuiswonen-21",
-  youtubeUrl: "https://www.youtube.com/shorts/ddghtqKnuBw",
-},
+  {
+    slug: "google-nest-thermostaat",
+    brand: "Google Nest",
+    name: "Google Nest Thermostaat",
+    category: "slimme-thermostaten",
+    description: "Slimme thermostaat die leert van je leefpatroon.",
+    features: ["Zelflerend", "Energie besparen", "Google Home"],
+    affiliateUrl: "https://www.amazon.nl/dp/B0BXRYLMCC?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/ddghtqKnuBw",
+  },
 
-{
-  slug: "slimme-thermostaat-combiketel",
-  brand: "Universeel",
-  name: "Slimme Thermostaat voor Combiketel",
-  category: "slimme-thermostaten",
-  description: "Universele slimme thermostaat voor cv-ketels.",
-  features: ["Geschikt voor combiketel", "Energie besparen", "Slim schema"],
-  affiliateUrl: "https://www.amazon.nl/dp/B0FHWDBYTF?tag=slimhuiswonen-21",
-  youtubeUrl: "https://www.youtube.com/watch?v=-xF6Ok9YNsg",
-},
+  {
+    slug: "slimme-thermostaat-combiketel",
+    brand: "Universeel",
+    name: "Slimme Thermostaat voor Combiketel",
+    category: "slimme-thermostaten",
+    description: "Universele slimme thermostaat voor cv-ketels.",
+    features: ["Geschikt voor combiketel", "Energie besparen", "Slim schema"],
+    affiliateUrl: "https://www.amazon.nl/dp/B0FHWDBYTF?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/watch?v=-xF6Ok9YNsg",
+  },
 
-{
-  slug: "tapo-ke100-kit",
-  brand: "TP-Link",
-  name: "TP-Link KE100 KIT Radiatorknop",
-  category: "slimme-thermostaten",
-  description: "Slimme radiatorknoppen met hub voor energiebesparing.",
-  features: ["Radiatorknoppen", "Hub inbegrepen", "Energie besparen"],
-  affiliateUrl: "https://www.amazon.nl/dp/B0CKWFVQZQ?tag=slimhuiswonen-21",
-  youtubeUrl: "https://www.youtube.com/shorts/G1OlrOdJsX0",
-},
+  {
+    slug: "tapo-ke100-kit",
+    brand: "TP-Link",
+    name: "TP-Link KE100 KIT Radiatorknop",
+    category: "slimme-thermostaten",
+    description: "Slimme radiatorknoppen met hub voor energiebesparing.",
+    features: ["Radiatorknoppen", "Hub inbegrepen", "Energie besparen"],
+    affiliateUrl: "https://www.amazon.nl/dp/B0CKWFVQZQ?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/G1OlrOdJsX0",
+  },
 
-/* =========================
-   SLIMME STEKKERS
-========================== */
+  /* =========================
+     SLIMME STEKKERS
+  ========================== */
 
-{
-  slug: "tapo-p115",
-  brand: "TP-Link Tapo",
-  name: "TP-Link Tapo P115 Slimme Stekker",
-  category: "slimme-stekkers",
-  description: "Compacte slimme stekker met energiemeting.",
-  features: ["Energieverbruik inzicht", "Wi-Fi", "Geen hub nodig"],
-  affiliateUrl:
-    "https://www.amazon.nl/dp/B09ZBGWYH9?tag=slimhuiswonen-21",
-  rating: 4.6,
-  youtubeUrl: "https://www.youtube.com/shorts/l6WrOy4wRhU",
-},
+  {
+    slug: "tapo-p115",
+    brand: "TP-Link Tapo",
+    name: "TP-Link Tapo P115 Slimme Stekker",
+    category: "slimme-stekkers",
+    description: "Compacte slimme stekker met energiemeting.",
+    features: ["Energieverbruik inzicht", "Wi-Fi", "Geen hub nodig"],
+    affiliateUrl: "https://www.amazon.nl/dp/B09ZBGWYH9?tag=slimhuiswonen-21",
+    rating: 4.6,
+    youtubeUrl: "https://www.youtube.com/shorts/l6WrOy4wRhU",
+  },
 
-{
-  slug: "tapo-p110",
-  brand: "TP-Link Tapo",
-  name: "TP-Link Tapo P110 Slimme Stekker",
-  category: "slimme-stekkers",
-  description: "Populaire slimme stekker met realtime energiemeting.",
-  features: ["Realtime energiemeting", "Timers", "Geen hub nodig"],
-  affiliateUrl:
-    "https://www.amazon.nl/dp/B09BFT7NZJ?tag=slimhuiswonen-21",
-  rating: 4.7,
-  youtubeUrl: "https://www.youtube.com/shorts/L5fLN4e77m8",
-},
+  {
+    slug: "tapo-p110",
+    brand: "TP-Link Tapo",
+    name: "TP-Link Tapo P110 Slimme Stekker",
+    category: "slimme-stekkers",
+    description: "Populaire slimme stekker met realtime energiemeting.",
+    features: ["Realtime energiemeting", "Timers", "Geen hub nodig"],
+    affiliateUrl: "https://www.amazon.nl/dp/B09BFT7NZJ?tag=slimhuiswonen-21",
+    rating: 4.7,
+    youtubeUrl: "https://www.youtube.com/shorts/L5fLN4e77m8",
+  },
 
-{
-  slug: "eve-energy",
-  brand: "Eve",
-  name: "Eve Energy (Matter / Thread)",
-  category: "slimme-stekkers",
-  description: "Premium slimme stekker met Matter en Thread.",
-  features: ["Matter", "Thread", "Volledig lokaal"],
-  affiliateUrl:
-    "https://www.amazon.nl/dp/B0BYTB11J3?tag=slimhuiswonen-21",
-  rating: 4.5,
-  youtubeUrl: "https://www.youtube.com/watch?v=ltf25fzyS0o",
-},
+  {
+    slug: "eve-energy",
+    brand: "Eve",
+    name: "Eve Energy (Matter / Thread)",
+    category: "slimme-stekkers",
+    description: "Premium slimme stekker met Matter en Thread.",
+    features: ["Matter", "Thread", "Volledig lokaal"],
+    affiliateUrl: "https://www.amazon.nl/dp/B0BYTB11J3?tag=slimhuiswonen-21",
+    rating: 4.5,
+    youtubeUrl: "https://www.youtube.com/watch?v=ltf25fzyS0o",
+  },
 
-{
-  slug: "philips-hue-smart-plug",
-  brand: "Philips Hue",
-  name: "Philips Hue Smart Plug",
-  category: "slimme-stekkers",
-  description: "Slimme stekker binnen het Hue ecosysteem.",
-  features: ["Hue integratie", "Bluetooth", "Bridge optioneel"],
-  affiliateUrl:
-    "https://www.amazon.nl/dp/B09CV7QQKB?tag=slimhuiswonen-21",
-  youtubeUrl: "https://www.youtube.com/watch?v=SQ3ClKGRbq8",
-},
+  {
+    slug: "philips-hue-smart-plug",
+    brand: "Philips Hue",
+    name: "Philips Hue Smart Plug",
+    category: "slimme-stekkers",
+    description: "Slimme stekker binnen het Hue ecosysteem.",
+    features: ["Hue integratie", "Bluetooth", "Bridge optioneel"],
+    affiliateUrl: "https://www.amazon.nl/dp/B09CV7QQKB?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/watch?v=SQ3ClKGRbq8",
+  },
 
-{
-  slug: "philips-hue-smart-plug-combipack",
-  brand: "Philips Hue",
-  name: "Philips Hue Smart Plug + Dimmer Switch",
-  category: "slimme-stekkers",
-  description: "Combipack met slimme stekker en dimmer.",
-  features: ["Dimmer switch", "Hue ecosysteem"],
-  affiliateUrl:
-    "https://www.amazon.nl/dp/B09QP98F9W?tag=slimhuiswonen-21",
-  youtubeUrl:
-    "https://www.tiktok.com/@charisathome/video/7490491717045603616",
-},
+  {
+    slug: "philips-hue-smart-plug-combipack",
+    brand: "Philips Hue",
+    name: "Philips Hue Smart Plug + Dimmer Switch",
+    category: "slimme-stekkers",
+    description: "Combipack met slimme stekker en dimmer.",
+    features: ["Dimmer switch", "Hue ecosysteem"],
+    affiliateUrl: "https://www.amazon.nl/dp/B09QP98F9W?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.tiktok.com/@charisathome/video/7490491717045603616",
+  },
 
-{
-  slug: "innr-zigbee-outdoor-smart-plug",
-  brand: "Innr",
-  name: "Innr Zigbee Outdoor Smart Plug",
-  category: "slimme-stekkers",
-  description: "Slimme stekker voor buitengebruik.",
-  features: ["IP54", "Zigbee repeater"],
-  affiliateUrl:
-    "https://www.amazon.nl/dp/B0FL83D4DS?tag=slimhuiswonen-21",
-  youtubeUrl: "https://www.youtube.com/watch?v=EZeoW8ZK2vs",
-},
+  {
+    slug: "innr-zigbee-outdoor-smart-plug",
+    brand: "Innr",
+    name: "Innr Zigbee Outdoor Smart Plug",
+    category: "slimme-stekkers",
+    description: "Slimme stekker voor buitengebruik.",
+    features: ["IP54", "Zigbee repeater"],
+    affiliateUrl: "https://www.amazon.nl/dp/B0FL83D4DS?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/watch?v=EZeoW8ZK2vs",
+  },
 
-{
-  slug: "switchbot-matter-plug-mini",
-  brand: "SwitchBot",
-  name: "SwitchBot Matter Plug Mini",
-  category: "slimme-stekkers",
-  description:
-    "Matter slimme stekker met energiemonitoring en brede platformondersteuning.",
-  features: ["Matter", "Energiemonitoring", "Wi-Fi & Bluetooth"],
-  affiliateUrl:
-    "https://www.amazon.nl/SwitchBot-Energiemonitoring-Bluetooth-Compatibel-HomeAssistant/dp/B0FFN2FKD6?tag=slimhuiswonen-21",
-  youtubeUrl: "https://www.youtube.com/watch?v=A7iH-PR5By4",
-},
+  {
+    slug: "switchbot-matter-plug-mini",
+    brand: "SwitchBot",
+    name: "SwitchBot Matter Plug Mini",
+    category: "slimme-stekkers",
+    description:
+      "Matter slimme stekker met energiemonitoring en brede platformondersteuning.",
+    features: ["Matter", "Energiemonitoring", "Wi-Fi & Bluetooth"],
+    affiliateUrl:
+      "https://www.amazon.nl/SwitchBot-Energiemonitoring-Bluetooth-Compatibel-HomeAssistant/dp/B0FFN2FKD6?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/watch?v=A7iH-PR5By4",
+  },
 
-{
-  slug: "aqara-smart-plug",
-  brand: "Aqara",
-  name: "Aqara Smart Plug",
-  category: "slimme-stekkers",
-  description:
-    "Zeer stabiele Zigbee-stekker. Werkt via een Aqara hub en is perfect voor automatiseringen in HomeKit, Home Assistant of Homey.",
-  features: ["Zigbee 3.0", "Vereist hub", "Automatiseringen"],
-  affiliateUrl:
-    "https://www.amazon.nl/Aqara-timerstand-spraakbediening-Assistant-SmartThings/dp/B087M8LF63?tag=slimhuiswonen-21",
-  youtubeUrl: "https://www.youtube.com/watch?v=eUS_OWHaJAs",
-},
+  {
+    slug: "aqara-smart-plug",
+    brand: "Aqara",
+    name: "Aqara Smart Plug",
+    category: "slimme-stekkers",
+    description:
+      "Zeer stabiele Zigbee-stekker. Werkt via een Aqara hub en is perfect voor automatiseringen in HomeKit, Home Assistant of Homey.",
+    features: ["Zigbee 3.0", "Vereist hub", "Automatiseringen"],
+    affiliateUrl:
+      "https://www.amazon.nl/Aqara-timerstand-spraakbediening-Assistant-SmartThings/dp/B087M8LF63?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/watch?v=eUS_OWHaJAs",
+  },
 
-/* =========================
-   SLIMME DEURBELLEN (extra lijst)
-========================== */
+  /* =========================
+     EXTRA SLIMME DEURBELLEN
+  ========================== */
 
-{
-  slug: "aqara-doorbell-g410-grey",
-  name: "Aqara Video Doorbell G410 (Grijs)",
-  brand: "Aqara",
-  category: "slimme deurbellen",
-  image: "/images/products/aqara-doorbell-g410-grey.png",
-  description:
-    "Bedrade of draadloze slimme deurbel met 2K-beeld, ingebouwde Matter hub en HomeKit Secure Video.",
-  features: ["2K", "Matter", "Bedraad / Accu"],
-  affiliateUrl:
-    "https://www.amazon.nl/Aqara-ingebouwde-Draadloos-Compatibel-Assistant/dp/B0F6CJF9M9?tag=slimhuiswonen-21",
-  youtubeUrl: "https://www.youtube.com/shorts/uGFFXvbUAnU",
-},
+  {
+    slug: "aqara-doorbell-g410-grey",
+    brand: "Aqara",
+    name: "Aqara Video Doorbell G410 (Grijs)",
+    category: "slimme-deurbellen",
+    image: "/images/products/aqara-doorbell-g410-grey.png",
+    description:
+      "Bedrade of draadloze slimme deurbel met 2K-beeld, ingebouwde Matter hub en HomeKit Secure Video.",
+    features: ["2K", "Matter", "Bedraad / Accu"],
+    affiliateUrl:
+      "https://www.amazon.nl/Aqara-ingebouwde-Draadloos-Compatibel-Assistant/dp/B0F6CJF9M9?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/uGFFXvbUAnU",
+  },
 
-{
-  slug: "aqara-doorbell-g410-black",
-  name: "Aqara Video Doorbell G410 (Zwart)",
-  brand: "Aqara",
-  category: "slimme deurbellen",
-  image: "/images/products/aqara-doorbell-g410-black.png",
-  description:
-    "Slimme deurbel met sterke smart home integratie via Matter, geschikt voor Apple Home, Google en Home Assistant.",
-  features: ["2K", "Matter", "Smart home"],
-  affiliateUrl:
-    "https://www.amazon.nl/Aqara-Ingebouwde-Draadloos-Compatibel-Assistant/dp/B0F6CJ93GS?tag=slimhuiswonen-21",
-  youtubeUrl: "https://www.youtube.com/shorts/KVS6asoEDyM",
-},
+  {
+    slug: "aqara-doorbell-g410-black",
+    brand: "Aqara",
+    name: "Aqara Video Doorbell G410 (Zwart)",
+    category: "slimme-deurbellen",
+    image: "/images/products/aqara-doorbell-g410-black.png",
+    description:
+      "Slimme deurbel met sterke smart home integratie via Matter, geschikt voor Apple Home, Google en Home Assistant.",
+    features: ["2K", "Matter", "Smart home"],
+    affiliateUrl:
+      "https://www.amazon.nl/Aqara-Ingebouwde-Draadloos-Compatibel-Assistant/dp/B0F6CJ93GS?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/KVS6asoEDyM",
+  },
 
-{
-  slug: "tapo-d205",
-  name: "Tapo D205",
-  brand: "TP-Link",
-  category: "slimme deurbellen",
-  image: "/images/products/tapo-d205.png",
-  description:
-    "Draadloze slimme deurbel op accu met scherpe 2K-beelden en eenvoudige installatie.",
-  features: ["Accu", "2K", "Geen abonnement"],
-  affiliateUrl:
-    "https://www.amazon.nl/Tapo-D205-video-deurintercom-gezichtsveld-USB-C-aansluiting/dp/B0FHXVX9W9?tag=slimhuiswonen-21",
-  youtubeUrl: "https://www.youtube.com/shorts/dsKyD2p0BUE",
-},
+  {
+    slug: "tapo-d205",
+    brand: "TP-Link",
+    name: "Tapo D205",
+    category: "slimme-deurbellen",
+    image: "/images/products/tapo-d205.png",
+    description:
+      "Draadloze slimme deurbel op accu met scherpe 2K-beelden en eenvoudige installatie.",
+    features: ["Accu", "2K", "Geen abonnement"],
+    affiliateUrl:
+      "https://www.amazon.nl/Tapo-D205-video-deurintercom-gezichtsveld-USB-C-aansluiting/dp/B0FHXVX9W9?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/dsKyD2p0BUE",
+  },
 
-{
-  slug: "tapo-d235",
-  name: "Tapo D235",
-  brand: "TP-Link",
-  category: "slimme deurbellen",
-  image: "/images/products/tapo-d235.png",
-  description:
-    "Slimme deurbel met kleurennachtzicht, brede kijkhoek en zonder verplichte abonnementskosten.",
-  features: ["Geen abonnement", "Accu / Bedraad", "2K"],
-  affiliateUrl:
-    "https://www.amazon.nl/Tapo-D235-videodeurbel-gezichtsveld-niet-verwijderbare/dp/B0DDL95M8Z?tag=slimhuiswonen-21",
-  youtubeUrl: "https://www.youtube.com/shorts/5wVHfrHFqwE",
-},
+  {
+    slug: "tapo-d235",
+    brand: "TP-Link",
+    name: "Tapo D235",
+    category: "slimme-deurbellen",
+    image: "/images/products/tapo-d235.png",
+    description:
+      "Slimme deurbel met kleurennachtzicht, brede kijkhoek en zonder verplichte abonnementskosten.",
+    features: ["Geen abonnement", "Accu / Bedraad", "2K"],
+    affiliateUrl:
+      "https://www.amazon.nl/Tapo-D235-videodeurbel-gezichtsveld-niet-verwijderbare/dp/B0DDL95M8Z?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/5wVHfrHFqwE",
+  },
 
-{
-  slug: "reolink-video-doorbell-wifi",
-  name: "Reolink Video Doorbell Wi-Fi",
-  brand: "Reolink",
-  category: "slimme deurbellen",
-  image: "/images/products/reolink-video-doorbell-wifi.png",
-  description:
-    "Premium bedrade deurbel met hoofd-tot-teen beeld, lokale opslag en betrouwbare detectie.",
-  features: ["Bedraad", "Lokale opslag", "Premium"],
-  affiliateUrl:
-    "https://www.amazon.nl/Reolink-Videodeurbel-Wi-Fi-camera-beltoon-Hoofd-aan-teen/dp/B0CN95V61Y?tag=slimhuiswonen-21",
-  youtubeUrl: "https://www.youtube.com/shorts/chwqRQrgYyY",
-},
-
- /* =========================
-   SLIMME CAMERA’S
-========================== */
+  {
+    slug: "reolink-video-doorbell-wifi",
+    brand: "Reolink",
+    name: "Reolink Video Doorbell Wi-Fi",
+    category: "slimme-deurbellen",
+    image: "/images/products/reolink-video-doorbell-wifi.png",
+    description:
+      "Premium bedrade deurbel met hoofd-tot-teen beeld, lokale opslag en betrouwbare detectie.",
+    features: ["Bedraad", "Lokale opslag", "Premium"],
+    affiliateUrl:
+      "https://www.amazon.nl/Reolink-Videodeurbel-Wi-Fi-camera-beltoon-Hoofd-aan-teen/dp/B0CN95V61Y?tag=slimhuiswonen-21",
+    youtubeUrl: "https://www.youtube.com/shorts/chwqRQrgYyY",
+  },
+  
+  /* =========================
+     SLIMME CAMERA’S
+  ========================== */
 
 {
   slug: "eufy-indoor-cam",
@@ -519,122 +510,78 @@ export const products = [
   youtubeUrl: "https://www.youtube.com/shorts/8Kmoas7Ct30",
 },
 
-  /* =========================
-     SLIMME SENSOREN
-  ========================= */
-
-  {
-    slug: "aqara-motion-sensor",
-    name: "Aqara Bewegingssensor",
-    brand: "Aqara",
-    category: "slimme-sensoren",
-    image: "/images/products/aqara-motion-sensor.png",
-    description:
-      "Zeer betrouwbare Zigbee bewegingssensor voor automatiseringen.",
-    features: ["Zigbee", "Beweging", "Automatiseringen"],
-  },
-
-  {
-    slug: "aqara-fp2-aanwezigheidssensor",
-    name: "Aqara FP2 Aanwezigheidssensor",
-    brand: "Aqara",
-    category: "slimme-sensoren",
-    image: "/images/products/aqara-fp2.png",
-    description:
-      "Geavanceerde aanwezigheidssensor met mmWave-technologie.",
-    features: ["Aanwezigheid", "mmWave", "Geavanceerd"],
-  },
-
-  {
-    slug: "eve-weather",
-    name: "Eve Weather",
-    brand: "Eve",
-    category: "slimme-sensoren",
-    image: "/images/products/eve-weather.png",
-    description:
-      "Slimme buitensensor voor temperatuur en luchtvochtigheid via Thread.",
-    features: ["Klimaat", "Thread", "Privacy"],
-  },
-
-  {
-    slug: "tapo-sensor",
-    name: "Tapo Sensor",
-    brand: "TP-Link",
-    category: "slimme-sensoren",
-    image: "/images/products/tapo-sensor.png",
-    description:
-      "Betaalbare Wi-Fi sensoren zonder hub, ideaal voor beginners.",
-    features: ["Budget", "Wi-Fi", "Zonder hub"],
-  },
-
-  {
-    slug: "eve-door-window",
-    name: "Eve Door & Window",
-    brand: "Eve",
-    category: "slimme-sensoren",
-    image: "/images/products/eve-door-window.png",
-    description:
-      "Premium deur- en raamsensor met focus op privacy en lokale verwerking.",
-    features: ["Privacy", "Thread", "Premium"],
-  },
-
-  /* ========================= 
-     SLIMME VERLICHTING (extra)
-  ========================= */
+/* =========================
+   EXTRA SENSOREN
+========================== */
 
 {
-  slug: "philips-hue-white-ambiance-starterkit",
-  name: "Philips Hue White Ambiance Starterkit",
-  brand: "Philips Hue",
-  category: "slimme-verlichting",
-  image: "/images/products/philips-hue-white-ambiance.png",
+  slug: "aqara-motion-sensor",
+  name: "Aqara Bewegingssensor",
+  brand: "Aqara",
+  category: "sensoren",
+  image: "/images/products/aqara-motion-sensor.png",
   description:
-    "Het meest complete en stabiele slimme verlichtingssysteem.",
-  features: ["Zigbee", "Ecosysteem", "Stabiel"],
+    "Zeer betrouwbare Zigbee bewegingssensor voor automatiseringen.",
+  features: ["Zigbee", "Beweging", "Automatiseringen"],
+  affiliateUrl:
+    "https://www.amazon.nl/Aqara-configureerbare-detectie-timeout-waarschuwingssysteem-automatiseringen/dp/B0B9XZ1D51?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/dwRf4hPIUEM",
 },
 
 {
-  slug: "innr-zigbee-e27",
-  name: "Innr Zigbee E27",
-  brand: "Innr",
-  category: "slimme-verlichting",
-  image: "/images/products/innr-zigbee-e27.png",
+  slug: "aqara-fp2-aanwezigheidssensor",
+  name: "Aqara FP2 Aanwezigheidssensor",
+  brand: "Aqara",
+  category: "sensoren",
+  image: "/images/products/aqara-fp2.png",
   description:
-    "Betaalbare Zigbee lampen die goed samenwerken met Hue en Homey.",
-  features: ["Zigbee", "Budget", "E27"],
+    "Geavanceerde aanwezigheidssensor met mmWave-technologie.",
+  features: ["Aanwezigheid", "mmWave", "Geavanceerd"],
+  affiliateUrl:
+    "https://www.amazon.nl/Aqara-Aanwezigheids-zonepositionering-multi-persoon-val-detectie/dp/B0BXWZMQJ3?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/xOi0FKf7jmg",
 },
 
 {
-  slug: "tapo-l510e",
-  name: "Tapo L510E",
+  slug: "eve-weather",
+  name: "Eve Weather",
+  brand: "Eve",
+  category: "sensoren",
+  image: "/images/products/eve-weather.png",
+  description:
+    "Slimme buitensensor voor temperatuur en luchtvochtigheid via Thread.",
+  features: ["Klimaat", "Thread", "Privacy"],
+  affiliateUrl:
+    "https://www.amazon.nl/Weather-Matter-luchtvochtigheid-IPX4-waterbestendigheid-Siri-spraaktoegang/dp/B0D817K9TL?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/89ofmY6aCdY",
+},
+
+{
+  slug: "tapo-t100",
+  name: "Tapo T100 Smart Motion Sensor",
   brand: "TP-Link",
-  category: "slimme-verlichting",
-  image: "/images/products/tapo-l510e.png",
+  category: "sensoren",
+  image: "/images/products/tapo-sensor.png",
   description:
-    "Wi-Fi slimme lamp zonder hub, ideaal voor starters.",
-  features: ["Wi-Fi", "Geen hub", "Budget"],
+    "Compacte bewegingssensor voor beveiliging en slimme automatiseringen.",
+  features: ["Beweging", "Automatiseringen", "Slimme meldingen"],
+  affiliateUrl:
+    "https://www.amazon.nl/Tapo-0184500512-T100/dp/B0B7NDJW6J?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/dorW24Ba4oo",
 },
 
 {
-  slug: "tapo-l530e",
-  name: "Tapo L530E",
-  brand: "TP-Link",
-  category: "slimme-verlichting",
-  image: "/images/products/tapo-l530e.png",
+  slug: "eve-door-window",
+  name: "Eve Door & Window",
+  brand: "Eve",
+  category: "sensoren",
+  image: "/images/products/eve-door-window.png",
   description:
-    "Slimme Wi-Fi kleurverlichting met veel functies.",
-  features: ["Kleur", "Wi-Fi", "Geen hub"],
-},
-
-{
-  slug: "govee-rgbic-ledstrip",
-  name: "Govee RGBIC LED Strip",
-  brand: "Govee",
-  category: "slimme-verlichting",
-  image: "/images/products/govee-rgbic-ledstrip.png",
-  description:
-    "LED-strips met sterke lichteffecten en sfeer.",
-  features: ["LED-strip", "Sfeer", "RGBIC"],
+    "Premium deur- en raamsensor met focus op privacy en lokale verwerking.",
+  features: ["Privacy", "Thread", "Premium"],
+  affiliateUrl:
+    "https://www.amazon.nl/Door-Window-Matter-contactsensor-dicht-detectie/dp/B0BZ8YV5GW?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/avnIXG9Z6O0",
 },
 
 /* =========================
