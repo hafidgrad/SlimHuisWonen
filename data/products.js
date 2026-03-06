@@ -455,6 +455,20 @@ export const products = [
 },
 
 {
+  slug: "tapo-c225",
+  name: "TP-Link Tapo C225",
+  brand: "TP-Link Tapo",
+  category: "slimme-cameras",
+  image: "/images/products/tapo-c225-beveiligingscamera.png",
+  description:
+    "Slimme 2K binnencamera met draaifunctie, bewegingsdetectie, tweeweg-audio en privacymodus. Ideaal om huisdieren in de gaten te houden wanneer je niet thuis bent.",
+  features: ["2K", "Pan & tilt", "Tweeweg-audio"],
+  affiliateUrl:
+    "https://www.amazon.nl/Tapo-C225-Beveiligingscamera-Intelligente-Compatibel/dp/B0BN4BQ1DM?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/ldJrxLdBxfg",
+},
+
+{
   slug: "eufy-solo-outdoor-cam",
   name: "Eufy Solo Outdoor Cam",
   brand: "Eufy",
