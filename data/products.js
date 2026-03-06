@@ -120,6 +120,25 @@ export const products = [
   },
 
   {
+  slug: "eve-motion-matter-bewegingssensor",
+  name: "Eve Motion (Matter)",
+  brand: "Eve",
+  category: "slimme-sensoren",
+  image: "/images/products/eve-motion-matter-bewegingssensor.png",
+  description:
+    "Slimme bewegingssensor met Matter en Thread ondersteuning. Werkt volledig lokaal en is ideaal voor automatiseringen in Apple Home, Home Assistant en andere Matter-platformen.",
+  features: [
+    "Bewegingsdetectie",
+    "Matter ondersteuning",
+    "Thread netwerk",
+    "Volledig lokaal",
+  ],
+  affiliateUrl:
+    "https://www.amazon.nl/Eve-Motion-Matter-bewegingssensor-automatische/dp/B0BZJLJZRM?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/watch?v=MwK6XCo_5JY",
+},
+
+  {
     slug: "aqara-fp2-aanwezigheidssensor",
     brand: "Aqara",
     name: "Aqara FP2 Aanwezigheidssensor",

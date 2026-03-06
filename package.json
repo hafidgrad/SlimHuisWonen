@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "validate:products": "node scripts/validateProducts.js"
+    "validate:products": "node scripts/validateProducts.js",
+    "validate:site": "node scripts/validateSite.js"
   },
   "dependencies": {
     "csv-parse": "^6.1.0",
