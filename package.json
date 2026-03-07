@@ -9,7 +9,9 @@
     "start": "next start",
     "lint": "next lint",
     "validate:products": "node scripts/validateProducts.js",
-    "validate:site": "node scripts/validateSite.js"
+    "validate:site": "node scripts/validateSite.js",
+    "create:product": "node scripts/createProduct.js",
+    "create:product:smart": "node scripts/createProductSmart.js"
   },
   "dependencies": {
     "csv-parse": "^6.1.0",

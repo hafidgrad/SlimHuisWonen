@@ -8,6 +8,7 @@ export const products = [
     brand: "Philips Hue",
     name: "Philips Hue White Ambiance Starterkit",
     category: "slimme-verlichting",
+    image: "/images/products/philips-hue-white-ambiance.png",
     featured: true,
     description:
       "Complete starterkit met slimme lampen en bridge. Ideaal om te starten met slimme verlichting.",
@@ -26,6 +27,7 @@ export const products = [
     brand: "Philips Hue",
     name: "Philips Hue White E27 (losse lamp)",
     category: "slimme-verlichting",
+    image: "/images/products/Philips-Hue-White-E27.png",
     description:
       "Losse slimme E27 lamp met warm wit licht, dimbaar en app-gestuurd.",
     features: ["Warm wit licht", "Dimbaar", "Werkt met Hue Bridge"],
@@ -38,6 +40,7 @@ export const products = [
     brand: "Philips Hue",
     name: "Philips Hue Color Ambiance E27",
     category: "slimme-verlichting",
+    image: "/images/products/Philips-Hue-Color-Ambiance-E27.png",
     description:
       "Slimme lamp met wit én gekleurd licht, bedienbaar via Bluetooth of Hue Bridge.",
     features: ["16 miljoen kleuren", "Dimbaar", "Bluetooth & Bridge"],
@@ -50,6 +53,7 @@ export const products = [
     brand: "Philips Hue",
     name: "Philips Hue Lightstrip Plus",
     category: "slimme-verlichting",
+    image: "/images/products/Philips-Hue-Lightstrip-Plus.png",
     description:
       "Flexibele LED-strip voor indirecte verlichting, uitbreidbaar en dimbaar.",
     features: ["Uitbreidbaar", "Wit & kleur", "Hue ecosysteem"],
@@ -62,6 +66,7 @@ export const products = [
     brand: "Govee",
     name: "Govee RGBIC Pro LED Strip (5 m)",
     category: "slimme-verlichting",
+    image: "/images/products/govee-rgbic-ledstrip.png",
     description:
       "Betaalbare RGBIC LED-strip met app-bediening en muzieksynchronisatie.",
     features: ["RGBIC", "Muzieksync", "Geen hub nodig"],
@@ -74,6 +79,7 @@ export const products = [
     brand: "TP-Link Tapo",
     name: "Tapo L530E Slimme Wi-Fi Lamp (2-pack)",
     category: "slimme-verlichting",
+    image: "/images/products/tapo-l530e.png",
     description:
       "Slimme Wi-Fi lampen met kleur en wit licht, geen hub nodig.",
     features: ["Wi-Fi", "Kleur & wit", "Alexa & Google"],
@@ -86,6 +92,7 @@ export const products = [
     brand: "Innr",
     name: "Innr Zigbee E27 LED (4-pack)",
     category: "slimme-verlichting",
+    image: "/images/products/innr-zigbee-e27.png",
     description:
       "Zigbee slimme lampen, compatibel met Philips Hue en SmartThings.",
     features: ["Zigbee", "Dimbaar", "Warm wit"],
@@ -98,6 +105,7 @@ export const products = [
     brand: "TP-Link Tapo",
     name: "Tapo L510E Slimme Wi-Fi Lamp",
     category: "slimme-verlichting",
+    image: "/images/products/tapo-l510e.png",
     description: "Dimbare slimme Wi-Fi lamp zonder hub.",
     features: ["Wi-Fi", "Dimbaar", "Geen hub nodig"],
     affiliateUrl: "https://www.amazon.nl/dp/B087RZVBQW?tag=slimhuiswonen-21",
@@ -109,10 +117,11 @@ export const products = [
   ========================== */
 
   {
-    slug: "aqara-deur-raamsensor",
+    slug: "aqara-deur-raamsensor-P2",
     brand: "Aqara",
     name: "Aqara Deur- & Raamsensor",
     category: "sensoren",
+    image: "/images/products/Aqara-deur-raamsensor-P2.png",
     description: "Zigbee contactsensor voor deuren en ramen.",
     features: ["Zigbee", "Compact", "Automatiseringen"],
     affiliateUrl: "https://www.amazon.nl/dp/B0BTL8B72D?tag=slimhuiswonen-21",
@@ -123,16 +132,11 @@ export const products = [
   slug: "eve-motion-matter-bewegingssensor",
   name: "Eve Motion (Matter)",
   brand: "Eve",
-  category: "slimme-sensoren",
+  category: "sensoren",
   image: "/images/products/eve-motion-matter-bewegingssensor.png",
   description:
-    "Slimme bewegingssensor met Matter en Thread ondersteuning. Werkt volledig lokaal en is ideaal voor automatiseringen in Apple Home, Home Assistant en andere Matter-platformen.",
-  features: [
-    "Bewegingsdetectie",
-    "Matter ondersteuning",
-    "Thread netwerk",
-    "Volledig lokaal",
-  ],
+    "Slimme bewegingssensor met Matter en Thread ondersteuning.",
+  features: ["Bewegingsdetectie", "Matter", "Thread", "Automatisering"],
   affiliateUrl:
     "https://www.amazon.nl/Eve-Motion-Matter-bewegingssensor-automatische/dp/B0BZJLJZRM?tag=slimhuiswonen-21",
   youtubeUrl: "https://www.youtube.com/watch?v=MwK6XCo_5JY",
@@ -143,6 +147,7 @@ export const products = [
     brand: "Aqara",
     name: "Aqara FP2 Aanwezigheidssensor",
     category: "sensoren",
+    image: "/images/products/aqara-fp2.png",
     description:
       "Geavanceerde mmWave aanwezigheidssensor met zone-detectie.",
     features: ["mmWave radar", "Zone-detectie", "Zeer nauwkeurig"],
@@ -155,6 +160,7 @@ export const products = [
     brand: "Aqara",
     name: "Aqara Temperatuur & RV Sensor T1",
     category: "sensoren",
+    image: "/images/products/Aqara-temperatuur-RV-sensor-T1.png",
     description:
       "Temperatuur- en luchtvochtigheidssensor voor slimme automatiseringen.",
     features: ["Temperatuur", "Luchtvochtigheid", "Zigbee"],
@@ -167,6 +173,7 @@ export const products = [
     brand: "TP-Link Tapo",
     name: "Tapo T110 Contactsensor",
     category: "sensoren",
+    image: "/images/products/tapo-T110-contactsensor.png",
     description:
       "Contactsensor voor deuren en ramen binnen het Tapo ecosysteem.",
     features: ["Deur / raam detectie", "Slimme meldingen", "Automatiseringen"],
@@ -179,6 +186,7 @@ export const products = [
     brand: "Aqara",
     name: "Aqara Waterleksensor T1",
     category: "sensoren",
+    image: "/images/products/aqara-waterleksensor-T1.png",
     description: "Detecteert waterlekken en waarschuwt direct via app.",
     features: ["Waterdetectie", "Zigbee", "Automatiseringen"],
     affiliateUrl: "https://www.amazon.nl/dp/B0DWXHMFQS?tag=slimhuiswonen-21",
@@ -190,6 +198,7 @@ export const products = [
     brand: "TP-Link Tapo",
     name: "Tapo T315 Temperatuur & Luchtvochtigheid",
     category: "sensoren",
+    image: "/images/products/Tapo-T315-Temperatuur-Luchtvochtigheid.png",
     description:
       "Slimme temperatuur- en luchtvochtigheidsmeter met display.",
     features: ["Temperatuur", "Luchtvochtigheid", "Display"],
@@ -202,6 +211,7 @@ export const products = [
     brand: "Aqara",
     name: "Aqara Vibratiesensor",
     category: "sensoren",
+    image: "/images/products/Aqara-Vibratiesensor.png",
     description: "Detecteert trillingen, kantelen en schokken.",
     features: ["Trilling detectie", "Kantelen", "Schokken"],
     affiliateUrl: "https://www.amazon.nl/dp/B07PJT939B?tag=slimhuiswonen-21",
@@ -217,6 +227,7 @@ export const products = [
     brand: "Ring",
     name: "Ring Video Deurbel (batterij)",
     category: "slimme-deurbellen",
+    image: "/images/products/Ring-Video-Deurbel-batterij.png",
     description: "Slimme videodeurbel met live beeld en meldingen.",
     features: ["Live beeld", "Meldingen", "Smartphone bediening"],
     affiliateUrl: "https://www.amazon.nl/dp/B0BZWQP9Z1?tag=slimhuiswonen-21",
@@ -228,6 +239,7 @@ export const products = [
     brand: "TP-Link Tapo",
     name: "Tapo Videodeurbel Pro",
     category: "slimme-deurbellen",
+    image: "/images/products/Tapo-Videodeurbel-Pro.png",
     description: "Videodeurbel met AI-detectie en kleurennachtzicht.",
     features: ["AI detectie", "Kleur nachtzicht", "Smart meldingen"],
     affiliateUrl: "https://www.amazon.nl/dp/B0DK5ZPSHH?tag=slimhuiswonen-21",
@@ -243,6 +255,7 @@ export const products = [
     brand: "Google Nest",
     name: "Google Nest Thermostaat",
     category: "slimme-thermostaten",
+    image: "/images/products/Google-Nest-Thermostaat.png",
     description: "Slimme thermostaat die leert van je leefpatroon.",
     features: ["Zelflerend", "Energie besparen", "Google Home"],
     affiliateUrl: "https://www.amazon.nl/dp/B0BXRYLMCC?tag=slimhuiswonen-21",
@@ -254,6 +267,7 @@ export const products = [
     brand: "Universeel",
     name: "Slimme Thermostaat voor Combiketel",
     category: "slimme-thermostaten",
+    image: "/images/products/Slimme-Thermostaat-voor-Combiketel.png",
     description: "Universele slimme thermostaat voor cv-ketels.",
     features: ["Geschikt voor combiketel", "Energie besparen", "Slim schema"],
     affiliateUrl: "https://www.amazon.nl/dp/B0FHWDBYTF?tag=slimhuiswonen-21",
@@ -265,6 +279,7 @@ export const products = [
     brand: "TP-Link",
     name: "TP-Link KE100 KIT Radiatorknop",
     category: "slimme-thermostaten",
+    image: "/images/products/TP-Link-KE100-KIT-Radiatorknop.png",
     description: "Slimme radiatorknoppen met hub voor energiebesparing.",
     features: ["Radiatorknoppen", "Hub inbegrepen", "Energie besparen"],
     affiliateUrl: "https://www.amazon.nl/dp/B0CKWFVQZQ?tag=slimhuiswonen-21",
@@ -280,6 +295,7 @@ export const products = [
     brand: "TP-Link Tapo",
     name: "TP-Link Tapo P115 Slimme Stekker",
     category: "slimme-stekkers",
+    image: "/images/products/TP-Link-Tapo-P115-Slimme-Stekker.png",
     description: "Compacte slimme stekker met energiemeting.",
     features: ["Energieverbruik inzicht", "Wi-Fi", "Geen hub nodig"],
     affiliateUrl: "https://www.amazon.nl/dp/B09ZBGWYH9?tag=slimhuiswonen-21",
@@ -292,6 +308,7 @@ export const products = [
     brand: "TP-Link Tapo",
     name: "TP-Link Tapo P110 Slimme Stekker",
     category: "slimme-stekkers",
+    image: "/images/products/tapo-p110.png",
     description: "Populaire slimme stekker met realtime energiemeting.",
     features: ["Realtime energiemeting", "Timers", "Geen hub nodig"],
     affiliateUrl: "https://www.amazon.nl/dp/B09BFT7NZJ?tag=slimhuiswonen-21",
@@ -304,6 +321,7 @@ export const products = [
     brand: "Eve",
     name: "Eve Energy (Matter / Thread)",
     category: "slimme-stekkers",
+    image: "/images/products/Eve-Energy-Matter-hread.png",
     description: "Premium slimme stekker met Matter en Thread.",
     features: ["Matter", "Thread", "Volledig lokaal"],
     affiliateUrl: "https://www.amazon.nl/dp/B0BYTB11J3?tag=slimhuiswonen-21",
@@ -316,6 +334,7 @@ export const products = [
     brand: "Philips Hue",
     name: "Philips Hue Smart Plug",
     category: "slimme-stekkers",
+    image: "/images/products/Philips-Hue-Smart-Plug.png",
     description: "Slimme stekker binnen het Hue ecosysteem.",
     features: ["Hue integratie", "Bluetooth", "Bridge optioneel"],
     affiliateUrl: "https://www.amazon.nl/dp/B09CV7QQKB?tag=slimhuiswonen-21",
@@ -327,6 +346,7 @@ export const products = [
     brand: "Philips Hue",
     name: "Philips Hue Smart Plug + Dimmer Switch",
     category: "slimme-stekkers",
+    image: "/images/products/Philips-Hue-Smart-Plug-Dimmer-Switch.png",
     description: "Combipack met slimme stekker en dimmer.",
     features: ["Dimmer switch", "Hue ecosysteem"],
     affiliateUrl: "https://www.amazon.nl/dp/B09QP98F9W?tag=slimhuiswonen-21",
@@ -338,6 +358,7 @@ export const products = [
     brand: "Innr",
     name: "Innr Zigbee Outdoor Smart Plug",
     category: "slimme-stekkers",
+    image: "/images/products/Innr-Zigbee-Outdoor-Smart-Plug.png",
     description: "Slimme stekker voor buitengebruik.",
     features: ["IP54", "Zigbee repeater"],
     affiliateUrl: "https://www.amazon.nl/dp/B0FL83D4DS?tag=slimhuiswonen-21",
@@ -349,6 +370,7 @@ export const products = [
     brand: "SwitchBot",
     name: "SwitchBot Matter Plug Mini",
     category: "slimme-stekkers",
+    image: "/images/products/switchbot-matter-plug-mini.png",
     description:
       "Matter slimme stekker met energiemonitoring en brede platformondersteuning.",
     features: ["Matter", "Energiemonitoring", "Wi-Fi & Bluetooth"],
@@ -362,6 +384,7 @@ export const products = [
     brand: "Aqara",
     name: "Aqara Smart Plug",
     category: "slimme-stekkers",
+    image: "/images/products/aqara-smart-plug.png",
     description:
       "Zeer stabiele Zigbee-stekker. Werkt via een Aqara hub en is perfect voor automatiseringen in HomeKit, Home Assistant of Homey.",
     features: ["Zigbee 3.0", "Vereist hub", "Automatiseringen"],
@@ -601,6 +624,7 @@ export const products = [
   brand: "Aeotec",
   name: "Aeotec Smart Home Hub (SmartThings)",
   category: "smart-home-hubs",
+  image: "/images/products/samsung-smartthings-hub.png",
   description:
     "Werkt als SmartThings hub met ondersteuning voor Zigbee en Z-Wave.",
   features: ["SmartThings", "Zigbee", "Z-Wave"],
@@ -614,6 +638,7 @@ export const products = [
   brand: "Homey",
   name: "Homey Pro (Early 2023)",
   category: "smart-home-hubs",
+  image: "/images/products/homey-pro-early-2023.png",
   description:
     "Krachtige lokale smart home hub zonder cloud-afhankelijkheid.",
   features: ["Volledig lokaal", "Zigbee", "Z-Wave", "Matter"],
@@ -627,6 +652,7 @@ export const products = [
   brand: "Homey",
   name: "Homey Bridge",
   category: "smart-home-hubs",
+  image: "/images/products/Homey-Bridge.png",
   description: "Verbindt slimme apparaten met Homey Cloud.",
   features: ["Homey Cloud", "Uitbreiding Homey"],
   affiliateUrl:
@@ -639,6 +665,7 @@ export const products = [
   brand: "Philips Hue",
   name: "Philips Hue Bridge",
   category: "smart-home-hubs",
+  image: "/images/products/Philips-Hue-Bridge.png",
   description: "Centrale hub voor Philips Hue verlichting.",
   features: ["Hue ecosysteem", "Zigbee", "Lokale automatiseringen"],
   affiliateUrl:
@@ -651,6 +678,7 @@ export const products = [
   brand: "Home Assistant",
   name: "Home Assistant Green",
   category: "smart-home-hubs",
+  image: "/images/products/home-assistant-green.png",
   description:
     "Officiële Home Assistant hub voor maximale lokale controle.",
   features: ["Home Assistant OS", "Volledig lokaal"],

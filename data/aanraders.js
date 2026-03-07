@@ -130,7 +130,7 @@ export const aanraders = [
         title: "Eve Door & Window",
         description:
           "Slimme deur- en raamsensor met Matter ondersteuning. Perfect voor meldingen wanneer een deur of raam opent en ideaal voor slimme beveiliging.",
-        image: "/images/products/door-window-matter-contactsensor.png",
+        image: "/images/products/eve-door-window.png",
         href: "/producten/eve-door-window",
         badges: ["Matter", "Privacy"],
       },
@@ -354,7 +354,7 @@ export const aanraders = [
         title: "Beste deursensor (privacy): Eve Door & Window",
         description:
           "Handig voor meldingen bij deuren (bijv. achterdeur of trapdeur). Focus op privacy en slimme meldingen.",
-        image: "/images/products/door-window-matter-contactsensor.png",
+        image: "/images/products/eve-door-window.png",
         href: "/producten/eve-door-window",
         badges: ["Privacy", "Sensor"],
       },
