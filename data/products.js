@@ -117,11 +117,11 @@ export const products = [
   ========================== */
 
   {
-    slug: "aqara-deur-raamsensor-P2",
+    slug: "aqara-deur-raamsensor-p2",
     brand: "Aqara",
     name: "Aqara Deur- & Raamsensor",
     category: "sensoren",
-    image: "/images/products/aqara-deur-raamsensor-P2.png",
+    image: "/images/products/aqara-deur-raamsensor-p2.png",
     description: "Zigbee contactsensor voor deuren en ramen.",
     features: ["Zigbee", "Compact", "Automatiseringen"],
     affiliateUrl: "https://www.amazon.nl/dp/B0BTL8B72D?tag=slimhuiswonen-21",
@@ -173,7 +173,7 @@ export const products = [
     brand: "TP-Link Tapo",
     name: "Tapo T110 Contactsensor",
     category: "sensoren",
-    image: "/images/products/tapo-T110-contactsensor.png",
+    image: "/images/products/tapo-t110-contactsensor.png",
     description:
       "Contactsensor voor deuren en ramen binnen het Tapo ecosysteem.",
     features: ["Deur / raam detectie", "Slimme meldingen", "Automatiseringen"],
@@ -350,7 +350,7 @@ export const products = [
     description: "Combipack met slimme stekker en dimmer.",
     features: ["Dimmer switch", "Hue ecosysteem"],
     affiliateUrl: "https://www.amazon.nl/dp/B09QP98F9W?tag=slimhuiswonen-21",
-    youtubeUrl: "https://www.tiktok.com/@charisathome/video/7490491717045603616",
+    youtubeUrl: "https://www.youtube.com/watch?v=SQ3ClKGRbq8",
   },
 
   {
