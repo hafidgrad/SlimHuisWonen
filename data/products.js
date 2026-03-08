@@ -710,3 +710,4 @@ export function getFeaturedProducts() {
 }
 
 export default products;
+
