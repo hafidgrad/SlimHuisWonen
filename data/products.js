@@ -79,7 +79,7 @@ export const products = [
     brand: "TP-Link Tapo",
     name: "Tapo L530E Slimme Wi-Fi Lamp (2-pack)",
     category: "slimme-verlichting",
-    image: "/images/products/tapo-l530e.png",
+    image: "/images/products/tp-link-tapo-l530e.png",
     description:
       "Slimme Wi-Fi lampen met kleur en wit licht, geen hub nodig.",
     features: ["Wi-Fi", "Kleur & wit", "Alexa & Google"],
