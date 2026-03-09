@@ -27,7 +27,7 @@ export const products = [
     brand: "Philips Hue",
     name: "Philips Hue White E27 (losse lamp)",
     category: "slimme-verlichting",
-    image: "/images/products/philips-hue-white-e27.png",
+    image: "/images/products/philips-hue-white.png",
     description:
       "Losse slimme E27 lamp met warm wit licht, dimbaar en app-gestuurd.",
     features: ["Warm wit licht", "Dimbaar", "Werkt met Hue Bridge"],
