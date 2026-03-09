@@ -40,7 +40,7 @@ export const products = [
     brand: "Philips Hue",
     name: "Philips Hue Color Ambiance E27",
     category: "slimme-verlichting",
-    image: "/images/products/philips-hue-color-ambiance-e27.png",
+    image: "/images/products/philips-hue-color-ambiance.png",
     description:
       "Slimme lamp met wit én gekleurd licht, bedienbaar via Bluetooth of Hue Bridge.",
     features: ["16 miljoen kleuren", "Dimbaar", "Bluetooth & Bridge"],
@@ -53,7 +53,7 @@ export const products = [
     brand: "Philips Hue",
     name: "Philips Hue Lightstrip Plus",
     category: "slimme-verlichting",
-    image: "/images/products/philips-hue-lightstrip-plus.png",
+    image: "/images/products/philips-lightstrip-plus.png",
     description:
       "Flexibele LED-strip voor indirecte verlichting, uitbreidbaar en dimbaar.",
     features: ["Uitbreidbaar", "Wit & kleur", "Hue ecosysteem"],
