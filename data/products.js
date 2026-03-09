@@ -121,7 +121,7 @@ export const products = [
     brand: "Aqara",
     name: "Aqara Deur- & Raamsensor",
     category: "sensoren",
-    image: "/images/products/aqara-deur-raamsensor-p2.png",
+    image: "/images/products/aqara-deur-en-raamsensor-p2.png",
     description: "Zigbee contactsensor voor deuren en ramen.",
     features: ["Zigbee", "Compact", "Automatiseringen"],
     affiliateUrl: "https://www.amazon.nl/dp/B0BTL8B72D?tag=slimhuiswonen-21",
