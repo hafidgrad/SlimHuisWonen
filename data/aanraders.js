@@ -7,7 +7,6 @@ export const aanraders = [
     image: "/images/blog/beste-slimme-camera.png",
     intro:
       "Een slimme camera verhoogt je veiligheid, maar alleen als je de juiste kiest. In deze koopgids vind je onze beste keuzes voor binnen, buiten en maximale betrouwbaarheid.",
-    relatedBlog: "beste-slimme-camera",
     available: true,
     picks: [
       {
@@ -61,7 +60,6 @@ export const aanraders = [
     image: "/images/blog/beste-slimme-deurbel.png",
     intro:
       "Een slimme deurbel laat je zien wie er voor de deur staat — waar je ook bent. In deze koopgids vind je onze beste keuzes per situatie.",
-    relatedBlog: "beste-slimme-deurbel",
     available: true,
     picks: [
       {
@@ -109,7 +107,6 @@ export const aanraders = [
     description: "De beste slimme sensoren voor je smart home.",
     image: "/images/blog/beste-slimme-sensoren.png",
     intro: "Slimme sensoren vormen de basis van een écht slim huis.",
-    relatedBlog: "beste-slimme-sensoren",
     available: true,
     whatToLookFor: [
       "Type sensor",
@@ -153,7 +150,6 @@ export const aanraders = [
     image: "/images/blog/beste-slimme-verlichting.png",
     intro:
       "Wil je slimme verlichting kopen maar twijfel je tussen Hue, Tapo of Govee? In deze koopgids vind je onze beste keuzes per situatie en budget.",
-    relatedBlog: "beste-slimme-verlichting",
     available: true,
     picks: [
       {
