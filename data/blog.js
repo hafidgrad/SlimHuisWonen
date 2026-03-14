@@ -1076,11 +1076,11 @@ export const blogPosts = [
   ),
 },
 
-  {
+{
   slug: "beste-slimme-deurbel",
   title: "Slimme deurbel kiezen: waar moet je op letten?",
   description:
-    "Waar moet je op letten bij het kiezen van een slimme deurbel? Lees alles over accu vs bedraad, wifi, abonnementen, privacy en integraties.",
+    "Een slimme deurbel kopen? Ontdek waar je op moet letten: accu of bedraad, beeldkwaliteit, wifi, opslag zonder abonnement, privacy en smart home integraties.",
   image: "/images/blog/beste-slimme-deurbel.png",
   category: "Koopgids",
   available: true,
@@ -1094,32 +1094,53 @@ export const blogPosts = [
   content: (
     <>
       <p className="section-intro">
-        Een slimme deurbel laat je zien wie er aanbelt — waar je ook bent.
-        Maar niet elke slimme deurbel past bij elke woning. In deze gids
-        leggen we uit waar je op moet letten, zodat je een goede keuze maakt.
+        Een <strong>slimme deurbel</strong> laat je zien wie er voor je deur
+        staat — zelfs wanneer je niet thuis bent. Via je smartphone ontvang je
+        direct een melding en kun je live meekijken of praten met bezoekers.
+        Maar niet elke video deurbel past bij elke woning. In deze gids leggen
+        we uit <strong>waar je op moet letten bij het kiezen van een slimme
+        deurbel</strong>.
       </p>
 
-      <h2>Accu of bedraad</h2>
+      <h2>Accu of bedrade slimme deurbel</h2>
+      <p>
+        De eerste keuze die je moet maken is of je een deurbel met batterij
+        (accu) of een bedrade slimme deurbel wilt gebruiken.
+      </p>
+
       <ul>
         <li>
-          <strong>Bedraad:</strong> altijd online, geen opladen, meest stabiel
+          <strong>Bedraad:</strong> altijd stroom, stabielere verbinding en
+          geen accu opladen
         </li>
         <li>
-          <strong>Accu:</strong> makkelijk te installeren, wel regelmatig opladen
+          <strong>Accu:</strong> eenvoudig te installeren zonder bestaande
+          bedrading
         </li>
       </ul>
 
+      <p>
+        Heb je al bedrading van een traditionele deurbel? Dan is een
+        <strong> bedrade slimme deurbel</strong> vaak de meest stabiele keuze.
+      </p>
+
       <h2>Beeldkwaliteit & kijkhoek</h2>
+      <p>
+        De camera bepaalt hoe goed je kunt zien wie er voor je deur staat.
+        Tegenwoordig hebben veel slimme deurbellen een hoge resolutie.
+      </p>
+
       <ul>
-        <li>Minimaal Full HD (liefst 2K)</li>
-        <li>Brede kijkhoek voor bezoekers en pakketjes</li>
-        <li>Goed nachtzicht</li>
+        <li>Minimaal <strong>Full HD (1080p)</strong></li>
+        <li>Liever <strong>2K resolutie</strong> voor scherper beeld</li>
+        <li>Brede kijkhoek zodat je ook pakketjes ziet</li>
+        <li>Goed <strong>nachtzicht</strong></li>
       </ul>
 
       <h2>Wifi & betrouwbaarheid</h2>
       <p>
-        Slimme deurbellen zijn gevoelig voor wifi-bereik. Slecht signaal kan
-        zorgen voor vertraging of gemiste meldingen.
+        Een slimme deurbel werkt via wifi. Slecht wifi-bereik kan zorgen voor
+        vertraging in meldingen of een wegvallende live video.
       </p>
 
       <p>
@@ -1129,18 +1150,46 @@ export const blogPosts = [
         </Link>
       </p>
 
-      <h2>Abonnementen & opslag</h2>
+      <h2>Slimme deurbel met of zonder abonnement</h2>
       <p>
         Veel slimme deurbellen bieden extra functies via een abonnement,
-        zoals videohistorie en slimme detectie. Zonder abonnement heb je
-        meestal alleen live beeld.
+        zoals videohistorie en slimme detectie.
+      </p>
+
+      <p>Met een abonnement krijg je vaak functies zoals:</p>
+
+      <ul>
+        <li>Videohistorie in de cloud (bijvoorbeeld 7 tot 30 dagen)</li>
+        <li>Slimme detectie van personen of pakketten</li>
+        <li>Meldingen met previewbeelden</li>
+      </ul>
+
+      <p>
+        Er zijn echter ook veel <strong>slimme deurbellen zonder abonnement</strong>.
+        In dat geval worden de beelden lokaal opgeslagen, bijvoorbeeld op een:
+      </p>
+
+      <ul>
+        <li>micro-SD kaart in de deurbel</li>
+        <li>basisstation met lokale opslag</li>
+        <li>NAS of lokale server</li>
+      </ul>
+
+      <p>
+        Het voordeel hiervan is dat je <strong>geen maandelijkse kosten</strong>
+        hebt en je videobeelden in je eigen netwerk blijven.
       </p>
 
       <h2>Privacy & wetgeving</h2>
+      <p>
+        Omdat een slimme deurbel ook de openbare ruimte kan filmen, is privacy
+        belangrijk. Stel daarom altijd de juiste instellingen in.
+      </p>
+
       <ul>
-        <li>Stel privacyzones in (buren/openbare weg)</li>
-        <li>Gebruik audio-opname bewust</li>
-        <li>Kies bij voorkeur lokale opslag</li>
+        <li>Gebruik privacyzones om buren of straat te blokkeren</li>
+        <li>Controleer lokale wetgeving rond cameragebruik</li>
+        <li>Kies bij voorkeur voor lokale opslag</li>
       </ul>
 
       <p>
@@ -1154,15 +1203,16 @@ export const blogPosts = [
       <h2>Integraties met smart home</h2>
       <p>
         Sommige slimme deurbellen werken beter binnen een bepaald ecosysteem,
-        zoals Google Home, Alexa of Home Assistant. Dat kan belangrijk zijn
-        als je al een smart home hebt.
+        zoals Google Home, Amazon Alexa of Home Assistant. Als je al een
+        smart home hebt, is het slim om een deurbel te kiezen die daarmee
+        goed samenwerkt.
       </p>
 
       <div className="blogCtaBox">
         <h3>👉 Bekijk onze koopgids: beste slimme deurbel</h3>
         <p className="muted">
           We hebben de beste slimme deurbellen per situatie voor je
-          geselecteerd: bedraad, accu, zonder abonnement en smart home
+          geselecteerd: bedraad, accu, zonder abonnement en met smart home
           integraties.
         </p>
         <Link href="/aanraders/beste-slimme-deurbel">
