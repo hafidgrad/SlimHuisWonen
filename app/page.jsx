@@ -50,50 +50,98 @@ export default function HomePage() {
         </section>
 
         <div className="hero-spacer" />
+
+        {/* ================= PERSOONLIJK BLOK ================= */}
+        <section className="section">
+          <div className="container">
+            <div className="about-founder__grid">
+              <div className="about-founder__image-wrap">
+                <img
+                  src="/images/hafid-laptop.jpg"
+                  className="about-founder__image"
+                />
+              </div>
+
+              <div className="about-founder__content">
+                <span className="about-founder__eyebrow">Over SlimHuisWonen</span>
+                <h2>Waarom ik SlimHuisWonen ben gestart</h2>
+
+                <p>
+                  Zo is het bij mij begonnen. Met één slimme lamp.
+                </p>
+
+                <p>
+                  Een paar jaar later is mijn hele huis slim en verbonden met een
+                  smart home hub. Met automatiseringen, sensoren en slimme
+                  oplossingen die het dagelijks leven makkelijker maken.
+                </p>
+
+                <p>
+                  Toen ik begon, merkte ik al snel hoe onduidelijk het soms kan
+                  zijn. Welke producten werken goed samen? Waar begin je? En wat
+                  heb je echt nodig?
+                </p>
+
+                <p>
+                  Daarom ben ik SlimHuisWonen.nl gestart. Op deze website deel ik
+                  mijn ervaringen, tips en aanbevelingen zodat jij makkelijker kunt
+                  starten met jouw eigen smart home.
+                </p>
+
+                <div className="about-founder__actions">
+                  <Link href="/aanraders" className="about-founder__button">
+                    Bekijk mijn aanraders
+                  </Link>
+
+                  <Link href="/tips" className="about-founder__link">
+                    Lees praktische tips
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ================= KENNISCLUSTERS ================= */}
+        <section className="section">
+          <div className="container">
+            <h2>Onze Kennisclusters</h2>
 
-<section className="section">
-  <div className="container">
+            <p className="section-intro">
+              Ontdek onze complete kennisgebieden binnen smart home.
+              Hier vind je handleidingen, tips en koopadvies per onderwerp.
+            </p>
 
-    <h2>Onze Kennisclusters</h2>
+            <div className="grid-3">
+              {/* Smart Home Basis */}
+              <Link href="/topic/smart-home-basis" className="card">
+                <h3>Smart Home Basis</h3>
+                <p>
+                  Beginnen met een smart home? Leer hoe je slim en zonder fouten start.
+                </p>
+                <span>Bekijk kenniscluster →</span>
+              </Link>
 
-    <p className="section-intro">
-      Ontdek onze complete kennisgebieden binnen smart home.
-      Hier vind je handleidingen, tips en koopadvies per onderwerp.
-    </p>
+              {/* Wifi */}
+              <Link href="/topic/wifi-netwerk" className="card">
+                <h3>Wifi & Netwerk</h3>
+                <p>
+                  Verbeter je wifi en zorg voor een stabiel smart home netwerk.
+                </p>
+                <span>Bekijk kenniscluster →</span>
+              </Link>
 
-    <div className="grid-3">
-
-      {/* Smart Home Basis */}
-      <Link href="/topic/smart-home-basis" className="card">
-        <h3>Smart Home Basis</h3>
-        <p>
-          Beginnen met een smart home? Leer hoe je slim en zonder fouten start.
-        </p>
-        <span>Bekijk kenniscluster →</span>
-      </Link>
-
-      {/* Wifi */}
-      <Link href="/topic/wifi-netwerk" className="card">
-        <h3>Wifi & Netwerk</h3>
-        <p>
-          Verbeter je wifi en zorg voor een stabiel smart home netwerk.
-        </p>
-        <span>Bekijk kenniscluster →</span>
-      </Link>
-
-      {/* Beveiliging */}
-      <Link href="/topic/beveiliging" className="card">
-        <h3>Beveiliging</h3>
-        <p>
-          Houd je slimme huis veilig met camera’s, deurbellen en sensoren.
-        </p>
-        <span>Bekijk kenniscluster →</span>
-      </Link>
-
-    </div>
-  </div>
-</section>
+              {/* Beveiliging */}
+              <Link href="/topic/beveiliging" className="card">
+                <h3>Beveiliging</h3>
+                <p>
+                  Houd je slimme huis veilig met camera’s, deurbellen en sensoren.
+                </p>
+                <span>Bekijk kenniscluster →</span>
+              </Link>
+            </div>
+          </div>
+        </section>
 
         {/* ================= KOOPGIDSEN ================= */}
         <span id="koopgidsen" />
