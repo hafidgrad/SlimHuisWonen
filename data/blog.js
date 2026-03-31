@@ -816,12 +816,12 @@ export const blogPosts = [
 
   // ✅ Koopgidsen
   {
-  slug: "beste-slimme-stekkers",
-  title: "Beste slimme stekkers: waar moet je op letten?",
+  slug: "wat-is-een-slimme-stekker",
+  title: "Wat is een slimme stekker en hoe werkt het?",
   description:
-    "Twijfel je over slimme stekkers? Lees waar je op moet letten (energiemeting, wifi vs Zigbee, veiligheid) en maak daarna de juiste keuze.",
+    "Wat is een slimme stekker, hoe werkt het en wanneer is het handig? Ontdek de voordelen, verschillen tussen wifi en Zigbee en slimme automatiseringen voor thuis.",
   image: "/images/blog/beste-slimme-stekkers.png",
-  category: "Koopgids",
+  category: "Smart Home",
   available: true,
 
   related: [
@@ -830,55 +830,112 @@ export const blogPosts = [
     "beste-slimme-verlichting"
   ],
 
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Wat is een slimme stekker?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Een slimme stekker is een stopcontact-adapter die je tussen een apparaat en het stopcontact plaatst. Daarmee kun je apparaten op afstand bedienen, timers instellen en soms ook energieverbruik meten.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Hoe werkt een slimme stekker?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Een slimme stekker verbindt via wifi, Zigbee of een ander smart home protocol met een app of hub. Zo kun je apparaten automatisch aan- of uitschakelen via schema’s, spraakbediening of automatiseringen.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Heb je een hub nodig voor een slimme stekker?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Dat hangt af van het type. Wifi slimme stekkers werken vaak zonder hub. Zigbee slimme stekkers hebben meestal wel een hub nodig, zoals Homey, Home Assistant of een bridge van het merk zelf.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Kan een slimme stekker energieverbruik meten?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sommige slimme stekkers hebben energiemeting. Daarmee zie je hoeveel stroom een apparaat verbruikt en kun je sluipverbruik beter opsporen.",
+        },
+      },
+    ],
+  },
+
   content: (
     <>
       <p className="section-intro">
-        Een slimme stekker is vaak de makkelijkste manier om apparaten slim
-        te maken. Maar niet elke slimme stekker is hetzelfde. In dit artikel
-        leggen we uit waar je op moet letten voordat je er één koopt.
+        Een <strong>slimme stekker</strong> is vaak de makkelijkste manier om
+        een gewoon apparaat slim te maken. Je plaatst hem tussen het stopcontact
+        en je apparaat, waarna je het apparaat kunt bedienen via een app,
+        automatisering of spraakassistent.
       </p>
 
-      <h2>1. Wil je energieverbruik meten?</h2>
+      <h2>Wat kun je met een slimme stekker?</h2>
       <p>
-        Sommige slimme stekkers meten hoeveel stroom een apparaat verbruikt.
-        Dat is handig om sluipverbruik te ontdekken of gericht te besparen.
-        Niet elke stekker heeft deze functie.
-      </p>
-
-      <h2>2. Wi-Fi of Zigbee?</h2>
-      <p>
-        Slimme stekkers werken meestal via <strong>Wi-Fi</strong> of{" "}
-        <strong>Zigbee</strong>.
+        Met een slimme stekker kun je apparaten op afstand aan- en uitzetten,
+        schema’s instellen en in veel gevallen ook het energieverbruik meten.
+        Denk aan een lamp, koffiezetapparaat, ventilator of kerstverlichting.
       </p>
 
       <ul>
-        <li>
-          <strong>Wi-Fi:</strong> makkelijk om mee te starten, geen hub nodig
-        </li>
-        <li>
-          <strong>Zigbee:</strong> vaak stabieler bij meerdere apparaten
-        </li>
+        <li>Apparaten automatisch aan- en uitschakelen</li>
+        <li>Tijdschema’s instellen</li>
+        <li>Bediening via app of spraak</li>
+        <li>Sluipverbruik inzichtelijk maken met energiemeting</li>
       </ul>
+
+      <h2>Hoe werkt een slimme stekker?</h2>
+      <p>
+        Een slimme stekker maakt verbinding met je smart home via{" "}
+        <strong>wifi</strong> of <strong>Zigbee</strong>. Daarna kun je hem
+        bedienen via een app of koppelen aan een hub voor slimme
+        automatiseringen.
+      </p>
+
+      <h3>Wifi slimme stekker</h3>
+      <p>
+        Wifi slimme stekkers zijn ideaal als je simpel wilt starten. Je hebt
+        meestal geen aparte hub nodig en kunt ze direct koppelen aan de app van
+        het merk.
+      </p>
+
+      <h3>Zigbee slimme stekker</h3>
+      <p>
+        Zigbee slimme stekkers zijn vaak stabieler in een groter smart home en
+        werken goed samen met sensoren en automatiseringen. Meestal heb je hier
+        wel een hub voor nodig.
+      </p>
 
       <p>
         Meer uitleg?{" "}
         <Link href="/blog/wat-is-zigbee">
-          Wat is Zigbee en wanneer kies je het?
+          Lees hier wat Zigbee is
         </Link>
+        .
       </p>
 
-      <h2>3. Let op het maximale vermogen</h2>
-      <p>
-        Niet elke slimme stekker is geschikt voor zware apparaten zoals
-        wasmachines, drogers of elektrische kachels. Check altijd het
-        maximale wattage en gebruik alleen stekkers met CE-markering.
-      </p>
+      <h2>Wanneer is een slimme stekker handig?</h2>
+      <ul>
+        <li>Lampen automatisch inschakelen op vaste tijden</li>
+        <li>Een ventilator laten reageren op temperatuur</li>
+        <li>Kerstverlichting automatisch uitschakelen in de nacht</li>
+        <li>Een koffiezetapparaat of oplader slim schakelen</li>
+        <li>Sluipverbruik van apparaten meten</li>
+      </ul>
 
-      <h2>4. Integratie met je smart home</h2>
+      <h2>Heb je een hub nodig?</h2>
       <p>
-        Gebruik je Homey, Home Assistant of een ander platform? Controleer
-        dan of de slimme stekker hiermee samenwerkt. Dat maakt
-        automatiseringen een stuk krachtiger.
+        Dat hangt af van het type slimme stekker dat je kiest. Wifi-modellen
+        werken vaak direct via je router. Gebruik je Zigbee of wil je meerdere
+        merken combineren? Dan is een smart home hub vaak slimmer.
       </p>
 
       <p>
@@ -888,17 +945,25 @@ export const blogPosts = [
         </Link>
       </p>
 
-      <h2>Klaar om te kiezen?</h2>
+      <h2>Waar moet je op letten?</h2>
+      <ul>
+        <li><strong>Protocol:</strong> wifi of Zigbee</li>
+        <li><strong>Energiemeting:</strong> wel of niet aanwezig</li>
+        <li><strong>Maximaal vermogen:</strong> belangrijk bij zwaardere apparaten</li>
+        <li><strong>Compatibiliteit:</strong> werkt het met Homey, Home Assistant of jouw app?</li>
+      </ul>
+
+      <h2>Conclusie</h2>
       <p>
-        We hebben onze beste slimme stekkers overzichtelijk voor je op een
-        rij gezet, inclusief verschillen tussen Wi-Fi en Zigbee en opties
-        met energiemeting.
+        Een slimme stekker is een eenvoudige en betaalbare manier om je huis
+        slimmer te maken. Vooral voor beginners is dit vaak de eerste logische
+        stap. Wil je weten welke modellen het beste zijn voor jouw situatie?
       </p>
 
       <div className="blogCtaBox">
         <h3>👉 Bekijk onze koopgids: beste slimme stekkers</h3>
         <p className="muted">
-          Inclusief onze aanraders met en zonder energiemeting, voor Wi-Fi en
+          Inclusief onze aanraders met en zonder energiemeting, voor wifi en
           Zigbee.
         </p>
         <Link href="/aanraders/beste-slimme-stekkers">
@@ -909,12 +974,12 @@ export const blogPosts = [
   ),
 },
  {
-  slug: "beste-slimme-verlichting",
-  title: "Beste slimme verlichting: waar moet je op letten?",
+  slug: "wat-is-slimme-verlichting",
+  title: "Wat is slimme verlichting en hoe werkt het?",
   description:
-    "Twijfel je over slimme verlichting? Lees waar je op moet letten bij Philips Hue, IKEA, Tapo en Govee en maak daarna de juiste keuze.",
+    "Wat is slimme verlichting en hoe werkt het? Ontdek de verschillen tussen wifi en Zigbee, wanneer een hub handig is en welke soorten slimme lampen er zijn.",
   image: "/images/blog/beste-slimme-verlichting.png",
-  category: "Koopgids",
+  category: "Smart Home",
   available: true,
 
   related: [
@@ -923,72 +988,172 @@ export const blogPosts = [
     "home-assistant-vs-homey"
   ],
 
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Wat is slimme verlichting?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Slimme verlichting bestaat uit lampen, led-strips of armaturen die je via een app, spraakassistent of automatisering kunt bedienen. Je kunt ze op afstand aan- en uitzetten, dimmen of automatisch laten reageren op tijd, beweging of aanwezigheid.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Hoe werkt slimme verlichting?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Slimme verlichting werkt meestal via wifi of Zigbee. Via een app of smart home hub kun je lampen bedienen, groeperen en automatiseren. Sommige systemen werken direct zonder hub, andere juist stabieler met een bridge of hub.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Heb je een hub nodig voor slimme verlichting?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Niet altijd. Wifi lampen werken vaak zonder hub. Zigbee verlichting gebruikt meestal wel een bridge of smart home hub, maar biedt vaak meer stabiliteit en betere uitbreidingsmogelijkheden.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Wat is beter: wifi of Zigbee verlichting?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Wifi verlichting is handig om snel te beginnen. Zigbee verlichting is vaak stabieler en slimmer uitbreidbaar, vooral als je meerdere lampen, sensoren en schakelaars wilt combineren.",
+        },
+      },
+    ],
+  },
+
   content: (
     <>
       <p className="section-intro">
-        Slimme verlichting is vaak de eerste stap in een smart home. Maar
-        welk merk past bij jou? In dit artikel leggen we uit waar je op moet
-        letten bij het kiezen van slimme verlichting, zodat je daarna een
-        goede keuze kunt maken.
+        <strong>Slimme verlichting</strong> is voor veel mensen de eerste stap
+        in een smart home. Je kunt lampen bedienen via een app, spraakassistent
+        of automatisering en zo meer gemak, sfeer en energiebesparing in huis
+        halen.
       </p>
 
-      <h2>1. Wi-Fi of Zigbee?</h2>
+      <h2>Wat kun je met slimme verlichting?</h2>
       <p>
-        Slimme verlichting werkt meestal via <strong>Wi-Fi</strong> of{" "}
-        <strong>Zigbee</strong>. Wi-Fi lampen zijn makkelijk om mee te
-        starten, maar Zigbee is vaak stabieler als je meerdere lampen of
-        sensoren gebruikt.
+        Met slimme verlichting kun je veel meer dan alleen een lamp op afstand
+        aan- of uitzetten. Je kunt schema’s instellen, lampen dimmen,
+        lichtkleuren aanpassen en verlichting automatisch laten reageren op
+        beweging of tijdstippen.
       </p>
 
-      <h2>2. Wil je uitbreiden met sensoren en schakelaars?</h2>
-      <p>
-        Denk vooruit. Wil je later bewegingssensoren, draadloze schakelaars
-        of automatiseringen? Dan is een ecosysteem zoals Philips Hue of IKEA
-        vaak een betere basis dan losse Wi-Fi lampen.
-      </p>
-
-      <h2>3. Sfeer of functioneel licht?</h2>
       <ul>
-        <li><strong>Sfeer:</strong> kleur, LED-strips, effecten</li>
-        <li><strong>Functioneel:</strong> stabiel wit licht, automatiseringen</li>
+        <li>Lampen op afstand bedienen via app</li>
+        <li>Automatische schema’s instellen</li>
+        <li>Dimbaar licht en sfeerlicht gebruiken</li>
+        <li>Verlichting koppelen aan sensoren of routines</li>
+        <li>Meerdere lampen tegelijk bedienen per kamer of zone</li>
       </ul>
 
-      <h2>4. Hub of geen hub?</h2>
+      <h2>Hoe werkt slimme verlichting?</h2>
       <p>
-        Zigbee-verlichting werkt meestal via een hub of bridge. Dat klinkt
-        als extra werk, maar levert vaak meer stabiliteit en betere
-        automatiseringen op.
+        Slimme verlichting werkt meestal via <strong>wifi</strong> of{" "}
+        <strong>Zigbee</strong>. Het type verbinding bepaalt hoe je de lampen
+        instelt en of je een hub nodig hebt.
       </p>
 
-      <h2>Welke merken kom je tegen?</h2>
+      <h3>Wifi slimme verlichting</h3>
+      <p>
+        Wifi lampen zijn makkelijk om mee te starten. Je verbindt ze direct met
+        je netwerk en gebruikt meestal alleen de app van het merk. Dat is
+        handig voor een klein aantal lampen en voor beginners.
+      </p>
+
+      <h3>Zigbee slimme verlichting</h3>
+      <p>
+        Zigbee verlichting werkt meestal via een hub of bridge. Dat lijkt een
+        extra stap, maar het zorgt vaak voor meer stabiliteit en is slimmer als
+        je later wilt uitbreiden met sensoren, schakelaars en automatiseringen.
+      </p>
+
+      <p>
+        Meer uitleg?{" "}
+        <Link href="/blog/wat-is-zigbee">
+          Lees hier wat Zigbee is
+        </Link>
+        .
+      </p>
+
+      <h2>Wanneer is slimme verlichting handig?</h2>
       <ul>
-        <li><strong>Philips Hue</strong> – premium, zeer stabiel</li>
+        <li>Automatisch licht in hal, trap of toilet</li>
+        <li>Sfeerverlichting in woonkamer of slaapkamer</li>
+        <li>Nachtverlichting met bewegingssensor</li>
+        <li>Verlichting automatisch aan bij thuiskomst</li>
+        <li>Alles uitschakelen met één routine of knop</li>
+      </ul>
+
+      <h2>Wil je uitbreiden met sensoren en schakelaars?</h2>
+      <p>
+        Denk vooruit als je begint. Wil je later bewegingssensoren, draadloze
+        schakelaars of automatische scènes gebruiken? Dan is een ecosysteem met
+        Zigbee of een smart home hub vaak een betere basis dan alleen losse
+        wifi lampen.
+      </p>
+
+      <h2>Sfeer of functioneel licht?</h2>
+      <ul>
+        <li><strong>Sfeer:</strong> kleur, led-strips en dynamische scènes</li>
+        <li><strong>Functioneel:</strong> stabiel wit licht en praktische automatiseringen</li>
+      </ul>
+
+      <h2>Heb je een hub nodig?</h2>
+      <p>
+        Dat hangt af van het systeem dat je kiest. Wifi verlichting werkt vaak
+        zonder hub. Gebruik je Zigbee of wil je meerdere merken combineren in
+        één systeem? Dan is een hub of bridge vaak slimmer.
+      </p>
+
+      <p>
+        Lees ook:{" "}
+        <Link href="/tips/wat-is-een-smart-home-hub">
+          wat is een smart home hub?
+        </Link>
+      </p>
+
+      <h2>Welke merken kom je vaak tegen?</h2>
+      <ul>
+        <li><strong>Philips Hue</strong> – premium, stabiel en sterk ecosysteem</li>
         <li><strong>IKEA</strong> – betaalbaar Zigbee alternatief</li>
-        <li><strong>Tapo</strong> – goedkoop starten via Wi-Fi</li>
-        <li><strong>Govee</strong> – vooral sterk in LED-strips en sfeer</li>
+        <li><strong>Tapo</strong> – goedkoop starten via wifi</li>
+        <li><strong>Govee</strong> – vooral populair voor led-strips en sfeerlicht</li>
       </ul>
 
-       <div className="blogCtaBox">
+      <h2>Conclusie</h2>
+      <p>
+        Slimme verlichting maakt je huis comfortabeler, slimmer en vaak ook
+        praktischer. Of je nu simpel wilt starten met een paar wifi lampen of
+        direct een stabiel systeem wilt opbouwen met Zigbee: de juiste keuze
+        hangt af van hoe ver je wilt uitbreiden.
+      </p>
+
+      <div className="blogCtaBox">
         <h3>👉 Bekijk onze koopgids: beste slimme verlichting</h3>
         <p className="muted">
           Inclusief onze aanraders voor Philips Hue, IKEA, Tapo en Govee —
           per budget en gebruikssituatie.
         </p>
-        <a href="/aanraders/beste-slimme-verlichting">
+        <Link href="/aanraders/beste-slimme-verlichting">
           Naar de koopgids →
-        </a>
+        </Link>
       </div>
     </>
   ),
 },
-
   {
-  slug: "beste-slimme-camera",
-  title: "Beste slimme camera: waar moet je op letten?",
+  slug: "wat-is-een-slimme-camera",
+  title: "Wat is een slimme camera en hoe werkt het?",
   description:
-    "Welke slimme camera past bij jouw huis? Lees waar je op moet letten: binnen of buiten, wifi vs PoE, opslag, privacy en beveiliging.",
+    "Wat is een slimme camera en hoe werkt het? Ontdek de verschillen tussen binnen en buiten, wifi vs PoE, opslag en waar je op moet letten.",
   image: "/images/blog/beste-slimme-camera.png",
-  category: "Koopgids",
+  category: "Smart Home",
   available: true,
 
   related: [
@@ -997,33 +1162,102 @@ export const blogPosts = [
     "aqara-vs-tapo"
   ],
 
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Wat is een slimme camera?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Een slimme camera is een beveiligingscamera die je via een app kunt bekijken en bedienen. Je kunt live meekijken, meldingen ontvangen en beelden opslaan.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Hoe werkt een slimme camera?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Slimme camera’s verbinden meestal via wifi of een netwerk (PoE) met een app. Ze sturen meldingen bij beweging en laten je live meekijken via je smartphone.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Wat is beter: wifi of PoE camera?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Wifi camera’s zijn makkelijker te installeren. PoE camera’s zijn stabieler en betrouwbaarder, vooral voor buitencamera’s en permanente beveiliging.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Heb je een abonnement nodig voor een slimme camera?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Niet altijd. Sommige camera’s slaan beelden lokaal op via SD-kaart of NVR. Andere gebruiken cloudopslag waarvoor een abonnement nodig kan zijn.",
+        },
+      },
+    ],
+  },
+
   content: (
     <>
       <p className="section-intro">
-        Slimme camera’s kunnen je huis veiliger maken, maar alleen als je de
-        juiste kiest. In dit artikel leggen we uit waar je op moet letten,
-        zodat je geen miskoop doet.
+        Een <strong>slimme camera</strong> helpt je om je huis in de gaten te
+        houden, waar je ook bent. Via je smartphone kun je live meekijken,
+        meldingen ontvangen bij beweging en beelden terugkijken.
       </p>
+
+      <h2>Wat kun je met een slimme camera?</h2>
+      <p>
+        Slimme camera’s geven je inzicht en controle over wat er in en rondom
+        je huis gebeurt. Ze worden vaak gebruikt voor beveiliging, maar ook om
+        huisdieren of kinderen in de gaten te houden.
+      </p>
+
+      <ul>
+        <li>Live meekijken via je smartphone</li>
+        <li>Meldingen bij beweging of geluid</li>
+        <li>Beelden terugkijken</li>
+        <li>Tweeweg-audio (praten via de camera)</li>
+        <li>Nachtzicht voor gebruik in het donker</li>
+      </ul>
 
       <h2>Binnen- of buitencamera?</h2>
       <p>
-        Binnencamera’s zijn compacter en goedkoper. Buitencamera’s zijn
-        weerbestendig en hebben vaak beter nachtzicht. Kies altijd een camera
-        die past bij de plek waar je hem wilt gebruiken.
+        De eerste keuze is waar je de camera wilt gebruiken.
       </p>
 
-      <h2>Stroomvoorziening</h2>
       <ul>
-        <li><strong>Netstroom:</strong> stabiel en onderhoudsvrij</li>
-        <li><strong>Accu:</strong> flexibel plaatsen, maar opladen nodig</li>
-        <li><strong>Zonnepaneel:</strong> handig buiten, afhankelijk van zon</li>
+        <li>
+          <strong>Binnencamera:</strong> compacter, goedkoper en ideaal voor
+          binnengebruik
+        </li>
+        <li>
+          <strong>Buitencamera:</strong> weerbestendig en vaak voorzien van
+          beter nachtzicht en detectie
+        </li>
       </ul>
 
-      <h2>Wifi of bekabeld (PoE)</h2>
+      <h2>Hoe werkt een slimme camera?</h2>
       <p>
-        Wifi-camera’s zijn eenvoudig te installeren, maar gevoelig voor
-        bereikproblemen. PoE (Power over Ethernet) is betrouwbaarder, vooral
-        bij buitencamera’s.
+        Slimme camera’s verbinden meestal via <strong>wifi</strong> of via een
+        bekabelde verbinding zoals <strong>PoE (Power over Ethernet)</strong>.
+      </p>
+
+      <h3>Wifi camera</h3>
+      <p>
+        Wifi camera’s zijn eenvoudig te installeren en ideaal voor beginners.
+        Ze werken direct via je netwerk, maar zijn afhankelijk van de kwaliteit
+        van je wifi.
+      </p>
+
+      <h3>PoE camera</h3>
+      <p>
+        PoE camera’s krijgen stroom en internet via één kabel. Dit zorgt voor
+        een stabielere verbinding en is vooral geschikt voor buitencamera’s en
+        vaste installaties.
       </p>
 
       <p>
@@ -1033,19 +1267,27 @@ export const blogPosts = [
         </Link>
       </p>
 
-      <h2>Opslag & privacy</h2>
+      <h2>Opslag: lokaal of in de cloud?</h2>
       <p>
-        Sommige camera’s slaan beelden lokaal op (bijvoorbeeld via een
-        SD-kaart of NVR), andere gebruiken cloudopslag. Lokale opslag is vaak
-        privacyvriendelijker en goedkoper op de lange termijn.
+        Slimme camera’s slaan beelden op via verschillende methodes.
       </p>
 
-      <h2>Beveiliging & instellingen</h2>
+      <ul>
+        <li><strong>SD-kaart:</strong> lokaal en zonder abonnement</li>
+        <li><strong>NVR:</strong> centrale opslag voor meerdere camera’s</li>
+        <li><strong>Cloud:</strong> toegang op afstand, vaak met abonnement</li>
+      </ul>
+
+      <h2>Privacy & beveiliging</h2>
+      <p>
+        Omdat camera’s gevoelige beelden opnemen, is beveiliging belangrijk.
+      </p>
+
       <ul>
         <li>Gebruik sterke wachtwoorden</li>
         <li>Activeer tweestapsverificatie</li>
         <li>Stel privacyzones in</li>
-        <li>Houd firmware up-to-date</li>
+        <li>Houd software up-to-date</li>
       </ul>
 
       <p>
@@ -1053,13 +1295,21 @@ export const blogPosts = [
         <Link href="/tips/privacy-en-veiligheid-smart-home">
           privacy & veiligheid in je smart home
         </Link>
-        .
       </p>
 
-      <h2>Klaar om te kiezen?</h2>
+      <h2>Wanneer is een slimme camera handig?</h2>
+      <ul>
+        <li>Beveiliging van je woning</li>
+        <li>Toezicht op huisdieren</li>
+        <li>Controle bij afwezigheid of vakantie</li>
+        <li>Meldingen bij beweging rond je huis</li>
+      </ul>
+
+      <h2>Conclusie</h2>
       <p>
-        We hebben onze beste slimme camera’s overzichtelijk voor je op een
-        rij gezet — per situatie en zonder verkooppraat.
+        Een slimme camera geeft je meer controle en veiligheid in huis. Of je
+        nu kiest voor een eenvoudige wifi camera of een stabiel PoE systeem,
+        de juiste keuze hangt af van je situatie en wensen.
       </p>
 
       <div className="blogCtaBox">
@@ -1075,7 +1325,6 @@ export const blogPosts = [
     </>
   ),
 },
-
 {
   slug: "beste-slimme-deurbel",
   title: "Slimme deurbel kiezen: waar moet je op letten?",
@@ -1621,12 +1870,12 @@ export const blogPosts = [
   ),
 },
   {
-  slug: "beste-slimme-sensoren",
-  title: "Beste slimme sensoren: welke heb je echt nodig?",
+  slug: "wat-zijn-slimme-sensoren",
+  title: "Wat zijn slimme sensoren en hoe werken ze?",
   description:
-    "Welke slimme sensoren zijn nuttig in een smart home? Ontdek welke sensoren je nodig hebt voor automatiseringen, veiligheid en energiebesparing.",
+    "Wat zijn slimme sensoren en hoe werken ze? Ontdek welke sensoren er zijn, hoe ze werken en hoe je ze gebruikt voor automatiseringen, veiligheid en energiebesparing.",
   image: "/images/blog/beste-slimme-sensoren.png",
-  category: "Koopgids",
+  category: "Smart Home",
   available: true,
 
   related: [
@@ -1635,71 +1884,140 @@ export const blogPosts = [
     "beste-slimme-deurbel"
   ],
 
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Wat zijn slimme sensoren?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Slimme sensoren meten wat er in je huis gebeurt, zoals beweging, temperatuur of een open deur. Die informatie gebruik je voor meldingen en automatiseringen.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Hoe werken slimme sensoren?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Slimme sensoren sturen signalen naar een app of smart home hub. Op basis daarvan kun je automatiseringen maken, zoals verlichting die automatisch aangaat bij beweging.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Heb je een hub nodig voor slimme sensoren?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Vaak wel. Veel sensoren werken via Zigbee, Z-Wave of Thread en hebben een hub nodig zoals Homey of Home Assistant. Sommige wifi sensoren werken zonder hub.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Welke slimme sensoren zijn het meest nuttig?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "De meest gebruikte sensoren zijn bewegingssensoren, deur- en raamsensoren, temperatuur- en luchtvochtigheidssensoren en waterleksensoren.",
+        },
+      },
+    ],
+  },
+
   content: (
     <>
       <p className="section-intro">
-        Slimme sensoren vormen de basis van een écht slim huis. Ze zorgen
-        ervoor dat verlichting, verwarming en beveiliging automatisch
-        reageren — zonder dat jij steeds iets hoeft te doen. Maar welke
-        sensoren zijn nu echt nuttig?
+        <strong>Slimme sensoren</strong> vormen de basis van een écht slim
+        huis. Ze zorgen ervoor dat apparaten automatisch reageren op wat er
+        gebeurt — zonder dat jij steeds iets hoeft te doen.
       </p>
 
       <h2>Wat doen slimme sensoren?</h2>
       <p>
-        Slimme sensoren meten of detecteren wat er in je huis gebeurt:
-        beweging, temperatuur, open ramen of zelfs waterlekkage. Die
-        informatie gebruik je voor meldingen, automatiseringen en
-        energiebesparing.
+        Slimme sensoren meten of detecteren wat er in je huis gebeurt. Denk
+        aan beweging, temperatuur, open deuren of zelfs waterlekkage. Deze
+        informatie gebruik je voor meldingen en automatiseringen.
+      </p>
+
+      <ul>
+        <li>Automatisch verlichting inschakelen bij beweging</li>
+        <li>Meldingen bij open deuren of ramen</li>
+        <li>Temperatuur en luchtvochtigheid monitoren</li>
+        <li>Waterlekkage direct detecteren</li>
+      </ul>
+
+      <h2>Hoe werken slimme sensoren?</h2>
+      <p>
+        Slimme sensoren sturen signalen naar een app of smart home systeem.
+        Op basis daarvan kun je automatiseringen maken.
+      </p>
+
+      <p>
+        Bijvoorbeeld: <em>als beweging wordt gedetecteerd → lamp aan</em>
+      </p>
+
+      <p>
+        Veel sensoren werken via <strong>Zigbee</strong>,{" "}
+        <strong>Z-Wave</strong> of <strong>Matter/Thread</strong>.
+      </p>
+
+      <p>
+        Meer uitleg?{" "}
+        <Link href="/blog/wat-is-zigbee">
+          Lees hier wat Zigbee is
+        </Link>
       </p>
 
       <h2>De belangrijkste soorten slimme sensoren</h2>
 
-      <h3>1. Bewegings- en aanwezigheidssensoren</h3>
+      <h3>1. Bewegingssensoren</h3>
       <p>
-        Deze sensoren detecteren of er iemand aanwezig is. Ze worden vaak
-        gebruikt om verlichting automatisch aan te zetten, maar ook voor
-        beveiliging en energiebesparing.
+        Detecteren beweging en worden vaak gebruikt voor automatische
+        verlichting en beveiliging.
       </p>
 
       <h3>2. Deur- en raamsensoren</h3>
       <p>
-        Ideaal voor beveiliging en comfort. Denk aan meldingen bij een open
-        deur of het automatisch uitschakelen van verwarming bij een open
-        raam.
+        Ideaal voor beveiliging en comfort. Bijvoorbeeld een melding bij een
+        open deur of het automatisch uitschakelen van verwarming.
       </p>
 
       <h3>3. Temperatuur- en luchtvochtigheidssensoren</h3>
       <p>
-        Met deze sensoren krijg je inzicht in je binnenklimaat en kun je
-        slimmer verwarmen en ventileren.
+        Helpen je om je binnenklimaat te verbeteren en energie te besparen.
       </p>
 
-      <h3>4. Water- en lekkagesensoren</h3>
+      <h3>4. Waterleksensoren</h3>
       <p>
-        Waterleksensoren waarschuwen direct bij lekkage. Vooral handig bij
-        wasmachines, vaatwassers en cv-installaties.
+        Waarschuwen direct bij lekkage. Vooral handig bij wasmachines,
+        vaatwassers en cv-installaties.
       </p>
 
       <h2>Heb je een hub nodig?</h2>
       <p>
-        In de meeste gevallen wel. Slimme sensoren werken vaak via{" "}
-        <strong>Zigbee</strong>, <strong>Z-Wave</strong> of{" "}
-        <strong>Matter/Thread</strong> en hebben een hub nodig om
-        automatiseringen mogelijk te maken.
+        In veel gevallen wel. Vooral bij Zigbee en Z-Wave sensoren heb je een
+        hub nodig om alles te verbinden en automatiseringen te maken.
       </p>
 
       <p>
-        Meer hierover lees je in:{" "}
+        Lees ook:{" "}
         <Link href="/tips/wat-is-een-smart-home-hub">
           wat is een smart home hub?
         </Link>
       </p>
 
-      <h2>Welke sensoren passen bij jou?</h2>
+      <h2>Wanneer zijn slimme sensoren interessant?</h2>
+      <ul>
+        <li>Als je automatiseringen wilt maken</li>
+        <li>Voor extra beveiliging in huis</li>
+        <li>Voor energiebesparing</li>
+        <li>Voor meer comfort en gemak</li>
+      </ul>
+
+      <h2>Conclusie</h2>
       <p>
-        Dat hangt af van wat je wilt automatiseren. Sommige mensen beginnen
-        met alleen bewegingssensoren, anderen kiezen meteen voor beveiliging
-        en energiebesparing.
+        Slimme sensoren maken je huis echt slim. Ze zorgen ervoor dat je
+        apparaten automatisch reageren en geven je meer controle, veiligheid
+        en comfort.
       </p>
 
       <div className="blogCtaBox">

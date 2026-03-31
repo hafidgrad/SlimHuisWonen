@@ -59,10 +59,19 @@ export default function AanraderDetailPage({ params }) {
   const guide = aanraders.find((g) => g.slug === params.slug);
   if (!guide) return notFound();
 
-  const relatedBlog = blogPosts.find(
-    (b) => b.slug === guide.relatedBlog
-  );
+  const relatedBlog = blogPosts.find((b) => b.slug === guide.relatedBlog);
 
+const relatedBlogs = guide.relatedBlogs
+  ? guide.relatedBlogs
+      .map((slug) => blogPosts.find((b) => b.slug === slug))
+      .filter(Boolean)
+  : [];
+
+const relatedGuides = guide.relatedGuides
+  ? guide.relatedGuides
+      .map((slug) => aanraders.find((g) => g.slug === slug))
+      .filter(Boolean)
+  : [];
   const amazonSearchTerm = getAmazonSearchTerm(params.slug);
 
   /* Structured Data: ItemList */
@@ -79,6 +88,23 @@ export default function AanraderDetailPage({ params }) {
     })),
   };
 
+  /* Structured Data: FAQ */
+  const faqSchema =
+    guide.faq && guide.faq.length
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: guide.faq.map((item) => ({
+            "@type": "Question",
+            name: item.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: item.answer,
+            },
+          })),
+        }
+      : null;
+
   return (
     <>
       <Header />
@@ -91,9 +117,17 @@ export default function AanraderDetailPage({ params }) {
         }}
       />
 
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqSchema),
+          }}
+        />
+      )}
+
       <main className="section">
         <div className="container article">
-
           {/* 🔥 BlogBanner stijl */}
           {guide.image && (
             <div
@@ -129,11 +163,20 @@ export default function AanraderDetailPage({ params }) {
 
           <h1>{guide.title}</h1>
 
-          {guide.intro && (
-            <p className="section-intro">
-              {guide.intro}
-            </p>
+          {guide.intro && <p className="section-intro">{guide.intro}</p>}
+
+          {guide.whoIsThisFor && guide.whoIsThisFor.length > 0 && (
+            <>
+              <h2>Voor wie is deze koopgids?</h2>
+              <ul>
+                {guide.whoIsThisFor.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </>
           )}
+
+          {guide.buyingAdviceIntro && <p>{guide.buyingAdviceIntro}</p>}
 
           {guide.whatToLookFor && (
             <>
@@ -150,7 +193,8 @@ export default function AanraderDetailPage({ params }) {
 
           <h2>Onze aanraders</h2>
           <p className="muted">
-            Alleen producten die betrouwbaar zijn en logisch voor hun gebruikssituatie.
+            Alleen producten die betrouwbaar zijn en logisch voor hun
+            gebruikssituatie.
           </p>
 
           <div style={{ display: "grid", gap: "1rem", marginTop: "1rem" }}>
@@ -159,23 +203,71 @@ export default function AanraderDetailPage({ params }) {
             ))}
           </div>
 
-          {relatedBlog && (
+          {(relatedBlog || relatedBlogs.length > 0 || relatedGuides.length > 0) && (
+  <>
+    <hr />
+
+    {relatedBlog && (
+      <>
+        <h2>Meer uitleg nodig?</h2>
+        <p>
+          Twijfel je nog? Lees ook{" "}
+          <Link href={`/blog/${relatedBlog.slug}`}>
+            {relatedBlog.title}
+          </Link>
+          .
+        </p>
+      </>
+    )}
+
+    {relatedBlogs.length > 0 && (
+      <>
+        <h2>Gerelateerde artikelen</h2>
+        <ul>
+          {relatedBlogs.map((post) => (
+            <li key={post.slug}>
+              <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+            </li>
+          ))}
+        </ul>
+      </>
+    )}
+
+    {relatedGuides.length > 0 && (
+      <>
+        <h2>Gerelateerde koopgidsen</h2>
+        <ul>
+          {relatedGuides.map((item) => (
+            <li key={item.slug}>
+              <Link href={`/aanraders/${item.slug}`}>{item.title}</Link>
+            </li>
+          ))}
+        </ul>
+      </>
+    )}
+  </>
+)}
+
+          {guide.faq && guide.faq.length > 0 && (
             <>
               <hr />
-              <p>
-                Twijfel je nog? Lees ook{" "}
-                <Link href={`/blog/${relatedBlog.slug}`}>
-                  {relatedBlog.title}
-                </Link>
-                .
-              </p>
+              <h2>Veelgestelde vragen</h2>
+              <div style={{ display: "grid", gap: "1rem", marginTop: "1rem" }}>
+                {guide.faq.map((item) => (
+                  <div key={item.question}>
+                    <h3 style={{ marginBottom: "0.35rem" }}>{item.question}</h3>
+                    <p className="muted" style={{ marginBottom: 0 }}>
+                      {item.answer}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </>
           )}
 
           {/* ✅ Subtiele Amazon zoek CTA onder koopgids */}
           <hr style={{ marginTop: "2rem" }} />
           <AmazonSearchCta searchTerm={amazonSearchTerm} />
-
         </div>
       </main>
 
