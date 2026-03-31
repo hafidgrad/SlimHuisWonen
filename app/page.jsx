@@ -6,6 +6,28 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 
+export async function generateMetadata() {
+  return {
+    title: "SlimHuisWonen.nl – Slim huis starten zonder gedoe",
+    description:
+      "Slim huis beginnen? Ontdek de beste smart home producten, koopgidsen, tips, blogs en how-to handleidingen voor slimme verlichting, sensoren, camera’s, hubs en automatiseringen.",
+    alternates: {
+      canonical: "https://slimhuiswonen.nl",
+    },
+    openGraph: {
+      title: "SlimHuisWonen.nl – Slim huis starten zonder gedoe",
+      description:
+        "De beste smart home producten, tips en automatiseringen op één plek.",
+      url: "https://slimhuiswonen.nl",
+      images: [
+        {
+          url: "https://slimhuiswonen.nl/images/blog/blog-header.png",
+        },
+      ],
+    },
+  };
+}
+
 export default function HomePage() {
   return (
     <>
@@ -22,7 +44,9 @@ export default function HomePage() {
                 <h1>Maak je huis slim — zonder gedoe</h1>
 
                 <p>
-                  De beste smart home producten, tips en automatiseringen op één plek.
+                  Slim huis beginnen? Ontdek de beste smart home producten,
+                  praktische tips, koopgidsen en automatiseringen voor slimme
+                  verlichting, sensoren, camera’s, hubs en meer.
                 </p>
 
                 <div className="hero-banner-actions">
@@ -34,10 +58,10 @@ export default function HomePage() {
                   </Link>
 
                   <Link
-                    href="/categorie"
+                    href="/blog"
                     className="btn hero-btn hero-secondary"
                   >
-                    Ontdek categorieën
+                    Lees uitleg & vergelijkingen
                   </Link>
                 </div>
 
@@ -58,34 +82,33 @@ export default function HomePage() {
               <div className="about-founder__image-wrap">
                 <img
                   src="/images/hafid-laptop.jpg"
+                  alt="Hafid van SlimHuisWonen"
                   className="about-founder__image"
                 />
               </div>
 
               <div className="about-founder__content">
-                <span className="about-founder__eyebrow">Over SlimHuisWonen</span>
+                <span className="about-founder__eyebrow">
+                  Over SlimHuisWonen
+                </span>
                 <h2>Waarom ik SlimHuisWonen ben gestart</h2>
 
                 <p>
-                  Zo is het bij mij begonnen. Met één slimme lamp.
+                  Zo is het bij mij ook begonnen: met één slimme lamp. Daarna
+                  groeide het snel door naar een compleet smart home met slimme
+                  verlichting, sensoren, automatiseringen en een smart home hub.
                 </p>
 
                 <p>
-                  Een paar jaar later is mijn hele huis slim en verbonden met een
-                  smart home hub. Met automatiseringen, sensoren en slimme
-                  oplossingen die het dagelijks leven makkelijker maken.
+                  Toen ik zelf begon, merkte ik hoe onduidelijk smart home soms
+                  kan zijn. Welke producten werken goed samen? Heb je een hub
+                  nodig? Kies je voor wifi, Zigbee of Matter?
                 </p>
 
                 <p>
-                  Toen ik begon, merkte ik al snel hoe onduidelijk het soms kan
-                  zijn. Welke producten werken goed samen? Waar begin je? En wat
-                  heb je echt nodig?
-                </p>
-
-                <p>
-                  Daarom ben ik SlimHuisWonen.nl gestart. Op deze website deel ik
-                  mijn ervaringen, tips en aanbevelingen zodat jij makkelijker kunt
-                  starten met jouw eigen smart home.
+                  Daarom ben ik SlimHuisWonen.nl gestart. Op deze website deel
+                  ik mijn ervaringen, tips en aanbevelingen zodat jij makkelijker
+                  kunt starten met jouw eigen slimme huis.
                 </p>
 
                 <div className="about-founder__actions">
@@ -102,42 +125,127 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ================= KENNISCLUSTERS ================= */}
+        {/* ================= SNEL NAAR POPULAIRE ONDERWERPEN ================= */}
         <section className="section">
           <div className="container">
-            <h2>Onze Kennisclusters</h2>
+            <h2>Waar wil je mee beginnen?</h2>
 
             <p className="section-intro">
-              Ontdek onze complete kennisgebieden binnen smart home.
-              Hier vind je handleidingen, tips en koopadvies per onderwerp.
+              Kies direct het onderwerp waar jij nu het meeste aan hebt:
+              verlichting, sensoren, beveiliging, hubs of praktische uitleg.
             </p>
 
             <div className="grid-3">
-              {/* Smart Home Basis */}
+              <Link href="/aanraders/beste-slimme-verlichting" className="card">
+                <h3>Beste slimme verlichting</h3>
+                <p>
+                  Vergelijk Philips Hue, Innr, Tapo en Govee en ontdek welke
+                  slimme verlichting het beste past bij jouw huis.
+                </p>
+                <span>Bekijk koopgids →</span>
+              </Link>
+
+              <Link href="/aanraders/beste-slimme-sensoren" className="card">
+                <h3>Beste slimme sensoren</h3>
+                <p>
+                  Ontdek welke slimme sensoren nuttig zijn voor automatisering,
+                  veiligheid en energiebesparing.
+                </p>
+                <span>Bekijk koopgids →</span>
+              </Link>
+
+              <Link href="/aanraders/beste-smart-home-hub" className="card">
+                <h3>Beste smart home hub</h3>
+                <p>
+                  Twijfel je tussen Homey, Home Assistant of SmartThings? Bekijk
+                  welke smart home hub bij jou past.
+                </p>
+                <span>Bekijk koopgids →</span>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* ================= KENNISCLUSTERS ================= */}
+        <section className="section">
+          <div className="container">
+            <h2>Onze kennisclusters</h2>
+
+            <p className="section-intro">
+              Ontdek complete kennisgebieden binnen smart home. Hier vind je
+              handleidingen, tips, uitleg en koopadvies per onderwerp.
+            </p>
+
+            <div className="grid-3">
               <Link href="/topic/smart-home-basis" className="card">
                 <h3>Smart Home Basis</h3>
                 <p>
-                  Beginnen met een smart home? Leer hoe je slim en zonder fouten start.
+                  Beginnen met een smart home? Leer hoe je slim start en welke
+                  producten je echt nodig hebt.
                 </p>
                 <span>Bekijk kenniscluster →</span>
               </Link>
 
-              {/* Wifi */}
               <Link href="/topic/wifi-netwerk" className="card">
                 <h3>Wifi & Netwerk</h3>
                 <p>
-                  Verbeter je wifi en zorg voor een stabiel smart home netwerk.
+                  Verbeter je wifi en zorg voor een stabiel netwerk voor slimme
+                  lampen, camera’s, sensoren en hubs.
                 </p>
                 <span>Bekijk kenniscluster →</span>
               </Link>
 
-              {/* Beveiliging */}
               <Link href="/topic/beveiliging" className="card">
                 <h3>Beveiliging</h3>
                 <p>
-                  Houd je slimme huis veilig met camera’s, deurbellen en sensoren.
+                  Houd je huis veiliger met slimme camera’s, deurbellen,
+                  meldingen en slimme sensoren.
                 </p>
                 <span>Bekijk kenniscluster →</span>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* ================= POPULAIRE UITLEG ================= */}
+        <section className="section">
+          <div className="container">
+            <h2>Populaire uitleg & vergelijkingen</h2>
+
+            <p className="section-intro">
+              Eerst begrijpen hoe smart home werkt? Begin met deze populaire
+              artikelen over protocollen, hubs en slimme keuzes.
+            </p>
+
+            <div className="grid-3">
+              <Link href="/blog/wat-is-zigbee" className="card">
+                <h3>Wat is Zigbee?</h3>
+                <p>
+                  Ontdek wat Zigbee is, waarom het populair is en wanneer het
+                  slimmer is dan wifi.
+                </p>
+                <span>Lees artikel →</span>
+              </Link>
+
+              <Link href="/blog/wat-is-matter" className="card">
+                <h3>Wat is Matter?</h3>
+                <p>
+                  Lees hoe Matter werkt en waarom deze nieuwe standaard
+                  belangrijk is voor de toekomst van smart home.
+                </p>
+                <span>Lees artikel →</span>
+              </Link>
+
+              <Link
+                href="/blog/zigbee-vs-zwave-vs-matter-vs-wifi"
+                className="card"
+              >
+                <h3>Zigbee vs Z-Wave vs Matter vs Wi-Fi</h3>
+                <p>
+                  Vergelijk de belangrijkste smart home protocollen en ontdek
+                  wat het beste past bij jouw situatie.
+                </p>
+                <span>Lees vergelijking →</span>
               </Link>
             </div>
           </div>
@@ -149,6 +257,53 @@ export default function HomePage() {
 
         {/* ================= CATEGORIEËN ================= */}
         <Categories />
+
+        {/* ================= PROBLEEMGERICHTE INGANGEN ================= */}
+        <section className="section">
+          <div className="container">
+            <h2>Smart home per situatie</h2>
+
+            <p className="section-intro">
+              Niet iedereen zoekt hetzelfde product. Soms zoek je vooral een
+              oplossing voor een situatie thuis. Begin dan hier.
+            </p>
+
+            <div className="grid-3">
+              <Link
+                href="/aanraders/beste-slimme-producten-voor-kinderen"
+                className="card"
+              >
+                <h3>Smart home voor kinderen</h3>
+                <p>
+                  Nachtverlichting, sensoren, babycamera’s en slimme routines
+                  voor meer veiligheid en rust in huis.
+                </p>
+                <span>Bekijk oplossingen →</span>
+              </Link>
+
+              <Link
+                href="/aanraders/beste-slimme-producten-voor-huisdieren"
+                className="card"
+              >
+                <h3>Smart home voor huisdieren</h3>
+                <p>
+                  Toezicht, meldingen en automatiseringen om je hond, kat of
+                  aquarium beter te monitoren.
+                </p>
+                <span>Bekijk oplossingen →</span>
+              </Link>
+
+              <Link href="/aanraders/beste-slimme-camera" className="card">
+                <h3>Huis beveiligen</h3>
+                <p>
+                  Bekijk slimme camera’s, deurbellen en sensoren voor meer
+                  veiligheid en controle rondom je woning.
+                </p>
+                <span>Bekijk beveiliging →</span>
+              </Link>
+            </div>
+          </div>
+        </section>
 
         {/* ================= TIPS ================= */}
         <section className="section">
@@ -166,8 +321,9 @@ export default function HomePage() {
             <h2>Tips & uitleg</h2>
 
             <p className="section-intro">
-              Praktische uitleg over slimme verlichting, sensoren, hubs en
-              netwerken. Begrijp hoe je smart home werkt.
+              Praktische uitleg over slimme verlichting, sensoren, hubs,
+              automatiseringen en netwerken. Begrijp hoe je smart home werkt en
+              voorkom miskopen.
             </p>
 
             <Link href="/tips" className="btn btn-primary">
@@ -192,12 +348,12 @@ export default function HomePage() {
             <h2>How To Smart Home</h2>
 
             <p className="section-intro">
-              Stap-voor-stap handleidingen om je smart home correct in te
-              stellen — zonder technisch gedoe.
+              Stap-voor-stap handleidingen om je smart home goed in te stellen —
+              zonder technisch gedoe en met duidelijke uitleg.
             </p>
 
             <Link href="/how-to" className="btn btn-primary">
-              Bekijk alle How To handleidingen →
+              Bekijk alle how-to handleidingen →
             </Link>
           </div>
         </section>
@@ -218,13 +374,49 @@ export default function HomePage() {
             <h2>Blog</h2>
 
             <p className="section-intro">
-              Vergelijkingen en diepgaande uitleg over Zigbee, Matter,
-              automatiseringen en slimme keuzes.
+              Lees vergelijkingen, uitleg en slimme keuzes over Zigbee, Matter,
+              Homey, Home Assistant, wifi en automatiseringen.
             </p>
 
             <Link href="/blog" className="btn btn-primary">
               Bekijk alle blogs →
             </Link>
+          </div>
+        </section>
+
+        {/* ================= EXTRA INTERNE LINKS ================= */}
+        <section className="section">
+          <div className="container">
+            <h2>Veel gezochte pagina’s</h2>
+
+            <div className="grid-3">
+              <Link href="/aanraders/beste-slimme-stekkers" className="card">
+                <h3>Beste slimme stekkers</h3>
+                <p>
+                  Vergelijk wifi, Zigbee en Matter slimme stekkers met en zonder
+                  energiemeting.
+                </p>
+                <span>Bekijk koopgids →</span>
+              </Link>
+
+              <Link href="/aanraders/beste-slimme-deurbel" className="card">
+                <h3>Beste slimme deurbel</h3>
+                <p>
+                  Bekijk de beste slimme deurbellen voor bedraad, accu en
+                  smart home integratie.
+                </p>
+                <span>Bekijk koopgids →</span>
+              </Link>
+
+              <Link href="/blog/home-assistant-vs-homey" className="card">
+                <h3>Home Assistant vs Homey</h3>
+                <p>
+                  Vergelijk gebruiksgemak, automatiseringen en flexibiliteit en
+                  ontdek welke hub beter bij jou past.
+                </p>
+                <span>Lees vergelijking →</span>
+              </Link>
+            </div>
           </div>
         </section>
 
