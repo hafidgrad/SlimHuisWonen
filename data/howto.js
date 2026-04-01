@@ -513,6 +513,238 @@ export const howto = [
       </p>
     </>
   ),
-}
+},
+{
+  slug: "lamp-automatisch-aan-bij-beweging",
+  title: "Hoe laat je een lamp automatisch aangaan bij beweging?",
+  description:
+    "Wil je dat je lamp automatisch aangaat bij beweging? Ontdek stap voor stap hoe je een bewegingssensor koppelt aan slimme verlichting met of zonder hub.",
+  image: "/images/how-to/lamp-automatisch-aan-bij-beweging.png",
+  category: "How To",
+  available: true,
+
+  related: [
+    "wat-is-een-bewegingssensor",
+    "wat-is-slimme-verlichting",
+    "beste-smart-home-hub"
+  ],
+
+  content: (
+    <>
+      <p className="section-intro">
+        Wil je dat een lamp automatisch aangaat zodra je een ruimte binnenkomt?
+        Met een <strong>bewegingssensor</strong> en slimme verlichting maak je
+        dit eenvoudig. Ideaal voor hal, trap, toilet of buitenverlichting.
+      </p>
+
+      <h2>Wat heb je nodig?</h2>
+      <ul>
+        <li>Slimme lamp of slimme schakelaar</li>
+        <li>Bewegingssensor</li>
+        <li>Eventueel een smart home hub (bij Zigbee)</li>
+        <li>App of systeem zoals Homey of Home Assistant</li>
+      </ul>
+
+      <h2>Stap 1: Installeer je slimme lamp</h2>
+      <p>
+        Zorg dat je lamp werkt via de app en dat je deze handmatig kunt bedienen.
+        Dit is de basis voordat je automatiseringen toevoegt.
+      </p>
+
+      <h2>Stap 2: Koppel de bewegingssensor</h2>
+      <p>
+        Voeg de bewegingssensor toe aan je app of hub. Controleer of de sensor
+        beweging detecteert en meldingen geeft.
+      </p>
+
+      <h2>Stap 3: Maak een automatisering</h2>
+      <p>
+        Maak een regel zoals:
+      </p>
+
+      <ul>
+        <li><strong>Als:</strong> beweging gedetecteerd</li>
+        <li><strong>Dan:</strong> lamp aan</li>
+      </ul>
+
+      <h2>Stap 4: Stel extra voorwaarden in</h2>
+      <p>
+        Voor een betere ervaring kun je extra voorwaarden toevoegen:
+      </p>
+
+      <ul>
+        <li>Alleen in de avond of nacht</li>
+        <li>Alleen als het donker is</li>
+        <li>Automatisch uit na 1 of 5 minuten</li>
+      </ul>
+
+      <h2>Veelgemaakte fouten</h2>
+      <ul>
+        <li>Sensor verkeerd geplaatst (detectiehoek)</li>
+        <li>Lamp niet gekoppeld aan hetzelfde systeem</li>
+        <li>Geen vertraging ingesteld voor uitschakelen</li>
+      </ul>
+
+      <h2>Waar is dit het handigst?</h2>
+      <ul>
+        <li>Hal en gang</li>
+        <li>Trap of overloop</li>
+        <li>Toilet</li>
+        <li>Buiten bij de voordeur</li>
+      </ul>
+
+      <h2>Conclusie</h2>
+      <p>
+        Een lamp automatisch laten aangaan bij beweging is een van de
+        eenvoudigste én meest handige smart home automatiseringen. Met een
+        sensor en slimme verlichting maak je je huis direct comfortabeler.
+      </p>
+    </>
+  ),
+},
+{
+  slug: "slimme-verlichting-koppelen-lukt-niet",
+  title: "Slimme verlichting koppelen lukt niet? Zo los je het op",
+  description:
+    "Lukt het niet om slimme verlichting te koppelen? Ontdek de meest voorkomende problemen en oplossingen voor wifi en Zigbee lampen.",
+  image: "/images/how-to/slimme-verlichting-koppelen-lukt-niet.png",
+  category: "How To",
+  available: true,
+
+  related: [
+    "wat-is-slimme-verlichting",
+    "wat-is-zigbee",
+    "beste-smart-home-hub"
+  ],
+
+  content: (
+    <>
+      <p className="section-intro">
+        Lukt het niet om je <strong>slimme verlichting</strong> te koppelen?
+        Dit is een veelvoorkomend probleem. Gelukkig zijn de meeste issues
+        snel op te lossen.
+      </p>
+
+      <h2>Controleer je wifi</h2>
+      <p>
+        Veel slimme lampen werken alleen op 2.4 GHz wifi. Controleer of je
+        telefoon en lamp op hetzelfde netwerk zitten.
+      </p>
+
+      <h2>Reset de lamp</h2>
+      <p>
+        Zet de lamp een paar keer snel aan en uit om hem te resetten. Daarna kun
+        je opnieuw proberen te koppelen.
+      </p>
+
+      <h2>Gebruik de juiste app</h2>
+      <p>
+        Controleer of je de juiste app gebruikt voor jouw merk. Sommige lampen
+        werken niet met universele apps zonder hub.
+      </p>
+
+      <h2>Zigbee? Controleer je hub</h2>
+      <p>
+        Gebruik je Zigbee verlichting? Zorg dat je hub actief is en dat de lamp
+        dichtbij genoeg is tijdens het koppelen.
+      </p>
+
+      <h2>Veelvoorkomende problemen</h2>
+      <ul>
+        <li>Verkeerde wifi netwerk</li>
+        <li>Te ver van router of hub</li>
+        <li>App niet up-to-date</li>
+        <li>Lamp al gekoppeld aan ander account</li>
+      </ul>
+
+      <h2>Wanneer werkt het meestal weer?</h2>
+      <p>
+        In de meeste gevallen werkt het na een reset en opnieuw koppelen binnen
+        een paar minuten.
+      </p>
+
+      <h2>Conclusie</h2>
+      <p>
+        Problemen met koppelen komen vaak door wifi instellingen of verkeerde
+        apps. Door systematisch te controleren los je het meestal snel op.
+      </p>
+    </>
+  ),
+},
+{
+  slug: "bewegingssensor-instellen",
+  title: "Bewegingssensor instellen: zo werkt het stap voor stap",
+  description:
+    "Een bewegingssensor instellen? Ontdek hoe je een sensor koppelt, instelt en gebruikt voor slimme automatiseringen in huis.",
+  image: "/images/how-to/bewegingssensor-instellen.png",
+  category: "How To",
+  available: true,
+
+  related: [
+    "wat-is-een-bewegingssensor",
+    "wat-is-slimme-verlichting",
+    "beste-smart-home-hub"
+  ],
+
+  content: (
+    <>
+      <p className="section-intro">
+        Een <strong>bewegingssensor instellen</strong> is een van de beste
+        manieren om je huis slimmer te maken. Je kunt verlichting,
+        meldingen en automatiseringen automatisch laten werken.
+      </p>
+
+      <h2>Stap 1: Kies de juiste plek</h2>
+      <p>
+        Plaats de sensor op een plek waar beweging goed wordt gedetecteerd,
+        zoals een doorgang of ingang van een ruimte.
+      </p>
+
+      <h2>Stap 2: Koppel de sensor</h2>
+      <p>
+        Voeg de sensor toe aan je app of smart home hub. Controleer of de sensor
+        correct reageert op beweging.
+      </p>
+
+      <h2>Stap 3: Maak een automatisering</h2>
+      <p>
+        Stel in wat er moet gebeuren bij beweging:
+      </p>
+
+      <ul>
+        <li>Lamp aanzetten</li>
+        <li>Melding sturen</li>
+        <li>Alarm activeren</li>
+      </ul>
+
+      <h2>Stap 4: Stel vertraging in</h2>
+      <p>
+        Zorg dat de sensor niet te snel uitschakelt. Bijvoorbeeld na 1 of 5
+        minuten geen beweging.
+      </p>
+
+      <h2>Tips voor betere werking</h2>
+      <ul>
+        <li>Niet richten op ramen (zonlicht)</li>
+        <li>Let op huisdieren</li>
+        <li>Gebruik meerdere sensoren voor grotere ruimtes</li>
+      </ul>
+
+      <h2>Waar gebruik je het voor?</h2>
+      <ul>
+        <li>Automatische verlichting</li>
+        <li>Beveiliging</li>
+        <li>Energiebesparing</li>
+      </ul>
+
+      <h2>Conclusie</h2>
+      <p>
+        Met een goed ingestelde bewegingssensor maak je je smart home direct
+        slimmer en gebruiksvriendelijker. Vooral in combinatie met verlichting
+        is dit een van de meest praktische automatiseringen.
+      </p>
+    </>
+  ),
+},
 
 ];
