@@ -746,5 +746,263 @@ export const howto = [
     </>
   ),
 },
+{
+  slug: "smart-home-zonder-hub-instellen",
+  title: "Smart home zonder hub instellen: zo werkt het stap voor stap",
+  description:
+    "Wil je een smart home zonder hub instellen? Ontdek hoe je slimme apparaten via wifi koppelt en automatiseringen maakt zonder bridge.",
+  image: "/images/how-to/smart-home-zonder-hub-instellen.png",
+  category: "How To",
+  available: true,
+
+  related: [
+    "smart-home-zonder-hub",
+    "wat-is-slimme-verlichting",
+    "beste-smart-home-hub"
+  ],
+
+  content: (
+    <>
+      <p className="section-intro">
+        Een <strong>smart home zonder hub instellen</strong> is de makkelijkste
+        manier om te beginnen. Je gebruikt slimme apparaten die direct via wifi
+        werken en bedient alles via een app op je telefoon.
+      </p>
+
+      <h2>Wat heb je nodig voor een smart home zonder hub?</h2>
+      <ul>
+        <li>Wifi netwerk (2.4 GHz)</li>
+        <li>Slimme apparaten zoals lampen en stekkers</li>
+        <li>De juiste app per merk</li>
+      </ul>
+
+      <h2>Stap 1: Installeer je eerste slimme apparaat</h2>
+      <p>
+        Begin met één apparaat, bijvoorbeeld een{" "}
+        <Link href="/blog/wat-is-slimme-verlichting">
+          slimme lamp
+        </Link>{" "}
+        of slimme stekker. Koppel deze via de app van het merk.
+      </p>
+
+      <h2>Stap 2: Voeg meerdere apparaten toe</h2>
+      <p>
+        Breid uit met extra apparaten zoals lampen, stekkers of camera’s. Let
+        erop dat elk merk vaak zijn eigen app gebruikt.
+      </p>
+
+      <h2>Stap 3: Gebruik eenvoudige automatiseringen</h2>
+      <ul>
+        <li>Lamp aan bij zonsondergang</li>
+        <li>Stekker uit op vaste tijden</li>
+        <li>Melding bij beweging</li>
+      </ul>
+
+      <h2>Nadelen van een smart home zonder hub</h2>
+      <ul>
+        <li>Meerdere apps nodig</li>
+        <li>Minder geavanceerde automatiseringen</li>
+        <li>Moeilijker combineren van merken</li>
+      </ul>
+
+      <h2>Wanneer is een smart home hub beter?</h2>
+      <p>
+        Wil je sensoren, automatiseringen en meerdere merken combineren? Dan is
+        een{" "}
+        <Link href="/aanraders/beste-smart-home-hub">
+          smart home hub
+        </Link>{" "}
+        vaak een betere keuze.
+      </p>
+
+      <p>
+        Lees ook:{" "}
+        <Link href="/blog/smart-home-zonder-hub">
+          Smart home zonder hub uitleg
+        </Link>
+      </p>
+
+      <h2>Conclusie</h2>
+      <p>
+        Zonder hub starten is simpel en ideaal voor beginners. Maar wil je
+        uitbreiden en alles slim laten samenwerken, dan is een hub vaak de
+        volgende stap.
+      </p>
+    </>
+  ),
+},
+{
+  slug: "slimme-stekker-instellen",
+  title: "Slimme stekker instellen: zo werkt het stap voor stap",
+  description:
+    "Een slimme stekker instellen? Ontdek hoe je een smart plug koppelt, gebruikt en automatiseert voor meer gemak en energiebesparing.",
+  image: "/images/how-to/slimme-stekker-instellen.png",
+  category: "How To",
+  available: true,
+
+  related: [
+    "beste-slimme-stekkers",
+    "wat-is-matter",
+    "beste-smart-home-hub"
+  ],
+
+  content: (
+    <>
+      <p className="section-intro">
+        Een <strong>slimme stekker instellen</strong> is een van de makkelijkste
+        manieren om je huis slimmer te maken. Je kunt apparaten op afstand
+        bedienen en automatiseren.
+      </p>
+
+      <h2>Stap 1: Slimme stekker aansluiten</h2>
+      <p>
+        Steek de slimme stekker in het stopcontact en sluit een apparaat aan,
+        zoals een lamp of koffiezetapparaat.
+      </p>
+
+      <h2>Stap 2: Slimme stekker koppelen met wifi</h2>
+      <p>
+        Open de app van het merk en voeg de stekker toe. Zorg dat je wifi op
+        2.4 GHz staat voor een stabiele verbinding.
+      </p>
+
+      <h2>Stap 3: Test de bediening</h2>
+      <p>
+        Controleer of je het apparaat via de app aan en uit kunt zetten.
+      </p>
+
+      <h2>Stap 4: Automatiseringen instellen</h2>
+      <ul>
+        <li>Automatisch aan bij zonsondergang</li>
+        <li>Uitschakelen op vaste tijden</li>
+        <li>Koppelen aan andere slimme apparaten</li>
+      </ul>
+
+      <h2>Waar gebruik je een slimme stekker voor?</h2>
+      <ul>
+        <li>Verlichting</li>
+        <li>Koffiezetapparaat</li>
+        <li>Ventilator of verwarming</li>
+        <li>Sluipverbruik verminderen</li>
+      </ul>
+
+      <h2>Tip: kies een slimme stekker met energiemeting</h2>
+      <p>
+        Wil je inzicht in je verbruik? Lees dan ook:{" "}
+        <Link href="/blog/slimme-stekker-verbruik-meten">
+          slimme stekker verbruik meten
+        </Link>
+      </p>
+
+      <h2>Beste slimme stekkers bekijken</h2>
+      <p>
+        Bekijk onze{" "}
+        <Link href="/aanraders/beste-slimme-stekkers">
+          beste slimme stekkers
+        </Link>{" "}
+        voor een goede keuze.
+      </p>
+
+      <h2>Conclusie</h2>
+      <p>
+        Een slimme stekker is een eenvoudige upgrade met veel voordelen. Binnen
+        een paar minuten heb je meer controle over je apparaten en kun je starten
+        met automatiseringen.
+      </p>
+    </>
+  ),
+},
+{
+  slug: "homey-automatisering-maken",
+  title: "Hoe maak je een automatisering in Homey?",
+  description:
+    "Automatisering maken in Homey? Ontdek stap voor stap hoe je flows instelt en slimme apparaten automatisch laat samenwerken.",
+  image: "/images/how-to/homey-automatisering-maken.png",
+  category: "How To",
+  available: true,
+
+  related: [
+    "home-assistant-vs-homey",
+    "beste-smart-home-hub",
+    "wat-is-zigbee"
+  ],
+
+  content: (
+    <>
+      <p className="section-intro">
+        Met <strong>Homey automatiseringen</strong> (flows) kun je apparaten
+        automatisch laten samenwerken. Denk aan verlichting, sensoren en
+        meldingen die vanzelf reageren.
+      </p>
+
+      <h2>Wat is een Homey flow?</h2>
+      <p>
+        Een flow bestaat uit drie onderdelen: Als, En en Dan.
+      </p>
+
+      <ul>
+        <li><strong>Als:</strong> trigger (bijvoorbeeld beweging)</li>
+        <li><strong>En:</strong> voorwaarden</li>
+        <li><strong>Dan:</strong> actie</li>
+      </ul>
+
+      <h2>Stap 1: Open de Homey app</h2>
+      <p>
+        Ga naar flows en maak een nieuwe automatisering.
+      </p>
+
+      <h2>Stap 2: Kies een trigger</h2>
+      <ul>
+        <li>Beweging gedetecteerd</li>
+        <li>Deur open</li>
+        <li>Tijdstip bereikt</li>
+      </ul>
+
+      <h2>Stap 3: Voeg voorwaarden toe</h2>
+      <ul>
+        <li>Alleen in de avond</li>
+        <li>Alleen als iemand thuis is</li>
+      </ul>
+
+      <h2>Stap 4: Kies een actie</h2>
+      <ul>
+        <li>Lamp aanzetten</li>
+        <li>Melding sturen</li>
+        <li>Stekker uitschakelen</li>
+      </ul>
+
+      <h2>Voorbeeld automatisering</h2>
+      <ul>
+        <li>Als: beweging in hal</li>
+        <li>En: het is donker</li>
+        <li>Dan: lamp aan</li>
+      </ul>
+
+      <h2>Combineer met slimme apparaten</h2>
+      <p>
+        Homey werkt goed met protocollen zoals{" "}
+        <Link href="/blog/wat-is-zigbee">
+          Zigbee
+        </Link>{" "}
+        en andere smart home systemen.
+      </p>
+
+      <h2>Homey vs andere systemen</h2>
+      <p>
+        Twijfel je tussen systemen? Lees:{" "}
+        <Link href="/blog/home-assistant-vs-homey">
+          Home Assistant vs Homey
+        </Link>
+      </p>
+
+      <h2>Conclusie</h2>
+      <p>
+        Met Homey flows maak je je smart home echt slim. Door triggers,
+        voorwaarden en acties te combineren krijg je automatiseringen die je
+        dagelijks gebruikt.
+      </p>
+    </>
+  ),
+},
 
 ];
