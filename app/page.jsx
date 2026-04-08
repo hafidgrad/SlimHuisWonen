@@ -40,34 +40,48 @@ export default function HomePage() {
 
           <div className="hero-banner-content">
             <div className="container">
-              <div className="hero-banner-inner hero-banner-inner--mobile">
-                <h1>Maak je huis slim — zonder gedoe</h1>
+              <div className="hero-banner-inner">
+                <div className="hero-banner-left">
+                  <h1>Maak je huis slim — zonder gedoe</h1>
 
-                <p>
-                  Slim huis beginnen? Ontdek de beste smart home producten,
-                  praktische tips, koopgidsen en automatiseringen voor slimme
-                  verlichting, sensoren, camera’s, hubs en meer.
-                </p>
+                  <p>
+                    Slim huis beginnen? Ontdek de beste smart home producten,
+                    praktische tips, koopgidsen en automatiseringen voor slimme
+                    verlichting, sensoren, camera’s, hubs en meer.
+                  </p>
 
-                <div className="hero-banner-actions">
-                  <Link
-                    href="/aanraders"
-                    className="btn hero-btn hero-primary"
-                  >
-                    Bekijk koopgidsen →
-                  </Link>
+                  <div className="hero-banner-actions">
+                    <Link
+                      href="/aanraders"
+                      className="btn hero-btn hero-primary"
+                    >
+                      Bekijk koopgidsen →
+                    </Link>
 
-                  <Link
-                    href="/blog"
-                    className="btn hero-btn hero-secondary"
-                  >
-                    Lees uitleg & vergelijkingen
-                  </Link>
+                    <Link
+                      href="/blog"
+                      className="btn hero-btn hero-secondary"
+                    >
+                      Lees uitleg & vergelijkingen
+                    </Link>
+                  </div>
+
+                  <a href="#koopgidsen" className="scroll-indicator">
+                    Ontdek meer <span className="scroll-arrow">↓</span>
+                  </a>
                 </div>
 
-                <a href="#koopgidsen" className="scroll-indicator">
-                  Ontdek meer <span className="scroll-arrow">↓</span>
-                </a>
+                <div className="hero-banner-right">
+                  <div className="hero-quote">
+                    <p className="hero-quote__heading">
+                      Waar begin je met een slim huis?
+                    </p>
+                    <p className="hero-quote__sub">
+                      Volg mijn koopgidsen en tips — speciaal voor mensen die
+                      gewoon willen dat het werkt.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
