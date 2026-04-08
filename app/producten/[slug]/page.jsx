@@ -5,6 +5,37 @@ import Footer from "@/components/Footer";
 
 export const dynamic = "force-dynamic";
 
+export async function generateMetadata({ params }) {
+  const product = getProductBySlug(params.slug);
+
+  if (!product) {
+    return {
+      title: "Product niet gevonden | SlimHuisWonen",
+    };
+  }
+
+  const title = `${product.name} – ${product.brand} | SlimHuisWonen`;
+  const description =
+    product.description ||
+    `Bekijk ${product.name} van ${product.brand} op SlimHuisWonen.`;
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: `https://slimhuiswonen.nl/producten/${product.slug}`,
+    },
+    openGraph: {
+      title: product.name,
+      description,
+      url: `https://slimhuiswonen.nl/producten/${product.slug}`,
+      ...(product.image && {
+        images: [{ url: `https://slimhuiswonen.nl${product.image}` }],
+      }),
+    },
+  };
+}
+
 export async function generateStaticParams() {
   return getAllProducts().map((p) => ({
     slug: p.slug,
@@ -74,8 +105,41 @@ export default function ProductPage({ params }) {
   const rawVideoUrl = getVideoUrl(product);
   const youtubeEmbedUrl = toYouTubeEmbedUrl(rawVideoUrl);
 
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name,
+    description,
+    brand: {
+      "@type": "Brand",
+      name: brand,
+    },
+    ...(product.image && {
+      image: `https://slimhuiswonen.nl${product.image}`,
+    }),
+    ...(product.rating && {
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: product.rating,
+        bestRating: 5,
+        reviewCount: 1,
+      },
+    }),
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "EUR",
+      availability: "https://schema.org/InStock",
+      ...(amazonUrl && { url: amazonUrl }),
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
+
       <Header />
 
       <main>
