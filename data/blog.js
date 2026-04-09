@@ -248,6 +248,18 @@ export const blogPosts = [
         </Link>
       </p>
 
+      <p>
+        Voor een bredere keuze tussen slimme protocollen en hubs, bekijk ook
+        <Link href="/blog/beste-smart-home-hub">
+          de smart home hub-vergelijking
+        </Link>{" "}
+        en
+        <Link href="/blog/zigbee-vs-zwave-vs-matter-vs-wifi">
+          de vergelijking tussen Zigbee, Z-Wave, Matter en Wi-Fi
+        </Link>
+        .
+      </p>
+
       <h2>Moet je al je apparaten vervangen?</h2>
       <p>
         Nee. Matter komt er vooral <em>naast</em>. Veel bestaande Zigbee- en
@@ -593,6 +605,15 @@ export const blogPosts = [
         </li>
       </ul>
 
+      <p>
+        Wil je deze keuze nog beter onderbouwen? Lees dan ook
+        <Link href="/blog/wat-is-matter">Wat is Matter?</Link> en
+        <Link href="/blog/zigbee-vs-zwave-vs-matter-vs-wifi">
+          Zigbee vs Z-Wave vs Matter vs Wi-Fi
+        </Link>
+        .
+      </p>
+
       <h2>Globaal verschil tussen de bekendste hubs</h2>
       <ul>
         <li>
@@ -799,6 +820,19 @@ export const blogPosts = [
         <Link href="/producten/home-assistant-green">
           Home Assistant Green
         </Link>
+      </p>
+
+      <p>
+        Wil je meer achtergrond over hubs, keuze en compatibiliteit?
+        Bekijk dan ook
+        <Link href="/tips/wat-is-een-smart-home-hub">
+          wat een smart home hub doet
+        </Link>
+        en onze koopgids
+        <Link href="/aanraders/beste-smart-home-hub">
+          beste smart home hub
+        </Link>
+        .
       </p>
 
       <h2>Conclusie</h2>

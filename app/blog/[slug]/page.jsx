@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { blogPosts } from "@/data/blog";
+import { tips } from "@/data/tips";
+import { aanraders } from "@/data/aanraders";
 import RelatedContent from "@/components/RelatedContent";
 
 export async function generateMetadata({ params }) {
@@ -62,7 +64,18 @@ export default function BlogPostPage({ params }) {
 
   // ✅ veilig: als related ontbreekt of leeg is -> []
   const relatedItems = (post.related || [])
-    .map((slug) => blogPosts.find((p) => p.slug === slug && p.available))
+    .map((slug) => {
+      const blogItem = blogPosts.find((p) => p.slug === slug && p.available);
+      if (blogItem) return { ...blogItem, basePath: "blog" };
+
+      const tipItem = tips.find((p) => p.slug === slug && p.available);
+      if (tipItem) return { ...tipItem, basePath: "tips" };
+
+      const guideItem = aanraders.find((g) => g.slug === slug);
+      if (guideItem) return { ...guideItem, basePath: "aanraders" };
+
+      return null;
+    })
     .filter(Boolean);
 
   return (

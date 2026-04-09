@@ -7,6 +7,7 @@ import { aanraders } from "@/data/aanraders";
 import { blogPosts } from "@/data/blog";
 import BuyGuideProductCard from "@/components/BuyGuideProductCard";
 import AmazonSearchCta from "@/components/AmazonSearchCta";
+import RelatedContent from "@/components/RelatedContent";
 
 /* ================= Amazon zoekterm mapping ================= */
 
@@ -66,17 +67,24 @@ export default function AanraderDetailPage({ params }) {
 
   const relatedBlog = blogPosts.find((b) => b.slug === guide.relatedBlog);
 
-const relatedBlogs = guide.relatedBlogs
-  ? guide.relatedBlogs
-      .map((slug) => blogPosts.find((b) => b.slug === slug))
-      .filter(Boolean)
-  : [];
+  const relatedBlogs = guide.relatedBlogs
+    ? guide.relatedBlogs
+        .map((slug) => blogPosts.find((b) => b.slug === slug))
+        .filter(Boolean)
+    : [];
 
-const relatedGuides = guide.relatedGuides
-  ? guide.relatedGuides
-      .map((slug) => aanraders.find((g) => g.slug === slug))
-      .filter(Boolean)
-  : [];
+  const relatedGuides = guide.relatedGuides
+    ? guide.relatedGuides
+        .map((slug) => aanraders.find((g) => g.slug === slug))
+        .filter(Boolean)
+    : [];
+
+  const relatedItems = [
+    ...(relatedBlog ? [{ ...relatedBlog, basePath: "blog" }] : []),
+    ...relatedBlogs.map((post) => ({ ...post, basePath: "blog" })),
+    ...relatedGuides.map((item) => ({ ...item, basePath: "aanraders" })),
+  ];
+
   const amazonSearchTerm = getAmazonSearchTerm(params.slug);
 
   /* Structured Data: ItemList */
@@ -208,50 +216,12 @@ const relatedGuides = guide.relatedGuides
             ))}
           </div>
 
-          {(relatedBlog || relatedBlogs.length > 0 || relatedGuides.length > 0) && (
-  <>
-    <hr />
-
-    {relatedBlog && (
-      <>
-        <h2>Meer uitleg nodig?</h2>
-        <p>
-          Twijfel je nog? Lees ook{" "}
-          <Link href={`/blog/${relatedBlog.slug}`}>
-            {relatedBlog.title}
-          </Link>
-          .
-        </p>
-      </>
-    )}
-
-    {relatedBlogs.length > 0 && (
-      <>
-        <h2>Gerelateerde artikelen</h2>
-        <ul>
-          {relatedBlogs.map((post) => (
-            <li key={post.slug}>
-              <Link href={`/blog/${post.slug}`}>{post.title}</Link>
-            </li>
-          ))}
-        </ul>
-      </>
-    )}
-
-    {relatedGuides.length > 0 && (
-      <>
-        <h2>Gerelateerde koopgidsen</h2>
-        <ul>
-          {relatedGuides.map((item) => (
-            <li key={item.slug}>
-              <Link href={`/aanraders/${item.slug}`}>{item.title}</Link>
-            </li>
-          ))}
-        </ul>
-      </>
-    )}
-  </>
-)}
+          {relatedItems.length > 0 && (
+            <>
+              <hr />
+              <RelatedContent items={relatedItems} basePath="aanraders" />
+            </>
+          )}
 
           {guide.faq && guide.faq.length > 0 && (
             <>

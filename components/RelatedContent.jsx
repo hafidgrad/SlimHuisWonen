@@ -12,7 +12,7 @@ export default function RelatedContent({ items, basePath }) {
         {items.map((item) => (
           <Link
             key={item.slug}
-            href={`/${basePath}/${item.slug}`}
+            href={`/${item.basePath ?? basePath}/${item.slug}`}
             className="relatedCard"
           >
             <div className="imageWrap">
