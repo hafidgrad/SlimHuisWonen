@@ -11,8 +11,11 @@ export const dynamic = "force-dynamic";
 const CATEGORY_ALIASES = {
   verlichting: "slimme-verlichting",
   beveiliging: "sensoren",
-  cameras: "slimme-deurbellen",
-  energie: "slimme-thermostaten",
+  cameras: "slimme-cameras",
+  energie: "energie-monitors",
+  hubs: "smart-home-hubs",
+  sloten: "slimme-sloten",
+  wifi: "mesh-wifi",
 };
 
 function normalizeCategorySlug(slug) {
@@ -29,10 +32,13 @@ const AMAZON_SEARCH_TERMS = {
   "slimme-verlichting": "slimme verlichting",
   "slimme-stekkers": "slimme stekker wifi",
   "slimme-deurbellen": "slimme deurbel met camera",
-  "sensoren": "bewegingssensor wifi",
-  "slimme-thermostaten": "slimme thermostaat wifi",
-  "slimme-camera": "slimme beveiligingscamera wifi",
-  "smart-home-hub": "smart home hub",
+  "slimme-cameras": "slimme beveiligingscamera wifi",
+  "sensoren": "bewegingssensor zigbee",
+  "slimme-thermostaten": "slimme thermostaat",
+  "slimme-sloten": "slim deurslot",
+  "smart-home-hubs": "smart home hub homey",
+  "mesh-wifi": "mesh wifi systeem",
+  "energie-monitors": "slimme energiemeter p1",
 };
 
 function getAmazonSearchTerm(slug) {

@@ -2033,4 +2033,733 @@ export const blogPosts = [
     </>
   ),
 },
+
+// ✅ NIEUW: Beste slimme thermostaat
+{
+  slug: "beste-slimme-thermostaat",
+  title: "Beste slimme thermostaat 2025: Tado, Netatmo of Nest?",
+  description:
+    "Vergelijk de beste slimme thermostaten van 2025. Tado, Netatmo, Nest en Honeywell — welke past bij jouw huis en verwarmingssysteem?",
+  image: "/images/blog/beste-slimme-thermostaat.png",
+  category: "Vergelijking",
+  available: true,
+
+  related: [
+    "home-assistant-vs-homey",
+    "beste-smart-home-hub",
+    "wat-zijn-slimme-sensoren",
+  ],
+
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Wat is de beste slimme thermostaat?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tado is populair door de geofencing en energiebesparing. Netatmo heeft een mooie uitstraling en werkt goed zonder abonnement. Nest is ideaal als je al Google-producten gebruikt. De beste keuze hangt af van jouw verwarmingssysteem en smart home platform.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Werkt een slimme thermostaat met mijn cv-ketel?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "De meeste slimme thermostaten werken met gangbare cv-ketels via OpenTherm of een aan/uit-verbinding. Controleer altijd de compatibiliteitslijst van de fabrikant voor jouw ketel.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Bespaar je echt energie met een slimme thermostaat?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja, gemiddeld 15–25% op je stookkosten. Functies zoals geofencing, aanwezigheidsdetectie en leergedrag zorgen ervoor dat je huis alleen warm is als dat nodig is.",
+        },
+      },
+    ],
+  },
+
+  content: (
+    <>
+      <p className="section-intro">
+        Een slimme thermostaat is een van de meest renderende smart home
+        investeringen. Je bespaart energie, hebt altijd controle via je
+        telefoon en je huis is warm als je thuiskomt. Maar welke kies je?
+      </p>
+
+      <h2>De populairste slimme thermostaten vergeleken</h2>
+      <p>
+        In Nederland zijn Tado, Netatmo, Nest en Honeywell Evohome de
+        bekendste opties. Ze werken allemaal via een app maar hebben
+        duidelijke verschillen.
+      </p>
+
+      <h3>Tado</h3>
+      <p>
+        Tado is een van de populairste keuzes in Nederland. De thermostaat
+        leert wanneer je thuis bent via geofencing en past de temperatuur
+        automatisch aan.
+      </p>
+      <ul>
+        <li><strong>Sterk:</strong> geofencing, energiebesparingsmodus, kamerregeling</li>
+        <li><strong>Zwak:</strong> sommige functies vereisen een betaald abonnement</li>
+        <li><strong>Compatibel met:</strong> Alexa, Google Home, Apple HomeKit, Homey</li>
+      </ul>
+
+      <h3>Netatmo</h3>
+      <p>
+        Netatmo heeft een strak design en werkt zonder verplicht abonnement.
+        Ideaal als je alles lokaal wilt beheren.
+      </p>
+      <ul>
+        <li><strong>Sterk:</strong> geen abonnement, Apple HomeKit, mooi design</li>
+        <li><strong>Zwak:</strong> minder geavanceerde geofencing dan Tado</li>
+        <li><strong>Compatibel met:</strong> Apple HomeKit, Alexa, Google Home</li>
+      </ul>
+
+      <h3>Google Nest Thermostat</h3>
+      <p>
+        Nest is de keuze als je al diep in het Google-ecosysteem zit. De
+        thermostaat leert je schema en werkt naadloos met Google Home.
+      </p>
+      <ul>
+        <li><strong>Sterk:</strong> leergedrag, Google Home integratie, strak design</li>
+        <li><strong>Zwak:</strong> minder geschikt buiten Google-ecosysteem</li>
+        <li><strong>Compatibel met:</strong> Google Home, beperkte andere platforms</li>
+      </ul>
+
+      <h3>Honeywell Evohome</h3>
+      <p>
+        Evohome is de keuze voor wie per kamer de temperatuur wil regelen.
+        Ideaal voor grotere woningen met meerdere zones.
+      </p>
+      <ul>
+        <li><strong>Sterk:</strong> volledige kamerregeling, OpenTherm ondersteuning</li>
+        <li><strong>Zwak:</strong> duurder, complexer te installeren</li>
+        <li><strong>Compatibel met:</strong> Alexa, Google Home, IFTTT</li>
+      </ul>
+
+      <h2>Welke thermostaat past bij jou?</h2>
+
+      <h3>Kies Tado als:</h3>
+      <ul>
+        <li>je maximaal wilt besparen op je energierekening</li>
+        <li>geofencing belangrijk voor je is</li>
+        <li>je werkt met Homey of Home Assistant</li>
+      </ul>
+
+      <h3>Kies Netatmo als:</h3>
+      <ul>
+        <li>je geen abonnement wilt betalen</li>
+        <li>je Apple HomeKit gebruikt</li>
+        <li>design voor jou belangrijk is</li>
+      </ul>
+
+      <h3>Kies Nest als:</h3>
+      <ul>
+        <li>je al Google Home producten hebt</li>
+        <li>je het leergedrag waardeert</li>
+      </ul>
+
+      <h2>Werkt het met mijn cv-ketel?</h2>
+      <p>
+        De meeste slimme thermostaten werken via <strong>OpenTherm</strong>{" "}
+        of een aan/uit aansluiting. OpenTherm is efficiënter omdat de ketel
+        modulerend werkt in plaats van aan/uit schakelen. Controleer altijd
+        de compatibiliteitslijst.
+      </p>
+
+      <p>
+        Lees ook:{" "}
+        <Link href="/blog/home-assistant-vs-homey">
+          Home Assistant vs Homey
+        </Link>{" "}
+        als je je thermostaat wilt koppelen aan een slim hub-systeem.
+      </p>
+
+      <h2>Conclusie</h2>
+      <p>
+        Voor de meeste Nederlandse huishoudens is <strong>Tado</strong> de
+        beste keuze door geofencing en brede compatibiliteit. Wil je geen
+        abonnement? Dan is <strong>Netatmo</strong> een uitstekend
+        alternatief.
+      </p>
+    </>
+  ),
+},
+
+// ✅ NIEUW: Slimme lampen zonder hub
+{
+  slug: "slimme-lampen-zonder-hub",
+  title: "Slimme lampen zonder hub: wanneer is het slim en wanneer niet?",
+  description:
+    "Slimme lampen zonder hub zijn makkelijk om te starten — maar er zijn haken en ogen. Lees wanneer wifi- en Bluetooth-lampen slim zijn en wanneer je toch een hub nodig hebt.",
+  image: "/images/blog/slimme-lampen-zonder-hub.png",
+  category: "Verlichting",
+  available: true,
+
+  related: [
+    "wat-is-zigbee",
+    "wat-is-matter",
+    "wat-is-slimme-verlichting",
+  ],
+
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Kun je slimme lampen gebruiken zonder hub?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja. Wifi-lampen en Bluetooth-lampen werken zonder aparte hub. Je bedient ze direct via een app. Nadeel: ze zijn minder betrouwbaar bij veel apparaten en je hebt per merk een aparte app nodig.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Wat is het verschil tussen Bluetooth en wifi slimme lampen?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Bluetooth-lampen werken alleen als je in de buurt bent (of via een gateway). Wifi-lampen werken ook op afstand via internet. Wifi-lampen hebben meer functionaliteit maar gebruiken meer bandbreedte op je netwerk.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Welke slimme lampen werken zonder hub?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Govee, Tapo (TP-Link), WiZ en Innr Bluetooth lampen werken zonder aparte hub. Philips Hue Bluetooth werkt ook zonder bridge maar heeft dan beperktere functies.",
+        },
+      },
+    ],
+  },
+
+  content: (
+    <>
+      <p className="section-intro">
+        Wil je starten met slimme verlichting zonder gelijk een hub te
+        kopen? Dat kan. Maar er zijn een paar dingen waar je op moet letten.
+      </p>
+
+      <h2>Hoe werken slimme lampen zonder hub?</h2>
+      <p>
+        Slimme lampen zonder hub verbinden via <strong>wifi</strong> of{" "}
+        <strong>Bluetooth</strong> rechtstreeks met je telefoon of
+        thuisnetwerk. Je hebt geen aparte bridge of gateway nodig.
+      </p>
+
+      <h3>Wifi-lampen</h3>
+      <p>
+        Wifi-lampen verbinden direct met je thuisnetwerk. Je kunt ze altijd
+        bedienen, ook als je niet thuis bent.
+      </p>
+      <ul>
+        <li>Bekende merken: Govee, Tapo (TP-Link), WiZ, IKEA Dirigera</li>
+        <li>Werkt op afstand: ja</li>
+        <li>Belasting op wifi: hoog bij veel lampen</li>
+      </ul>
+
+      <h3>Bluetooth-lampen</h3>
+      <p>
+        Bluetooth-lampen werken via je telefoon of een kleine gateway.
+        Philips Hue heeft ook een Bluetooth modus.
+      </p>
+      <ul>
+        <li>Bekende merken: Philips Hue Bluetooth, Innr Bluetooth</li>
+        <li>Werkt op afstand: alleen met gateway</li>
+        <li>Beperkt bereik: maximaal 10 meter</li>
+      </ul>
+
+      <h2>Wanneer werkt het goed zonder hub?</h2>
+      <p>
+        Voor een kleine setup is een hub niet nodig. Heb je een paar lampen
+        in één kamer en wil je ze dimmen of kleuren instellen? Dan doe je het
+        prima zonder hub.
+      </p>
+      <ul>
+        <li>Klein beginnen (1–5 lampen)</li>
+        <li>Één merk, één app</li>
+        <li>Geen complexe automatiseringen</li>
+      </ul>
+
+      <h2>Wanneer heb je tóch een hub nodig?</h2>
+      <p>
+        Zodra je meer lampen toevoegt, meerdere merken combineert of
+        automatiseringen wilt maken, wordt een hub al snel nodig.
+      </p>
+      <ul>
+        <li>Meer dan 10 wifi-apparaten: belast je netwerk</li>
+        <li>Meerdere merken: te veel losse apps</li>
+        <li>Automatiseringen op basis van sensoren: hub is noodzakelijk</li>
+        <li>Betrouwbaarheid: Zigbee via hub is stabieler</li>
+      </ul>
+
+      <p>
+        Lees meer over de alternatieven in ons artikel{" "}
+        <Link href="/blog/wat-is-zigbee">wat is Zigbee?</Link> en ontdek
+        waarom Zigbee betrouwbaarder is dan wifi voor grotere setups.
+      </p>
+
+      <h2>Philips Hue zonder bridge</h2>
+      <p>
+        Philips Hue werkt ook via Bluetooth zonder bridge. Maar je mist dan
+        functies zoals automatiseringen, zonsopgang-simulatie en bediening
+        buitenshuis. De bridge kost circa €60 en is de moeite waard als je
+        meer dan 3 lampen hebt.
+      </p>
+
+      <p>
+        Bekijk ook:{" "}
+        <Link href="/blog/philips-hue-alternatieven">
+          goedkopere alternatieven voor Philips Hue
+        </Link>
+        .
+      </p>
+
+      <h2>Conclusie</h2>
+      <p>
+        Begin je klein en simpel? Dan werkt een wifi-lamp prima zonder hub.
+        Wil je later uitbreiden of automatiseren? Kies dan voor Zigbee-lampen
+        met een hub — dat is op de lange termijn betrouwbaarder en
+        overzichtelijker.
+      </p>
+    </>
+  ),
+},
+
+// ✅ NIEUW: Google Home vs Amazon Alexa
+{
+  slug: "google-home-vs-alexa",
+  title: "Google Home vs Amazon Alexa: welk smart home systeem past bij jou?",
+  description:
+    "Google Home of Amazon Alexa? Vergelijk de twee grootste smart home platforms op compatibiliteit, spraakbediening, privacy en gebruiksgemak.",
+  image: "/images/blog/google-home-vs-alexa.png",
+  category: "Vergelijking",
+  available: true,
+
+  related: [
+    "home-assistant-vs-homey",
+    "beste-smart-home-hub",
+    "wat-is-matter",
+  ],
+
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Is Google Home beter dan Amazon Alexa?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Google Home heeft betere zoekopdrachten en werkt fijn met Android. Alexa heeft meer smart home integraties en skills. Welke beter is hangt af van je apparaten en ecosysteem.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Welke smart home producten werken met Google Home én Alexa?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "De meeste populaire merken werken met beide: Philips Hue, IKEA, Tapo, Govee, Tado en meer. Controleer altijd de productpagina voor actuele compatibiliteit.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Kan ik Google Home en Alexa tegelijk gebruiken?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja, dat kan. Veel mensen gebruiken beide systemen. Wel raadzaam om één hoofdplatform te kiezen voor automatiseringen en routines.",
+        },
+      },
+    ],
+  },
+
+  content: (
+    <>
+      <p className="section-intro">
+        Google Home en Amazon Alexa zijn de twee grootste smart home
+        platforms. Beide werken met spraakbediening, slimme speakers en
+        honderden smart home producten. Maar er zijn duidelijke
+        verschillen.
+      </p>
+
+      <h2>Google Home</h2>
+      <p>
+        Google Home draait op Google Assistant en is ingebouwd in Google
+        Nest-speakers en -schermen. Het werkt het beste als je Android
+        gebruikt en veel Google-diensten gebruikt.
+      </p>
+      <ul>
+        <li><strong>Sterk:</strong> slimme zoekopdrachten, Android-integratie, Google Kalender</li>
+        <li><strong>Zwak:</strong> minder smart home integraties dan Alexa</li>
+        <li><strong>Hardwaremerken:</strong> Google Nest Hub, Nest Mini, Nest Audio</li>
+      </ul>
+
+      <h2>Amazon Alexa</h2>
+      <p>
+        Alexa draait op Amazon Echo-apparaten en heeft de grootste
+        bibliotheek aan smart home integraties en "skills". In Nederland
+        steeds populairder.
+      </p>
+      <ul>
+        <li><strong>Sterk:</strong> meeste smart home integraties, goedkope hardware</li>
+        <li><strong>Zwak:</strong> minder sterke zoekopdrachten dan Google</li>
+        <li><strong>Hardwaremerken:</strong> Echo Dot, Echo Show, Echo Pop</li>
+      </ul>
+
+      <h2>Vergelijking op hoofdpunten</h2>
+
+      <h3>Compatibiliteit</h3>
+      <p>
+        Alexa wint hier. Er zijn meer merken en producten die met Alexa
+        werken. Google Home haalt het in, maar heeft historisch gezien
+        minder integraties.
+      </p>
+
+      <h3>Spraakherkenning</h3>
+      <p>
+        Google Assistant begrijpt complexere vragen beter dankzij de
+        zoekmachinetechnologie. Alexa is goed voor korte, directe
+        smart home commando's.
+      </p>
+
+      <h3>Privacy</h3>
+      <p>
+        Beide systemen luisteren op een activeringswoord. Google verwerkt
+        meer zoekdata, Amazon koppelt aan aankopen. Wil je maximale privacy?
+        Kijk dan naar{" "}
+        <Link href="/blog/home-assistant-vs-homey">
+          Home Assistant
+        </Link>{" "}
+        — volledig lokaal zonder cloud.
+      </p>
+
+      <h3>Automatiseringen</h3>
+      <p>
+        Voor complexe automatiseringen zijn beide platforms beperkt. Wil je
+        écht krachtige automatiseringen? Dan heb je een hub nodig zoals
+        Homey of Home Assistant.
+      </p>
+
+      <h2>Welke kies je?</h2>
+
+      <h3>Kies Google Home als:</h3>
+      <ul>
+        <li>je Android en Google-diensten gebruikt</li>
+        <li>je slimme displays wilt (Nest Hub)</li>
+        <li>zoekopdrachten en kalender-integratie belangrijk zijn</li>
+      </ul>
+
+      <h3>Kies Alexa als:</h3>
+      <ul>
+        <li>je zoveel mogelijk merken wilt koppelen</li>
+        <li>je budget-hardware wilt (Echo Dot is goedkoop)</li>
+        <li>je Amazon Prime gebruikt</li>
+      </ul>
+
+      <h2>En Apple HomeKit dan?</h2>
+      <p>
+        Apple HomeKit is het derde grote platform, maar alleen voor
+        iPhone-gebruikers. Het heeft minder integraties maar is het
+        meest privacyvriendelijk. Lees meer in ons artikel over{" "}
+        <Link href="/blog/wat-is-matter">Matter</Link> — de nieuwe
+        standaard die alle platforms beter laat samenwerken.
+      </p>
+
+      <h2>Conclusie</h2>
+      <p>
+        Voor de meeste gebruikers in Nederland is er geen slechte keuze.
+        Gebruik je Android? Ga voor <strong>Google Home</strong>. Wil je
+        de meeste integraties en goedkope hardware? Ga voor{" "}
+        <strong>Alexa</strong>. En wil je onafhankelijk van grote
+        techbedrijven? Bekijk dan Home Assistant.
+      </p>
+    </>
+  ),
+},
+
+// ✅ NIEUW: Philips Hue alternatieven
+{
+  slug: "philips-hue-alternatieven",
+  title: "Philips Hue alternatieven: 4 goedkopere slimme lampen vergeleken",
+  description:
+    "Philips Hue is duur. Bekijk de beste goedkopere alternatieven: Innr, Govee, Tapo en IKEA Tradfri — vergeleken op kwaliteit, compatibiliteit en prijs.",
+  image: "/images/blog/philips-hue-alternatieven.png",
+  category: "Verlichting",
+  available: true,
+
+  related: [
+    "wat-is-slimme-verlichting",
+    "slimme-lampen-zonder-hub",
+    "wat-is-zigbee",
+  ],
+
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Wat is een goed alternatief voor Philips Hue?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Innr is het beste Zigbee-alternatief en werkt met de Hue Bridge. IKEA Tradfri is budgetvriendelijk. Tapo is makkelijk voor wifi-lampen. Govee is populair voor sfeerverlichting en LED-strips.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Werken Innr lampen met de Philips Hue Bridge?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja, de meeste Innr Zigbee-lampen zijn compatibel met de Philips Hue Bridge. Je kunt ze toevoegen via de Hue app of via een andere Zigbee-hub.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is Govee een goede vervanger van Philips Hue?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Govee is uitstekend voor sfeerverlichting en LED-strips maar minder geschikt als volwaardige vervanging. Govee werkt via wifi en heeft geen Zigbee-ondersteuning.",
+        },
+      },
+    ],
+  },
+
+  content: (
+    <>
+      <p className="section-intro">
+        Philips Hue is de bekendste naam in slimme verlichting, maar de
+        prijzen liggen hoog. Gelukkig zijn er goede alternatieven die een
+        stuk betaalbaarder zijn.
+      </p>
+
+      <h2>Waarom zijn Philips Hue-lampen zo duur?</h2>
+      <p>
+        Philips Hue heeft een sterk ecosysteem, uitstekende app, betrouwbare
+        Zigbee-integratie en een groot assortiment. Die kwaliteit kost geld.
+        Een starterkit kost snel €80–€150. Losse lampen liggen rond de
+        €20–€40 per stuk.
+      </p>
+
+      <h2>De 4 beste Philips Hue alternatieven</h2>
+
+      <h3>1. Innr — beste Zigbee-alternatief</h3>
+      <p>
+        Innr maakt Zigbee-lampen die compatibel zijn met de Philips Hue
+        Bridge. Goede lichtkleur, betrouwbaar en 30–40% goedkoper dan Hue.
+      </p>
+      <ul>
+        <li><strong>Protocol:</strong> Zigbee</li>
+        <li><strong>Werkt met Hue Bridge:</strong> ja</li>
+        <li><strong>Prijs per lamp:</strong> ±€12–€18</li>
+        <li><strong>Ideaal voor:</strong> bestaande Hue-gebruikers die willen uitbreiden</li>
+      </ul>
+
+      <h3>2. IKEA Tradfri / Dirigera — goedkoopste optie</h3>
+      <p>
+        IKEA's slimme verlichting is de goedkoopste serieuze optie.
+        Compatibel met Google Home, Alexa en Apple HomeKit.
+      </p>
+      <ul>
+        <li><strong>Protocol:</strong> Zigbee (Tradfri) / Matter (Dirigera)</li>
+        <li><strong>Prijs per lamp:</strong> ±€6–€12</li>
+        <li><strong>Ideaal voor:</strong> budgetbewuste starters</li>
+      </ul>
+
+      <h3>3. Tapo (TP-Link) — makkelijkste wifi-optie</h3>
+      <p>
+        Tapo-lampen werken via wifi, geen hub nodig. Eenvoudig in te
+        stellen via de Tapo-app. Breed assortiment van lampen tot stekkers.
+      </p>
+      <ul>
+        <li><strong>Protocol:</strong> wifi</li>
+        <li><strong>Hub nodig:</strong> nee</li>
+        <li><strong>Prijs per lamp:</strong> ±€8–€15</li>
+        <li><strong>Ideaal voor:</strong> simpele setup, snel beginnen</li>
+      </ul>
+
+      <h3>4. Govee — beste sfeerverlichting</h3>
+      <p>
+        Govee is marktleider in LED-strips en sfeerverlichting. Veel
+        effecten, integratie met Alexa en Google Home, maar geen
+        Zigbee-ondersteuning.
+      </p>
+      <ul>
+        <li><strong>Protocol:</strong> wifi / Bluetooth</li>
+        <li><strong>Ideaal voor:</strong> LED-strips, monitor-backlight, gaming setup</li>
+        <li><strong>Prijs:</strong> variabel, veel aanbiedingen</li>
+      </ul>
+
+      <h2>Welk alternatief past bij jou?</h2>
+      <p>
+        Heb je al Philips Hue producten? Kies dan <strong>Innr</strong> voor
+        uitbreiding. Begin je opnieuw en wil je goedkoop starten? Ga voor{" "}
+        <strong>IKEA Tradfri</strong> of <strong>Tapo</strong>. Wil je
+        sfeerverlichting en LED-strips? Dan is <strong>Govee</strong> de
+        beste keuze.
+      </p>
+
+      <p>
+        Lees ook:{" "}
+        <Link href="/blog/slimme-lampen-zonder-hub">
+          slimme lampen zonder hub
+        </Link>{" "}
+        als je wil weten wanneer je een hub nodig hebt.
+      </p>
+
+      <h2>Conclusie</h2>
+      <p>
+        Je hoeft Philips Hue niet te kopen om goede slimme verlichting te
+        hebben. <strong>Innr</strong> is het beste volwaardige alternatief,
+        terwijl <strong>IKEA</strong> en <strong>Tapo</strong> uitstekend
+        zijn voor een budgetvriendelijke start.
+      </p>
+    </>
+  ),
+},
+
+// ✅ NIEUW: Smart home energiebesparing
+{
+  slug: "smart-home-energiebesparing",
+  title: "Smart home voor energiebesparing: zo verlaag je je energierekening",
+  description:
+    "Bespaar op energie met slimme thermostaten, stekkers, verlichting en zonnepaneel-integratie. Praktische tips om je energierekening omlaag te brengen.",
+  image: "/images/blog/smart-home-energiebesparing.png",
+  category: "Energie",
+  available: true,
+
+  related: [
+    "beste-slimme-thermostaat",
+    "wat-zijn-slimme-sensoren",
+    "wat-is-een-slimme-stekker",
+  ],
+
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Hoeveel kun je besparen met een slim huis?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Met een slimme thermostaat bespaar je gemiddeld 15–25% op verwarming. Slimme stekkers met energiemeting helpen standby-verbruik te detecteren. Bij een totale smart home setup kan de besparing oplopen tot €300–€500 per jaar.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Welke slimme producten besparen het meest energie?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Een slimme thermostaat levert de grootste besparing op. Daarna zijn slimme stekkers met energiemeting nuttig om apparaten die standby staan uit te zetten. Slimme verlichting die automatisch uit gaat bespaart ook.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Kan ik mijn zonnepanelen koppelen aan mijn smart home?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja. Via platforms zoals Home Assistant of Homey kun je zonnepanelen koppelen en automatisch apparaten inschakelen als er veel eigen stroom wordt opgewekt, zoals een wasmachine of vaatwasser.",
+        },
+      },
+    ],
+  },
+
+  content: (
+    <>
+      <p className="section-intro">
+        Energie is duur. Een slim huis kan je helpen om je verbruik te
+        verlagen — zonder dat je er elke dag aan hoeft te denken. Hier zijn
+        de meest effectieve manieren.
+      </p>
+
+      <h2>1. Slimme thermostaat</h2>
+      <p>
+        Dit is de grootste energiebesparing die je kunt maken. Een slimme
+        thermostaat zorgt dat je huis alleen warm is als dat nodig is.
+      </p>
+      <ul>
+        <li>Geofencing: thermostaat gaat omlaag als je de deur uitloopt</li>
+        <li>Leergedrag: past zich automatisch aan jouw schema aan</li>
+        <li>Besparing: gemiddeld 15–25% op stookkosten</li>
+      </ul>
+      <p>
+        Bekijk onze vergelijking:{" "}
+        <Link href="/blog/beste-slimme-thermostaat">
+          beste slimme thermostaat 2025
+        </Link>
+        .
+      </p>
+
+      <h2>2. Slimme stekkers met energiemeting</h2>
+      <p>
+        Veel apparaten verbruiken energie in stand-by: televisies, spelcomputers,
+        opladers. Met een slimme stekker zie je exact hoeveel en kun je ze
+        automatisch uitschakelen.
+      </p>
+      <ul>
+        <li>Zie standby-verbruik per apparaat</li>
+        <li>Stel tijdschema's in voor tv, gaming en opladers</li>
+        <li>Koppel aan aanwezigheidsdetectie: alles uit als niemand thuis is</li>
+      </ul>
+
+      <h2>3. Slimme verlichting met aanwezigheidsdetectie</h2>
+      <p>
+        Vergeten het licht uit te doen? Met bewegingssensoren gaat het licht
+        automatisch uit als je een ruimte verlaat.
+      </p>
+      <ul>
+        <li>Bewegingssensor + slimme lamp = automatisch aan/uit</li>
+        <li>LED-lampen verbruiken al 80% minder dan gloeilampen</li>
+        <li>Combineer met aanwezigheidsdetectie via je telefoon</li>
+      </ul>
+
+      <h2>4. Zonnepanelen slim inzetten</h2>
+      <p>
+        Heb je zonnepanelen? Dan kun je slim thuisbeheer inzetten om
+        automatisch apparaten in te schakelen als je veel stroom opwekt.
+      </p>
+      <ul>
+        <li>Wasmachine en vaatwasser plannen op zonnige momenten</li>
+        <li>Thuisbatterij koppelen aan smart home voor opslag</li>
+        <li>
+          Platforms:{" "}
+          <Link href="/blog/home-assistant-vs-homey">Home Assistant</Link>{" "}
+          of Homey Energy
+        </li>
+      </ul>
+
+      <h2>5. Slimme energiemeter op meterkast</h2>
+      <p>
+        Met een slimme P1-meter lees je je slimme meter uit en zie je je
+        verbruik per uur. Zo ontdek je welke apparaten het meeste energie
+        kosten.
+      </p>
+      <ul>
+        <li>Populaire opties: Homewizard Energy, DSMR-logger</li>
+        <li>Integratie met Home Assistant en Homey</li>
+        <li>Ideaal in combinatie met zonnepanelen en laadpaal</li>
+      </ul>
+
+      <h2>Hoeveel bespaar je in totaal?</h2>
+      <p>
+        Bij een complete aanpak (thermostaat + stekkers + verlichting +
+        zonnepanelen) kan de besparing oplopen tot{" "}
+        <strong>€300–€500 per jaar</strong>. De investering in slimme
+        apparaten verdien je daarmee in 1–2 jaar terug.
+      </p>
+
+      <h2>Conclusie</h2>
+      <p>
+        De slimste investering voor energiebesparing is een{" "}
+        <strong>slimme thermostaat</strong>. Daarna leveren slimme stekkers
+        met energiemeting en aanwezigheidsdetectie de meeste winst op. Begin
+        klein en breid uit zodra je merkt hoeveel je bespaart.
+      </p>
+    </>
+  ),
+},
 ];

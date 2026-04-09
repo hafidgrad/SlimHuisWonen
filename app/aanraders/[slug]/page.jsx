@@ -16,6 +16,11 @@ const KOOPGIDS_AMAZON_TERMS = {
   "beste-slimme-verlichting": "slimme verlichting",
   "beste-smart-home-hub": "smart home hub",
   "beste-slimme-deurbel": "slimme deurbel met camera",
+  "beste-slimme-thermostaat": "slimme thermostaat",
+  "beste-slimme-bewegingssensor": "slimme bewegingssensor zigbee",
+  "beste-mesh-wifi-systeem": "mesh wifi systeem",
+  "beste-slimme-slot": "slim deurslot",
+  "beste-energie-monitor": "slimme energiemeter p1",
 };
 
 function getAmazonSearchTerm(slug) {

@@ -2,6 +2,7 @@ import { getAllProducts } from "@/data/products";
 import { tips } from "@/data/tips";
 import { blogPosts } from "@/data/blog";
 import { howto } from "@/data/howto";
+import { categories } from "@/data/categories";
 
 export default function sitemap() {
   const baseUrl = "https://slimhuiswonen.nl";
@@ -19,6 +20,12 @@ export default function sitemap() {
     "/contact",
   ].map((path) => ({
     url: `${baseUrl}${path}`,
+    lastModified,
+  }));
+
+  // ✅ Categorie routes
+  const categorieRoutes = (Array.isArray(categories) ? categories : []).map((c) => ({
+    url: `${baseUrl}/categorie/${c.slug}`,
     lastModified,
   }));
 
@@ -76,6 +83,7 @@ export default function sitemap() {
 
   return [
     ...staticRoutes,
+    ...categorieRoutes,
     ...topicRoutes,
     ...productRoutes,
     ...howtoRoutes,

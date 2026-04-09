@@ -783,4 +783,452 @@ relatedGuides: [
         "Niet altijd. Voor eenvoudige toepassingen kun je zonder hub starten. Voor uitgebreidere automatiseringen en meerdere apparaten is een smart home hub vaak de beste keuze.",
     },
   ],
+},
+
+// ✅ NIEUW: Beste slimme thermostaat
+{
+  slug: "beste-slimme-thermostaat",
+  title: "Beste slimme thermostaat (2026)",
+  description:
+    "Vergelijk de beste slimme thermostaten van 2026. Tado, Netatmo en Google Nest vergeleken op energiebesparing, compatibiliteit en gebruiksgemak.",
+  image: "/images/aanraders/beste-slimme-thermostaat.png",
+  intro:
+    "Een slimme thermostaat is een van de slimste investeringen voor je huis. Je bespaart energie, hebt altijd controle via je telefoon en je huis is warm als je thuiskomt — maar nooit onnodig. In deze koopgids vind je de beste opties voor de meeste Nederlandse huishoudens.",
+  available: true,
+
+  relatedBlogs: [
+    "beste-slimme-thermostaat",
+    "smart-home-energiebesparing",
+    "home-assistant-vs-homey",
+  ],
+
+  relatedGuides: [
+    "beste-slimme-stekkers",
+    "beste-smart-home-hub",
+    "beste-slimme-sensoren",
+  ],
+
+  whoIsThisFor: [
+    "Voor wie wil besparen op de energierekening",
+    "Voor wie onderweg de verwarming wil regelen",
+    "Voor wie een slimme thermostaat zoekt zonder ingewikkelde installatie",
+    "Voor wie zijn thermostaat wil koppelen aan Homey of Home Assistant",
+  ],
+
+  whatToLookFor: [
+    "Compatibiliteit met je cv-ketel (OpenTherm of aan/uit)",
+    "Geofencing: automatisch verlagen als je weggaat",
+    "Integratie met jouw smart home platform",
+    "Wel of geen verplicht abonnement",
+    "Kamerregeling als je per ruimte wilt regelen",
+  ],
+
+  picks: [
+    {
+      title: "Beste keuze voor de meeste mensen: Tado Slimme Thermostaat V3+",
+      description:
+        "De meest complete slimme thermostaat voor Nederlandse huishoudens. Geofencing werkt uitstekend en de besparing op je energierekening is merkbaar. Breed compatibel met Homey, Alexa, Google en HomeKit.",
+      image: "/images/products/tado-smart-thermostat-v3.png",
+      href: "/producten/tado-smart-thermostat-v3",
+      badges: ["Beste keuze", "Geofencing", "Brede compatibiliteit"],
+    },
+    {
+      title: "Beste keuze zonder abonnement: Netatmo Slimme Thermostaat",
+      description:
+        "Strakke thermostaat van Netatmo die prima werkt zonder verplicht abonnement. Ideaal als je Apple HomeKit gebruikt of geen maandelijkse kosten wilt.",
+      image: "/images/products/netatmo-slimme-thermostaat.png",
+      href: "/producten/netatmo-slimme-thermostaat",
+      badges: ["Geen abonnement", "Apple HomeKit", "Strak design"],
+    },
+    {
+      title: "Beste keuze voor Google Home gebruikers: Google Nest Thermostaat",
+      description:
+        "Leert jouw verwarmingsschema en past zich automatisch aan. Naadloze integratie met Google Home. Ideaal als je al diep in het Google-ecosysteem zit.",
+      image: "/images/products/google-nest-thermostaat.png",
+      href: "/producten/google-nest-thermostaat",
+      badges: ["Google Home", "Leergedrag", "Premium"],
+    },
+  ],
+
+  faq: [
+    {
+      question: "Wat is de beste slimme thermostaat voor Nederland?",
+      answer:
+        "Tado is voor de meeste Nederlandse huishoudens de beste keuze. De geofencing werkt betrouwbaar en hij is breed compatibel. Wil je geen abonnement? Kies dan Netatmo.",
+    },
+    {
+      question: "Werkt een slimme thermostaat met mijn cv-ketel?",
+      answer:
+        "De meeste slimme thermostaten werken met gangbare cv-ketels via OpenTherm of een aan/uit-verbinding. Controleer altijd de compatibiliteitslijst van de fabrikant voor jouw keteltype.",
+    },
+    {
+      question: "Hoeveel bespaar je met een slimme thermostaat?",
+      answer:
+        "Gemiddeld 15–25% op stookkosten. Functies zoals geofencing en aanwezigheidsdetectie zorgen dat je woning alleen verwarmd wordt als dat nodig is.",
+    },
+    {
+      question: "Heb je een hub nodig voor een slimme thermostaat?",
+      answer:
+        "Niet per se. Tado en Netatmo werken zelfstandig via wifi. Wil je ze koppelen aan Homey of Home Assistant, dan is een hub handig maar niet verplicht.",
+    },
+  ],
+},
+
+// ✅ NIEUW: Beste slimme bewegingssensor
+{
+  slug: "beste-slimme-bewegingssensor",
+  title: "Beste slimme bewegingssensor (2026)",
+  description:
+    "Op zoek naar de beste slimme bewegingssensor? Vergelijk Aqara, Eve en Tapo op nauwkeurigheid, batterijduur en smart home compatibiliteit.",
+  image: "/images/aanraders/beste-slimme-bewegingssensor.png",
+  intro:
+    "Een slimme bewegingssensor is de motor achter vrijwel elke smart home automatisering. Licht dat aanspringt als je een kamer binnenloopt, meldingen als er iemand voor de deur staat, of de verwarming die omlaag gaat als niemand thuis is — het begint bij een goede sensor.",
+  available: true,
+
+  relatedBlogs: [
+    "wat-zijn-slimme-sensoren",
+    "wat-is-zigbee",
+    "home-assistant-vs-homey",
+  ],
+
+  relatedGuides: [
+    "beste-slimme-sensoren",
+    "beste-slimme-verlichting",
+    "beste-smart-home-hub",
+  ],
+
+  whoIsThisFor: [
+    "Voor wie licht automatisch wil laten aan- en uitschakelen",
+    "Voor wie meldingen wil als er beweging is thuis",
+    "Voor wie aanwezigheid per kamer wil detecteren",
+    "Voor wie zijn automatiseringen betrouwbaarder wil maken",
+  ],
+
+  whatToLookFor: [
+    "Detectiebereik en -hoek",
+    "Batterijduur",
+    "Protocol: Zigbee, Matter of wifi",
+    "Reactiesnelheid (latency)",
+    "Compatibiliteit met je hub of platform",
+  ],
+
+  picks: [
+    {
+      title: "Beste bewegingssensor voor de meeste mensen: Aqara Motion Sensor P1",
+      description:
+        "Betrouwbare Zigbee-bewegingssensor met lange batterijduur en snelle detectie. Werkt met Homey, Home Assistant, Apple HomeKit en Google Home.",
+      image: "/images/products/aqara-motion-sensor.png",
+      href: "/producten/aqara-motion-sensor",
+      badges: ["Beste keuze", "Zigbee", "Lange batterij"],
+    },
+    {
+      title: "Beste keuze voor Matter: Eve Motion",
+      description:
+        "Thread/Matter bewegingssensor van Eve met directe Apple HomeKit ondersteuning en privacyvriendelijk design. Geen cloud vereist.",
+      image: "/images/products/eve-motion-matter-bewegingssensor.png",
+      href: "/producten/eve-motion-matter-bewegingssensor",
+      badges: ["Matter", "Thread", "HomeKit"],
+    },
+    {
+      title: "Beste keuze voor aanwezigheidsdetectie: Aqara FP2",
+      description:
+        "Geavanceerde radarsensor die detecteert of iemand aanwezig is — ook als diegene stilzit. Ideaal voor betrouwbare automatiseringen.",
+      image: "/images/products/aqara-fp2-aanwezigheidssensor.png",
+      href: "/producten/aqara-fp2-aanwezigheidssensor",
+      badges: ["Aanwezigheidsdetectie", "Radar", "Geavanceerd"],
+    },
+    {
+      title: "Beste budget bewegingssensor: Tapo T100",
+      description:
+        "Betaalbare wifi-bewegingssensor zonder hub. Werkt met de Tapo-app, Alexa en Google Home. Ideaal om snel te starten.",
+      image: "/images/products/tapo-t100.png",
+      href: "/producten/tapo-t100",
+      badges: ["Budget", "Geen hub", "Wi-Fi"],
+    },
+  ],
+
+  faq: [
+    {
+      question: "Wat is de beste slimme bewegingssensor?",
+      answer:
+        "De Aqara Motion Sensor P1 is voor de meeste mensen de beste keuze: snel, betrouwbaar en goede batterijduur. Wil je Matter? Dan is de Eve Motion een uitstekende optie.",
+    },
+    {
+      question: "Wat is het verschil tussen een bewegingssensor en aanwezigheidssensor?",
+      answer:
+        "Een bewegingssensor detecteert alleen beweging. Een aanwezigheidssensor zoals de Aqara FP2 detecteert ook of iemand stilzit, via radar. Handig voor slimme verlichting die niet uitgaat terwijl je op de bank zit.",
+    },
+    {
+      question: "Heb je een hub nodig voor een bewegingssensor?",
+      answer:
+        "Dat hangt af van het protocol. Zigbee-sensoren hebben een hub nodig (Homey, Home Assistant). Wi-Fi sensoren zoals de Tapo T100 werken zonder hub. Matter-sensoren werken met een Matter controller.",
+    },
+  ],
+},
+
+// ✅ NIEUW: Beste mesh wifi
+{
+  slug: "beste-mesh-wifi-systeem",
+  title: "Beste mesh wifi systeem (2026)",
+  description:
+    "Een mesh wifi systeem zorgt voor stabiel internet in elk hoekje van je huis — essentieel voor een betrouwbaar smart home. Vergelijk TP-Link Deco, Eero en Google Nest Wifi.",
+  image: "/images/aanraders/beste-mesh-wifi-systeem.png",
+  intro:
+    "Een sterk wifi-netwerk is de basis van elk smart home. Met een mesh-systeem verdeel je het signaal via meerdere punten door je huis en heb je overal een stabiele verbinding — geen dode hoeken meer. In deze koopgids vind je de beste opties voor elk budget.",
+  available: true,
+
+  relatedBlogs: [
+    "wat-is-zigbee",
+    "wat-is-matter",
+    "google-home-vs-alexa",
+  ],
+
+  relatedGuides: [
+    "beste-smart-home-hub",
+    "beste-slimme-camera",
+    "beste-slimme-stekkers",
+  ],
+
+  whoIsThisFor: [
+    "Voor wie last heeft van dode wifi-hoeken in huis",
+    "Voor wie veel smart home apparaten gebruikt",
+    "Voor wie een stabiel netwerk wil voor camera's, hubs en slimme lampen",
+    "Voor wie een router vervangt voor iets gebruiksvriendelijkers",
+  ],
+
+  whatToLookFor: [
+    "Wifi 6 of 6E voor snellere verbindingen",
+    "Dekking per punt (m²)",
+    "Aantal punten in de set",
+    "Smart home integratie (Matter, Thread, Alexa, Google)",
+    "Gebruiksgemak van de app",
+  ],
+
+  picks: [
+    {
+      title: "Beste mesh wifi voor de meeste mensen: TP-Link Deco XE75",
+      description:
+        "Krachtig WiFi 6E mesh-systeem met uitstekende dekking en eenvoudige installatie. Uitbreidbaar en betrouwbaar voor grote woningen met veel apparaten.",
+      image: "/images/products/tp-link-deco-xe75.png",
+      href: "/producten/tp-link-deco-xe75",
+      badges: ["Beste keuze", "WiFi 6E", "Uitbreidbaar"],
+    },
+    {
+      title: "Beste keuze voor Google Home: Google Nest Wifi Pro",
+      description:
+        "Googles krachtigste mesh-router met Matter-hub ingebouwd. Ideaal als je Google Home gebruikt en één apparaat wil dat wifi én Matter combineert.",
+      image: "/images/products/google-nest-wifi-pro.png",
+      href: "/producten/google-nest-wifi-pro",
+      badges: ["Google Home", "Matter ingebouwd", "WiFi 6E"],
+    },
+    {
+      title: "Beste keuze voor Alexa gebruikers: Amazon Eero Pro 6E",
+      description:
+        "Gebruiksvriendelijk mesh-systeem met Alexa-integratie. Snelle installatie via de app en goed te combineren met andere Amazon producten.",
+      image: "/images/products/eero-pro-6e.png",
+      href: "/producten/eero-pro-6e",
+      badges: ["Alexa", "Eenvoudig", "WiFi 6E"],
+    },
+  ],
+
+  faq: [
+    {
+      question: "Wat is een mesh wifi systeem?",
+      answer:
+        "Een mesh-systeem gebruikt meerdere wifi-punten die samenwerken als één netwerk. Apparaten schakelen automatisch over naar het dichtste punt, waardoor je overal een stabiele verbinding hebt.",
+    },
+    {
+      question: "Heb ik een mesh systeem nodig voor smart home?",
+      answer:
+        "Niet verplicht, maar sterk aangeraden als je veel slimme apparaten hebt of een grotere woning. Een stabiel netwerk voorkomt uitvallers bij camera's, sensoren en lampen.",
+    },
+    {
+      question: "Wat is het verschil tussen WiFi 6 en WiFi 6E?",
+      answer:
+        "WiFi 6E voegt de 6 GHz-band toe aan WiFi 6. Dat betekent minder congestie en hogere snelheden op korte afstand. Voor smart home is WiFi 6 doorgaans al meer dan genoeg.",
+    },
+    {
+      question: "Werkt een mesh systeem als router?",
+      answer:
+        "Ja. Je sluit het primaire punt aan op je modem van de provider en de overige punten verbinden draadloos of via een kabel als satellites.",
+    },
+  ],
+},
+
+// ✅ NIEUW: Beste slimme slot
+{
+  slug: "beste-slimme-slot",
+  title: "Beste slimme deurslot (2026)",
+  description:
+    "Vergelijk de beste slimme deursloten. Nuki, Yale Linus en Danalock vergeleken op gebruiksgemak, compatibiliteit en veiligheid.",
+  image: "/images/aanraders/beste-slimme-slot.png",
+  intro:
+    "Met een slim deurslot sluit en open je je deur zonder sleutel — via je telefoon, vingerafdruk of automatisch als je thuis aankomt. De meeste modellen monteren op je bestaand slot, zodat je geen duur cilinderslot hoeft te vervangen.",
+  available: true,
+
+  relatedBlogs: [
+    "wat-zijn-slimme-sensoren",
+    "home-assistant-vs-homey",
+    "google-home-vs-alexa",
+  ],
+
+  relatedGuides: [
+    "beste-slimme-camera",
+    "beste-slimme-deurbel",
+    "beste-smart-home-hub",
+  ],
+
+  whoIsThisFor: [
+    "Voor wie niet meer met een sleutel wil hoeven",
+    "Voor wie tijdelijke toegang wil geven aan gasten of bezorgers",
+    "Voor wie de deur automatisch wil vergrendelen bij vertrek",
+    "Voor wie het slimme slot wil koppelen aan Homey of Home Assistant",
+  ],
+
+  whatToLookFor: [
+    "Monteert op bestaand slot (geen cilindervervanging)",
+    "Batterijduur",
+    "Protocol: wifi, Bluetooth, Z-Wave of Zigbee",
+    "Compatibiliteit met jouw smart home platform",
+    "Auto-lock functie",
+  ],
+
+  picks: [
+    {
+      title: "Beste slimme slot voor de meeste mensen: Nuki Smart Lock 4 Pro",
+      description:
+        "Het populairste slimme slot in Nederland. Monteert in minuten op je bestaand cilinderslot. Werkt via wifi én bluetooth en is compatibel met Homey, HomeKit, Alexa en Google.",
+      image: "/images/products/nuki-smart-lock-4-pro.png",
+      href: "/producten/nuki-smart-lock-4-pro",
+      badges: ["Beste keuze", "Populairste model", "WiFi + Bluetooth"],
+    },
+    {
+      title: "Beste compact slim slot: Yale Linus Smart Lock",
+      description:
+        "Compact en strak slim slot van vertrouwd merk. Werkt met de Yale Access app en integreert met Alexa en Google Home. Ideaal voor wie een strak design wil.",
+      image: "/images/products/yale-linus-smart-lock.png",
+      href: "/producten/yale-linus-smart-lock",
+      badges: ["Compact", "Yale betrouwbaarheid", "Alexa & Google"],
+    },
+    {
+      title: "Beste slim slot voor geavanceerde setups: Danalock V3",
+      description:
+        "Slim slot met Bluetooth, Z-Wave en Zigbee. Ideaal voor wie werkt met Home Assistant of een geavanceerde Homey-setup en maximale integratiemogelijkheden wil.",
+      image: "/images/products/danalock-v3.png",
+      href: "/producten/danalock-v3",
+      badges: ["Z-Wave", "Zigbee", "Home Assistant"],
+    },
+  ],
+
+  faq: [
+    {
+      question: "Wat is het beste slimme deurslot?",
+      answer:
+        "Nuki Smart Lock 4 Pro is voor de meeste mensen de beste keuze. Het monteert op vrijwel elk bestaand slot, heeft een lange batterijduur en is breed compatibel met populaire smart home platforms.",
+    },
+    {
+      question: "Moet ik mijn cilinder vervangen voor een slim slot?",
+      answer:
+        "Nee. De meeste slimme sloten zoals Nuki en Yale Linus monteren aan de binnenkant op je bestaande slot. Je hebt van buitenaf nog gewoon een sleutel nodig.",
+    },
+    {
+      question: "Is een slim deurslot veilig?",
+      answer:
+        "Ja, mits je een betrouwbaar merk kiest. Nuki, Yale en Danalock gebruiken encryptie voor alle communicatie. Zorg ook voor een sterk wachtwoord in de app.",
+    },
+    {
+      question: "Werkt een slim slot als de stroom uitvalt?",
+      answer:
+        "Slimme sloten werken op batterijen en zijn daardoor niet afhankelijk van stroom. Bij een lege batterij kun je altijd nog met een fysieke sleutel naar binnen.",
+    },
+  ],
+},
+
+// ✅ NIEUW: Beste energie monitor
+{
+  slug: "beste-energie-monitor",
+  title: "Beste slimme energiemeter (2026)",
+  description:
+    "Zie realtime je energieverbruik en bespaar op je rekening. Vergelijk de beste P1-meters en energiemonitoren voor thuis.",
+  image: "/images/aanraders/beste-energie-monitor.png",
+  intro:
+    "Wil je weten hoeveel energie je verbruikt — en waar je kunt besparen? Met een slimme energiemeter zie je in realtime je verbruik en teruglevering van zonnepanelen. Onmisbaar als je je energierekening omlaag wilt brengen.",
+  available: true,
+
+  relatedBlogs: [
+    "smart-home-energiebesparing",
+    "beste-slimme-thermostaat",
+    "home-assistant-vs-homey",
+  ],
+
+  relatedGuides: [
+    "beste-slimme-stekkers",
+    "beste-slimme-thermostaat",
+    "beste-smart-home-hub",
+  ],
+
+  whoIsThisFor: [
+    "Voor wie realtime inzicht wil in zijn energieverbruik",
+    "Voor wie zonnepanelen heeft en wil zien hoeveel teruglevering er is",
+    "Voor wie wil weten welke apparaten het meeste stroom verbruiken",
+    "Voor wie smart home wil gebruiken voor energiebesparing",
+  ],
+
+  whatToLookFor: [
+    "Compatibiliteit met je slimme meter (P1-poort)",
+    "Realtime of per uur data",
+    "Integratie met Home Assistant, Homey of eigen app",
+    "Zonnepanelen-ondersteuning",
+    "1-fase of 3-fase meting",
+  ],
+
+  picks: [
+    {
+      title: "Beste keuze voor de meeste mensen: HomeWizard Energy P1 Meter",
+      description:
+        "Eenvoudig te installeren P1-meter die je slimme meter uitleest. Realtime inzicht in verbruik en teruglevering via de gratis HomeWizard Energy app. Werkt met Home Assistant en Homey.",
+      image: "/images/products/homewizard-energy-p1-meter.png",
+      href: "/producten/homewizard-energy-p1-meter",
+      badges: ["Beste keuze", "Eenvoudig", "P1-meter"],
+    },
+    {
+      title: "Beste compact model: HomeWizard Wi-Fi P1 Dongle",
+      description:
+        "Kleine wifi-dongle die direct in de P1-poort van je slimme meter past. Goedkoop, snel ingesteld en ideaal als je alleen realtime data wilt.",
+      image: "/images/products/homewizard-wifi-p1-dongle.png",
+      href: "/producten/p1-dongle-homewizard-wifi",
+      badges: ["Compact", "Budget", "Snel installeren"],
+    },
+    {
+      title: "Beste keuze voor zonnepanelen en 3-fase: Shelly Pro 3EM",
+      description:
+        "Professionele 3-fase energiemeter voor montage in de meterkast. Ideaal als je zonnepanelen hebt of een 3-fase aansluiting en alles wilt koppelen aan Home Assistant of Homey.",
+      image: "/images/products/shelly-pro-3em.png",
+      href: "/producten/shelly-pro-3em",
+      badges: ["3-fase", "Zonnepanelen", "Home Assistant"],
+    },
+  ],
+
+  faq: [
+    {
+      question: "Wat is een P1-meter?",
+      answer:
+        "Een P1-meter sluit je aan op de P1-poort van je slimme meter. Daarmee lees je realtime je energieverbruik en teruglevering uit. Je hebt geen monteur nodig — zelf insteken en klaar.",
+    },
+    {
+      question: "Werkt een energiemeter met zonnepanelen?",
+      answer:
+        "Ja. Een P1-meter toont zowel verbruik als teruglevering. Sommige modellen, zoals de Shelly Pro 3EM, bieden extra functies voor zonnepaneel-automatiseringen.",
+    },
+    {
+      question: "Werkt de HomeWizard P1 meter met Home Assistant?",
+      answer:
+        "Ja. De HomeWizard P1 Meter heeft een officiële Home Assistant integratie. Je kunt realtime data zien en gebruiken in automatiseringen.",
+    },
+    {
+      question: "Hoeveel kost een slimme energiemeter?",
+      answer:
+        "Een eenvoudige P1-meter kost tussen de €20 en €40. Professionele modellen zoals de Shelly Pro 3EM kosten meer maar bieden ook 3-fase meting en uitgebreidere integraties.",
+    },
+  ],
 },];

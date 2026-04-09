@@ -687,6 +687,198 @@ export const products = [
   youtubeUrl: "https://www.youtube.com/shorts/u8sk6B8_Qkc",
 },
 
+/* ==========================
+   SLIMME THERMOSTATEN
+========================== */
+
+{
+  slug: "tado-smart-thermostat-v3",
+  brand: "Tado",
+  name: "Tado Slimme Thermostaat V3+",
+  category: "slimme-thermostaten",
+  image: "/images/products/tado-smart-thermostat-v3.png",
+  description:
+    "Populaire slimme thermostaat met geofencing en energiebesparing. Werkt met Homey, Alexa, Google Home en Apple HomeKit.",
+  features: [
+    "Geofencing: automatisch aan/uit bij vertrek",
+    "Compatibel met Homey, Google, Alexa, HomeKit",
+    "Energierapport per maand",
+  ],
+  affiliateUrl: "https://www.amazon.nl/dp/B07YCMD7ZW?tag=slimhuiswonen-21",
+},
+
+{
+  slug: "netatmo-slimme-thermostaat",
+  brand: "Netatmo",
+  name: "Netatmo Slimme Thermostaat",
+  category: "slimme-thermostaten",
+  image: "/images/products/netatmo-slimme-thermostaat.png",
+  description:
+    "Strakke slimme thermostaat zonder verplicht abonnement. Werkt met Apple HomeKit, Alexa en Google Home.",
+  features: [
+    "Geen verplicht abonnement",
+    "Apple HomeKit ondersteuning",
+    "Strak design, eenvoudige installatie",
+  ],
+  affiliateUrl: "https://www.amazon.nl/dp/B01DBJP2WO?tag=slimhuiswonen-21",
+},
+
+/* ==========================
+   MESH WIFI
+========================== */
+
+{
+  slug: "tp-link-deco-xe75",
+  brand: "TP-Link",
+  name: "TP-Link Deco XE75 (WiFi 6E Mesh)",
+  category: "mesh-wifi",
+  image: "/images/products/tp-link-deco-xe75.png",
+  description:
+    "Krachtig WiFi 6E mesh-systeem voor een snel en stabiel netwerk in het hele huis. Ideaal voor smart home met veel apparaten.",
+  features: [
+    "WiFi 6E (tri-band)",
+    "Tot 250 m² dekking per punt",
+    "Eenvoudig uitbreidbaar",
+  ],
+  affiliateUrl: "https://www.amazon.nl/dp/B09W2JLKR2?tag=slimhuiswonen-21",
+},
+
+{
+  slug: "eero-pro-6e",
+  brand: "Amazon",
+  name: "Amazon Eero Pro 6E",
+  category: "mesh-wifi",
+  image: "/images/products/eero-pro-6e.png",
+  description:
+    "Gebruiksvriendelijk mesh-systeem met WiFi 6E en Alexa-integratie. Ideaal als je Amazon-producten combineert.",
+  features: [
+    "WiFi 6E",
+    "Alexa ingebouwd",
+    "Eenvoudige app-installatie",
+  ],
+  affiliateUrl: "https://www.amazon.nl/dp/B09HB7DDC3?tag=slimhuiswonen-21",
+},
+
+{
+  slug: "google-nest-wifi-pro",
+  brand: "Google",
+  name: "Google Nest Wifi Pro",
+  category: "mesh-wifi",
+  image: "/images/products/google-nest-wifi-pro.png",
+  description:
+    "Google's krachtigste mesh-router met WiFi 6E en Matter-ondersteuning ingebouwd. Ideaal voor Google Home gebruikers.",
+  features: [
+    "WiFi 6E",
+    "Matter hub ingebouwd",
+    "Werkt naadloos met Google Home",
+  ],
+  affiliateUrl: "https://www.amazon.nl/dp/B09KZNQXRX?tag=slimhuiswonen-21",
+},
+
+/* ==========================
+   SLIMME SLOTEN
+========================== */
+
+{
+  slug: "nuki-smart-lock-4-pro",
+  brand: "Nuki",
+  name: "Nuki Smart Lock 4 Pro",
+  category: "slimme-sloten",
+  image: "/images/products/nuki-smart-lock-4-pro.png",
+  description:
+    "Populairste slimme deurslot in Nederland. Monteert op bestaand slot, geen sleutelgat aanpassen.",
+  features: [
+    "Werkt met bestaand cilinderslot",
+    "WiFi, Bluetooth en Matter",
+    "Compatibel met Homey, Alexa, Google, HomeKit",
+  ],
+  affiliateUrl: "https://www.amazon.nl/dp/B0CG7T7VR6?tag=slimhuiswonen-21",
+},
+
+{
+  slug: "yale-linus-smart-lock",
+  brand: "Yale",
+  name: "Yale Linus Smart Lock",
+  category: "slimme-sloten",
+  image: "/images/products/yale-linus-smart-lock.png",
+  description:
+    "Compact slim deurslot van een vertrouwd merk. Werkt met de Yale Access app en integreert met Alexa en Google Home.",
+  features: [
+    "Compact design",
+    "Werkt met bestaand slot",
+    "Alexa en Google Home integratie",
+  ],
+  affiliateUrl: "https://www.amazon.nl/dp/B08HNG78ZQ?tag=slimhuiswonen-21",
+},
+
+{
+  slug: "danalock-v3",
+  brand: "Danalock",
+  name: "Danalock V3",
+  category: "slimme-sloten",
+  image: "/images/products/danalock-v3.png",
+  description:
+    "Slim deurslot met Bluetooth, Z-Wave en Zigbee ondersteuning. Ideaal voor geavanceerde smart home setups.",
+  features: [
+    "Bluetooth, Z-Wave en Zigbee",
+    "Werkt met Home Assistant en Homey",
+    "Betrouwbare Europese fabrikant",
+  ],
+  affiliateUrl: "https://www.amazon.nl/dp/B07CZN68S8?tag=slimhuiswonen-21",
+},
+
+/* ==========================
+   ENERGIE MONITORS
+========================== */
+
+{
+  slug: "homewizard-energy-p1-meter",
+  brand: "HomeWizard",
+  name: "HomeWizard Energy P1 Meter",
+  category: "energie-monitors",
+  image: "/images/products/homewizard-energy-p1-meter.png",
+  description:
+    "Eenvoudige P1-meter die je slimme meter uitleest en realtime energieverbruik toont in de app. Werkt met Home Assistant.",
+  features: [
+    "Realtime verbruik en teruglevering",
+    "Werkt met Home Assistant en Homey",
+    "Eenvoudig zelf installeren",
+  ],
+  affiliateUrl: "https://www.amazon.nl/dp/B09FBR5VQW?tag=slimhuiswonen-21",
+},
+
+{
+  slug: "shelly-pro-3em",
+  brand: "Shelly",
+  name: "Shelly Pro 3EM",
+  category: "energie-monitors",
+  image: "/images/products/shelly-pro-3em.png",
+  description:
+    "Professionele 3-fase energiemeter voor montage in de meterkast. Ideaal voor wie zonnepanelen wil koppelen aan smart home.",
+  features: [
+    "3-fase meting",
+    "Werkt met Home Assistant en Homey",
+    "Zonnepanelen integratie mogelijk",
+  ],
+  affiliateUrl: "https://www.amazon.nl/dp/B09V72VXLY?tag=slimhuiswonen-21",
+},
+
+{
+  slug: "p1-dongle-homewizard-wifi",
+  brand: "HomeWizard",
+  name: "HomeWizard Wi-Fi P1 Dongle",
+  category: "energie-monitors",
+  image: "/images/products/homewizard-wifi-p1-dongle.png",
+  description:
+    "Compacte wifi-dongle die je slimme meter uitleest. Klein, goedkoop en snel ingesteld.",
+  features: [
+    "Direct op de P1-poort van je meter",
+    "Realtime data via app",
+    "Werkt met Home Assistant",
+  ],
+  affiliateUrl: "https://www.amazon.nl/dp/B09FBR5VQW?tag=slimhuiswonen-21",
+},
+
 ];
 
 /* =========================
