@@ -740,7 +740,8 @@ export const products = [
     "Tot 250 m² dekking per punt",
     "Eenvoudig uitbreidbaar",
   ],
-  affiliateUrl: "https://www.amazon.nl/dp/B09W2JLKR2?tag=slimhuiswonen-21",
+  affiliateUrl: "https://www.amazon.nl/TP-Link-Deco-XE75-3-pack-Gigabit-poorten/dp/B09ZRY9YHB?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/NZ4NUioL4MQ",
 },
 
 {
@@ -756,7 +757,8 @@ export const products = [
     "Alexa ingebouwd",
     "Eenvoudige app-installatie",
   ],
-  affiliateUrl: "https://www.amazon.nl/dp/B09HB7DDC3?tag=slimhuiswonen-21",
+  affiliateUrl: "https://www.amazon.nl/eero-6-/dp/B08ZK2T3GS?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/1H31syVYPus",
 },
 
 {
@@ -772,7 +774,8 @@ export const products = [
     "Matter hub ingebouwd",
     "Werkt naadloos met Google Home",
   ],
-  affiliateUrl: "https://www.amazon.nl/dp/B09KZNQXRX?tag=slimhuiswonen-21",
+  affiliateUrl: "https://www.amazon.nl/Google-Nest-Wifi-Pro-2-pack/dp/B0BDKHRGV6?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/BFTzcpo_0f0",
 },
 
 /* ==========================
@@ -792,7 +795,8 @@ export const products = [
     "WiFi, Bluetooth en Matter",
     "Compatibel met Homey, Alexa, Google, HomeKit",
   ],
-  affiliateUrl: "https://www.amazon.nl/dp/B0CG7T7VR6?tag=slimhuiswonen-21",
+  affiliateUrl: "https://www.amazon.nl/Bluetooth-moeiteloze-integratie-elektronisch-vergrendelen/dp/B0DX2FPQFQ?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/QlhX3U2cLyw",
 },
 
 {
@@ -808,7 +812,8 @@ export const products = [
     "Werkt met bestaand slot",
     "Alexa en Google Home integratie",
   ],
-  affiliateUrl: "https://www.amazon.nl/dp/B08HNG78ZQ?tag=slimhuiswonen-21",
+  affiliateUrl: "https://www.amazon.nl/Yale-Sleutelloze-Eenvoudige-installatie-compatibel/dp/B0FTG1L89G?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/m4qA0kb0dys",
 },
 
 {
@@ -824,7 +829,8 @@ export const products = [
     "Werkt met Home Assistant en Homey",
     "Betrouwbare Europese fabrikant",
   ],
-  affiliateUrl: "https://www.amazon.nl/dp/B07CZN68S8?tag=slimhuiswonen-21",
+  affiliateUrl: "https://www.amazon.nl/Danalock-Bluettoth-Solution-batterijen-inbegrepen/dp/B0CV18ZTK2?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/RIDEaJa78hs",
 },
 
 /* ==========================
@@ -832,9 +838,9 @@ export const products = [
 ========================== */
 
 {
-  slug: "homewizard-energy-p1-meter",
-  brand: "HomeWizard",
-  name: "HomeWizard Energy P1 Meter",
+  slug: "frient-elektriciteitsmeter-interface-2-p1",
+  brand: "frient",
+  name: "frient Elektriciteitsmeter Interface 2, P1",
   category: "energie-monitors",
   image: "/images/products/homewizard-energy-p1-meter.png",
   description:
@@ -844,7 +850,8 @@ export const products = [
     "Werkt met Home Assistant en Homey",
     "Eenvoudig zelf installeren",
   ],
-  affiliateUrl: "https://www.amazon.nl/dp/B09FBR5VQW?tag=slimhuiswonen-21",
+  affiliateUrl: "https://www.amazon.nl/frient-Elektriciteitsmeter-energieverbruik-elektriciteitsmeters-SmartThings/dp/B0CYZWLX65?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/watch?v=9HHH6RO3WG0",
 },
 
 {
@@ -860,13 +867,14 @@ export const products = [
     "Werkt met Home Assistant en Homey",
     "Zonnepanelen integratie mogelijk",
   ],
-  affiliateUrl: "https://www.amazon.nl/dp/B09V72VXLY?tag=slimhuiswonen-21",
+  affiliateUrl: "https://www.amazon.nl/Shelly-120A-Afstandsbediening-Fotovolta%C3%AFsche-Zonnestelsels/dp/B0BVKZ4NGM?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/zxPh7ekFqc4",
 },
 
 {
-  slug: "p1-dongle-homewizard-wifi",
-  brand: "HomeWizard",
-  name: "HomeWizard Wi-Fi P1 Dongle",
+  slug: "brostrend-mini-ax900-wifi-6",
+  brand: "BrosTrend",
+  name: "BrosTrend Mini AX900 WiFi 6",
   category: "energie-monitors",
   image: "/images/products/homewizard-wifi-p1-dongle.png",
   description:
@@ -876,7 +884,8 @@ export const products = [
     "Realtime data via app",
     "Werkt met Home Assistant",
   ],
-  affiliateUrl: "https://www.amazon.nl/dp/B09FBR5VQW?tag=slimhuiswonen-21",
+  affiliateUrl: "https://www.amazon.nl/BrosTrend-Mini-AX900-WiFi-USB/dp/B0CYZBT4GM?tag=slimhuiswonen-21",
+  youtubeUrl: "https://www.youtube.com/shorts/8oT4Go7z_1w",
 },
 
 ];
