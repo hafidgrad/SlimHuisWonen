@@ -1168,6 +1168,355 @@ export const products = [
   youtubeUrl: "https://www.youtube.com/shorts/8oT4Go7z_1w",
 },
 
+/* =========================
+   SLIMME VERLICHTING — UITBREIDING
+========================== */
+
+{
+  slug: "philips-hue-gu10-white-ambiance",
+  brand: "Philips Hue",
+  name: "Philips Hue GU10 White Ambiance (2-pack)",
+  category: "slimme-verlichting",
+  image: "/images/products/philips-hue-gu10-white-ambiance.png",
+  description:
+    "Slimme GU10-spots voor badkamer, keuken of hal. Instelbaar wit licht van warm tot koel daglicht, dimbaar via app of bridge.",
+  features: ["GU10 fitting", "Instelbaar wit licht", "Dimbaar", "Zigbee & Bluetooth"],
+  affiliateUrl: "https://www.amazon.nl/Philips-Hue-instelbaar-Bluetooth-compatibel-stembediening/dp/B0D6NLJHQ3?tag=slimhuiswonen-21",
+  priceHint: "€35 – €45",
+  priceLastUpdated: "april 2026",
+  pros: ["Dimbaar warm tot koel daglicht", "Past in elk standaard GU10-armatuur", "Werkt met Hue Bridge én Bluetooth"],
+  cons: ["Geen kleuren — alleen wit licht", "Bridge nodig voor automatiseringen"],
+  forWho: ["Voor wie spots in keuken, badkamer of hal slim wil maken", "Voor Hue-gebruikers die uitbreiden naar GU10-armaturen"],
+  personalNote: "Logische volgende stap na E27-lampen. Als je spots hebt in de keuken of badkamer, zijn dit de meest betrouwbare slimme GU10-lampen.",
+  youtubeUrl: "https://www.youtube.com/shorts/P-Lb6Wve-Gc",
+},
+
+{
+  slug: "philips-hue-dimmer-switch-v2",
+  brand: "Philips Hue",
+  name: "Philips Hue Dimmer Switch V2",
+  category: "slimme-verlichting",
+  image: "/images/products/philips-hue-dimmer-switch-v2.png",
+  description:
+    "Draadloze dimschakelaar voor het Hue-systeem. Bevestig magnetisch aan de muur of gebruik als losse afstandsbediening.",
+  features: ["Draadloos", "Magnetische muurbevestiging", "4 knoppen", "Zigbee"],
+  affiliateUrl: "https://www.amazon.nl/dp/B08PKMT2DV?tag=slimhuiswonen-21",
+  priceHint: "€25 – €30",
+  priceLastUpdated: "april 2026",
+  pros: ["Geen bedrading nodig", "Muurbevestiging met magneet — geen boren", "Werkt ook als losse afstandsbediening"],
+  cons: ["Alleen voor Hue-lampen", "Geen touchscreen"],
+  forWho: ["Voor Hue-gebruikers die een fysieke schakelaar willen", "Voor huisgenoten die geen app willen gebruiken"],
+  personalNote: "Ideale aanvulling als je huisgenoten hebt die gewoon een schakelaar willen. Plak hem naast de deur en iedereen kan de lampen bedienen.",
+  youtubeUrl: "https://www.youtube.com/shorts/w398sZur0Pw",
+},
+
+{
+  slug: "philips-hue-motion-sensor",
+  brand: "Philips Hue",
+  name: "Philips Hue Motion Sensor (binnen)",
+  category: "sensoren",
+  image: "/images/products/philips-hue-motion-sensor.png",
+  description:
+    "Slimme bewegingssensor die automatisch Hue-lampen aan- en uitzet. Met ingebouwde lichtsensor — gaat alleen aan als het donker genoeg is.",
+  features: ["Bewegingsdetectie", "Ingebouwde lichtsensor", "Zigbee", "Batterij"],
+  affiliateUrl: "https://www.amazon.nl/Philips-Hue-Bewegingssensor-Ingebouwde-Lichtsensor/dp/B09CV78GV1?tag=slimhuiswonen-21",
+  priceHint: "€35 – €45",
+  priceLastUpdated: "april 2026",
+  pros: ["Werkt naadloos met alle Hue-lampen", "Lichtsensor — gaat niet aan overdag", "Eenvoudige Hue-app configuratie"],
+  cons: ["Alleen voor Hue-ecosysteem", "Detectiezone niet instelbaar"],
+  forWho: ["Voor Hue-gebruikers die automatisch licht willen bij binnenkomst", "Voor hal, trap of badkamer"],
+  personalNote: "De eenvoudigste manier om Hue-lampen automatisch te laten reageren op beweging. De lichtsensor zorgt dat je overdag nooit onnodig licht aan hebt.",
+  youtubeUrl: "https://www.youtube.com/shorts/NKLJZ8mdIzU",
+},
+
+{
+  slug: "tapo-l920-5-ledstrip",
+  brand: "TP-Link Tapo",
+  name: "Tapo L920-5 RGBIC LED Strip (5m)",
+  category: "slimme-verlichting",
+  image: "/images/products/tapo-l920-5-ledstrip.png",
+  description:
+    "Slimme RGBIC LED-strip van 5 meter met 50 individuele kleurzones, muzieksynchro en app-bediening. Geen hub nodig.",
+  features: ["RGBIC — 50 kleurzones", "Muzieksynchro", "Wi-Fi", "Geen hub nodig"],
+  affiliateUrl: "https://www.amazon.nl/dp/B09FSTVWFF?tag=slimhuiswonen-21",
+  priceHint: "€30 – €40",
+  priceLastUpdated: "april 2026",
+  pros: ["50 individuele kleurzones", "Muzieksynchro via microfoon", "Geen hub nodig"],
+  cons: ["Alleen binnen Tapo-app", "Beperkte smart home integratie"],
+  forWho: ["Voor sfeerverlichting in woonkamer, gaming-setup of achter tv", "Voor Tapo-gebruikers die LED-strip willen toevoegen"],
+  personalNote: "Sterk alternatief voor de Govee strip. Betaalbaar, veelzijdig en eenvoudig in gebruik. De 50 kleurzones geven mooie effecten.",
+  youtubeUrl: "https://www.youtube.com/shorts/afJD-6I6zFc",
+},
+
+{
+  slug: "govee-outdoor-ledstrip",
+  brand: "Govee",
+  name: "Govee Outdoor LED Strip (10m)",
+  category: "slimme-verlichting",
+  image: "/images/products/govee-outdoor-ledstrip.png",
+  description:
+    "Weerbestendige RGBIC LED-strip van 10 meter voor tuin, terras of gevel. IP65, app-gestuurd met segmentbediening.",
+  features: ["IP65 weerbestendig", "10 meter", "RGBIC segmentbediening", "Muzieksynchro"],
+  affiliateUrl: "https://www.amazon.nl/Govee-app-bediening-segmentcontrole-kleurverandering-muzieksynchronisatie/dp/B0BXKWTDC6?tag=slimhuiswonen-21",
+  priceHint: "€40 – €60",
+  priceLastUpdated: "april 2026",
+  pros: ["IP65 — geschikt voor buiten", "10 meter — dekt grote oppervlakken", "Segmentbediening voor gevarieerde effecten"],
+  cons: ["Govee-app vereist", "Minder smart home integratie"],
+  forWho: ["Voor sfeerverlichting buiten: terras, gevel, pergola", "Voor seizoensgebonden decoratie"],
+  personalNote: "De enige buitengeschikte LED-strip in dit overzicht. Ideaal voor sfeerverlichting op het terras of langs de dakgoot.",
+  youtubeUrl: "https://www.youtube.com/shorts/15PpKHcLSs0",
+},
+
+/* =========================
+   SMART HOME HUBS — UITBREIDING
+========================== */
+
+{
+  slug: "tapo-h200-smart-hub",
+  brand: "TP-Link Tapo",
+  name: "Tapo H200 Smart Hub",
+  category: "smart-home-hubs",
+  image: "/images/products/tapo-h200-smart-hub.png",
+  description:
+    "Centrale hub voor het Tapo-ecosysteem. Koppelt tot 64 sensoren én 4 camera's. Werkt als deurbel-gong en heeft microSD-opslag voor camerabeelden.",
+  features: ["Tot 64 sensoren", "microSD opslag", "Deurbel-gong", "Tapo ecosysteem"],
+  affiliateUrl: "https://www.amazon.nl/Tapo-H200-batterijcameras-Tapo-cameramodellen-Kasa-thermostaat/dp/B0C8BJ9ZLB?tag=slimhuiswonen-21",
+  priceHint: "€30 – €40",
+  priceLastUpdated: "april 2026",
+  pros: ["Betaalbaar instapmodel voor Tapo-ecosysteem", "microSD-opslag voor camera's", "Werkt als deurbel-gong"],
+  cons: ["Alleen voor Tapo-apparaten", "Beperkte automatiseringslogica"],
+  forWho: ["Voor wie al Tapo-sensoren en -camera's heeft", "Voor wie een centrale hub wil voor zijn Tapo-ecosystem"],
+  personalNote: "De logische hub als je al meerdere Tapo-sensoren of een Tapo-deurbel hebt. Betaalbaar en eenvoudig te configureren.",
+  youtubeUrl: "https://www.youtube.com/shorts/I9zLg6F3bYo",
+},
+
+{
+  slug: "aqara-hub-m3",
+  brand: "Aqara",
+  name: "Aqara Hub M3",
+  category: "smart-home-hubs",
+  image: "/images/products/aqara-hub-m3.png",
+  description:
+    "Geavanceerde Matter/Thread/Zigbee hub voor het Aqara-ecosysteem. Werkt met HomeKit, Google Home, Alexa en Home Assistant. Lokale automatisering zonder cloud.",
+  features: ["Matter", "Thread", "Zigbee 3.0", "Lokale automatisering"],
+  affiliateUrl: "https://www.amazon.nl/Aqara-Controller-Bluetooth-ondersteunt-SmartThings/dp/B0CWLHSKYC?tag=slimhuiswonen-21",
+  priceHint: "€80 – €100",
+  priceLastUpdated: "april 2026",
+  pros: ["Matter + Thread + Zigbee in één hub", "Werkt met alle grote platforms", "Volledig lokale automatisering"],
+  cons: ["Hogere prijs dan instapmodellen", "Configuratie vraagt wat kennis"],
+  forWho: ["Aqara-gebruikers die een centrale hub willen", "Voor wie Matter en Zigbee in één hub wil combineren"],
+  personalNote: "De beste hub als je diep in het Aqara-ecosysteem zit. Matter én Thread én Zigbee in één apparaat is uniek op dit prijsniveau.",
+  youtubeUrl: "https://www.youtube.com/shorts/mu-BDOW7KuI",
+},
+
+/* =========================
+   SLIMME THERMOSTATEN — UITBREIDING
+========================== */
+
+{
+  slug: "tado-smart-thermostat-v3-bedraad",
+  brand: "tado°",
+  name: "tado° Slimme Thermostaat V3+ (Bedraad)",
+  category: "slimme-thermostaten",
+  image: "/images/products/tado-smart-thermostat-v3-bedraad.png",
+  description:
+    "Bedrade versie van de populaire tado° slimme thermostaat met geofencing. Werkt met OpenTherm, Alexa, Google Home en Apple HomeKit. Geen abonnement vereist voor basisfuncties.",
+  features: ["Geofencing", "OpenTherm", "Alexa, Google Home, HomeKit", "Geen verplicht abonnement"],
+  affiliateUrl: "https://www.amazon.nl/tado%C2%B0-Bedrade-Slimme-Thermostaat-verwarmingsaansturing/dp/B01BWUH8W4?tag=slimhuiswonen-21",
+  priceHint: "€80 – €110",
+  priceLastUpdated: "april 2026",
+  pros: ["Geofencing: stookt alleen als er iemand thuis is", "OpenTherm voor maximale energiebesparing", "Breed compatibel: Alexa, Google, HomeKit, Homey"],
+  cons: ["Geavanceerde functies vereisen betaald Auto-Assist abonnement", "Vereist internet-verbinding"],
+  forWho: ["Voor wie geofencing wil: thermostaat reageert op je locatie", "Voor wie energie wil besparen op verwarming"],
+  personalNote: "tado° is marktleider in Nederland voor slimme thermostaten en dat is niet voor niets. De geofencing werkt uitstekend in de praktijk.",
+  youtubeUrl: "https://www.youtube.com/shorts/oCauDVeOGBg",
+},
+
+{
+  slug: "tado-radiatorkraan-v3-plus",
+  brand: "tado°",
+  name: "tado° Slimme Radiatorkraan V3+",
+  category: "slimme-thermostaten",
+  image: "/images/products/tado-radiatorkraan-v3-plus.png",
+  description:
+    "Slimme radiatorkraan voor kamertemperatuurregeling per ruimte. Werkt met de tado° thermostaat of standalone via internet-bridge.",
+  features: ["Per-kamer regeling", "Compatibel met tado° thermostaat", "Geofencing", "OpenWindowDetectie"],
+  affiliateUrl: "https://www.amazon.nl/tado%C2%B0-Slimme-Radiatorknop-intelligente-verwarmingsaansturing/dp/B08LNX3SDN?tag=slimhuiswonen-21",
+  priceHint: "€60 – €80",
+  priceLastUpdated: "april 2026",
+  pros: ["Per kamer regelen — slaapkamer kouder, woonkamer warmer", "Combineert met tado° thermostaat", "Open-raam detectie"],
+  cons: ["Duurder per stuk bij meerdere kamers", "Internet bridge vereist bij standalone gebruik"],
+  forWho: ["Voor wie elke kamer apart wil regelen", "Als aanvulling bij een tado° thermostaat"],
+  personalNote: "Combineer met de tado° thermostaat voor volledige controle per kamer. Terugverdientijd via energiebesparing is realistisch.",
+  youtubeUrl: "https://www.youtube.com/shorts/oCauDVeOGBg",
+},
+
+/* =========================
+   SLIMME SLOTEN — UITBREIDING
+========================== */
+
+{
+  slug: "nuki-smart-lock-3-pro",
+  brand: "Nuki",
+  name: "Nuki Smart Lock 3.0 Pro",
+  category: "slimme-sloten",
+  image: "/images/products/nuki-smart-lock-3-pro.png",
+  description:
+    "Slimme deurslot met ingebouwde WiFi en Matter-ondersteuning. Past op bestaand euro-cilinderslot. Auto Unlock en Auto Lock via geofencing.",
+  features: ["WiFi ingebouwd", "Matter", "Auto Unlock & Auto Lock", "Geofencing"],
+  affiliateUrl: "https://www.amazon.nl/Smart-Module-elektronisch-automatisch-digitaal/dp/B09MRWW6WZ?tag=slimhuiswonen-21",
+  priceHint: "€280 – €310",
+  priceLastUpdated: "april 2026",
+  pros: ["WiFi ingebouwd — geen bridge nodig", "Auto Unlock: deur gaat open als je aankomt", "Matter: werkt met alle grote platforms"],
+  cons: ["Hogere prijs dan V4 Pro zonder bridge", "Batterijen vervangen i.p.v. opladen"],
+  forWho: ["Voor wie Auto Unlock wil zonder extra bridge te kopen", "Voor Matter smart home setups"],
+  personalNote: "Als je de WiFi-versie wilt zonder extra brug, is de 3.0 Pro nog steeds een uitstekende keuze. De Auto Unlock functie is dagelijks gemak dat je niet meer wilt missen.",
+},
+
+{
+  slug: "aqara-smart-lock-u200-lite",
+  brand: "Aqara",
+  name: "Aqara Smart Lock U200 Lite",
+  category: "slimme-sloten",
+  image: "/images/products/aqara-smart-lock-u200-lite.png",
+  description:
+    "Betaalbaar slim deurslot met Matter/Thread, vingerafdruksensor en NFC-kaartje. Werkt met HomeKit, Google Home, Alexa en Home Assistant.",
+  features: ["Vingerafdruksensor", "NFC", "Matter & Thread", "HomeKit, Google, Alexa"],
+  affiliateUrl: "https://www.amazon.nl/dp/B0D9Q1WPBT?tag=slimhuiswonen-21",
+  priceHint: "€130 – €160",
+  priceLastUpdated: "april 2026",
+  pros: ["Betaalbaar alternatief voor Nuki", "Vingerafdruk + NFC ingebouwd", "Matter: breed compatibel"],
+  cons: ["Minder bekende naam dan Nuki", "Volledig nieuw slot — bestaand cilinderslot vervangen"],
+  forWho: ["Voor wie een nieuw slot zoekt met biometrie en Matter", "Aqara-gebruikers die alles in één ecosysteem willen"],
+  personalNote: "Sterk alternatief voor Nuki, zeker als je al in het Aqara-ecosysteem zit. De vingerafdruksensor maakt het dagelijks gebruik heel prettig.",
+  youtubeUrl: "https://www.youtube.com/shorts/nm5_od4Unkk",
+},
+
+/* =========================
+   MESH WIFI — UITBREIDING
+========================== */
+
+{
+  slug: "tp-link-deco-xe75-2pack",
+  brand: "TP-Link",
+  name: "TP-Link Deco XE75 (2-pack)",
+  category: "mesh-wifi",
+  image: "/images/products/tp-link-deco-xe75-2pack.png",
+  description:
+    "WiFi 6E mesh-systeem in een 2-pack voor woningen tot ca. 370 m². Ideaal als fundament voor een betrouwbaar smart home met veel apparaten.",
+  features: ["WiFi 6E (tri-band)", "2-pack — tot 370 m²", "Eenvoudig uitbreidbaar"],
+  affiliateUrl: "https://www.amazon.nl/dp/B09W9FZQKC?tag=slimhuiswonen-21",
+  priceHint: "€150 – €200",
+  priceLastUpdated: "april 2026",
+  pros: ["WiFi 6E — snelste standaard", "Eenvoudige Deco-app", "Goede prijs-kwaliteit voor 2-pack"],
+  cons: ["WiFi 6E-snelheid vereist ondersteunde apparaten", "Premium prijs"],
+  forWho: ["Voor middelgrote woningen die stabiel mesh wifi willen", "Voor smart home setups met 20+ apparaten"],
+  personalNote: "De 2-pack is ideaal voor de meeste woningen in Nederland. Goedkoper dan de 3-pack terwijl de dekking voor de gemiddelde woning ruim voldoende is.",
+  youtubeUrl: "https://www.youtube.com/shorts/J-wW_HLFVoM",
+},
+
+/* =========================
+   ENERGIE MONITORS — UITBREIDING
+========================== */
+
+{
+  slug: "zendure-slimme-meter-p1",
+  brand: "Zendure",
+  name: "Zendure Slimme Meter P1",
+  category: "energie-monitors",
+  image: "/images/products/zendure-slimme-meter-p1.png",
+  description:
+    "Slimme P1-meter die je slimme meter uitleest en energieverbruik realtime doorgeeft. Werkt met Zendure SolarFlow en Home Assistant. Geen abonnement.",
+  features: ["P1-poort aansluiting", "Realtime energieverbruik", "Home Assistant compatibel", "Geen abonnement"],
+  affiliateUrl: "https://www.amazon.nl/Zendure-Slimme-Meter-P1/dp/B0FL2CQ56X?tag=slimhuiswonen-21",
+  priceHint: "€90 – €110",
+  priceLastUpdated: "april 2026",
+  pros: ["Plug-and-play op P1-poort", "Werkt met SolarFlow en Home Assistant", "Geen maandelijks abonnement"],
+  cons: ["Hogere prijs dan eenvoudige P1-dongles", "Primair gericht op Zendure-ecosysteem"],
+  forWho: ["Voor Zendure SolarFlow-gebruikers die verbruik willen koppelen", "Voor Home Assistant-gebruikers die P1-data willen"],
+  youtubeUrl: "https://www.youtube.com/watch?v=3vy7SmFM-G8",
+},
+
+{
+  slug: "shelly-em",
+  brand: "Shelly",
+  name: "Shelly EM Energiemeter",
+  category: "energie-monitors",
+  image: "/images/products/shelly-em.png",
+  description:
+    "Energiemeter voor in de meterkast die per fase het verbruik meet. Werkt met Home Assistant, Homey en de eigen Shelly-app. Geschikt voor gevorderde gebruikers.",
+  features: ["Per-fase meting", "WiFi", "Home Assistant & Homey", "Meterkast montage"],
+  affiliateUrl: "https://www.amazon.nl/Shelly-Bluetooth-Energiemeter-Schakelbesturing-Vermogensmeting%E2%94%82-Huisautomatisering%E2%94%82/dp/B0CH1JW2CW?tag=slimhuiswonen-21",
+  priceHint: "€60 – €75",
+  priceLastUpdated: "april 2026",
+  pros: ["Per-fase meting", "Werkt met Home Assistant en Homey", "Goedkoper dan Shelly Pro 3EM"],
+  cons: ["Montage in meterkast — elektricien aanbevolen", "Minder functies dan Pro 3EM"],
+  forWho: ["Voor Home Assistant-gebruikers die energieverbruik per fase willen meten", "Als goedkoper alternatief voor Shelly Pro 3EM"],
+  personalNote: "De Shelly EM is de betaalbaardere instapper voor energiemeting in de meterkast. Minder uitgebreid dan de Pro 3EM maar voor de meeste woningen meer dan genoeg.",
+  youtubeUrl: "https://www.youtube.com/shorts/zxPh7ekFqc4",
+},
+
+/* =========================
+   SENSOREN — UITBREIDING
+========================== */
+
+{
+  slug: "aqara-rookmelder",
+  brand: "Aqara",
+  name: "Aqara Rookmelder (Zigbee)",
+  category: "sensoren",
+  image: "/images/products/aqara-rookmelder.png",
+  description:
+    "Slimme Zigbee rookmelder met app-meldingen en integratie in HomeKit, Alexa en Home Assistant. Werkt met de Aqara hub.",
+  features: ["Zigbee", "App-meldingen bij rookdetectie", "HomeKit, Alexa, Home Assistant", "LED-indicator"],
+  affiliateUrl: "https://www.amazon.nl/Aqara-Rookmelders-LED-indicator-Batterijduur-Ondersteunt/dp/B0DHZ7LK2M?tag=slimhuiswonen-21",
+  priceHint: "€35 – €45",
+  priceLastUpdated: "april 2026",
+  pros: ["App-melding bij rookdetectie — ook op afstand", "Integratie in automatiseringen (bijv. lampen rood laten knipperen)", "Lange batterijduur"],
+  cons: ["Vereist Zigbee hub", "Duurdere dan gewone rookmelders"],
+  forWho: ["Voor wie rookmelding ook buiten huis wil ontvangen", "Voor slimme automatiseringen bij branddetectie"],
+  personalNote: "De slimme rookmelder voegt echt waarde toe ten opzichte van een gewone: je krijgt een melding op je telefoon, ook als je er niet bij bent.",
+  youtubeUrl: "https://www.youtube.com/shorts/a3T4mHfMRCQ",
+},
+
+{
+  slug: "aqara-mini-switch-t1",
+  brand: "Aqara",
+  name: "Aqara Mini Switch T1",
+  category: "sensoren",
+  image: "/images/products/aqara-mini-switch-t1.png",
+  description:
+    "Draadloze Zigbee-knop voor het starten van automatiseringen. Ondersteunt druk-, dubbel- en houdklik. Bevestig aan de muur of gebruik als losse afstandsbediening.",
+  features: ["Zigbee", "Druk / Dubbel / Houd klik", "Muurbevestiging", "Automatiseringen"],
+  affiliateUrl: "https://www.amazon.nl/Aqara-Schakelaar-Zigbee-verbinding-Bedieningsknop-Home-apparaten/dp/B07D19YXND?tag=slimhuiswonen-21",
+  priceHint: "€15 – €22",
+  priceLastUpdated: "april 2026",
+  pros: ["3 acties per knop (druk / dubbel / houd)", "Werkt met alle Aqara-hubs", "Goedkoop en veelzijdig"],
+  cons: ["Vereist Aqara hub of compatibele Zigbee hub", "Geen display"],
+  forWho: ["Voor wie een fysieke knop wil voor elke automatisering", "Voor Aqara/Home Assistant-gebruikers"],
+  personalNote: "Een van de meest veelzijdige en goedkoopste toevoegingen aan een smart home. Één knop kan drie verschillende acties uitvoeren — denk aan licht aan/uit, scène wisselen en alles uitzetten.",
+  youtubeUrl: "https://www.youtube.com/shorts/PnvBQ2v_fjs",
+},
+
+{
+  slug: "tapo-t300-waterlekkagesensor",
+  brand: "TP-Link Tapo",
+  name: "Tapo T300 Waterlekkagesensor",
+  category: "sensoren",
+  image: "/images/products/tapo-t300-waterlekkagesensor.png",
+  description:
+    "Slimme waterlekkagesensor met alarm tot 90dB en directe app-melding. IP67 waterbestendig. Vereist Tapo Hub H100 of H200.",
+  features: ["90dB alarm", "IP67 waterbestendig", "App-melding", "Vereist Tapo Hub"],
+  affiliateUrl: "https://www.amazon.nl/Tapo-T300-waterlek-sensor-ingebouwde-instelbare/dp/B0CB8Q3X4N?tag=slimhuiswonen-21",
+  priceHint: "€15 – €20",
+  priceLastUpdated: "april 2026",
+  pros: ["Luid alarm (90dB) + app-melding", "Goedkoop", "IP67 — bestand tegen water"],
+  cons: ["Vereist Tapo Hub H100 of H200", "Alleen binnen Tapo-ecosysteem"],
+  forWho: ["Voor Tapo-gebruikers die al een H100/H200 hub hebben", "Voor plaatsing onder wasmachine, vaatwasser of in kelder"],
+  personalNote: "Het Tapo-equivalent van de Aqara waterleksensor. Als je al een Tapo hub hebt, is dit de logische keuze.",
+  youtubeUrl: "https://www.youtube.com/shorts/sJRH_NO6iNY",
+},
+
 ];
 
 /* =========================
