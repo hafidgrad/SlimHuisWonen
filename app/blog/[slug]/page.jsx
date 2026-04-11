@@ -49,17 +49,21 @@ export default function BlogPostPage({ params }) {
     description: post.description,
     image: `https://slimhuiswonen.nl${post.image}`,
     author: {
-      "@type": "Organization",
-      name: "SlimHuisWonen.nl",
+      "@type": "Person",
+      name: "Hafid",
+      url: "https://slimhuiswonen.nl/over",
     },
     publisher: {
       "@type": "Organization",
       name: "SlimHuisWonen.nl",
+      url: "https://slimhuiswonen.nl",
     },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `https://slimhuiswonen.nl/blog/${post.slug}`,
     },
+    ...(post.datePublished && { datePublished: post.datePublished }),
+    ...(post.dateModified && { dateModified: post.dateModified }),
   };
 
   // ✅ veilig: als related ontbreekt of leeg is -> []
@@ -138,6 +142,31 @@ export default function BlogPostPage({ params }) {
           <h1>{post.title}</h1>
 
           {post.description && <p className="section-intro">{post.description}</p>}
+
+          {post.datePublished && (
+            <p className="muted small" style={{ marginBottom: "0.5rem" }}>
+              Gepubliceerd op{" "}
+              <time dateTime={post.datePublished}>
+                {new Date(post.datePublished).toLocaleDateString("nl-NL", {
+                  day: "numeric",
+                  month: "long",
+                  year: "numeric",
+                })}
+              </time>
+              {post.dateModified && post.dateModified !== post.datePublished && (
+                <>
+                  {" "}· Bijgewerkt op{" "}
+                  <time dateTime={post.dateModified}>
+                    {new Date(post.dateModified).toLocaleDateString("nl-NL", {
+                      day: "numeric",
+                      month: "long",
+                      year: "numeric",
+                    })}
+                  </time>
+                </>
+              )}
+            </p>
+          )}
 
           <hr />
 

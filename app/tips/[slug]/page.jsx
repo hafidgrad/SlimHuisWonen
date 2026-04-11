@@ -5,6 +5,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import RelatedContent from "@/components/RelatedContent";
 import { tips, getTipBySlug, getAllTips } from "@/data/tips";
+import { blogPosts } from "@/data/blog";
+import { aanraders } from "@/data/aanraders";
 
 export async function generateMetadata({ params }) {
   const tip = getTipBySlug(params.slug);
@@ -46,17 +48,38 @@ export default function TipPage({ params }) {
     headline: tip.title,
     description: tip.description,
     image: `https://slimhuiswonen.nl${tip.image}`,
-    author: { "@type": "Organization", name: "SlimHuisWonen.nl" },
-    publisher: { "@type": "Organization", name: "SlimHuisWonen.nl" },
+    author: {
+      "@type": "Person",
+      name: "Hafid",
+      url: "https://slimhuiswonen.nl/over",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "SlimHuisWonen.nl",
+      url: "https://slimhuiswonen.nl",
+    },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `https://slimhuiswonen.nl/tips/${tip.slug}`,
     },
+    ...(tip.datePublished && { datePublished: tip.datePublished }),
+    ...(tip.dateModified && { dateModified: tip.dateModified }),
   };
 
   const relatedItems = (tip.related || [])
-  .map((slug) => tips.find((p) => p && p.slug === slug && p.available))
-  .filter(Boolean);
+    .map((slug) => {
+      const tipItem = tips.find((p) => p && p.slug === slug && p.available);
+      if (tipItem) return { ...tipItem, basePath: "tips" };
+
+      const blogItem = blogPosts.find((p) => p.slug === slug && p.available);
+      if (blogItem) return { ...blogItem, basePath: "blog" };
+
+      const guideItem = aanraders.find((g) => g.slug === slug);
+      if (guideItem) return { ...guideItem, basePath: "aanraders" };
+
+      return null;
+    })
+    .filter(Boolean);
 
   return (
     <>
@@ -109,6 +132,31 @@ export default function TipPage({ params }) {
           <h1>{tip.title}</h1>
 
           {tip.description && <p className="section-intro">{tip.description}</p>}
+
+          {tip.datePublished && (
+            <p className="muted small" style={{ marginBottom: "0.5rem" }}>
+              Gepubliceerd op{" "}
+              <time dateTime={tip.datePublished}>
+                {new Date(tip.datePublished).toLocaleDateString("nl-NL", {
+                  day: "numeric",
+                  month: "long",
+                  year: "numeric",
+                })}
+              </time>
+              {tip.dateModified && tip.dateModified !== tip.datePublished && (
+                <>
+                  {" "}· Bijgewerkt op{" "}
+                  <time dateTime={tip.dateModified}>
+                    {new Date(tip.dateModified).toLocaleDateString("nl-NL", {
+                      day: "numeric",
+                      month: "long",
+                      year: "numeric",
+                    })}
+                  </time>
+                </>
+              )}
+            </p>
+          )}
 
           <hr />
 

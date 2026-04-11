@@ -146,9 +146,12 @@ const structuredData = [
     description: article.description,
     image: `https://slimhuiswonen.nl${article.image}`,
     author: {
-      "@type": "Organization",
-      name: "SlimHuisWonen.nl",
+      "@type": "Person",
+      name: "Hafid",
+      url: "https://slimhuiswonen.nl/over",
     },
+    ...(article.datePublished && { datePublished: article.datePublished }),
+    ...(article.dateModified && { dateModified: article.dateModified }),
   },
   {
     "@context": "https://schema.org",
@@ -255,6 +258,31 @@ const structuredData = [
 
           <h1>{article.title}</h1>
           <p className="section-intro">{article.description}</p>
+
+          {article.datePublished && (
+            <p className="muted small" style={{ marginBottom: "0.5rem" }}>
+              Gepubliceerd op{" "}
+              <time dateTime={article.datePublished}>
+                {new Date(article.datePublished).toLocaleDateString("nl-NL", {
+                  day: "numeric",
+                  month: "long",
+                  year: "numeric",
+                })}
+              </time>
+              {article.dateModified && article.dateModified !== article.datePublished && (
+                <>
+                  {" "}· Bijgewerkt op{" "}
+                  <time dateTime={article.dateModified}>
+                    {new Date(article.dateModified).toLocaleDateString("nl-NL", {
+                      day: "numeric",
+                      month: "long",
+                      year: "numeric",
+                    })}
+                  </time>
+                </>
+              )}
+            </p>
+          )}
          {/* ================= KORT ANTWOORD (AI OPTIMALISATIE) ================= */}
 
 {aiSummary && (
