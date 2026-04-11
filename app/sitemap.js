@@ -3,6 +3,7 @@ import { tips } from "@/data/tips";
 import { blogPosts } from "@/data/blog";
 import { howto } from "@/data/howto";
 import { categories } from "@/data/categories";
+import { aanraders } from "@/data/aanraders";
 
 export default function sitemap() {
   const baseUrl = "https://slimhuiswonen.nl";
@@ -71,6 +72,15 @@ export default function sitemap() {
       lastModified,
     }));
 
+  // ✅ Aanrader koopgids routes
+  const aanradersArray = Array.isArray(aanraders) ? aanraders : [];
+  const aanraderRoutes = aanradersArray
+    .filter((g) => g?.slug)
+    .map((g) => ({
+      url: `${baseUrl}/aanraders/${g.slug}`,
+      lastModified,
+    }));
+
   // ✅ Blog routes (alleen available: true)
   const blogArray = Array.isArray(blogPosts) ? blogPosts : [];
 
@@ -85,6 +95,7 @@ export default function sitemap() {
     ...staticRoutes,
     ...categorieRoutes,
     ...topicRoutes,
+    ...aanraderRoutes,
     ...productRoutes,
     ...howtoRoutes,
     ...tipRoutes,

@@ -28,9 +28,40 @@ export async function generateMetadata() {
   };
 }
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "SlimHuisWonen",
+  url: "https://slimhuiswonen.nl",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: "https://slimhuiswonen.nl/zoeken?q={search_term_string}",
+    },
+    "query-input": "required name=search_term_string",
+  },
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "SlimHuisWonen",
+  url: "https://slimhuiswonen.nl",
+  logo: "https://slimhuiswonen.nl/images/logo.png",
+};
+
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
       <Header />
 
       <main>

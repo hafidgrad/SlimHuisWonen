@@ -87,6 +87,32 @@ export default function AanraderDetailPage({ params }) {
 
   const amazonSearchTerm = getAmazonSearchTerm(params.slug);
 
+  /* Structured Data: BreadcrumbList */
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://slimhuiswonen.nl",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Aanraders",
+        item: "https://slimhuiswonen.nl/aanraders",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: guide.title,
+        item: `https://slimhuiswonen.nl/aanraders/${guide.slug}`,
+      },
+    ],
+  };
+
   /* Structured Data: ItemList */
   const itemListSchema = {
     "@context": "https://schema.org",
@@ -123,6 +149,12 @@ export default function AanraderDetailPage({ params }) {
       <Header />
 
       {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
