@@ -19,6 +19,12 @@ export const products = [
     ],
     affiliateUrl: "https://www.amazon.nl/dp/B0991VHWSJ?tag=slimhuiswonen-21",
     rating: 4.7,
+    priceHint: "€70 – €85",
+    priceLastUpdated: "april 2026",
+    pros: ["Volledig ecosysteem uitbreidbaar", "Stabiele Zigbee verbinding", "Werkt met alle grote platforms"],
+    cons: ["Duurder dan wifi-alternatieven", "Bridge vereist voor volledige functionaliteit"],
+    forWho: ["Voor wie serieus wil beginnen met slimme verlichting", "Voor Zigbee-gebruikers die willen uitbreiden"],
+    personalNote: "De beste starterkit als je serieus een slim huis wilt bouwen. De bridge maakt automatiseringen zonder internet mogelijk.",
     youtubeUrl: "https://www.youtube.com/watch?v=wm9IsHKN-ZQ",
   },
 
@@ -32,6 +38,8 @@ export const products = [
       "Losse slimme E27 lamp met warm wit licht, dimbaar en app-gestuurd.",
     features: ["Warm wit licht", "Dimbaar", "Werkt met Hue Bridge"],
     affiliateUrl: "https://www.amazon.nl/dp/B09TCNXYXJ?tag=slimhuiswonen-21",
+    priceHint: "€15 – €20",
+    priceLastUpdated: "april 2026",
     youtubeUrl: "https://www.youtube.com/shorts/iUsm0cBeMiA",
   },
 
@@ -45,6 +53,12 @@ export const products = [
       "Slimme lamp met wit én gekleurd licht, bedienbaar via Bluetooth of Hue Bridge.",
     features: ["16 miljoen kleuren", "Dimbaar", "Bluetooth & Bridge"],
     affiliateUrl: "https://www.amazon.nl/dp/B099P3CP1K?tag=slimhuiswonen-21",
+    priceHint: "€35 – €45",
+    priceLastUpdated: "april 2026",
+    pros: ["16 miljoen kleuren", "Werkt via Bluetooth zonder bridge"],
+    cons: ["Bridge nodig voor automatiseringen", "Duurder dan kleurlampen van andere merken"],
+    forWho: ["Voor wie kleurverandering en sfeerverlichting wil", "Voor Hue-gebruikers die kleuren willen toevoegen"],
+    personalNote: "Prima keuze als je al een Hue Bridge hebt. Via Bluetooth werkt hij ook solo, maar automatiseringen werken beter met bridge.",
     youtubeUrl: "https://www.youtube.com/shorts/mwye3iuxo7Q",
   },
 
@@ -58,6 +72,8 @@ export const products = [
       "Flexibele LED-strip voor indirecte verlichting, uitbreidbaar en dimbaar.",
     features: ["Uitbreidbaar", "Wit & kleur", "Hue ecosysteem"],
     affiliateUrl: "https://www.amazon.nl/dp/B088RX9CSZ?tag=slimhuiswonen-21",
+    priceHint: "€55 – €70",
+    priceLastUpdated: "april 2026",
     youtubeUrl: "https://www.youtube.com/shorts/b8WqkwpsRM8",
   },
 
@@ -71,6 +87,12 @@ export const products = [
       "Betaalbare RGBIC LED-strip met app-bediening en muzieksynchronisatie.",
     features: ["RGBIC", "Muzieksync", "Geen hub nodig"],
     affiliateUrl: "https://www.amazon.nl/dp/B09BN2PSR8?tag=slimhuiswonen-21",
+    priceHint: "€20 – €30",
+    priceLastUpdated: "april 2026",
+    pros: ["Betaalbaar", "Geen hub nodig", "Kleurverandering per segment (RGBIC)"],
+    cons: ["Eigen Govee-app vereist", "Beperkte smart home integratie"],
+    forWho: ["Voor wie sfeerverlichting wil zonder hoge kosten", "Voor gamers en decoratieve toepassingen"],
+    personalNote: "Sterk in prijs-kwaliteit voor decoratieve toepassingen. Niet ideaal als je volledige smart home integratie wilt.",
     youtubeUrl: "https://www.youtube.com/shorts/h43CHLmeEXc",
   },
 
@@ -84,6 +106,12 @@ export const products = [
       "Slimme Wi-Fi lampen met kleur en wit licht, geen hub nodig.",
     features: ["Wi-Fi", "Kleur & wit", "Alexa & Google"],
     affiliateUrl: "https://www.amazon.nl/dp/B08QRQQ53T?tag=slimhuiswonen-21",
+    priceHint: "€18 – €25",
+    priceLastUpdated: "april 2026",
+    pros: ["Kleur en wit licht", "Geen hub nodig", "Alexa & Google Home"],
+    cons: ["Wifi-belasting bij veel lampen", "App minder uitgebreid dan Hue"],
+    forWho: ["Voor starters die betaalbaar willen beginnen", "Voor wie kleur wil zonder Hue-investering"],
+    personalNote: "Goede instapkeuze. Werkt prima voor eenvoudig gebruik, maar minder geschikt als basis voor een groter smart home.",
     youtubeUrl: "https://www.youtube.com/shorts/ISkg6oerWgE",
   },
 
@@ -97,6 +125,12 @@ export const products = [
       "Zigbee slimme lampen, compatibel met Philips Hue en SmartThings.",
     features: ["Zigbee", "Dimbaar", "Warm wit"],
     affiliateUrl: "https://www.amazon.nl/dp/B0CHJQDRSY?tag=slimhuiswonen-21",
+    priceHint: "€40 – €55",
+    priceLastUpdated: "april 2026",
+    pros: ["Compatibel met Philips Hue Bridge", "Zigbee — stabiel en energiezuinig", "Warm wit licht"],
+    cons: ["Geen kleuren", "Vereist een Zigbee hub"],
+    forWho: ["Voor Hue-gebruikers die betaalbaar willen uitbreiden", "Voor Zigbee-enthousiastelingen"],
+    personalNote: "Slimme keuze als je al een Hue Bridge of Zigbee hub hebt en wil uitbreiden zonder de Hue-prijs te betalen.",
     youtubeUrl: "https://www.youtube.com/shorts/VbaTma08sMc",
   },
 
@@ -109,6 +143,8 @@ export const products = [
     description: "Dimbare slimme Wi-Fi lamp zonder hub.",
     features: ["Wi-Fi", "Dimbaar", "Geen hub nodig"],
     affiliateUrl: "https://www.amazon.nl/dp/B087RZVBQW?tag=slimhuiswonen-21",
+    priceHint: "€10 – €15",
+    priceLastUpdated: "april 2026",
     youtubeUrl: "https://www.youtube.com/shorts/Up756rCbJkw",
   },
 
@@ -125,6 +161,12 @@ export const products = [
     description: "Zigbee contactsensor voor deuren en ramen.",
     features: ["Zigbee", "Compact", "Automatiseringen"],
     affiliateUrl: "https://www.amazon.nl/dp/B0BTL8B72D?tag=slimhuiswonen-21",
+    priceHint: "€15 – €20",
+    priceLastUpdated: "april 2026",
+    pros: ["Compact en betrouwbaar", "Lage batterijverbruik", "Werkt met Homey, Home Assistant en HomeKit"],
+    cons: ["Vereist Zigbee hub", "Geen wifi versie"],
+    forWho: ["Voor wie automatisch wil weten of ramen/deuren open zijn", "Voor beveiligingsautomatiseringen"],
+    personalNote: "Één van de meest gebruikte sensoren in mijn eigen smart home. Klein, stil en zeer betrouwbaar.",
     youtubeUrl: "https://www.youtube.com/shorts/j2NIXDy3yI8",
   },
 
@@ -139,6 +181,12 @@ export const products = [
   features: ["Bewegingsdetectie", "Matter", "Thread", "Automatisering"],
   affiliateUrl:
     "https://www.amazon.nl/Eve-Motion-Matter-bewegingssensor-automatische/dp/B0BZJLJZRM?tag=slimhuiswonen-21",
+  priceHint: "€35 – €42",
+  priceLastUpdated: "april 2026",
+  pros: ["Matter + Thread: toekomstbestendig", "Volledig lokaal — geen cloud", "Werkt met Apple Home, Google Home, Home Assistant"],
+  cons: ["Duurder dan wifi-alternatieven", "Thread vereist een Thread Border Router"],
+  forWho: ["Voor Apple-gebruikers die maximale privacy willen", "Voor wie investeert in een toekomstbestendig smart home"],
+  personalNote: "De beste keuze als je al een Matter-compatibele hub hebt. Matter + Thread zorgt voor ultralage latency en werkt zonder internet.",
   youtubeUrl: "https://www.youtube.com/watch?v=MwK6XCo_5JY",
 },
 
@@ -152,6 +200,12 @@ export const products = [
       "Geavanceerde mmWave aanwezigheidssensor met zone-detectie.",
     features: ["mmWave radar", "Zone-detectie", "Zeer nauwkeurig"],
     affiliateUrl: "https://www.amazon.nl/dp/B0BXWZMQJ3?tag=slimhuiswonen-21",
+    priceHint: "€50 – €60",
+    priceLastUpdated: "april 2026",
+    pros: ["Zone-detectie: meerdere zones in één ruimte", "Detecteert aanwezigheid ook zonder beweging", "Zeer nauwkeurig (mmWave radar)"],
+    cons: ["Duurder dan gewone bewegingssensoren", "Vereist Zigbee hub", "Configuratie vraagt meer kennis"],
+    forWho: ["Voor wie nooit een lamp wil die onterecht uitgaat terwijl je er nog bent", "Voor geavanceerde automatiseringen met zone-detectie"],
+    personalNote: "De Aqara FP2 is een gamechanger voor verlichting op basis van aanwezigheid. Normale sensoren detecteren alleen beweging — de FP2 detecteert of je er nog bent, ook als je stilzit.",
     youtubeUrl: "https://www.youtube.com/shorts/LPven_LKoT8",
   },
 
@@ -165,6 +219,8 @@ export const products = [
       "Temperatuur- en luchtvochtigheidssensor voor slimme automatiseringen.",
     features: ["Temperatuur", "Luchtvochtigheid", "Zigbee"],
     affiliateUrl: "https://www.amazon.nl/dp/B0DM23Q1VB?tag=slimhuiswonen-21",
+    priceHint: "€14 – €18",
+    priceLastUpdated: "april 2026",
     youtubeUrl: "https://www.youtube.com/shorts/2gnel7Aku3c",
   },
 
@@ -178,6 +234,8 @@ export const products = [
       "Contactsensor voor deuren en ramen binnen het Tapo ecosysteem.",
     features: ["Deur / raam detectie", "Slimme meldingen", "Automatiseringen"],
     affiliateUrl: "https://www.amazon.nl/dp/B0BF5MC9QX?tag=slimhuiswonen-21",
+    priceHint: "€12 – €15",
+    priceLastUpdated: "april 2026",
     youtubeUrl: "https://www.youtube.com/shorts/rUPcVT878V4",
   },
 
@@ -190,6 +248,8 @@ export const products = [
     description: "Detecteert waterlekken en waarschuwt direct via app.",
     features: ["Waterdetectie", "Zigbee", "Automatiseringen"],
     affiliateUrl: "https://www.amazon.nl/dp/B0DWXHMFQS?tag=slimhuiswonen-21",
+    priceHint: "€15 – €20",
+    priceLastUpdated: "april 2026",
     youtubeUrl: "https://www.youtube.com/shorts/sKgjw-64WVg",
   },
 
@@ -203,6 +263,8 @@ export const products = [
       "Slimme temperatuur- en luchtvochtigheidsmeter met display.",
     features: ["Temperatuur", "Luchtvochtigheid", "Display"],
     affiliateUrl: "https://www.amazon.nl/dp/B0BNYSVV3J?tag=slimhuiswonen-21",
+    priceHint: "€18 – €25",
+    priceLastUpdated: "april 2026",
     youtubeUrl: "https://www.youtube.com/shorts/96W-aKT8vPk",
   },
 
@@ -215,6 +277,8 @@ export const products = [
     description: "Detecteert trillingen, kantelen en schokken.",
     features: ["Trilling detectie", "Kantelen", "Schokken"],
     affiliateUrl: "https://www.amazon.nl/dp/B07PJT939B?tag=slimhuiswonen-21",
+    priceHint: "€15 – €20",
+    priceLastUpdated: "april 2026",
     youtubeUrl: "https://www.youtube.com/shorts/dwRf4hPIUEM",
   },
 
@@ -231,6 +295,12 @@ export const products = [
     description: "Slimme videodeurbel met live beeld en meldingen.",
     features: ["Live beeld", "Meldingen", "Smartphone bediening"],
     affiliateUrl: "https://www.amazon.nl/dp/B0BZWQP9Z1?tag=slimhuiswonen-21",
+    priceHint: "€85 – €100",
+    priceLastUpdated: "april 2026",
+    pros: ["Grote naamsbekendheid", "Eenvoudige installatie", "Maandelijks gratis opslag inbegrepen"],
+    cons: ["Cloudopslag na gratis periode betaald", "Beperkte smart home integratie buiten Ring/Amazon"],
+    forWho: ["Voor wie geen bedrading wil aanpassen", "Voor Amazon Alexa gebruikers"],
+    personalNote: "Goede keuze voor wie simpel wil beginnen. Wil je meer privacy of smart home integratie, kijk dan ook naar Aqara G410 of Reolink.",
     youtubeUrl: "https://www.youtube.com/shorts/_Oz6c6BiMjo",
   },
 
@@ -243,6 +313,12 @@ export const products = [
     description: "Videodeurbel met AI-detectie en kleurennachtzicht.",
     features: ["AI detectie", "Kleur nachtzicht", "Smart meldingen"],
     affiliateUrl: "https://www.amazon.nl/dp/B0DK5ZPSHH?tag=slimhuiswonen-21",
+    priceHint: "€70 – €85",
+    priceLastUpdated: "april 2026",
+    pros: ["AI-detectie onderscheidt personen van dieren", "Kleurennachtzicht", "Geen verplicht abonnement"],
+    cons: ["Tapo-ecosysteem vereist voor volledige integratie"],
+    forWho: ["Voor wie scherp beeld wil zonder maandelijkse kosten", "Voor Tapo-gebruikers"],
+    personalNote: "Sterke prijs-kwaliteitverhouding. De AI-detectie werkt verrassend goed voor deze prijs.",
     youtubeUrl: "https://www.youtube.com/shorts/1VTw4yg5QYo",
   },
 
@@ -259,6 +335,12 @@ export const products = [
     description: "Slimme thermostaat die leert van je leefpatroon.",
     features: ["Zelflerend", "Energie besparen", "Google Home"],
     affiliateUrl: "https://www.amazon.nl/dp/B0BXRYLMCC?tag=slimhuiswonen-21",
+    priceHint: "€110 – €130",
+    priceLastUpdated: "april 2026",
+    pros: ["Leert van je schema en past zich aan", "Energierapport via app", "Werkt met Google Home, Alexa en HomeKit"],
+    cons: ["Alleen interessant voor Google-gebruikers", "Niet compatibel met alle ketelmerken"],
+    forWho: ["Voor Google Home gebruikers die energie willen besparen", "Voor wie een designthermostaat zoekt"],
+    personalNote: "Strak design en slimme functies, maar controleer eerst of hij werkt met jouw ketel. Tado en Netatmo zijn bredere alternatieven.",
     youtubeUrl: "https://www.youtube.com/shorts/ddghtqKnuBw",
   },
 
@@ -271,6 +353,8 @@ export const products = [
     description: "Universele slimme thermostaat voor cv-ketels.",
     features: ["Geschikt voor combiketel", "Energie besparen", "Slim schema"],
     affiliateUrl: "https://www.amazon.nl/dp/B0FHWDBYTF?tag=slimhuiswonen-21",
+    priceHint: "€55 – €75",
+    priceLastUpdated: "april 2026",
     youtubeUrl: "https://www.youtube.com/watch?v=-xF6Ok9YNsg",
   },
 
@@ -283,6 +367,11 @@ export const products = [
     description: "Slimme radiatorknoppen met hub voor energiebesparing.",
     features: ["Radiatorknoppen", "Hub inbegrepen", "Energie besparen"],
     affiliateUrl: "https://www.amazon.nl/dp/B0CKWFVQZQ?tag=slimhuiswonen-21",
+    priceHint: "€50 – €65",
+    priceLastUpdated: "april 2026",
+    pros: ["Hub inbegrepen", "Energiebesparing per radiator", "App-bediening"],
+    cons: ["Vereist Tapo hub", "Minder uitgebreid dan Tado"],
+    forWho: ["Voor wie per kamer wil regelen zonder dure installatie"],
     youtubeUrl: "https://www.youtube.com/shorts/G1OlrOdJsX0",
   },
 
@@ -300,6 +389,12 @@ export const products = [
     features: ["Energieverbruik inzicht", "Wi-Fi", "Geen hub nodig"],
     affiliateUrl: "https://www.amazon.nl/dp/B09ZBGWYH9?tag=slimhuiswonen-21",
     rating: 4.6,
+    priceHint: "€12 – €15",
+    priceLastUpdated: "april 2026",
+    pros: ["Realtime energiemeting", "Compact", "Geen hub nodig"],
+    cons: ["Alleen binnen Tapo-app", "Energiemeting minder nauwkeurig dan Shelly"],
+    forWho: ["Voor wie wil zien hoeveel een apparaat verbruikt", "Voor gebruik met timers en slimme schema's"],
+    personalNote: "Mijn favoriete budget-stekker voor energiemeting. Voor €13 krijg je verrassend veel functionaliteit.",
     youtubeUrl: "https://www.youtube.com/shorts/l6WrOy4wRhU",
   },
 
@@ -313,6 +408,8 @@ export const products = [
     features: ["Realtime energiemeting", "Timers", "Geen hub nodig"],
     affiliateUrl: "https://www.amazon.nl/dp/B09BFT7NZJ?tag=slimhuiswonen-21",
     rating: 4.7,
+    priceHint: "€10 – €14",
+    priceLastUpdated: "april 2026",
     youtubeUrl: "https://www.youtube.com/shorts/L5fLN4e77m8",
   },
 
@@ -326,6 +423,12 @@ export const products = [
     features: ["Matter", "Thread", "Volledig lokaal"],
     affiliateUrl: "https://www.amazon.nl/dp/B0BYTB11J3?tag=slimhuiswonen-21",
     rating: 4.5,
+    priceHint: "€35 – €42",
+    priceLastUpdated: "april 2026",
+    pros: ["Matter + Thread: breed compatibel", "Volledig lokaal — geen cloud", "Nauwkeurige energiemeting"],
+    cons: ["Duurder dan wifi-alternatieven", "Thread Border Router vereist voor Thread"],
+    forWho: ["Voor wie toekomstbestendig wil werken met Matter", "Voor Apple Home en Home Assistant gebruikers"],
+    personalNote: "De premium keuze in slimme stekkers. Als je al in Matter investeert, is Eve Energy de logische keuze — betrouwbaar en volledig lokaal.",
     youtubeUrl: "https://www.youtube.com/watch?v=ltf25fzyS0o",
   },
 
@@ -338,6 +441,8 @@ export const products = [
     description: "Slimme stekker binnen het Hue ecosysteem.",
     features: ["Hue integratie", "Bluetooth", "Bridge optioneel"],
     affiliateUrl: "https://www.amazon.nl/dp/B09CV7QQKB?tag=slimhuiswonen-21",
+    priceHint: "€25 – €32",
+    priceLastUpdated: "april 2026",
     youtubeUrl: "https://www.youtube.com/watch?v=SQ3ClKGRbq8",
   },
 
@@ -350,6 +455,8 @@ export const products = [
     description: "Combipack met slimme stekker en dimmer.",
     features: ["Dimmer switch", "Hue ecosysteem"],
     affiliateUrl: "https://www.amazon.nl/dp/B09QP98F9W?tag=slimhuiswonen-21",
+    priceHint: "€38 – €48",
+    priceLastUpdated: "april 2026",
     youtubeUrl: "https://www.youtube.com/watch?v=SQ3ClKGRbq8",
   },
 
@@ -362,6 +469,11 @@ export const products = [
     description: "Slimme stekker voor buitengebruik.",
     features: ["IP54", "Zigbee repeater"],
     affiliateUrl: "https://www.amazon.nl/dp/B0FL83D4DS?tag=slimhuiswonen-21",
+    priceHint: "€25 – €32",
+    priceLastUpdated: "april 2026",
+    pros: ["IP54 — geschikt voor buiten", "Zigbee repeater ingebouwd", "Hue Bridge compatibel"],
+    cons: ["Vereist Zigbee hub", "Iets groter dan binnenmodellen"],
+    forWho: ["Voor wie buiten slimme apparaten wil schakelen", "Voor kerstverlichting of tuinverlichting"],
     youtubeUrl: "https://www.youtube.com/watch?v=EZeoW8ZK2vs",
   },
 
@@ -376,6 +488,8 @@ export const products = [
     features: ["Matter", "Energiemonitoring", "Wi-Fi & Bluetooth"],
     affiliateUrl:
       "https://www.amazon.nl/SwitchBot-Energiemonitoring-Bluetooth-Compatibel-HomeAssistant/dp/B0FFN2FKD6?tag=slimhuiswonen-21",
+    priceHint: "€20 – €28",
+    priceLastUpdated: "april 2026",
     youtubeUrl: "https://www.youtube.com/watch?v=A7iH-PR5By4",
   },
 
@@ -390,6 +504,12 @@ export const products = [
     features: ["Zigbee 3.0", "Vereist hub", "Automatiseringen"],
     affiliateUrl:
       "https://www.amazon.nl/Aqara-timerstand-spraakbediening-Assistant-SmartThings/dp/B087M8LF63?tag=slimhuiswonen-21",
+    priceHint: "€20 – €28",
+    priceLastUpdated: "april 2026",
+    pros: ["Zeer stabiele Zigbee verbinding", "Werkt met HomeKit, Home Assistant en Homey", "Nauwkeurige energiemeting"],
+    cons: ["Vereist Aqara hub of compatibele Zigbee hub", "Iets grotere steekplug"],
+    forWho: ["Voor Zigbee-gebruikers die maximale stabiliteit willen", "Voor HomeKit gebruikers die Zigbee-stekker zoeken"],
+    personalNote: "De meest stabiele Zigbee-stekker die ik heb gebruikt. Ideaal als je al een Aqara hub hebt.",
     youtubeUrl: "https://www.youtube.com/watch?v=eUS_OWHaJAs",
   },
 
@@ -408,6 +528,12 @@ export const products = [
     features: ["2K", "Matter", "Bedraad / Accu"],
     affiliateUrl:
       "https://www.amazon.nl/Aqara-ingebouwde-Draadloos-Compatibel-Assistant/dp/B0F6CJF9M9?tag=slimhuiswonen-21",
+    priceHint: "€95 – €115",
+    priceLastUpdated: "april 2026",
+    pros: ["2K beeldkwaliteit", "Matter hub ingebouwd", "HomeKit Secure Video, geen abonnement nodig"],
+    cons: ["Premium prijs", "Installatie iets complexer dan Ring"],
+    forWho: ["Apple HomeKit gebruikers die privacy belangrijk vinden", "Voor wie Matter-integratie wil"],
+    personalNote: "De meest complete slimme deurbel voor smart home liefhebbers. De ingebouwde Matter hub is uniek op dit prijsniveau.",
     youtubeUrl: "https://www.youtube.com/shorts/uGFFXvbUAnU",
   },
 
@@ -422,6 +548,8 @@ export const products = [
     features: ["2K", "Matter", "Smart home"],
     affiliateUrl:
       "https://www.amazon.nl/Aqara-Ingebouwde-Draadloos-Compatibel-Assistant/dp/B0F6CJ93GS?tag=slimhuiswonen-21",
+    priceHint: "€95 – €115",
+    priceLastUpdated: "april 2026",
     youtubeUrl: "https://www.youtube.com/shorts/KVS6asoEDyM",
   },
 
@@ -436,6 +564,11 @@ export const products = [
     features: ["Accu", "2K", "Geen abonnement"],
     affiliateUrl:
       "https://www.amazon.nl/Tapo-D205-video-deurintercom-gezichtsveld-USB-C-aansluiting/dp/B0FHXVX9W9?tag=slimhuiswonen-21",
+    priceHint: "€55 – €70",
+    priceLastUpdated: "april 2026",
+    pros: ["Geen abonnement vereist", "Accu", "Goede prijs-kwaliteit"],
+    cons: ["Beperkte smart home integratie buiten Tapo"],
+    forWho: ["Voor wie betaalbaar wil beginnen", "Voor Tapo-gebruikers"],
     youtubeUrl: "https://www.youtube.com/shorts/dsKyD2p0BUE",
   },
 
@@ -450,6 +583,8 @@ export const products = [
     features: ["Geen abonnement", "Accu / Bedraad", "2K"],
     affiliateUrl:
       "https://www.amazon.nl/Tapo-D235-videodeurbel-gezichtsveld-niet-verwijderbare/dp/B0DDL95M8Z?tag=slimhuiswonen-21",
+    priceHint: "€60 – €80",
+    priceLastUpdated: "april 2026",
     youtubeUrl: "https://www.youtube.com/shorts/5wVHfrHFqwE",
   },
 
@@ -464,6 +599,12 @@ export const products = [
     features: ["Bedraad", "Lokale opslag", "Premium"],
     affiliateUrl:
       "https://www.amazon.nl/Reolink-Videodeurbel-Wi-Fi-camera-beltoon-Hoofd-aan-teen/dp/B0CN95V61Y?tag=slimhuiswonen-21",
+    priceHint: "€75 – €95",
+    priceLastUpdated: "april 2026",
+    pros: ["Hoofd-tot-teen beeld — ook pakketten zichtbaar", "Lokale opslag via NVR", "Geen verplicht abonnement"],
+    cons: ["Bedraad — vereist bestaande aansluiting", "Minder bekende naam dan Ring"],
+    forWho: ["Voor wie de beste beeldkwaliteit wil", "Voor wie lokale opslag prefereert boven cloud"],
+    personalNote: "De beste keuze als je al bekabelde aansluiting hebt. Het hoofd-tot-teen beeld is een groot voordeel tegenover concurrenten.",
     youtubeUrl: "https://www.youtube.com/shorts/chwqRQrgYyY",
   },
   
@@ -482,6 +623,12 @@ export const products = [
   features: ["Binnen", "Geen abonnement", "Lokale opslag"],
   affiliateUrl:
     "https://www.amazon.nl/eufy-Binnencamera-UHD-bewakingscamera-kleur-nachtzicht-auto-tracking/dp/B0FMRCM9D2?tag=slimhuiswonen-21",
+  priceHint: "€35 – €50",
+  priceLastUpdated: "april 2026",
+  pros: ["Lokale opslag — geen abonnement", "Goede beeldkwaliteit voor de prijs", "Auto-tracking"],
+  cons: ["Eufy-app vereist", "Beperkte smart home integratie (geen Zigbee of Matter)"],
+  forWho: ["Voor wie een betrouwbare binnencamera wil zonder maandelijkse kosten", "Voor huisdieren of babybewaking"],
+  personalNote: "De beste binnencamera voor wie gewoon wil dat het werkt. Geen abonnement, goede app en betrouwbare opslag.",
   youtubeUrl: "https://www.youtube.com/shorts/RQWhYv7T5CQ",
 },
 
@@ -496,6 +643,11 @@ export const products = [
   features: ["2K", "Pan & tilt", "Tweeweg-audio"],
   affiliateUrl:
     "https://www.amazon.nl/Tapo-C225-Beveiligingscamera-Intelligente-Compatibel/dp/B0BN4BQ1DM?tag=slimhuiswonen-21",
+  priceHint: "€30 – €40",
+  priceLastUpdated: "april 2026",
+  pros: ["2K beeld", "Pan & tilt — volgt beweging", "Privacymodus (lens klapt weg)"],
+  cons: ["Vereist Tapo-app", "Cloud voor geavanceerde functies"],
+  forWho: ["Voor wie ook zijn huisdieren wil volgen via de camera", "Voor gebruik in woonkamer of babykamer"],
   youtubeUrl: "https://www.youtube.com/shorts/ldJrxLdBxfg",
 },
 
@@ -510,6 +662,12 @@ export const products = [
   features: ["Buiten", "Accu", "Geen abonnement"],
   affiliateUrl:
     "https://www.amazon.nl/eufy-Bewakingscamera-bewakingscamera-zonne-energie-beveiligingscamera/dp/B0DT6WMJD6?tag=slimhuiswonen-21",
+  priceHint: "€70 – €90",
+  priceLastUpdated: "april 2026",
+  pros: ["Accu — geen kabel nodig", "Weerbestendig", "Lokale opslag, geen abonnement"],
+  cons: ["Accuduur wisselend bij veel activiteit", "Minder stabiel dan PoE-alternatieven"],
+  forWho: ["Voor wie flexibel buiten wil plaatsen zonder kabel", "Voor achtertuin, garage of schuur"],
+  personalNote: "Goede keuze als je geen kabel wilt trekken. Lokale opslag is een groot voordeel tegenover Ring.",
   youtubeUrl: "https://www.youtube.com/shorts/r31OVIk5XCM",
 },
 
@@ -524,6 +682,12 @@ export const products = [
   features: ["PoE", "Bekabeld", "Lokale opslag"],
   affiliateUrl:
     "https://www.amazon.nl/PoE-vandaalbestendig-nachtzicht-Duo-2V/dp/B0D2XQV692?tag=slimhuiswonen-21",
+  priceHint: "€55 – €75",
+  priceLastUpdated: "april 2026",
+  pros: ["Bekabeld = maximale stabiliteit", "Lokale opslag via NVR", "Geen accu — altijd online"],
+  cons: ["Vereist netwerkkabel trekken", "Minder flexibel te verplaatsen"],
+  forWho: ["Voor wie een permanente beveiligingsoplossing wil", "Voor vaste buitenlocaties met NVR setup"],
+  personalNote: "De meest betrouwbare keuze voor buiten. Als je eenmaal de kabel trekt, heb je er nooit meer omkijken naar.",
   youtubeUrl: "https://www.youtube.com/shorts/61ERlRmhpbA",
 },
 
@@ -538,6 +702,12 @@ export const products = [
   features: ["Budget", "Wi-Fi", "Binnen"],
   affiliateUrl:
     "https://www.amazon.nl/Tapo-C200P2-bewakingscamera-nachtzicht-bewegingsdetectie/dp/B0CDCL38KZ?tag=slimhuiswonen-21",
+  priceHint: "€22 – €32",
+  priceLastUpdated: "april 2026",
+  pros: ["Goedkoopste optie met pan & tilt", "Eenvoudige installatie", "Roteer-functie"],
+  cons: ["Full HD (geen 2K)", "Cloud of SD-kaart vereist voor opslag"],
+  forWho: ["Voor wie goedkoop wil beginnen", "Voor een extra camera in een minder kritieke ruimte"],
+  personalNote: "Uitstekende waarde voor de prijs. Niet de scherpste camera, maar voor binnenbewaking meer dan genoeg.",
   youtubeUrl: "https://www.youtube.com/shorts/4hLvY_Fj8bg",
 },
 
@@ -552,6 +722,12 @@ export const products = [
   features: ["Privacy", "HomeKit", "Binnen"],
   affiliateUrl:
     "https://www.amazon.nl/Eve-Cam-beveiligingscamera-iPhone-meldingen-luidspreker/dp/B0CHJCZSJP?tag=slimhuiswonen-21",
+  priceHint: "€110 – €130",
+  priceLastUpdated: "april 2026",
+  pros: ["HomeKit Secure Video — verwerking op iPhone/iPad", "Geen abonnement nodig", "Volledig privacygericht: geen cloud"],
+  cons: ["Alleen voor Apple-gebruikers", "Duurste binnencamera in dit overzicht"],
+  forWho: ["Voor Apple-gebruikers die privacy als prioriteit stellen", "Voor wie beelden uitsluitend lokaal wil verwerken"],
+  personalNote: "De enige juiste keuze als je iPhone gebruikt en privacy bovenaan zet. Prijzig, maar je betaalt nooit abonnement en beelden verlaten je netwerk niet.",
   youtubeUrl: "https://www.youtube.com/shorts/8Kmoas7Ct30",
 },
 
@@ -570,6 +746,11 @@ export const products = [
   features: ["Zigbee", "Beweging", "Automatiseringen"],
   affiliateUrl:
     "https://www.amazon.nl/Aqara-configureerbare-detectie-timeout-waarschuwingssysteem-automatiseringen/dp/B0B9XZ1D51?tag=slimhuiswonen-21",
+  priceHint: "€15 – €20",
+  priceLastUpdated: "april 2026",
+  pros: ["Zeer betrouwbaar en snel", "Configureerbare detectie-timeout", "Werkt met Homey, Home Assistant en HomeKit"],
+  cons: ["Vereist Zigbee hub"],
+  forWho: ["Voor automatisch licht aan/uit bij beweging", "Voor beveiligingsautomatiseringen"],
   youtubeUrl: "https://www.youtube.com/shorts/dwRf4hPIUEM",
 },
 
@@ -584,6 +765,11 @@ export const products = [
   features: ["Klimaat", "Thread", "Privacy"],
   affiliateUrl:
     "https://www.amazon.nl/Weather-Matter-luchtvochtigheid-IPX4-waterbestendigheid-Siri-spraaktoegang/dp/B0D817K9TL?tag=slimhuiswonen-21",
+  priceHint: "€60 – €70",
+  priceLastUpdated: "april 2026",
+  pros: ["IPX4 waterbestendig — geschikt voor buiten", "Thread = lage latency", "Privacygericht: geen cloud"],
+  cons: ["Duurder dan Tapo-alternatieven", "Thread Border Router vereist"],
+  forWho: ["Apple-gebruikers die klimaatdata in Apple Home willen", "Voor buitenplaatsing"],
   youtubeUrl: "https://www.youtube.com/shorts/89ofmY6aCdY",
 },
 
@@ -598,6 +784,8 @@ export const products = [
   features: ["Beweging", "Automatiseringen", "Slimme meldingen"],
   affiliateUrl:
     "https://www.amazon.nl/Tapo-0184500512-T100/dp/B0B7NDJW6J?tag=slimhuiswonen-21",
+  priceHint: "€12 – €15",
+  priceLastUpdated: "april 2026",
   youtubeUrl: "https://www.youtube.com/shorts/dorW24Ba4oo",
 },
 
@@ -612,6 +800,11 @@ export const products = [
   features: ["Privacy", "Thread", "Premium"],
   affiliateUrl:
     "https://www.amazon.nl/Door-Window-Matter-contactsensor-dicht-detectie/dp/B0BZ8YV5GW?tag=slimhuiswonen-21",
+  priceHint: "€30 – €38",
+  priceLastUpdated: "april 2026",
+  pros: ["Matter + Thread: breed compatibel", "Volledig lokaal", "Apple Home, Google Home, Home Assistant"],
+  cons: ["Duurder dan Zigbee-alternatieven", "Thread Border Router vereist"],
+  forWho: ["Apple-gebruikers die de beste integratie willen", "Voor Matter smart homes"],
   youtubeUrl: "https://www.youtube.com/shorts/avnIXG9Z6O0",
 },
 
@@ -630,6 +823,11 @@ export const products = [
   features: ["SmartThings", "Zigbee", "Z-Wave"],
   affiliateUrl:
     "https://www.amazon.nl/Aeotec-Smart-Home-Hub-SmartThings/dp/B08NDH9NXN?tag=slimhuiswonen-21",
+  priceHint: "€75 – €90",
+  priceLastUpdated: "april 2026",
+  pros: ["Ondersteunt Zigbee én Z-Wave", "SmartThings platform met grote community", "Breed compatibel"],
+  cons: ["Samsung SmartThings cloud vereist", "Minder flexibel dan Home Assistant"],
+  forWho: ["Voor wie Zigbee én Z-Wave in één hub wil combineren", "Voor SmartThings-gebruikers"],
   youtubeUrl: "https://www.youtube.com/shorts/ZjyfLL9m5Bw",
 },
 
@@ -644,6 +842,12 @@ export const products = [
   features: ["Volledig lokaal", "Zigbee", "Z-Wave", "Matter"],
   affiliateUrl:
     "https://www.amazon.nl/dp/B0C5R1JS91?tag=slimhuiswonen-21",
+  priceHint: "€380 – €420",
+  priceLastUpdated: "april 2026",
+  pros: ["Volledig lokaal — geen cloud nodig", "Ondersteunt Zigbee, Z-Wave, Matter, BLE, 433MHz", "Intuïtieve flow-editor voor automatiseringen"],
+  cons: ["Duurste hub in dit overzicht", "Minder flexibel dan Home Assistant voor geavanceerde gebruikers"],
+  forWho: ["Voor wie maximale controle wil zonder technisch gedoe", "Voor gebruikers die bereid zijn te investeren in de beste gebruikservaring"],
+  personalNote: "De beste plug-and-play smart home hub. Homey Pro heeft een superieure gebruikerservaring vergeleken met concurrenten. De hoge prijs is gerechtvaardigd als je een zorgeloos slim huis wilt.",
   youtubeUrl: "https://www.youtube.com/shorts/yIQxbRQHTRo",
 },
 
@@ -657,6 +861,11 @@ export const products = [
   features: ["Homey Cloud", "Uitbreiding Homey"],
   affiliateUrl:
     "https://www.amazon.nl/dp/B08FRLQH75?tag=slimhuiswonen-21",
+  priceHint: "€55 – €70",
+  priceLastUpdated: "april 2026",
+  pros: ["Goedkope instap in Homey", "Verbindt veel apparaten", "Eenvoudige installatie"],
+  cons: ["Vereist Homey Cloud — cloud-afhankelijk", "Beperktere functionaliteit dan Homey Pro"],
+  forWho: ["Voor wie wil kennismaken met Homey zonder grote investering"],
   youtubeUrl: "https://www.youtube.com/shorts/_fRsj0azjVI",
 },
 
@@ -670,6 +879,12 @@ export const products = [
   features: ["Hue ecosysteem", "Zigbee", "Lokale automatiseringen"],
   affiliateUrl:
     "https://www.amazon.nl/dp/B09CV9F3KR?tag=slimhuiswonen-21",
+  priceHint: "€48 – €58",
+  priceLastUpdated: "april 2026",
+  pros: ["Vereist voor volledige Hue automatiseringen", "Lokale verwerking zonder internet", "Stabiele Zigbee verbinding"],
+  cons: ["Alleen voor Philips Hue producten", "Extra kosten bovenop de lampen"],
+  forWho: ["Voor Hue-gebruikers die automatiseringen en timer willen", "Voor wie meer dan 10 Hue-lampen heeft"],
+  personalNote: "Verplicht als je Hue serieus wilt gebruiken. Zonder bridge werkt Bluetooth, maar automatiseringen werken niet als je thuis bent.",
   youtubeUrl: "https://www.youtube.com/shorts/isaMt7n0Vhw",
 },
 
@@ -684,6 +899,12 @@ export const products = [
   features: ["Home Assistant OS", "Volledig lokaal"],
   affiliateUrl:
     "https://www.amazon.nl/dp/B0CXVKSG19?tag=slimhuiswonen-21",
+  priceHint: "€90 – €105",
+  priceLastUpdated: "april 2026",
+  pros: ["Volledig lokaal en open source", "Enorme community en integraties", "Werkt met Zigbee, Z-Wave, Matter"],
+  cons: ["Technisch — vereist kennis om goed in te stellen", "Minder intuïtief dan Homey"],
+  forWho: ["Voor technisch ingestelde gebruikers die maximale controle willen", "Voor wie geen abonnement of cloud wil"],
+  personalNote: "Home Assistant is de meest krachtige hub die er is — maar niet voor iedereen. Ben je bereid tijd te investeren, dan haal je er het meeste uit.",
   youtubeUrl: "https://www.youtube.com/shorts/u8sk6B8_Qkc",
 },
 
@@ -705,6 +926,12 @@ export const products = [
     "Energierapport per maand",
   ],
   affiliateUrl: "https://www.amazon.nl/dp/B07YCMD7ZW?tag=slimhuiswonen-21",
+  priceHint: "€85 – €110",
+  priceLastUpdated: "april 2026",
+  pros: ["Geofencing — automatisch aan/uit bij vertrek", "Werkt met Homey, Alexa, Google, HomeKit", "Uitgebreide energierapporten"],
+  cons: ["Verplicht abonnement voor geavanceerde functies na 3 maanden", "Hogere prijs dan sommige alternatieven"],
+  forWho: ["Voor wie automatisch wil regelen op basis van locatie", "Voor wie energiebesparing serieus neemt"],
+  personalNote: "Tado's geofencing is de beste die ik ken. Wees je bewust van de abonnementsstructuur — de gratis functies zijn beperkt.",
 },
 
 {
@@ -721,6 +948,11 @@ export const products = [
     "Strak design, eenvoudige installatie",
   ],
   affiliateUrl: "https://www.amazon.nl/dp/B01DBJP2WO?tag=slimhuiswonen-21",
+  priceHint: "€95 – €120",
+  priceLastUpdated: "april 2026",
+  pros: ["Geen verplicht abonnement", "Apple HomeKit ondersteuning", "Strak minimalistische design"],
+  cons: ["Hogere aanschafprijs", "Minder functies dan Tado"],
+  forWho: ["Apple-gebruikers die geen abonnement willen", "Voor wie design belangrijk vindt"],
 },
 
 /* ==========================
@@ -741,6 +973,12 @@ export const products = [
     "Eenvoudig uitbreidbaar",
   ],
   affiliateUrl: "https://www.amazon.nl/TP-Link-Deco-XE75-3-pack-Gigabit-poorten/dp/B09ZRY9YHB?tag=slimhuiswonen-21",
+  priceHint: "€140 – €180",
+  priceLastUpdated: "april 2026",
+  pros: ["WiFi 6E — snelste standaard", "Tot 250 m² per punt", "Eenvoudig uitbreidbaar"],
+  cons: ["Premium prijs", "WiFi 6E vereist ondersteunde apparaten"],
+  forWho: ["Voor grote woningen met veel smart home apparaten", "Voor wie toekomstbestendig wil investeren"],
+  personalNote: "De TP-Link Deco serie is de beste prijs-kwaliteitskeuze voor mesh wifi. De XE75 is een toekomstbestendige investering.",
   youtubeUrl: "https://www.youtube.com/shorts/NZ4NUioL4MQ",
 },
 
@@ -758,6 +996,11 @@ export const products = [
     "Eenvoudige app-installatie",
   ],
   affiliateUrl: "https://www.amazon.nl/eero-6-/dp/B08ZK2T3GS?tag=slimhuiswonen-21",
+  priceHint: "€190 – €230",
+  priceLastUpdated: "april 2026",
+  pros: ["Alexa ingebouwd", "Zeer eenvoudige app", "WiFi 6E"],
+  cons: ["Amazon-ecosysteem afhankelijk", "Duurder dan TP-Link alternatieven"],
+  forWho: ["Voor Amazon Alexa gebruikers", "Voor wie geen gedoe wil met configuratie"],
   youtubeUrl: "https://www.youtube.com/shorts/1H31syVYPus",
 },
 
@@ -775,6 +1018,11 @@ export const products = [
     "Werkt naadloos met Google Home",
   ],
   affiliateUrl: "https://www.amazon.nl/Google-Nest-Wifi-Pro-2-pack/dp/B0BDKHRGV6?tag=slimhuiswonen-21",
+  priceHint: "€210 – €250",
+  priceLastUpdated: "april 2026",
+  pros: ["Matter hub ingebouwd", "Werkt naadloos met Google Home", "WiFi 6E"],
+  cons: ["Google-ecosysteem afhankelijk", "Duurder dan TP-Link"],
+  forWho: ["Voor Google Home gebruikers die ook Matter willen", "Voor grotere woningen"],
   youtubeUrl: "https://www.youtube.com/shorts/BFTzcpo_0f0",
 },
 
@@ -796,6 +1044,12 @@ export const products = [
     "Compatibel met Homey, Alexa, Google, HomeKit",
   ],
   affiliateUrl: "https://www.amazon.nl/Bluetooth-moeiteloze-integratie-elektronisch-vergrendelen/dp/B0DX2FPQFQ?tag=slimhuiswonen-21",
+  priceHint: "€170 – €200",
+  priceLastUpdated: "april 2026",
+  pros: ["Werkt met bestaand cilinderslot", "WiFi, Bluetooth én Matter", "Compatibel met alle grote platforms"],
+  cons: ["Premium prijs", "Batterijen vervangen (niet oplaadbaar)"],
+  forWho: ["Voor wie zijn voordeur wil automatiseren zonder de deur aan te passen", "Voor Matter smart homes"],
+  personalNote: "Het populairste slimme slot in Nederland. Matter-ondersteuning maakt het breed inzetbaar. Eenvoudige installatie — geen sleutelgat aanpassen.",
   youtubeUrl: "https://www.youtube.com/shorts/QlhX3U2cLyw",
 },
 
@@ -813,6 +1067,11 @@ export const products = [
     "Alexa en Google Home integratie",
   ],
   affiliateUrl: "https://www.amazon.nl/Yale-Sleutelloze-Eenvoudige-installatie-compatibel/dp/B0FTG1L89G?tag=slimhuiswonen-21",
+  priceHint: "€120 – €150",
+  priceLastUpdated: "april 2026",
+  pros: ["Compact design", "Vertrouwd merk", "Alexa en Google Home"],
+  cons: ["Beperktere integratie dan Nuki", "Geen Matter ondersteuning"],
+  forWho: ["Voor wie een compacte oplossing wil van een vertrouwd slot-merk"],
   youtubeUrl: "https://www.youtube.com/shorts/m4qA0kb0dys",
 },
 
@@ -830,6 +1089,11 @@ export const products = [
     "Betrouwbare Europese fabrikant",
   ],
   affiliateUrl: "https://www.amazon.nl/Danalock-Bluettoth-Solution-batterijen-inbegrepen/dp/B0CV18ZTK2?tag=slimhuiswonen-21",
+  priceHint: "€110 – €140",
+  priceLastUpdated: "april 2026",
+  pros: ["Bluetooth, Z-Wave én Zigbee", "Werkt met Home Assistant en Homey", "Europese fabrikant"],
+  cons: ["Minder bekende naam", "Z-Wave module soms apart nodig"],
+  forWho: ["Voor geavanceerde smart home gebruikers die Z-Wave of Zigbee prefereren", "Voor Home Assistant setups"],
   youtubeUrl: "https://www.youtube.com/shorts/RIDEaJa78hs",
 },
 
@@ -850,6 +1114,11 @@ export const products = [
     "Werkt met Home Assistant en Homey",
     "Eenvoudig zelf installeren",
   ],
+  priceHint: "€50 – €65",
+  priceLastUpdated: "april 2026",
+  pros: ["Werkt met Home Assistant en Homey", "Zigbee — stabiel en snel", "Realtime verbruik én teruglevering"],
+  cons: ["Vereist Zigbee hub", "P1-kabel niet altijd inbegrepen"],
+  forWho: ["Voor wie energieverbruik wil monitoren via Home Assistant of Homey", "Voor zonnepaneelhouders"],
   affiliateUrl: "https://www.amazon.nl/frient-Elektriciteitsmeter-energieverbruik-elektriciteitsmeters-SmartThings/dp/B0CYZWLX65?tag=slimhuiswonen-21",
   youtubeUrl: "https://www.youtube.com/watch?v=9HHH6RO3WG0",
 },
@@ -868,6 +1137,12 @@ export const products = [
     "Zonnepanelen integratie mogelijk",
   ],
   affiliateUrl: "https://www.amazon.nl/Shelly-120A-Afstandsbediening-Fotovolta%C3%AFsche-Zonnestelsels/dp/B0BVKZ4NGM?tag=slimhuiswonen-21",
+  priceHint: "€90 – €110",
+  priceLastUpdated: "april 2026",
+  pros: ["3-fase meting — volledig huisverbruik in één apparaat", "Integratie met Home Assistant en Homey", "Zonnepanelen monitoring"],
+  cons: ["Montage in de meterkast — elektricien aanbevolen", "Complexere installatie"],
+  forWho: ["Voor 3-fase aansluitingen", "Voor zonnepaneelhouders die alles willen monitoren"],
+  personalNote: "De Shelly Pro 3EM is de beste keuze voor wie het volledige energieverbruik van het huis wil meten — inclusief teruglevering van zonnepanelen.",
   youtubeUrl: "https://www.youtube.com/shorts/zxPh7ekFqc4",
 },
 
@@ -885,6 +1160,11 @@ export const products = [
     "Werkt met Home Assistant",
   ],
   affiliateUrl: "https://www.amazon.nl/BrosTrend-Mini-AX900-WiFi-USB/dp/B0CYZBT4GM?tag=slimhuiswonen-21",
+  priceHint: "€35 – €50",
+  priceLastUpdated: "april 2026",
+  pros: ["Direct op P1-poort", "Klein en goedkoop", "Werkt met Home Assistant"],
+  cons: ["Minder nauwkeurig dan frient Zigbee P1 meter", "Soms wifi-instabiliteit"],
+  forWho: ["Voor starters die energieverbruik willen inzien via Home Assistant"],
   youtubeUrl: "https://www.youtube.com/shorts/8oT4Go7z_1w",
 },
 

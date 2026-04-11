@@ -98,6 +98,11 @@ export default function ProductPage({ params }) {
     description,
     features = [],
     priceHint,
+    priceLastUpdated,
+    pros = [],
+    cons = [],
+    forWho = [],
+    personalNote,
     compatibility = {},
   } = product;
 
@@ -195,6 +200,18 @@ export default function ProductPage({ params }) {
               </section>
             )}
 
+            {/* ✅ Voor wie */}
+            {forWho.length > 0 && (
+              <>
+                <h2 style={{ marginTop: "2rem" }}>Voor wie is dit?</h2>
+                <ul className="product-bullets">
+                  {forWho.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </>
+            )}
+
             {/* ✅ Features */}
             {features.length > 0 && (
               <>
@@ -207,9 +224,67 @@ export default function ProductPage({ params }) {
               </>
             )}
 
+            {/* ✅ Pros / Cons */}
+            {(pros.length > 0 || cons.length > 0) && (
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "1fr 1fr",
+                  gap: "1rem",
+                  marginTop: "2rem",
+                }}
+              >
+                {pros.length > 0 && (
+                  <div>
+                    <h3 style={{ marginBottom: "0.5rem", color: "#4ade80" }}>
+                      Voordelen
+                    </h3>
+                    <ul className="product-bullets">
+                      {pros.map((p) => (
+                        <li key={p}>{p}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {cons.length > 0 && (
+                  <div>
+                    <h3 style={{ marginBottom: "0.5rem", color: "#f87171" }}>
+                      Nadelen
+                    </h3>
+                    <ul className="product-bullets">
+                      {cons.map((c) => (
+                        <li key={c}>{c}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* ✅ Persoonlijk advies */}
+            {personalNote && (
+              <div
+                style={{
+                  marginTop: "1.5rem",
+                  padding: "1rem 1.25rem",
+                  borderLeft: "3px solid #6366f1",
+                  background: "rgba(99,102,241,0.07)",
+                  borderRadius: "0 8px 8px 0",
+                }}
+              >
+                <strong>Mijn advies:</strong>
+                <p style={{ margin: "0.4rem 0 0 0" }}>{personalNote}</p>
+              </div>
+            )}
+
             {priceHint && (
-              <p className="price-hint">
+              <p className="price-hint" style={{ marginTop: "1.5rem" }}>
                 <strong>Prijsindicatie:</strong> {priceHint}
+                {priceLastUpdated && (
+                  <span style={{ fontSize: "0.85rem", opacity: 0.6, marginLeft: "0.5rem" }}>
+                    (gecheckt {priceLastUpdated})
+                  </span>
+                )}
               </p>
             )}
 
@@ -222,11 +297,11 @@ export default function ProductPage({ params }) {
                   rel="noopener noreferrer sponsored"
                   className="btn btn-primary"
                 >
-                  Bekijk bij Amazon
+                  Bekijk prijs op Amazon →
                 </a>
 
-                <p style={{ marginTop: "0.75rem", fontSize: "0.95rem" }}>
-                  * Dit is een affiliate link. Jij betaalt niets extra.
+                <p style={{ marginTop: "0.75rem", fontSize: "0.95rem", opacity: 0.7 }}>
+                  * Affiliate link — jij betaalt niets extra, ik ontvang een kleine commissie.
                 </p>
               </div>
             )}
