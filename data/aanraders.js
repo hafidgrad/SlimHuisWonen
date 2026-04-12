@@ -1231,4 +1231,276 @@ relatedGuides: [
         "Een eenvoudige P1-meter kost tussen de €20 en €40. Professionele modellen zoals de Shelly Pro 3EM kosten meer maar bieden ook 3-fase meting en uitgebreidere integraties.",
     },
   ],
-},];
+},
+
+// ─── Nieuwe koopgidsen ───────────────────────────────────────────────────────
+
+{
+  slug: "beste-slimme-radiatorkraan",
+  title: "Beste slimme radiatorkraan (2026)",
+  description:
+    "Vergelijk de beste slimme radiatorkranen: Tado, Aqara E1 en Tapo KE100. Bespaar tot 25% op je stookkosten en regel elke kamer apart.",
+  image: "/images/blog/beste-slimme-thermostaat.png",
+  intro:
+    "Een slimme radiatorkraan geeft je per kamer controle over de temperatuur. Je stookt alleen waar nodig, wanneer nodig — en dat scheelt flink op de energierekening. In deze koopgids vergelijken we de beste modellen voor 2026.",
+  available: true,
+
+  whoIsThisFor: [
+    "Voor wie elke kamer apart wil kunnen verwarmen",
+    "Voor wie wil besparen op de energierekening",
+    "Voor wie al een slimme thermostaat heeft en verder wil automatiseren",
+    "Voor wie geen verbouwing wil maar wel wil verduurzamen",
+  ],
+
+  buyingAdviceIntro:
+    "De keuze voor een slimme radiatorkraan hangt af van je bestaande smart home systeem. Heb je al Tado? Kies dan Tado radiatorkranen. Werk je met Zigbee via Homey of Home Assistant? Dan is Aqara E1 de slimmere keuze.",
+
+  whatToLookFor: [
+    "Compatibiliteit met je bestaande systeem (Tado, Aqara, Tapo)",
+    "Wel of geen abonnement nodig",
+    "Protocollen: wifi, Zigbee of eigen protocol",
+    "Batterijduur",
+    "Aansluitingen: controleer je radiatormerk",
+  ],
+
+  relatedBlogs: [
+    "slimme-radiatorkraan",
+    "smart-home-energiebesparing",
+    "wat-is-zigbee",
+  ],
+
+  relatedGuides: [
+    "beste-slimme-thermostaat",
+    "beste-energie-monitor",
+    "beste-smart-home-hub",
+  ],
+
+  picks: [
+    {
+      title: "Beste keuze voor de meeste mensen: Tado Slimme Radiatorkraan V3+",
+      description:
+        "De Tado radiatorkraan is de makkelijkste keuze voor wie wil beginnen met slimme verwarming. Eenvoudige installatie, geofencing en een uitstekende app. Optioneel abonnement voor geavanceerde functies.",
+      image: "/images/products/tado-radiatorkraan-v3-plus.png",
+      href: "/producten/tado-radiatorkraan-v3-plus",
+      badges: ["Beste keuze", "Eenvoudig", "Geofencing"],
+    },
+    {
+      title: "Beste keuze voor Zigbee-gebruikers: Aqara E1 Radiatorkraan",
+      description:
+        "De Aqara E1 is een betrouwbare Zigbee-radiatorkraan zonder abonnement. Werkt met Homey, Home Assistant en Apple HomeKit. Goedkoper dan Tado en geen terugkerende kosten.",
+      image: "/images/products/aqara-e1-radiatorkraan.png",
+      href: "/producten/aqara-e1-radiatorkraan",
+      badges: ["Zigbee", "Geen abonnement", "HomeKit"],
+    },
+    {
+      title: "Beste budgetkeuze: Tapo KE100",
+      description:
+        "De goedkoopste optie met een app. Werkt via de Tapo H200 hub. Prima voor wie laagdrempelig wil beginnen zonder grote investering.",
+      image: "/images/products/tapo-h200-smart-hub.png",
+      href: "/producten/tapo-ke100",
+      badges: ["Budget", "Wifi", "Eenvoudig"],
+    },
+  ],
+
+  faq: [
+    {
+      question: "Hoeveel bespaar je met een slimme radiatorkraan?",
+      answer:
+        "Gemiddeld 10 tot 25% op je stookkosten, afhankelijk van je woningtype en gebruik. De besparing is het grootst als je kamers hebt die je niet de hele dag gebruikt.",
+    },
+    {
+      question: "Heb je een hub nodig voor een slimme radiatorkraan?",
+      answer:
+        "Dat hangt af van het merk. Tado werkt via een eigen bridge. Aqara E1 heeft een Aqara hub nodig. Tapo KE100 werkt via de Tapo H200 hub.",
+    },
+    {
+      question: "Past een slimme radiatorkraan op elke radiator?",
+      answer:
+        "Bijna altijd wel. De meeste merken leveren adapters mee voor de gangbare aansluitingen: M30×1,5, RAV, Danfoss RA. Controleer het aansluitmerk van je radiator voor zekerheid.",
+    },
+    {
+      question: "Kan een slimme radiatorkraan samenwerken met een slimme thermostaat?",
+      answer:
+        "Ja, en dat is juist de krachtigste combinatie. De slimme thermostaat regelt de ketel, de radiatorkranen regelen per kamer. Tado biedt dit als compleet systeem.",
+    },
+  ],
+},
+
+{
+  slug: "beste-smart-home-huurwoning",
+  title: "Beste smart home producten voor een huurwoning (2026)",
+  description:
+    "Smart home in een huurwoning: welke producten kun je plaatsen zonder boren of verbouwen? Ontdek de beste draadloze opties die je bij vertrek gewoon meeneemt.",
+  image: "/images/blog/slimme-lampen-zonder-hub.png",
+  intro:
+    "In een huurwoning heb je beperkte mogelijkheden — geen gaten boren, geen vaste installaties. Maar je kunt nog steeds een slim huis inrichten. We zetten de beste producten op een rij die je gewoon meeneemt als je verhuist.",
+  available: true,
+
+  whoIsThisFor: [
+    "Voor huurders die een slimmer huis willen zonder te verbouwen",
+    "Voor studenten en starters die flexibel willen blijven",
+    "Voor wie producten wil die je bij vertrek meeneemt",
+    "Voor wie snel en eenvoudig wil beginnen",
+  ],
+
+  buyingAdviceIntro:
+    "In een huurwoning draait alles om draadloos en niet-permanent. Geen vaste bedrading, geen schroeven in muren. Kies voor wifi- of Zigbee-producten die werken via een stopcontact of batterij.",
+
+  whatToLookFor: [
+    "Geen boor- of schroefwerkzaamheden vereist",
+    "Werkt op batterij of via stopcontact",
+    "Makkelijk te verwijderen en mee te nemen",
+    "Geen ingewikkelde installatie",
+  ],
+
+  relatedBlogs: [
+    "slimme-lampen-zonder-hub",
+    "smart-home-energiebesparing",
+    "wat-is-zigbee",
+  ],
+
+  relatedGuides: [
+    "goedkoopste-smart-home-beginners",
+    "beste-slimme-verlichting",
+    "beste-slimme-stekkers",
+  ],
+
+  picks: [
+    {
+      title: "Beste start voor verlichting: Philips Hue Starterkit White Ambiance",
+      description:
+        "Slimme lampen die je gewoon in het bestaande armatuur schroeft. Geen bedrading, geen verbouwing. Neemt de Hue Bridge mee als je verhuist.",
+      image: "/images/products/philips-hue-white-ambiance-starterkit.png",
+      href: "/producten/philips-hue-white-ambiance-starterkit",
+      badges: ["Geen installatie", "Meenemen bij verhuizing", "Beste keuze verlichting"],
+    },
+    {
+      title: "Beste slimme stekker: Tapo P115",
+      description:
+        "Plug-and-play slimme stekker met energiemeting. Gewoon inpluggen, app instellen en klaar. Perfect voor huurwoningen.",
+      image: "/images/products/tapo-p115.png",
+      href: "/producten/tapo-p115",
+      badges: ["Plug & play", "Geen installatie", "Energiemeting"],
+    },
+    {
+      title: "Beste draadloze sensor: Aqara deur- en raamsensor P2",
+      description:
+        "Plak hem op een deur of raam met 3M-tape. Geen boren, geen schade. Krijg een melding als een deur opengaat.",
+      image: "/images/products/aqara-deur-raamsensor-p2.png",
+      href: "/producten/aqara-deur-raamsensor-p2",
+      badges: ["Plakken met tape", "Geen boren", "Batterij"],
+    },
+    {
+      title: "Beste slimme thermostaat voor huurders: Tado Slimme Thermostaat",
+      description:
+        "Vervang alleen de thermostaat op de muur — dat mag in de meeste huurwoningen. Bij vertrek zet je de oude er gewoon weer op.",
+      image: "/images/products/tado-smart-thermostat-v3.png",
+      href: "/producten/tado-smart-thermostat-v3",
+      badges: ["Makkelijk te verwijderen", "Energiebesparing", "Geen verbouwing"],
+    },
+  ],
+
+  faq: [
+    {
+      question: "Mag je smart home producten plaatsen in een huurwoning?",
+      answer:
+        "In principe wel, zolang je geen permanente wijzigingen aanbrengt. Lampen vervangen, stekkers gebruiken en sensoren plakken met tape is bijna altijd toegestaan. Bij twijfel: vraag het aan je verhuurder.",
+    },
+    {
+      question: "Welke smart home producten kun je meenemen bij verhuizing?",
+      answer:
+        "Vrijwel alles. Slimme lampen, stekkers, sensoren op batterij en kleine hubs zoals de Philips Hue Bridge of Homey Bridge kun je gewoon meenemen. Alleen vaste installaties (zoals inbouwspots) blijven achter.",
+    },
+    {
+      question: "Heb je internet nodig voor smart home in een huurwoning?",
+      answer:
+        "Voor de meeste producten wel. Wifi-producten werken via je router. Zigbee-producten hebben een hub nodig die via wifi communiceert. Zonder internet zijn sommige functies beperkt.",
+    },
+  ],
+},
+
+{
+  slug: "goedkoopste-smart-home-beginners",
+  title: "Goedkoop smart home beginnen: starterset onder €50 (2026)",
+  description:
+    "Wil je beginnen met smart home maar heb je een beperkt budget? Ontdek hoe je voor minder dan €50 al een functioneel slim huis hebt.",
+  image: "/images/blog/slimme-lampen-zonder-hub.png",
+  intro:
+    "Smart home hoeft niet duur te zijn. Voor minder dan €50 kun je al beginnen met slimme verlichting, een slimme stekker en basisautomatisering. We laten je zien hoe.",
+  available: true,
+
+  whoIsThisFor: [
+    "Voor beginners die willen starten met smart home",
+    "Voor wie een beperkt budget heeft",
+    "Voor studenten en starters",
+    "Voor wie wil uitproberen zonder groot risico",
+  ],
+
+  buyingAdviceIntro:
+    "Begin klein en breidt uit. Koop eerst één product, leer hoe het werkt en voeg daarna meer toe. De meeste budgetproducten van Tapo en IKEA werken goed als startpunt.",
+
+  whatToLookFor: [
+    "Lage aanschafprijs",
+    "Geen verplichte hub of abonnement",
+    "Makkelijke installatie via app",
+    "Uitbreidbaar met meer producten later",
+  ],
+
+  relatedBlogs: [
+    "slimme-lampen-zonder-hub",
+    "wat-is-zigbee",
+    "smart-home-energiebesparing",
+  ],
+
+  relatedGuides: [
+    "beste-slimme-verlichting",
+    "beste-slimme-stekkers",
+    "beste-smart-home-huurwoning",
+  ],
+
+  picks: [
+    {
+      title: "Beste budgetlamp om mee te starten: Tapo L530E",
+      description:
+        "Kleurrijke wifi-lamp zonder hub, rechtstreeks via de Tapo app in te stellen. Eén lamp, één app, geen extra kosten. Ideaal als eerste stap.",
+      image: "/images/products/tapo-l530e.png",
+      href: "/producten/tapo-l530e",
+      badges: ["Beste keuze", "Geen hub nodig", "Goedkoop"],
+    },
+    {
+      title: "Beste goedkope slimme stekker: Tapo P115",
+      description:
+        "Slimme stekker met energiemeting voor ~€12. Zet apparaten op afstand aan en uit, maak schema's en zie hoeveel stroom ze verbruiken.",
+      image: "/images/products/tapo-p115.png",
+      href: "/producten/tapo-p115",
+      badges: ["~€12", "Plug & play", "Energiemeting"],
+    },
+    {
+      title: "Beste budget binnencamera: Tapo C200",
+      description:
+        "Voor ~€25 een volwaardige binnencamera met bewegingsdetectie, 360° draaien en nachtzicht. Geen abonnement nodig bij gebruik van lokale SD-kaart.",
+      image: "/images/products/tapo-c200.png",
+      href: "/producten/tapo-c200",
+      badges: ["~€25", "Geen abonnement", "Lokale opslag"],
+    },
+  ],
+
+  faq: [
+    {
+      question: "Kun je beginnen met smart home voor minder dan €50?",
+      answer:
+        "Absoluut. Een slimme lamp van Tapo kost ~€10-€15. Een slimme stekker ~€12. Een budgetcamera ~€25. Voor €50 heb je al een functionele basis zonder hub of abonnement.",
+    },
+    {
+      question: "Heb je een hub nodig als beginner?",
+      answer:
+        "Nee. Wifi-producten van Tapo, Govee en IKEA werken direct via een app zonder extra hub. Pas als je meer controle wilt of Zigbee-producten toevoegt is een hub nuttig.",
+    },
+    {
+      question: "Welk merk is het goedkoopst voor beginners?",
+      answer:
+        "TP-Link Tapo biedt de beste prijs-kwaliteitverhouding voor beginners. Lampen, stekkers en camera's zijn betaalbaar, de app werkt goed en er is geen abonnement nodig.",
+    },
+  ],
+},
+];

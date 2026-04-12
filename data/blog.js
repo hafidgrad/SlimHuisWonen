@@ -2796,4 +2796,862 @@ export const blogPosts = [
     </>
   ),
 },
+
+// ─── Nieuwe artikelen ────────────────────────────────────────────────────────
+
+{
+  slug: "slimme-radiatorkraan",
+  title: "Slimme radiatorkraan: wat is het en welke is de beste in 2026?",
+  description:
+    "Een slimme radiatorkraan regelt elke kamer apart op temperatuur en bespaart flink op je stookkosten. Lees hoe het werkt en welke je het best kunt kopen.",
+  image: "/images/blog/beste-slimme-thermostaat.png",
+  category: "Energie",
+  available: true,
+  datePublished: "2026-04-12",
+
+  related: ["beste-slimme-thermostaat", "smart-home-energiebesparing"],
+
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Wat is een slimme radiatorkraan?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Een slimme radiatorkraan vervangt de thermostaat op je radiator. Je kunt hem via een app of automatisch instellen op een gewenste temperatuur per kamer.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Hoeveel bespaar je met een slimme radiatorkraan?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Gemiddeld 10 tot 25% op je stookkosten, afhankelijk van je woningtype en gebruik. De besparing is het grootst als je kamers hebt die je weinig gebruikt.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Heb je een hub nodig voor een slimme radiatorkraan?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Dat hangt af van het merk. Tado werkt via eigen bridge, Aqara E1 heeft een Aqara hub nodig, Tapo KE100 werkt via de Tapo H200 hub. Kies een model dat past bij je bestaande smart home systeem.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Past een slimme radiatorkraan op elke radiator?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Bijna altijd wel. De meeste modellen worden geleverd met adapters voor de meest voorkomende aansluitingen (M30x1.5, RAV, Danfoss). Controleer je radiatormerk voor zekerheid.",
+        },
+      },
+    ],
+  },
+
+  content: (
+    <>
+      <p className="section-intro">
+        Een slimme radiatorkraan is een van de meest effectieve investeringen
+        voor energiebesparing in huis. Per kamer de temperatuur regelen —
+        automatisch, via je telefoon of gekoppeld aan je aanwezigheid.
+      </p>
+
+      <h2>Wat is een slimme radiatorkraan?</h2>
+      <p>
+        Een slimme radiatorkraan (ook wel <strong>slimme thermostaatknop</strong> of
+        TRV genoemd) vervangt de handmatige draaiknop op je radiator. Je kunt
+        per radiator instellen wanneer hij aan moet, op welke temperatuur, en
+        via welke app of systeem. Zo heb je voor elke kamer een apart schema.
+      </p>
+      <p>
+        Combineer dit met een{" "}
+        <Link href="/aanraders/beste-slimme-thermostaat">
+          slimme thermostaat
+        </Link>{" "}
+        op de cv-ketel en je hebt een volledig slim verwarmingssysteem dat
+        alleen verwarmt waar en wanneer dat nodig is.
+      </p>
+
+      <h2>Tado vs Aqara E1 vs Tapo KE100 — de populairste keuzes</h2>
+
+      <h3>Tado Slimme Radiatorkraan V3+</h3>
+      <p>
+        Tado is het bekendste merk voor slimme verwarming in Nederland. De
+        radiatorkraan werkt met de Tado app, heeft geofencing (verwarmt mee
+        als je thuis komt) en werkt samen met de Tado slimme thermostaat.
+        Nadeel: Tado vraagt een optioneel abonnement voor geavanceerde functies.
+      </p>
+      <ul>
+        <li>Werkt via eigen Tado bridge</li>
+        <li>Goede app, geofencing, energierapportages</li>
+        <li>Makkelijk te installeren</li>
+        <li>Optioneel abonnement voor extra functies</li>
+      </ul>
+
+      <h3>Aqara E1 Radiatorkraan</h3>
+      <p>
+        De Aqara E1 is een Zigbee-radiatorkraan die samenwerkt met de Aqara
+        hub, Homey of Home Assistant. Goedkoper dan Tado, geen abonnement
+        nodig. Ideaal als je al Aqara-producten hebt of met Zigbee werkt.
+      </p>
+      <ul>
+        <li>Zigbee (betrouwbaar, laag energieverbruik)</li>
+        <li>Geen abonnement</li>
+        <li>Werkt met Homey, Home Assistant, Apple HomeKit</li>
+        <li>Heeft Aqara hub nodig</li>
+      </ul>
+
+      <h3>TP-Link Tapo KE100</h3>
+      <p>
+        De Tapo KE100 is de meest betaalbare optie. Hij werkt via de Tapo H200
+        smart hub en is makkelijk te bedienen via de Tapo app. Minder
+        geavanceerde functies dan Tado maar goed voor wie laagdrempelig wil
+        beginnen.
+      </p>
+      <ul>
+        <li>Betaalbaar startpunt</li>
+        <li>Werkt via Tapo H200 hub</li>
+        <li>Eenvoudige app</li>
+        <li>Minder integraties dan Tado/Aqara</li>
+      </ul>
+
+      <h2>Hoeveel bespaar je?</h2>
+      <p>
+        Gemiddeld bespaar je <strong>10 tot 25%</strong> op je stookkosten.
+        De besparing is het grootst als je:
+      </p>
+      <ul>
+        <li>Kamers hebt die je overdag niet gebruikt (logeerkamer, kantoor)</li>
+        <li>Onregelmatige werktijden hebt</li>
+        <li>Tot nu toe de hele dag op één temperatuur stookte</li>
+      </ul>
+      <p>
+        Met energieprijzen van €0,30–€0,35 per m³ gas kan dit al snel
+        €100–€200 per jaar opleveren bij een gemiddeld huishouden.
+      </p>
+
+      <h2>Installatie: hoe moeilijk is het?</h2>
+      <p>
+        De meeste slimme radiatorkranen zijn plug-and-play. Je schroeft de oude
+        thermostaat eraf en de slimme er op. Dat duurt per radiator zo'n 5
+        minuten. De meeste merken leveren adapters mee voor de meestgebruikte
+        aansluitingen (M30×1,5, RAV, Danfoss RA).
+      </p>
+
+      <h2>Wanneer is een slimme radiatorkraan slim?</h2>
+      <p>
+        Een slimme radiatorkraan loont het meest in grotere woningen met
+        meerdere kamers. Als je altijd in dezelfde kamer bent, is een{" "}
+        <Link href="/aanraders/beste-slimme-thermostaat">
+          slimme thermostaat
+        </Link>{" "}
+        op de ketel al voldoende.
+      </p>
+
+      <p>
+        Wil je weten welke slimme radiatorkraan het best bij jou past? Bekijk
+        onze{" "}
+        <Link href="/aanraders/beste-slimme-radiatorkraan">
+          koopgids slimme radiatorkranen
+        </Link>
+        .
+      </p>
+    </>
+  ),
+},
+
+{
+  slug: "homey-bridge-vs-homey-pro",
+  title: "Homey Bridge of Homey Pro? De eerlijke vergelijking (2026)",
+  description:
+    "Twijfel je tussen de Homey Bridge (€69) en de Homey Pro (€399)? Lees wat het verschil is, wat je wel en niet kunt met de Bridge en wanneer de Pro de moeite waard is.",
+  image: "/images/blog/home-assistant-vs-homey.png",
+  category: "Hubs",
+  available: true,
+  datePublished: "2026-04-12",
+
+  related: ["home-assistant-vs-homey", "beste-smart-home-hub", "wat-is-zigbee"],
+
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Wat is het verschil tussen Homey Bridge en Homey Pro?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Homey Bridge is een goedkope hub die werkt als verlengstuk van de Homey cloud. Homey Pro is een volledig lokale hub zonder abonnementskosten, met meer protocollen en verwerkingskracht.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Heeft de Homey Bridge een abonnement nodig?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja. De Homey Bridge werkt via de Homey cloud. Na een gratis proefperiode betaal je voor Homey Premium (circa €3/maand). Zonder premium zijn functies beperkt.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Ondersteunt Homey Bridge Zigbee?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nee. De Homey Bridge heeft geen ingebouwde Zigbee radio. De Homey Pro (2023) heeft wel Zigbee, Z-Wave, Matter en Thread ingebouwd.",
+        },
+      },
+    ],
+  },
+
+  content: (
+    <>
+      <p className="section-intro">
+        Homey is een populaire smart home hub in Nederland. Maar welke versie
+        kies je: de goedkope Bridge of de krachtigere Pro? Het prijsverschil
+        is groot — maar het verschil in functies ook.
+      </p>
+
+      <h2>Homey Bridge — wat krijg je voor €69?</h2>
+      <p>
+        De Homey Bridge is een kleine dongle die je in een stopcontact steekt.
+        Hij werkt als verlengstuk van de Homey cloud-app. De Bridge ondersteunt
+        wifi-apparaten en veel populaire merken via cloud-integraties zoals
+        Philips Hue, IKEA Tradfri en Tapo.
+      </p>
+      <ul>
+        <li>Prijs: <strong>~€69</strong></li>
+        <li>Werkt via cloud (Homey Premium abonnement vereist)</li>
+        <li>Ondersteunt wifi-apparaten en cloud-integraties</li>
+        <li>Geen Zigbee, Z-Wave of Thread ingebouwd</li>
+        <li>Ideaal voor beginners met voornamelijk wifi-producten</li>
+      </ul>
+
+      <h2>Homey Pro (2023) — wat krijg je voor €399?</h2>
+      <p>
+        De Homey Pro is een volwaardige lokale hub. Alles draait op het
+        apparaat zelf — je hebt geen internet nodig voor automatiseringen.
+        De Pro heeft ingebouwde radio's voor Zigbee, Z-Wave, Matter, Thread,
+        Bluetooth en infrarood.
+      </p>
+      <ul>
+        <li>Prijs: <strong>~€399</strong></li>
+        <li>Volledig lokaal — werkt zonder internet</li>
+        <li>Ingebouwde Zigbee, Z-Wave, Matter, Thread, BLE, IR</li>
+        <li>Geen verplicht abonnement</li>
+        <li>Veel krachtiger voor grote smart homes</li>
+        <li>Uitgebreidere flows en scripting</li>
+      </ul>
+
+      <h2>De belangrijkste verschillen op een rij</h2>
+      <ul>
+        <li>
+          <strong>Zigbee/Z-Wave:</strong> Pro heeft het ingebouwd, Bridge niet.
+        </li>
+        <li>
+          <strong>Lokaal vs cloud:</strong> Pro werkt lokaal (sneller, stabieler),
+          Bridge is afhankelijk van internet.
+        </li>
+        <li>
+          <strong>Abonnement:</strong> Bridge vereist Homey Premium, Pro niet.
+        </li>
+        <li>
+          <strong>Prijs:</strong> Bridge €69 + abonnement, Pro €399 eenmalig.
+        </li>
+      </ul>
+
+      <h2>Wanneer kies je de Homey Bridge?</h2>
+      <p>Je kiest de Bridge als je:</p>
+      <ul>
+        <li>Net begint met smart home</li>
+        <li>Voornamelijk wifi-producten hebt (Tapo, IKEA, Hue bridge)</li>
+        <li>Een klein budget hebt voor de hub</li>
+        <li>Geen Zigbee-apparaten wilt toevoegen</li>
+      </ul>
+
+      <h2>Wanneer kies je de Homey Pro?</h2>
+      <p>Je kiest de Pro als je:</p>
+      <ul>
+        <li>Zigbee-apparaten wilt gebruiken (Aqara, IKEA, Philips Hue direct)</li>
+        <li>Een groot of groeiend smart home hebt</li>
+        <li>Geen abonnement wilt betalen</li>
+        <li>Lokale verwerking en privacy belangrijk vindt</li>
+        <li>Geavanceerde automatiseringen wilt bouwen</li>
+      </ul>
+
+      <h2>Alternatief: Home Assistant</h2>
+      <p>
+        Als je maximale flexibiliteit wilt zonder kosten, is{" "}
+        <Link href="/blog/home-assistant-vs-homey">Home Assistant</Link> een
+        populair open-source alternatief. Moeilijker om mee te starten, maar
+        gratis en extreem uitbreidbaar. Bekijk ook onze{" "}
+        <Link href="/aanraders/beste-smart-home-hub">
+          koopgids voor smart home hubs
+        </Link>
+        .
+      </p>
+    </>
+  ),
+},
+
+{
+  slug: "philips-hue-vs-ikea-tradfri",
+  title: "Philips Hue vs IKEA Tradfri: welke slimme verlichting kies je?",
+  description:
+    "Philips Hue of IKEA Tradfri? Vergelijk prijs, kwaliteit, app-ervaring en compatibiliteit. Lees welke slimme verlichting het beste bij jou past.",
+  image: "/images/blog/beste-slimme-verlichting.png",
+  category: "Verlichting",
+  available: true,
+  datePublished: "2026-04-12",
+
+  related: ["beste-slimme-verlichting", "wat-is-zigbee", "slimme-lampen-zonder-hub"],
+
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Is Philips Hue beter dan IKEA Tradfri?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Philips Hue is kwalitatief beter en heeft meer functies, maar is veel duurder. IKEA Tradfri is een prima keuze voor wie een budget-starterset wil met betrouwbare Zigbee-verlichting.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Werken Philips Hue en IKEA Tradfri samen?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Niet direct via hun eigen bridges. Maar via een universele hub zoals Homey of Home Assistant kun je beide systemen combineren.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Heeft IKEA Tradfri een hub nodig?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nieuwe IKEA DIRIGERA-producten werken met de DIRIGERA hub en de IKEA Home smart app. Oudere Tradfri-producten werkten via de Tradfri gateway.",
+        },
+      },
+    ],
+  },
+
+  content: (
+    <>
+      <p className="section-intro">
+        Philips Hue en IKEA Tradfri zijn de twee populairste slimme
+        verlichtingssystemen in Nederland. Maar welke kies je? Het
+        prijsverschil is flink — maar dat geldt ook voor het verschil in kwaliteit en functies.
+      </p>
+
+      <h2>Philips Hue — de premium keuze</h2>
+      <p>
+        Philips Hue is marktleider in slimme verlichting. De lampen zijn
+        betrouwbaar, de app is uitstekend en er is een enorm assortiment.
+        Hue-lampen gebruiken Zigbee en werken via de Hue Bridge. Ze zijn ook
+        compatibel met Matter, Apple HomeKit, Google Home en Amazon Alexa.
+      </p>
+      <ul>
+        <li><strong>Kwaliteit:</strong> uitstekend kleurweergave (CRI &gt;80)</li>
+        <li><strong>App:</strong> een van de beste in de markt</li>
+        <li><strong>Assortiment:</strong> honderden lampen, strips, spotjes</li>
+        <li><strong>Prijs:</strong> duur — starterkit ~€60-€80, losse lampen ~€20-€25</li>
+        <li><strong>Protocollen:</strong> Zigbee + Matter</li>
+      </ul>
+
+      <h2>IKEA Tradfri / DIRIGERA — de budgetkeuze</h2>
+      <p>
+        IKEA-verlichting is aanzienlijk goedkoper dan Hue. De lampen zijn
+        degelijk en werken betrouwbaar. IKEA heeft overgestapt op het DIRIGERA
+        hub-systeem. De app is minder uitgebreid dan Hue, maar voor basisgebruik
+        prima. IKEA-lampen ondersteunen ook Matter, wat toekomstbestendigheid
+        biedt.
+      </p>
+      <ul>
+        <li><strong>Kwaliteit:</strong> goed voor de prijs</li>
+        <li><strong>App:</strong> functioneel maar beperkter dan Hue</li>
+        <li><strong>Prijs:</strong> goedkoop — losse lampen ~€10-€15</li>
+        <li><strong>Protocollen:</strong> Zigbee + Matter</li>
+      </ul>
+
+      <h2>Directe vergelijking</h2>
+      <ul>
+        <li>
+          <strong>Lichtkleur en helderheid:</strong> Hue wint — beter wit licht,
+          rijkere kleuren
+        </li>
+        <li>
+          <strong>App-ervaring:</strong> Hue wint duidelijk
+        </li>
+        <li>
+          <strong>Prijs per lamp:</strong> IKEA wint (€10-€15 vs €20-€25)
+        </li>
+        <li>
+          <strong>Starterkit:</strong> IKEA wint (€30 vs €60+)
+        </li>
+        <li>
+          <strong>Assortiment:</strong> Hue wint — veel meer varianten
+        </li>
+        <li>
+          <strong>Smart home integraties:</strong> gelijk via Matter
+        </li>
+      </ul>
+
+      <h2>Wanneer kies je Philips Hue?</h2>
+      <ul>
+        <li>Je wilt de beste lichtervaring en uitgebreide app</li>
+        <li>Je wilt veel varianten: spots, strips, buitenverlichting</li>
+        <li>Kwaliteit staat boven prijs</li>
+      </ul>
+
+      <h2>Wanneer kies je IKEA?</h2>
+      <ul>
+        <li>Je wilt goedkoop beginnen</li>
+        <li>Je hebt al een IKEA DIRIGERA hub of werkt via Matter</li>
+        <li>Je hebt basisfuncties aan en uit voldoende</li>
+      </ul>
+
+      <h2>Conclusie</h2>
+      <p>
+        Voor de beste ervaring kies je Philips Hue. Voor een budgetvriendelijke
+        start is IKEA een prima keuze. Wil je meer opties vergelijken? Bekijk
+        onze{" "}
+        <Link href="/aanraders/beste-slimme-verlichting">
+          volledige koopgids slimme verlichting
+        </Link>
+        .
+      </p>
+    </>
+  ),
+},
+
+{
+  slug: "wat-is-thread",
+  title: "Wat is Thread? Het slimme protocol naast Matter uitgelegd",
+  description:
+    "Thread is een nieuw draadloos protocol voor smart home dat steeds meer wordt gebruikt naast Matter. Lees wat Thread is, hoe het werkt en of jij het nodig hebt.",
+  image: "/images/blog/wat-is-zigbee.png",
+  category: "Protocollen",
+  available: true,
+  datePublished: "2026-04-12",
+
+  related: ["wat-is-matter", "zigbee-vs-zwave-vs-matter-vs-wifi", "beste-smart-home-hub"],
+
+  content: (
+    <>
+      <p className="section-intro">
+        Thread is een relatief nieuw draadloos netwerk-protocol voor smart home.
+        Je hoort het steeds vaker naast Matter, maar wat is het precies en
+        heb jij er iets aan?
+      </p>
+
+      <h2>Wat is Thread?</h2>
+      <p>
+        Thread is een IP-gebaseerd mesh-netwerkprotocol voor slimme
+        apparaten. Het is speciaal ontworpen voor low-power apparaten zoals
+        sensoren, slimme lampen en sloten. Thread apparaten vormen samen een
+        mesh: elk apparaat versterkt het signaal van de anderen.
+      </p>
+
+      <h2>Wat is het verschil tussen Thread en Matter?</h2>
+      <p>
+        Thread en{" "}
+        <Link href="/blog/wat-is-matter">Matter</Link> werken samen maar zijn
+        niet hetzelfde:
+      </p>
+      <ul>
+        <li>
+          <strong>Thread</strong> is het <em>transportprotocol</em> — hoe
+          apparaten met elkaar communiceren
+        </li>
+        <li>
+          <strong>Matter</strong> is de <em>applicatielaag</em> — de taal die
+          apparaten spreken
+        </li>
+      </ul>
+      <p>
+        Matter kan draaien op Thread, maar ook op wifi of Ethernet. Thread
+        zonder Matter is ook mogelijk. De combinatie Matter-over-Thread is
+        momenteel de meest veelbelovende voor toekomstige smart home apparaten.
+      </p>
+
+      <h2>Voordelen van Thread</h2>
+      <ul>
+        <li><strong>Mesh:</strong> elk apparaat versterkt het netwerk</li>
+        <li><strong>Laag stroomverbruik:</strong> ideaal voor batterijapparaten</li>
+        <li><strong>Snel:</strong> lage latency voor schakelacties</li>
+        <li><strong>Lokaal:</strong> werkt zonder cloud</li>
+      </ul>
+
+      <h2>Heb jij Thread nodig?</h2>
+      <p>
+        Als je net begint met smart home, hoef je je hier nu nog niet druk om
+        te maken. Maar als je nieuwe apparaten koopt, let dan op of ze
+        Matter/Thread ondersteunen — dat is toekomstbestendig.
+      </p>
+      <p>
+        Een Thread Border Router is nodig om Thread-apparaten aan je netwerk te
+        koppelen. Apple HomePod mini, Apple TV 4K en Google Nest Hub (2e gen)
+        hebben dit ingebouwd. De{" "}
+        <Link href="/aanraders/beste-smart-home-hub">Homey Pro (2023)</Link> ook.
+      </p>
+    </>
+  ),
+},
+
+{
+  slug: "homekit-uitleg",
+  title: "Apple HomeKit: smart home voor Apple-gebruikers uitgelegd",
+  description:
+    "Wat is Apple HomeKit en welke slimme producten werken ermee? Lees hoe je HomeKit instelt, welke apps je gebruikt en wat de voordelen zijn ten opzichte van Google Home en Amazon Alexa.",
+  image: "/images/blog/wat-is-matter.png",
+  category: "Ecosystemen",
+  available: true,
+  datePublished: "2026-04-12",
+
+  related: ["wat-is-matter", "google-home-vs-alexa", "beste-smart-home-hub"],
+
+  content: (
+    <>
+      <p className="section-intro">
+        Apple HomeKit is het smart home platform van Apple. Als je een iPhone
+        of iPad hebt, is HomeKit de makkelijkste manier om slimme apparaten
+        te beheren — privacyvriendelijk en zonder account van een ander merk.
+      </p>
+
+      <h2>Wat is Apple HomeKit?</h2>
+      <p>
+        HomeKit is Apple's smart home framework. Via de <strong>Woning-app</strong>
+        {" "}op iPhone, iPad of Mac bedien je alle HomeKit-compatibele apparaten.
+        Je hoeft geen aparte apps per merk te installeren.
+      </p>
+
+      <h2>Hoe werkt HomeKit?</h2>
+      <p>
+        HomeKit-apparaten verbinden via wifi, Bluetooth of Thread. Voor
+        bediening op afstand heb je een <strong>HomeKit Hub</strong> nodig:
+        een Apple TV, HomePod mini of iPad die altijd thuis is. Die hub zorgt
+        ervoor dat je ook buitenshuis je apparaten kunt bedienen.
+      </p>
+
+      <h2>Voordelen van HomeKit</h2>
+      <ul>
+        <li><strong>Privacy:</strong> alle data blijft lokaal of via Apple's beveiligde servers</li>
+        <li><strong>Eén app:</strong> Woning-app voor alle apparaten</li>
+        <li><strong>Siri-integratie:</strong> stembediening zonder extra apparaat</li>
+        <li><strong>Matter-ondersteuning:</strong> Apple is een van de eerste die Matter volledig ondersteunt</li>
+        <li><strong>Betrouwbaar:</strong> lokale verwerking via HomeKit Secure Video</li>
+      </ul>
+
+      <h2>Nadelen van HomeKit</h2>
+      <ul>
+        <li>Minder apparaten ondersteunen HomeKit dan Google Home of Alexa</li>
+        <li>Duurder: HomeKit-gecertificeerde apparaten kosten meer</li>
+        <li>Alleen voor Apple-gebruikers</li>
+      </ul>
+
+      <h2>Populaire HomeKit-apparaten</h2>
+      <ul>
+        <li>Philips Hue (via Hue Bridge of Matter)</li>
+        <li>Eve-producten (Thread + HomeKit natief)</li>
+        <li>Aqara-producten (via Aqara hub)</li>
+        <li>Tado slimme thermostaat</li>
+        <li>Nuki Smart Lock</li>
+      </ul>
+
+      <h2>Is HomeKit de juiste keuze voor jou?</h2>
+      <p>
+        Heb je een iPhone en hecht je aan privacy? Dan is HomeKit uitstekend.
+        Gebruik je Android of wil je meer merkkeuze voor minder geld? Bekijk
+        dan ook{" "}
+        <Link href="/blog/google-home-vs-alexa">Google Home vs Alexa</Link>{" "}
+        en onze{" "}
+        <Link href="/aanraders/beste-smart-home-hub">
+          koopgids smart home hubs
+        </Link>
+        .
+      </p>
+    </>
+  ),
+},
+
+{
+  slug: "p1-meter-uitleg",
+  title: "P1 meter: wat is het en hoe lees je je slimme meter uit?",
+  description:
+    "Met een P1 meter lees je realtime je energieverbruik uit via de P1-poort van je slimme meter. Lees hoe het werkt, welke P1 meters er zijn en wat je ermee kunt doen.",
+  image: "/images/blog/smart-home-energiebesparing.png",
+  category: "Energie",
+  available: true,
+  datePublished: "2026-04-12",
+
+  related: ["smart-home-energiebesparing", "beste-energie-monitor"],
+
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Wat is een P1 meter?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Een P1 meter is een apparaatje dat je aansluit op de P1-poort van je slimme meter. Via die poort kun je je energieverbruik en teruglevering realtime uitlezen.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Heeft elke woning een P1-poort?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Als je een slimme meter hebt (in Nederland verplicht aangeboden sinds 2012), heb je bijna zeker een P1-poort. Die zit aan de zijkant of onderkant van de meter.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Welke P1 meter is het beste?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "De HomeWizard P1 Meter is de populairste keuze in Nederland vanwege de eenvoudige installatie, goede app en directe Home Assistant-integratie.",
+        },
+      },
+    ],
+  },
+
+  content: (
+    <>
+      <p className="section-intro">
+        Je slimme meter registreert je energieverbruik — maar die data zit
+        verborgen achter een kleine poort. Met een P1 meter haal je die data
+        eruit en maak je het inzichtelijk in een app of smart home systeem.
+      </p>
+
+      <h2>Wat is de P1-poort?</h2>
+      <p>
+        Elke Nederlandse slimme meter heeft een <strong>P1-poort</strong> — een
+        kleine RJ11 connector aan de zijkant. Via die poort stuurt de meter
+        elke seconde je verbruiksdata: stroom, gas, en teruglevering
+        (bij zonnepanelen). Gratis, zonder abonnement, realtime.
+      </p>
+
+      <h2>Wat doet een P1 meter?</h2>
+      <p>
+        Een P1 meter leest die data uit en stuurt het via wifi naar een app
+        of smart home systeem. Zo zie je precies:
+      </p>
+      <ul>
+        <li>Je huidig stroomverbruik (in Watt, realtime)</li>
+        <li>Je gas-verbruik per uur</li>
+        <li>Hoeveel je teruglevering bij zonnepanelen</li>
+        <li>Je verbruikshistorie per dag, week, maand</li>
+      </ul>
+
+      <h2>Populaire P1 meters</h2>
+
+      <h3>HomeWizard P1 Meter — aanbevolen</h3>
+      <p>
+        De meest populaire P1 meter in Nederland. Plug-and-play, goede app en
+        directe integratie met Home Assistant. Prijs: ~€25.
+      </p>
+
+      <h3>DSMR-logger</h3>
+      <p>
+        Open-source optie voor gevorderden. Lokale data-opslag, geen cloud.
+        Vereist meer technische kennis.
+      </p>
+
+      <h2>Wat kun je met die data doen?</h2>
+      <ul>
+        <li>Inzicht krijgen in verbruikspieken en zuinig leven</li>
+        <li>Automatiseringen aansturen (bijv. wasmachine starten bij lage tarieven)</li>
+        <li>Zonnepaneel-opbrengst monitoren</li>
+        <li>Koppelen aan Home Assistant of Homey voor energiedashboard</li>
+      </ul>
+
+      <p>
+        Wil je de volgende stap zetten? Bekijk onze{" "}
+        <Link href="/aanraders/beste-energie-monitor">
+          koopgids energie-monitoren
+        </Link>
+        .
+      </p>
+    </>
+  ),
+},
+
+{
+  slug: "ring-vs-tapo-deurbel",
+  title: "Ring deurbel vs Tapo deurbel: welke slimme deurbel is beter?",
+  description:
+    "Vergelijk de Ring Video Deurbel en TP-Link Tapo deurbel op prijs, functies, abonnement, privacy en app-kwaliteit. Welke slimme deurbel past het best bij jou?",
+  image: "/images/blog/beste-slimme-deurbel.png",
+  category: "Beveiliging",
+  available: true,
+  datePublished: "2026-04-12",
+
+  related: ["beste-slimme-deurbel", "beste-slimme-camera"],
+
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Is Ring of Tapo beter als slimme deurbel?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ring heeft een beter ecosysteem en meer functies, maar vereist een betaald abonnement voor opnames. Tapo is goedkoper en biedt lokale opslag zonder abonnement.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Heeft Ring een abonnement nodig?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ring werkt zonder abonnement voor live beeld en meldingen. Voor videogeschiedenis heb je Ring Protect nodig (€3,99/maand per camera).",
+        },
+      },
+    ],
+  },
+
+  content: (
+    <>
+      <p className="section-intro">
+        Ring en Tapo zijn beide populaire slimme deurbellen in Nederland. Ring
+        is van Amazon, Tapo van TP-Link. Het prijsverschil is flink maar
+        het verschil in functies ook. Lees de eerlijke vergelijking.
+      </p>
+
+      <h2>Ring Video Deurbel</h2>
+      <p>
+        Ring is marktleider in slimme deurbellen. De deurbel filmt wie er
+        aanbelt, stuurt een melding naar je telefoon en slaat beelden op in de
+        cloud. Ring werkt goed samen met Amazon Alexa en Echo Show.
+      </p>
+      <ul>
+        <li><strong>Prijs:</strong> ~€80-€100</li>
+        <li><strong>Opname:</strong> cloud (Ring Protect abonnement ~€3,99/mnd)</li>
+        <li><strong>App:</strong> uitstekend, veel functies</li>
+        <li><strong>Integraties:</strong> Amazon Alexa, Google Home via workaround</li>
+        <li><strong>Installatie:</strong> eenvoudig, bedraad of accu</li>
+      </ul>
+
+      <h2>TP-Link Tapo Deurbel</h2>
+      <p>
+        De Tapo slimme deurbel is een stuk goedkoper en biedt lokale
+        SD-kaartopslag zonder verplicht abonnement. De app is eenvoudiger
+        maar functioneel.
+      </p>
+      <ul>
+        <li><strong>Prijs:</strong> ~€40-€60</li>
+        <li><strong>Opname:</strong> lokaal (microSD) of optioneel cloud</li>
+        <li><strong>App:</strong> functioneel, minder uitgebreid</li>
+        <li><strong>Integraties:</strong> beperkt (geen Alexa-ondersteuning)</li>
+        <li><strong>Installatie:</strong> eenvoudig</li>
+      </ul>
+
+      <h2>Wanneer kies je Ring?</h2>
+      <ul>
+        <li>Je wilt de beste app en meest complete functies</li>
+        <li>Je gebruikt Amazon Alexa of Echo Show</li>
+        <li>Cloud-opslag is oké voor jou</li>
+      </ul>
+
+      <h2>Wanneer kies je Tapo?</h2>
+      <ul>
+        <li>Je wilt geen abonnement betalen</li>
+        <li>Je wilt lokale opslag op een SD-kaart</li>
+        <li>Prijs is belangrijker dan functies</li>
+      </ul>
+
+      <h2>Conclusie</h2>
+      <p>
+        Ring is beter maar duurder in gebruik. Tapo is een prima budgetkeuze
+        zonder terugkerende kosten. Bekijk ook onze{" "}
+        <Link href="/aanraders/beste-slimme-deurbel">
+          volledige koopgids slimme deurbellen
+        </Link>
+        .
+      </p>
+    </>
+  ),
+},
+
+{
+  slug: "google-home-uitleg",
+  title: "Google Home uitgelegd: smart home met Google instellen in 2026",
+  description:
+    "Wat is Google Home en hoe stel je het in voor je smart home? Lees welke apparaten werken met Google Home, hoe de app werkt en wanneer je voor Google kiest.",
+  image: "/images/blog/google-home-vs-alexa.png",
+  category: "Ecosystemen",
+  available: true,
+  datePublished: "2026-04-12",
+
+  related: ["google-home-vs-alexa", "homekit-uitleg", "beste-smart-home-hub"],
+
+  content: (
+    <>
+      <p className="section-intro">
+        Google Home is het smart home platform van Google. Via de Google
+        Home-app en Google Nest-speakers bedien je slimme apparaten met je
+        stem of telefoon. Het is een van de meest gebruikte platforms ter wereld.
+      </p>
+
+      <h2>Wat is Google Home?</h2>
+      <p>
+        Google Home is zowel een app als een ecosysteem. Via de{" "}
+        <strong>Google Home-app</strong> (Android en iOS) bedien je slimme
+        lampen, thermostaten, camera's, speakers en meer. Google Nest-speakers
+        zoals de Nest Mini of Nest Hub zijn de hardware die je stembediening
+        geeft via Google Assistant.
+      </p>
+
+      <h2>Welke apparaten werken met Google Home?</h2>
+      <p>
+        Duizenden apparaten zijn compatibel met Google Home, waaronder:
+      </p>
+      <ul>
+        <li>Philips Hue (via Hue Bridge of Matter)</li>
+        <li>IKEA DIRIGERA lampen</li>
+        <li>Tapo-camera's en stekkers</li>
+        <li>Tado slimme thermostaat</li>
+        <li>Nest Thermostat en Nest Camera (eigen Google-lijn)</li>
+        <li>Alle Matter-apparaten</li>
+      </ul>
+
+      <h2>Hoe stel je Google Home in?</h2>
+      <ol>
+        <li>Download de Google Home-app (Android/iOS)</li>
+        <li>Log in met je Google-account</li>
+        <li>Voeg apparaten toe via de + knop</li>
+        <li>Wijs kamers toe aan apparaten</li>
+        <li>Maak routines aan (bijv. "Goedemorgen" zet verlichting aan)</li>
+      </ol>
+
+      <h2>Google Home vs Apple HomeKit vs Amazon Alexa</h2>
+      <ul>
+        <li><strong>Google Home:</strong> beste integratie met Android, Google-diensten</li>
+        <li><strong>Apple HomeKit:</strong> beste privacy, alleen voor Apple-gebruikers</li>
+        <li><strong>Amazon Alexa:</strong> meeste apparaten, beste voor Amazon-producten</li>
+      </ul>
+      <p>
+        Lees ook onze uitgebreide vergelijking:{" "}
+        <Link href="/blog/google-home-vs-alexa">Google Home vs Alexa</Link>.
+      </p>
+
+      <h2>Is Google Home de juiste keuze voor jou?</h2>
+      <p>
+        Gebruik je Android en Google-diensten als Gmail en Google Agenda?
+        Dan past Google Home uitstekend bij jou. Je kunt routines bouwen op
+        basis van je agenda, locatie en spraak. Bekijk ook onze{" "}
+        <Link href="/aanraders/beste-smart-home-hub">
+          koopgids smart home hubs
+        </Link>
+        .
+      </p>
+    </>
+  ),
+},
 ];
