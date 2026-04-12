@@ -5,6 +5,125 @@ import Categories from "@/components/Categories";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Image from "next/image";
+import { getProductBySlug } from "@/data/products";
+
+const POPULAIRE_SLUGS = [
+  "philips-hue-white-ambiance-starterkit",
+  "tapo-l530e",
+  "aqara-deur-raamsensor-p2",
+  "tapo-c200",
+  "ring-video-deurbel",
+  "tapo-p115",
+];
+
+function PopulaireProducten() {
+  const producten = POPULAIRE_SLUGS.map((slug) => getProductBySlug(slug)).filter(Boolean);
+
+  return (
+    <section className="section">
+      <div className="container">
+        <h2>Populaire producten</h2>
+        <p className="section-intro">
+          Direct bestellen via Amazon — meest bekeken producten op SlimHuisWonen.
+        </p>
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))",
+            gap: "1rem",
+          }}
+        >
+          {producten.map((p) => (
+            <article
+              key={p.slug}
+              style={{
+                border: "1px solid rgba(255,255,255,0.08)",
+                borderRadius: "14px",
+                padding: "1rem",
+                background: "rgba(255,255,255,0.02)",
+                display: "flex",
+                flexDirection: "column",
+                gap: "0.5rem",
+              }}
+            >
+              {p.image && (
+                <div
+                  style={{
+                    position: "relative",
+                    aspectRatio: "1 / 1",
+                    background: "#0b0f1a",
+                    borderRadius: "10px",
+                    overflow: "hidden",
+                  }}
+                >
+                  <Image
+                    src={p.image}
+                    alt={p.name}
+                    fill
+                    sizes="(max-width: 640px) 50vw, 200px"
+                    style={{ objectFit: "contain" }}
+                  />
+                </div>
+              )}
+
+              <div style={{ fontSize: "0.75rem", opacity: 0.55 }}>{p.brand}</div>
+              <h3 style={{ margin: 0, fontSize: "0.9rem", lineHeight: 1.3 }}>{p.name}</h3>
+
+              {p.priceHint && (
+                <p style={{ margin: 0, fontSize: "0.85rem", opacity: 0.7 }}>{p.priceHint}</p>
+              )}
+
+              <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem", marginTop: "auto" }}>
+                {p.affiliateUrl && (
+                  <a
+                    href={p.affiliateUrl}
+                    target="_blank"
+                    rel="noopener noreferrer sponsored"
+                    style={{
+                      display: "block",
+                      padding: "0.45rem 0.75rem",
+                      borderRadius: "8px",
+                      background: "#f59e0b",
+                      color: "#1a1a1a",
+                      fontWeight: 700,
+                      fontSize: "0.8rem",
+                      textDecoration: "none",
+                      textAlign: "center",
+                    }}
+                  >
+                    Bekijk prijs →
+                  </a>
+                )}
+                <Link
+                  href={`/producten/${p.slug}`}
+                  style={{
+                    display: "block",
+                    padding: "0.4rem 0.75rem",
+                    borderRadius: "8px",
+                    border: "1px solid rgba(255,255,255,0.12)",
+                    fontSize: "0.8rem",
+                    textDecoration: "none",
+                    textAlign: "center",
+                    opacity: 0.75,
+                  }}
+                >
+                  Meer info
+                </Link>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <p className="muted small" style={{ marginTop: "1rem" }}>
+          * Affiliate links — jij betaalt niets extra.{" "}
+          <Link href="/disclaimer">Meer info</Link>
+        </p>
+      </div>
+    </section>
+  );
+}
 
 export async function generateMetadata() {
   return {
@@ -299,6 +418,9 @@ export default function HomePage() {
         {/* ================= KOOPGIDSEN ================= */}
         <span id="koopgidsen" />
         <TopKoopgidsen />
+
+        {/* ================= POPULAIRE PRODUCTEN ================= */}
+        <PopulaireProducten />
 
         {/* ================= CATEGORIEËN ================= */}
         <Categories />

@@ -155,15 +155,21 @@ export default function CategoryPage({ params }) {
                       </ul>
                     )}
 
+                    {p.priceHint && (
+                      <p style={{ fontSize: "0.9rem", opacity: 0.7, margin: "0.25rem 0 0.5rem" }}>
+                        {p.priceHint}
+                      </p>
+                    )}
+
                     <div className="product-actions">
                       {p.affiliateUrl && (
                         <a
                           href={p.affiliateUrl}
                           target="_blank"
-                          rel="nofollow sponsored noopener"
+                          rel="noopener noreferrer sponsored"
                           className="btn btn-amazon product-btn"
                         >
-                          Bekijk beste prijs
+                          {p.priceHint ? `Bekijk prijs (${p.priceHint})` : "Bekijk prijs op Amazon"}
                         </a>
                       )}
 
@@ -191,12 +197,31 @@ export default function CategoryPage({ params }) {
                     <h3>{p.name}</h3>
                     <p className="product-desc">{p.description}</p>
 
-                    <Link
-                      href={`/producten/${p.slug}`}
-                      className="product-details-link"
-                    >
-                      Meer info →
-                    </Link>
+                    {p.priceHint && (
+                      <p style={{ fontSize: "0.9rem", opacity: 0.7, margin: "0.25rem 0 0.5rem" }}>
+                        {p.priceHint}
+                      </p>
+                    )}
+
+                    <div className="product-actions">
+                      {p.affiliateUrl && (
+                        <a
+                          href={p.affiliateUrl}
+                          target="_blank"
+                          rel="noopener noreferrer sponsored"
+                          className="btn btn-amazon product-btn"
+                        >
+                          Bekijk prijs
+                        </a>
+                      )}
+
+                      <Link
+                        href={`/producten/${p.slug}`}
+                        className="product-details-link"
+                      >
+                        Meer info
+                      </Link>
+                    </div>
                   </article>
                 ))}
               </div>

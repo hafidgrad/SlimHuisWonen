@@ -901,6 +901,29 @@ code {
   color: #9ca3af;
 }
 
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 0.75rem;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.footer-nav a {
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  color: #e5e7eb;
+  text-decoration: underline;
+}
+
+.footer-nav span[aria-hidden] {
+  color: #4b5563;
+}
+
 /* =========================================================
    Product detail
    ========================================================= */

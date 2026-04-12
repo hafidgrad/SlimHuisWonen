@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { howto } from "@/data/howto";
 import { getAllTips } from "@/data/tips";
 import { blogPosts } from "@/data/blog";
+import RelatedProducts from "@/components/RelatedProducts";
 
 /* ================= METADATA ================= */
 
@@ -401,6 +402,16 @@ const structuredData = [
       </div>
     </div>
   </section>
+)}
+
+{/* ================= GERELATEERDE PRODUCTEN ================= */}
+{article.relatedProductSlugs?.length > 0 && (
+  <div className="container">
+    <RelatedProducts
+      slugs={article.relatedProductSlugs}
+      title="Producten die je nodig hebt"
+    />
+  </div>
 )}
 
 {/* ================= BACK BUTTON ================= */}

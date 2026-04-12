@@ -9,6 +9,12 @@ export const howto = [
       "Stap-voor-stap uitleg om zonder fouten te beginnen met een smart home. Praktisch, duidelijk en zonder technisch gedoe.",
     image: "/images/how-to/beginnen-met-smart-home.png",
     available: true,
+    relatedProductSlugs: [
+      "philips-hue-white-ambiance-starterkit",
+      "tapo-l530e",
+      "aqara-deur-raamsensor-p2",
+      "tapo-p115",
+    ],
 
     content: (
       <>
@@ -222,6 +228,7 @@ export const howto = [
   description:
     "Verbeter je wifi voor een stabiel smart home. Praktische tips om verbindingsproblemen en uitval te voorkomen.",
   image: "/images/how-to/wifi-verbeteren-voor-smart-home.png",
+  relatedProductSlugs: ["tp-link-deco-xe75", "tp-link-deco-xe75-2pack", "google-nest-wifi-pro"],
   available: true,
 
   content: (
@@ -326,6 +333,7 @@ export const howto = [
   description:
     "Stap-voor-stap uitleg voor het installeren en instellen van een smart home hub. Leer hoe je apparaten koppelt en automatiseringen maakt.",
   image: "/images/how-to/smart-home-hub-installeren.png",
+  relatedProductSlugs: ["homey-pro-early-2023", "home-assistant-green", "aqara-hub-m3"],
   available: true,
 
   content: (
@@ -427,6 +435,7 @@ export const howto = [
   categories: ["veiligheid", "basis"],
   description:
     "Leer hoe je je smart home beveiligt tegen hackers en ongewenste toegang. Praktische tips voor een veilig en stabiel slim huis.",
+  relatedProductSlugs: ["eufy-indoor-cam", "ring-video-deurbel", "aqara-rookmelder"],
   image: "/images/how-to/slim-huis-beveiligen.png",
   available: true,
 
@@ -520,6 +529,7 @@ export const howto = [
   categories: ["verlichting", "sensor", "automatisering"],
   description:
     "Wil je dat je lamp automatisch aangaat bij beweging? Ontdek stap voor stap hoe je een bewegingssensor koppelt aan slimme verlichting.",
+  relatedProductSlugs: ["aqara-motion-sensor", "philips-hue-motion-sensor", "tapo-l530e"],
   image: "/images/how-to/lamp-automatisch-aan-bij-beweging.png",
   available: true,
 
@@ -781,6 +791,7 @@ export const howto = [
   slug: "bewegingssensor-instellen",
   title: "Bewegingssensor instellen: zo werkt het stap voor stap",
   categories: ["sensor", "automatisering", "verlichting"],
+  relatedProductSlugs: ["aqara-motion-sensor", "eve-motion-matter-bewegingssensor", "tapo-t100"],
   description:
     "Een bewegingssensor instellen? Ontdek stap voor stap hoe je een sensor koppelt en gebruikt voor slimme verlichting en automatiseringen.",
   image: "/images/how-to/bewegingssensor-instellen.png",
@@ -1042,6 +1053,7 @@ export const howto = [
   slug: "slimme-stekker-instellen",
   title: "Slimme stekker instellen: zo werkt het stap voor stap",
   categories: ["basis", "energie"],
+  relatedProductSlugs: ["tapo-p115", "tapo-p110", "eve-energy"],
   description:
     "Een slimme stekker instellen? Ontdek hoe je een smart plug koppelt, gebruikt en automatiseert voor meer gemak en energiebesparing.",
   image: "/images/how-to/slimme-stekker-instellen.png",

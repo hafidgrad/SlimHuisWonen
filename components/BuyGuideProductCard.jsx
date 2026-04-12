@@ -7,6 +7,8 @@ export default function BuyGuideProductCard({
   image,
   href,
   badges = [],
+  amazonUrl,
+  priceHint,
 }) {
   return (
     <article
@@ -70,20 +72,49 @@ export default function BuyGuideProductCard({
           {description}
         </p>
 
-        <Link
-          href={href}
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "0.4rem",
-            padding: "0.6rem 0.9rem",
-            borderRadius: "12px",
-            border: "1px solid rgba(255,255,255,0.14)",
-            textDecoration: "none",
-          }}
-        >
-          Bekijk product →
-        </Link>
+        <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", alignItems: "center" }}>
+          {/* Directe Amazon-knop (primair) */}
+          {amazonUrl && (
+            <a
+              href={amazonUrl}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "0.35rem",
+                padding: "0.55rem 1rem",
+                borderRadius: "10px",
+                background: "#f59e0b",
+                color: "#1a1a1a",
+                fontWeight: 700,
+                fontSize: "0.88rem",
+                textDecoration: "none",
+                whiteSpace: "nowrap",
+              }}
+            >
+              {priceHint ? `Bekijk prijs (${priceHint}) →` : "Bekijk prijs op Amazon →"}
+            </a>
+          )}
+
+          {/* Interne meer-info link (secundair) */}
+          <Link
+            href={href}
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "0.4rem",
+              padding: "0.55rem 0.9rem",
+              borderRadius: "10px",
+              border: "1px solid rgba(255,255,255,0.14)",
+              textDecoration: "none",
+              fontSize: "0.88rem",
+              opacity: 0.8,
+            }}
+          >
+            Meer info
+          </Link>
+        </div>
       </div>
     </article>
   );

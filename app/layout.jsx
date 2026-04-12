@@ -1,5 +1,6 @@
 import "./globals.css";
 import Script from "next/script";
+import CookieBanner from "@/components/CookieBanner";
 
 export const metadata = {
   metadataBase: new URL("https://slimhuiswonen.nl"),
@@ -46,7 +47,10 @@ export default function RootLayout({ children }) {
           `}
         </Script>
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <CookieBanner />
+      </body>
     </html>
   );
 }
