@@ -7,6 +7,7 @@ import { blogPosts } from "@/data/blog";
 import { tips } from "@/data/tips";
 import { aanraders } from "@/data/aanraders";
 import RelatedContent from "@/components/RelatedContent";
+import AuthorCard from "@/components/AuthorCard";
 
 export async function generateMetadata({ params }) {
   const post = blogPosts.find((p) => p.slug === params.slug && p.available);
@@ -171,6 +172,8 @@ export default function BlogPostPage({ params }) {
           <hr />
 
           {post.content}
+
+          <AuthorCard />
 
           {/* ✅ Verder lezen (alleen als er items zijn) */}
           <RelatedContent items={relatedItems} basePath="blog" />

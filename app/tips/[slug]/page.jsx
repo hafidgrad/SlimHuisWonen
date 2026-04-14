@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import RelatedContent from "@/components/RelatedContent";
+import AuthorCard from "@/components/AuthorCard";
 import { tips, getTipBySlug, getAllTips } from "@/data/tips";
 import { blogPosts } from "@/data/blog";
 import { aanraders } from "@/data/aanraders";
@@ -161,6 +162,8 @@ export default function TipPage({ params }) {
           <hr />
 
           {tip.content}
+
+          <AuthorCard />
 
           {/* ✅ Verder lezen (cards + placeholders) */}
           <RelatedContent items={relatedItems} basePath="tips" />

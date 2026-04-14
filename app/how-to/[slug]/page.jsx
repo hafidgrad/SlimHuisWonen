@@ -7,6 +7,7 @@ import { howto } from "@/data/howto";
 import { getAllTips } from "@/data/tips";
 import { blogPosts } from "@/data/blog";
 import RelatedProducts from "@/components/RelatedProducts";
+import AuthorCard from "@/components/AuthorCard";
 
 /* ================= METADATA ================= */
 
@@ -304,6 +305,8 @@ const structuredData = [
 <hr />
 
 {article.content}
+
+<AuthorCard />
 
 {/* ================= FAQ ================= */}
 
