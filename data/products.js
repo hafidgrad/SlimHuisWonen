@@ -1578,7 +1578,7 @@ export const products = [
   brand: "Innr",
   name: "Innr Smart GU10 Zigbee LED (4-pack)",
   category: "slimme-verlichting",
-  image: "/images/products/innr-zigbee-e27.png",
+  image: "/images/products/innr-smart-gu10-led-lamp-geschikt-voor-philips-hue.jpg",
   description:
     "Zigbee GU10-spots compatibel met Philips Hue Bridge en SmartThings. Warm wit licht, dimbaar en geschikt voor badkamer, keuken of hal.",
   features: ["Zigbee", "Compatibel met Philips Hue Bridge", "Dimbaar", "Warm wit", "4-pack"],
@@ -1601,7 +1601,7 @@ export const products = [
   brand: "eufy",
   name: "eufy C30 2K Draadloze Video Deurbel (Bundel met 64GB SD)",
   category: "slimme-deurbellen",
-  image: "/images/products/ring-video-deurbel.png",
+  image: "/images/products/eufy-c30-2k-draadloze-video-deurbel-2k-fhd-accu-zw.jpg",
   description:
     "Draadloze 2K videodeurbel op accu zonder Homebase. Inclusief 64GB SD-kaart voor lokale opslag. Eenvoudige installatie zonder boren.",
   features: ["2K beeldkwaliteit", "Accu — geen bedrading nodig", "Geen Homebase vereist", "64GB SD-kaart inbegrepen", "Lokale opslag"],

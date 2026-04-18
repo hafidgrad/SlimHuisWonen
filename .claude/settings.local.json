@@ -13,7 +13,9 @@
       "Bash(node -e \"const fs=require\\('fs'\\); console.log\\(fs.readdirSync\\('data'\\).join\\('\\\\n'\\)\\);\")",
       "Bash(node -e \"const fs=require\\('fs'\\); console.log\\(fs.readdirSync\\('C:/Users/hafid/Downloads'\\).filter\\(f=>f.includes\\('datafeed'\\)\\).join\\('\\\\n'\\)\\);\")",
       "Bash(sed -i 's/title: \"Privacybeleid | SlimHuisWonen.nl\"/title: \"Privacybeleid\"/' \"c:/Users/hafid/Documents/project website/slimhuiswonen-seo/app/privacy/page.jsx\")",
-      "Bash(sed -i 's/title: \"Koopgids template – SlimHuisWonen\"/title: \"Koopgids template\"/' \"c:/Users/hafid/Documents/project website/slimhuiswonen-seo/app/aanraders/template/page.jsx\")"
+      "Bash(sed -i 's/title: \"Koopgids template – SlimHuisWonen\"/title: \"Koopgids template\"/' \"c:/Users/hafid/Documents/project website/slimhuiswonen-seo/app/aanraders/template/page.jsx\")",
+      "Bash(node -e \"const p = require\\('./data/products.js'\\); console.log\\('Aantal producten:', p.default ? p.default.length : p.products ? p.products.length : 'onbekend'\\)\")",
+      "Bash(node -e \"const p = require\\('./data/products.js'\\); const found = p.default.filter\\(x => x.slug === 'innr-smart-gu10-zigbee-4pack' || x.slug === 'eufy-c30-2k-draadloze-videodeurbel-bundel'\\); console.log\\(JSON.stringify\\(found.map\\(x => \\({slug: x.slug, name: x.name, category: x.category}\\)\\), null, 2\\)\\)\")"
     ]
   }
 }
