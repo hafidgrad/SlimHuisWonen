@@ -1835,6 +1835,90 @@ export const products = [
     cons: [],
     forWho: [],
   },
+
+  {
+    slug: "aqara-presence-sensor-fp1e",
+    
+    brand: "Aqara",
+    name: "Aqara Presence Sensor FP1E",
+    category: "sensoren",
+    image: "/images/products/aqara-presence-sensor-fp1e.jpg",
+    description: "Aqara Presence Sensor FP1E",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Aqara-Aanwezigheidssensor-Bewegingssensor-ondersteunt-SmartThings/dp/B0D5QPH3T6?tag=slimhuiswonen-21",
+    bolUrl: "https://partner.bol.com/click/click?p=61&t=url&s=1515439&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Faqara-presence-sensor-fp1e%2F9300000184492428%2F",
+    
+    youtubeId: "M9FEJ5c2j8c",
+    priceHint: "€49,99",
+    priceLastUpdated: "april 2026",
+    rating: 4.5,
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "sonoff-zigbee-bewegingssensor-snzb-03p-voor-huisbe",
+    
+    brand: "Sonoff",
+    name: "Sonoff Zigbee Bewegingssensor Snzb-03P Voor Huisbeveiliging En Automatisering",
+    category: "sensoren",
+    image: "/images/products/sonoff-zigbee-bewegingssensor-snzb-03p-voor-huisbe.jpg",
+    description: "Sonoff Zigbee Bewegingssensor Snzb-03P Voor Huisbeveiliging En Automatisering",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/SONOFF-SNZB-03P-ZigBee-bewegingssensor-3-0-detector-Zigbee-bridge/dp/B0C1GB4DVR?tag=slimhuiswonen-21",
+    bolUrl: "https://partner.bol.com/click/click?p=61&t=url&s=1515439&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Fsonoff-zigbee-bewegingssensor-snzb-03p-voor-huisbeveiliging-%2F9300000189727787%2F",
+    
+    youtubeId: "XX2byg88Sp0",
+    priceHint: "€44,99",
+    priceLastUpdated: "april 2026",
+    rating: 5,
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "sonoff-zigbee-openingssensor-voor-smart-home-syste",
+    
+    brand: "Sonoff",
+    name: "Sonoff Zigbee Openingssensor Voor Smart Home Systeem Met Batterij Deurraam",
+    category: "sensoren",
+    image: "/images/products/sonoff-zigbee-openingssensor-voor-smart-home-syste.jpg",
+    description: "Sonoff Zigbee Openingssensor Voor Smart Home Systeem Met Batterij Deurraam",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/SONOFF-SNZB-04P-deurcontactalarmsysteem-huisdeursensor-intelligente/dp/B0C1G7W72B?tag=slimhuiswonen-21",
+    bolUrl: "https://partner.bol.com/click/click?p=61&t=url&s=1515439&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Fsonoff-zigbee-openingssensor-voor-smart-home-systeem-met-bat%2F9300000192511370%2F",
+    
+    youtubeId: "3gYyQRAUz8o",
+    priceHint: "€9,99",
+    priceLastUpdated: "april 2026",
+    rating: 5,
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "aqara-cube-t1-pro",
+    
+    brand: "Aqara",
+    name: "Aqara Cube T1 Pro",
+    category: "sensoren",
+    image: "/images/products/aqara-cube-t1-pro.jpg",
+    description: "Aqara Cube T1 Pro",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Aqara-verschillende-handelingen-Home-apparaten-ondersteunt/dp/B0BHWS3VTZ?tag=slimhuiswonen-21",
+    bolUrl: "https://partner.bol.com/click/click?p=61&t=url&s=1515439&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Faqara-cube-t1-pro%2F9300000135991859%2F",
+    
+    youtubeId: "RaE9ylNAI-4",
+    priceHint: "€22,99",
+    priceLastUpdated: "april 2026",
+    rating: 4.5,
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
 ];
 
 /* =========================
