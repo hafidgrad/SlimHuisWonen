@@ -60,6 +60,7 @@ export default function ProductToevoegenPage() {
     slug: "",
     brand: "",
     category: "",
+    bolUrl: "",
     amazonUrl: "",
     coolblueUrl: "",
     youtubeUrl: "",
@@ -160,6 +161,7 @@ export default function ProductToevoegenPage() {
       slug: nameSlug,
       brand,
       category: "",
+      bolUrl: product.bolUrl || "",
       amazonUrl: "",
       coolblueUrl: product.coolblueUrl || "",
       youtubeUrl: "",
@@ -205,7 +207,7 @@ export default function ProductToevoegenPage() {
           price: selected.price,
           rating: selected.rating || null,
           ean: selected.ean || null,
-          bolUrl: selected.bolUrl || null,
+          bolUrl: form.bolUrl || null,
           amazonUrl: form.amazonUrl || null,
           coolblueUrl: form.coolblueUrl || null,
           imageUrl: selected.image,
@@ -404,6 +406,17 @@ export default function ProductToevoegenPage() {
               </label>
 
               <label style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
+                <span style={{ fontSize: "0.82rem", opacity: 0.6 }}>bol.com link (optioneel — automatisch ingevuld via zoekresultaat)</span>
+                <input
+                  value={form.bolUrl}
+                  onChange={(e) => setForm((f) => ({ ...f, bolUrl: e.target.value }))}
+                  placeholder="https://www.bol.com/nl/nl/p/..."
+                  style={inputStyle}
+                />
+                {form.bolUrl && <span style={{ fontSize: "0.75rem", color: "#4ade80", marginTop: "0.25rem" }}>✓ bol.com link ingevuld</span>}
+              </label>
+
+              <label style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
                 <span style={{ fontSize: "0.82rem", opacity: 0.6 }}>Amazon link (optioneel)</span>
                 <input
                   value={form.amazonUrl}
@@ -432,6 +445,10 @@ export default function ProductToevoegenPage() {
                 />
                 {form.coolblueUrl && <span style={{ fontSize: "0.75rem", color: "#4ade80", marginTop: "0.25rem" }}>✓ Coolblue link ingevuld</span>}
               </label>
+
+              <p style={{ fontSize: "0.75rem", opacity: 0.45, margin: "0.25rem 0 0" }}>
+                Vul minimaal één kooplink in. Lege velden worden niet getoond als knop.
+              </p>
             </div>
 
             <label style={{ display: "flex", flexDirection: "column", gap: "0.4rem", marginBottom: "1rem" }}>
@@ -604,13 +621,13 @@ export default function ProductToevoegenPage() {
                 <li>Naam: {selected.name}</li>
                 <li>Prijs: {selected.price || "—"}</li>
                 {selected.rating && <li>Sterren: {selected.rating}</li>}
-                {selected.bolId && <li>Bol.com ID: {selected.bolId}</li>}
+                {form.bolUrl && <li>bol.com: ✓</li>}
                 <li>Afbeelding: {selected.image ? "wordt gedownload" : "geen"}</li>
                 {form.coolblueUrl && <li>Coolblue: ✓</li>}
                 {activeYtId && <li>YouTube ID: {activeYtId}</li>}
                 <li>URL: /producten/{form.slug}</li>
               </ul>
-              {[selected.bolUrl, form.amazonUrl, form.coolblueUrl].filter(Boolean).length >= 2 && (
+              {[form.bolUrl, form.amazonUrl, form.coolblueUrl].filter(Boolean).length >= 2 && (
                 <div style={{ marginTop: "0.75rem", paddingTop: "0.75rem", borderTop: "1px solid rgba(255,255,255,0.07)" }}>
                   <span style={{ fontSize: "0.75rem", opacity: 0.55 }}>Preview prijsmelding:</span>
                   <PrijsDisclaimer />

@@ -22,7 +22,7 @@ export async function POST(request) {
   }
 
   const body = await request.json();
-  const { slug, name, brand, category, description, price, rating, ean, amazonUrl, coolblueUrl, youtubeUrl, imageUrl, features = [] } = body;
+  const { slug, name, brand, category, description, price, rating, ean, bolUrl, amazonUrl, coolblueUrl, youtubeUrl, imageUrl, features = [] } = body;
 
   if (!slug || !name || !category) {
     return Response.json({ error: "slug, name en category zijn verplicht" }, { status: 400 });
@@ -113,6 +113,7 @@ export async function POST(request) {
     description: "${sanitize(description || name)}",
     features: [${features.map((f) => `"${sanitize(f)}"`).join(", ")}],
     ${finalAmazonUrl ? `affiliateUrl: "${finalAmazonUrl}",` : ""}
+    ${bolUrl ? `bolUrl: "${bolUrl}",` : ""}
     ${coolblueUrl ? `coolblueUrl: "${coolblueUrl}",` : ""}
     ${finalYoutubeId ? `youtubeId: "${finalYoutubeId}",` : ""}
     ${priceHint ? `priceHint: "${priceHint}",` : ""}
