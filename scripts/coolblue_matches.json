@@ -1,0 +1,370 @@
+[
+  {
+    "slug": "philips-hue-white-ambiance-starterkit",
+    "match": {
+      "rawName": "Philips Hue White Ambiance Starter Pack E27 met 3 lampen, dimmer + Bridge",
+      "awLink": "https://www.awin1.com/pclick.php?p=38561477934&a=2855887&m=85161",
+      "merchantId": "889938"
+    }
+  },
+  {
+    "slug": "philips-hue-white-e27",
+    "match": null
+  },
+  {
+    "slug": "philips-hue-color-ambiance-e27",
+    "match": null
+  },
+  {
+    "slug": "philips-hue-lightstrip-plus",
+    "match": null
+  },
+  {
+    "slug": "govee-rgbic-ledstrip",
+    "match": null
+  },
+  {
+    "slug": "tapo-l530e",
+    "match": null
+  },
+  {
+    "slug": "innr-zigbee-e27",
+    "match": null
+  },
+  {
+    "slug": "tapo-l510e",
+    "match": null
+  },
+  {
+    "slug": "aqara-deur-raamsensor-p2",
+    "match": null
+  },
+  {
+    "slug": "eve-motion-matter-bewegingssensor",
+    "match": null
+  },
+  {
+    "slug": "aqara-fp2-aanwezigheidssensor",
+    "match": null
+  },
+  {
+    "slug": "aqara-temperatuur-rv-t1",
+    "match": null
+  },
+  {
+    "slug": "tapo-t110",
+    "match": {
+      "rawName": "TP-Link Tapo T110 smart-contactsensor",
+      "awLink": "https://www.awin1.com/pclick.php?p=44127004388&a=2855887&m=85161",
+      "merchantId": "928517"
+    }
+  },
+  {
+    "slug": "aqara-waterleksensor-t1",
+    "match": null
+  },
+  {
+    "slug": "tapo-t315",
+    "match": {
+      "rawName": "TP-Link Tapo T315 Smart thermometer and hygrometer",
+      "awLink": "https://www.awin1.com/pclick.php?p=38840443808&a=2855887&m=85161",
+      "merchantId": "928583"
+    }
+  },
+  {
+    "slug": "aqara-vibratiesensor",
+    "match": null
+  },
+  {
+    "slug": "ring-video-deurbel",
+    "match": null
+  },
+  {
+    "slug": "google-nest-thermostaat",
+    "match": null
+  },
+  {
+    "slug": "slimme-thermostaat-combiketel",
+    "match": null
+  },
+  {
+    "slug": "tapo-ke100-kit",
+    "match": null
+  },
+  {
+    "slug": "tapo-p115",
+    "match": {
+      "rawName": "Tapo P115 Slimme Stekker",
+      "awLink": "https://www.awin1.com/pclick.php?p=38561531995&a=2855887&m=85161",
+      "merchantId": "918281"
+    }
+  },
+  {
+    "slug": "tapo-p110",
+    "match": null
+  },
+  {
+    "slug": "eve-energy",
+    "match": null
+  },
+  {
+    "slug": "philips-hue-smart-plug",
+    "match": {
+      "rawName": "Philips Hue Smart Plug",
+      "awLink": "https://www.awin1.com/pclick.php?p=38561531997&a=2855887&m=85161",
+      "merchantId": "890074"
+    }
+  },
+  {
+    "slug": "philips-hue-smart-plug-combipack",
+    "match": null
+  },
+  {
+    "slug": "innr-zigbee-outdoor-smart-plug",
+    "match": null
+  },
+  {
+    "slug": "switchbot-matter-plug-mini",
+    "match": null
+  },
+  {
+    "slug": "aqara-smart-plug",
+    "match": null
+  },
+  {
+    "slug": "aqara-doorbell-g410-grey",
+    "match": null
+  },
+  {
+    "slug": "aqara-doorbell-g410-black",
+    "match": null
+  },
+  {
+    "slug": "tapo-d205",
+    "match": null
+  },
+  {
+    "slug": "tapo-d235",
+    "match": {
+      "rawName": "TP-Link Tapo D235 Smart Battery & Wired Doorbell",
+      "awLink": "https://www.awin1.com/pclick.php?p=38561530908&a=2855887&m=85161",
+      "merchantId": "950564"
+    }
+  },
+  {
+    "slug": "reolink-video-doorbell-wifi",
+    "match": null
+  },
+  {
+    "slug": "eufy-indoor-cam",
+    "match": null
+  },
+  {
+    "slug": "tapo-c225",
+    "match": {
+      "rawName": "TP-Link Tapo C225 2.5K Pan & Tilt",
+      "awLink": "https://www.awin1.com/pclick.php?p=38561477674&a=2855887&m=85161",
+      "merchantId": "919556"
+    }
+  },
+  {
+    "slug": "eufy-solo-outdoor-cam",
+    "match": null
+  },
+  {
+    "slug": "reolink-poe-camera",
+    "match": null
+  },
+  {
+    "slug": "tapo-c200",
+    "match": null
+  },
+  {
+    "slug": "eve-cam",
+    "match": null
+  },
+  {
+    "slug": "aqara-motion-sensor",
+    "match": null
+  },
+  {
+    "slug": "eve-weather",
+    "match": null
+  },
+  {
+    "slug": "tapo-t100",
+    "match": {
+      "rawName": "TP-Link Tapo T100 smart-bewegingssensor",
+      "awLink": "https://www.awin1.com/pclick.php?p=38840441964&a=2855887&m=85161",
+      "merchantId": "928516"
+    }
+  },
+  {
+    "slug": "eve-door-window",
+    "match": null
+  },
+  {
+    "slug": "samsung-smartthings-hub",
+    "match": null
+  },
+  {
+    "slug": "homey-pro-early-2023",
+    "match": null
+  },
+  {
+    "slug": "homey-bridge",
+    "match": null
+  },
+  {
+    "slug": "philips-hue-bridge",
+    "match": {
+      "rawName": "Philips Hue Bridge Pro",
+      "awLink": "https://www.awin1.com/pclick.php?p=42367630220&a=2855887&m=85161",
+      "merchantId": "968647"
+    }
+  },
+  {
+    "slug": "home-assistant-green",
+    "match": null
+  },
+  {
+    "slug": "tado-smart-thermostat-v3",
+    "match": null
+  },
+  {
+    "slug": "netatmo-slimme-thermostaat",
+    "match": null
+  },
+  {
+    "slug": "tp-link-deco-xe75",
+    "match": {
+      "rawName": "TP-Link Deco XE75 3-pack",
+      "awLink": "https://www.awin1.com/pclick.php?p=43417689963&a=2855887&m=85161",
+      "merchantId": "904018"
+    }
+  },
+  {
+    "slug": "eero-pro-6e",
+    "match": null
+  },
+  {
+    "slug": "google-nest-wifi-pro",
+    "match": null
+  },
+  {
+    "slug": "nuki-smart-lock-4-pro",
+    "match": null
+  },
+  {
+    "slug": "yale-linus-smart-lock",
+    "match": null
+  },
+  {
+    "slug": "danalock-v3",
+    "match": null
+  },
+  {
+    "slug": "frient-elektriciteitsmeter-interface-2-p1",
+    "match": null
+  },
+  {
+    "slug": "shelly-pro-3em",
+    "match": null
+  },
+  {
+    "slug": "brostrend-mini-ax900-wifi-6",
+    "match": null
+  },
+  {
+    "slug": "philips-hue-gu10-white-ambiance",
+    "match": {
+      "rawName": "Philips Hue White Ambiance GU10",
+      "awLink": "https://www.awin1.com/pclick.php?p=38561477987&a=2855887&m=85161",
+      "merchantId": "949408"
+    }
+  },
+  {
+    "slug": "philips-hue-dimmer-switch-v2",
+    "match": null
+  },
+  {
+    "slug": "philips-hue-motion-sensor",
+    "match": null
+  },
+  {
+    "slug": "tapo-l920-5-ledstrip",
+    "match": null
+  },
+  {
+    "slug": "govee-outdoor-ledstrip",
+    "match": null
+  },
+  {
+    "slug": "tapo-h200-smart-hub",
+    "match": null
+  },
+  {
+    "slug": "aqara-hub-m3",
+    "match": null
+  },
+  {
+    "slug": "tado-smart-thermostat-v3-bedraad",
+    "match": null
+  },
+  {
+    "slug": "tado-radiatorkraan-v3-plus",
+    "match": null
+  },
+  {
+    "slug": "nuki-smart-lock-3-pro",
+    "match": null
+  },
+  {
+    "slug": "aqara-smart-lock-u200-lite",
+    "match": null
+  },
+  {
+    "slug": "tp-link-deco-xe75-2pack",
+    "match": null
+  },
+  {
+    "slug": "zendure-slimme-meter-p1",
+    "match": null
+  },
+  {
+    "slug": "shelly-em",
+    "match": null
+  },
+  {
+    "slug": "aqara-rookmelder",
+    "match": null
+  },
+  {
+    "slug": "aqara-mini-switch-t1",
+    "match": null
+  },
+  {
+    "slug": "tapo-t300-waterlekkagesensor",
+    "match": null
+  },
+  {
+    "slug": "innr-smart-gu10-zigbee-4pack",
+    "match": null
+  },
+  {
+    "slug": "eufy-c30-2k-draadloze-videodeurbel-bundel",
+    "match": null
+  },
+  {
+    "slug": "nanoleaf-lines-60-degrees-starterkit-slimme-verlic",
+    "match": null
+  },
+  {
+    "slug": "nanoleaf-shapes-mini-triangles-uitbreidingspakket-",
+    "match": null
+  },
+  {
+    "slug": "govee-neon-rope-light-2-white-5m",
+    "match": null
+  }
+]
