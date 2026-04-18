@@ -53,7 +53,7 @@ export function generateMetadata({ params }) {
 
   if (!category) {
     return {
-      title: "Categorie niet gevonden | SlimHuisWonen",
+      title: "Categorie niet gevonden",
       description: "Deze categorie bestaat niet.",
     };
   }
@@ -61,11 +61,11 @@ export function generateMetadata({ params }) {
   const url = `https://slimhuiswonen.nl/categorie/${category.slug}`;
 
   return {
-    title: `${category.name} | SlimHuisWonen`,
+    title: category.name,
     description: category.description,
     alternates: { canonical: url },
     openGraph: {
-      title: `${category.name} | SlimHuisWonen`,
+      title: category.name,
       description: category.description,
       url,
       type: "website",

@@ -5,7 +5,7 @@ import Image from "next/image";
 import BuyGuideProductCard from "@/components/BuyGuideProductCard";
 
 export const metadata = {
-  title: "Koopgids template – SlimHuisWonen",
+  title: "Koopgids template",
   description:
     "Template voor koopgidsen op SlimHuisWonen: structuur, productblokken en interne links.",
   alternates: {

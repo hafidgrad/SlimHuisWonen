@@ -7,7 +7,7 @@ import { getAllTips } from "@/data/tips";
 import { blogPosts } from "@/data/blog";
 
 export const metadata = {
-  title: "Beveiliging | SlimHuisWonen",
+  title: "Beveiliging",
   description:
     "Beveilig je slimme huis met camera’s, deurbellen en sensoren. Handleidingen, uitleg en koopadvies.",
   alternates: {

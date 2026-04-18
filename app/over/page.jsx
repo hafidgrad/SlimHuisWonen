@@ -4,14 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Over Hafid – SlimHuisWonen.nl",
+  title: "Over Hafid",
   description:
-    "Hafid begon met KlikAanKlikUit en bouwde stap voor stap een volledig slim huis. Op SlimHuisWonen deelt hij alles wat hij leerde — zodat jij niet dezelfde fouten hoeft te maken.",
+    "Ik ben Hafid, oprichter van SlimHuisWonen.nl. Ik deel mijn ervaringen met smart home zodat jij makkelijker kunt starten met een slim huis.",
   alternates: {
     canonical: "https://slimhuiswonen.nl/over",
   },
   openGraph: {
-    title: "Over Hafid – SlimHuisWonen.nl",
+    title: "Over Hafid",
     description:
       "Lees wie SlimHuisWonen runt en waarom Hafid deze site is gestart.",
     url: "https://slimhuiswonen.nl/over",
@@ -162,7 +162,7 @@ export default function OverPage() {
                 jaar: "Veiligheid",
                 titel: "Camera's en sensoren",
                 tekst:
-                  "Ik heb Eufy en Tapo camera's in huis. Binnencamera voor als we op vakantie zijn, buitencamera bij de voordeur. Daarna kwamen de Aqara deur- en raaamsensoren — handig als er iemand binnengaat als wij er niet zijn.",
+                  "Ik heb Eufy en Tapo camera's in huis. Binnencamera voor als we op vakantie zijn, buitencamera bij de voordeur. Daarna kwamen de Aqara deur- en raamsensoren — handig als er iemand binnengaat als wij er niet zijn.",
               },
               {
                 jaar: "Volgende stap",
@@ -244,7 +244,7 @@ export default function OverPage() {
               <strong>Camera's:</strong> Eufy binnencamera + Tapo buitencamera
             </li>
             <li>
-              <strong>Sensoren:</strong> Aqara deur- en raaamsensoren (Zigbee)
+              <strong>Sensoren:</strong> Aqara deur- en raamsensoren (Zigbee)
             </li>
             <li>
               <strong>Stekkers:</strong> Tapo P115 voor energiemeting bij

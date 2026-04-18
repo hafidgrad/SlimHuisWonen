@@ -5,9 +5,9 @@ import Image from "next/image";
 import { howto as howtoData } from "@/data/howto";
 
 export const metadata = {
-  title: "How To Smart Home – SlimHuisWonen.nl",
+  title: "How To Smart Home",
   description:
-    "Stap-voor-stap handleidingen voor je smart home. Van wifi verbeteren tot het installeren van een slimme hub.",
+    "Stap-voor-stap handleidingen voor je smart home. Duidelijke uitleg zonder technisch gedoe voor Homey, Home Assistant en meer.",
   alternates: {
     canonical: "https://slimhuiswonen.nl/how-to",
   },

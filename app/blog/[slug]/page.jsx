@@ -14,14 +14,14 @@ export async function generateMetadata({ params }) {
 
   if (!post) {
     return {
-      title: "Blog – SlimHuisWonen.nl",
+      title: "Blog",
       description:
         "Smart home blog met handige uitleg, vergelijkingen en koopgidsen.",
     };
   }
 
   return {
-    title: `${post.title} | SlimHuisWonen`,
+    title: post.title,
     description: post.description,
     alternates: {
       canonical: `https://slimhuiswonen.nl/blog/${post.slug}`,
@@ -30,23 +30,11 @@ export async function generateMetadata({ params }) {
       title: post.title,
       description: post.description,
       url: `https://slimhuiswonen.nl/blog/${post.slug}`,
-      type: "article",
-      ...(post.datePublished && { publishedTime: post.datePublished }),
-      ...(post.dateModified && { modifiedTime: post.dateModified }),
       images: [
         {
           url: `https://slimhuiswonen.nl${post.image}`,
-          width: 1200,
-          height: 630,
-          alt: post.title,
         },
       ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: post.title,
-      description: post.description,
-      images: [`https://slimhuiswonen.nl${post.image}`],
     },
   };
 }
@@ -186,6 +174,37 @@ export default function BlogPostPage({ params }) {
           {post.content}
 
           <AuthorCard />
+
+          {/* Link naar meest relevante koopgids */}
+          {(() => {
+            const relatedGuide = aanraders.find(
+              (g) =>
+                (g.relatedBlogs && g.relatedBlogs.includes(post.slug)) ||
+                g.relatedBlog === post.slug
+            );
+            if (!relatedGuide) return null;
+            return (
+              <div
+                style={{
+                  background: "rgba(99,102,241,0.08)",
+                  borderLeft: "4px solid #6366f1",
+                  padding: "1rem 1.25rem",
+                  borderRadius: "0 8px 8px 0",
+                  margin: "1.5rem 0",
+                }}
+              >
+                <p style={{ margin: "0 0 0.4rem", fontWeight: 600 }}>
+                  Koopgids aanbeveling
+                </p>
+                <p style={{ margin: "0 0 0.5rem" }} className="muted">
+                  {relatedGuide.description}
+                </p>
+                <Link href={`/aanraders/${relatedGuide.slug}`} className="btn btn-primary" style={{ fontSize: "0.9rem" }}>
+                  {relatedGuide.title} →
+                </Link>
+              </div>
+            );
+          })()}
 
           {/* ✅ Verder lezen (alleen als er items zijn) */}
           <RelatedContent items={relatedItems} basePath="blog" />

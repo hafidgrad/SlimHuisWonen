@@ -7,7 +7,7 @@ import { getAllTips } from "@/data/tips";
 import { blogPosts } from "@/data/blog";
 
 export const metadata = {
-  title: "Smart Home Basis | SlimHuisWonen",
+  title: "Smart Home Basis",
   description:
     "Alles wat je moet weten om te beginnen met een smart home. Uitleg, tips, handleidingen en koopadvies.",
   alternates: {

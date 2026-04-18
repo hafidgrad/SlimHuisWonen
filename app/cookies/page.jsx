@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Cookiebeleid | SlimHuisWonen.nl",
+  title: "Cookiebeleid",
   description:
     "Cookiebeleid van SlimHuisWonen.nl. Welke cookies we gebruiken en hoe je ze kunt beheren.",
   alternates: { canonical: "https://slimhuiswonen.nl/cookies" },

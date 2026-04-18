@@ -7,7 +7,7 @@ import { getAllTips } from "@/data/tips";
 import { blogPosts } from "@/data/blog";
 
 export const metadata = {
-  title: "Wifi & Netwerk | SlimHuisWonen",
+  title: "Wifi & Netwerk",
   description:
     "Alles over wifi optimalisatie voor je smart home. Bereik verbeteren, 2.4GHz vs 5GHz en stabiele verbindingen.",
   alternates: {

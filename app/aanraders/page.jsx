@@ -5,9 +5,9 @@ import Image from "next/image";
 import { aanraders as aanradersData } from "@/data/aanraders";
 
 export const metadata = {
-  title: "Onze slimme aanraders – SlimHuisWonen.nl",
+  title: "Onze slimme aanraders",
   description:
-    "Ontdek onze beste smart home koopgidsen en aanraders. Vergelijk slimme verlichting, stekkers, camera’s, deurbellen en hubs.",
+    "De beste smart home producten van 2026. Onafhankelijke koopgidsen voor verlichting, sensoren, camera’s, hubs en meer.",
   alternates: {
     canonical: "https://slimhuiswonen.nl/aanraders",
   },

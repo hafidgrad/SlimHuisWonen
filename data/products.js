@@ -25,7 +25,6 @@ export const products = [
       "Uitbreidbaar met extra lampen",
     ],
     affiliateUrl: "https://www.amazon.nl/dp/B0991VHWSJ?tag=slimhuiswonen-21",
-    coolblueUrl: "https://www.awin1.com/pclick.php?p=38561477934&a=2855887&m=85161",
     rating: 4.7,
     priceHint: "€70 – €85",
     priceLastUpdated: "april 2026",
@@ -253,7 +252,6 @@ export const products = [
       "Contactsensor voor deuren en ramen binnen het Tapo ecosysteem.",
     features: ["Deur / raam detectie", "Slimme meldingen", "Automatiseringen"],
     affiliateUrl: "https://www.amazon.nl/dp/B0BF5MC9QX?tag=slimhuiswonen-21",
-    coolblueUrl: "https://www.awin1.com/pclick.php?p=44127004388&a=2855887&m=85161",
     priceHint: "€12 – €15",
     priceLastUpdated: "april 2026",
     youtubeUrl: "https://www.youtube.com/shorts/rUPcVT878V4",
@@ -285,7 +283,6 @@ export const products = [
       "Slimme temperatuur- en luchtvochtigheidsmeter met display.",
     features: ["Temperatuur", "Luchtvochtigheid", "Display"],
     affiliateUrl: "https://www.amazon.nl/dp/B0BNYSVV3J?tag=slimhuiswonen-21",
-    coolblueUrl: "https://www.awin1.com/pclick.php?p=38840443808&a=2855887&m=85161",
     priceHint: "€18 – €25",
     priceLastUpdated: "april 2026",
     youtubeUrl: "https://www.youtube.com/shorts/96W-aKT8vPk",
@@ -398,7 +395,6 @@ export const products = [
     description: "Compacte slimme stekker met energiemeting.",
     features: ["Energieverbruik inzicht", "Wi-Fi", "Geen hub nodig"],
     affiliateUrl: "https://www.amazon.nl/dp/B09ZBGWYH9?tag=slimhuiswonen-21",
-    coolblueUrl: "https://www.awin1.com/pclick.php?p=38561532010&a=2855887&m=85161",
     rating: 4.6,
     priceHint: "€12 – €15",
     priceLastUpdated: "april 2026",
@@ -455,7 +451,6 @@ export const products = [
     description: "Slimme stekker binnen het Hue ecosysteem.",
     features: ["Hue integratie", "Bluetooth", "Bridge optioneel"],
     affiliateUrl: "https://www.amazon.nl/dp/B09CV7QQKB?tag=slimhuiswonen-21",
-    coolblueUrl: "https://www.awin1.com/pclick.php?p=38561531997&a=2855887&m=85161",
     priceHint: "€25 – €32",
     priceLastUpdated: "april 2026",
     youtubeUrl: "https://www.youtube.com/watch?v=SQ3ClKGRbq8",
@@ -669,8 +664,7 @@ export const products = [
   affiliateUrl:
     "https://www.amazon.nl/Tapo-C225-Beveiligingscamera-Intelligente-Compatibel/dp/B0BN4BQ1DM?tag=slimhuiswonen-21",
   priceHint: "€30 – €40",
-  coolblueUrl: "https://www.awin1.com/pclick.php?p=38561477674&a=2855887&m=85161",
-    priceLastUpdated: "april 2026",
+  priceLastUpdated: "april 2026",
   pros: ["2K beeld", "Pan & tilt — volgt beweging", "Privacymodus (lens klapt weg)"],
   cons: ["Vereist Tapo-app", "Cloud voor geavanceerde functies"],
   forWho: ["Voor wie ook zijn huisdieren wil volgen via de camera", "Voor gebruik in woonkamer of babykamer"],
@@ -816,8 +810,7 @@ export const products = [
   affiliateUrl:
     "https://www.amazon.nl/Tapo-0184500512-T100/dp/B0B7NDJW6J?tag=slimhuiswonen-21",
   priceHint: "€12 – €15",
-  coolblueUrl: "https://www.awin1.com/pclick.php?p=38840441964&a=2855887&m=85161",
-    priceLastUpdated: "april 2026",
+  priceLastUpdated: "april 2026",
   youtubeUrl: "https://www.youtube.com/shorts/dorW24Ba4oo",
 },
 
@@ -1225,7 +1218,6 @@ export const products = [
     "Slimme GU10-spots voor badkamer, keuken of hal. Instelbaar wit licht van warm tot koel daglicht, dimbaar via app of bridge.",
   features: ["GU10 fitting", "Instelbaar wit licht", "Dimbaar", "Zigbee & Bluetooth"],
   affiliateUrl: "https://www.amazon.nl/Philips-Hue-instelbaar-Bluetooth-compatibel-stembediening/dp/B0D6NLJHQ3?tag=slimhuiswonen-21",
-    coolblueUrl: "https://www.awin1.com/pclick.php?p=38707440242&a=2855887&m=85161",
   priceHint: "€35 – €45",
   priceLastUpdated: "april 2026",
   pros: ["Dimbaar warm tot koel daglicht", "Past in elk standaard GU10-armatuur", "Werkt met Hue Bridge én Bluetooth"],
@@ -1576,104 +1568,52 @@ export const products = [
   youtubeUrl: "https://www.youtube.com/shorts/sJRH_NO6iNY",
 },
 
+/* =========================
+   SLIMME VERLICHTING — GU10
+========================== */
 
-  {
-    slug: "eufy-c30-2k-draadloze-video-deurbel-2k-fhd-accu-zw",
-    brand: "eufy",
-    name: "eufy C30 2K Draadloze Video Deurbel 2K FHD - Accu Zwart + SD card 64 GB - geen Homebase nodig - Bundel",
-    category: "slimme-deurbellen",
-    image: "/images/products/eufy-c30-2k-draadloze-video-deurbel-2k-fhd-accu-zw.jpg",
-    description: "eufy C30 2K Draadloze Video Deurbel 2K FHD - Accu Zwart + SD card 64 GB - geen Homebase nodig - Bundel",
-    features: [],
-    affiliateUrl: "https://www.amazon.nl/eufy-Video-Doorbell-werkt-batterijen/dp/B0DHRYZ4JJ?tag=slimhuiswonen-21",
-    priceHint: "€119,00",
-    priceLastUpdated: "april 2026",
-    rating: 4.2,
-    pros: [],
-    cons: [],
-    forWho: [],
-  },
+{
+  slug: "innr-smart-gu10-zigbee-4pack",
+  ean: "8718781550578",
+  brand: "Innr",
+  name: "Innr Smart GU10 Zigbee LED (4-pack)",
+  category: "slimme-verlichting",
+  image: "/images/products/innr-zigbee-e27.png",
+  description:
+    "Zigbee GU10-spots compatibel met Philips Hue Bridge en SmartThings. Warm wit licht, dimbaar en geschikt voor badkamer, keuken of hal.",
+  features: ["Zigbee", "Compatibel met Philips Hue Bridge", "Dimbaar", "Warm wit", "4-pack"],
+  affiliateUrl: "https://www.amazon.nl/s?k=Innr+Smart+GU10+Zigbee&tag=slimhuiswonen-21",
+  priceHint: "€40 – €55",
+  priceLastUpdated: "april 2026",
+  pros: ["Compatibel met Hue Bridge en SmartThings", "Zigbee — stabiel en energiezuinig", "4-pack voor een goede prijs"],
+  cons: ["Geen kleuren — alleen warm wit", "Vereist een Zigbee hub"],
+  forWho: ["Voor Hue-gebruikers die GU10-spots willen toevoegen", "Voor Zigbee-gebruikers die betaalbaar willen uitbreiden"],
+  personalNote: "Een goede keuze als je al een Hue Bridge hebt en GU10-spots in de keuken of badkamer slim wil maken zonder de Hue-prijs te betalen.",
+},
 
-  {
-    slug: "philips-hue-lily-starter-pack-white-and-color-prik",
-    
-    brand: "Philips Hue",
-    name: "Philips Hue Lily Starter Pack White and Color prikspot 3-Pack",
-    category: "slimme-verlichting",
-    image: "/images/products/philips-hue-lily-starter-pack-white-and-color-prik.png",
-    description: "Met dit Philips Hue Lily Starter Pack heb jij Philips Hue in de tuin of op je terras. Deze basisset bestaat uit 3 armaturen voor buiten en alle onderdelen die je nodig hebt voor het aansluiten. Steek de stekker in het stopcontact en kies uit 1 van de 16 miljoen kleuren of alle tinten wit. De armaturen zijn van aluminium en zijn waterdicht. Je koppelt de slimme buitenlamp aan de Hue bridge (niet meegeleverd). Met de app op je smartphone zet je de lamp op afstand aan en uit, bepaal je de lichtkleur of laat je de lamp automatisch reageren op de zonsondergang. Dankzij geofencing kan de lamp automatisch in- of uitschakelen wanneer je thuiskomt of je woning verlaat. Bovendien is de buitenlamp compatibel met Amazon Alexa, Apple HomeKit of Google Assistant. Let op! Deze Philips Hue buitenverlichting werkt alleen in combinatie met een bridge.",
-    features: [],
-    affiliateUrl: "https://www.amazon.nl/Philips-Hue-Tuinspot-3-Lichts-Basis/dp/B07BXT7VHT?tag=slimhuiswonen-21",
-    coolblueUrl: "https://www.coolblue.nl/product/813432",
-    youtubeId: "4JZbVX8kc74",
-    priceHint: "€286,00",
-    priceLastUpdated: "april 2026",
-    
-    pros: [],
-    cons: [],
-    forWho: [],
-  },
+/* =========================
+   SLIMME DEURBELLEN — UITBREIDING
+========================== */
 
-  {
-    slug: "philips-hue-play-hdmi-sync-box-8k",
-    
-    brand: "Philips Hue",
-    name: "Philips Hue Play HDMI Sync Box 8K",
-    category: "slimme-verlichting",
-    image: "/images/products/philips-hue-play-hdmi-sync-box-8k.png",
-    description: "Met de Philips Hue Play HDMI Sync Box 8K laat je jouw Philips Hue smart lampen meekleuren met je televisie. De Sync Box verwerkt 4K beelden op 120Hz en 8K beelden op 60Hz. Je maakt dus de afweging tussen een hogere 8K beeldkwaliteit of extra vloeiend beeld met 120Hz. Als je tv maximaal 4K beeld ondersteunt, kies je altijd voor 4K beeldkwaliteit met 120Hz. De Sync Box heeft 5 HDMI poorten. Eén daarvan is de uitgang naar je tv. De andere 4 gebruik je als ingangen. Zo sluit je bijvoorbeeld een Playstation, laptop en Google Chromecast tegelijk aan. De Sync Box verwerkt het beeld van deze apparaten. In de Philips Hue app stel je in welke lampen meekleuren met je beeldscherm.",
-    features: [],
-    affiliateUrl: "https://www.amazon.nl/Philips-Hue-Play-HDMI-sync/dp/B0DGQSY3ZT?tag=slimhuiswonen-21",
-    coolblueUrl: "https://www.coolblue.nl/product/954033",
-    youtubeId: "5jveH90EX14",
-    priceHint: "€350,00",
-    priceLastUpdated: "april 2026",
-    
-    pros: [],
-    cons: [],
-    forWho: [],
-  },
+{
+  slug: "eufy-c30-2k-draadloze-videodeurbel-bundel",
+  ean: "0194644900083",
+  brand: "eufy",
+  name: "eufy C30 2K Draadloze Video Deurbel (Bundel met 64GB SD)",
+  category: "slimme-deurbellen",
+  image: "/images/products/ring-video-deurbel.png",
+  description:
+    "Draadloze 2K videodeurbel op accu zonder Homebase. Inclusief 64GB SD-kaart voor lokale opslag. Eenvoudige installatie zonder boren.",
+  features: ["2K beeldkwaliteit", "Accu — geen bedrading nodig", "Geen Homebase vereist", "64GB SD-kaart inbegrepen", "Lokale opslag"],
+  affiliateUrl: "https://www.amazon.nl/s?k=eufy+C30+2K+Videodeurbel&tag=slimhuiswonen-21",
+  priceHint: "€80 – €110",
+  priceLastUpdated: "april 2026",
+  pros: ["Geen Homebase nodig — direct bruikbaar", "Lokale opslag via SD-kaart — geen abonnement", "Eenvoudige draadloze installatie"],
+  cons: ["Accu moet periodiek opgeladen worden", "Minder smart home integraties dan bedrade modellen"],
+  forWho: ["Voor wie geen bedrading wil aanleggen", "Voor wie lokale opslag verkiest boven cloud-abonnement"],
+  personalNote: "Sterk alternatief voor Ring als je geen abonnement wilt. De SD-kaart bundel maakt het direct compleet en je hebt geen extra Homebase nodig.",
+},
 
-  {
-    slug: "innr-smart-gu10-led-lamp-geschikt-voor-philips-hue",
-    
-    brand: "Innr",
-    name: "Innr smart GU10 LED lamp - geschikt voor Philips Hue - Zigbee LED spot - warm white - slimme lamp - dimbaar - 460 lumen - 4 pack",
-    category: "slimme-verlichting",
-    image: "/images/products/innr-smart-gu10-led-lamp-geschikt-voor-philips-hue.jpg",
-    description: "Innr smart GU10 LED lamp - geschikt voor Philips Hue - Zigbee LED spot - warm white - slimme lamp - dimbaar - 460 lumen - 4 pack",
-    features: [],
-    
-    
-    youtubeId: "tdE61zU1cbk",
-    priceHint: "€10,00",
-    priceLastUpdated: "april 2026",
-    rating: 4.3,
-    pros: [],
-    cons: [],
-    forWho: [],
-  },
-
-  {
-    slug: "philips-hue-go-tafellamp-white-and-color-zwart",
-    
-    brand: "Philips Hue",
-    name: "Philips Hue Go tafellamp - White and Color - zwart",
-    category: "slimme-verlichting",
-    image: "/images/products/philips-hue-go-tafellamp-white-and-color-zwart.png",
-    description: "Met de slimme Philips Hue Go draagbare tafellamp op batterij breng je slimme verlichting naar iedere hoek van je huis. Deze kleine staande lamp verplaats je namelijk gemakkelijk dankzij het siliconen handvat. Deze lamp verplaats je gemakkelijk naar waar je het meeste licht nodig hebt, omdat de batterij 48 uur meegaat. Eet je eens buiten maar is het wat donker? De Philips Hue Go is ook geschikt voor buitenshuis gebruik. Deze lamp geeft 16 miljoen verschillende kleuren licht. Je verbindt de lamp via bluetooth of aan het internet met een bridge. Met een bridge bedien je de lampen ook buitenshuis en stel je vaste routines in.",
-    features: [],
-    
-    affiliateUrl: "https://www.amazon.nl/Philips-Hue-Tafellamp-Verlichting-Bluetooth/dp/B0B2PV9YX5?tag=slimhuiswonen-21",
-    coolblueUrl: "https://www.coolblue.nl/product/922837",
-    youtubeId: "yhQIaa8hvEg",
-    priceHint: "€131,00",
-    priceLastUpdated: "april 2026",
-    
-    pros: [],
-    cons: [],
-    forWho: [],
-  },
 ];
 
 /* =========================

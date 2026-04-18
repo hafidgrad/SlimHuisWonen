@@ -5,9 +5,9 @@ import Image from "next/image";
 import { getAllTips } from "@/data/tips";
 
 export const metadata = {
-  title: "Tips & Uitleg | SlimHuisWonen",
+  title: "Tips & Uitleg",
   description:
-    "Handige smart home tips en uitleg: wifi, privacy, automatiseringen en meer.",
+    "Praktische tips en uitleg over slimme verlichting, sensoren, hubs en netwerken. Begrijp hoe je smart home werkt en voorkom miskopen.",
   alternates: {
     canonical: "https://slimhuiswonen.nl/tips",
   },

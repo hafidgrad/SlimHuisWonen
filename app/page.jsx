@@ -26,7 +26,7 @@ function PopulaireProducten() {
       <div className="container">
         <h2>Populaire producten</h2>
         <p className="section-intro">
-          Bestel via Amazon of bol.com — meest bekeken producten op SlimHuisWonen.
+          Bestel via Amazon, bol.com of Coolblue — meest bekeken producten op SlimHuisWonen.
         </p>
 
         <div
@@ -149,7 +149,7 @@ function PopulaireProducten() {
 
 export async function generateMetadata() {
   return {
-    title: "SlimHuisWonen.nl – Slim huis starten zonder gedoe",
+    title: { absolute: "SlimHuisWonen – Slim huis starten zonder gedoe" },
     description:
       "Slim huis beginnen? Ontdek de beste smart home producten, koopgidsen, tips, blogs en how-to handleidingen voor slimme verlichting, sensoren, camera’s, hubs en automatiseringen.",
     alternates: {

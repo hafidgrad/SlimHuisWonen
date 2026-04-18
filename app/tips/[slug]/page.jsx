@@ -14,13 +14,13 @@ export async function generateMetadata({ params }) {
 
   if (!tip) {
     return {
-      title: "Tips – SlimHuisWonen.nl",
+      title: "Tips",
       description: "Smart home tips en uitleg voor een stabiele slimme woning.",
     };
   }
 
   return {
-    title: `${tip.title} | SlimHuisWonen`,
+    title: tip.title,
     description: tip.description,
     alternates: {
       canonical: `https://slimhuiswonen.nl/tips/${tip.slug}`,

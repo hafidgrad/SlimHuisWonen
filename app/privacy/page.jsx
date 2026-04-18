@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Privacybeleid | SlimHuisWonen.nl",
+  title: "Privacybeleid",
   description:
     "Lees het privacybeleid van SlimHuisWonen.nl. Welke gegevens we verwerken, hoe we omgaan met affiliate-links naar webshops en hoe je je rechten kunt uitoefenen.",
   alternates: { canonical: "https://slimhuiswonen.nl/privacy" },

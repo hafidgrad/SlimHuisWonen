@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Disclaimer | SlimHuisWonen.nl",
+  title: "Disclaimer",
   description:
     "Disclaimer en aansprakelijkheidsbeperking van SlimHuisWonen.nl. Informatie over affiliate-links en de juistheid van inhoud.",
   alternates: { canonical: "https://slimhuiswonen.nl/disclaimer" },

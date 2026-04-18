@@ -2,7 +2,7 @@ import SearchBar from "@/components/SearchBar";
 import { getSearchItems } from "@/data/searchItems";
 
 export const metadata = {
-  title: "Zoeken | SlimHuisWonen",
+  title: "Zoeken",
   description: "Zoek snel door blogs, tips en producten op SlimHuisWonen.",
 };
 

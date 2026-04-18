@@ -18,13 +18,13 @@ export async function generateMetadata({ params }) {
 
   if (!article) {
     return {
-      title: "How-To – SlimHuisWonen.nl",
+      title: "How-To",
       description: "Stap-voor-stap smart home handleidingen.",
     };
   }
 
   return {
-    title: `${article.title} | SlimHuisWonen`,
+    title: article.title,
     description: article.description,
     alternates: {
       canonical: `https://slimhuiswonen.nl/how-to/${article.slug}`,

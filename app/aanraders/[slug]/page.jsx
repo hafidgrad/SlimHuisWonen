@@ -6,7 +6,6 @@ import { notFound } from "next/navigation";
 import { aanraders } from "@/data/aanraders";
 import { blogPosts } from "@/data/blog";
 import { getProductBySlug } from "@/data/products";
-import { getBolUrl, getCoolblueUrl } from "@/lib/bol-api";
 import BuyGuideProductCard from "@/components/BuyGuideProductCard";
 import AmazonSearchCta from "@/components/AmazonSearchCta";
 import RelatedContent from "@/components/RelatedContent";
@@ -37,13 +36,13 @@ export async function generateMetadata({ params }) {
 
   if (!guide) {
     return {
-      title: "Aanraders – SlimHuisWonen.nl",
+      title: "Aanraders",
       description: "Onze beste smart home aanraders en koopgidsen.",
     };
   }
 
   return {
-    title: `${guide.title} | SlimHuisWonen`,
+    title: guide.title,
     description: guide.description,
     alternates: {
       canonical: `https://slimhuiswonen.nl/aanraders/${guide.slug}`,
@@ -89,15 +88,13 @@ export default function AanraderDetailPage({ params }) {
 
   const amazonSearchTerm = getAmazonSearchTerm(params.slug);
 
-  /* Verrijk picks met kooplinks + priceHint vanuit productdata */
+  /* Verrijk picks met affiliateUrl + priceHint vanuit productdata */
   const enrichedPicks = guide.picks.map((pick) => {
     const slug = pick.href?.replace("/producten/", "");
     const product = slug ? getProductBySlug(slug) : null;
     return {
       ...pick,
       amazonUrl: product?.affiliateUrl || null,
-      bolUrl: product ? getBolUrl(product) : null,
-      coolblueUrl: product ? getCoolblueUrl(product) : null,
       priceHint: product?.priceHint || null,
     };
   });
@@ -287,7 +284,22 @@ export default function AanraderDetailPage({ params }) {
             </>
           )}
 
-          {/* ✅ Subtiele Amazon zoek CTA onder koopgids */}
+          {/* Bekijk ook — links naar relevante producten uit de catalogus */}
+          {enrichedPicks.length > 0 && (
+            <>
+              <hr style={{ marginTop: "2rem" }} />
+              <h3>Bekijk ook</h3>
+              <ul style={{ paddingLeft: "1.25rem", marginTop: "0.5rem" }}>
+                {enrichedPicks.slice(0, 3).map((pick) => (
+                  <li key={pick.title} style={{ marginBottom: "0.4rem" }}>
+                    <Link href={pick.href}>{pick.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+
+          {/* Niet gevonden? Zoek op de drie grote webshops */}
           <hr style={{ marginTop: "2rem" }} />
           <AmazonSearchCta searchTerm={amazonSearchTerm} />
         </div>

@@ -12,11 +12,11 @@ export async function generateMetadata({ params }) {
 
   if (!product) {
     return {
-      title: "Product niet gevonden | SlimHuisWonen",
+      title: "Product niet gevonden",
     };
   }
 
-  const title = `${product.name} – ${product.brand} | SlimHuisWonen`;
+  const title = `${product.name} – ${product.brand}`;
   const description =
     product.description ||
     `Bekijk ${product.name} van ${product.brand} op SlimHuisWonen.`;

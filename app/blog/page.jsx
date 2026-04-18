@@ -5,7 +5,7 @@ import Image from "next/image";
 import { blogPosts } from "@/data/blog";
 
 export const metadata = {
-  title: "Blog – SlimHuisWonen.nl",
+  title: "Blog",
   description:
     "Smart home blog met handige uitleg, vergelijkingen en koopgidsen over slimme verlichting, hubs, Zigbee, Matter en meer.",
   alternates: {
