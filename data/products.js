@@ -1614,6 +1614,146 @@ export const products = [
   personalNote: "Sterk alternatief voor Ring als je geen abonnement wilt. De SD-kaart bundel maakt het direct compleet en je hebt geen extra Homebase nodig.",
 },
 
+
+  {
+    slug: "philips-hue-go-tafellamp-white-and-color-zwart",
+    
+    brand: "Philips Hue",
+    name: "Philips Hue Go tafellamp - White and Color - zwart",
+    category: "slimme-verlichting",
+    image: "/images/products/philips-hue-go-tafellamp-white-and-color-zwart.png",
+    description: "Met de slimme Philips Hue Go draagbare tafellamp op batterij breng je slimme verlichting naar iedere hoek van je huis. Deze kleine staande lamp verplaats je namelijk gemakkelijk dankzij het siliconen handvat. Deze lamp verplaats je gemakkelijk naar waar je het meeste licht nodig hebt, omdat de batterij 48 uur meegaat. Eet je eens buiten maar is het wat donker? De Philips Hue Go is ook geschikt voor buitenshuis gebruik. Deze lamp geeft 16 miljoen verschillende kleuren licht. Je verbindt de lamp via bluetooth of aan het internet met een bridge. Met een bridge bedien je de lampen ook buitenshuis en stel je vaste routines in.",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Philips-Hue-Tafellamp-Verlichting-Bluetooth/dp/B0B2PV9YX5?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.coolblue.nl/product/922837",
+    youtubeId: "yhQIaa8hvEg",
+    priceHint: "€131,00",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "philips-hue-lily-starter-pack-white-and-color-prik",
+    
+    brand: "Philips Hue",
+    name: "Philips Hue Lily Starter Pack White and Color prikspot 3-Pack",
+    category: "slimme-verlichting",
+    image: "/images/products/philips-hue-lily-starter-pack-white-and-color-prik.png",
+    description: "Met dit Philips Hue Lily Starter Pack heb jij Philips Hue in de tuin of op je terras. Deze basisset bestaat uit 3 armaturen voor buiten en alle onderdelen die je nodig hebt voor het aansluiten. Steek de stekker in het stopcontact en kies uit 1 van de 16 miljoen kleuren of alle tinten wit. De armaturen zijn van aluminium en zijn waterdicht. Je koppelt de slimme buitenlamp aan de Hue bridge (niet meegeleverd). Met de app op je smartphone zet je de lamp op afstand aan en uit, bepaal je de lichtkleur of laat je de lamp automatisch reageren op de zonsondergang. Dankzij geofencing kan de lamp automatisch in- of uitschakelen wanneer je thuiskomt of je woning verlaat. Bovendien is de buitenlamp compatibel met Amazon Alexa, Apple HomeKit of Google Assistant. Let op! Deze Philips Hue buitenverlichting werkt alleen in combinatie met een bridge.",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Philips-Hue-Tuinspot-3-Lichts-Basis/dp/B07BXT7VHT?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.coolblue.nl/product/813432",
+    youtubeId: "4JZbVX8kc74",
+    priceHint: "€286,00",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "philips-hue-play-hdmi-sync-box-8k",
+    
+    brand: "Philips Hue",
+    name: "Philips Hue Play HDMI Sync Box 8K",
+    category: "slimme-verlichting",
+    image: "/images/products/philips-hue-play-hdmi-sync-box-8k.png",
+    description: "Met de Philips Hue Play HDMI Sync Box 8K laat je jouw Philips Hue smart lampen meekleuren met je televisie. De Sync Box verwerkt 4K beelden op 120Hz en 8K beelden op 60Hz. Je maakt dus de afweging tussen een hogere 8K beeldkwaliteit of extra vloeiend beeld met 120Hz. Als je tv maximaal 4K beeld ondersteunt, kies je altijd voor 4K beeldkwaliteit met 120Hz. De Sync Box heeft 5 HDMI poorten. Eén daarvan is de uitgang naar je tv. De andere 4 gebruik je als ingangen. Zo sluit je bijvoorbeeld een Playstation, laptop en Google Chromecast tegelijk aan. De Sync Box verwerkt het beeld van deze apparaten. In de Philips Hue app stel je in welke lampen meekleuren met je beeldscherm.",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Philips-Hue-Play-HDMI-sync/dp/B0DGQSY3ZT?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.coolblue.nl/product/954033",
+    youtubeId: "5jveH90EX14",
+    priceHint: "€350,00",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "tp-link-tapo-l630-wit-en-gekleurd-licht-gu10-4-pac",
+    
+    brand: "TP-Link",
+    name: "TP-Link Tapo L630 - Wit en Gekleurd Licht - GU10 - 4-pack",
+    category: "slimme-verlichting",
+    image: "/images/products/tp-link-tapo-l630-wit-en-gekleurd-licht-gu10-4-pac.png",
+    description: "Met het TP-Link Tapo L630 - Wit en Gekleurd Licht - GU10 - 4-pack voorzie je direct een hele kamer van smart spotjes met GU10 fitting. Deze lampen geven gekleurd en alle tinten wit licht. Zo kies je voor ieder moment van de dag het juiste licht. Met de juiste lichtkleur op het juiste moment voel je je vaak beter. Je bedient de lampen ook buitenshuis omdat de lampen via wifi aan je smartphone verbonden zijn. In de Tapo app stel je de lichtkleur en vaste routines in. Wil je de lamp ook met je stem bedienen? Dan koppel je hem aan je slimme assistent. Je verbindt de lamp ook met andere Tapo smart home apparaten zoals schakelaars en stekkers.",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Tapo-L630-4-Pack-Energiebesparend-Meerkleurig/dp/B0BG64ZG8Q?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.coolblue.nl/product/956288",
+    youtubeId: "Jq9ePVawrok",
+    priceHint: "€45,99",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "nanoleaf-lines-60-degrees-starterkit-slimme-verlic",
+    
+    brand: "Nanoleaf",
+    name: "Nanoleaf Lines 60 Degrees Starterkit - Slimme Verlichting - 9 LED/RGB Lichtbalken - Siri, Google",
+    category: "slimme-verlichting",
+    image: "/images/products/nanoleaf-lines-60-degrees-starterkit-slimme-verlic.jpg",
+    description: "Nanoleaf Lines 60 Degrees Starterkit - Slimme Verlichting - 9 LED/RGB Lichtbalken - Siri, Google",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Nanoleaf-Lines-Squared-Starterkit-4PK/dp/B0BNJ59PTH?tag=slimhuiswonen-21",
+    
+    youtubeId: "mlAMAE0AWXg",
+    priceHint: "€70,99",
+    priceLastUpdated: "april 2026",
+    rating: 5,
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "nanoleaf-shapes-mini-triangles-uitbreidingspakket-",
+    
+    brand: "Nanoleaf",
+    name: "Nanoleaf Shapes Mini Triangles Uitbreidingspakket - 10 Panelen - Slimme Verlichting - Siri, Google",
+    category: "slimme-verlichting",
+    image: "/images/products/nanoleaf-shapes-mini-triangles-uitbreidingspakket-.jpg",
+    description: "Nanoleaf Shapes Mini Triangles Uitbreidingspakket - 10 Panelen - Slimme Verlichting - Siri, Google",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Nanoleaf-Expansion-Additional-RGBW-Modular-Assistant/dp/B08K87XT4L?tag=slimhuiswonen-21",
+    
+    youtubeId: "fX9EES42ZBk",
+    priceHint: "€94,99",
+    priceLastUpdated: "april 2026",
+    rating: 5,
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "govee-neon-rope-light-2-white-5m",
+    
+    brand: "Govee",
+    name: "Govee Neon Rope Light 2 White (5m)",
+    category: "slimme-verlichting",
+    image: "/images/products/govee-neon-rope-light-2-white-5m.jpg",
+    description: "Govee Neon Rope Light 2 White (5m)",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Govee-Lights-vormtoewijzing-Assistant-wanddecoratie/dp/B0CQRBC3Y2?tag=slimhuiswonen-21",
+    
+    youtubeId: "fuvrklEnzWI",
+    priceHint: "€63,74",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
 ];
 
 /* =========================
