@@ -204,8 +204,8 @@ export const products = [
     "Slimme bewegingssensor met Matter en Thread ondersteuning.",
   features: ["Bewegingsdetectie", "Matter", "Thread", "Automatisering"],
   affiliateUrl:
-    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DEve%2520Motion%2520(Matter)",
     "https://www.amazon.nl/Eve-Motion-Matter-bewegingssensor-automatische/dp/B0BZJLJZRM?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DEve%2520Motion%2520(Matter)",
   priceHint: "€35 – €42",
   priceLastUpdated: "april 2026",
   pros: ["Matter + Thread: toekomstbestendig", "Volledig lokaal — geen cloud", "Werkt met Apple Home, Google Home, Home Assistant"],
@@ -526,8 +526,8 @@ export const products = [
       "Matter slimme stekker met energiemonitoring en brede platformondersteuning.",
     features: ["Matter", "Energiemonitoring", "Wi-Fi & Bluetooth"],
     affiliateUrl:
-    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DSwitchBot%2520Matter%2520Plug%2520Mini",
       "https://www.amazon.nl/SwitchBot-Energiemonitoring-Bluetooth-Compatibel-HomeAssistant/dp/B0FFN2FKD6?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DSwitchBot%2520Matter%2520Plug%2520Mini",
     priceHint: "€20 – €28",
     priceLastUpdated: "april 2026",
     youtubeUrl: "https://www.youtube.com/watch?v=A7iH-PR5By4",
@@ -544,8 +544,8 @@ export const products = [
       "Zeer stabiele Zigbee-stekker. Werkt via een Aqara hub en is perfect voor automatiseringen in HomeKit, Home Assistant of Homey.",
     features: ["Zigbee 3.0", "Vereist hub", "Automatiseringen"],
     affiliateUrl:
-    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DAqara%2520Smart%2520Plug",
       "https://www.amazon.nl/Aqara-timerstand-spraakbediening-Assistant-SmartThings/dp/B087M8LF63?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DAqara%2520Smart%2520Plug",
     priceHint: "€20 – €28",
     priceLastUpdated: "april 2026",
     pros: ["Zeer stabiele Zigbee verbinding", "Werkt met HomeKit, Home Assistant en Homey", "Nauwkeurige energiemeting"],
@@ -570,8 +570,8 @@ export const products = [
       "Bedrade of draadloze slimme deurbel in het wit met 2K-beeld, ingebouwde Matter hub en HomeKit Secure Video.",
     features: ["2K", "Matter", "Bedraad / Accu"],
     affiliateUrl:
-    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DAqara%2520Video%2520Doorbell%2520G410%2520(Wit)",
       "https://www.amazon.nl/Aqara-ingebouwde-Draadloos-Compatibel-Assistant/dp/B0F6CJF9M9?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DAqara%2520Video%2520Doorbell%2520G410%2520(Wit)",
     priceHint: "€95 – €115",
     priceLastUpdated: "april 2026",
     pros: ["2K beeldkwaliteit", "Matter hub ingebouwd", "HomeKit Secure Video, geen abonnement nodig"],
@@ -592,8 +592,8 @@ export const products = [
       "Slimme deurbel met sterke smart home integratie via Matter, geschikt voor Apple Home, Google en Home Assistant.",
     features: ["2K", "Matter", "Smart home"],
     affiliateUrl:
-    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DAqara%2520Video%2520Doorbell%2520G410%2520(Zwart)",
       "https://www.amazon.nl/Aqara-Ingebouwde-Draadloos-Compatibel-Assistant/dp/B0F6CJ93GS?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DAqara%2520Video%2520Doorbell%2520G410%2520(Zwart)",
     priceHint: "€95 – €115",
     priceLastUpdated: "april 2026",
     youtubeUrl: "https://www.youtube.com/shorts/KVS6asoEDyM",
@@ -610,8 +610,8 @@ export const products = [
       "Draadloze slimme deurbel op accu met scherpe 2K-beelden en eenvoudige installatie.",
     features: ["Accu", "2K", "Geen abonnement"],
     affiliateUrl:
-    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DTapo%2520D205",
       "https://www.amazon.nl/Tapo-D205-video-deurintercom-gezichtsveld-USB-C-aansluiting/dp/B0FHXVX9W9?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DTapo%2520D205",
     priceHint: "€55 – €70",
     priceLastUpdated: "april 2026",
     pros: ["Geen abonnement vereist", "Accu", "Goede prijs-kwaliteit"],
@@ -631,8 +631,8 @@ export const products = [
       "Slimme deurbel met kleurennachtzicht, brede kijkhoek en zonder verplichte abonnementskosten.",
     features: ["Geen abonnement", "Accu / Bedraad", "2K"],
     affiliateUrl:
-    coolblueUrl: "https://www.awin1.com/pclick.php?p=38561530908&a=2855887&m=85161",
       "https://www.amazon.nl/Tapo-D235-videodeurbel-gezichtsveld-niet-verwijderbare/dp/B0DDL95M8Z?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.awin1.com/pclick.php?p=38561530908&a=2855887&m=85161",
     priceHint: "€60 – €80",
     priceLastUpdated: "april 2026",
     youtubeUrl: "https://www.youtube.com/shorts/5wVHfrHFqwE",
@@ -649,8 +649,8 @@ export const products = [
       "Premium bedrade deurbel met hoofd-tot-teen beeld, lokale opslag en betrouwbare detectie.",
     features: ["Bedraad", "Lokale opslag", "Premium"],
     affiliateUrl:
-    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DReolink%2520Video%2520Doorbell%2520Wi-Fi",
       "https://www.amazon.nl/Reolink-Videodeurbel-Wi-Fi-camera-beltoon-Hoofd-aan-teen/dp/B0CN95V61Y?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DReolink%2520Video%2520Doorbell%2520Wi-Fi",
     priceHint: "€75 – €95",
     priceLastUpdated: "april 2026",
     pros: ["Hoofd-tot-teen beeld — ook pakketten zichtbaar", "Lokale opslag via NVR", "Geen verplicht abonnement"],
@@ -675,8 +675,8 @@ export const products = [
     "Betaalbare binnencamera met lokale opslag en zonder abonnement.",
   features: ["Binnen", "Geen abonnement", "Lokale opslag"],
   affiliateUrl:
-    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DEufy%2520Indoor%2520Cam",
     "https://www.amazon.nl/eufy-Binnencamera-UHD-bewakingscamera-kleur-nachtzicht-auto-tracking/dp/B0FMRCM9D2?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DEufy%2520Indoor%2520Cam",
   priceHint: "€35 – €50",
   priceLastUpdated: "april 2026",
   pros: ["Lokale opslag — geen abonnement", "Goede beeldkwaliteit voor de prijs", "Auto-tracking"],
@@ -696,8 +696,8 @@ export const products = [
     "Slimme 2K binnencamera met draaifunctie, bewegingsdetectie, tweeweg-audio en privacymodus. Ideaal om huisdieren in de gaten te houden wanneer je niet thuis bent.",
   features: ["2K", "Pan & tilt", "Tweeweg-audio"],
   affiliateUrl:
-    coolblueUrl: "https://www.awin1.com/pclick.php?p=38561477674&a=2855887&m=85161",
     "https://www.amazon.nl/Tapo-C225-Beveiligingscamera-Intelligente-Compatibel/dp/B0BN4BQ1DM?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.awin1.com/pclick.php?p=38561477674&a=2855887&m=85161",
   priceHint: "€30 – €40",
   priceLastUpdated: "april 2026",
   pros: ["2K beeld", "Pan & tilt — volgt beweging", "Privacymodus (lens klapt weg)"],
@@ -717,8 +717,8 @@ export const products = [
     "Weerbestendige buitencamera met accu en lokale opslag.",
   features: ["Buiten", "Accu", "Geen abonnement"],
   affiliateUrl:
-    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DEufy%2520Solo%2520Outdoor%2520Cam",
     "https://www.amazon.nl/eufy-Bewakingscamera-bewakingscamera-zonne-energie-beveiligingscamera/dp/B0DT6WMJD6?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DEufy%2520Solo%2520Outdoor%2520Cam",
   priceHint: "€70 – €90",
   priceLastUpdated: "april 2026",
   pros: ["Accu — geen kabel nodig", "Weerbestendig", "Lokale opslag, geen abonnement"],
@@ -739,8 +739,8 @@ export const products = [
     "Bekabelde PoE camera voor maximale stabiliteit en betrouwbaarheid.",
   features: ["PoE", "Bekabeld", "Lokale opslag"],
   affiliateUrl:
-    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DReolink%2520PoE%2520Camera",
     "https://www.amazon.nl/PoE-vandaalbestendig-nachtzicht-Duo-2V/dp/B0D2XQV692?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DReolink%2520PoE%2520Camera",
   priceHint: "€55 – €75",
   priceLastUpdated: "april 2026",
   pros: ["Bekabeld = maximale stabiliteit", "Lokale opslag via NVR", "Geen accu — altijd online"],
@@ -761,8 +761,8 @@ export const products = [
     "Budget Wi-Fi camera voor binnen met verrassend veel functies.",
   features: ["Budget", "Wi-Fi", "Binnen"],
   affiliateUrl:
-    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F892927%2Ftp-link-tapo-c200.html",
     "https://www.amazon.nl/Tapo-C200P2-bewakingscamera-nachtzicht-bewegingsdetectie/dp/B0CDCL38KZ?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F892927%2Ftp-link-tapo-c200.html",
   priceHint: "€22 – €32",
   priceLastUpdated: "april 2026",
   pros: ["Goedkoopste optie met pan & tilt", "Eenvoudige installatie", "Roteer-functie"],
@@ -783,8 +783,8 @@ export const products = [
     "Privacygerichte binnencamera met HomeKit Secure Video en lokale verwerking.",
   features: ["Privacy", "HomeKit", "Binnen"],
   affiliateUrl:
-    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DEve%2520Cam",
     "https://www.amazon.nl/Eve-Cam-beveiligingscamera-iPhone-meldingen-luidspreker/dp/B0CHJCZSJP?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DEve%2520Cam",
   priceHint: "€110 – €130",
   priceLastUpdated: "april 2026",
   pros: ["HomeKit Secure Video — verwerking op iPhone/iPad", "Geen abonnement nodig", "Volledig privacygericht: geen cloud"],
@@ -809,8 +809,8 @@ export const products = [
     "Zeer betrouwbare Zigbee bewegingssensor voor automatiseringen.",
   features: ["Zigbee", "Beweging", "Automatiseringen"],
   affiliateUrl:
-    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DAqara%2520Bewegingssensor",
     "https://www.amazon.nl/Aqara-configureerbare-detectie-timeout-waarschuwingssysteem-automatiseringen/dp/B0B9XZ1D51?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DAqara%2520Bewegingssensor",
   priceHint: "€15 – €20",
   priceLastUpdated: "april 2026",
   pros: ["Zeer betrouwbaar en snel", "Configureerbare detectie-timeout", "Werkt met Homey, Home Assistant en HomeKit"],
@@ -829,8 +829,8 @@ export const products = [
     "Slimme buitensensor voor temperatuur en luchtvochtigheid via Thread.",
   features: ["Klimaat", "Thread", "Privacy"],
   affiliateUrl:
-    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DEve%2520Weather",
     "https://www.amazon.nl/Weather-Matter-luchtvochtigheid-IPX4-waterbestendigheid-Siri-spraaktoegang/dp/B0D817K9TL?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DEve%2520Weather",
   priceHint: "€60 – €70",
   priceLastUpdated: "april 2026",
   pros: ["IPX4 waterbestendig — geschikt voor buiten", "Thread = lage latency", "Privacygericht: geen cloud"],
@@ -849,8 +849,8 @@ export const products = [
     "Compacte bewegingssensor voor beveiliging en slimme automatiseringen.",
   features: ["Beweging", "Automatiseringen", "Slimme meldingen"],
   affiliateUrl:
-    coolblueUrl: "https://www.awin1.com/pclick.php?p=38840441964&a=2855887&m=85161",
     "https://www.amazon.nl/Tapo-0184500512-T100/dp/B0B7NDJW6J?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.awin1.com/pclick.php?p=38840441964&a=2855887&m=85161",
   priceHint: "€12 – €15",
   priceLastUpdated: "april 2026",
   youtubeUrl: "https://www.youtube.com/shorts/dorW24Ba4oo",
@@ -866,8 +866,8 @@ export const products = [
     "Premium deur- en raamsensor met focus op privacy en lokale verwerking.",
   features: ["Privacy", "Thread", "Premium"],
   affiliateUrl:
-    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DEve%2520Door%2520%2526%2520Window",
     "https://www.amazon.nl/Door-Window-Matter-contactsensor-dicht-detectie/dp/B0BZ8YV5GW?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DEve%2520Door%2520%2526%2520Window",
   priceHint: "€30 – €38",
   priceLastUpdated: "april 2026",
   pros: ["Matter + Thread: breed compatibel", "Volledig lokaal", "Apple Home, Google Home, Home Assistant"],
@@ -890,8 +890,8 @@ export const products = [
     "Werkt als SmartThings hub met ondersteuning voor Zigbee en Z-Wave.",
   features: ["SmartThings", "Zigbee", "Z-Wave"],
   affiliateUrl:
-    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DAeotec%2520Smart%2520Home%2520Hub%2520(SmartThings)",
     "https://www.amazon.nl/Aeotec-Smart-Home-Hub-SmartThings/dp/B08NDH9NXN?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DAeotec%2520Smart%2520Home%2520Hub%2520(SmartThings)",
   priceHint: "€75 – €90",
   priceLastUpdated: "april 2026",
   pros: ["Ondersteunt Zigbee én Z-Wave", "SmartThings platform met grote community", "Breed compatibel"],
@@ -911,8 +911,8 @@ export const products = [
     "Krachtige lokale smart home hub zonder cloud-afhankelijkheid.",
   features: ["Volledig lokaal", "Zigbee", "Z-Wave", "Matter"],
   affiliateUrl:
-    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F933660%2Fathom-homey-pro.html",
     "https://www.amazon.nl/dp/B0C5R1JS91?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F933660%2Fathom-homey-pro.html",
   priceHint: "€380 – €420",
   priceLastUpdated: "april 2026",
   pros: ["Volledig lokaal — geen cloud nodig", "Ondersteunt Zigbee, Z-Wave, Matter, BLE, 433MHz", "Intuïtieve flow-editor voor automatiseringen"],
@@ -932,8 +932,8 @@ export const products = [
   description: "Verbindt slimme apparaten met Homey Cloud.",
   features: ["Homey Cloud", "Uitbreiding Homey"],
   affiliateUrl:
-    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F897077%2Fathom-homey-bridge.html",
     "https://www.amazon.nl/dp/B08FRLQH75?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F897077%2Fathom-homey-bridge.html",
   priceHint: "€55 – €70",
   priceLastUpdated: "april 2026",
   pros: ["Goedkope instap in Homey", "Verbindt veel apparaten", "Eenvoudige installatie"],
@@ -952,8 +952,8 @@ export const products = [
   description: "Centrale hub voor Philips Hue verlichting.",
   features: ["Hue ecosysteem", "Zigbee", "Lokale automatiseringen"],
   affiliateUrl:
-    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F890077%2Fphilips-hue-bridge.html",
     "https://www.amazon.nl/dp/B09CV9F3KR?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F890077%2Fphilips-hue-bridge.html",
   priceHint: "€48 – €58",
   priceLastUpdated: "april 2026",
   pros: ["Vereist voor volledige Hue automatiseringen", "Lokale verwerking zonder internet", "Stabiele Zigbee verbinding"],
@@ -973,8 +973,8 @@ export const products = [
     "Officiële Home Assistant hub voor maximale lokale controle.",
   features: ["Home Assistant OS", "Volledig lokaal"],
   affiliateUrl:
-    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DHome%2520Assistant%2520Green",
     "https://www.amazon.nl/dp/B0CXVKSG19?tag=slimhuiswonen-21",
+    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DHome%2520Assistant%2520Green",
   priceHint: "€90 – €105",
   priceLastUpdated: "april 2026",
   pros: ["Volledig lokaal en open source", "Enorme community en integraties", "Werkt met Zigbee, Z-Wave, Matter"],

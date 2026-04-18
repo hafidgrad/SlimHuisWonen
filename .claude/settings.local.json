@@ -20,7 +20,8 @@
       "Bash(mv \"c:/Users/hafid/Documents/project website/slimhuiswonen-seo/scripts/coolblue-match.js\" \"c:/Users/hafid/Documents/project website/slimhuiswonen-seo/scripts/coolblue-match.cjs\")",
       "Bash(node scripts/coolblue-match.cjs)",
       "Bash(node scripts/coolblue-apply.cjs)",
-      "Bash(node scripts/coolblue-match-v2.cjs)"
+      "Bash(node scripts/coolblue-match-v2.cjs)",
+      "Bash(grep -n \"affiliateUrl:$\" \"c:/Users/hafid/Documents/project website/slimhuiswonen-seo/data/products.js\")"
     ]
   }
 }
