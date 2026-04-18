@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import PrijsDisclaimer from "@/components/PrijsDisclaimer";
 
 const CATEGORIES = [
   "slimme-verlichting",
@@ -609,6 +610,12 @@ export default function ProductToevoegenPage() {
                 {activeYtId && <li>YouTube ID: {activeYtId}</li>}
                 <li>URL: /producten/{form.slug}</li>
               </ul>
+              {[selected.bolUrl, form.amazonUrl, form.coolblueUrl].filter(Boolean).length >= 2 && (
+                <div style={{ marginTop: "0.75rem", paddingTop: "0.75rem", borderTop: "1px solid rgba(255,255,255,0.07)" }}>
+                  <span style={{ fontSize: "0.75rem", opacity: 0.55 }}>Preview prijsmelding:</span>
+                  <PrijsDisclaimer />
+                </div>
+              )}
             </div>
 
             <div style={{ display: "flex", gap: "0.75rem" }}>

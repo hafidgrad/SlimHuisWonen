@@ -8,6 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { getProductBySlug } from "@/data/products";
 import { getBolUrl, getCoolblueUrl } from "@/lib/bol-api";
+import PrijsDisclaimer from "@/components/PrijsDisclaimer";
 
 const POPULAIRE_SLUGS = [
   "philips-hue-white-ambiance-starterkit",
@@ -132,6 +133,9 @@ function PopulaireProducten() {
                   >
                     Meer info
                   </Link>
+                </div>
+                <div style={{ position: "relative", zIndex: 1 }}>
+                  {[bolUrl, coolblueUrl, p.affiliateUrl].filter(Boolean).length >= 2 && <PrijsDisclaimer />}
                 </div>
               </article>
             );

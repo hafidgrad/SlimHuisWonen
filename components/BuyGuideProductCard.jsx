@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import PrijsDisclaimer from "@/components/PrijsDisclaimer";
 
 export default function BuyGuideProductCard({
   title,
@@ -119,6 +120,8 @@ export default function BuyGuideProductCard({
             Meer info
           </Link>
         </div>
+
+        {[bolUrl, coolblueUrl, amazonUrl].filter(Boolean).length >= 2 && <PrijsDisclaimer />}
       </div>
     </article>
   );

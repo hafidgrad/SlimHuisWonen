@@ -4,6 +4,7 @@ import { getBolUrl, getCoolblueUrl } from "@/lib/bol-api";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import YouTubeFacade from "@/components/YouTubeFacade";
+import PrijsDisclaimer from "@/components/PrijsDisclaimer";
 
 export const dynamic = "force-dynamic";
 
@@ -239,48 +240,52 @@ export default function ProductPage({ params }) {
             )}
 
             {/* ✅ Knoppen: bol.com + Coolblue + Amazon */}
-            {(bolUrl || coolblueUrl || amazonUrl) && (
-              <div style={{ marginTop: "1.5rem" }}>
-                <div className="product-actions" style={{ flexDirection: "row", flexWrap: "wrap" }}>
-                  {bolUrl && (
-                    <a
-                      href={bolUrl}
-                      target="_blank"
-                      rel="noopener noreferrer sponsored"
-                      className="btn btn-bol product-btn"
-                      style={{ width: "auto" }}
-                    >
-                      Bekijk op bol.com
-                    </a>
-                  )}
-                  {coolblueUrl && (
-                    <a
-                      href={coolblueUrl}
-                      target="_blank"
-                      rel="noopener noreferrer sponsored"
-                      className="btn btn-coolblue product-btn"
-                      style={{ width: "auto" }}
-                    >
-                      Bekijk op Coolblue
-                    </a>
-                  )}
-                  {amazonUrl && (
-                    <a
-                      href={amazonUrl}
-                      target="_blank"
-                      rel="noopener noreferrer sponsored"
-                      className="btn btn-amazon product-btn"
-                      style={{ width: "auto" }}
-                    >
-                      Bekijk op Amazon
-                    </a>
-                  )}
+            {(bolUrl || coolblueUrl || amazonUrl) && (() => {
+              const aantalLinks = [bolUrl, coolblueUrl, amazonUrl].filter(Boolean).length;
+              return (
+                <div style={{ marginTop: "1.5rem" }}>
+                  <div className="product-actions" style={{ flexDirection: "row", flexWrap: "wrap" }}>
+                    {bolUrl && (
+                      <a
+                        href={bolUrl}
+                        target="_blank"
+                        rel="noopener noreferrer sponsored"
+                        className="btn btn-bol product-btn"
+                        style={{ width: "auto" }}
+                      >
+                        Bekijk op bol.com
+                      </a>
+                    )}
+                    {coolblueUrl && (
+                      <a
+                        href={coolblueUrl}
+                        target="_blank"
+                        rel="noopener noreferrer sponsored"
+                        className="btn btn-coolblue product-btn"
+                        style={{ width: "auto" }}
+                      >
+                        Bekijk op Coolblue
+                      </a>
+                    )}
+                    {amazonUrl && (
+                      <a
+                        href={amazonUrl}
+                        target="_blank"
+                        rel="noopener noreferrer sponsored"
+                        className="btn btn-amazon product-btn"
+                        style={{ width: "auto" }}
+                      >
+                        Bekijk op Amazon
+                      </a>
+                    )}
+                  </div>
+                  {aantalLinks >= 2 && <PrijsDisclaimer />}
+                  <p style={{ marginTop: "0.35rem", fontSize: "0.75rem", opacity: 0.45 }}>
+                    * Affiliate links — jij betaalt niets extra, ik ontvang een kleine commissie.
+                  </p>
                 </div>
-                <p style={{ marginTop: "0.75rem", fontSize: "0.85rem", opacity: 0.6 }}>
-                  * Affiliate links — jij betaalt niets extra, ik ontvang een kleine commissie.
-                </p>
-              </div>
-            )}
+              );
+            })()}
 
             {compatibility && Object.keys(compatibility).length > 0 && (
               <>

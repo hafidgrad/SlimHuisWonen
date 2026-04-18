@@ -6,6 +6,7 @@ import { getProductsByCategory } from "@/data/products";
 import { categories } from "@/data/categories";
 import AmazonSearchCta from "@/components/AmazonSearchCta";
 import { getBolUrl, getCoolblueUrl } from "@/lib/bol-api";
+import PrijsDisclaimer from "@/components/PrijsDisclaimer";
 
 export const dynamic = "force-dynamic";
 
@@ -228,6 +229,9 @@ export default function CategoryPage({ params }) {
                           Meer info
                         </Link>
                       </div>
+                      <div style={{ position: "relative", zIndex: 1 }}>
+                        {[bolUrl, coolblueUrl, p.affiliateUrl].filter(Boolean).length >= 2 && <PrijsDisclaimer />}
+                      </div>
                     </article>
                   );
                 })}
@@ -324,6 +328,9 @@ export default function CategoryPage({ params }) {
                         >
                           Meer info
                         </Link>
+                      </div>
+                      <div style={{ position: "relative", zIndex: 1 }}>
+                        {[bolUrl, coolblueUrl, p.affiliateUrl].filter(Boolean).length >= 2 && <PrijsDisclaimer />}
                       </div>
                     </article>
                   );
