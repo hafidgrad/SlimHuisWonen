@@ -34,7 +34,18 @@
       "Bash(node scripts/add-short-answers.cjs)",
       "Bash(curl -s \"http://localhost:3000/how-to/lamp-automatisch-aan-bij-beweging\")",
       "Bash(pkill -f \"next dev\")",
-      "Bash(curl -s \"http://localhost:3000/producten/aqara-cube-t1-pro\")"
+      "Bash(curl -s \"http://localhost:3000/producten/aqara-cube-t1-pro\")",
+      "Bash(xargs grep *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/)",
+      "Bash(pm2 stop *)",
+      "Bash(pkill -f \"next start\")",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/tips)",
+      "Bash(curl -s http://localhost:3000/producten/aqara-cube-t1-pro)",
+      "Bash(curl -s http://localhost:3000/how-to/lamp-automatisch-aan-bij-beweging)",
+      "Bash(python -c ' *)",
+      "Bash(npx kill-port *)",
+      "Bash(rm -rf .next)"
     ]
   }
 }
