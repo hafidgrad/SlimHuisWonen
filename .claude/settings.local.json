@@ -25,7 +25,8 @@
       "Bash(node --input-type=module)",
       "Bash(npx next *)",
       "Bash(node scripts/add-comparison-tables.js)",
-      "Bash(node scripts/add-comparison-tables.cjs)"
+      "Bash(node scripts/add-comparison-tables.cjs)",
+      "Bash(grep -v \"^--$\")"
     ]
   }
 }
