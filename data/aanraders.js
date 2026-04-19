@@ -81,6 +81,38 @@ export const aanraders = [
       href: "/producten/eve-cam",
       badges: ["Privacy", "HomeKit", "Premium"],
     },
+    {
+      title: "Beste budget binnencamera met pan-tilt: Tapo C220",
+      description:
+        "2K binnencamera met pan-tilt functie en AI-detectie voor een scherpe prijs. Ideaal als je een beweegbare binnencamera wilt zonder duur abonnement.",
+      image: "/images/products/tapo-c220-beveiligingscamera-binnen-2k-4mp-qhd-pan.jpg",
+      href: "/producten/tapo-c220-beveiligingscamera-binnen-2k-4mp-qhd-pan",
+      badges: ["Budget", "2K", "Pan-tilt"],
+    },
+    {
+      title: "Beste binnencamera met babyfoon functie: Tapo C230",
+      description:
+        "3K binnencamera die huilgeluiden herkent en als babyfoon werkt. Handig als je één camera wilt die meer doet dan bewaken.",
+      image: "/images/products/tp-link-tapo-c230.png",
+      href: "/producten/tp-link-tapo-c230",
+      badges: ["3K", "Babyfoon", "Wi-Fi"],
+    },
+    {
+      title: "Beste budget buitencamera met 360° rotatie: Tapo C500",
+      description:
+        "Betaalbare buitencamera met volledige rotatie, nachtzicht en bewegingsdetectie. Goede keuze als je een eenvoudige buitencamera wil zonder veel gedoe.",
+      image: "/images/products/tp-link-tapo-c500.png",
+      href: "/producten/tp-link-tapo-c500",
+      badges: ["Buiten", "360°", "Budget"],
+    },
+    {
+      title: "Beste buitencamera met hoge resolutie: Tapo C530WS",
+      description:
+        "Weerbestendige buitencamera met 3K kwaliteit, automatische bewegingstracking en ingebouwde spotlights. Sterk voor wie premium beeldkwaliteit wil op een middenprijspunt.",
+      image: "/images/products/tp-link-tapo-c530ws.png",
+      href: "/producten/tp-link-tapo-c530ws",
+      badges: ["Buiten", "3K", "Spotlights"],
+    },
   ],
 
   faq: [
@@ -189,6 +221,22 @@ export const aanraders = [
       href: "/producten/reolink-video-doorbell-wifi",
       badges: ["Premium", "Bedraad", "Hoge kwaliteit"],
     },
+    {
+      title: "Beste slimme deurbel voor Philips Hue gebruikers: Hue Secure Videodeurbel + Chime",
+      description:
+        "Premium bedrade videodeurbel met 2K beeld die naadloos integreert met het Philips Hue ecosysteem. Inclusief Chime — ideaal als je al Hue lampen hebt en alles wil koppelen.",
+      image: "/images/products/hue-secure-bedrade-videodeurbel-chime.png",
+      href: "/producten/hue-secure-bedrade-videodeurbel-chime",
+      badges: ["Philips Hue", "2K", "Chime inbegrepen"],
+    },
+    {
+      title: "Beste accu deurbel met chime inbegrepen: Tapo D210",
+      description:
+        "Accu deurbel waarbij de chime al bij aankoop is meegeleverd. Handig als je snel wil starten zonder extra accessoires te kopen en zonder bedrading te trekken.",
+      image: "/images/products/tp-link-tapo-d210-slimme-video-deurbel.png",
+      href: "/producten/tp-link-tapo-d210-slimme-video-deurbel",
+      badges: ["Accu", "Chime inbegrepen", "Geen abonnement"],
+    },
   ],
 
   faq: [
@@ -277,6 +325,38 @@ relatedGuides: [
       image: "/images/products/eve-motion-matter-bewegingssensor.png",
       href: "/producten/eve-motion-matter-bewegingssensor",
       badges: ["Matter", "Premium", "Lokaal"],
+    },
+    {
+      title: "Beste aanwezigheidssensor voor betrouwbare automatiseringen: Aqara FP1E",
+      description:
+        "Radarsensor die detecteert of iemand aanwezig is — ook als diegene stilzit. Perfect voor lichtautomatiseringen die niet uitgaan terwijl je op de bank zit.",
+      image: "/images/products/aqara-presence-sensor-fp1e.png",
+      href: "/producten/aqara-presence-sensor-fp1e",
+      badges: ["Aanwezigheidsdetectie", "Radar", "Zigbee"],
+    },
+    {
+      title: "Beste budget Zigbee bewegingssensor: Sonoff SNZB-03P",
+      description:
+        "Betaalbare Zigbee bewegingssensor die werkt met vrijwel elke Zigbee hub. Ideaal als je meerdere sensoren wil plaatsen zonder hoge kosten.",
+      image: "/images/products/sonoff-zigbee-bewegingssensor-snzb-03p-voor-huisbe.png",
+      href: "/producten/sonoff-zigbee-bewegingssensor-snzb-03p-voor-huisbe",
+      badges: ["Budget", "Zigbee", "Universeel"],
+    },
+    {
+      title: "Beste Matter deur- en raamsensor: Bosch Deur- en Raamcontact 2",
+      description:
+        "Matter-compatibele deur- en raamsensor voor meldingen en automatiseringen. Sterk als je een Bosch smart home opbouwt of een universele Matter-sensor zoekt.",
+      image: "/images/products/bosch-deur-en-raamcontact-2-matter.png",
+      href: "/producten/bosch-deur-en-raamcontact-2-matter",
+      badges: ["Matter", "Bosch", "Beveiliging"],
+    },
+    {
+      title: "Beste instapkit voor sensoren: Tapo T30 Smart Sensor Kit",
+      description:
+        "Starterspakket met bewegingssensor, openingssensor en hub in één doos. Ideaal als je snel en eenvoudig sensoren wil toevoegen aan een Tapo-setup.",
+      image: "/images/products/tp-link-tapo-t30-smart-sensor-kit.png",
+      href: "/producten/tp-link-tapo-t30-smart-sensor-kit",
+      badges: ["Kit", "Wi-Fi", "Eenvoudig"],
     },
   ],
 
@@ -383,6 +463,38 @@ relatedGuides: [
       href: "/producten/govee-rgbic-ledstrip",
       badges: ["LED-strips", "Sfeer", "Effecten"],
     },
+    {
+      title: "Beste wifi kleurenlamp met Matter: Tapo L535E",
+      description:
+        "Verbeterde opvolger van de L530E met Matter-ondersteuning en energiemeting. Goede keuze als je kleurverlichting wilt met toekomstbestendige integraties.",
+      image: "/images/products/tp-link-tapo-l535e-wit-en-gekleurd-licht-e27.png",
+      href: "/producten/tp-link-tapo-l535e-wit-en-gekleurd-licht-e27",
+      badges: ["Matter", "Kleur", "Energiemeting"],
+    },
+    {
+      title: "Beste slimme led-strip met segmentcontrole: Tapo L930-5",
+      description:
+        "Led-strip van 5 meter met 50 onafhankelijke kleurzones en muziekrespons. Ideaal als je sfeerverlichting wilt die meegaat met muziek of per segment verschilt.",
+      image: "/images/products/tp-link-tapo-l930-5-lichtstrip-5m.png",
+      href: "/producten/tp-link-tapo-l930-5-lichtstrip-5m",
+      badges: ["LED-strip", "Segmentcontrole", "Muziek"],
+    },
+    {
+      title: "Beste designverlichting voor de wand: Nanoleaf Lines Starterkit",
+      description:
+        "Modulaire lichtpanelen die je zelf configureert op de muur. Opvallend als wanddecoratie en perfect voor sfeer in game rooms of woonkamers.",
+      image: "/images/products/nanoleaf-lines-60-degrees-starterkit-slimme-verlic.png",
+      href: "/producten/nanoleaf-lines-60-degrees-starterkit-slimme-verlic",
+      badges: ["Design", "Modulair", "Wandpanelen"],
+    },
+    {
+      title: "Beste neon sfeerlamp: Govee Neon Rope Light 2",
+      description:
+        "Flexibele neon ledstrip om elke gewenste vorm mee te maken. Sterk als opvallend accentlicht of als uniek decoratiestuk in je kamer.",
+      image: "/images/products/govee-neon-rope-light-2-white-5m.png",
+      href: "/producten/govee-neon-rope-light-2-white-5m",
+      badges: ["Neon", "Sfeer", "Decoratie"],
+    },
   ],
 
   faq: [
@@ -472,6 +584,14 @@ relatedGuides: [
       href: "/producten/samsung-smartthings-hub",
       badges: ["Samsung", "Eenvoudig", "Ecosysteem"],
     },
+    {
+      title: "Beste hub voor Bosch smart home: Bosch Smart Home Controller 2",
+      description:
+        "Centrale hub voor Bosch smart home producten met Zigbee, Matter en lokale werking. Interessant als je het Bosch ecosysteem opbouwt met thermostaten, sensoren en stekkers.",
+      image: "/images/products/bosch-smart-home-controller-2.png",
+      href: "/producten/bosch-smart-home-controller-2",
+      badges: ["Bosch", "Zigbee + Matter", "Lokaal"],
+    },
   ],
 
   faq: [
@@ -550,6 +670,22 @@ relatedGuides: [
       image: "/images/products/switchbot-matter-plug-mini.png",
       href: "/producten/switchbot-matter-plug-mini",
       badges: ["Matter", "Compact", "Energiemeting"],
+    },
+    {
+      title: "Beste slimme buitenstekker: TP-Link Tapo P410M",
+      description:
+        "Waterdichte buitenstekker met energiemeting en Matter-ondersteuning. Handig voor buitenverlichting, een terrasheater of het monitoren van zonnepanelen.",
+      image: "/images/products/tp-link-tapo-p410m.png",
+      href: "/producten/tp-link-tapo-p410m",
+      badges: ["Buiten", "Waterdicht", "Energiemeting"],
+    },
+    {
+      title: "Beste slimme stekker voor Bosch gebruikers: Bosch Smart Plug Compact",
+      description:
+        "Compacte Matter stekker met energiemeting die goed integreert in het Bosch Smart Home ecosysteem. Interessant als je al andere Bosch producten gebruikt.",
+      image: "/images/products/bosch-smart-plug-compact.png",
+      href: "/producten/bosch-smart-plug-compact",
+      badges: ["Matter", "Compact", "Bosch"],
     },
   ],
 
@@ -1029,6 +1165,38 @@ relatedGuides: [
       href: "/producten/eero-pro-6e",
       badges: ["Alexa", "Eenvoudig", "WiFi 6E"],
     },
+    {
+      title: "Beste wifi 7 beginpunt voor een appartement: TP-Link Deco BE25",
+      description:
+        "Één wifi 7 station voor kleinere woningen of als uitbreidbaar startpunt voor een groter mesh-netwerk. Goede keuze als je toekomstbestendig wil beginnen.",
+      image: "/images/products/tp-link-deco-be25.png",
+      href: "/producten/tp-link-deco-be25",
+      badges: ["WiFi 7", "Uitbreidbaar", "Appartement"],
+    },
+    {
+      title: "Beste wifi 7 mesh voor één verdieping: TP-Link Deco BE25 2-pack",
+      description:
+        "Twee wifi 7 stations voor volledige dekking op één verdieping. Goede prijs-kwaliteitsverhouding als je nu al wil upgraden naar wifi 7.",
+      image: "/images/products/tp-link-deco-be25-2-pack.png",
+      href: "/producten/tp-link-deco-be25-2-pack",
+      badges: ["WiFi 7", "2-pack", "Prijs-kwaliteit"],
+    },
+    {
+      title: "Beste premium wifi 7 mesh: TP-Link Deco BE65 2-pack",
+      description:
+        "Krachtig triband wifi 7 mesh met 6 GHz band voor maximale snelheid op meerdere verdiepingen. Ideaal voor grotere woningen met veel verbonden apparaten.",
+      image: "/images/products/tp-link-deco-be65-2-pack.png",
+      href: "/producten/tp-link-deco-be65-2-pack",
+      badges: ["WiFi 7", "Triband", "Premium"],
+    },
+    {
+      title: "Beste budget wifi 6 mesh voor grotere woningen: TP-Link Deco X10 3-pack",
+      description:
+        "Drie wifi 6 stations voor stabiel internet in een volledige woning. Betaalbare keuze als je dekkingsproblemen wil oplossen zonder premium wifi 7 prijs.",
+      image: "/images/products/tp-link-deco-x10-3-pack.png",
+      href: "/producten/tp-link-deco-x10-3-pack",
+      badges: ["WiFi 6", "3-pack", "Budget"],
+    },
   ],
 
   faq: [
@@ -1300,6 +1468,22 @@ relatedGuides: [
       href: "/producten/tapo-ke100",
       badges: ["Budget", "Wifi", "Eenvoudig"],
     },
+    {
+      title: "Beste toekomstbestendige radiatorkraan: Bosch Slimme Radiatorknop 2 Matter",
+      description:
+        "Slimme radiatorknop met Matter-ondersteuning voor gebruik in een breder smart home systeem zonder vendor lock-in. Werkt het best in combinatie met de Bosch Smart Home Controller.",
+      image: "/images/products/bosch-slimme-radiatorknop-2-matter.png",
+      href: "/producten/bosch-slimme-radiatorknop-2-matter",
+      badges: ["Matter", "Toekomstbestendig", "Bosch"],
+    },
+    {
+      title: "Beste kamertemperatuurmeting per ruimte: Bosch Slimme Kamerthermostaat 2",
+      description:
+        "Draadloze kamerthermostaat die samenwerkt met Bosch radiatorknopppen voor nauwkeurige temperatuurregeling per ruimte. Inclusief luchtvochtigheidsensor.",
+      image: "/images/products/bosch-slimme-kamerthermostaat-2.png",
+      href: "/producten/bosch-slimme-kamerthermostaat-2",
+      badges: ["Kamerregeling", "Draadloos", "Bosch"],
+    },
   ],
 
   faq: [
@@ -1398,6 +1582,30 @@ relatedGuides: [
       href: "/producten/tado-smart-thermostat-v3",
       badges: ["Makkelijk te verwijderen", "Energiebesparing", "Geen verbouwing"],
     },
+    {
+      title: "Beste accu deurbel zonder boren: Tapo D210",
+      description:
+        "Slimme deurbel op batterij met chime inbegrepen — geen bedrading nodig. Ideaal voor huurwoningen waar je de buitenmuur niet wil aanpassen.",
+      image: "/images/products/tp-link-tapo-d210-slimme-video-deurbel.png",
+      href: "/producten/tp-link-tapo-d210-slimme-video-deurbel",
+      badges: ["Geen boren", "Accu", "Chime inbegrepen"],
+    },
+    {
+      title: "Beste budget draadloze deurcontactsensor: Sonoff Zigbee Openingssensor",
+      description:
+        "Betaalbare openingssensor die je plakt op deur of raam met meegeleverde tape. Eenvoudig te verwijderen en mee te nemen bij verhuizing.",
+      image: "/images/products/sonoff-zigbee-openingssensor-voor-smart-home-syste.png",
+      href: "/producten/sonoff-zigbee-openingssensor-voor-smart-home-syste",
+      badges: ["Plakken met tape", "Budget", "Zigbee"],
+    },
+    {
+      title: "Beste wifi upgrade die je meeneemt: TP-Link Deco BE25",
+      description:
+        "Wifi 7 mesh station dat je gewoon meeneemt als je verhuist. Geeft een sterk netwerk voor smart home apparaten in een appartement of kleine woning.",
+      image: "/images/products/tp-link-deco-be25.png",
+      href: "/producten/tp-link-deco-be25",
+      badges: ["WiFi 7", "Meenemen bij verhuizing", "Uitbreidbaar"],
+    },
   ],
 
   faq: [
@@ -1482,6 +1690,14 @@ relatedGuides: [
       image: "/images/products/tapo-c200.png",
       href: "/producten/tapo-c200",
       badges: ["~€25", "Geen abonnement", "Lokale opslag"],
+    },
+    {
+      title: "Beste goedkope Zigbee sensor: Sonoff Zigbee Openingssensor",
+      description:
+        "Budget deurcontactsensor voor ~€10 die werkt met elke Zigbee hub. Ideaal om voor weinig geld te starten met automatiseringen via Homey of Home Assistant.",
+      image: "/images/products/sonoff-zigbee-openingssensor-voor-smart-home-syste.png",
+      href: "/producten/sonoff-zigbee-openingssensor-voor-smart-home-syste",
+      badges: ["~€10", "Zigbee", "Budget"],
     },
   ],
 
