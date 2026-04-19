@@ -21,7 +21,9 @@
       "Bash(node scripts/coolblue-match.cjs)",
       "Bash(node scripts/coolblue-apply.cjs)",
       "Bash(node scripts/coolblue-match-v2.cjs)",
-      "Bash(grep -n \"affiliateUrl:$\" \"c:/Users/hafid/Documents/project website/slimhuiswonen-seo/data/products.js\")"
+      "Bash(grep -n \"affiliateUrl:$\" \"c:/Users/hafid/Documents/project website/slimhuiswonen-seo/data/products.js\")",
+      "Bash(node --input-type=module)",
+      "Bash(npx next *)"
     ]
   }
 }

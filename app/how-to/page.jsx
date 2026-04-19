@@ -13,10 +13,68 @@ export const metadata = {
   },
 };
 
+const CATEGORIES = [
+  {
+    label: "Beginnen met smart home",
+    key: "basis",
+    slugs: [
+      "beginnen-met-smart-home",
+      "smart-home-zonder-hub-instellen",
+      "hoe-verbind-je-zigbee-apparaten",
+      "smart-home-hub-installeren",
+    ],
+  },
+  {
+    label: "Verlichting instellen",
+    key: "verlichting",
+    slugs: [
+      "slimme-verlichting-installeren",
+      "lamp-automatisch-aan-bij-beweging",
+      "slimme-verlichting-koppelen-lukt-niet",
+      "hoe-koppel-je-philips-hue-aan-google-home",
+    ],
+  },
+  {
+    label: "Sensoren & Automatiseringen",
+    key: "automatisering",
+    slugs: [
+      "bewegingssensor-instellen",
+      "homey-automatisering-maken",
+      "hoe-maak-je-automatisering-home-assistant",
+    ],
+  },
+  {
+    label: "Beveiliging",
+    key: "veiligheid",
+    slugs: [
+      "slim-huis-beveiligen",
+      "hoe-installeer-je-een-slimme-deurbel",
+      "hoe-installeer-je-een-tapo-camera",
+    ],
+  },
+  {
+    label: "Energie & Stekkers",
+    key: "energie",
+    slugs: [
+      "slimme-stekker-instellen",
+      "hoe-stel-je-een-slimme-stekker-in-met-schema",
+      "hoe-stel-je-een-slimme-thermostaat-in",
+    ],
+  },
+  {
+    label: "Netwerk & Wifi",
+    key: "wifi",
+    slugs: ["wifi-verbeteren-voor-smart-home"],
+  },
+];
+
 export default function HowToPage() {
-  const howtos = (Array.isArray(howtoData) ? howtoData : []).filter(
+  const allHowtos = (Array.isArray(howtoData) ? howtoData : []).filter(
     (h) => h?.available
   );
+
+  const bySlug = Object.fromEntries(allHowtos.map((h) => [h.slug, h]));
+  const placed = new Set();
 
   const headerImg = "/images/banner_how-to.png";
 
@@ -27,7 +85,7 @@ export default function HowToPage() {
       <main className="section">
         <div className="container article">
 
-          {/* 🔥 Blog-style blur banner */}
+          {/* Blog-style blur banner */}
           <div
             className="blogBanner"
             style={{ "--blog-bg": `url(${headerImg})` }}
@@ -59,23 +117,65 @@ export default function HowToPage() {
 
           <p className="section-intro">
             Praktische handleidingen om je slimme huis stap voor stap in te
-            stellen. Duidelijk uitgelegd, zonder technisch gedoe.
+            stellen. Van het koppelen van je eerste lamp tot geavanceerde
+            automatiseringen — duidelijk uitgelegd, zonder technisch gedoe.
+            Kies een onderwerp en ga direct aan de slag.
           </p>
 
-          <div className="tips-grid">
-            {howtos.map((item) => (
-              <TipCard
-                key={item.slug}
-                basePath="/how-to"
-                tip={{
-                  title: item.title,
-                  slug: item.slug,
-                  desc: item.description,
-                  image: item.image,
-                }}
-              />
-            ))}
-          </div>
+          {CATEGORIES.map((cat) => {
+            const items = cat.slugs
+              .map((s) => bySlug[s])
+              .filter(Boolean);
+            if (!items.length) return null;
+            items.forEach((h) => placed.add(h.slug));
+
+            return (
+              <section key={cat.key} style={{ marginBottom: "3rem" }}>
+                <h2 style={{ marginBottom: "1.25rem", fontSize: "1.35rem" }}>
+                  {cat.label}
+                </h2>
+                <div className="tips-grid">
+                  {items.map((item) => (
+                    <TipCard
+                      key={item.slug}
+                      basePath="/how-to"
+                      tip={{
+                        title: item.title,
+                        slug: item.slug,
+                        desc: item.description,
+                        image: item.image,
+                      }}
+                    />
+                  ))}
+                </div>
+              </section>
+            );
+          })}
+
+          {/* Overige artikelen die niet in een categorie vallen */}
+          {allHowtos.filter((h) => !placed.has(h.slug)).length > 0 && (
+            <section style={{ marginBottom: "3rem" }}>
+              <h2 style={{ marginBottom: "1.25rem", fontSize: "1.35rem" }}>
+                Meer handleidingen
+              </h2>
+              <div className="tips-grid">
+                {allHowtos
+                  .filter((h) => !placed.has(h.slug))
+                  .map((item) => (
+                    <TipCard
+                      key={item.slug}
+                      basePath="/how-to"
+                      tip={{
+                        title: item.title,
+                        slug: item.slug,
+                        desc: item.description,
+                        image: item.image,
+                      }}
+                    />
+                  ))}
+              </div>
+            </section>
+          )}
 
         </div>
       </main>

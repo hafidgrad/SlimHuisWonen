@@ -58,9 +58,10 @@ export default function HowToDetailPage({ params }) {
   /* ================= AI SUMMARY ================= */
 
 const aiSummary =
-  article.description?.length > 160
+  article.kortAntwoord ||
+  (article.description?.length > 160
     ? article.description.slice(0, 157) + "..."
-    : article.description;
+    : article.description);
 
   /* ================= RELATED CONTENT ================= */
 
