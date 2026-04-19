@@ -1775,13 +1775,20 @@ export const products = [
 
   {
     slug: "nanoleaf-lines-60-degrees-starterkit-slimme-verlic",
-    
+
     brand: "Nanoleaf",
-    name: "Nanoleaf Lines 60 Degrees Starterkit - Slimme Verlichting - 9 LED/RGB Lichtbalken - Siri, Google",
+    name: "Nanoleaf Lines 60 Degrees Starterkit - 9 LED/RGB Lichtbalken",
     category: "slimme-verlichting",
     image: "/images/products/nanoleaf-lines-60-degrees-starterkit-slimme-verlic.jpg",
-    description: "Nanoleaf Lines 60 Degrees Starterkit - Slimme Verlichting - 9 LED/RGB Lichtbalken - Siri, Google",
-    features: [],
+    description: "Modulaire RGB lichtbalken die je zelf op de muur arrangeert. Met 60° verbindingen maak je geometrische patronen in elke gewenste vorm. Volledig te bedienen via app, spraak (Siri, Google, Alexa) en Matter.",
+    features: [
+      "9 lichtbalken + controller inbegrepen",
+      "16 miljoen kleuren, RGB + warm wit",
+      "Matter over Wi-Fi — werkt met elke grote hub",
+      "Muziekvisualisatie via microfoon",
+      "Uitbreidbaar met extra panelen",
+      "Eenvoudige wandmontage met dubbelzijdig tape",
+    ],
     affiliateUrl: "https://www.amazon.nl/Nanoleaf-Lines-Squared-Starterkit-4PK/dp/B0BNJ59PTH?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DNanoleaf%2520Lines%252060%2520Degrees%2520Starterkit%2520-%25209%2520LED%252FRGB%2520Lichtbalken%2520-%2520Siri%252C%2520Google",
     
@@ -1796,13 +1803,20 @@ export const products = [
 
   {
     slug: "nanoleaf-shapes-mini-triangles-uitbreidingspakket-",
-    
+
     brand: "Nanoleaf",
-    name: "Nanoleaf Shapes Mini Triangles Uitbreidingspakket - 10 Panelen - Slimme Verlichting - Siri, Google",
+    name: "Nanoleaf Shapes Mini Triangles Uitbreidingspakket - 10 Panelen",
     category: "slimme-verlichting",
     image: "/images/products/nanoleaf-shapes-mini-triangles-uitbreidingspakket-.jpg",
-    description: "Nanoleaf Shapes Mini Triangles Uitbreidingspakket - 10 Panelen - Slimme Verlichting - Siri, Google",
-    features: [],
+    description: "Uitbreidingspakket met 10 kleine driehoekige lichtpanelen voor het Nanoleaf Shapes systeem. Combineerbaar met andere Shapes-panelen. Maak een uniek wandkunstwerk met miljoen kleuren en muziekvisualisatie.",
+    features: [
+      "10 mini-driehoekige panelen",
+      "Combineerbaar met alle Nanoleaf Shapes producten",
+      "16 miljoen kleuren, volledig dimbaar",
+      "Matter over Wi-Fi — Siri, Google, Alexa",
+      "Muziekvisualisatie ingebouwd",
+      "Uitbreidingspakket — controller niet inbegrepen",
+    ],
     affiliateUrl: "https://www.amazon.nl/Nanoleaf-Expansion-Additional-RGBW-Modular-Assistant/dp/B08K87XT4L?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DNanoleaf%2520Shapes%2520Mini%2520Triangles%2520Uitbreidingspakket%2520-%252010%2520Panelen%2520-%2520Siri%252C%2520Google",
     
@@ -1817,13 +1831,20 @@ export const products = [
 
   {
     slug: "govee-neon-rope-light-2-white-5m",
-    
+
     brand: "Govee",
     name: "Govee Neon Rope Light 2 White (5m)",
     category: "slimme-verlichting",
     image: "/images/products/govee-neon-rope-light-2-white-5m.jpg",
-    description: "Govee Neon Rope Light 2 White (5m)",
-    features: [],
+    description: "Flexibele neonlichtstrip van 5 meter die je in elke vorm buigt. Ideaal voor sfeerlicht op bureaus, planken of als wanddecoratie. Bestuurbaar per segment via de Govee-app of spraak.",
+    features: [
+      "5 meter flexibele neonstrip",
+      "Segment-voor-segment kleurcontrole",
+      "16 miljoen kleuren + warm wit",
+      "Bediening via Govee app, Google Home of Alexa",
+      "Muziekvisualisatiemodus ingebouwd",
+      "Inclusief montageclips en adapter",
+    ],
     affiliateUrl: "https://www.amazon.nl/Govee-Lights-vormtoewijzing-Assistant-wanddecoratie/dp/B0CQRBC3Y2?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DGovee%2520Neon%2520Rope%2520Light%25202%2520White%2520(5m)",
     
@@ -1838,13 +1859,20 @@ export const products = [
 
   {
     slug: "aqara-presence-sensor-fp1e",
-    
+
     brand: "Aqara",
     name: "Aqara Presence Sensor FP1E",
     category: "sensoren",
     image: "/images/products/aqara-presence-sensor-fp1e.jpg",
-    description: "Aqara Presence Sensor FP1E",
-    features: [],
+    description: "Radarsensor die aanwezigheid detecteert — ook als je stil op de bank zit. Geen valse alarmen meer als je de kamer niet verlaat. Ideaal voor automatiseringen waarbij gewone bewegingssensoren tekort schieten.",
+    features: [
+      "Millimetergolf radar — detecteert ook statische aanwezigheid",
+      "Zigbee 3.0 — werkt met Homey, Home Assistant, Aqara hub",
+      "Detectiebereik tot 4 meter, instelbare zones",
+      "Reageert binnen 0,5 seconde",
+      "Geen camera — volledig privacyvriendelijk",
+      "Inclusief USB-C voeding",
+    ],
     affiliateUrl: "https://www.amazon.nl/Aqara-Aanwezigheidssensor-Bewegingssensor-ondersteunt-SmartThings/dp/B0D5QPH3T6?tag=slimhuiswonen-21",
     bolUrl: "https://partner.bol.com/click/click?p=61&t=url&s=1515439&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Faqara-presence-sensor-fp1e%2F9300000184492428%2F",
     
@@ -1859,13 +1887,20 @@ export const products = [
 
   {
     slug: "sonoff-zigbee-bewegingssensor-snzb-03p-voor-huisbe",
-    
+
     brand: "Sonoff",
-    name: "Sonoff Zigbee Bewegingssensor Snzb-03P Voor Huisbeveiliging En Automatisering",
+    name: "Sonoff SNZB-03P Zigbee Bewegingssensor",
     category: "sensoren",
     image: "/images/products/sonoff-zigbee-bewegingssensor-snzb-03p-voor-huisbe.jpg",
-    description: "Sonoff Zigbee Bewegingssensor Snzb-03P Voor Huisbeveiliging En Automatisering",
-    features: [],
+    description: "Betaalbare Zigbee bewegingssensor die werkt met Homey, Home Assistant, Zigbee2MQTT en vrijwel elke andere Zigbee-hub. Snel en betrouwbaar — ideaal als je meerdere sensoren wilt plaatsen voor een scherpe prijs.",
+    features: [
+      "Zigbee 3.0 — werkt met elke Zigbee hub",
+      "Detectiebereik tot 6 meter, 110° hoek",
+      "Instelbare gevoeligheid",
+      "Batterijduur tot 3 jaar (CR2477)",
+      "Compact en eenvoudig te monteren",
+      "Compatibel met Homey, Home Assistant, ZHA, Z2M",
+    ],
     affiliateUrl: "https://www.amazon.nl/SONOFF-SNZB-03P-ZigBee-bewegingssensor-3-0-detector-Zigbee-bridge/dp/B0C1GB4DVR?tag=slimhuiswonen-21",
     bolUrl: "https://partner.bol.com/click/click?p=61&t=url&s=1515439&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Fsonoff-zigbee-bewegingssensor-snzb-03p-voor-huisbeveiliging-%2F9300000189727787%2F",
     
@@ -1880,13 +1915,20 @@ export const products = [
 
   {
     slug: "sonoff-zigbee-openingssensor-voor-smart-home-syste",
-    
+
     brand: "Sonoff",
-    name: "Sonoff Zigbee Openingssensor Voor Smart Home Systeem Met Batterij Deurraam",
+    name: "Sonoff SNZB-04P Zigbee Deur- en Raamsensor",
     category: "sensoren",
     image: "/images/products/sonoff-zigbee-openingssensor-voor-smart-home-syste.jpg",
-    description: "Sonoff Zigbee Openingssensor Voor Smart Home Systeem Met Batterij Deurraam",
-    features: [],
+    description: "Compacte Zigbee-sensor die registreert of een deur of raam open of dicht is. Perfect voor meldingen en automatiseringen zoals 'zet de verwarming uit als een raam langer dan 5 minuten openstaat'.",
+    features: [
+      "Zigbee 3.0 — universeel compatibel",
+      "Open/dicht detectie via magneet",
+      "Batterijduur tot 2 jaar (CR2032)",
+      "Compact — montageklaar met dubbelzijdig tape",
+      "Inclusief temperatuurmeting",
+      "Compatibel met Homey, Home Assistant, ZHA, Z2M",
+    ],
     affiliateUrl: "https://www.amazon.nl/SONOFF-SNZB-04P-deurcontactalarmsysteem-huisdeursensor-intelligente/dp/B0C1G7W72B?tag=slimhuiswonen-21",
     bolUrl: "https://partner.bol.com/click/click?p=61&t=url&s=1515439&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Fsonoff-zigbee-openingssensor-voor-smart-home-systeem-met-bat%2F9300000192511370%2F",
     
@@ -1901,13 +1943,20 @@ export const products = [
 
   {
     slug: "aqara-cube-t1-pro",
-    
+
     brand: "Aqara",
     name: "Aqara Cube T1 Pro",
     category: "sensoren",
     image: "/images/products/aqara-cube-t1-pro.jpg",
-    description: "Aqara Cube T1 Pro",
-    features: [],
+    description: "Slimme kubus die reageert op fysieke acties: schudden, draaien, kantelen, tikken of omdraaien. Aan elke actie koppel je een automatisering in Homey of Home Assistant. Een unieke manier om je smart home te bedienen.",
+    features: [
+      "6 unieke acties: schudden, draaien, tikken, omdraaien, kantelen, indrukken",
+      "Zigbee 3.0 — werkt met Homey, Home Assistant, Aqara hub",
+      "Elk gebaar koppelbaar aan een eigen automatisering",
+      "Batterijduur tot 1 jaar (CR2450)",
+      "Compact formaat — past in je hand",
+      "Schakelaar, dimmer, scèneactivator — alles in één",
+    ],
     affiliateUrl: "https://www.amazon.nl/Aqara-verschillende-handelingen-Home-apparaten-ondersteunt/dp/B0BHWS3VTZ?tag=slimhuiswonen-21",
     bolUrl: "https://partner.bol.com/click/click?p=61&t=url&s=1515439&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Faqara-cube-t1-pro%2F9300000135991859%2F",
     

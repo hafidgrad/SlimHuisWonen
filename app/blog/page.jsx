@@ -97,9 +97,24 @@ export default function BlogOverviewPage() {
                     </p>
                   )}
 
-                  <span className="tip-card__cta">
-                    Lees artikel <span aria-hidden="true">→</span>
-                  </span>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "auto" }}>
+                    <span className="tip-card__cta">
+                      Lees artikel <span aria-hidden="true">→</span>
+                    </span>
+                    {post.datePublished && (
+                      <time
+                        dateTime={post.datePublished}
+                        className="muted small"
+                        style={{ fontSize: "0.78rem", whiteSpace: "nowrap" }}
+                      >
+                        {new Date(post.datePublished).toLocaleDateString("nl-NL", {
+                          day: "numeric",
+                          month: "short",
+                          year: "numeric",
+                        })}
+                      </time>
+                    )}
+                  </div>
                 </div>
               </Link>
             ))}

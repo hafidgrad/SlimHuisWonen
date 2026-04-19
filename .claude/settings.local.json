@@ -23,7 +23,9 @@
       "Bash(node scripts/coolblue-match-v2.cjs)",
       "Bash(grep -n \"affiliateUrl:$\" \"c:/Users/hafid/Documents/project website/slimhuiswonen-seo/data/products.js\")",
       "Bash(node --input-type=module)",
-      "Bash(npx next *)"
+      "Bash(npx next *)",
+      "Bash(node scripts/add-comparison-tables.js)",
+      "Bash(node scripts/add-comparison-tables.cjs)"
     ]
   }
 }

@@ -246,6 +246,51 @@ export default function AanraderDetailPage({ params }) {
             </>
           )}
 
+          {guide.comparisonTable && (
+            <>
+              <h2>Snelle vergelijking</h2>
+              <div style={{ overflowX: "auto", marginBottom: "1.5rem" }}>
+                <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.9rem" }}>
+                  <thead>
+                    <tr style={{ background: "#f1f5f9" }}>
+                      {guide.comparisonTable.headers.map((h) => (
+                        <th
+                          key={h}
+                          style={{
+                            padding: "0.55rem 0.75rem",
+                            textAlign: "left",
+                            borderBottom: "2px solid #e2e8f0",
+                            whiteSpace: "nowrap",
+                          }}
+                        >
+                          {h}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {guide.comparisonTable.rows.map((row, i) => (
+                      <tr key={i} style={{ background: i % 2 === 1 ? "#f8fafc" : "white" }}>
+                        {row.map((cell, j) => (
+                          <td
+                            key={j}
+                            style={{
+                              padding: "0.45rem 0.75rem",
+                              borderBottom: "1px solid #e2e8f0",
+                              fontWeight: j === 0 ? 600 : 400,
+                            }}
+                          >
+                            {cell}
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </>
+          )}
+
           <hr />
 
           <h2>Onze aanraders</h2>
