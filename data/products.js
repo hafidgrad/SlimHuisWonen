@@ -1919,6 +1919,489 @@ export const products = [
     cons: [],
     forWho: [],
   },
+
+  {
+    slug: "tapo-c220-beveiligingscamera-binnen-2k-4mp-qhd-pan",
+    
+    brand: "Tapo",
+    name: "Tapo C220 Beveiligingscamera binnen - 2K 4MP QHD - Pan Tilt",
+    category: "slimme-cameras",
+    image: "/images/products/tapo-c220-beveiligingscamera-binnen-2k-4mp-qhd-pan.jpg",
+    description: "Tapo C220 Beveiligingscamera binnen - 2K 4MP QHD - Pan Tilt",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Tapo-C220-WiFi-beveiligingscamera-AI-detecties-privacymodus/dp/B0CF2RRBW5?tag=slimhuiswonen-21",
+    bolUrl: "https://partner.bol.com/click/click?p=61&t=url&s=1515439&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Ftapo-c220-beveiligingscamera-binnen-2k-4mp-qhd-pan-tilt%2F9300000162714113%2F",
+    
+    youtubeId: "rpqeOAkQLdA",
+    priceHint: "€43,99",
+    priceLastUpdated: "april 2026",
+    rating: 4.5,
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "tp-link-tapo-c230",
+    
+    brand: "TP-Link",
+    name: "TP-Link Tapo C230",
+    category: "slimme-cameras",
+    image: "/images/products/tp-link-tapo-c230.png",
+    description: "Met de TP-Link Tapo C230 weet je precies wat er thuis gebeurt. Via de Tapo app op je smartphone draai je deze IP camera 360 graden rond en kantel je hem 114 graden omhoog en omlaag. Zo houd je met één camera een hele ruimte in de gaten in haarscherpe 3K resolutie. Omdat de camera het geluid van een huilende baby herkent, gebruik je hem ook als babyfoon. Dankzij de ingebouwde microfoon stel je jouw baby op afstand gerust en houd je een oogje in het zeil. De camera draait automatisch mee met beweging en herkent mensen, dieren en voertuigen. Beelden bewaar je op een SD kaart. Hiervoor heb je geen extra cloudabonnement nodig.",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Tapo-C230-bewakingscamera-KI-detectie-bewegingsdetectie/dp/B0DSW6SF34?tag=slimhuiswonen-21",
+    
+    coolblueUrl: "https://www.coolblue.nl/product/960205",
+    
+    priceHint: "€34,99",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "tp-link-tapo-c500",
+    
+    brand: "TP-Link",
+    name: "TP-Link Tapo C500",
+    category: "slimme-cameras",
+    image: "/images/products/tp-link-tapo-c500.png",
+    description: "Met een TP-Link Tapo C500 beveiligingscamera houd je in de app je omgeving in 360 graden in de gaten. De full hd camera draait namelijk 360 graden horizontaal rond. Hij volgt beweging automatisch, zodat je een ongewenste gast altijd in beeld hebt. Stel een alarm naar wens in, om mensen af te schrikken. Via de app praat je ook met bezoekers. Dankzij nachtvisie heb je ook in het donker helder beeld. Beelden bewaar je op een SD kaart, waarna je ze terugkijkt in de app. De SD kaart is niet meegeleverd. Voor een vast bedrag per maand bewaar je ook beelden in de cloud. Je sluit deze camera op het stopcontact aan. De camera heeft een privacy mode, die de lens fysiek blokkeert.",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Tapo-C500-bewakingscamera-bewegingsdetectie-nachtzicht/dp/B0BQJVKVQR?tag=slimhuiswonen-21",
+    
+    coolblueUrl: "https://www.coolblue.nl/product/924862",
+    youtubeId: "yfXoRvY7X2o",
+    priceHint: "€34,99",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "tp-link-tapo-c530ws",
+    
+    brand: "TP-Link",
+    name: "TP-Link Tapo C530WS",
+    category: "slimme-cameras",
+    image: "/images/products/tp-link-tapo-c530ws.png",
+    description: "Beveilig je tuin, garage of oprit met de TP-Link Tapo C530WS. Deze IP camera draait 360 graden rond en kantelt 130 graden omhoog en omlaag. Hij volgt bewegingen, zoals mensen die langslopen, automatisch. Zo mis je geen enkele gebeurtenis. De camera filmt in scherpe 3K kwaliteit. Je koppelt deze beveiligingscamera aan je smartphone via de Tapo app. Hier kijk je live mee met de beelden, kantel en draai je de camera en praat je met bezoekers. Als het buiten te donker is om het beeld scherp te zien, zet je de ingebouwde spotlights aan. Ook kijk je in de app de opgenomen beelden terug. Deze bewaar je op een SD kaart. Heb je geen sterke wifi verbinding op de plek waar je de camera installeert? Dan sluit je een ethernetkabel aan. Let op: de SD kaart en ethernetkabel worden niet meegeleverd.",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Tapo-C530WS-bewakingscamera-bewegingstracking-microSD-kaart/dp/B0DY94MCLN?tag=slimhuiswonen-21",
+    
+    coolblueUrl: "https://www.coolblue.nl/product/960206",
+    youtubeId: "lg6pBF37pCQ",
+    priceHint: "€57,00",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "tp-link-tapo-d210-slimme-video-deurbel",
+    
+    brand: "TP-Link",
+    name: "TP-Link Tapo D210 Slimme Video Deurbel",
+    category: "slimme-deurbellen",
+    image: "/images/products/tp-link-tapo-d210-slimme-video-deurbel.png",
+    description: "De TP-Link Tapo D210 is een slimme deurbel die je makkelijk overal plaatst, omdat hij op een batterij werkt. Zo hoef je geen kabels te trekken en kies je zelf de plek bij jouw voordeur. Je bewaart de beelden op een SD kaart, zodat je geen abonnement nodig hebt om beelden terug te kijken. Dankzij de grote kijkhoek zie je bezoekers van top tot teen en houd je goed zicht op jouw stoep of tuin. Met de meegeleverde chime hoor je in huis altijd een geluid als iemand aanbelt. Zo mis je nooit een bezoeker, ook als je telefoon niet bij de hand is.",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Tapo-D210-Video-deurbel-tweeweg-audio-niet-verwijderbare/dp/B0DN6LZGBW?tag=slimhuiswonen-21",
+    
+    coolblueUrl: "https://www.coolblue.nl/product/969587",
+    youtubeId: "NeLH-0hV91k",
+    priceHint: "€57,00",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "tp-link-tapo-c520ws-2-pack-smart-battery-video-doo",
+    
+    brand: "TP-Link",
+    name: "TP-Link Tapo C520WS 2-pack + Smart Battery Video Doorbell D230S1",
+    category: "slimme-deurbellen",
+    image: "/images/products/tp-link-tapo-c520ws-2-pack-smart-battery-video-doo.png",
+    description: "Met de TP-Link Tapo C520WS 2-pack houd je jouw voor- en achtertuin haarscherp in de gaten. De camera's en deurbel filmen alles in 2K kwaliteit. Zo zie je alle details en blijft het beeld scherp als je inzoomt. Je koppelt de apparaten aan de Tapo app op je smartphone. Hier zoom je in en uit met de camera's en draai je ze 360 graden rond. Ook krijg je via de app een melding bij beweging en wanneer iemand aanbelt. Doordat de deurbel op een batterij werkt, plaats je hem makkelijk waar je maar wilt. De bridge van de deurbel is meegeleverd. Als iemand de bel indrukt, hoor je hardop een geluid. Beelden bewaar je op een SD kaart. Hiervoor heb je geen extra cloudabonnement nodig.",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Tapo-D230S1-Video-deurbel-gezichtsveld-AI-herkenning/dp/B0C8BFXFN6?tag=slimhuiswonen-21",
+    
+    coolblueUrl: "https://www.coolblue.nl/product/953221",
+    youtubeId: "4J7qLD3_m-M",
+    priceHint: "€181,00",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "hue-secure-bedrade-videodeurbel",
+    
+    brand: "Philips Hue",
+    name: "Hue Secure Bedrade Videodeurbel",
+    category: "slimme-deurbellen",
+    image: "/images/products/hue-secure-bedrade-videodeurbel.png",
+    description: "Met de Hue Secure Bedrade Videodeurbel houd je altijd in de gaten wie er voor de deur staat, dag en nacht. Dankzij de 2K resolutie zie je bezoekers en details extra scherp, terwijl de ingebouwde verlichting zorgt dat beelden ook in het donker helder blijven. Via de microfoon en speaker reageer je direct op wie er aanbelt in de Hue app op je telefoon. De deurbel werkt op vaste bedrading van 12 tot 24 volt en heeft daarvoor een transformator van minimaal 10 VA nodig. Zodra de deurbel beweging herkent, ontvang je direct een melding op je telefoon. Wil je binnen ook een belgeluid horen? Dan heb je de Hue Chime nodig. Koppel de deurbel aan Hue lampen zodat de verlichting automatisch reageert. Beelden sla je op in de Hue cloud met een betaald Hue Secure abonnement. De Hue Chime worden niet meegeleverd.",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Philips-Hue-Secure-bedrade-videodeurbel/dp/B0FSLX1RKX?tag=slimhuiswonen-21",
+    
+    coolblueUrl: "https://www.coolblue.nl/product/970386",
+    youtubeId: "ZxB4RXlLuhM",
+    priceHint: "€158,00",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "hue-secure-bedrade-videodeurbel-chime",
+    
+    brand: "Philips Hue",
+    name: "Hue Secure Bedrade Videodeurbel + Chime",
+    category: "slimme-deurbellen",
+    image: "/images/products/hue-secure-bedrade-videodeurbel-chime.png",
+    description: "Met de Hue Secure Bedrade Videodeurbel + Chime houd je altijd in de gaten wie er voor de deur staat, dag én nacht. Dankzij de 2K resolutie zie je bezoekers en details extra scherp, terwijl de ingebouwde verlichting zorgt dat beelden ook in het donker helder blijven. Via de microfoon en speaker reageer je direct op wie er aanbelt in de Hue app op je telefoon. De deurbel werkt op vaste bedrading van 12 tot 24 volt en heeft daarvoor een transformator van minimaal 10 VA nodig. Zodra de deurbel beweging herkent, ontvang je direct een melding en hoor je een belgeluid via de meegeleverde Hue Chime. Koppel de deurbel aan Hue lampen zodat de verlichting automatisch reageert. Beelden sla je op in de Hue cloud met een betaald Hue Secure abonnement. De Hue Bridge wordt niet meegeleverd.",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Philips-Hue-Secure-2K-videoresolutie-Bewegingsdetectie/dp/B0FSLSNH89?tag=slimhuiswonen-21",
+    
+    coolblueUrl: "https://www.coolblue.nl/product/970387",
+    youtubeId: "ZxB4RXlLuhM",
+    priceHint: "€184,00",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "tp-link-tapo-l535e-wit-en-gekleurd-licht-e27",
+    
+    brand: "TP-Link",
+    name: "TP-Link Tapo L535E - Wit en Gekleurd Licht - E27",
+    category: "slimme-verlichting",
+    image: "/images/products/tp-link-tapo-l535e-wit-en-gekleurd-licht-e27.png",
+    description: "Met de TP-Link Tapo L535E - Wit en Gekleurd Licht - E27 voorzie je een lamp met E27 fitting van smart verlichting. Deze lamp geeft gekleurd en alle tinten wit licht. Zo kies je voor ieder moment van de dag het juiste licht. Met de juiste lichtkleur op het juiste moment voel je je vaak beter. Je bedient de lampen ook buitenshuis omdat de lampen via wifi aan je smartphone verbonden zijn.In de Tapo app stel je de lichtkleur en vaste routines in. Wil je de lamp ook met je stem bedienen? Dan koppel je hem aan je slimme assistent. Je verbindt de lamp ook met andere Tapo smart home apparaten zoals schakelaars en stekkers.",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Tapo-L535E-gecertificeerd-wifi-gloeilamp-energiebewaking/dp/B0CKXSYYH2?tag=slimhuiswonen-21",
+    
+    coolblueUrl: "https://www.coolblue.nl/product/956290",
+    youtubeId: "ElWxMlAcUOg",
+    priceHint: "€19,99",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "tp-link-tapo-l535e-wit-en-gekleurd-licht-e27-4-pac",
+    
+    brand: "TP-Link",
+    name: "TP-Link Tapo L535E - Wit en Gekleurd Licht - E27 - 4-pack",
+    category: "slimme-verlichting",
+    image: "/images/products/tp-link-tapo-l535e-wit-en-gekleurd-licht-e27-4-pac.png",
+    description: "Met de TP-Link Tapo L535E - Wit en Gekleurd Licht - E27 - 4-pack voorzie je 4 lampen met E27 fitting van smart verlichting. Deze lampen geven gekleurd en alle tinten wit licht. Zo kies je voor ieder moment van de dag het juiste licht. Met de juiste lichtkleur op het juiste moment voel je je vaak beter. Je bedient de lampen ook buitenshuis omdat de lampen via wifi aan je smartphone verbonden zijn.In de Tapo app stel je de lichtkleur en vaste routines in. Wil je de lampen ook met je stem bedienen? Dan koppel je ze aan je slimme assistent. Je verbindt de lamp ook met andere Tapo smart home apparaten zoals schakelaars en stekkers.",
+    features: [],
+    
+    
+    coolblueUrl: "https://www.coolblue.nl/product/957194",
+    youtubeId: "ElWxMlAcUOg",
+    priceHint: "€80,00",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "tp-link-tapo-l930-5-lichtstrip-5m",
+    
+    brand: "TP-Link",
+    name: "TP-Link Tapo L930-5 Lichtstrip 5m",
+    category: "slimme-verlichting",
+    image: "/images/products/tp-link-tapo-l930-5-lichtstrip-5m.png",
+    description: "De TP-Link Tapo L930-5 Lichtstrip 5m is een lichtsnoer met verschillende kleurzones. Zo stel je tot 50 verschillende kleuren tegelijk in. Je gebruikt de lightstrip als subtiele sfeerverlichting, of je laat hem juist uitbundig meebewegen met je muziek. De lightstrip reageert op het geluid van je speakers. Met de kleefstrip plak je de lightstrip op de juiste plaats. Je verbindt de lichtstrip via wifi aan je smartphone, waarna je hem in de app bedient. Is de lichtstrip te lang? Dan knip je hem gemakkelijk op maat. Om de lamp met je stem te bedienen, koppel je hem aan je slimme assistent zoals Siri of Google Assistant.",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Tapo-L930-5-lichtstripsynchronisatie-kleurverandering-segmentcontrole/dp/B0B59RLH4F?tag=slimhuiswonen-21",
+    
+    coolblueUrl: "https://www.coolblue.nl/product/956287",
+    youtubeId: "q1ghar1-Kko",
+    priceHint: "€39,99",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "bosch-slimme-kamerthermostaat-2",
+    
+    brand: "Bosch",
+    name: "Bosch Slimme Kamerthermostaat 2",
+    category: "slimme-thermostaten",
+    image: "/images/products/bosch-slimme-kamerthermostaat-2.png",
+    description: "Met de Bosch Slimme Kamerthermostaat 2 is het thuis altijd de juiste temperatuur. De thermostaat werkt samen met je Bosch radiatorknoppen. Je koppelt ze aan elkaar via een Bosch Smart Home Controller. Let op: deze krijg je niet meegeleverd. Omdat de thermostaat op batterijen werkt, plaats je hem makkelijk overal. Hij meet de temperatuur op de plek waar je hem neerzet. Via de app stel je jouw gewenste temperatuur in. De thermostaat stuurt de radiatorknoppen dan automatisch aan en zet de verwarming hoger of lager. Naast de temperatuur meet de thermostaat de luchtvochtigheid in huis en geeft een melding als deze te hoog of te laag is. Via de Smart Home Controller koppel je ook andere Bosch apparaten aan de thermostaat. Stel bijvoorbeeld in dat als de luchtvochtigheid te laag is, de thermostaat je luchtbevochtiger aanzet via een Bosch slimme stekker.",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Bosch-Kamerthermostaat-besturing-slimme-radiatorthermostaten/dp/B0BKLXTWQX?tag=slimhuiswonen-21",
+    
+    coolblueUrl: "https://www.coolblue.nl/product/973110",
+    youtubeId: "U9i2RjJdsFk",
+    priceHint: "€69,00",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "bosch-slimme-radiatorknop-2-matter",
+    
+    brand: "Bosch",
+    name: "Bosch Slimme Radiatorknop 2 Matter",
+    category: "slimme-thermostaten",
+    image: "/images/products/bosch-slimme-radiatorknop-2-matter.png",
+    description: "Regel de verwarming in huis met de Bosch Slimme Radiatorknop 2 Matter. Met deze slimme radiatorknop regel je de temperatuur in één ruimte. Via de Bosch Smart Home app op je smartphone stel je de temperatuur in of kies je een verwarmingsschema. Zo is het in die ruimte altijd de juiste temperatuur. Zo bespaar je energie, want de verwarming staat nooit onnodig aan. Kies bijvoorbeeld dat de verwarming een uur voordat je uit je werk komt aangaat, zodat je altijd thuiskomt in een warm huis. De knop werkt met Matter, waardoor je hem koppelt aan je andere slimme apparaten. Bijvoorbeeld je smart verlichting. Let op: voor sommige functies, bijvoorbeeld het inzien van verbruik en het instellen van verschillende scenario's, heb je een Bosch Smart Home Controller nodig.",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Bosch-radiatorknop-Home-systeem-fabrikantonafhankelijk-Matter-systemen/dp/B0DHGR23CN?tag=slimhuiswonen-21",
+    
+    coolblueUrl: "https://www.coolblue.nl/product/964392",
+    youtubeId: "kgsgwnrEYN8",
+    priceHint: "€73,00",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "bosch-smart-home-controller-2",
+    
+    brand: "Bosch",
+    name: "Bosch Smart Home Controller 2",
+    category: "slimme-thermostaten",
+    image: "/images/products/bosch-smart-home-controller-2.png",
+    description: "Je bedient al je Bosch smart home apparaten met de Bosch Smart Home Controller 2. Verbind de controller bijvoorbeeld slimme thermostaten, lampen, deursensoren, rookmelders en beveiligingscamera's van Bosch. Dankzij Zigbee en Matter verbind je ook sommige apparaten van andere merken. Je verbindt de controller aan je router en installeert hem via de Bosch app. Daarna vind je hier alle ondersteunde apparaten. Je slaat je gegevens lokaal op, zodat je systeem ook zonder internet werkt. Wil je apparaten met je stem bedienen? Dan koppel je de controller aan Siri, Alexa en Google Assistant.",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Bosch-controller-besturing-Home-systeem-smartHub/dp/B0BLZL6QLK?tag=slimhuiswonen-21",
+    
+    coolblueUrl: "https://www.coolblue.nl/product/964190",
+    youtubeId: "USPzQb37iZ4",
+    priceHint: "€87,00",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "bosch-deur-en-raamcontact-2-matter",
+    
+    brand: "Bosch",
+    name: "Bosch Deur- en Raamcontact 2 Matter",
+    category: "sensoren",
+    image: "/images/products/bosch-deur-en-raamcontact-2-matter.png",
+    description: "Met de Bosch Deur- en Raamcontact 2 Matter trek je met een veilig gevoel de deur achter je dicht. Je plakt deze sensor op een deur of raam. Als iemand de deur of het raam opent, krijg je een melding via de app. Hier controleer je ook altijd en overal of de deur of het raam dicht is. De sensor werkt met Matter, waardoor je hem koppelt aan je andere slimme apparaten. Zo stel je bijvoorbeeld in dat je beveiligingscamera automatisch begint met filmen zodra iemand een deur of raam opent. Omdat de sensor draadloos is, plaats je hem gemakkelijk op alle soorten deuren of ramen. Bijvoorbeeld de achterdeur of het keukenraam, maar ook een medicijnkastje of tuinpoort.",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Bosch-energiezuinige-inbraakalarm-fabrikantoverkoepelend-Matter-systemen/dp/B0DK7PQS4T?tag=slimhuiswonen-21",
+    
+    coolblueUrl: "https://www.coolblue.nl/product/964221",
+    youtubeId: "thRNnNY02io",
+    priceHint: "€45,99",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "bosch-draadloze-rookmelder-2",
+    
+    brand: "Bosch",
+    name: "Bosch Draadloze Rookmelder 2",
+    category: "sensoren",
+    image: "/images/products/bosch-draadloze-rookmelder-2.png",
+    description: "Met de Bosch Draadloze Rookmelder 2 ga je zorgeloos de deur uit. Je koppelt deze slimme rookmelder aan je smartphone via de Bosch Smart Home app. Wanneer de melder rook herkent, gaat de sirene af en stuurt hij je een melding. Ook waarschuw je de brandweer via de app. De rookmelder werkt op een batterij, waardoor je hem gemakkelijk op elke plek ophangt. Je plaatst een rookmelder het liefst zo hoog mogelijk tegen het plafond. Verbind de melder met je andere Bosch smart home apparaten, bijvoorbeeld een IP camera. Wanneer de rookmelder afgaat, kijk je via de app live mee met de camerabeelden. De Bosch rookmelder werkt ook met Philips Hue smart lampen. Bij rookontwikkeling gaan de lampen automatisch aan, zodat je de route naar buiten beter ziet.",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Bosch-Home-rookmelder-app-functie-compatibel-Homekit/dp/B09XFGPTZY?tag=slimhuiswonen-21",
+    
+    coolblueUrl: "https://www.coolblue.nl/product/964216",
+    youtubeId: "l5Bm4MqM6JY",
+    priceHint: "€63,00",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "tp-link-tapo-t30-smart-sensor-kit",
+    
+    brand: "TP-Link",
+    name: "TP-Link Tapo T30 Smart Sensor Kit",
+    category: "sensoren",
+    image: "/images/products/tp-link-tapo-t30-smart-sensor-kit.png",
+    description: "Ga zorgeloos de deur uit met de TP-Link Tapo T30 Smart Sensor Kit. Je koppelt deze slimme sensoren aan je smartphone via de Tapo app. Zo krijg je altijd en overal een melding wanneer iemand langs een bewegingssensor loopt of een deur of raam opent. Ook gaat er op de hub een alarm af. Je verbindt de sensoren aan je andere Tapo apparaten. Op die manier stel je bijvoorbeeld in dat je Tapo beveiligingscamera automatisch begint met filmen als de sensor beweging opmerkt. De sensoren hebben ingebouwde magneten en plakstrips, waardoor je ze makkelijk overal aan vastmaakt. Bijvoorbeeld de deurpost of de muur van de babykamer. De hub sluit je op een centrale plek in huis aan op een stopcontact.",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Tapo-T30-KIT-bewegingsdetectie-deurbeveiliging/dp/B0DD4F2KXN?tag=slimhuiswonen-21",
+    
+    coolblueUrl: "https://www.coolblue.nl/product/960204",
+    youtubeId: "7IzGibqoc8I",
+    priceHint: "€60,00",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "tp-link-tapo-p410m",
+    
+    brand: "TP-Link",
+    name: "TP-Link Tapo P410M",
+    category: "slimme-stekkers",
+    image: "/images/products/tp-link-tapo-p410m.png",
+    description: "Met de TP-Link Tapo P410M slimme stekker bedien je elektrische apparaten buiten veilig en slim. Omdat deze stekker waterdicht is, gebruik je hem ook voor buitenverlichting of een heater in de tuin. De stekker werkt via wifi en verbindt meteen met de Tapo app. In de app zie je hoeveel stroom je apparaten gebruiken en zet je ze aan of uit, ook als je niet thuis bent. Je stelt vaste schema¿s in, zodat apparaten automatisch werken op de momenten die jij kiest. Deze stekker herkent of je stroom verbruikt of teruglevert. Je krijgt hierbij inzicht in wat je zonnepanelen doen. Met Amazon Alexa of Google Assistant bedien je apparaten ook met je stem.",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Tapo-P410M-stopcontact-stroommeter-afstandsbediening/dp/B0FZCP6BK7?tag=slimhuiswonen-21",
+    
+    coolblueUrl: "https://www.coolblue.nl/product/975143",
+    youtubeId: "uc-R7GvTKtc",
+    priceHint: "€21,99",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "bosch-smart-plug-compact",
+    
+    brand: "Bosch",
+    name: "Bosch Smart Plug Compact",
+    category: "slimme-stekkers",
+    image: "/images/products/bosch-smart-plug-compact.png",
+    description: "Met de Bosch Smart Plug Compact schakel je apparaten op afstand in of uit via je smartphone of slimme assistent. Zo zet je bijvoorbeeld de lamp in je woonkamer aan zonder op te staan. Je meet met deze slimme stekker hoeveel stroom een apparaat verbruikt. Hierdoor weet je precies waar je op bespaart. Heb je een plug & play zonnepaneel of mini PV systeem? Dan meet de stekker ook hoeveel energie je bespaart. Dankzij het kleine formaat blijft er ruimte over voor andere stekkers in het stopcontact. Je bedient deze slimme stekker via de Bosch Smart Home app of met je stem via Amazon Alexa of Google Assistant. Of koppel de stekker aan je smart home systeem met Matter. Hij is geschikt voor apparaten tot 3.680 watt.",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/Bosch-energiespaarfunctie-Home-systeem-fabrikantonafhankelijk-Matter-systemen/dp/B0DY9ZPVTT?tag=slimhuiswonen-21",
+    
+    coolblueUrl: "https://www.coolblue.nl/product/964393",
+    youtubeId: "99ig_Gu_8yM",
+    priceHint: "€58,00",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "tp-link-deco-be25",
+    
+    brand: "TP-Link",
+    name: "TP-Link Deco BE25",
+    category: "mesh-wifi",
+    image: "/images/products/tp-link-deco-be25.png",
+    description: "Breid je Deco netwerk uit, of begin met je mesh systeem met de TP-Link Deco BE25. In dit pakket zit één station, waarmee je in een klein appartement overal wifi hebt. Je breidt dit pakket makkelijk uit met extra Deco stations. Dankzij wifi 7 haal je hogere snelheden en heb je minder last van storingen. Als een deel van de verbinding wordt verstoord, blijven de andere banden namelijk gewoon werken. De BE25 router werkt samen via Multi-Link Operation. Zo gebruiken ze meerdere frequenties tegelijk, waarmee je de hoogste snelheden haalt. Deze dual band router gebruikt 2 frequenties: De 5 GHz en de 2.4 GHz frequentie. Op de 5 GHz band haal je snelheden tot 2.882 Mbps. Je verbindt ook andere apparaten bedraad aan het station. Verbind bijvoorbeeld je tv bedraad aan een station, zodat je nooit last hebt van haperingen.",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/TP-Link-Deco-BE25-BE3600Mbps-Ethernet-poorten/dp/B0D6W1FWJG?tag=slimhuiswonen-21",
+    
+    coolblueUrl: "https://www.coolblue.nl/product/967105",
+    youtubeId: "xfJQRk9xhDo",
+    priceHint: "€112,00",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "tp-link-deco-be25-2-pack",
+    
+    brand: "TP-Link",
+    name: "TP-Link Deco BE25 2-pack",
+    category: "mesh-wifi",
+    image: "/images/products/tp-link-deco-be25-2-pack.png",
+    description: "Zorg voor een snelle wifi 7 verbinding op één verdieping van je huis met het TP-Link Deco BE25 2-Pack. Voor een stabiele verbinding op meerdere verdiepingen voeg je een station toe. Dankzij wifi 7 haal je hogere snelheden en heb je minder last van storingen. Als een deel van de verbinding wordt verstoord, blijven de andere banden namelijk gewoon werken. De BE25 routers werken samen via Multi-Link Operation. Zo gebruiken ze meerdere frequenties tegelijk, waarmee je de hoogste snelheden haalt. Deze dual band router gebruikt 2 frequenties. De 5 GHz en de 2.4 GHz frequentie. Op de 5 GHz band haal je snelheden tot 2.882 Mbps. De BE25 stations maken draadloos verbinding met elkaar of via een 2.5 Gbps kabelverbinding. Je verbindt ook andere apparaten bedraad aan ieder station. Verbind bijvoorbeeld je tv bedraad aan een station, zodat je nooit last hebt van haperingen.",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/TP-Link-Deco-BE25-BE3600Mbps-Ethernet-poorten/dp/B0D6W3T4M3?tag=slimhuiswonen-21",
+    
+    coolblueUrl: "https://www.coolblue.nl/product/967108",
+    youtubeId: "uhr-Jac9nQk",
+    priceHint: "€230,00",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "tp-link-deco-be65-2-pack",
+    
+    brand: "TP-Link",
+    name: "TP-Link Deco BE65 2-pack",
+    category: "mesh-wifi",
+    image: "/images/products/tp-link-deco-be65-2-pack.png",
+    description: "Zorg voor een snelle wifi 7 verbinding op 2 verdiepingen met het TP-Link Deco BE65 2-Pack. Dankzij wifi 7 halen deze routers hogere snelheden. Je hebt minder last van stoorzenders, doordat de frequenties van de banden doorwerken wanneer een deel ervan verstoord wordt. De routers hebben 3 draadloze verbindingen die dankzij Multi-Link Operation samenwerken voor de hoogste snelheid. De 5 GHz band heeft een snelheid van 4320 Mbps en de 6 GHz band verwerkt 5760 Mbps. Hierdoor koppel je zonder moeite al je apparaten aan deze snelle banden. De BE65 stations maken verbinding met elkaar via de 3 snelle frequenties, of via een bekabelde 2.5 Gbps verbinding.",
+    features: [],
+    affiliateUrl: "https://www.amazon.nl/TP-Link-Deco-BE65-2-pack-overdrachten/dp/B0CJJ733W3?tag=slimhuiswonen-21",
+    
+    coolblueUrl: "https://www.coolblue.nl/product/942270",
+    youtubeId: "MSdFzOvPk3k",
+    priceHint: "€332,00",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
+
+  {
+    slug: "tp-link-deco-x10-3-pack",
+    
+    brand: "TP-Link",
+    name: "TP-Link Deco X10 3-Pack",
+    category: "mesh-wifi",
+    image: "/images/products/tp-link-deco-x10-3-pack.png",
+    description: "Zorg overal in huis voor een stabiele internetverbinding met het TP-Link Deco X10 3-Pack. Deze 3 stations gebruiken Wifi 6, waardoor elk station een groter bereik heeft. De 5 GHz band haalt snelheden tot 1200 Mbps. Dit is genoeg snelheid voor een stabiele verbinding. Zonder een 6 GHz band heb je met veel apparaten soms last van vertraging. Dankzij de OFDMA technologie sluit je nog steeds wel veel apparaten tegelijk aan. Elk station heeft 2 poorten met een snelheid van 1 Gbps, je koppelt dus niet veel apparaten bedraad aan deze routers.",
+    features: [],
+    
+    
+    coolblueUrl: "https://www.coolblue.nl/product/944159",
+    youtubeId: "-MYZP7E6Dd4",
+    priceHint: "€126,00",
+    priceLastUpdated: "april 2026",
+    
+    pros: [],
+    cons: [],
+    forWho: [],
+  },
 ];
 
 /* =========================
