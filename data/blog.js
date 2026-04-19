@@ -9,6 +9,7 @@ export const blogPosts = [
   image: "/images/blog/wat-is-zigbee.png",
   category: "Protocollen",
   available: true,
+  datePublished: "2025-09-15",
 
   related: [
     "zigbee-vs-zwave-vs-matter-vs-wifi",
@@ -143,6 +144,7 @@ export const blogPosts = [
   image: "/images/blog/wat-is-matter.png",
   category: "Protocollen",
   available: true,
+  datePublished: "2025-09-22",
 
   related: [
     "wat-is-zigbee",
@@ -290,6 +292,7 @@ export const blogPosts = [
   image: "/images/blog/zigbee-vs-zwave-vs-matter-vs-wifi.png",
   category: "Protocollen",
   available: true,
+  datePublished: "2025-10-05",
 
   related: [
     "wat-is-zigbee",
@@ -448,6 +451,7 @@ export const blogPosts = [
   image: "/images/blog/aqara-vs-tapo.png",
   category: "Merken",
   available: true,
+  datePublished: "2025-10-18",
 
   related: [
     "wat-is-zigbee",
@@ -551,6 +555,7 @@ export const blogPosts = [
   image: "/images/blog/beste-smart-home-hub.png",
   category: "Hubs",
   available: true,
+  datePublished: "2025-10-25",
 
   related: [
     "home-assistant-vs-homey",
@@ -662,6 +667,7 @@ export const blogPosts = [
   image: "/images/blog/home-assistant-vs-homey.png",
   category: "Hubs",
   available: true,
+  datePublished: "2025-11-08",
 
   related: [
     "beste-smart-home-hub",
@@ -857,6 +863,7 @@ export const blogPosts = [
   image: "/images/blog/beste-slimme-stekkers.png",
   category: "Smart Home",
   available: true,
+  datePublished: "2025-11-15",
 
   related: [
     "wat-is-zigbee",
@@ -1015,6 +1022,7 @@ export const blogPosts = [
   image: "/images/blog/beste-slimme-verlichting.png",
   category: "Smart Home",
   available: true,
+  datePublished: "2025-11-22",
 
   related: [
     "wat-is-zigbee",
@@ -1189,6 +1197,7 @@ export const blogPosts = [
   image: "/images/blog/beste-slimme-camera.png",
   category: "Smart Home",
   available: true,
+  datePublished: "2025-12-01",
 
   related: [
     "beste-slimme-deurbel",
@@ -1367,6 +1376,7 @@ export const blogPosts = [
   image: "/images/blog/beste-slimme-deurbel.png",
   category: "Koopgids",
   available: true,
+  datePublished: "2025-12-10",
 
   related: [
     "beste-slimme-camera",
@@ -1513,6 +1523,7 @@ export const blogPosts = [
   image: "/images/blog/klikaanklikuit-smart-home.png",
   category: "Smart Home",
   available: true,
+  datePublished: "2025-12-17",
 
   related: [
     "beste-smart-home-hub",
@@ -1638,6 +1649,7 @@ export const blogPosts = [
   image: "/images/blog/huisdieren.png",
   category: "Smart Home",
   available: true,
+  datePublished: "2026-01-08",
 
   related: [
     "beste-slimme-camera",
@@ -1781,6 +1793,7 @@ export const blogPosts = [
   image: "/images/blog/kinderen.png",
   category: "Smart Home",
   available: true,
+  datePublished: "2026-01-15",
 
   related: [
     "beste-slimme-camera",
@@ -1911,6 +1924,7 @@ export const blogPosts = [
   image: "/images/blog/beste-slimme-sensoren.png",
   category: "Smart Home",
   available: true,
+  datePublished: "2026-01-22",
 
   related: [
     "beste-smart-home-hub",
@@ -2077,6 +2091,7 @@ export const blogPosts = [
   image: "/images/blog/beste-slimme-thermostaat.png",
   category: "Vergelijking",
   available: true,
+  datePublished: "2026-02-05",
 
   related: [
     "home-assistant-vs-homey",
@@ -2233,6 +2248,7 @@ export const blogPosts = [
   image: "/images/blog/slimme-lampen-zonder-hub.png",
   category: "Verlichting",
   available: true,
+  datePublished: "2026-02-18",
 
   related: [
     "wat-is-zigbee",
@@ -2373,6 +2389,7 @@ export const blogPosts = [
   image: "/images/blog/google-home-vs-alexa.png",
   category: "Vergelijking",
   available: true,
+  datePublished: "2026-03-01",
 
   related: [
     "home-assistant-vs-homey",
@@ -2524,6 +2541,7 @@ export const blogPosts = [
   image: "/images/blog/philips-hue-alternatieven.png",
   category: "Verlichting",
   available: true,
+  datePublished: "2026-03-12",
 
   related: [
     "wat-is-slimme-verlichting",
@@ -2664,6 +2682,7 @@ export const blogPosts = [
   image: "/images/blog/smart-home-energiebesparing.png",
   category: "Energie",
   available: true,
+  datePublished: "2026-03-20",
 
   related: [
     "beste-slimme-thermostaat",

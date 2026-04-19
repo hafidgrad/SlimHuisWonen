@@ -14,6 +14,7 @@ export const tips = [
   category: "Privacy & veiligheid",
   categories: ["veiligheid"],
   available: true,
+  datePublished: "2025-09-10",
 
   related: [
     "wifi-verbeteren-voor-smart-home",
@@ -164,6 +165,7 @@ export const tips = [
   category: "Energie & besparen",
   categories: ["energie"],
   available: true,
+  datePublished: "2025-09-18",
 
   related: [
     "wat-is-een-smart-home-hub",
@@ -302,6 +304,7 @@ export const tips = [
   category: "Beveiliging",
   categories: ["veiligheid"],
   available: true,
+  datePublished: "2025-09-25",
 
   related: [
     "privacy-en-veiligheid-smart-home",
@@ -447,6 +450,7 @@ export const tips = [
   category: "Beveiliging",
   categories: ["veiligheid"],
   available: true,
+  datePublished: "2025-10-03",
 
   related: [
     "slim-huis-beveiligen",
@@ -601,6 +605,7 @@ export const tips = [
   category: "Beveiliging",
   categories: ["veiligheid"],
   available: true,
+  datePublished: "2025-10-10",
 
   related: [
     "slim-huis-beveiligen",
@@ -763,6 +768,7 @@ export const tips = [
   category: "Beveiliging & sensoren",
   categories: ["sensoren", "veiligheid"],
   available: true,
+  datePublished: "2025-10-17",
 
   related: [
     "slim-huis-beveiligen",
@@ -930,6 +936,7 @@ export const tips = [
   category: "Slimme verlichting",
   categories: ["verlichting", "basis"],
   available: true,
+  datePublished: "2025-10-24",
 
   related: [
     "beginnen-met-slimme-verlichting",
@@ -1093,6 +1100,7 @@ export const tips = [
   category: "Slimme verlichting",
   categories: ["verlichting", "basis"],
   available: true,
+  datePublished: "2025-11-01",
 
   related: [
     "wat-is-slimme-verlichting",
@@ -1264,6 +1272,7 @@ export const tips = [
   category: "Beginnen",
   categories: ["basis", "hub"],
   available: true,
+  datePublished: "2025-11-10",
 
   related: [
     "beginnen-met-slimme-verlichting",
@@ -1466,6 +1475,7 @@ export const tips = [
   category: "Smart home basis",
   categories: ["merken", "basis"],
   available: true,
+  datePublished: "2025-11-18",
 
   related: [
     "beginnen-met-smart-home",
@@ -1651,6 +1661,7 @@ export const tips = [
   category: "Smart home basis",
   categories: ["basis", "hub"],
   available: true,
+  datePublished: "2025-11-25",
 
   related: [
     "beginnen-met-smart-home",
@@ -1803,6 +1814,7 @@ export const tips = [
     "/images/Tips%20%26%20uitleg/Slimme%20verlichting%20werkt%20niet%20na%20stroomuitval.png",
   category: "Slimme verlichting",
   available: true,
+  datePublished: "2025-12-05",
 
   related: [
     "beginnen-met-slimme-verlichting",
@@ -1947,6 +1959,7 @@ export const tips = [
   category: "Slimme verlichting",
   categories: ["verlichting", "wifi"],
   available: true,
+  datePublished: "2025-12-12",
 
   related: [
     "beginnen-met-slimme-verlichting",
@@ -2082,6 +2095,7 @@ export const tips = [
   category: "Smart home basis",
   categories: ["hub", "basis"],
   available: true,
+  datePublished: "2025-12-19",
 
   related: [
     "beginnen-met-smart-home",
@@ -2258,6 +2272,7 @@ export const tips = [
   category: "Wifi & netwerk",
   categories: ["wifi", "basis"],
   available: true,
+  datePublished: "2026-01-08",
 
   related: [
     "wifi-bereik-verbeteren-zonder-nieuwe-router",
@@ -2401,6 +2416,7 @@ export const tips = [
   category: "Wifi & Netwerk",
   categories: ["wifi", "basis"],
   available: true,
+  datePublished: "2026-01-15",
 
   related: [
     "wifi-verbeteren-voor-smart-home",
@@ -2519,6 +2535,7 @@ export const tips = [
   category: "Wifi & netwerk",
   categories: ["wifi"],
   available: true,
+  datePublished: "2026-01-22",
 
   related: [
     "wifi-verbeteren-voor-smart-home",
@@ -2643,6 +2660,7 @@ export const tips = [
   category: "Wifi & netwerk",
   categories: ["wifi"],
   available: true,
+  datePublished: "2026-02-01",
 
   related: [
     "wifi-verbeteren-voor-smart-home",

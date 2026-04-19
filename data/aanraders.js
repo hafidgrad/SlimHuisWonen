@@ -9,6 +9,7 @@ export const aanraders = [
     "Een slimme camera verhoogt de veiligheid van je huis en geeft je meer controle, waar je ook bent. In deze koopgids vind je onze beste keuzes voor binnen, buiten, PoE, budget en privacyvriendelijke oplossingen.",
   relatedBlog: "wat-is-een-slimme-camera",
   available: true,
+  datePublished: "2025-10-10",
 
   whoIsThisFor: [
     "Voor wie zijn huis beter wil beveiligen",
@@ -149,6 +150,7 @@ export const aanraders = [
     "Een slimme deurbel laat je zien wie er voor de deur staat, ook als je niet thuis bent. In deze koopgids vind je onze beste keuzes voor bedrade modellen, accu-deurbellen, slimme deurbellen zonder abonnement en opties met sterke smart home integratie.",
   relatedBlog: "beste-slimme-deurbel",
   available: true,
+  datePublished: "2025-10-18",
 
   whoIsThisFor: [
     "Voor wie zijn voordeur slimmer en veiliger wil maken",
@@ -282,6 +284,7 @@ relatedGuides: [
   "beste-slimme-deurbel"
 ],
   available: true,
+  datePublished: "2025-11-01",
 
   whoIsThisFor: [
     "Voor iedereen die automatiseringen wil maken (licht, verwarming, meldingen)",
@@ -403,6 +406,7 @@ relatedGuides: [
   "beste-slimme-stekkers"
 ],
   available: true,
+  datePublished: "2025-11-12",
 
   whoIsThisFor: [
     "Voor beginners die slim willen starten met verlichting",
@@ -540,6 +544,7 @@ relatedGuides: [
   "beste-slimme-stekkers"
 ],
   available: true,
+  datePublished: "2025-11-20",
 
   whoIsThisFor: [
     "Voor iedereen die meerdere smart home merken wil combineren",
@@ -637,6 +642,7 @@ relatedGuides: [
   "beste-slimme-sensoren"
 ],
   available: true,
+  datePublished: "2025-12-05",
 
   whatToLookFor: [
     "Wi-Fi, Zigbee of Matter",
@@ -723,6 +729,7 @@ relatedGuides: [
     "Met slimme technologie kun je jouw hond, kat of ander huisdier beter in de gaten houden en zorgen voor extra veiligheid en comfort — zelfs wanneer je niet thuis bent. In deze koopgids vind je onze beste keuzes voor toezicht, automatisering en slimme routines.",
   relatedBlog: "smart-home-voor-huisdieren",
   available: true,
+  datePublished: "2025-12-15",
 
   whoIsThisFor: [
     "Voor mensen die hun huisdieren op afstand willen monitoren",
@@ -823,6 +830,7 @@ relatedGuides: [
     "Een smart home kan extra veiligheid en rust geven in huis. Denk aan automatische nachtverlichting, meldingen als je kind uit bed komt en een babycamera waarmee je op afstand kunt meekijken. In deze koopgids vind je onze beste keuzes voor gezinnen.",
   relatedBlog: "smart-home-voor-kinderen",
   available: true,
+  datePublished: "2026-01-08",
 
   whoIsThisFor: [
     "Voor ouders met jonge kinderen of baby's",
@@ -931,6 +939,7 @@ relatedGuides: [
   intro:
     "Een slimme thermostaat is een van de slimste investeringen voor je huis. Je bespaart energie, hebt altijd controle via je telefoon en je huis is warm als je thuiskomt — maar nooit onnodig. In deze koopgids vind je de beste opties voor de meeste Nederlandse huishoudens.",
   available: true,
+  datePublished: "2026-01-18",
 
   relatedBlogs: [
     "beste-slimme-thermostaat",
@@ -1020,6 +1029,7 @@ relatedGuides: [
   intro:
     "Een slimme bewegingssensor is de motor achter vrijwel elke smart home automatisering. Licht dat aanspringt als je een kamer binnenloopt, meldingen als er iemand voor de deur staat, of de verwarming die omlaag gaat als niemand thuis is — het begint bij een goede sensor.",
   available: true,
+  datePublished: "2026-01-25",
 
   relatedBlogs: [
     "wat-zijn-slimme-sensoren",
@@ -1112,6 +1122,7 @@ relatedGuides: [
   intro:
     "Een sterk wifi-netwerk is de basis van elk smart home. Met een mesh-systeem verdeel je het signaal via meerdere punten door je huis en heb je overal een stabiele verbinding — geen dode hoeken meer. In deze koopgids vind je de beste opties voor elk budget.",
   available: true,
+  datePublished: "2026-02-05",
 
   relatedBlogs: [
     "wat-is-zigbee",
@@ -1233,6 +1244,7 @@ relatedGuides: [
   intro:
     "Met een slim deurslot sluit en open je je deur zonder sleutel — via je telefoon, vingerafdruk of automatisch als je thuis aankomt. De meeste modellen monteren op je bestaand slot, zodat je geen duur cilinderslot hoeft te vervangen.",
   available: true,
+  datePublished: "2026-02-15",
 
   relatedBlogs: [
     "wat-zijn-slimme-sensoren",
@@ -1322,6 +1334,7 @@ relatedGuides: [
   intro:
     "Wil je weten hoeveel energie je verbruikt — en waar je kunt besparen? Met een slimme energiemeter zie je in realtime je verbruik en teruglevering van zonnepanelen. Onmisbaar als je je energierekening omlaag wilt brengen.",
   available: true,
+  datePublished: "2026-02-22",
 
   relatedBlogs: [
     "smart-home-energiebesparing",
@@ -1412,6 +1425,7 @@ relatedGuides: [
   intro:
     "Een slimme radiatorkraan geeft je per kamer controle over de temperatuur. Je stookt alleen waar nodig, wanneer nodig — en dat scheelt flink op de energierekening. In deze koopgids vergelijken we de beste modellen voor 2026.",
   available: true,
+  datePublished: "2026-03-05",
 
   whoIsThisFor: [
     "Voor wie elke kamer apart wil kunnen verwarmen",
@@ -1519,6 +1533,7 @@ relatedGuides: [
   intro:
     "In een huurwoning heb je beperkte mogelijkheden — geen gaten boren, geen vaste installaties. Maar je kunt nog steeds een slim huis inrichten. We zetten de beste producten op een rij die je gewoon meeneemt als je verhuist.",
   available: true,
+  datePublished: "2026-03-15",
 
   whoIsThisFor: [
     "Voor huurders die een slimmer huis willen zonder te verbouwen",
@@ -1636,6 +1651,7 @@ relatedGuides: [
   intro:
     "Smart home hoeft niet duur te zijn. Voor minder dan €50 kun je al beginnen met slimme verlichting, een slimme stekker en basisautomatisering. We laten je zien hoe.",
   available: true,
+  datePublished: "2026-04-01",
 
   whoIsThisFor: [
     "Voor beginners die willen starten met smart home",
