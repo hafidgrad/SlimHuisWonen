@@ -5,6 +5,8 @@ export const howto = [
     slug: "beginnen-met-smart-home",
     title: "Hoe begin je met een smart home?",
     categories: ["basis", "hub"],
+    shortAnswer:
+      "Begin met één apparaat dat je direct dagelijks gebruikt, zoals een slimme lamp of stekker. Kies een protocol (wifi voor gemak, Zigbee voor stabiliteit) en bouw daarna stap voor stap uit.",
     description:
       "Stap-voor-stap uitleg om zonder fouten te beginnen met een smart home. Praktisch, duidelijk en zonder technisch gedoe.",
     image: "/images/how-to/beginnen-met-smart-home.png",
@@ -146,6 +148,8 @@ export const howto = [
     slug: "slimme-verlichting-installeren",
     title: "Hoe installeer je slimme verlichting?",
     categories: ["verlichting", "basis"],
+    shortAnswer:
+      "Draai de slimme lamp in de fitting, download de bijbehorende app en koppel de lamp via 2.4 GHz wifi of een Zigbee hub. Stel daarna een schema of automatisering in via de app.",
     description:
       "Stap-voor-stap uitleg voor het installeren en instellen van slimme verlichting. Inclusief tips om fouten te voorkomen.",
     image: "/images/how-to/slimme-verlichting-installeren.png",
@@ -278,6 +282,8 @@ export const howto = [
   slug: "wifi-verbeteren-voor-smart-home",
   title: "Hoe verbeter je wifi voor je smart home?",
   categories: ["wifi", "basis"],
+  shortAnswer:
+    "Zorg dat je smart home apparaten op het 2.4 GHz netwerk zitten en niet op 5 GHz. Plaats je router centraal en overweeg een mesh-systeem bij een groter huis of meerdere verdiepingen.",
   description:
     "Verbeter je wifi voor een stabiel smart home. Praktische tips om verbindingsproblemen en uitval te voorkomen.",
   image: "/images/how-to/wifi-verbeteren-voor-smart-home.png",
@@ -409,6 +415,8 @@ export const howto = [
   slug: "smart-home-hub-installeren",
   title: "Hoe installeer je een smart home hub?",
   categories: ["hub", "basis"],
+  shortAnswer:
+    "Sluit de hub aan op je router via een netwerkkabel, download de bijbehorende app en voeg vervolgens je slimme apparaten één voor één toe. De eerste koppeling duurt even, maar daarna gaat uitbreiden snel.",
   description:
     "Stap-voor-stap uitleg voor het installeren en instellen van een smart home hub. Leer hoe je apparaten koppelt en automatiseringen maakt.",
   image: "/images/how-to/smart-home-hub-installeren.png",
@@ -538,6 +546,8 @@ export const howto = [
   slug: "slim-huis-beveiligen",
   title: "Hoe beveilig je je slimme huis?",
   categories: ["veiligheid", "basis"],
+  shortAnswer:
+    "Gebruik sterke, unieke wachtwoorden voor je smart home apps en je wifi-netwerk. Zet twee-factor-authenticatie aan waar mogelijk en houd firmware van hubs en camera's altijd up-to-date.",
   description:
     "Leer hoe je je smart home beveiligt tegen hackers en ongewenste toegang. Praktische tips voor een veilig en stabiel slim huis.",
   relatedProductSlugs: ["eufy-indoor-cam", "ring-video-deurbel", "aqara-rookmelder"],
@@ -658,6 +668,8 @@ export const howto = [
   slug: "lamp-automatisch-aan-bij-beweging",
   title: "Lamp automatisch aan bij beweging: zo stel je het in (stap voor stap)",
   categories: ["verlichting", "sensor", "automatisering"],
+  shortAnswer:
+    "Koppel een bewegingssensor en een slimme lamp aan dezelfde app of hub. Maak een automatisering: als beweging → lamp aan. Voeg een tijdvoorwaarde toe zodat de lamp alleen 's avonds aangaat en na 3-5 minuten vanzelf uitgaat.",
   description:
     "Wil je dat je lamp automatisch aangaat bij beweging? Ontdek stap voor stap hoe je een bewegingssensor koppelt aan slimme verlichting.",
   relatedProductSlugs: ["aqara-motion-sensor", "philips-hue-motion-sensor", "tapo-l530e"],
@@ -830,6 +842,8 @@ export const howto = [
   slug: "slimme-verlichting-koppelen-lukt-niet",
   title: "Slimme verlichting koppelen lukt niet? Zo los je het op (stap voor stap)",
   categories: ["wifi", "verlichting"],
+  shortAnswer:
+    "Controleer of je lamp op 2.4 GHz wifi zit en niet op 5 GHz. Reset de lamp door hem 5 keer kort aan en uit te zetten. Bij Zigbee-lampen: houd de lamp dicht bij de hub tijdens de eerste koppeling.",
   description:
     "Lukt het niet om slimme verlichting te koppelen? Ontdek de meest voorkomende problemen en oplossingen voor wifi en Zigbee lampen.",
   image: "/images/how-to/slimme-verlichting-koppelen-lukt-niet.png",
@@ -981,6 +995,8 @@ export const howto = [
   title: "Bewegingssensor instellen: zo werkt het stap voor stap",
   categories: ["sensor", "automatisering", "verlichting"],
   relatedProductSlugs: ["aqara-motion-sensor", "eve-motion-matter-bewegingssensor", "tapo-t100"],
+  shortAnswer:
+    "Voeg de sensor toe aan je app of hub en controleer of hij beweging detecteert. Stel daarna in de automatisering in wanneer hij moet reageren — alleen 's avonds is meestal het handigst.",
   description:
     "Een bewegingssensor instellen? Ontdek stap voor stap hoe je een sensor koppelt en gebruikt voor slimme verlichting en automatiseringen.",
   image: "/images/how-to/bewegingssensor-instellen.png",
@@ -1144,6 +1160,8 @@ export const howto = [
   slug: "smart-home-zonder-hub-instellen",
   title: "Smart home zonder hub instellen: zo werkt het stap voor stap",
   categories: ["basis", "wifi"],
+  shortAnswer:
+    "Wifi-apparaten zoals Tapo-lampen en slimme stekkers werken direct via de app zonder hub. Koppel ze aan je 2.4 GHz netwerk en stel schema's en automatiseringen in via de fabrieksapp.",
   description:
     "Wil je een smart home zonder hub instellen? Ontdek hoe je slimme apparaten via wifi koppelt en automatiseringen maakt zonder bridge.",
   image: "/images/how-to/smart-home-zonder-hub-instellen.png",
@@ -1296,6 +1314,8 @@ export const howto = [
   title: "Slimme stekker instellen: zo werkt het stap voor stap",
   categories: ["basis", "energie"],
   relatedProductSlugs: ["tapo-p115", "tapo-p110", "eve-energy"],
+  shortAnswer:
+    "Steek de slimme stekker in het stopcontact en download de bijbehorende app. Koppel via 2.4 GHz wifi en stel daarna tijdschema's of energiemeting in via de app.",
   description:
     "Een slimme stekker instellen? Ontdek hoe je een smart plug koppelt, gebruikt en automatiseert voor meer gemak en energiebesparing.",
   image: "/images/how-to/slimme-stekker-instellen.png",
@@ -1436,6 +1456,8 @@ export const howto = [
   slug: "homey-automatisering-maken",
   title: "Hoe maak je een automatisering in Homey? (flows stap voor stap)",
   categories: ["hub", "automatisering"],
+  shortAnswer:
+    "Open de Homey-app, ga naar Flows en tik op de plusknop. Kies een trigger (bijv. beweging), voeg optioneel een voorwaarde toe (bijv. alleen 's avonds) en stel de actie in (bijv. lamp aan).",
   description:
     "Automatisering maken in Homey? Ontdek stap voor stap hoe je flows instelt en slimme apparaten automatisch laat samenwerken.",
   image: "/images/how-to/homey-automatisering-maken.png",

@@ -26,7 +26,15 @@
       "Bash(npx next *)",
       "Bash(node scripts/add-comparison-tables.js)",
       "Bash(node scripts/add-comparison-tables.cjs)",
-      "Bash(grep -v \"^--$\")"
+      "Bash(grep -v \"^--$\")",
+      "Bash(curl -s http://localhost:3000/blog)",
+      "Bash(curl -s http://localhost:3000/tips)",
+      "Bash(curl -s http://localhost:3000/how-to)",
+      "Bash(grep -v \"//\")",
+      "Bash(node scripts/add-short-answers.cjs)",
+      "Bash(curl -s \"http://localhost:3000/how-to/lamp-automatisch-aan-bij-beweging\")",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(curl -s \"http://localhost:3000/producten/aqara-cube-t1-pro\")"
     ]
   }
 }

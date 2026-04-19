@@ -58,6 +58,7 @@ export default function HowToDetailPage({ params }) {
   /* ================= AI SUMMARY ================= */
 
 const aiSummary =
+  article.shortAnswer ||
   article.kortAntwoord ||
   (article.description?.length > 160
     ? article.description.slice(0, 157) + "..."

@@ -15,56 +15,44 @@ export const metadata = {
 
 const CATEGORIES = [
   {
-    label: "Beginnen met smart home",
-    key: "basis",
+    label: "Beginnen",
+    key: "beginnen",
     slugs: [
       "beginnen-met-smart-home",
-      "smart-home-zonder-hub-instellen",
-      "hoe-verbind-je-zigbee-apparaten",
+      "slimme-verlichting-installeren",
       "smart-home-hub-installeren",
     ],
   },
   {
-    label: "Verlichting instellen",
-    key: "verlichting",
-    slugs: [
-      "slimme-verlichting-installeren",
-      "lamp-automatisch-aan-bij-beweging",
-      "slimme-verlichting-koppelen-lukt-niet",
-      "hoe-koppel-je-philips-hue-aan-google-home",
-    ],
-  },
-  {
-    label: "Sensoren & Automatiseringen",
+    label: "Automatiseringen",
     key: "automatisering",
     slugs: [
+      "lamp-automatisch-aan-bij-beweging",
       "bewegingssensor-instellen",
       "homey-automatisering-maken",
       "hoe-maak-je-automatisering-home-assistant",
+      "hoe-verbind-je-zigbee-apparaten",
     ],
   },
   {
-    label: "Beveiliging",
-    key: "veiligheid",
+    label: "Problemen oplossen",
+    key: "problemen",
+    slugs: [
+      "slimme-verlichting-koppelen-lukt-niet",
+      "smart-home-zonder-hub-instellen",
+      "slimme-stekker-instellen",
+      "hoe-stel-je-een-slimme-stekker-in-met-schema",
+    ],
+  },
+  {
+    label: "Beveiliging & Netwerk",
+    key: "beveiliging",
     slugs: [
       "slim-huis-beveiligen",
+      "wifi-verbeteren-voor-smart-home",
       "hoe-installeer-je-een-slimme-deurbel",
       "hoe-installeer-je-een-tapo-camera",
     ],
-  },
-  {
-    label: "Energie & Stekkers",
-    key: "energie",
-    slugs: [
-      "slimme-stekker-instellen",
-      "hoe-stel-je-een-slimme-stekker-in-met-schema",
-      "hoe-stel-je-een-slimme-thermostaat-in",
-    ],
-  },
-  {
-    label: "Netwerk & Wifi",
-    key: "wifi",
-    slugs: ["wifi-verbeteren-voor-smart-home"],
   },
 ];
 
