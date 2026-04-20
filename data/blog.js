@@ -3153,7 +3153,7 @@ export const blogPosts = [
   title: "Slimme radiatorkraan: wat is het en welke is de beste in 2026?",
   description:
     "Een slimme radiatorkraan regelt elke kamer apart op temperatuur en bespaart flink op je stookkosten. Lees hoe het werkt en welke je het best kunt kopen.",
-  image: "/images/blog/beste-slimme-thermostaat.png",
+  image: "/images/blog/slimme-radiatorkraan.png",
   category: "Energie",
   available: true,
   datePublished: "2026-04-12",
@@ -3684,7 +3684,7 @@ export const blogPosts = [
   title: "Wat is Thread? Het slimme protocol naast Matter uitgelegd",
   description:
     "Thread is een nieuw draadloos protocol voor smart home dat steeds meer wordt gebruikt naast Matter. Lees wat Thread is, hoe het werkt en of jij het nodig hebt.",
-  image: "/images/blog/wat-is-zigbee.png",
+  image: "/images/blog/wat-is-thread.png",
   category: "Protocollen",
   available: true,
   datePublished: "2026-04-12",
@@ -3758,7 +3758,7 @@ export const blogPosts = [
   title: "Apple HomeKit: smart home voor Apple-gebruikers uitgelegd",
   description:
     "Wat is Apple HomeKit en welke slimme producten werken ermee? Lees hoe je HomeKit instelt, welke apps je gebruikt en wat de voordelen zijn ten opzichte van Google Home en Amazon Alexa.",
-  image: "/images/blog/wat-is-matter.png",
+  image: "/images/blog/apple-homeKit.png",
   category: "Ecosystemen",
   available: true,
   datePublished: "2026-04-12",
@@ -4611,7 +4611,7 @@ export const blogPosts = [
   title: "Philips Hue Bridge — heb je hem echt nodig? (eerlijk antwoord)",
   description:
     "Philips Hue zonder Bridge werkt ook — maar mis je dan veel? We leggen eerlijk uit wanneer de Hue Bridge wél de moeite waard is en welke alternatieven er zijn.",
-  image: "/images/blog/philips-hue-alternatieven.png",
+  image: "/images/blog/philips-hue-bridge-nodig.png",
   category: "Smart Home",
   available: true,
   datePublished: "2026-02-05",
@@ -4839,7 +4839,7 @@ export const blogPosts = [
   title: "Tado vs Netatmo thermostaat (2026): welke past bij jou?",
   description:
     "Tado of Netatmo kopen? We vergelijken prijs, installatiegemak, app, abonnement, zuinigheid en smart home integratie zodat jij de juiste keuze maakt.",
-  image: "/images/blog/beste-slimme-thermostaat.png",
+  image: "/images/blog/tado-vs-netatmo.png",
   category: "Smart Home",
   available: true,
   datePublished: "2026-02-18",
@@ -5365,7 +5365,7 @@ export const blogPosts = [
   title: "Smart home in een huurwoning: wat mag en wat werkt? (2026)",
   description:
     "Woon je in een huurwoning en wil je toch een slim huis? Ontdek welke slimme producten je kunt plaatsen zonder boren, verbouwen of toestemming van de verhuurder.",
-  image: "/images/blog/slim-huis-budget.png",
+  image: "/images/blog/smart-home-huurwoning.png",
   category: "Smart Home",
   available: true,
   datePublished: "2026-04-20",
@@ -5609,7 +5609,7 @@ export const blogPosts = [
   title: "Zigbee vs wifi lampen: welke moet je kiezen? (eerlijke vergelijking 2026)",
   description:
     "Twijfel je tussen Zigbee en wifi slimme lampen? Lees de eerlijke vergelijking op stabiliteit, prijs, installatie en welke het beste past bij jouw situatie.",
-  image: "/images/blog/beste-slimme-verlichting.png",
+  image: "/images/blog/zigbee-vs-wifi-lampen.png",
   category: "Verlichting",
   available: true,
   datePublished: "2026-04-20",
@@ -6078,7 +6078,7 @@ export const blogPosts = [
   title: "Homey uitgelegd: de beste smart home hub voor beginners? (2026)",
   description:
     "Wat is Homey en is het de juiste hub voor jou? Lees hoe Homey werkt, wat het kost en wanneer Homey de beste keuze is voor jouw smart home.",
-  image: "/images/blog/home-assistant-vs-homey.png",
+  image: "/images/blog/homey-uitleg-beginners.png",
   category: "Hubs",
   available: true,
   datePublished: "2026-04-20",
@@ -6323,8 +6323,8 @@ export const blogPosts = [
   slug: "slimme-stekker-energiebesparing",
   title: "Slimme stekker voor energiebesparing: hoeveel bespaar je echt? (2026)",
   description:
-    "Kun je echt geld besparen met een slimme stekker? We laten zien hoeveel standby-verbruik kost en wat een slimme stekker met energiemeting oplevert.",
-  image: "/images/blog/smart-home-energiebesparing.png",
+    "Kun je echt geld bespaar met een slimme stekker? We laten zien hoeveel standby-verbruik kost en wat een slimme stekker met energiemeting oplevert.",
+  image: "/images/blog/slimme-stekker-energiebesparing.png",
   category: "Energie",
   available: true,
   datePublished: "2026-04-20",
