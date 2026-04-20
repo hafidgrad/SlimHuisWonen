@@ -45,7 +45,10 @@
       "Bash(curl -s http://localhost:3000/how-to/lamp-automatisch-aan-bij-beweging)",
       "Bash(python -c ' *)",
       "Bash(npx kill-port *)",
-      "Bash(rm -rf .next)"
+      "Bash(rm -rf .next)",
+      "Bash(curl -s http://localhost:3000/aanraders/beste-slimme-camera)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(curl -s http://localhost:3000/blog/wat-is-zigbee)"
     ]
   }
 }

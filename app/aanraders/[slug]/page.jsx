@@ -9,6 +9,7 @@ import { getProductBySlug } from "@/data/products";
 import BuyGuideProductCard from "@/components/BuyGuideProductCard";
 import AmazonSearchCta from "@/components/AmazonSearchCta";
 import RelatedContent from "@/components/RelatedContent";
+import BannerImage from "@/components/BannerImage";
 
 /* ================= Amazon zoekterm mapping ================= */
 
@@ -92,9 +93,21 @@ export default function AanraderDetailPage({ params }) {
   const enrichedPicks = guide.picks.map((pick) => {
     const slug = pick.href?.replace("/producten/", "");
     const product = slug ? getProductBySlug(slug) : null;
+    const searchQuery = encodeURIComponent(pick.title.replace(/^[^:]+:\s*/, ""));
     return {
       ...pick,
-      amazonUrl: product?.affiliateUrl || null,
+      amazonUrl:
+        product?.affiliateUrl ||
+        pick.amazonUrl ||
+        `https://www.amazon.nl/s?k=${searchQuery}&tag=slimhuiswonen-21`,
+      bolUrl:
+        product?.bolUrl ||
+        pick.bolUrl ||
+        `https://www.bol.com/nl/nl/s/?searchtext=${searchQuery}`,
+      coolblueUrl:
+        product?.coolblueUrl ||
+        pick.coolblueUrl ||
+        `https://www.coolblue.nl/zoeken?query=${searchQuery}`,
       priceHint: product?.priceHint || null,
     };
   });
@@ -201,13 +214,10 @@ export default function AanraderDetailPage({ params }) {
               />
 
               <div className="blogBannerInner compact">
-                <Image
+                <BannerImage
                   src={guide.image}
                   alt={guide.title}
-                  fill
                   priority
-                  className="blogBannerImg"
-                  sizes="100vw"
                 />
               </div>
             </div>

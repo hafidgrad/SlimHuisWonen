@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import SearchBar from "@/components/SearchBar";
+import MobileMenu from "@/components/MobileMenu";
 import { getSearchItems } from "@/data/searchItems";
 
 export default function Header() {
@@ -28,24 +29,18 @@ export default function Header() {
 
         <nav className="main-nav">
           <Link href="/over">Over</Link>
-
-          {/* Scroll naar categorieën sectie op homepage */}
           <Link href="/#categorieen">Categorieën</Link>
-
           <Link href="/aanraders">Koopgidsen</Link>
           <Link href="/tips">Tips & uitleg</Link>
-
-          {/* 🔥 NIEUW: How To */}
           <Link href="/how-to">How To</Link>
-
           <Link href="/blog">Blog</Link>
-
           <Link href="/contact">Contact</Link>
-
           <Link href="/producten" className="nav-highlight">
             Producten
           </Link>
         </nav>
+
+        <MobileMenu />
       </div>
     </header>
   );

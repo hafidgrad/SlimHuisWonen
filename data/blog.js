@@ -127,11 +127,118 @@ export const blogPosts = [
         .
       </p>
 
+      <h2>Welke merken gebruiken Zigbee?</h2>
+      <p>
+        Zigbee is breed ondersteund. Bekende merken die Zigbee gebruiken zijn:
+      </p>
+      <ul>
+        <li><strong>Philips Hue</strong> – werkt via de eigen Hue Bridge</li>
+        <li><strong>IKEA DIRIGERA</strong> – betaalbaar Zigbee systeem</li>
+        <li><strong>Aqara</strong> – breed assortiment sensoren en schakelaars</li>
+        <li><strong>Sonoff</strong> – populaire budgetoptie voor lampen en sensoren</li>
+        <li><strong>OSRAM / Ledvance</strong> – smart home verlichting</li>
+      </ul>
+      <p>
+        Veel van deze merken zijn te combineren via een universele hub zoals Homey of
+        Home Assistant.{" "}
+        <Link href="/blog/home-assistant-vs-homey">
+          Lees het verschil tussen Home Assistant en Homey
+        </Link>
+        .
+      </p>
+
+      <h2>Zigbee 3.0: wat veranderde er?</h2>
+      <p>
+        De meeste nieuwe Zigbee-apparaten ondersteunen <strong>Zigbee 3.0</strong>,
+        de huidige standaard. Het grote voordeel: meer merken zijn onderling
+        compatibel. Oudere Zigbee-apparaten werken soms niet in elk
+        Zigbee 3.0 netwerk, dus let hier op bij gemixte setups.
+      </p>
+
+      <h2>Praktische voorbeelden van Zigbee in huis</h2>
+      <p>
+        Zigbee is bijzonder nuttig wanneer je meerdere soorten apparaten wilt
+        combineren. Een paar voorbeelden:
+      </p>
+      <ul>
+        <li>
+          <strong>Slaapkamer:</strong> een Aqara bewegingssensor registreert dat je
+          opstaat → de Philips Hue lamp gaat zachtjes aan op 10% helderheid.
+        </li>
+        <li>
+          <strong>Woonkamer:</strong> via Homey koppel je een IKEA dimschakelaar aan
+          een Sonoff lamp — twee verschillende merken, één handeling.
+        </li>
+        <li>
+          <strong>Voordeur:</strong> een Zigbee deur- en raamsensor stuurt een melding
+          als je je voordeur open laat staan. Lees ook:{" "}
+          <Link href="/how-to/hoe-installeer-je-een-slimme-deurbel">
+            hoe installeer je een slimme deurbel
+          </Link>
+          .
+        </li>
+        <li>
+          <strong>Energiebesparing:</strong> een Zigbee slimme stekker schakelt
+          apparaten automatisch uit als je weg bent.
+        </li>
+      </ul>
+
+      <h2>Hoe begin je met Zigbee?</h2>
+      <p>
+        Ben je nieuw? Start dan met een kant-en-klaar systeem zoals Philips Hue
+        of IKEA DIRIGERA. Wil je meer vrijheid en merken combineren, kies dan
+        voor een universele hub zoals Homey of Home Assistant met een
+        Zigbee-dongle.
+      </p>
+      <p>
+        Meer hulp?{" "}
+        <Link href="/how-to/beginnen-met-smart-home">
+          Lees onze stap-voor-stap handleiding voor beginners
+        </Link>
+        .
+      </p>
+
+      <h2>Veelgestelde vragen over Zigbee</h2>
+      <div className="faq-list">
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Wat is Zigbee?</h3>
+          <p>
+            Zigbee is een draadloos protocol speciaal voor smart home apparaten zoals
+            lampen, sensoren en schakelaars. Het is energiezuinig en betrouwbaar en
+            werkt via een hub of bridge.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Is Zigbee beter dan wifi voor smart home?</h3>
+          <p>
+            Vaak wel. Zigbee gebruikt weinig stroom en is stabieler bij veel apparaten.
+            Wifi is eenvoudiger om mee te starten maar kan bij grotere setups instabiel
+            worden.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Heb je een hub nodig voor Zigbee?</h3>
+          <p>
+            Meestal wel. Zigbee-apparaten verbinden via een hub of bridge zoals de
+            Philips Hue Bridge, Homey of Home Assistant. Die hub vertaalt het signaal
+            naar je netwerk en app.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Kun je Zigbee-apparaten van verschillende merken combineren?</h3>
+          <p>
+            Ja, met een universele hub zoals Homey of Home Assistant kun je apparaten
+            van meerdere merken (Hue, Aqara, IKEA, Sonoff) combineren in één systeem.
+          </p>
+        </div>
+      </div>
+
       <h2>Conclusie</h2>
       <p>
         Zigbee is een sterke basis voor een betrouwbaar en uitbreidbaar
         smart home. Zeker wanneer je meerdere merken wilt combineren of
-        later wilt opschalen.
+        later wilt opschalen. Begin klein, kies een goede hub en bouw stap
+        voor stap verder.
       </p>
     </>
   ),
@@ -275,11 +382,124 @@ export const blogPosts = [
         <li><strong>Toekomstgerichte bouwers</strong></li>
       </ul>
 
+      <h2>Welke Matter-apparaten zijn er al?</h2>
+      <p>
+        Matter is beschikbaar op steeds meer soorten apparaten:
+      </p>
+      <ul>
+        <li>Slimme lampen en verlichting</li>
+        <li>Slimme stopcontacten en stekkers</li>
+        <li>Slimme sloten en deurbellen</li>
+        <li>Thermostaten en klimaatregeling</li>
+        <li>Sensoren (beweging, deur, raam)</li>
+      </ul>
+      <p>
+        Bekijk voor specifieke aanbevelingen onze{" "}
+        <Link href="/aanraders/beste-smart-home-hub">
+          koopgids voor de beste smart home hub
+        </Link>
+        .
+      </p>
+
+      <h2>Praktische voorbeelden: zo werkt Matter in huis</h2>
+      <p>
+        Matter maakt het makkelijker om apparaten van verschillende merken samen
+        te laten werken. Een paar concrete scenario{"'"}s:
+      </p>
+      <ul>
+        <li>
+          <strong>Philips Hue + Google Home:</strong> je Hue lampen zijn via Matter
+          koppelbaar aan Google Home zonder aparte Hue-app te openen.
+        </li>
+        <li>
+          <strong>Aqara sensor + Apple Home:</strong> een Aqara deur-raam-sensor
+          triggert automatisch je Apple HomeKit-routines.
+        </li>
+        <li>
+          <strong>Universele spraakbediening:</strong> dezelfde lamp bedienbaar via
+          Alexa én Google én Siri — zonder extra stappen.
+        </li>
+        <li>
+          <strong>Eén app:</strong> al je Matter-apparaten zichtbaar in je favoriete
+          smart home app, ongeacht het merk.
+        </li>
+      </ul>
+
+      <h2>Matter vs. Zigbee: werken ze samen?</h2>
+      <p>
+        Matter en Zigbee zijn geen concurrenten — ze werken op verschillende
+        lagen. Matter is de <em>taal</em> waarmee apparaten spreken; Zigbee
+        (of Thread) is het <em>radioprotocol</em> dat het signaal verzendt.
+        In de praktijk kunnen Zigbee-apparaten via een Matter-brug worden
+        ontsloten aan andere ecosystemen.
+      </p>
+      <p>
+        Meer uitleg?{" "}
+        <Link href="/blog/zigbee-vs-zwave-vs-matter-vs-wifi">
+          Lees de volledige vergelijking tussen Zigbee, Z-Wave, Matter en Wi-Fi
+        </Link>
+        .
+      </p>
+
+      <h2>Moet je bestaande apparaten vervangen voor Matter?</h2>
+      <p>
+        In de meeste gevallen niet. Bestaande Zigbee- en Wi-Fi-apparaten
+        blijven gewoon werken. Matter komt er <em>naast</em>. Wel is het
+        handig om een hub te hebben die Matter ondersteunt, zodat ook oudere
+        apparaten via een bridge beschikbaar komen.
+      </p>
+      <p>
+        Wil je weten welke hub het beste bij jou past?{" "}
+        <Link href="/tips/wat-is-een-smart-home-hub">
+          Lees wat een smart home hub is
+        </Link>{" "}
+        of bekijk{" "}
+        <Link href="/blog/home-assistant-vs-homey">
+          het verschil tussen Home Assistant en Homey
+        </Link>
+        .
+      </p>
+
+      <h2>Veelgestelde vragen over Matter</h2>
+      <div className="faq-list">
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Wat is Matter?</h3>
+          <p>
+            Matter is een smart home standaard waarmee apparaten van verschillende
+            merken beter met elkaar samenwerken. Het doel: minder gedoe, makkelijker
+            koppelen en meer compatibiliteit.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Heb ik een hub nodig voor Matter?</h3>
+          <p>
+            Niet altijd. Veel Matter-apparaten werken via een ingebouwde controller
+            zoals Google Home, Apple Home of een hub zoals Homey. Soms is een Thread
+            border router nodig.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Is Matter hetzelfde als Zigbee?</h3>
+          <p>
+            Nee. Zigbee is een draadloos protocol. Matter is een standaard die bepaalt
+            hoe apparaten samenwerken en kan werken via Wi-Fi of Thread.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Werkt Matter met Philips Hue, Aqara en Tapo?</h3>
+          <p>
+            Steeds meer merken ondersteunen Matter — soms via een software-update of
+            bridge, soms via nieuwe Matter-apparaten. Controleer altijd per product.
+          </p>
+        </div>
+      </div>
+
       <h2>Conclusie</h2>
       <p>
         Matter vervangt bestaande protocollen niet direct, maar maakt
         samenwerken eenvoudiger. Het is dé logische stap richting een smart
-        home zonder merk-lock-in.
+        home zonder merk-lock-in. Kies apparaten die Matter ondersteunen en
+        je bouwt direct aan een toekomstbestendig systeem.
       </p>
     </>
   ),
@@ -1168,16 +1388,126 @@ export const blogPosts = [
         <li><strong>Govee</strong> – vooral populair voor led-strips en sfeerlicht</li>
       </ul>
 
+      <h2>Praktische voorbeelden: zo gebruik je slimme verlichting</h2>
+      <p>
+        Slimme verlichting is het meest waardevol wanneer je het koppelt aan
+        routines en andere apparaten. Een paar inspirerende voorbeelden:
+      </p>
+      <ul>
+        <li>
+          <strong>Ochtend:</strong> je lamp gaat om 07:00 zachtjes aan op warm wit —
+          automatisch, zonder wekker of schakelaar.
+        </li>
+        <li>
+          <strong>Thuiskomen:</strong> zodra je smartphone thuis arriveert, springt
+          het licht in de hal automatisch aan op jouw favoriete scene.
+        </li>
+        <li>
+          <strong>Film kijken:</strong> één druk op een knop dimmen alle lampen naar
+          10% en gaat de tv aan — via een Homey-automatisering.
+        </li>
+        <li>
+          <strong>Nachtverlichting:</strong> een bewegingssensor in de gang activeert
+          's nachts een lamp op 5% helderheid — net genoeg om te zien zonder
+          ogen te verblinden.
+        </li>
+        <li>
+          <strong>Beveiliging:</strong> als je weg bent, gaan lampen willekeurig
+          aan en uit om te simuleren dat er iemand thuis is.
+        </li>
+      </ul>
+      <p>
+        Wil je dit zelf instellen?{" "}
+        <Link href="/how-to/lamp-automatisch-aan-bij-beweging">
+          Lees hoe je een lamp automatisch aan laat gaan bij beweging
+        </Link>
+        .
+      </p>
+
+      <h2>Hoeveel kost slimme verlichting?</h2>
+      <p>
+        De prijs varieert sterk afhankelijk van merk en protocol:
+      </p>
+      <ul>
+        <li><strong>Budget (Tapo, Sonoff):</strong> €8–€15 per lamp, geen hub nodig</li>
+        <li><strong>Middenklasse (IKEA, Aqara):</strong> €12–€25 per lamp, hub optioneel</li>
+        <li><strong>Premium (Philips Hue):</strong> €20–€50 per lamp, Hue Bridge aanbevolen</li>
+        <li><strong>Led-strips:</strong> €20–€80 afhankelijk van lengte en merk</li>
+      </ul>
+      <p>
+        Bekijk onze{" "}
+        <Link href="/aanraders/beste-slimme-verlichting">
+          koopgids voor de beste slimme verlichting
+        </Link>{" "}
+        voor concrete aanbevelingen per budget.
+      </p>
+
+      <h2>Slimme verlichting instellen: hoe begin je?</h2>
+      <p>
+        Beginnen is eenvoudiger dan je denkt. Volg deze stappen:
+      </p>
+      <ol>
+        <li>Kies een systeem: wifi (eenvoudig, geen hub) of Zigbee (stabieler, uitbreidbaar)</li>
+        <li>Koop een starterspakket van een bekend merk</li>
+        <li>Download de bijbehorende app</li>
+        <li>Verbind de lamp en pas de naam aan per kamer</li>
+        <li>Stel je eerste automatisering in</li>
+      </ol>
+      <p>
+        Meer hulp?{" "}
+        <Link href="/how-to/slimme-verlichting-installeren">
+          Bekijk onze handleiding: slimme verlichting installeren
+        </Link>
+        .
+      </p>
+
+      <h2>Veelgestelde vragen over slimme verlichting</h2>
+      <div className="faq-list">
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Wat is slimme verlichting?</h3>
+          <p>
+            Slimme verlichting bestaat uit lampen, led-strips of armaturen die je via
+            een app, spraakassistent of automatisering kunt bedienen. Je kunt ze op
+            afstand aan- en uitzetten, dimmen of automatisch laten reageren op tijd,
+            beweging of aanwezigheid.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Hoe werkt slimme verlichting?</h3>
+          <p>
+            Slimme verlichting werkt via wifi of Zigbee. Via een app of smart home hub
+            kun je lampen bedienen, groeperen en automatiseren. Sommige systemen werken
+            direct zonder hub, andere juist stabieler met een bridge of hub.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Heb je een hub nodig voor slimme verlichting?</h3>
+          <p>
+            Niet altijd. Wifi-lampen werken vaak zonder hub. Zigbee-verlichting gebruikt
+            meestal wel een bridge of smart home hub, maar biedt meer stabiliteit en
+            betere uitbreidingsmogelijkheden.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Wat is beter: wifi of Zigbee verlichting?</h3>
+          <p>
+            Wifi is handig om snel te beginnen. Zigbee is stabieler en slimmer
+            uitbreidbaar, vooral als je meerdere lampen, sensoren en schakelaars wilt
+            combineren in één systeem.
+          </p>
+        </div>
+      </div>
+
       <h2>Conclusie</h2>
       <p>
         Slimme verlichting maakt je huis comfortabeler, slimmer en vaak ook
-        praktischer. Of je nu simpel wilt starten met een paar wifi lampen of
+        praktischer. Of je nu simpel wilt starten met een paar wifi-lampen of
         direct een stabiel systeem wilt opbouwen met Zigbee: de juiste keuze
         hangt af van hoe ver je wilt uitbreiden.
       </p>
 
       <div className="blogCtaBox">
-        <h3>👉 Bekijk onze koopgids: beste slimme verlichting</h3>
+        <h3>Bekijk onze koopgids: beste slimme verlichting</h3>
         <p className="muted">
           Inclusief onze aanraders voor Philips Hue, IKEA, Tapo en Govee —
           per budget en gebruikssituatie.

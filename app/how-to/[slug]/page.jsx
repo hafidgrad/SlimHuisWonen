@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
+import BannerImage from "@/components/BannerImage";
 import { notFound } from "next/navigation";
 import { howto } from "@/data/howto";
 import { getAllTips } from "@/data/tips";
@@ -225,13 +226,10 @@ const structuredData = [
               <div className="blogBannerBlur blogBannerBlurRight" />
 
               <div className="blogBannerInner compact">
-                <Image
+                <BannerImage
                   src={article.image}
                   alt={article.title}
-                  fill
                   priority
-                  className="blogBannerImg"
-                  sizes="100vw"
                 />
               </div>
             </div>
