@@ -4106,4 +4106,1254 @@ export const blogPosts = [
     </>
   ),
 },
+
+/* ============================================================
+   ARTIKEL 1: SLIM HUIS BUDGET
+   ============================================================ */
+{
+  slug: "slim-huis-budget",
+  title: "Slim huis beginnen met een budget: starterset onder €100 (2026)",
+  description:
+    "Slim huis beginnen zonder veel geld uit te geven? Met een budget van €100 bouw je al een werkende starterset met slimme lamp, stekker en sensor. Lees hoe.",
+  image: "/images/blog/slim-huis-budget.png",
+  category: "Smart Home",
+  available: true,
+  datePublished: "2026-01-10",
+  dateModified: "2026-04-20",
+
+  related: [
+    "goedkoopste-smart-home-beginners",
+    "beste-slimme-verlichting",
+    "beste-slimme-stekkers",
+  ],
+
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Hoe begin je met smart home met een klein budget?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Begin met één slimme lamp en een slimme stekker van een betaalbaar merk zoals Tapo. Voeg later een sensor toe voor automatiseringen. Je hebt geen hub nodig als je wifi-producten kiest.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Welke slimme producten zijn het goedkoopst?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tapo-producten van TP-Link zijn uitstekend betaalbaar. De Tapo L530E lamp kost rond €15, de Tapo P115 stekker rond €12. Samen een solide starterset voor onder €30.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Heb je een hub nodig om goedkoop te starten?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nee. Wifi-producten zoals Tapo werken direct via je thuisnetwerk zonder extra hub. Dat maakt het goedkoper en eenvoudiger om mee te beginnen.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Wat is een goede starterset voor €100?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Met €100 koop je: 2x Tapo L530E (~€30), 1x Tapo P115 (~€15), 1x Aqara bewegingssensor (~€20) en houd je nog budget over voor uitbreiding. Inclusief gratis Tapo-app zonder abonnement.",
+        },
+      },
+    ],
+  },
+
+  content: (
+    <>
+      <p className="section-intro">
+        Slim huis beginnen hoeft niet duur te zijn. Met een budget van{" "}
+        <strong>€100 of minder</strong> bouw je al een werkende starterset die
+        écht nuttig is: een slimme lamp, een energiemeetende stekker en een
+        bewegingssensor die alles automatisch laat samenwerken. Geen dure hub,
+        geen abonnement.
+      </p>
+
+      <h2>Waarom beginnen met een budget slim is</h2>
+      <p>
+        Veel mensen starten te groot: een dure hub, tientallen Hue-lampen en
+        een uitgebreid sensornetwerk. Resultaat: overweldigd door complexiteit
+        en een hoge rekening. Beter is om klein te starten, te leren wat je
+        prettig vindt, en daarna gericht uit te breiden.
+      </p>
+      <p>
+        Een goede starterset is één die direct nut oplevert én ruimte laat om
+        later te groeien. Bekijk onze{" "}
+        <Link href="/aanraders/goedkoopste-smart-home-beginners">
+          koopgids: goedkoop smart home beginnen onder €50
+        </Link>{" "}
+        voor de absolute instapper-opties.
+      </p>
+
+      <h2>De beste starterset onder €100 (2026)</h2>
+      <p>
+        Deze combinatie geeft je direct nut, automatiseringen en
+        energiebesparing — voor minder dan €100 totaal.
+      </p>
+
+      <h3>1. Tapo L530E — slimme kleurenlamp (~€15–€18)</h3>
+      <p>
+        De{" "}
+        <Link href="/producten/tapo-l530e">
+          TP-Link Tapo L530E
+        </Link>{" "}
+        is de beste instapper in slimme verlichting. Je krijgt:
+      </p>
+      <ul>
+        <li>16 miljoen kleuren en instelbare kleurtemperatuur</li>
+        <li>Dimbaar van 1% tot 100%</li>
+        <li>Direct via wifi, geen bridge nodig</li>
+        <li>Spraakbediening via Alexa en Google Home</li>
+        <li>Schema's, zonsondergang-timers en slaapstand</li>
+      </ul>
+      <p>
+        Koop er twee voor de woonkamer: één voor sfeer, één voor functioneel
+        licht. Samen ~€30 en je hebt direct waarde.
+      </p>
+      <p>
+        Meer opties?{" "}
+        <Link href="/aanraders/beste-slimme-verlichting">
+          Bekijk de volledige koopgids slimme verlichting
+        </Link>
+        .
+      </p>
+
+      <h3>2. Tapo P115 — slimme stekker met energiemeting (~€12–€15)</h3>
+      <p>
+        De{" "}
+        <Link href="/producten/tapo-p115">
+          Tapo P115
+        </Link>{" "}
+        is een slimme stekker die niet alleen aan/uit kan, maar ook precies
+        bijhoudt hoeveel stroom een apparaat verbruikt. Perfect voor:
+      </p>
+      <ul>
+        <li>Televisie, spelcomputer of wasdroger automatisch uitschakelen</li>
+        <li>Standby-verbruik meten en besparen</li>
+        <li>Inschakelen op schema of via spraak</li>
+        <li>Verbruik bijhouden in de Tapo-app</li>
+      </ul>
+      <p>
+        Sluit hem aan op je tv of wasdroger en je ziet in de app direct hoeveel
+        stroom dat kost. Veel mensen besparen zo €5–€10 per maand.
+      </p>
+
+      <h3>3. Aqara bewegingssensor (~€18–€22)</h3>
+      <p>
+        Met een{" "}
+        <Link href="/producten/aqara-motion-sensor">
+          Aqara bewegingssensor
+        </Link>{" "}
+        wordt je smart home écht slim: apparaten reageren automatisch zonder dat
+        je iets hoeft te doen. Koppel de sensor aan de Tapo-lampen via een
+        automatisering:
+      </p>
+      <ul>
+        <li>Lamp aan als je de gang inloopt 's avonds</li>
+        <li>Lamp uit als er 5 minuten geen beweging is</li>
+        <li>Melding op je telefoon als iemand de deur inkomt terwijl je weg bent</li>
+      </ul>
+      <p>
+        Let op: de Aqara sensor werkt via Zigbee en heeft een hub nodig (zoals
+        de Aqara M2 hub of Apple Home). Wil je het eenvoudiger? Kies de{" "}
+        <Link href="/producten/tapo-t100">
+          Tapo T100 bewegingssensor
+        </Link>{" "}
+        die direct via wifi werkt met de Tapo-app.
+      </p>
+
+      <h2>Totaaloverzicht budget starterset</h2>
+      <ul>
+        <li>2x Tapo L530E lamp: ~€30</li>
+        <li>1x Tapo P115 stekker: ~€13</li>
+        <li>1x Tapo T100 sensor (wifi): ~€18</li>
+        <li><strong>Totaal: ~€61</strong> — ruim onder €100</li>
+      </ul>
+      <p>
+        Met het resterende budget kun je een extra lamp of tweede stekker
+        toevoegen. Alles werkt via de gratis Tapo-app zonder maandelijks
+        abonnement.
+      </p>
+
+      <h2>Slim uitbreiden na de starterset</h2>
+      <p>
+        Ben je tevreden met je starterset en wil je uitbreiden? Denk dan aan:
+      </p>
+      <ul>
+        <li>
+          <strong>Slimme deurbel</strong> — zie wie er aanbelt als je weg bent.{" "}
+          <Link href="/aanraders/beste-slimme-deurbel">
+            Koopgids slimme deurbellen
+          </Link>
+        </li>
+        <li>
+          <strong>Slimme thermostaat</strong> — bespaar op stookkosten.{" "}
+          <Link href="/aanraders/beste-slimme-thermostaat">
+            Koopgids slimme thermostaten
+          </Link>
+        </li>
+        <li>
+          <strong>Smart home hub</strong> — koppel merken en maak geavanceerde
+          automatiseringen.{" "}
+          <Link href="/aanraders/beste-smart-home-hub">
+            Koopgids smart home hubs
+          </Link>
+        </li>
+      </ul>
+
+      <h2>Tips om kosten te besparen</h2>
+      <ul>
+        <li>Koop startersets in plaats van losse lampen — goedkoper per stuk</li>
+        <li>Wacht op Black Friday of Bol.com kortingsdagen</li>
+        <li>Kies wifi-producten om de kosten van een hub te vermijden</li>
+        <li>Begin met één kamer en breid daarna uit</li>
+        <li>Lees reviews om miskopen te vermijden</li>
+      </ul>
+
+      <h2>Veelgestelde vragen over smart home met budget</h2>
+      <div className="faq-list">
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Hoe begin je met smart home met een klein budget?</h3>
+          <p>
+            Begin met één slimme lamp en een slimme stekker van een betaalbaar merk
+            zoals Tapo. Voeg later een sensor toe. Je hebt geen hub nodig als je
+            wifi-producten kiest.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Welke slimme producten zijn het goedkoopst?</h3>
+          <p>
+            Tapo-producten van TP-Link zijn uitstekend betaalbaar. De Tapo L530E lamp
+            kost ~€15, de Tapo P115 stekker ~€12. Samen al een solide starterset.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Heb je een hub nodig om goedkoop te starten?</h3>
+          <p>
+            Nee. Wifi-producten zoals Tapo werken direct via je thuisnetwerk. Dat
+            maakt het goedkoper en eenvoudiger om mee te beginnen.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Wat is een goede starterset voor €100?</h3>
+          <p>
+            2x Tapo L530E (~€30), 1x Tapo P115 (~€13), 1x Tapo T100 sensor (~€18).
+            Totaal ~€61 — ruim onder €100 met budget over voor uitbreiding.
+          </p>
+        </div>
+      </div>
+    </>
+  ),
+},
+
+/* ============================================================
+   ARTIKEL 2: SLIMME LAMP KOPEN
+   ============================================================ */
+{
+  slug: "slimme-lamp-kopen",
+  title: "Slimme lamp kopen: waar moet je op letten? (complete gids 2026)",
+  description:
+    "Slimme lamp kopen maar niet weten waar te beginnen? Lees alles over E27 vs GU10, wifi vs Zigbee, prijs, dimmen en welke merken betrouwbaar zijn.",
+  image: "/images/blog/beste-slimme-verlichting.png",
+  category: "Smart Home",
+  available: true,
+  datePublished: "2026-01-20",
+  dateModified: "2026-04-20",
+
+  related: [
+    "beste-slimme-verlichting",
+    "wat-is-zigbee",
+    "wat-is-slimme-verlichting",
+  ],
+
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Wat is het verschil tussen E27 en GU10 slimme lampen?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "E27 is een schroeffitting voor hanglampen en staande lampen. GU10 is een bajonetsluiting voor inbouwspots. Check de fitting in je armatuur voordat je koopt.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Wifi of Zigbee slimme lamp: wat is beter?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Wifi is eenvoudiger: geen hub nodig. Zigbee is stabieler en energiezuiniger, maar vereist een bridge of hub. Voor beginners is wifi handiger; voor grotere setups is Zigbee beter.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Kan ik een slimme lamp dimmen met een gewone dimmer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nee. Slimme lampen mogen niet aan een conventionele dimmer hangen — dit beschadigt de lamp. Gebruik altijd een gewone aan/uit-schakelaar en dim via de app of spraak.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Welk merk slimme lamp is het beste?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Philips Hue is premium maar duurder. Tapo en Innr zijn goede budgetalternatieven. Voor Zigbee-gebruikers zijn Innr en IKEA uitstekend.",
+        },
+      },
+    ],
+  },
+
+  content: (
+    <>
+      <p className="section-intro">
+        Een slimme lamp kopen lijkt eenvoudig, maar er zijn méér keuzes dan
+        je denkt: fitting, protocol, kleur, prijs en ecosysteem. Deze gids
+        helpt je precies de juiste keuze te maken — of je nu één lamp of
+        een heel huis wilt verlichten.
+      </p>
+
+      <h2>Stap 1: kies de juiste fitting (E27, GU10, E14)</h2>
+      <p>
+        Voordat je een lamp koopt, controleer je de fitting van je armatuur.
+        Dit is de meest gemaakte fout.
+      </p>
+      <ul>
+        <li>
+          <strong>E27</strong> — grote schroeffitting. Meest voorkomend in
+          hanglampen, vloerlampen en tafellampjes.
+        </li>
+        <li>
+          <strong>GU10</strong> — bajonetsluiting voor inbouwspots in plafond.
+          Draai en klik vast.
+        </li>
+        <li>
+          <strong>E14</strong> — kleine schroeffitting. Voor kandelabers,
+          wandlampen en kleinere armaturen.
+        </li>
+      </ul>
+      <p>
+        Twijfel je? Draai de lamp eruit en kijk op de voet: de fitting staat
+        altijd vermeld (E27, GU10 of E14).
+      </p>
+
+      <h2>Stap 2: wifi of Zigbee?</h2>
+      <p>
+        Dit is de grootste keuze bij slimme verlichting. Beiden hebben duidelijke
+        voor- en nadelen:
+      </p>
+
+      <h3>Wifi slimme lampen</h3>
+      <ul>
+        <li>Geen hub nodig — direct verbinden met je router</li>
+        <li>Eenvoudig in te stellen via app</li>
+        <li>Werkt met Alexa, Google Home, Siri Shortcuts</li>
+        <li>Minder stabiel bij veel apparaten op wifi</li>
+        <li>Hogere stroomafname dan Zigbee</li>
+      </ul>
+      <p>
+        <strong>Beste wifi-keuze:</strong>{" "}
+        <Link href="/producten/tapo-l530e">Tapo L530E</Link> (~€15) of Tapo
+        L510E (~€12) voor wit licht.
+      </p>
+
+      <h3>Zigbee slimme lampen</h3>
+      <ul>
+        <li>Stabieler en betrouwbaarder bij veel lampen</li>
+        <li>Energiezuiniger</li>
+        <li>Vereist een bridge of hub (extra aanschaf)</li>
+        <li>Beter uitbreidbaar met sensoren en schakelaars</li>
+        <li>Merken combineerbaar via Homey of Home Assistant</li>
+      </ul>
+      <p>
+        <strong>Beste Zigbee-keuze:</strong> Philips Hue (premium), Innr
+        (budget) of IKEA DIRIGERA (betaalbaar ecosysteem).
+      </p>
+      <p>
+        Meer uitleg?{" "}
+        <Link href="/blog/wat-is-zigbee">Lees wat Zigbee is en hoe het werkt</Link>.
+      </p>
+
+      <h2>Stap 3: kleur of alleen wit?</h2>
+      <p>
+        Slimme lampen zijn er in drie soorten:
+      </p>
+      <ul>
+        <li>
+          <strong>Warm wit</strong> — vaste kleurtemperatuur (~2700K). Goedkoopst.
+          Goed voor slaapkamer of leeslamp.
+        </li>
+        <li>
+          <strong>White Ambiance</strong> — instelbare kleurtemperatuur van warm
+          (~2200K) tot koel daglicht (~6500K). Ideaal voor woonkamer en werkkamer.
+        </li>
+        <li>
+          <strong>Full color (RGBW)</strong> — 16 miljoen kleuren én wit.
+          Populair voor sfeer, gaming en decoratieve verlichting.
+        </li>
+      </ul>
+      <p>
+        Kies voor woonkamer: White Ambiance of RGBW. Voor badkamer of toilet:
+        warm wit is voldoende.
+      </p>
+
+      <h2>Stap 4: wat mag een slimme lamp kosten?</h2>
+      <ul>
+        <li><strong>Budget (Tapo, Sonoff):</strong> €8–€18 per lamp</li>
+        <li><strong>Middenklasse (Innr, IKEA):</strong> €15–€25 per lamp</li>
+        <li><strong>Premium (Philips Hue):</strong> €25–€55 per lamp</li>
+      </ul>
+      <p>
+        Voor een gemiddeld huis van 10 lampen: €80–€200 voor budget, €250–€550
+        voor premium. Let op: bij Zigbee komt de bridge-kosten (~€40–€80)
+        hier nog bij.
+      </p>
+
+      <h2>Stap 5: werkt een slimme lamp met een gewone schakelaar?</h2>
+      <p>
+        Ja, maar met een beperking: de schakelaar moet altijd aan staan. Zet
+        je de schakelaar uit, dan heeft de lamp geen stroom en reageert niet
+        meer op de app. Oplossingen:
+      </p>
+      <ul>
+        <li>Schakelaar altijd aan laten en via app bedienen</li>
+        <li>Een slimme schakelaar plaatsen die de lamp niet stroomloos maakt</li>
+        <li>Spraakbediening gebruiken in plaats van de schakelaar</li>
+      </ul>
+      <p>
+        Lees ook:{" "}
+        <Link href="/tips/slimme-lamp-werkt-niet-met-schakelaar">
+          slimme lamp werkt niet met schakelaar — oorzaak en oplossing
+        </Link>
+        .
+      </p>
+
+      <h2>Stap 6: welk merk kies je?</h2>
+      <ul>
+        <li>
+          <strong>Philips Hue</strong> — betrouwbaarste ecosysteem, maar duurder.
+          Beste keuze als je wilt dat alles gewoon werkt.
+        </li>
+        <li>
+          <strong>Innr</strong> — goede Zigbee-alternatief. Werkt ook met Hue
+          Bridge.
+        </li>
+        <li>
+          <strong>Tapo (TP-Link)</strong> — beste budget wifi-lamp. Geen hub,
+          directe setup.
+        </li>
+        <li>
+          <strong>IKEA DIRIGERA</strong> — betaalbaar en betrouwbaar Zigbee
+          systeem.
+        </li>
+        <li>
+          <strong>Govee</strong> — populair voor led-strips en sfeerlicht, niet
+          voor dagelijkse verlichting.
+        </li>
+      </ul>
+      <p>
+        Bekijk alle opties in onze{" "}
+        <Link href="/aanraders/beste-slimme-verlichting">
+          koopgids: beste slimme verlichting (2026)
+        </Link>
+        .
+      </p>
+
+      <h2>Veelgestelde vragen over slimme lampen kopen</h2>
+      <div className="faq-list">
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Wat is het verschil tussen E27 en GU10?</h3>
+          <p>
+            E27 is een schroeffitting voor hanglampen en staande lampen. GU10 is een
+            bajonetsluiting voor inbouwspots. Check de fitting in je armatuur voordat
+            je koopt.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Wifi of Zigbee slimme lamp: wat is beter?</h3>
+          <p>
+            Wifi is eenvoudiger en vereist geen hub. Zigbee is stabieler voor grotere
+            setups maar heeft een bridge nodig. Begin je net? Kies wifi.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Kan ik een slimme lamp dimmen met een gewone dimmer?</h3>
+          <p>
+            Nee. Dit beschadigt de lamp. Gebruik altijd een gewone aan/uit-schakelaar
+            en dim via de app of spraakbediening.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Welk merk slimme lamp is het beste?</h3>
+          <p>
+            Philips Hue voor kwaliteit en ecosysteem. Tapo voor beste prijs-kwaliteit
+            wifi. Innr voor goede Zigbee kwaliteit zonder hoge Hue-prijs.
+          </p>
+        </div>
+      </div>
+    </>
+  ),
+},
+
+/* ============================================================
+   ARTIKEL 3: PHILIPS HUE BRIDGE NODIG
+   ============================================================ */
+{
+  slug: "philips-hue-bridge-nodig",
+  title: "Philips Hue Bridge — heb je hem echt nodig? (eerlijk antwoord)",
+  description:
+    "Philips Hue zonder Bridge werkt ook — maar mis je dan veel? We leggen eerlijk uit wanneer de Hue Bridge wél de moeite waard is en welke alternatieven er zijn.",
+  image: "/images/blog/philips-hue-alternatieven.png",
+  category: "Smart Home",
+  available: true,
+  datePublished: "2026-02-05",
+  dateModified: "2026-04-20",
+
+  related: [
+    "beste-slimme-verlichting",
+    "beste-smart-home-hub",
+    "wat-is-zigbee",
+  ],
+
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Heb je een Philips Hue Bridge nodig?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Niet voor basisfuncties. Zonder bridge kun je Hue lampen bedienen via Bluetooth. Maar voor afstandsbediening, automatiseringen en meer dan 10 lampen is de bridge wel nodig.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Wat kan de Philips Hue Bridge wat Bluetooth niet kan?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Met de bridge kun je lampen op afstand bedienen (ook als je niet thuis bent), meer dan 10 lampen koppelen, automatiseringen instellen en integreren met Homey of Home Assistant.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Wat is een goed alternatief voor de Philips Hue Bridge?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Homey Pro en Home Assistant ondersteunen Philips Hue natively. Zo heb je één hub voor al je smart home apparaten in plaats van meerdere bridges.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Werken Philips Hue lampen zonder bridge met Google Home?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Via Bluetooth kun je Hue lampen koppelen aan Google Home voor basis spraakbediening. Voor volledige integratie en automatiseringen is de bridge of een universele hub aanbevolen.",
+        },
+      },
+    ],
+  },
+
+  content: (
+    <>
+      <p className="section-intro">
+        Je wilt Philips Hue kopen, maar de bridge kost ook nog eens €50–€60
+        extra. Moet dat echt? Het korte antwoord: <strong>voor beginners
+        niet altijd</strong>, maar voor een volwaardig smart home wel. Lees
+        hieronder precies wanneer de bridge de moeite waard is.
+      </p>
+
+      <h2>Wat is de Philips Hue Bridge?</h2>
+      <p>
+        De Philips Hue Bridge is een kleine witte doos die je aansluit op je
+        router. De bridge fungeert als het zenuwcentrum van je Hue-systeem:
+        alle lampen communiceren via Zigbee met de bridge, en de bridge praat
+        via wifi met de Hue-app en andere systemen.
+      </p>
+      <p>
+        Zonder bridge werken Hue-lampen via Bluetooth — direct van lamp naar
+        smartphone. Klinkt eenvoudiger, maar er zitten flinke beperkingen aan.
+      </p>
+
+      <h2>Philips Hue zonder bridge (Bluetooth): wat werkt?</h2>
+      <ul>
+        <li>Tot 10 lampen koppelen via Bluetooth</li>
+        <li>Bedienen via de Hue app (alleen als je thuis bent)</li>
+        <li>Basisfuncties: aan/uit, dimmen, kleur kiezen</li>
+        <li>Eenvoudige timers instellen</li>
+      </ul>
+      <p>
+        Dit is prima als je simpel wilt beginnen met 1–3 lampen in één kamer
+        en thuis bedient via je telefoon.
+      </p>
+
+      <h2>Wat mis je zonder de Philips Hue Bridge?</h2>
+      <p>
+        Zonder bridge mis je de functies die Hue écht slim maken:
+      </p>
+      <ul>
+        <li>
+          <strong>Afstandsbediening</strong> — je kunt lampen niet bedienen als
+          je niet thuis bent
+        </li>
+        <li>
+          <strong>Meer dan 10 lampen</strong> — Bluetooth ondersteunt maximaal 10
+        </li>
+        <li>
+          <strong>Automatiseringen</strong> — zonsondergang, aanwezigheid,
+          bewegingssensoren
+        </li>
+        <li>
+          <strong>Hue Entertainment</strong> — lichteffecten gesynchroniseerd met
+          films en games
+        </li>
+        <li>
+          <strong>Hue Play HDMI Sync Box</strong> — vereist bridge
+        </li>
+        <li>
+          <strong>Integratie met Homey, Home Assistant, Apple HomeKit</strong>
+        </li>
+        <li>
+          <strong>Hue Tap-schakelaar</strong> — werkt alleen via bridge
+        </li>
+      </ul>
+
+      <h2>Wanneer heb je de bridge wél nodig?</h2>
+      <ul>
+        <li>Je wilt meer dan 10 lampen</li>
+        <li>Je wilt lampen op afstand bedienen</li>
+        <li>Je wilt automatiseringen op basis van tijd, beweging of locatie</li>
+        <li>Je wilt lampen koppelen aan andere smart home apparaten</li>
+        <li>Je gebruikt of overweegt Homey of Home Assistant</li>
+        <li>Je wilt de Hue draadloze schakelaar of dimmer gebruiken</li>
+      </ul>
+
+      <h2>Alternatieven voor de Philips Hue Bridge</h2>
+      <p>
+        Heb je al een universele hub? Dan heb je mogelijk geen aparte Hue
+        Bridge nodig:
+      </p>
+
+      <h3>Homey Pro</h3>
+      <p>
+        Homey Pro ondersteunt Philips Hue natively via Zigbee — zonder Hue
+        Bridge. Al je Hue-lampen zijn direct te koppelen en te combineren met
+        andere merken. Bekijk de{" "}
+        <Link href="/aanraders/beste-smart-home-hub">
+          koopgids smart home hubs
+        </Link>
+        .
+      </p>
+
+      <h3>Home Assistant</h3>
+      <p>
+        Home Assistant ondersteunt Philips Hue via de officiële integratie
+        (met bridge) of direct via Zigbee-dongle (zonder bridge). Ideaal voor
+        gevorderden die volledige controle willen.
+      </p>
+
+      <h3>Apple HomeKit</h3>
+      <p>
+        Hue-lampen zijn koppelbaar aan Apple HomeKit — maar daarvoor is de
+        bridge juist wel vereist.
+      </p>
+
+      <h2>De bridge als investering</h2>
+      <p>
+        De Hue Bridge kost ~€55 maar maakt je systeem toekomstbestendig. Als
+        je serieus slim wonen wilt, is de bridge geen kostenpost maar een
+        slimme investering die je mogelijkheden verdubbelt.
+      </p>
+      <p>
+        Bekijk ook onze{" "}
+        <Link href="/aanraders/beste-slimme-verlichting">
+          koopgids slimme verlichting
+        </Link>{" "}
+        voor alle Hue- en alternatieve verlichtingsopties inclusief prijzen.
+      </p>
+
+      <h2>Ons advies</h2>
+      <ul>
+        <li>
+          <strong>1–3 lampen, thuis bedienen:</strong> start zonder bridge
+        </li>
+        <li>
+          <strong>4+ lampen of afstandsbediening:</strong> koop meteen de bridge
+        </li>
+        <li>
+          <strong>Merken willen combineren:</strong> overweeg Homey of Home
+          Assistant in plaats van een Hue-only systeem
+        </li>
+      </ul>
+
+      <h2>Veelgestelde vragen over de Philips Hue Bridge</h2>
+      <div className="faq-list">
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Heb je een Philips Hue Bridge nodig?</h3>
+          <p>
+            Niet voor basisfuncties. Zonder bridge kun je Hue lampen via Bluetooth
+            bedienen. Maar voor afstandsbediening, automatiseringen en meer dan 10
+            lampen is de bridge wel nodig.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Wat kan de bridge wat Bluetooth niet kan?</h3>
+          <p>
+            Afstandsbediening, meer dan 10 lampen, automatiseringen op basis van
+            beweging of locatie, en integratie met Homey, Home Assistant en Apple
+            HomeKit.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Wat is een goed alternatief voor de Hue Bridge?</h3>
+          <p>
+            Homey Pro en Home Assistant ondersteunen Hue natively. Zo heb je één
+            hub voor alle smart home apparaten.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Werken Hue lampen zonder bridge met Google Home?</h3>
+          <p>
+            Via Bluetooth ja, voor basis spraakbediening. Voor volledige integratie
+            en automatiseringen is de bridge of een universele hub aanbevolen.
+          </p>
+        </div>
+      </div>
+    </>
+  ),
+},
+
+/* ============================================================
+   ARTIKEL 4: TADO VS NETATMO
+   ============================================================ */
+{
+  slug: "tado-vs-netatmo",
+  title: "Tado vs Netatmo thermostaat (2026): welke past bij jou?",
+  description:
+    "Tado of Netatmo kopen? We vergelijken prijs, installatiegemak, app, abonnement, zuinigheid en smart home integratie zodat jij de juiste keuze maakt.",
+  image: "/images/blog/beste-slimme-thermostaat.png",
+  category: "Smart Home",
+  available: true,
+  datePublished: "2026-02-18",
+  dateModified: "2026-04-20",
+
+  related: [
+    "beste-slimme-thermostaat",
+    "beste-smart-home-hub",
+    "energie-besparen-met-smart-home",
+  ],
+
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Wat is beter: Tado of Netatmo?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tado heeft meer slimme functies (geofencing, open-raam detectie, energie-inzichten) maar rekent een maandelijks abonnement voor geavanceerde functies. Netatmo heeft geen abonnement en integreert beter met Apple HomeKit.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Heeft Tado een abonnement nodig?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "De basis Tado-functies zijn gratis. Voor geavanceerde functies zoals Auto-Assist (automatisch geofencing) betaal je ~€3–€4 per maand. Netatmo heeft geen verplicht abonnement.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Werkt Tado of Netatmo met elke cv-ketel?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Beide werken met de meeste Europese cv-ketels via OpenTherm of aan/uit-sturing. Check de compatibiliteitstool op de website van Tado of Netatmo voor jouw specifieke ketelmodel.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Welke slimme thermostaat spaart het meeste energie?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tado claimt gemiddeld 22% energiebesparing dankzij geofencing en open-raam detectie. Netatmo biedt vergelijkbare besparing via programmering en aanwezigheidsdetectie.",
+        },
+      },
+    ],
+  },
+
+  content: (
+    <>
+      <p className="section-intro">
+        Tado en Netatmo zijn de twee populairste slimme thermostaten in
+        Nederland. Beide besparen energie, maar ze doen dat op een andere
+        manier. In deze vergelijking zetten we ze eerlijk naast elkaar
+        zodat jij precies weet welke beter bij jou past.
+      </p>
+
+      <h2>Tado vs Netatmo: snelle vergelijking</h2>
+      <div style={{ overflowX: "auto", marginBottom: "1.5rem" }}>
+        <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.9rem" }}>
+          <thead>
+            <tr style={{ background: "#f1f5f9" }}>
+              {["Eigenschap", "Tado V3+", "Netatmo"].map((h) => (
+                <th key={h} style={{ padding: "0.55rem 0.75rem", textAlign: "left", borderBottom: "2px solid #e2e8f0" }}>{h}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ["Prijs thermostaat", "~€120–€140", "~€100–€130"],
+              ["Abonnement nodig?", "Optioneel (~€3–4/mnd)", "Nee"],
+              ["Geofencing", "Ja (Auto-Assist betaald)", "Ja (gratis)"],
+              ["Open-raam detectie", "Ja", "Ja"],
+              ["Apple HomeKit", "Nee", "Ja (native)"],
+              ["Google Home", "Ja", "Ja"],
+              ["Homey / HA", "Ja", "Ja"],
+              ["Radiatorkranen", "Ja (Tado)", "Nee"],
+              ["Installatie", "Eenvoudig", "Eenvoudig"],
+            ].map((row, i) => (
+              <tr key={i} style={{ background: i % 2 === 1 ? "#f8fafc" : "white" }}>
+                {row.map((cell, j) => (
+                  <td key={j} style={{ padding: "0.45rem 0.75rem", borderBottom: "1px solid #e2e8f0", fontWeight: j === 0 ? 600 : 400 }}>{cell}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Tado thermostaat: voordelen en nadelen</h2>
+      <p>
+        Tado is het meest complete systeem. De{" "}
+        <Link href="/producten/tado-smart-thermostat-v3">
+          Tado V3+ thermostaat
+        </Link>{" "}
+        biedt:
+      </p>
+      <ul>
+        <li>
+          <strong>Geofencing:</strong> verwarming past automatisch aan als je
+          vertrekt of thuiskomt — zonder dat je iets hoeft te doen
+        </li>
+        <li>
+          <strong>Open-raam detectie:</strong> als je een raam opent, verlaagt
+          de verwarming automatisch
+        </li>
+        <li>
+          <strong>Energie-inzichten:</strong> gedetailleerde rapporten over
+          verbruik per dag, week en maand
+        </li>
+        <li>
+          <strong>Uitbreidbaar met radiatorkranen:</strong> kamer-voor-kamer
+          temperatuurbeheer
+        </li>
+        <li>
+          <strong>OpenTherm-ondersteuning:</strong> efficiënter stoken via
+          weersafhankelijke regeling
+        </li>
+      </ul>
+      <p>
+        <strong>Nadeel:</strong> de beste functies (Auto-Assist voor geofencing)
+        zijn betaald: ~€3–4 per maand. Zonder abonnement moet je zelf handmatig
+        de aanwezigheid instellen.
+      </p>
+
+      <h2>Netatmo thermostaat: voordelen en nadelen</h2>
+      <p>
+        De{" "}
+        <Link href="/producten/netatmo-slimme-thermostaat">
+          Netatmo slimme thermostaat
+        </Link>{" "}
+        is de keuze als je <strong>geen abonnement wilt</strong> en een strakker
+        design prefereert:
+      </p>
+      <ul>
+        <li>
+          <strong>Geen abonnement:</strong> alle functies inclusief geofencing
+          zijn gratis
+        </li>
+        <li>
+          <strong>Apple HomeKit native:</strong> perfecte keuze voor
+          iPhone-gebruikers die alles via Siri willen bedienen
+        </li>
+        <li>
+          <strong>Lokale verwerking:</strong> werkt ook zonder internet (basis
+          functionaliteit)
+        </li>
+        <li>
+          <strong>Modulair design:</strong> slank display dat je aan de muur
+          hangt of op een tafel plaatst
+        </li>
+      </ul>
+      <p>
+        <strong>Nadeel:</strong> geen eigen radiatorkranen. Wil je
+        kamerbeheer? Dan moet je Netatmo combineren met slimme radiatorkranen
+        van een ander merk.
+      </p>
+
+      <h2>Installatie: hoe moeilijk is het?</h2>
+      <p>
+        Beide thermostaten zijn ontworpen voor zelfinstallatie. Je vervangt
+        je bestaande thermostaat door de nieuwe slimme versie. Gemiddeld
+        duurt dit 30–60 minuten.
+      </p>
+      <p>
+        Let op: check de compatibiliteit met jouw cv-ketel via de tool op de
+        website van Tado of Netatmo. Bij OpenTherm-ketels haal je meer
+        efficiëntie uit beide systemen.
+      </p>
+
+      <h2>Energiebesparing: wat mag je verwachten?</h2>
+      <p>
+        Beide merken claimen besparing van 15–25% op stookkosten. In de praktijk
+        hangt de besparing af van:
+      </p>
+      <ul>
+        <li>Hoe je nu stookt (al op schema of altijd dezelfde temperatuur)</li>
+        <li>Of je geofencing correct instelt</li>
+        <li>De isolatie van je woning</li>
+      </ul>
+      <p>
+        Meer tips over energiebesparing via smart home?{" "}
+        <Link href="/tips/energie-besparen-met-smart-home">
+          Lees: energie besparen met smart home
+        </Link>
+        .
+      </p>
+
+      <h2>Wie kiest Tado? Wie kiest Netatmo?</h2>
+      <ul>
+        <li>
+          <strong>Kies Tado als:</strong> je radiatorkranen wilt, de beste
+          automatisering zoekt en een klein abonnement geen probleem is
+        </li>
+        <li>
+          <strong>Kies Netatmo als:</strong> je iPhone gebruikt (HomeKit), geen
+          abonnement wilt en een eenvoudige oplossing zoekt
+        </li>
+      </ul>
+      <p>
+        Bekijk beide in onze{" "}
+        <Link href="/aanraders/beste-slimme-thermostaat">
+          koopgids: beste slimme thermostaat (2026)
+        </Link>
+        .
+      </p>
+
+      <h2>Veelgestelde vragen: Tado vs Netatmo</h2>
+      <div className="faq-list">
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Wat is beter: Tado of Netatmo?</h3>
+          <p>
+            Tado heeft meer slimme functies maar vraagt een optioneel abonnement.
+            Netatmo heeft geen abonnement en integreert native met Apple HomeKit.
+            De keuze hangt af van je ecosysteem en budget.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Heeft Tado een abonnement nodig?</h3>
+          <p>
+            De basisfuncties zijn gratis. Voor Auto-Assist (automatische geofencing)
+            betaal je ~€3–4 per maand. Netatmo heeft geen verplicht abonnement.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Werkt Tado of Netatmo met elke cv-ketel?</h3>
+          <p>
+            Beide werken met de meeste Europese cv-ketels. Check de
+            compatibiliteitstool op de website van Tado of Netatmo voor jouw
+            ketelmodel.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Welke thermostaat spaart het meeste energie?</h3>
+          <p>
+            Tado claimt gemiddeld 22% besparing via geofencing en open-raam
+            detectie. Netatmo biedt vergelijkbare besparing via programmering
+            en aanwezigheidsdetectie.
+          </p>
+        </div>
+      </div>
+    </>
+  ),
+},
+
+/* ============================================================
+   ARTIKEL 5: EUFY VS RING CAMERA
+   ============================================================ */
+{
+  slug: "eufy-vs-ring-camera",
+  title: "Eufy vs Ring camera (2026): welke is de beste beveiligingscamera?",
+  description:
+    "Eufy of Ring camera kopen? We vergelijken prijs, beeldkwaliteit, opslag, abonnement, privacy en smart home integratie in een eerlijke vergelijking.",
+  image: "/images/blog/beste-slimme-camera.png",
+  category: "Beveiliging",
+  available: true,
+  datePublished: "2026-03-05",
+  dateModified: "2026-04-20",
+
+  related: [
+    "beste-slimme-camera",
+    "beste-slimme-deurbel",
+    "slim-huis-beveiligen",
+  ],
+
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Wat is beter: Eufy of Ring camera?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Eufy heeft lokale opslag zonder verplicht abonnement en is beter voor privacy. Ring heeft een sterker ecosysteem en betere integratie met Alexa, maar vereist een betaald abonnement voor opnamegeschiedenis.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Heeft Eufy of Ring een abonnement nodig?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Eufy slaat opnames lokaal op — geen abonnement nodig. Ring vereist een Ring Protect abonnement (~€3.50/mnd per camera) voor opnamegeschiedenis.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is Eufy camera veilig voor privacy?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Eufy slaat beelden lokaal op op de HomeBase en versleutelt beelden. Ring stuurt beelden naar Amazon-servers in de cloud. Voor privacybewuste gebruikers is Eufy daardoor beter.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Welke camera is makkelijker te installeren: Eufy of Ring?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Beide zijn eenvoudig te installeren. Ring vereist een Ring-account. Eufy werkt via de EufySecurity-app en lokale HomeBase. Ring is iets sneller opgezet voor beginners.",
+        },
+      },
+    ],
+  },
+
+  content: (
+    <>
+      <p className="section-intro">
+        Eufy en Ring zijn twee van de populairste merken in slimme
+        beveiligingscamera's. Ze lijken op elkaar, maar de verschillen
+        zijn groot — zeker als privacy, abonnementen en ecosysteem voor
+        jou belangrijk zijn. Deze vergelijking geeft je het eerlijke verhaal.
+      </p>
+
+      <h2>Eufy vs Ring: snelle vergelijking</h2>
+      <div style={{ overflowX: "auto", marginBottom: "1.5rem" }}>
+        <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.9rem" }}>
+          <thead>
+            <tr style={{ background: "#f1f5f9" }}>
+              {["Eigenschap", "Eufy", "Ring"].map((h) => (
+                <th key={h} style={{ padding: "0.55rem 0.75rem", textAlign: "left", borderBottom: "2px solid #e2e8f0" }}>{h}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ["Opslag", "Lokaal (gratis)", "Cloud (abonnement)"],
+              ["Abonnement", "Niet nodig", "~€3.50/mnd per camera"],
+              ["Privacy", "Lokale verwerking", "Amazon-cloud"],
+              ["Resolutie", "1080p–4K", "1080p–4K"],
+              ["Alexa integratie", "Beperkt", "Uitstekend"],
+              ["Google Home", "Ja", "Nee (beperkt)"],
+              ["HomeKit", "Nee", "Nee"],
+              ["Accu of bedraad", "Beide", "Beide"],
+              ["Prijs instap", "~€45", "~€60"],
+            ].map((row, i) => (
+              <tr key={i} style={{ background: i % 2 === 1 ? "#f8fafc" : "white" }}>
+                {row.map((cell, j) => (
+                  <td key={j} style={{ padding: "0.45rem 0.75rem", borderBottom: "1px solid #e2e8f0", fontWeight: j === 0 ? 600 : 400 }}>{cell}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Eufy camera: voordelen en nadelen</h2>
+      <p>
+        De{" "}
+        <Link href="/producten/eufy-indoor-cam">
+          Eufy Indoor Cam
+        </Link>{" "}
+        en buitencamera's van Eufy zijn populair vanwege twee redenen: geen
+        abonnement en lokale opslag.
+      </p>
+      <ul>
+        <li>
+          <strong>Lokale opslag via HomeBase:</strong> opnames worden opgeslagen
+          op de thuisbasis, niet in de cloud. Geen maandelijkse kosten.
+        </li>
+        <li>
+          <strong>Privacy-first:</strong> beelden verlaten je huis niet tenzij
+          je dit expliciet instelt
+        </li>
+        <li>
+          <strong>Goede beeldkwaliteit:</strong> 1080p tot 4K afhankelijk van
+          het model
+        </li>
+        <li>
+          <strong>Lange accuduur:</strong> buiten-accu modellen gaan vaak
+          3–6 maanden mee
+        </li>
+        <li>
+          <strong>Goedkopere instap:</strong> binnencamera al vanaf ~€45
+        </li>
+      </ul>
+      <p>
+        <strong>Nadelen:</strong> minder uitgebreid ecosysteem dan Ring,
+        beperktere Alexa-integratie en de HomeBase is een extra apparaat dat
+        je moet aanschaffen voor volledige lokale opslag.
+      </p>
+
+      <h2>Ring camera: voordelen en nadelen</h2>
+      <p>
+        Ring (eigendom van Amazon) is de meest verkochte beveiligingscamera
+        in Europa en biedt een uitgebreid ecosysteem:
+      </p>
+      <ul>
+        <li>
+          <strong>Beste Alexa-integratie:</strong> live beelden op Echo Show,
+          spraakbediening en meldingen via Alexa
+        </li>
+        <li>
+          <strong>Uitgebreid ecosysteem:</strong> ring deurbellen, buiten-
+          en binnencamera's, alarmsystemen — alles in één app
+        </li>
+          <li>
+          <strong>Ring Protect:</strong> cloudopslag van 60 dagen voor alle
+          opnames met één abonnement (~€10/mnd voor meerdere apparaten)
+        </li>
+        <li>
+          <strong>Eenvoudige setup:</strong> snel in gebruik via de Ring-app
+        </li>
+      </ul>
+      <p>
+        <strong>Nadelen:</strong> zonder abonnement sla je géén opnames op —
+        alleen live beelden. Ring werkt nauwelijks met Google Home en niet met
+        Apple HomeKit. Alle beelden gaan naar Amazon-servers.
+      </p>
+
+      <h2>Het abonnement-verschil</h2>
+      <p>
+        Dit is het grootste praktische verschil: bij Eufy betaal je eenmalig
+        voor de camera en is opslag gratis. Bij Ring heb je een abonnement
+        nodig om de camera nuttig te laten zijn.
+      </p>
+      <ul>
+        <li>
+          <strong>Ring Protect Basic:</strong> ~€3.50/mnd per camera — 60 dagen
+          opname
+        </li>
+        <li>
+          <strong>Ring Protect Plus:</strong> ~€10/mnd voor onbeperkt apparaten
+        </li>
+      </ul>
+      <p>
+        Over 3 jaar kost een Ring camera dus €3.50 × 36 = €126 extra in
+        abonnement. Eufy heeft die kosten niet.
+      </p>
+
+      <h2>Privacy: wie wint?</h2>
+      <p>
+        Eufy heeft lokale opslag op de HomeBase en versleutelt beelden.
+        Ring stuurt beelden naar Amazon-servers — Amazon heeft in het verleden
+        ook samengewerkt met politiediensten om beelden te delen.
+      </p>
+      <p>
+        Voor privacybewuste gebruikers is Eufy de duidelijke winnaar. Voor
+        wie Alexa centraal heeft staan in huis, is Ring comfortabeler.
+      </p>
+
+      <h2>Smart home integratie</h2>
+      <ul>
+        <li>
+          <strong>Eufy:</strong> werkt met Google Home en Amazon Alexa.
+          Geen Apple HomeKit. Beperkte automatiseringen buiten eigen app.
+        </li>
+        <li>
+          <strong>Ring:</strong> uitstekend met Alexa. Werkt niet native met
+          Google Home of HomeKit. Beste als Alexa je centrale systeem is.
+        </li>
+      </ul>
+      <p>
+        Wil je een camera die werkt met elk smart home systeem? Kijk dan naar
+        Tapo of Aqara-camera's in onze{" "}
+        <Link href="/aanraders/beste-slimme-camera">
+          koopgids: beste slimme camera (2026)
+        </Link>
+        .
+      </p>
+
+      <h2>Ons advies: Eufy of Ring?</h2>
+      <ul>
+        <li>
+          <strong>Kies Eufy als:</strong> privacy belangrijk is, je geen
+          abonnement wilt en je Google Home gebruikt
+        </li>
+        <li>
+          <strong>Kies Ring als:</strong> Alexa centraal staat in je huis en
+          je het Ring-ecosysteem wilt uitbreiden met deurbellen en alarm
+        </li>
+      </ul>
+      <p>
+        Lees ook onze gids over{" "}
+        <Link href="/tips/slim-huis-beveiligen">
+          hoe je je huis beveiligt met smart home
+        </Link>
+        .
+      </p>
+
+      <h2>Veelgestelde vragen: Eufy vs Ring</h2>
+      <div className="faq-list">
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Wat is beter: Eufy of Ring camera?</h3>
+          <p>
+            Eufy is beter voor privacy en heeft geen abonnement nodig. Ring heeft
+            een sterker Alexa-ecosysteem maar vereist betaald abonnement voor
+            opnamegeschiedenis.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Heeft Eufy of Ring een abonnement nodig?</h3>
+          <p>
+            Eufy slaat opnames lokaal op — geen abonnement nodig. Ring vereist
+            Ring Protect (~€3.50/mnd per camera) voor opnamegeschiedenis.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Is Eufy camera veilig voor privacy?</h3>
+          <p>
+            Eufy slaat beelden lokaal op en versleutelt ze. Ring stuurt beelden
+            naar Amazon-servers. Voor privacybewuste gebruikers is Eufy beter.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Welke camera is makkelijker te installeren?</h3>
+          <p>
+            Beide zijn eenvoudig te installeren. Ring is iets sneller voor
+            beginners. Eufy vereist ook de HomeBase voor lokale opslag.
+          </p>
+        </div>
+      </div>
+    </>
+  ),
+},
 ];
