@@ -5356,4 +5356,1224 @@ export const blogPosts = [
     </>
   ),
 },
+
+/* ============================================================
+   BLOG 6: SMART HOME HUURWONING
+   ============================================================ */
+{
+  slug: "smart-home-huurwoning",
+  title: "Smart home in een huurwoning: wat mag en wat werkt? (2026)",
+  description:
+    "Woon je in een huurwoning en wil je toch een slim huis? Ontdek welke slimme producten je kunt plaatsen zonder boren, verbouwen of toestemming van de verhuurder.",
+  image: "/images/blog/slim-huis-budget.png",
+  category: "Smart Home",
+  available: true,
+  datePublished: "2026-04-20",
+
+  related: [
+    "beste-smart-home-huurwoning",
+    "beste-slimme-verlichting",
+    "beste-slimme-thermostaat",
+    "slim-huis-budget",
+  ],
+
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Mag ik een slimme thermostaat plaatsen in een huurwoning?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "In de meeste gevallen wel, als je de bestaande thermostaat terugplaatst bij vertrek. Tado en Netatmo zijn ontworpen voor eenvoudige zelfinstallatie zonder permanente wijzigingen. Vraag bij twijfel toestemming aan je verhuurder.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Heb ik toestemming nodig voor slimme lampen?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nee. Slimme lampen vervangen gewone lampen en laten geen sporen achter. Je kunt ze gewoon meenemen bij vertrek. Geen toestemming nodig.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Welke slimme deurbel kan ik gebruiken als huurder?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Een accu-deurbel zoals de Tapo D205 of Tapo D235 werkt zonder vaste bedrading en kan worden bevestigd met dubbelzijdig tape of een klem. Ideaal voor huurders die geen schroeven willen boren.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Kan ik smart home apparaten meenemen als ik verhuis?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja. De meeste slimme producten zijn eenvoudig te verwijderen en in je nieuwe woning opnieuw in te stellen. Lampen schroef je eruit, stekkers trek je eruit en sensoren plak je los. Alles gaat mee.",
+        },
+      },
+    ],
+  },
+
+  content: (
+    <>
+      <p className="section-intro">
+        Een huurwoning is geen reden om af te zien van een slim huis. Met de
+        juiste producten maak je je huurwoning aanzienlijk slimmer —{" "}
+        <strong>zonder boren, verbouwen of toestemming</strong>. We laten je
+        precies zien wat mag, wat niet mag en welke producten het beste werken
+        voor huurders.
+      </p>
+
+      <h2>Wat mag je als huurder met smart home?</h2>
+      <p>
+        Als huurder mag je in principe alles plaatsen wat <em>geen permanente
+        wijziging</em> aanbrengt aan de woning. Dat betekent:
+      </p>
+      <ul>
+        <li>Slimme lampen wisselen mag altijd — je schroeft ze gewoon in</li>
+        <li>Slimme stekkers en stekkerdozen mag je overal gebruiken</li>
+        <li>Sensoren bevestigen met nano-tape of zelfklevende strips mag</li>
+        <li>Thermostaat vervangen mag in de meeste gevallen bij terugplaatsing</li>
+      </ul>
+      <p>
+        Wat je <strong>niet zomaar mag</strong>: gaten boren voor kabels, vaste
+        installatiewerk aan elektrische bedrading, externe camera's bevestigen aan
+        de gevel, of de intercominstallatie aanpassen zonder toestemming.
+      </p>
+
+      <h2>Producten die altijd mogen (geen installatie nodig)</h2>
+      <p>
+        Deze producten vereisen nul aanpassingen aan de woning en zijn altijd
+        toegestaan:
+      </p>
+
+      <h3>Slimme lampen</h3>
+      <p>
+        Vervang gewone lampen door slimme varianten — het werkt in elke fitting
+        (E27, GU10, E14). De{" "}
+        <Link href="/producten/tapo-l530e">Tapo L530E</Link> (~€15) is de beste
+        prijs-kwaliteitsoptie. Bij vertrek schroef je ze eruit en neem je ze mee.
+      </p>
+
+      <h3>Slimme stekkers</h3>
+      <p>
+        De{" "}
+        <Link href="/producten/tapo-p115">Tapo P115</Link>{" "}
+        (~€13) meet energieverbruik en zet apparaten automatisch uit. Trek hem
+        eruit als je verhuist — geen spoor achtergelaten.
+      </p>
+
+      <h3>Sensoren op zelfklevende strips</h3>
+      <p>
+        Deur- en raamcontacten, bewegingssensoren en temperatuursensoren plak
+        je met 3M nano-tape of de meegeleverde strips. Aqara-sensoren zijn
+        compact en laten geen beschadiging achter. Lees meer in onze{" "}
+        <Link href="/aanraders/beste-slimme-sensoren">
+          koopgids slimme sensoren
+        </Link>
+        .
+      </p>
+
+      <h2>Producten waarbij je moet opletten</h2>
+
+      <h3>Slimme thermostaat</h3>
+      <p>
+        Een slimme thermostaat zoals Tado of Netatmo vervangt je bestaande
+        thermostaat. Dit is technisch eenvoudig en vereist geen boren. Bewaar
+        de originele thermostaat zodat je die bij vertrek terugplaatst.
+        Informeer je verhuurder als je twijfelt. Bekijk de{" "}
+        <Link href="/aanraders/beste-slimme-thermostaat">
+          koopgids slimme thermostaten
+        </Link>
+        .
+      </p>
+
+      <h3>Slimme deurbel</h3>
+      <p>
+        Gebruik een draadloze accu-deurbel die je bevestigt met dubbelzijdig
+        tape of een klem — geen gaten nodig. Bedrade deurbellen vereisen
+        elektriciteitswerk en zijn dus niet geschikt voor huurders. De{" "}
+        <Link href="/producten/tapo-d205">Tapo D205</Link> is een goede
+        keuze voor huurders.
+      </p>
+
+      <h3>Buitencamera</h3>
+      <p>
+        Binnencamera's zijn altijd toegestaan. Buitencamera's aan de gevel
+        vereisen doorgaans toestemming van de verhuurder. Gebruik eventueel
+        een camera op een raamhouder of tripod binnenshuis gericht naar buiten.
+      </p>
+
+      <h2>De beste producten voor huurders</h2>
+      <p>
+        Bekijk onze volledige{" "}
+        <Link href="/aanraders/beste-smart-home-huurwoning">
+          koopgids: smart home voor huurwoning
+        </Link>{" "}
+        met alle aanbevolen producten per categorie. De top picks:
+      </p>
+      <ul>
+        <li>
+          <strong>Tapo L530E</strong> — slimme kleurenlamp, E27, wifi, geen hub.
+          Meenemen bij verhuizing.
+        </li>
+        <li>
+          <strong>Tapo P115</strong> — slimme stekker met energiemeting, geen installatie.
+        </li>
+        <li>
+          <strong>Aqara bewegingssensor</strong> — plakt op nano-tape, Zigbee,
+          compact formaat.
+        </li>
+        <li>
+          <strong>Tado thermostaat V3+</strong> — vervangt bestaande thermostaat
+          zonder boren, terugplaatsbaar.
+        </li>
+        <li>
+          <strong>Tapo D205 deurbel</strong> — accu, geen bedrading, bevestigbaar
+          met tape of klem.
+        </li>
+      </ul>
+
+      <h2>Alles meenemen als je verhuist</h2>
+      <p>
+        Een groot voordeel van slim starten als huurder: je neemt alles mee.
+        In de nieuwe woning hervat je de installatie in minder dan een uur.
+        Zorg dat je:
+      </p>
+      <ul>
+        <li>De originele thermostaat bewaart in de doos</li>
+        <li>Foto{"'"}s maakt van hoe sensoren bevestigd waren</li>
+        <li>De app-configuratie exporteert of noteert</li>
+        <li>Nano-tape voorzichtig verwijdert om schade te voorkomen</li>
+      </ul>
+
+      <h2>Slimme huurwoning setup onder €150</h2>
+      <ul>
+        <li>2x Tapo L530E lamp: ~€30</li>
+        <li>2x Tapo P115 stekker: ~€26</li>
+        <li>2x Aqara bewegingssensor: ~€36</li>
+        <li>1x Tapo D205 accu-deurbel: ~€55</li>
+        <li><strong>Totaal: ~€147</strong></li>
+      </ul>
+      <p>
+        Wil je nog goedkoper starten? Lees:{" "}
+        <Link href="/blog/slim-huis-budget">
+          slim huis beginnen onder €100
+        </Link>
+        .
+      </p>
+
+      <h2>Veelgestelde vragen: smart home in huurwoning</h2>
+      <div className="faq-list">
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Mag ik een slimme thermostaat plaatsen in een huurwoning?</h3>
+          <p>
+            In de meeste gevallen wel, als je de bestaande thermostaat terugplaatst
+            bij vertrek. Tado en Netatmo zijn ontworpen voor eenvoudige
+            zelfinstallatie zonder permanente wijzigingen.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Heb ik toestemming nodig voor slimme lampen?</h3>
+          <p>
+            Nee. Slimme lampen vervangen gewone lampen en laten geen sporen achter.
+            Je neemt ze gewoon mee bij vertrek.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Welke slimme deurbel kan ik gebruiken als huurder?</h3>
+          <p>
+            Een accu-deurbel zoals de Tapo D205 werkt zonder vaste bedrading en is
+            te bevestigen met dubbelzijdig tape. Geen gaten, geen toestemming nodig.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Kan ik smart home apparaten meenemen als ik verhuis?</h3>
+          <p>
+            Ja. Alle losse producten — lampen, stekkers, sensoren, thermostaat — zijn
+            makkelijk te verwijderen en in de nieuwe woning opnieuw in te stellen.
+          </p>
+        </div>
+      </div>
+    </>
+  ),
+},
+
+/* ============================================================
+   BLOG 7: ZIGBEE VS WIFI LAMPEN
+   ============================================================ */
+{
+  slug: "zigbee-vs-wifi-lampen",
+  title: "Zigbee vs wifi lampen: welke moet je kiezen? (eerlijke vergelijking 2026)",
+  description:
+    "Twijfel je tussen Zigbee en wifi slimme lampen? Lees de eerlijke vergelijking op stabiliteit, prijs, installatie en welke het beste past bij jouw situatie.",
+  image: "/images/blog/beste-slimme-verlichting.png",
+  category: "Verlichting",
+  available: true,
+  datePublished: "2026-04-20",
+
+  related: [
+    "beste-slimme-verlichting",
+    "wat-is-zigbee",
+    "slimme-lamp-kopen",
+    "slimme-lampen-zonder-hub",
+    "beste-smart-home-hub",
+  ],
+
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Kan ik wifi en Zigbee lampen combineren?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja, maar dat is niet ideaal. Je hebt dan meerdere apps nodig. Met een hub zoals Homey of Home Assistant kun je beide protocollen in één systeem beheren.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Zijn Zigbee lampen moeilijker te installeren?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Zigbee lampen vereisen een hub of bridge, wat de eerste installatie iets complexer maakt. Daarna werkt het systeem stabieler dan wifi, zeker bij meer dan 5 lampen.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Welk merk heeft de beste Zigbee lampen?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Philips Hue is het meest complete Zigbee-verlichtingssysteem. Voor een budgetalternatief zijn Innr-lampen uitstekend — ze werken met dezelfde Zigbee-hubs inclusief de Hue Bridge.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Werken Zigbee lampen offline?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Deels. Philips Hue lampen werken via de bridge ook zonder internetverbinding. Wifi-lampen werken offline alleen via Bluetooth of fysieke schakelaar — app-bediening valt dan weg.",
+        },
+      },
+    ],
+  },
+
+  content: (
+    <>
+      <p className="section-intro">
+        Zigbee of wifi lampen — het is een van de meest gestelde vragen bij
+        het starten met slimme verlichting. Beide werken goed, maar voor heel
+        andere situaties. In deze vergelijking lees je precies wanneer je
+        welk protocol kiest.
+      </p>
+
+      <h2>Hoe werken wifi lampen?</h2>
+      <p>
+        Wifi slimme lampen verbinden direct met je thuisrouter — geen extra
+        hardware nodig. Je installeert de app van het merk, verbindt de lamp
+        met je 2.4GHz wifi-netwerk en je bent klaar. Elk merk heeft zijn eigen
+        app: Tapo, Govee, Lifx, etc.
+      </p>
+      <ul>
+        <li>Setup in 5 minuten</li>
+        <li>Werkt met Google Home en Alexa</li>
+        <li>Elke lamp verbruikt een wifi-verbinding</li>
+        <li>Bij storing van de cloud: lamp soms niet bereikbaar</li>
+      </ul>
+
+      <h2>Hoe werken Zigbee lampen?</h2>
+      <p>
+        Zigbee lampen communiceren via een eigen draadloos mesh-netwerk.
+        Ze verbinden niet direct met je router maar via een{" "}
+        <strong>hub of bridge</strong> — zoals de Philips Hue Bridge, Homey
+        of Home Assistant. Die hub vertaalt het signaal naar je netwerk.
+      </p>
+      <ul>
+        <li>Mesh-netwerk: lampen versterken elkaars signaal</li>
+        <li>Stabieler bij veel apparaten</li>
+        <li>Laag energieverbruik per lamp</li>
+        <li>Werkt deels offline via lokale hub</li>
+        <li>Eenmalige aanschaf hub (~€40–€400)</li>
+      </ul>
+      <p>
+        Lees meer in{" "}
+        <Link href="/blog/wat-is-zigbee">
+          ons artikel: wat is Zigbee en hoe werkt het?
+        </Link>
+      </p>
+
+      <h2>Vergelijkingstabel: Zigbee vs wifi lampen</h2>
+      <div style={{ overflowX: "auto", marginBottom: "1.5rem" }}>
+        <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.9rem" }}>
+          <thead>
+            <tr style={{ background: "#f1f5f9" }}>
+              {["Eigenschap", "Wifi", "Zigbee"].map((h) => (
+                <th key={h} style={{ padding: "0.55rem 0.75rem", textAlign: "left", borderBottom: "2px solid #e2e8f0" }}>{h}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ["Hub nodig?", "Nee", "Ja (~€40–€400)"],
+              ["Prijs per lamp", "€8–€18", "€15–€55"],
+              ["Stabiliteit", "Goed", "Uitstekend"],
+              ["Max. lampen", "Afhankelijk van router", "50+ per bridge"],
+              ["Offline werking", "Beperkt", "Ja (via lokale hub)"],
+              ["Energieverbruik", "Hoger", "Lager"],
+              ["Merken combineren", "Moeilijk", "Makkelijk (via hub)"],
+              ["Setup tijd", "5 minuten", "15–30 minuten"],
+              ["Beste voor", "1–5 lampen", "6+ lampen / uitbreiding"],
+            ].map((row, i) => (
+              <tr key={i} style={{ background: i % 2 === 1 ? "#f8fafc" : "white" }}>
+                {row.map((cell, j) => (
+                  <td key={j} style={{ padding: "0.45rem 0.75rem", borderBottom: "1px solid #e2e8f0", fontWeight: j === 0 ? 600 : 400 }}>{cell}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Voordelen wifi: voor wie is het de slimste keuze?</h2>
+      <p>Wifi slimme lampen zijn ideaal voor:</p>
+      <ul>
+        <li>Beginners die snel willen starten</li>
+        <li>Huurders die geen extra apparatuur willen</li>
+        <li>Mensen met 1–5 slimme lampen in één ruimte</li>
+        <li>Wie een beperkt budget heeft en geen hub wil aanschaffen</li>
+        <li>Wie al een goed gestructureerd wifi-netwerk thuis heeft</li>
+      </ul>
+      <p>
+        Lees ook:{" "}
+        <Link href="/blog/slimme-lampen-zonder-hub">
+          slimme lampen gebruiken zonder hub
+        </Link>
+        .
+      </p>
+
+      <h2>Voordelen Zigbee: voor wie is het de slimste keuze?</h2>
+      <p>Zigbee slimme lampen zijn beter als je:</p>
+      <ul>
+        <li>6 of meer slimme lampen wilt</li>
+        <li>Lampen van verschillende merken wilt combineren</li>
+        <li>Betrouwbare automatiseringen wilt met sensoren en schakelaars</li>
+        <li>Wilt dat alles ook werkt als internet uitvalt</li>
+        <li>Later wilt uitbreiden naar een volledig smart home</li>
+      </ul>
+
+      <h2>Wat als je later wilt uitbreiden?</h2>
+      <p>
+        Dit is het cruciale punt. Start je met wifi-lampen, dan loop je later
+        vast: bij 10+ lampen belast je je router, meldingen worden trager en
+        automatiseringen worden minder betrouwbaar. Switching naar Zigbee
+        achteraf betekent opnieuw beginnen.
+      </p>
+      <p>
+        Weet je dat je wilt uitbreiden? Begin dan gelijk met Zigbee en een
+        solide hub. Bekijk de{" "}
+        <Link href="/aanraders/beste-smart-home-hub">
+          koopgids beste smart home hub
+        </Link>{" "}
+        voor de beste opties.
+      </p>
+
+      <h2>Aanbeveling per situatie</h2>
+      <ul>
+        <li>
+          <strong>1–5 lampen, snel starten, klein budget:</strong> kies wifi
+          (Tapo, Govee)
+        </li>
+        <li>
+          <strong>6+ lampen, meerdere kamers:</strong> kies Zigbee (Philips Hue,
+          Innr + hub)
+        </li>
+        <li>
+          <strong>Merken combineren, volledige automatisering:</strong> Zigbee
+          via Homey of Home Assistant
+        </li>
+      </ul>
+      <p>
+        Bekijk alle opties in onze{" "}
+        <Link href="/aanraders/beste-slimme-verlichting">
+          koopgids beste slimme verlichting (2026)
+        </Link>
+        .
+      </p>
+
+      <h2>Veelgestelde vragen: Zigbee vs wifi lampen</h2>
+      <div className="faq-list">
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Kan ik wifi en Zigbee lampen combineren?</h3>
+          <p>
+            Ja, maar niet ideaal. Je hebt dan meerdere apps nodig. Met een hub
+            zoals Homey of Home Assistant beheer je beide protocollen in één systeem.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Zijn Zigbee lampen moeilijker te installeren?</h3>
+          <p>
+            Zigbee vereist een hub, wat de eerste installatie iets complexer maakt.
+            Daarna is het systeem stabieler, zeker bij meer dan 5 lampen.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Welk merk heeft de beste Zigbee lampen?</h3>
+          <p>
+            Philips Hue is het meest complete systeem. Innr is een uitstekend
+            budgetalternatief dat ook werkt met de Hue Bridge en andere Zigbee-hubs.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Werken Zigbee lampen offline?</h3>
+          <p>
+            Deels. Philips Hue werkt via de bridge ook zonder internet. Wifi-lampen
+            vereisen cloud-verbinding voor app-bediening — zonder internet
+            beperkte functionaliteit.
+          </p>
+        </div>
+      </div>
+    </>
+  ),
+},
+
+/* ============================================================
+   BLOG 8: SLIMME DEURBEL ZONDER ABONNEMENT
+   ============================================================ */
+{
+  slug: "slimme-deurbel-zonder-abonnement",
+  title: "Slimme deurbel zonder abonnement: de beste opties in 2026",
+  description:
+    "Wil je een slimme deurbel zonder maandelijkse kosten? Ontdek welke deurbellen werken zonder abonnement en lokale opslag bieden.",
+  image: "/images/blog/beste-slimme-deurbel.png",
+  category: "Beveiliging",
+  available: true,
+  datePublished: "2026-04-20",
+
+  related: [
+    "beste-slimme-deurbel",
+    "ring-vs-tapo-deurbel",
+    "slimme-deurbel-uitleg",
+    "eufy-vs-ring-camera",
+  ],
+
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Kan ik een Ring deurbel gebruiken zonder abonnement?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja, maar dan zie je alleen live beelden en krijg je meldingen. Je kunt geen opgenomen video terugkijken zonder Ring Protect abonnement (€3,99/maand per apparaat).",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Welke slimme deurbel heeft de beste lokale opslag?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "De Tapo D235 slaat video op een SD-kaart op zonder verplicht abonnement. De Eufy Video Doorbell gebruikt een HomeBase voor lokale opslag. Beide zijn goede keuzes zonder maandelijkse kosten.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Werkt een slimme deurbel zonder wifi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nee. Alle slimme deurbellen hebben wifi nodig voor meldingen en videotransmissie. Zorg voor een sterk 2.4GHz signaal bij je voordeur.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Hoeveel kost een Ring Protect abonnement per jaar?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ring Protect Basic kost €3,99 per maand per apparaat, oftewel ~€48 per jaar. Ring Protect Plus kost €10 per maand voor onbeperkt apparaten, ~€120 per jaar.",
+        },
+      },
+    ],
+  },
+
+  content: (
+    <>
+      <p className="section-intro">
+        Een slimme deurbel is handig — maar het abonnement dat veel merken
+        vragen maakt het een stuk minder aantrekkelijk. Gelukkig zijn er
+        uitstekende deurbellen die <strong>zonder maandelijkse kosten</strong>{" "}
+        werken en toch video opslaan. Hier zijn de beste opties.
+      </p>
+
+      <h2>Waarom een slimme deurbel zonder abonnement?</h2>
+      <p>
+        De kosten van abonnementen lopen snel op. Een overzicht van wat je
+        betaalt als je wél kiest voor een abonnement:
+      </p>
+      <ul>
+        <li>Ring Protect Basic: €3,99/maand = <strong>€48 per jaar</strong></li>
+        <li>Ring Protect Plus (meerdere apparaten): €10/maand = <strong>€120 per jaar</strong></li>
+        <li>Over 5 jaar: €240–€600 extra bovenop de aanschafprijs</li>
+      </ul>
+      <p>
+        Een deurbel <em>zonder</em> abonnement kost je over 5 jaar nul euro
+        extra voor opslag. Dat verschil is significant.
+      </p>
+
+      <h2>Hoe werkt opslag zonder abonnement?</h2>
+      <p>Er zijn drie manieren om video op te slaan zonder cloud-abonnement:</p>
+      <ul>
+        <li>
+          <strong>SD-kaart:</strong> de deurbel slaat opnames direct op een
+          microSD-kaart op. Goedkoopst, geen terugkerende kosten.
+        </li>
+        <li>
+          <strong>Lokale HomeBase:</strong> Eufy-deurbellen slaan video op via
+          een thuisbasis in huis. Tot 16GB interne opslag, gratis.
+        </li>
+        <li>
+          <strong>HomeKit Secure Video:</strong> Apple-gebruikers kunnen via
+          iCloud opnemen. Inbegrepen bij iCloud+ abonnementen die je toch
+          al betaalt.
+        </li>
+        <li>
+          <strong>NAS of lokale server:</strong> voor gevorderden die Home
+          Assistant gebruiken. Volledige controle, geen abonnementskosten.
+        </li>
+      </ul>
+
+      <h2>De beste deurbellen zonder verplicht abonnement</h2>
+
+      <h3>Tapo D235 — beste keuze voor de meeste mensen</h3>
+      <p>
+        De{" "}
+        <Link href="/producten/tapo-d235">
+          Tapo D235
+        </Link>{" "}
+        biedt 2K+ resolutie, bewegingsdetectie en opslag op SD-kaart — volledig
+        gratis. Geen abonnement, geen cloud verplicht. Je betaalt eenmalig
+        ~€80 en dat is het.
+      </p>
+      <ul>
+        <li>2K+ Full HD beeldkwaliteit</li>
+        <li>SD-kaart opslag (microSD tot 256GB)</li>
+        <li>Kleurnachtzicht</li>
+        <li>Werkt met Google Home en Alexa</li>
+        <li>Optioneel: Tapo Care cloud (~€3/mnd)</li>
+      </ul>
+
+      <h3>Eufy Video Doorbell — beste voor lokale opslag</h3>
+      <p>
+        De Eufy Video Doorbell slaat alle opnames lokaal op via de HomeBase —
+        geen abonnement nodig. 2K beeldkwaliteit, gezichtsherkenning en tot
+        16GB gratis opslag.
+      </p>
+
+      <h3>Reolink Video Doorbell — beste budget bedraade optie</h3>
+      <p>
+        De Reolink deurbel vereist bedrading maar biedt 5MP kwaliteit en
+        lokale opslag via SD-kaart of NVR — volledig gratis. Ideaal als je
+        al een bestaande deurbelbel-bedrading hebt.
+      </p>
+
+      <h3>Aqara Video Doorbell G4 — beste voor Apple-gebruikers</h3>
+      <p>
+        De Aqara G4 ondersteunt Apple HomeKit Secure Video: opnames via je
+        iCloud+-abonnement (dat je toch al betaalt). Geen extra kosten,
+        uitstekende HomeKit-integratie.
+      </p>
+
+      <h2>Deurbellen waarbij je WEL een abonnement nodig hebt</h2>
+      <p>
+        Eerlijkheidshalve: Ring werkt zonder abonnement alleen voor live
+        beelden en meldingen. Wil je opgenomen video terugkijken? Dan is
+        Ring Protect verplicht. Lees de volledige vergelijking in ons artikel{" "}
+        <Link href="/blog/ring-vs-tapo-deurbel">
+          Ring vs Tapo deurbel
+        </Link>
+        .
+      </p>
+      <ul>
+        <li>Ring — live beelden gratis, opname vereist abonnement</li>
+        <li>Nest Doorbell — Google-abonnement nodig voor opnamegeschiedenis</li>
+        <li>SimpliSafe — vereist SafeCam abonnement</li>
+      </ul>
+
+      <h2>Bedraad of accu: wat past bij jou als huurder?</h2>
+      <ul>
+        <li>
+          <strong>Bedraad:</strong> stabielere verbinding, nooit opladen. Ideaal
+          als je al bedrading hebt. Minder geschikt voor huurders.
+        </li>
+        <li>
+          <strong>Accu:</strong> draadloos, makkelijk te installeren met tape
+          of beugel. Opladen elke 1–6 maanden. Ideaal voor huurders.
+        </li>
+      </ul>
+
+      <h2>Installatie zonder elektricien</h2>
+      <p>
+        De meeste accu-deurbellen installeer je in 15 minuten:
+      </p>
+      <ol>
+        <li>Bevestig de houder met tape of schroeven</li>
+        <li>Klik de deurbel in de houder</li>
+        <li>Download de app en verbind met wifi</li>
+        <li>Test de bewegingsdetectie en stel zones in</li>
+      </ol>
+      <p>
+        Meer hulp?{" "}
+        <Link href="/how-to/hoe-installeer-je-een-slimme-deurbel">
+          Lees onze stap-voor-stap handleiding: slimme deurbel installeren
+        </Link>
+        . Alle aanbevelingen vind je in de{" "}
+        <Link href="/aanraders/beste-slimme-deurbel">
+          koopgids beste slimme deurbel
+        </Link>
+        .
+      </p>
+
+      <h2>Veelgestelde vragen: deurbel zonder abonnement</h2>
+      <div className="faq-list">
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Kan ik een Ring deurbel gebruiken zonder abonnement?</h3>
+          <p>
+            Ja, maar dan zie je alleen live beelden. Je kunt geen opgenomen video
+            terugkijken zonder Ring Protect abonnement (€3,99/mnd).
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Welke slimme deurbel heeft de beste lokale opslag?</h3>
+          <p>
+            De Tapo D235 slaat op SD-kaart op zonder abonnement. Eufy gebruikt een
+            HomeBase voor lokale opslag. Beide kosten niets extra na aanschaf.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Werkt een slimme deurbel zonder wifi?</h3>
+          <p>
+            Nee. Alle slimme deurbellen hebben wifi nodig voor meldingen en
+            videotransmissie. Zorg voor een sterk 2.4GHz signaal bij je voordeur.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Hoeveel kost Ring Protect per jaar?</h3>
+          <p>
+            Ring Protect Basic kost €3,99/mnd per apparaat = ~€48 per jaar.
+            Ring Protect Plus ~€10/mnd voor alle apparaten = ~€120 per jaar.
+          </p>
+        </div>
+      </div>
+    </>
+  ),
+},
+
+/* ============================================================
+   BLOG 9: HOMEY UITLEG BEGINNERS
+   ============================================================ */
+{
+  slug: "homey-uitleg-beginners",
+  title: "Homey uitgelegd: de beste smart home hub voor beginners? (2026)",
+  description:
+    "Wat is Homey en is het de juiste hub voor jou? Lees hoe Homey werkt, wat het kost en wanneer Homey de beste keuze is voor jouw smart home.",
+  image: "/images/blog/home-assistant-vs-homey.png",
+  category: "Hubs",
+  available: true,
+  datePublished: "2026-04-20",
+
+  related: [
+    "beste-smart-home-hub",
+    "home-assistant-vs-homey",
+    "homey-bridge-vs-homey-pro",
+    "homey-automatisering-maken",
+  ],
+
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Is Homey geschikt voor beginners?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja. Homey is ontworpen voor gebruikers die een krachtige hub willen zonder technische kennis van Linux of netwerken. De app is intuïtief en de installatie duurt 15 minuten.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Werkt Homey zonder internet?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Homey Pro werkt lokaal ook zonder internetverbinding. De Homey Bridge heeft een actieve internetverbinding nodig voor de meeste functies.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Wat kost Homey?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Homey Bridge kost €69 eenmalig. Homey Pro kost €399 eenmalig, zonder verplicht abonnement. Sommige premium apps kosten extra.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Hoeveel apparaten ondersteunt Homey?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Homey ondersteunt meer dan 50.000 apparaten via duizenden apps in de Homey App Store. Van Philips Hue en Aqara tot Sonos, Nest en IKEA.",
+        },
+      },
+    ],
+  },
+
+  content: (
+    <>
+      <p className="section-intro">
+        Homey is een Nederlandse smart home hub die merken combineert die
+        anders niet met elkaar praten. Of je nu Philips Hue, Tapo, Aqara,
+        Sonos of Nest gebruikt: in Homey komt alles samen in één app met
+        één set automatiseringen. Maar is het ook geschikt voor beginners?
+      </p>
+
+      <h2>Wat is Homey?</h2>
+      <p>
+        Homey is een smart home hub gemaakt door het Nederlandse bedrijf
+        Athom. De hub ondersteunt <strong>meer dan 50.000 apparaten</strong>{" "}
+        van duizenden merken via een eigen App Store. Het unieke: Homey
+        ondersteunt meerdere protocollen tegelijk:
+      </p>
+      <ul>
+        <li>Zigbee — voor Philips Hue, Aqara, IKEA en Sonoff</li>
+        <li>Z-Wave — voor hoogwaardige domotica-apparaten</li>
+        <li>Matter — de nieuwe universele standaard</li>
+        <li>Wifi — voor Tapo, Govee en andere wifi-producten</li>
+        <li>Bluetooth — voor nabije apparaten</li>
+        <li>Infrarood — voor tv{"'"}s en andere IR-apparaten</li>
+      </ul>
+      <p>
+        Dat betekent: je combineert merken die anders nooit samenwerken, in
+        één automatisering. Zie ook:{" "}
+        <Link href="/blog/home-assistant-vs-homey">
+          Homey vs Home Assistant: welke hub past bij jou?
+        </Link>
+      </p>
+
+      <h2>Homey Bridge vs Homey Pro: snel overzicht</h2>
+      <div style={{ overflowX: "auto", marginBottom: "1.5rem" }}>
+        <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.9rem" }}>
+          <thead>
+            <tr style={{ background: "#f1f5f9" }}>
+              {["Eigenschap", "Homey Bridge", "Homey Pro"].map((h) => (
+                <th key={h} style={{ padding: "0.55rem 0.75rem", textAlign: "left", borderBottom: "2px solid #e2e8f0" }}>{h}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ["Prijs", "€69 eenmalig", "€399 eenmalig"],
+              ["Internetvereiste", "Ja", "Nee (lokaal)"],
+              ["Zigbee", "Ja", "Ja"],
+              ["Z-Wave", "Nee", "Ja"],
+              ["Matter", "Ja", "Ja"],
+              ["Automatiseringen", "Beperkt (Homey Cloud)", "Onbeperkt (lokaal)"],
+              ["Snelheid", "Traag via cloud", "Snel (lokaal)"],
+              ["Voor wie?", "Beginners / testen", "Serieuze gebruikers"],
+            ].map((row, i) => (
+              <tr key={i} style={{ background: i % 2 === 1 ? "#f8fafc" : "white" }}>
+                {row.map((cell, j) => (
+                  <td key={j} style={{ padding: "0.45rem 0.75rem", borderBottom: "1px solid #e2e8f0", fontWeight: j === 0 ? 600 : 400 }}>{cell}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Lees de volledige vergelijking:{" "}
+        <Link href="/blog/homey-bridge-vs-homey-pro">
+          Homey Bridge of Homey Pro — wat is de beste keuze?
+        </Link>
+      </p>
+
+      <h2>Hoe stel je Homey in? (stap voor stap)</h2>
+      <ol>
+        <li>Sluit Homey aan op je router via de meegeleverde kabel</li>
+        <li>Download de Homey app op je smartphone</li>
+        <li>Maak een gratis Homey-account aan</li>
+        <li>Volg de setup-wizard — duurt ~15 minuten</li>
+        <li>Installeer apps voor je apparaten uit de Homey App Store</li>
+        <li>Koppel apparaten via de app</li>
+        <li>Maak je eerste Flow (automatisering)</li>
+      </ol>
+
+      <h2>Welke apparaten werken met Homey?</h2>
+      <p>
+        Vrijwel alles wat populair is in smart home werkt met Homey. Een greep:
+      </p>
+      <ul>
+        <li><strong>Verlichting:</strong> Philips Hue, IKEA, Innr, Govee, Tapo</li>
+        <li><strong>Sensoren:</strong> Aqara, Eve, Sonoff, Fibaro</li>
+        <li><strong>Beveiliging:</strong> Ring, Eufy, Aqara deurbellen</li>
+        <li><strong>Audio:</strong> Sonos, Spotify, Google Home speakers</li>
+        <li><strong>Klimaat:</strong> Tado, Netatmo, Google Nest</li>
+        <li><strong>Energie:</strong> HomeWizard, Shelly</li>
+      </ul>
+
+      <h2>Homey Flows: zo maak je automatiseringen</h2>
+      <p>
+        Flows zijn Homey{"'"}s automatiseringen. Ze werken als: <em>als dit
+        gebeurt → dan doe dat</em>. Voorbeelden:
+      </p>
+      <ul>
+        <li>Als bewegingssensor actief EN na zonsondergang → lamp aan op 30%</li>
+        <li>Als je thuiskomt → thermostaat naar 20°C, hal-lamp aan</li>
+        <li>Als je vertrekt → alle lampen uit, slimme stekkers uit</li>
+        <li>Als raam open EN verwarming aan → zet verwarming uit</li>
+      </ul>
+      <p>
+        Leer Flows maken:{" "}
+        <Link href="/how-to/homey-automatisering-maken">
+          stap-voor-stap handleiding Homey automatisering
+        </Link>
+        .
+      </p>
+
+      <h2>Voor wie is Homey de beste keuze?</h2>
+      <ul>
+        <li>Beginners die willen dat alles samenwerkt zonder technisch gedoe</li>
+        <li>Gebruikers met apparaten van meerdere merken</li>
+        <li>Mensen die krachtige automatiseringen willen zonder programmeren</li>
+        <li>Huishoudens die meerdere protocollen willen combineren</li>
+      </ul>
+
+      <h2>Voor wie is Homey minder geschikt?</h2>
+      <ul>
+        <li>
+          <strong>Techneuten en power users:</strong> Home Assistant geeft
+          meer controle, ook al is het complexer
+        </li>
+        <li>
+          <strong>Apple-fans die alles via Siri willen:</strong> Apple HomeKit
+          is naadloos geïntegreerd in het Apple-ecosysteem
+        </li>
+        <li>
+          <strong>Budgetkoppers:</strong> €399 voor Homey Pro is een investering;
+          begin dan met Homey Bridge (€69) om te testen
+        </li>
+      </ul>
+
+      <h2>Kosten: wat betaal je echt?</h2>
+      <ul>
+        <li>Homey Bridge: €69 eenmalig</li>
+        <li>Homey Pro: €399 eenmalig, geen verplicht abonnement</li>
+        <li>Apps: de meeste zijn gratis, enkele premium apps kosten €1–€5</li>
+        <li>Geen Cloud-abonnement nodig bij Homey Pro</li>
+      </ul>
+      <p>
+        Vergelijk Homey met andere hubs in de{" "}
+        <Link href="/aanraders/beste-smart-home-hub">
+          koopgids beste smart home hub (2026)
+        </Link>
+        .
+      </p>
+
+      <h2>Veelgestelde vragen over Homey</h2>
+      <div className="faq-list">
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Is Homey geschikt voor beginners?</h3>
+          <p>
+            Ja. Homey is ontworpen voor gebruikers zonder technische kennis van
+            Linux of netwerken. De app is intuïtief en de installatie duurt
+            ~15 minuten.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Werkt Homey zonder internet?</h3>
+          <p>
+            Homey Pro werkt lokaal ook zonder internet. De Homey Bridge heeft een
+            actieve internetverbinding nodig voor de meeste functies.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Wat kost Homey?</h3>
+          <p>
+            Homey Bridge €69 eenmalig. Homey Pro €399 eenmalig, zonder verplicht
+            abonnement. Sommige premium apps kosten extra (€1–€5).
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Hoeveel apparaten ondersteunt Homey?</h3>
+          <p>
+            Meer dan 50.000 apparaten via duizenden apps in de Homey App Store.
+            Van Philips Hue en Aqara tot Sonos, Nest en IKEA.
+          </p>
+        </div>
+      </div>
+    </>
+  ),
+},
+
+/* ============================================================
+   BLOG 10: SLIMME STEKKER ENERGIEBESPARING
+   ============================================================ */
+{
+  slug: "slimme-stekker-energiebesparing",
+  title: "Slimme stekker voor energiebesparing: hoeveel bespaar je echt? (2026)",
+  description:
+    "Kun je echt geld besparen met een slimme stekker? We laten zien hoeveel standby-verbruik kost en wat een slimme stekker met energiemeting oplevert.",
+  image: "/images/blog/smart-home-energiebesparing.png",
+  category: "Energie",
+  available: true,
+  datePublished: "2026-04-20",
+
+  related: [
+    "beste-slimme-stekkers",
+    "smart-home-energiebesparing",
+    "p1-meter-uitleg",
+  ],
+
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Hoeveel bespaar je met een slimme stekker?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Dat hangt af van welke apparaten je aansluit. Bij een TV met 8W standby bespaar je ~€8/jaar per apparaat. Bij meerdere apparaten kan dat oplopen tot €40–80 per jaar.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Welke slimme stekker meet het meest nauwkeurig?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "De Tapo P115 en Shelly Plug S zijn beiden nauwkeurig in energiemeting. De Tapo P115 is eenvoudiger te installeren, de Shelly is flexibeler voor Home Assistant gebruikers.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Werkt een slimme stekker met elk stopcontact?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja, slimme stekkers werken in elk standaard Nederlands stopcontact (Type F, Schuko). Let op het maximale vermogen — de meeste stekkers zijn geschikt tot 2300W (10A).",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Hoe snel verdien je een slimme stekker terug?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "De Tapo P115 kost ~€13. Bij een besparing van €30 per jaar verdien je hem in ~5 maanden terug. Bij minder verbruikende apparaten duurt het langer.",
+        },
+      },
+    ],
+  },
+
+  content: (
+    <>
+      <p className="section-intro">
+        Slimme stekkers zijn goedkoop, maar leveren ze ook echt iets op?
+        Ja — als je ze slim inzet. In dit artikel rekenen we eerlijk door
+        hoeveel standby-verbruik kost, welke stekkers het beste meten en
+        hoe snel je de investering terugverdient.
+      </p>
+
+      <h2>Wat kost standby verbruik echt?</h2>
+      <p>
+        Elk apparaat dat aan het stopcontact zit maar niet actief gebruikt
+        wordt, verbruikt stroom. Dit heet standby- of sluimerverbruik. Een
+        paar voorbeelden bij een stroomprijs van ~€0,30/kWh:
+      </p>
+      <div style={{ overflowX: "auto", marginBottom: "1.5rem" }}>
+        <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.9rem" }}>
+          <thead>
+            <tr style={{ background: "#f1f5f9" }}>
+              {["Apparaat", "Standby watt", "Kosten per jaar"].map((h) => (
+                <th key={h} style={{ padding: "0.55rem 0.75rem", textAlign: "left", borderBottom: "2px solid #e2e8f0" }}>{h}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ["Televisie", "3–8W", "€8–€21"],
+              ["Spelcomputer (PS5/Xbox)", "1–2W", "€3–€5"],
+              ["Router / modem", "8–12W", "€21–€32"],
+              ["Magnetron", "2–4W", "€5–€11"],
+              ["Opladers (telefoon, laptop)", "0.5–2W", "€1–€5"],
+              ["Wasdroger (standby)", "5–10W", "€13–€26"],
+              ["Audio-installatie", "5–15W", "€13–€39"],
+            ].map((row, i) => (
+              <tr key={i} style={{ background: i % 2 === 1 ? "#f8fafc" : "white" }}>
+                {row.map((cell, j) => (
+                  <td key={j} style={{ padding: "0.45rem 0.75rem", borderBottom: "1px solid #e2e8f0", fontWeight: j === 0 ? 600 : 400 }}>{cell}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Tel je dat op voor een gemiddeld huishouden, dan komt standby-verbruik
+        al snel uit op <strong>€50–€100 per jaar</strong>. Slimme stekkers
+        kunnen dit terugbrengen naar bijna nul.
+      </p>
+
+      <h2>Hoe meet je energieverbruik met een slimme stekker?</h2>
+      <p>
+        Een slimme stekker <em>met energiemeting</em> (niet elke slimme stekker
+        heeft dit!) meet het stroomverbruik in real-time. In de app zie je:
+      </p>
+      <ul>
+        <li>Huidig verbruik in watt</li>
+        <li>Totaal verbruik per dag, week en maand</li>
+        <li>Geschatte energiekosten in euro{"'"}s</li>
+        <li>Historische grafieken</li>
+      </ul>
+      <p>
+        Zo ontdek je precies welke apparaten de grootste energieslokkers zijn
+        en waar je het meeste kunt besparen.
+      </p>
+
+      <h2>De beste slimme stekkers met energiemeting</h2>
+
+      <h3>Tapo P115 — beste keuze voor de meeste mensen</h3>
+      <p>
+        De{" "}
+        <Link href="/producten/tapo-p115">
+          Tapo P115
+        </Link>{" "}
+        (~€13) is de beste prijs-kwaliteitsoptie. Wifi, directe setup via de
+        Tapo-app en nauwkeurige energiemeting tot 0.1W. Geen hub nodig.
+      </p>
+      <ul>
+        <li>Nauwkeurige energiemeting in real-time</li>
+        <li>Historische data per dag/week/maand</li>
+        <li>Schema{"'"}s en timers instellen</li>
+        <li>Werkt met Alexa en Google Home</li>
+        <li>Max. 2300W (10A)</li>
+      </ul>
+
+      <h3>Shelly Plug S — beste voor Home Assistant</h3>
+      <p>
+        De Shelly Plug S (~€15) is de keuze voor technisch ingestelde gebruikers
+        die Home Assistant gebruiken. Werkt lokaal via MQTT of de Shelly API —
+        geen cloud verplicht. Uitstekende nauwkeurigheid.
+      </p>
+
+      <h3>Nous A1T — beste Zigbee stekker met meting</h3>
+      <p>
+        De Nous A1T (~€12) is een Zigbee-variant met energiemeting. Ideaal als
+        je al een Zigbee-hub hebt en alles in één systeem wilt beheren.
+      </p>
+
+      <h2>Welke apparaten leveren de meeste besparing?</h2>
+      <p>
+        Niet elk apparaat levert evenveel op. De beste kandidaten voor een
+        slimme stekker:
+      </p>
+      <ul>
+        <li>
+          <strong>Wasdroger:</strong> 5–10W standby, vergeet je vaak te
+          ontkoppelen. Automatisch uit na gebruik.
+        </li>
+        <li>
+          <strong>Spelcomputer:</strong> PS5 en Xbox verbruiken 1–2W standby,
+          maar bij rest-modus tot 60W. Zet hem écht uit.
+        </li>
+        <li>
+          <strong>Televisie + soundbar:</strong> samen 8–15W standby. Op schema
+          uitschakelen na middernacht bespaart structureel.
+        </li>
+        <li>
+          <strong>Thuiswerken setup:</strong> monitor, speakers, docking station
+          — 20–40W standby als je ze laat aanstaan.
+        </li>
+      </ul>
+
+      <h2>Schema{"'"}s instellen: zo zet je apparaten automatisch uit</h2>
+      <p>
+        In de Tapo-app stel je eenvoudig in wanneer de stekker aan of uit gaat:
+      </p>
+      <ol>
+        <li>Open de Tapo app en ga naar het apparaat</li>
+        <li>Kies "Schema" en voeg een nieuw schema toe</li>
+        <li>Stel "uit" in op 23:00 en "aan" op 07:00</li>
+        <li>Herhaal voor alle actieve dagen</li>
+      </ol>
+      <p>
+        Zo staat je televisie elke nacht automatisch écht uit — zonder dat je
+        er aan hoeft te denken.
+      </p>
+
+      <h2>Terugverdientijd berekenen</h2>
+      <p>
+        Een simpele rekensom voor de Tapo P115 op een televisie:
+      </p>
+      <ul>
+        <li>Aanschafprijs stekker: €13</li>
+        <li>TV standby: 6W × 8 uur per dag = 0.048 kWh/dag</li>
+        <li>Per jaar: 0.048 × 365 = 17.5 kWh</li>
+        <li>Kosten per jaar: 17.5 × €0.30 = <strong>€5.25 besparing</strong></li>
+        <li>Terugverdientijd: 13 / 5.25 = <strong>~2.5 jaar</strong></li>
+      </ul>
+      <p>
+        Bij een apparaat met hoger standby-verbruik (wasdroger, spelcomputer)
+        verdien je de stekker al in <strong>3–6 maanden</strong> terug.
+      </p>
+
+      <h2>Slimme stekker combineren met P1-meter</h2>
+      <p>
+        Wil je het grote plaatje zien? Combineer je slimme stekkers met een
+        P1-meter — een apparaat dat je totale energieverbruik vanuit de
+        meterkast uitleest. Lees meer in ons artikel:{" "}
+        <Link href="/blog/p1-meter-uitleg">
+          wat is een P1-meter en hoe werkt het?
+        </Link>
+        . Alle aanbevelingen vind je in de{" "}
+        <Link href="/aanraders/beste-slimme-stekkers">
+          koopgids beste slimme stekkers (2026)
+        </Link>
+        .
+      </p>
+
+      <h2>Veelgestelde vragen: slimme stekker en energiebesparing</h2>
+      <div className="faq-list">
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Hoeveel bespaar je met een slimme stekker?</h3>
+          <p>
+            Bij een TV met 8W standby bespaar je ~€8/jaar. Bij meerdere apparaten
+            kan dat oplopen tot €40–80 per jaar. Hangt sterk af van de apparaten
+            die je aansluit.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Welke slimme stekker meet het meest nauwkeurig?</h3>
+          <p>
+            De Tapo P115 en Shelly Plug S zijn beiden nauwkeurig. Tapo is
+            eenvoudiger; Shelly is flexibeler voor Home Assistant.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Werkt een slimme stekker met elk stopcontact?</h3>
+          <p>
+            Ja, in elk standaard Nederlands stopcontact (Type F, Schuko). Let op
+            het maximale vermogen — de meeste stekkers gaan tot 2300W (10A).
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Hoe snel verdien je een slimme stekker terug?</h3>
+          <p>
+            De Tapo P115 kost ~€13. Bij €30 besparing per jaar is de
+            terugverdientijd ~5 maanden. Bij weinig standby-verbruik langer.
+          </p>
+        </div>
+      </div>
+    </>
+  ),
+},
 ];
