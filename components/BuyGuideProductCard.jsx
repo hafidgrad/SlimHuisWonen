@@ -84,7 +84,7 @@ export default function BuyGuideProductCard({
               className="btn btn-bol product-btn"
               style={{ fontSize: "0.88rem", padding: "0.55rem 1rem", whiteSpace: "nowrap" }}
             >
-              Bekijk op bol.com
+              🔒 Bestellen via bol.com
             </a>
           )}
 
@@ -96,7 +96,7 @@ export default function BuyGuideProductCard({
               className="btn btn-coolblue product-btn"
               style={{ fontSize: "0.88rem", padding: "0.55rem 1rem", whiteSpace: "nowrap" }}
             >
-              Bekijk op Coolblue
+              🔒 Bestellen via Coolblue
             </a>
           )}
 
@@ -108,7 +108,7 @@ export default function BuyGuideProductCard({
               className="btn btn-amazon product-btn"
               style={{ fontSize: "0.88rem", padding: "0.55rem 1rem", whiteSpace: "nowrap" }}
             >
-              Bekijk op Amazon
+              🔒 Bestellen via Amazon
             </a>
           )}
 
@@ -122,6 +122,10 @@ export default function BuyGuideProductCard({
         </div>
 
         {[bolUrl, coolblueUrl, amazonUrl].filter(Boolean).length >= 2 && <PrijsDisclaimer />}
+
+        <p style={{ margin: "0.35rem 0 0", fontSize: "0.72rem", opacity: 0.4 }}>
+          Laatste prijs check: april 2026
+        </p>
       </div>
     </article>
   );

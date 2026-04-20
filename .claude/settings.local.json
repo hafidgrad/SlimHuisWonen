@@ -48,7 +48,8 @@
       "Bash(rm -rf .next)",
       "Bash(curl -s http://localhost:3000/aanraders/beste-slimme-camera)",
       "Bash(curl -s http://localhost:3000)",
-      "Bash(curl -s http://localhost:3000/blog/wat-is-zigbee)"
+      "Bash(curl -s http://localhost:3000/blog/wat-is-zigbee)",
+      "Bash(curl -s http://localhost:3000/googleb635c334772d5291.html)"
     ]
   }
 }

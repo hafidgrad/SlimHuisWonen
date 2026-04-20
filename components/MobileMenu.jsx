@@ -17,18 +17,19 @@ export default function MobileMenu() {
         {open ? "✕" : "☰"}
       </button>
 
-      {open && (
-        <nav className="mobile-nav" onClick={() => setOpen(false)}>
-          <Link href="/over">Over</Link>
-          <Link href="/#categorieen">Categorieën</Link>
-          <Link href="/aanraders">Koopgidsen</Link>
-          <Link href="/tips">Tips & uitleg</Link>
-          <Link href="/how-to">How To</Link>
-          <Link href="/blog">Blog</Link>
-          <Link href="/contact">Contact</Link>
-          <Link href="/producten" className="nav-highlight">Producten</Link>
-        </nav>
-      )}
+      <nav
+        className={`mobile-nav${open ? " open" : ""}`}
+        onClick={() => setOpen(false)}
+      >
+        <Link href="/over">Over</Link>
+        <Link href="/#categorieen">Categorieën</Link>
+        <Link href="/aanraders">Koopgidsen</Link>
+        <Link href="/tips">Tips & uitleg</Link>
+        <Link href="/how-to">How To</Link>
+        <Link href="/blog">Blog</Link>
+        <Link href="/contact">Contact</Link>
+        <Link href="/producten" className="nav-highlight">Producten</Link>
+      </nav>
     </>
   );
 }

@@ -613,6 +613,41 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* ================= ALLE KOOPGIDSEN ================= */}
+        <section className="section" id="alle-koopgidsen">
+          <div className="container">
+            <h2>Alle koopgidsen</h2>
+            <p className="section-intro">
+              Onafhankelijke aanraders voor elke categorie — bijgewerkt april 2026.
+            </p>
+            <div className="grid-3">
+              {[
+                { slug: "beste-slimme-camera", title: "Beste slimme camera" },
+                { slug: "beste-slimme-deurbel", title: "Beste slimme deurbel" },
+                { slug: "beste-slimme-sensoren", title: "Beste slimme sensoren" },
+                { slug: "beste-slimme-verlichting", title: "Beste slimme verlichting" },
+                { slug: "beste-smart-home-hub", title: "Beste smart home hub" },
+                { slug: "beste-slimme-stekkers", title: "Beste slimme stekkers" },
+                { slug: "beste-slimme-thermostaat", title: "Beste slimme thermostaat" },
+                { slug: "beste-slimme-bewegingssensor", title: "Beste slimme bewegingssensor" },
+                { slug: "beste-mesh-wifi-systeem", title: "Beste mesh wifi systeem" },
+                { slug: "beste-slimme-slot", title: "Beste slimme deurslot" },
+                { slug: "beste-energie-monitor", title: "Beste slimme energiemeter" },
+                { slug: "beste-slimme-radiatorkraan", title: "Beste slimme radiatorkraan" },
+                { slug: "beste-slimme-producten-voor-huisdieren", title: "Smart home voor huisdieren" },
+                { slug: "beste-slimme-producten-voor-kinderen", title: "Smart home voor kinderen" },
+                { slug: "beste-smart-home-huurwoning", title: "Smart home voor huurwoning" },
+                { slug: "goedkoopste-smart-home-beginners", title: "Goedkoop smart home beginnen" },
+              ].map(({ slug, title }) => (
+                <Link key={slug} href={`/aanraders/${slug}`} className="card">
+                  <h3>{title}</h3>
+                  <span>Bekijk koopgids →</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* ================= OVER ================= */}
         <About />
 

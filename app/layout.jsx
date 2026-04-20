@@ -12,7 +12,7 @@ export const metadata = {
     "Maak je huis slimmer met duidelijke uitleg, tips en aanbevelingen voor slimme verlichting, sensoren, deurbellen, camera’s en meer.",
 
   verification: {
-    google: "0aNFzCIK8siKRIfCTQ2Ew7jkCKlw3GRKcz31o7dS6hY",
+    google: ["0aNFzCIK8siKRIfCTQ2Ew7jkCKlw3GRKcz31o7dS6hY", "b635c334772d5291"],
   },
 
   openGraph: {

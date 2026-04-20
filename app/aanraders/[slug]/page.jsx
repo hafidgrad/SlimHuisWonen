@@ -309,6 +309,14 @@ export default function AanraderDetailPage({ params }) {
             gebruikssituatie.
           </p>
 
+          <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", marginBottom: "1rem" }}>
+            {["✓ Onafhankelijk getest", "✓ Geen gesponsorde aanbevelingen", "✓ Bijgewerkt april 2026"].map((label) => (
+              <span key={label} style={{ fontSize: "0.82rem", background: "#f0fdf4", color: "#166534", border: "1px solid #bbf7d0", borderRadius: "999px", padding: "0.25rem 0.75rem" }}>
+                {label}
+              </span>
+            ))}
+          </div>
+
           <div style={{ display: "grid", gap: "1rem", marginTop: "1rem" }}>
             {enrichedPicks.map((pick) => (
               <BuyGuideProductCard key={pick.title} {...pick} />
