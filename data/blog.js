@@ -6576,4 +6576,752 @@ export const blogPosts = [
     </>
   ),
 },
+
+// ✅ Protocollen
+{
+  slug: "matter-vs-zigbee",
+  title: "Matter vs Zigbee: wat is het verschil en wat kies je in 2026?",
+  description:
+    "Matter en Zigbee zijn beide populaire smart home protocollen, maar ze werken heel anders. Lees de vergelijking en ontdek wat jij nodig hebt.",
+  image: "/images/blog/zigbee-vs-zwave-vs-matter-vs-wifi.png",
+  category: "Protocollen",
+  available: true,
+  datePublished: "2026-04-20",
+
+  related: [
+    "wat-is-matter",
+    "wat-is-zigbee",
+    "zigbee-vs-zwave-vs-matter-vs-wifi",
+    "wat-is-thread",
+    "beste-smart-home-hub",
+  ],
+
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Vervangt Matter Zigbee?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nee, Matter vervangt Zigbee niet volledig. Veel Zigbee-apparaten worden via een hub (zoals Hue Bridge of Homey) onderdeel van een Matter-netwerk. Zigbee blijft populair door zijn lage prijs en groot aanbod.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Zijn Zigbee-apparaten compatibel met Matter?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Niet rechtstreeks. Zigbee-apparaten communiceren via een hub die Matter ondersteunt. Sommige hubs (zoals Aqara M2) fungeren als Matter-brug voor bestaande Zigbee-apparaten.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Welk protocol is goedkoper: Matter of Zigbee?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Zigbee-apparaten zijn gemiddeld goedkoper. Matter-gecertificeerde apparaten hebben meer overhead in de chip, waardoor de prijs iets hoger ligt. Voor grote installaties is Zigbee vaak kostenefficiënter.",
+        },
+      },
+    ],
+  },
+
+  content: (
+    <>
+      <p>
+        Twee namen die je steeds vaker tegenkomt als je smart home apparaten vergelijkt:
+        <strong> Matter</strong> en <strong>Zigbee</strong>. Beide zijn draadloze protocollen,
+        maar ze werken fundamenteel anders. In dit artikel leg ik het verschil uit en help ik je
+        kiezen welk protocol het beste bij jouw situatie past.
+      </p>
+
+      <h2>Wat is Zigbee?</h2>
+      <p>
+        Zigbee is een draadloos protocol dat al jaren gebruikt wordt in smart home apparaten van
+        merken als Philips Hue, IKEA TRÅDFRI en Aqara. Het werkt op 2.4 GHz en bouwt een{" "}
+        <strong>mesh-netwerk</strong>: apparaten versterken elkaars signaal. Je hebt wel een{" "}
+        <strong>hub of bridge</strong> nodig.
+      </p>
+      <p>
+        Meer over Zigbee lees je in{" "}
+        <Link href="/blog/wat-is-zigbee">ons uitgebreide Zigbee-artikel</Link>.
+      </p>
+
+      <h2>Wat is Matter?</h2>
+      <p>
+        Matter is een nieuwer, open standaard protocol dat in 2022 werd gelanceerd door de
+        Connectivity Standards Alliance. Het doel: apparaten van verschillende merken laten
+        samenwerken zonder extra hubs. Matter werkt via <strong>Thread</strong> (mesh) of{" "}
+        <strong>WiFi</strong> en vereist een Matter-controller (bijv. Apple HomePod mini, Google
+        Nest Hub of Amazon Echo).
+      </p>
+      <p>
+        Meer over Matter lees je in <Link href="/blog/wat-is-matter">ons Matter-artikel</Link>.
+      </p>
+
+      <h2>Vergelijkingstabel: Matter vs Zigbee</h2>
+      <div style={{ overflowX: "auto", marginBottom: "1.5rem" }}>
+        <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
+          <thead>
+            <tr style={{ background: "rgba(255,255,255,0.05)" }}>
+              <th style={{ padding: "0.75rem", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>Kenmerk</th>
+              <th style={{ padding: "0.75rem", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>Matter</th>
+              <th style={{ padding: "0.75rem", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>Zigbee</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ["Hub nodig?", "Nee (of Matter-controller)", "Ja, altijd"],
+              ["Prijs apparaten", "Iets hoger", "Laag tot gemiddeld"],
+              ["Stabiliteit", "Goed (via Thread)", "Zeer goed (mesh)"],
+              ["Ecosysteem", "Apple/Google/Amazon/Samsung", "Philips/IKEA/Aqara/Tuya"],
+              ["Offline werking", "Ja (bij Thread)", "Ja (bij goede hub)"],
+              ["Toekomstbestendig", "Zeer hoog", "Hoog, maar ouder"],
+            ].map(([k, m, z]) => (
+              <tr key={k} style={{ borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
+                <td style={{ padding: "0.65rem 0.75rem", fontWeight: 500 }}>{k}</td>
+                <td style={{ padding: "0.65rem 0.75rem" }}>{m}</td>
+                <td style={{ padding: "0.65rem 0.75rem" }}>{z}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Wanneer kies je voor Matter?</h2>
+      <ul>
+        <li>Je wilt apparaten van meerdere merken probleemloos combineren</li>
+        <li>Je gebruikt Apple Home, Google Home of Amazon Alexa als platform</li>
+        <li>Je start <em>nu</em> met smart home en wilt toekomstbestendig bouwen</li>
+        <li>Je hebt geen zin in een extra hub</li>
+      </ul>
+
+      <h2>Wanneer kies je voor Zigbee?</h2>
+      <ul>
+        <li>Je hebt al een Philips Hue Bridge, IKEA hub of Aqara M2</li>
+        <li>Je wilt goedkope sensoren en lampen (Aqara, IKEA, Tuya)</li>
+        <li>Je gebruikt Home Assistant of Homey — beide ondersteunen Zigbee uitstekend</li>
+        <li>Je bouwt een groot netwerk: Zigbee mesh is zeer stabiel</li>
+      </ul>
+
+      <h2>Kunnen Matter en Zigbee samenwerken?</h2>
+      <p>
+        Ja, via een Matter-brug. Hubs zoals de <strong>Aqara M2</strong> en{" "}
+        <strong>Philips Hue Bridge v2</strong> ondersteunen Matter-bridging: jouw Zigbee-apparaten
+        verschijnen automatisch in Apple Home, Google Home of Amazon Alexa. Je hebt het beste van
+        beide werelden.
+      </p>
+      <p>
+        Bekijk onze <Link href="/aanraders/beste-smart-home-hub">beste smart home hubs</Link> voor
+        hubs die Matter én Zigbee combineren.
+      </p>
+
+      <h2>Conclusie</h2>
+      <p>
+        Matter is de toekomst, maar Zigbee is nog lang niet dood. Voor nieuwe installaties is
+        Matter een slimme keuze — zeker als je Apple, Google of Amazon gebruikt. Bestaande
+        Zigbee-ecosystemen hoef je niet te vervangen: via bridging integreer je ze naadloos in een
+        Matter-setup.
+      </p>
+
+      <div style={{ marginTop: "2rem" }}>
+        <h2>Veelgestelde vragen</h2>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Vervangt Matter Zigbee?</h3>
+          <p>
+            Nee. Matter vervangt Zigbee niet volledig. Veel Zigbee-apparaten worden via een hub
+            onderdeel van een Matter-netwerk. Zigbee blijft populair door zijn lage prijs en groot
+            aanbod.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Zijn Zigbee-apparaten compatibel met Matter?</h3>
+          <p>
+            Niet rechtstreeks. Zigbee-apparaten communiceren via een hub die Matter ondersteunt.
+            Sommige hubs (zoals Aqara M2) fungeren als Matter-brug voor bestaande Zigbee-apparaten.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Welk protocol is goedkoper?</h3>
+          <p>
+            Zigbee-apparaten zijn gemiddeld goedkoper. Matter-gecertificeerde apparaten hebben meer
+            overhead in de chip, waardoor de prijs iets hoger ligt.
+          </p>
+        </div>
+      </div>
+    </>
+  ),
+},
+
+// ✅ Energie
+{
+  slug: "slimme-thermostaat-besparing",
+  title: "Hoeveel bespaar je met een slimme thermostaat? (rekenvoorbeelden 2026)",
+  description:
+    "Een slimme thermostaat belooft flinke energiebesparing. Maar klopt dat? Met echte rekenvoorbeelden laten we zien hoeveel je kunt besparen in 2026.",
+  image: "/images/blog/beste-slimme-thermostaat.png",
+  category: "Energie",
+  available: true,
+  datePublished: "2026-04-20",
+
+  related: [
+    "beste-slimme-thermostaat",
+    "tado-vs-netatmo",
+    "slimme-stekker-energiebesparing",
+  ],
+
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Hoeveel bespaar je met een slimme thermostaat?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Gemiddeld bespaar je €200 tot €400 per jaar, afhankelijk van je huidige verbruik en hoe goed je de thermostaat instelt. Geofencing en nachtschema's leveren de meeste besparing op.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Hoe snel verdien je een slimme thermostaat terug?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Bij een aanschafprijs van €150-200 en een besparing van €200-400 per jaar verdien je de thermostaat binnen 6 tot 12 maanden terug.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Welke slimme thermostaat bespaart het meest?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tado en Netatmo worden het vaakst genoemd als koplopers qua besparing, dankzij geofencing en slimme schema's. Tado heeft ook een optioneel abonnement voor extra functies.",
+        },
+      },
+    ],
+  },
+
+  content: (
+    <>
+      <p>
+        Fabrikanten beloven tot 31% energiebesparing met een slimme thermostaat. Maar wat betekent
+        dat in euro's? En klopt die belofte ook in de praktijk? In dit artikel maak ik concrete
+        rekenvoorbeelden zodat je precies weet wat je kunt verwachten.
+      </p>
+
+      <h2>Waarom bespaart een slimme thermostaat?</h2>
+      <p>Een slimme thermostaat bespaart op drie manieren:</p>
+      <ol>
+        <li>
+          <strong>Geofencing</strong>: de verwarming gaat automatisch lager als je het huis verlaat
+          en terug omhoog als je terugkomt
+        </li>
+        <li>
+          <strong>Nacht- en weekendschema's</strong>: 's nachts en overdag (als je weg bent)
+          automatisch lager
+        </li>
+        <li>
+          <strong>Weercompensatie</strong>: de thermostaat past de stooktemperatuur aan op basis van
+          de buitentemperatuur
+        </li>
+      </ol>
+
+      <h2>Rekenvoorbeeld 1: geofencing</h2>
+      <p>
+        Stel: je verlaat het huis gemiddeld 8 uur per dag, 5 dagen per week. Zonder slimme
+        thermostaat stookt je CV door op 20°C. Met geofencing zakt de temperatuur naar 16°C.
+      </p>
+      <ul>
+        <li>Temperatuurverschil: 4°C</li>
+        <li>Vuistregel: 1°C minder = ~6% lager gasverbruik</li>
+        <li>4°C × 6% = ~24% minder verbruik tijdens afwezigheid</li>
+        <li>Afwezigheid: 8 uur/dag × 5 dagen = 40 uur/week = ~25% van de week</li>
+        <li>
+          Totale besparing op jaarbasis: 24% × 25% = ~6% op totale gasrekening van ~€1.400 ={" "}
+          <strong>€80-120 per jaar</strong>
+        </li>
+      </ul>
+
+      <h2>Rekenvoorbeeld 2: nacht- en dagschema</h2>
+      <p>
+        Stel: je verlaagt de temperatuur 's nachts (8 uur, van 22:00 tot 06:00) van 20°C naar 16°C.
+      </p>
+      <ul>
+        <li>Temperatuurverschil: 4°C → ~24% minder</li>
+        <li>8 uur is 33% van de dag</li>
+        <li>
+          Besparing: 24% × 33% = ~8% op totale gasrekening = <strong>€100-150 per jaar</strong>
+        </li>
+      </ul>
+
+      <h2>Gecombineerde besparing</h2>
+      <p>
+        Als je geofencing én nachtschema combineert (en de thermostaat ook goed instelt op
+        weercompensatie), kom je uit op:
+      </p>
+      <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "12px", padding: "1rem", marginBottom: "1.25rem" }}>
+        <p style={{ margin: 0, fontWeight: 600 }}>Totale geschatte besparing: €200 – €400 per jaar</p>
+        <p style={{ margin: "0.35rem 0 0", opacity: 0.7, fontSize: "0.9rem" }}>
+          Afhankelijk van huidig verbruik, isolatie, gezinsgrootte en instellingen
+        </p>
+      </div>
+
+      <h2>Terugverdientijd</h2>
+      <div style={{ overflowX: "auto", marginBottom: "1.5rem" }}>
+        <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
+          <thead>
+            <tr style={{ background: "rgba(255,255,255,0.05)" }}>
+              <th style={{ padding: "0.75rem", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>Thermostaat</th>
+              <th style={{ padding: "0.75rem", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>Prijs</th>
+              <th style={{ padding: "0.75rem", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>Besparing/jaar</th>
+              <th style={{ padding: "0.75rem", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>Terugverdientijd</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ["Tado Smart Thermostat V3+", "~€150", "€200-350", "5-9 maanden"],
+              ["Netatmo Smart Thermostat", "~€130", "€180-320", "5-9 maanden"],
+              ["Google Nest Thermostat", "~€120", "€150-300", "5-10 maanden"],
+            ].map(([name, price, save, time]) => (
+              <tr key={name} style={{ borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
+                <td style={{ padding: "0.65rem 0.75rem" }}>{name}</td>
+                <td style={{ padding: "0.65rem 0.75rem" }}>{price}</td>
+                <td style={{ padding: "0.65rem 0.75rem" }}>{save}</td>
+                <td style={{ padding: "0.65rem 0.75rem" }}>{time}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        Bekijk onze volledige vergelijking in{" "}
+        <Link href="/aanraders/beste-slimme-thermostaat">beste slimme thermostaat 2026</Link> of
+        lees de <Link href="/blog/tado-vs-netatmo">Tado vs Netatmo vergelijking</Link>.
+      </p>
+
+      <h2>Tips om maximaal te besparen</h2>
+      <ul>
+        <li>
+          <strong>Stel geofencing in op alle gezinsleden</strong> — één telefoon is niet genoeg
+        </li>
+        <li>
+          <strong>Verlaag de nachttemperatuur naar 15-16°C</strong> — comfortabel genoeg, maar
+          significant goedkoper
+        </li>
+        <li>
+          <strong>Gebruik de app actief</strong> — controleer je energierapport maandelijks
+        </li>
+        <li>
+          <strong>Combineer met radiatorknopppen</strong> — per kamer regelen geeft extra besparing
+        </li>
+      </ul>
+
+      <div style={{ marginTop: "2rem" }}>
+        <h2>Veelgestelde vragen</h2>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Hoeveel bespaar je met een slimme thermostaat?</h3>
+          <p>
+            Gemiddeld €200 tot €400 per jaar, afhankelijk van huidig verbruik en hoe goed je de
+            thermostaat instelt.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Hoe snel verdien je een slimme thermostaat terug?</h3>
+          <p>
+            Bij een aanschafprijs van €130-200 en een besparing van €200-400 per jaar verdien je
+            de thermostaat binnen 6 tot 12 maanden terug.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Welke slimme thermostaat bespaart het meest?</h3>
+          <p>
+            Tado en Netatmo worden het vaakst genoemd als koplopers qua besparing, dankzij
+            geofencing en slimme schema's.
+          </p>
+        </div>
+      </div>
+    </>
+  ),
+},
+
+// ✅ Merken
+{
+  slug: "aqara-vs-philips-hue-sensoren",
+  title: "Aqara vs Philips Hue sensoren (2026): welke Zigbee sensoren zijn beter?",
+  description:
+    "Aqara of Philips Hue sensoren? We vergelijken prijs, nauwkeurigheid, batterijduur en compatibiliteit van de populairste Zigbee bewegingssensoren.",
+  image: "/images/blog/aqara-vs-tapo.png",
+  category: "Merken",
+  available: true,
+  datePublished: "2026-04-20",
+
+  related: [
+    "beste-slimme-sensoren",
+    "aqara-vs-tapo",
+  ],
+
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Zijn Aqara sensoren compatibel met Philips Hue?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Niet via de officiële Philips Hue app. Maar via Home Assistant of Homey kun je Aqara en Philips Hue sensoren prima combineren in dezelfde automatiseringen.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Welke bewegingssensor reageert het snelst?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "De Aqara FP2 (mmWave radar) reageert het snelst en detecteert ook aanwezigheid zonder beweging. De Philips Hue Motion Sensor heeft een reactietijd van ~1 seconde.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Heb ik een hub nodig voor Aqara sensoren?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Voor Zigbee Aqara sensoren heb je een Aqara hub nodig, of je gebruikt ze via Home Assistant met een Zigbee USB-adapter. De Aqara FP2 werkt via WiFi zonder hub.",
+        },
+      },
+    ],
+  },
+
+  content: (
+    <>
+      <p>
+        Aqara en Philips Hue zijn twee van de populairste merken voor smart home sensoren. Beide
+        gebruiken Zigbee, maar de aanpak verschilt enorm: Aqara focust op lage prijs en breed
+        aanbod, Philips Hue op naadloze integratie met hun eigen ecosysteem. Welk merk past beter
+        bij jou?
+      </p>
+
+      <h2>Vergelijkingstabel: Aqara vs Philips Hue sensoren</h2>
+      <div style={{ overflowX: "auto", marginBottom: "1.5rem" }}>
+        <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
+          <thead>
+            <tr style={{ background: "rgba(255,255,255,0.05)" }}>
+              <th style={{ padding: "0.75rem", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>Kenmerk</th>
+              <th style={{ padding: "0.75rem", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>Aqara</th>
+              <th style={{ padding: "0.75rem", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>Philips Hue</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ["Bewegingssensor prijs", "~€15-20", "~€35-40"],
+              ["Deurcontact prijs", "~€10-13", "~€25-30"],
+              ["Hub nodig?", "Ja (Aqara hub of HA)", "Ja (Hue Bridge)"],
+              ["Matter-ondersteuning", "Ja (via hub)", "Ja (via bridge)"],
+              ["Home Assistant", "Uitstekend", "Goed"],
+              ["Homey", "Goed", "Uitstekend"],
+              ["Batterijduur", "1-3 jaar", "1-2 jaar"],
+              ["App kwaliteit", "Goed", "Uitstekend"],
+            ].map(([k, a, h]) => (
+              <tr key={k} style={{ borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
+                <td style={{ padding: "0.65rem 0.75rem", fontWeight: 500 }}>{k}</td>
+                <td style={{ padding: "0.65rem 0.75rem" }}>{a}</td>
+                <td style={{ padding: "0.65rem 0.75rem" }}>{h}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Aqara sensoren: voordelen en nadelen</h2>
+      <p>
+        Aqara biedt een <strong>enorm breed assortiment</strong> tegen lage prijzen: van
+        bewegingssensoren en deurcontacten tot luchtkwaliteitssensoren en waterleksensoren. De
+        meeste modellen gebruiken Zigbee en werken met de Aqara hub, maar ook direct via{" "}
+        <strong>Home Assistant</strong> (zonder hub, met USB-adapter).
+      </p>
+      <ul>
+        <li>✓ Lage prijs (bewegingssensor ~€15)</li>
+        <li>✓ Breed aanbod (30+ sensortypen)</li>
+        <li>✓ Uitstekende Home Assistant-integratie</li>
+        <li>✓ Lange batterijduur (CR2032, tot 3 jaar)</li>
+        <li>✗ App minder intuïtief dan Hue</li>
+        <li>✗ Aqara hub vereist voor officiële werking</li>
+      </ul>
+
+      <h2>Philips Hue sensoren: voordelen en nadelen</h2>
+      <p>
+        Philips Hue sensoren integreren naadloos met de Hue Bridge en Hue app. De{" "}
+        <strong>Hue Motion Sensor</strong> detecteert beweging, licht én temperatuur. De app en
+        automatiseringen zijn gebruiksvriendelijker dan Aqara, maar je betaalt er flink meer voor.
+      </p>
+      <ul>
+        <li>✓ Naadloze integratie met Hue ecosystem</li>
+        <li>✓ Gebruiksvriendelijke app</li>
+        <li>✓ Stabiel en betrouwbaar</li>
+        <li>✗ Hoge prijs (bewegingssensor ~€35-40)</li>
+        <li>✗ Alleen werkt optimaal binnen Hue-ecosysteem</li>
+        <li>✗ Minder sensortypen beschikbaar</li>
+      </ul>
+
+      <h2>Uitgelicht: Aqara FP2 (mmWave aanwezigheidsdetectie)</h2>
+      <p>
+        De <strong>Aqara FP2</strong> is een bijzondere sensor: hij gebruikt{" "}
+        <strong>millimetergolf radar (mmWave)</strong> in plaats van PIR. Dit betekent dat hij ook
+        detecteert als je stilzit — perfect voor woonkamer of werkkamer automatiseringen waar PIR
+        te veel false negatives geeft. Hij werkt via WiFi (geen hub nodig) en ondersteunt Matter.
+      </p>
+      <p>Prijs: ~€45-55. Duurder dan een gewone sensor, maar unieke functionaliteit.</p>
+
+      <h2>Welk merk kies je?</h2>
+      <ul>
+        <li>
+          <strong>Kies Aqara</strong> als je Home Assistant gebruikt, cost-conscious bent, of veel
+          verschillende sensortypen wilt
+        </li>
+        <li>
+          <strong>Kies Philips Hue</strong> als je al een Hue Bridge hebt en naadloze integratie
+          met Hue verlichting wilt
+        </li>
+        <li>
+          <strong>Combineer beide</strong> via Home Assistant of Homey — dat is ook prima
+        </li>
+      </ul>
+
+      <p>
+        Zie ook onze <Link href="/aanraders/beste-slimme-sensoren">beste slimme sensoren gids</Link>{" "}
+        voor concrete aanbevelingen.
+      </p>
+
+      <div style={{ marginTop: "2rem" }}>
+        <h2>Veelgestelde vragen</h2>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Zijn Aqara sensoren compatibel met Philips Hue?</h3>
+          <p>
+            Niet via de officiële Hue app. Maar via Home Assistant of Homey kun je Aqara en
+            Philips Hue sensoren prima combineren in dezelfde automatiseringen.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Welke bewegingssensor reageert het snelst?</h3>
+          <p>
+            De Aqara FP2 (mmWave radar) reageert het snelst en detecteert ook aanwezigheid zonder
+            beweging. De Philips Hue Motion Sensor heeft een reactietijd van ~1 seconde.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Heb ik een hub nodig voor Aqara sensoren?</h3>
+          <p>
+            Voor Zigbee Aqara sensoren heb je een Aqara hub nodig, of je gebruikt ze via Home
+            Assistant met een Zigbee USB-adapter. De Aqara FP2 werkt via WiFi zonder hub.
+          </p>
+        </div>
+      </div>
+    </>
+  ),
+},
+
+// ✅ Beveiliging
+{
+  slug: "smart-home-beveiliging-tips",
+  title: "Smart home beveiliging: zo voorkom je hackers en datalekken (2026)",
+  description:
+    "Is jouw smart home veilig? Met deze 5 concrete stappen bescherm je je apparaten, netwerk en privacydata tegen hackers en datalekken.",
+  image: "/images/blog/beste-slimme-camera.png",
+  category: "Beveiliging",
+  available: true,
+  datePublished: "2026-04-20",
+
+  related: [
+    "beste-slimme-camera",
+    "wat-is-matter",
+    "home-assistant-vs-homey",
+  ],
+
+  faqSchema: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Kunnen smart home apparaten gehackt worden?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja, slecht beveiligde smart home apparaten kunnen gehackt worden. Goedkope apparaten zonder updates, standaardwachtwoorden en onbeveiligde cloudverbindingen zijn de grootste risico's. Met de juiste maatregelen verklein je dit risico enorm.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Welke smart home merken zijn het veiligst?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Philips Hue, Aqara, Tado en Google Nest hebben een goede reputatie op het gebied van beveiliging en brengen regelmatig firmware-updates uit. Vermijd onbekende Chinese merken zonder update-beleid.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Wat is een IoT-guestnetwork en heb ik dat nodig?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Een IoT-guestnetwork is een apart WiFi-netwerk voor smart home apparaten, gescheiden van je computer en telefoon. Als een apparaat gehackt wordt, heeft de hacker geen toegang tot je andere apparaten. De meeste moderne routers ondersteunen dit.",
+        },
+      },
+    ],
+  },
+
+  content: (
+    <>
+      <p>
+        Smart home apparaten maken je leven makkelijker, maar ze introduceren ook nieuwe
+        beveiligingsrisico's. Een slecht ingestelde slimme camera of deurbel kan je privacy in
+        gevaar brengen. In dit artikel geef ik je 5 concrete stappen om je smart home te beveiligen.
+      </p>
+
+      <h2>Stap 1: gebruik een apart IoT-netwerk</h2>
+      <p>
+        De meest effectieve maatregel: zet al je smart home apparaten op een{" "}
+        <strong>apart WiFi-netwerk</strong> (ook wel "guest network" of "IoT VLAN" genoemd),
+        gescheiden van je computer, laptop en telefoon. Als een apparaat gehackt wordt, heeft de
+        aanvaller geen toegang tot je andere apparaten.
+      </p>
+      <p>
+        De meeste moderne routers (Asus, TP-Link, Synology) ondersteunen een guest network. Stel
+        het in via je router-dashboard en verbind al je lampen, sensoren en camera's met dat netwerk.
+      </p>
+
+      <h2>Stap 2: houd firmware up-to-date</h2>
+      <p>
+        Fabrikanten brengen regelmatig <strong>firmware-updates</strong> uit die beveiligingslekken
+        dichten. Schakel automatische updates in bij je hub en app:
+      </p>
+      <ul>
+        <li>Philips Hue: app → instellingen → software-updates → automatisch</li>
+        <li>Aqara: app → hub → firmware bijwerken</li>
+        <li>Google Nest: updates automatisch via Google</li>
+        <li>Homey: instellingen → updates</li>
+      </ul>
+      <p>
+        Kies merken die actief updates uitbrengen. Goedkope no-name apparaten stoppen vaak al
+        na een jaar met updates — een serieus risico.
+      </p>
+
+      <h2>Stap 3: gebruik sterke, unieke wachtwoorden</h2>
+      <p>
+        Verander standaardwachtwoorden <em>altijd</em> direct na installatie. Gebruik een{" "}
+        <strong>wachtwoordmanager</strong> (Bitwarden, 1Password) om sterke, unieke wachtwoorden
+        per app en account te genereren. Activeer tweefactorauthenticatie (2FA) waar mogelijk.
+      </p>
+      <ul>
+        <li>✓ Minimaal 16 tekens, mix van letters/cijfers/symbolen</li>
+        <li>✓ Nooit hetzelfde wachtwoord voor meerdere accounts</li>
+        <li>✓ 2FA via authenticator-app (geen SMS)</li>
+      </ul>
+
+      <h2>Stap 4: kies voor lokale werking (offline first)</h2>
+      <p>
+        Apparaten die lokaal werken zonder cloudverbinding zijn veiliger: er is geen externe server
+        die gehackt kan worden. <strong>Home Assistant</strong> is de ultieme lokale oplossing:
+        alle data blijft op jouw eigen server.
+      </p>
+      <p>
+        Ook <Link href="/blog/wat-is-matter">Matter</Link>-apparaten via Thread werken vaak lokaal.
+        Vergelijk dit met goedkope Tuya/Smart Life-apparaten die alles via Chinese cloudservers
+        sturen.
+      </p>
+
+      <h2>Stap 5: beveilig je camera's en deurbellen extra</h2>
+      <p>
+        Camera's zijn het gevoeligste onderdeel van je smart home. Volg deze regels:
+      </p>
+      <ul>
+        <li>
+          <strong>Koop alleen van gerenommeerde merken</strong>: Eufy, Arlo, Reolink, Google Nest
+        </li>
+        <li>
+          <strong>Schakel end-to-end encryptie in</strong> als beschikbaar (Eufy doet dit standaard)
+        </li>
+        <li>
+          <strong>Richt camera's niet op slaapkamers of badkamers</strong>
+        </li>
+        <li>
+          <strong>Verwijder cloudopname als je het niet nodig hebt</strong> — gebruik lokale opslag
+        </li>
+        <li>
+          <strong>Schakel UPnP uit</strong> op je router (dit opent automatisch poorten)
+        </li>
+      </ul>
+
+      <p>
+        Bekijk onze <Link href="/aanraders/beste-slimme-camera">beste slimme camera's gids</Link>{" "}
+        voor camera's met de beste privacy-reputatie.
+      </p>
+
+      <h2>Welke merken zijn het veiligst?</h2>
+      <div style={{ overflowX: "auto", marginBottom: "1.5rem" }}>
+        <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
+          <thead>
+            <tr style={{ background: "rgba(255,255,255,0.05)" }}>
+              <th style={{ padding: "0.75rem", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>Merk</th>
+              <th style={{ padding: "0.75rem", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>Updates</th>
+              <th style={{ padding: "0.75rem", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>Lokale werking</th>
+              <th style={{ padding: "0.75rem", textAlign: "left", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>Oordeel</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ["Philips Hue", "Regelmatig", "Ja (via Bridge)", "⭐⭐⭐⭐⭐"],
+              ["Aqara", "Regelmatig", "Ja (via hub)", "⭐⭐⭐⭐⭐"],
+              ["Google Nest", "Automatisch", "Deels", "⭐⭐⭐⭐"],
+              ["Tado", "Regelmatig", "Nee (cloud)", "⭐⭐⭐⭐"],
+              ["Eufy Camera", "Regelmatig", "Ja (lokaal)", "⭐⭐⭐⭐⭐"],
+              ["No-name Tuya", "Zelden", "Nee", "⭐⭐"],
+            ].map(([merk, updates, lokaal, oordeel]) => (
+              <tr key={merk} style={{ borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
+                <td style={{ padding: "0.65rem 0.75rem", fontWeight: 500 }}>{merk}</td>
+                <td style={{ padding: "0.65rem 0.75rem" }}>{updates}</td>
+                <td style={{ padding: "0.65rem 0.75rem" }}>{lokaal}</td>
+                <td style={{ padding: "0.65rem 0.75rem" }}>{oordeel}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Conclusie</h2>
+      <p>
+        Een veilig smart home begint bij een apart IoT-netwerk, actuele firmware en sterke
+        wachtwoorden. Kies merken die serieus omgaan met updates en overweeg Home Assistant voor
+        maximale privacy. Camera's verdienen extra aandacht: koop van gerenommeerde merken met
+        end-to-end encryptie.
+      </p>
+
+      <div style={{ marginTop: "2rem" }}>
+        <h2>Veelgestelde vragen</h2>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Kunnen smart home apparaten gehackt worden?</h3>
+          <p>
+            Ja, slecht beveiligde apparaten kunnen gehackt worden. Standaardwachtwoorden, ontbrekende
+            updates en onbeveiligde cloudverbindingen zijn de grootste risico's. Met de juiste
+            maatregelen verklein je dit risico enorm.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Welke smart home merken zijn het veiligst?</h3>
+          <p>
+            Philips Hue, Aqara, Tado en Google Nest hebben een goede reputatie. Vermijd onbekende
+            Chinese merken zonder duidelijk update-beleid.
+          </p>
+        </div>
+        <div style={{ marginBottom: "1.25rem" }}>
+          <h3>Wat is een IoT-guestnetwork en heb ik dat nodig?</h3>
+          <p>
+            Een apart WiFi-netwerk voor smart home apparaten, gescheiden van je computer en telefoon.
+            Als een apparaat gehackt wordt, heeft de hacker geen toegang tot je andere apparaten.
+            Sterk aanbevolen.
+          </p>
+        </div>
+      </div>
+    </>
+  ),
+},
 ];
