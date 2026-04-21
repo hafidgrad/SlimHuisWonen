@@ -3316,7 +3316,7 @@ export const blogPosts = [
   title: "Homey Bridge of Homey Pro? De eerlijke vergelijking (2026)",
   description:
     "Twijfel je tussen de Homey Bridge (€69) en de Homey Pro (€399)? Lees wat het verschil is, wat je wel en niet kunt met de Bridge en wanneer de Pro de moeite waard is.",
-  image: "/images/blog/home-assistant-vs-homey.png",
+  image: "/images/blog/homey-bridge-of-homey-pro.png",
   category: "Hubs",
   available: true,
   datePublished: "2026-04-12",
@@ -3938,7 +3938,7 @@ export const blogPosts = [
   title: "Ring deurbel vs Tapo deurbel: welke slimme deurbel is beter?",
   description:
     "Vergelijk de Ring Video Deurbel en TP-Link Tapo deurbel op prijs, functies, abonnement, privacy en app-kwaliteit. Welke slimme deurbel past het best bij jou?",
-  image: "/images/blog/beste-slimme-deurbel.png",
+  image: "/images/blog/ring-deurbel-vs-tapo-deurbel.png",
   category: "Beveiliging",
   available: true,
   datePublished: "2026-04-12",
@@ -4036,7 +4036,7 @@ export const blogPosts = [
   title: "Google Home uitgelegd: smart home met Google instellen in 2026",
   description:
     "Wat is Google Home en hoe stel je het in voor je smart home? Lees welke apparaten werken met Google Home, hoe de app werkt en wanneer je voor Google kiest.",
-  image: "/images/blog/google-home-vs-alexa.png",
+  image: "/images/blog/google-home-uitgelegd.png",
   category: "Ecosystemen",
   available: true,
   datePublished: "2026-04-12",
@@ -6583,7 +6583,7 @@ export const blogPosts = [
   title: "Matter vs Zigbee: wat is het verschil en wat kies je in 2026?",
   description:
     "Matter en Zigbee zijn beide populaire smart home protocollen, maar ze werken heel anders. Lees de vergelijking en ontdek wat jij nodig hebt.",
-  image: "/images/blog/zigbee-vs-zwave-vs-matter-vs-wifi.png",
+  image: "/images/blog/matter-vs-zigbee.png",
   category: "Protocollen",
   available: true,
   datePublished: "2026-04-20",
@@ -6952,7 +6952,7 @@ export const blogPosts = [
   title: "Aqara vs Philips Hue sensoren (2026): welke Zigbee sensoren zijn beter?",
   description:
     "Aqara of Philips Hue sensoren? We vergelijken prijs, nauwkeurigheid, batterijduur en compatibiliteit van de populairste Zigbee bewegingssensoren.",
-  image: "/images/blog/aqara-vs-tapo.png",
+  image: "/images/blog/aqara-vs-philips-hue-sensoren.png",
   category: "Merken",
   available: true,
   datePublished: "2026-04-20",
@@ -7127,7 +7127,7 @@ export const blogPosts = [
   title: "Smart home beveiliging: zo voorkom je hackers en datalekken (2026)",
   description:
     "Is jouw smart home veilig? Met deze 5 concrete stappen bescherm je je apparaten, netwerk en privacydata tegen hackers en datalekken.",
-  image: "/images/blog/beste-slimme-camera.png",
+  image: "/images/blog/smart-home-beveiliging.png",
   category: "Beveiliging",
   available: true,
   datePublished: "2026-04-20",
