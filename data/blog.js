@@ -1848,6 +1848,7 @@ export const blogPosts = [
 {
   slug: "klikaanklikuit-smart-home",
   title: "KlikAanKlikUit slim maken: de overstap naar een echt smart home",
+  seoTitle: "KlikAanKlikUit slim maken: naar een echt smart home",
   description:
     "Heb je KlikAanKlikUit? Ontdek hoe je eenvoudig overstapt naar een smart home met Homey of Home Assistant inclusief automatiseringen, voordelen en nadelen.",
   image: "/images/blog/klikaanklikuit-smart-home.png",
@@ -2573,6 +2574,7 @@ export const blogPosts = [
 {
   slug: "slimme-lampen-zonder-hub",
   title: "Slimme lampen zonder hub: wanneer is het slim en wanneer niet?",
+  seoTitle: "Slimme lampen zonder hub: wanneer is het slim?",
   description:
     "Slimme lampen zonder hub zijn makkelijk om te starten — maar er zijn haken en ogen. Lees wanneer wifi- en Bluetooth-lampen slim zijn en wanneer je toch een hub nodig hebt.",
   image: "/images/blog/slimme-lampen-zonder-hub.png",
@@ -2714,6 +2716,7 @@ export const blogPosts = [
 {
   slug: "google-home-vs-alexa",
   title: "Google Home vs Amazon Alexa: welk smart home systeem past bij jou?",
+  seoTitle: "Google Home vs Amazon Alexa: welk systeem kies je?",
   description:
     "Google Home of Amazon Alexa? Vergelijk de twee grootste smart home platforms op compatibiliteit, spraakbediening, privacy en gebruiksgemak.",
   image: "/images/blog/google-home-vs-alexa.png",
@@ -2866,6 +2869,7 @@ export const blogPosts = [
 {
   slug: "philips-hue-alternatieven",
   title: "Philips Hue alternatieven: 4 goedkopere slimme lampen vergeleken",
+  seoTitle: "Philips Hue alternatieven: 4 goedkopere lampen vergeleken",
   description:
     "Philips Hue is duur. Bekijk de beste goedkopere alternatieven: Innr, Govee, Tapo en IKEA Tradfri — vergeleken op kwaliteit, compatibiliteit en prijs.",
   image: "/images/blog/philips-hue-alternatieven.png",
@@ -3007,6 +3011,7 @@ export const blogPosts = [
 {
   slug: "smart-home-energiebesparing",
   title: "Smart home voor energiebesparing: zo verlaag je je energierekening",
+  seoTitle: "Smart home energiebesparing: verlaag je rekening",
   description:
     "Bespaar op energie met slimme thermostaten, stekkers, verlichting en zonnepaneel-integratie. Praktische tips om je energierekening omlaag te brengen.",
   image: "/images/blog/smart-home-energiebesparing.png",
@@ -3151,6 +3156,7 @@ export const blogPosts = [
 {
   slug: "slimme-radiatorkraan",
   title: "Slimme radiatorkraan: wat is het en welke is de beste in 2026?",
+  seoTitle: "Slimme radiatorkraan: wat is het en welke is beste?",
   description:
     "Een slimme radiatorkraan regelt elke kamer apart op temperatuur en bespaart flink op je stookkosten. Lees hoe het werkt en welke je het best kunt kopen.",
   image: "/images/blog/slimme-radiatorkraan.png",
@@ -3447,6 +3453,7 @@ export const blogPosts = [
 {
   slug: "philips-hue-vs-ikea-tradfri",
   title: "Philips Hue vs IKEA (2026): welke slimme verlichting kies je?",
+  seoTitle: "Philips Hue vs IKEA: welke slimme verlichting kies je?",
   description:
     "Philips Hue of IKEA? Vergelijk prijs, kwaliteit en protocollen — inclusief de nieuwe IKEA KAJPLATS Matter-lijn en het DIRIGERA-ecosysteem. Lees welke keuze bij jou past.",
   image: "/images/blog/beste-slimme-verlichting.png",
@@ -3936,6 +3943,7 @@ export const blogPosts = [
 {
   slug: "ring-vs-tapo-deurbel",
   title: "Ring deurbel vs Tapo deurbel: welke slimme deurbel is beter?",
+  seoTitle: "Ring vs Tapo deurbel: welke is beter? (2026)",
   description:
     "Vergelijk de Ring Video Deurbel en TP-Link Tapo deurbel op prijs, functies, abonnement, privacy en app-kwaliteit. Welke slimme deurbel past het best bij jou?",
   image: "/images/blog/ring-deurbel-vs-tapo-deurbel.png",
@@ -4034,6 +4042,7 @@ export const blogPosts = [
 {
   slug: "google-home-uitleg",
   title: "Google Home uitgelegd: smart home met Google instellen in 2026",
+  seoTitle: "Google Home uitgelegd: smart home instellen (2026)",
   description:
     "Wat is Google Home en hoe stel je het in voor je smart home? Lees welke apparaten werken met Google Home, hoe de app werkt en wanneer je voor Google kiest.",
   image: "/images/blog/google-home-uitgelegd.png",
@@ -4113,6 +4122,7 @@ export const blogPosts = [
 {
   slug: "slim-huis-budget",
   title: "Slim huis beginnen met een budget: starterset onder €100 (2026)",
+  seoTitle: "Slim huis met budget: starterset onder €100 (2026)",
   description:
     "Slim huis beginnen zonder veel geld uit te geven? Met een budget van €100 bouw je al een werkende starterset met slimme lamp, stekker en sensor. Lees hoe.",
   image: "/images/blog/slim-huis-budget.png",
@@ -4359,6 +4369,7 @@ export const blogPosts = [
 {
   slug: "slimme-lamp-kopen",
   title: "Slimme lamp kopen: waar moet je op letten? (complete gids 2026)",
+  seoTitle: "Slimme lamp kopen: waar let je op? (2026)",
   description:
     "Slimme lamp kopen maar niet weten waar te beginnen? Lees alles over E27 vs GU10, wifi vs Zigbee, prijs, dimmen en welke merken betrouwbaar zijn.",
   image: "/images/blog/beste-slimme-verlichting.png",
@@ -4609,6 +4620,7 @@ export const blogPosts = [
 {
   slug: "philips-hue-bridge-nodig",
   title: "Philips Hue Bridge — heb je hem echt nodig? (eerlijk antwoord)",
+  seoTitle: "Philips Hue Bridge: heb je hem nodig? (2026)",
   description:
     "Philips Hue zonder Bridge werkt ook — maar mis je dan veel? We leggen eerlijk uit wanneer de Hue Bridge wél de moeite waard is en welke alternatieven er zijn.",
   image: "/images/blog/philips-hue-bridge-nodig.png",
@@ -4837,6 +4849,7 @@ export const blogPosts = [
 {
   slug: "tado-vs-netatmo",
   title: "Tado vs Netatmo thermostaat (2026): welke past bij jou?",
+  seoTitle: "Tado vs Netatmo thermostaat: welke kies je?",
   description:
     "Tado of Netatmo kopen? We vergelijken prijs, installatiegemak, app, abonnement, zuinigheid en smart home integratie zodat jij de juiste keuze maakt.",
   image: "/images/blog/tado-vs-netatmo.png",
@@ -5093,6 +5106,7 @@ export const blogPosts = [
 {
   slug: "eufy-vs-ring-camera",
   title: "Eufy vs Ring camera (2026): welke is de beste beveiligingscamera?",
+  seoTitle: "Eufy vs Ring camera (2026): welke is de beste?",
   description:
     "Eufy of Ring camera kopen? We vergelijken prijs, beeldkwaliteit, opslag, abonnement, privacy en smart home integratie in een eerlijke vergelijking.",
   image: "/images/blog/beste-slimme-camera.png",
@@ -5607,6 +5621,7 @@ export const blogPosts = [
 {
   slug: "zigbee-vs-wifi-lampen",
   title: "Zigbee vs wifi lampen: welke moet je kiezen? (eerlijke vergelijking 2026)",
+  seoTitle: "Zigbee vs wifi lampen: welke moet je kiezen? (2026)",
   description:
     "Twijfel je tussen Zigbee en wifi slimme lampen? Lees de eerlijke vergelijking op stabiliteit, prijs, installatie en welke het beste past bij jouw situatie.",
   image: "/images/blog/zigbee-vs-wifi-lampen.png",
@@ -6076,6 +6091,7 @@ export const blogPosts = [
 {
   slug: "homey-uitleg-beginners",
   title: "Homey uitgelegd: de beste smart home hub voor beginners? (2026)",
+  seoTitle: "Homey uitgelegd: beste hub voor beginners? (2026)",
   description:
     "Wat is Homey en is het de juiste hub voor jou? Lees hoe Homey werkt, wat het kost en wanneer Homey de beste keuze is voor jouw smart home.",
   image: "/images/blog/homey-uitleg-beginners.png",
@@ -6322,6 +6338,7 @@ export const blogPosts = [
 {
   slug: "slimme-stekker-energiebesparing",
   title: "Slimme stekker voor energiebesparing: hoeveel bespaar je echt? (2026)",
+  seoTitle: "Slimme stekker energiebesparing: hoeveel bespaar je?",
   description:
     "Kun je echt geld bespaar met een slimme stekker? We laten zien hoeveel standby-verbruik kost en wat een slimme stekker met energiemeting oplevert.",
   image: "/images/blog/slimme-stekker-energiebesparing.png",
@@ -6581,6 +6598,7 @@ export const blogPosts = [
 {
   slug: "matter-vs-zigbee",
   title: "Matter vs Zigbee: wat is het verschil en wat kies je in 2026?",
+  seoTitle: "Matter vs Zigbee: wat kies je in 2026?",
   description:
     "Matter en Zigbee zijn beide populaire smart home protocollen, maar ze werken heel anders. Lees de vergelijking en ontdek wat jij nodig hebt.",
   image: "/images/blog/matter-vs-zigbee.png",
@@ -6758,6 +6776,7 @@ export const blogPosts = [
 {
   slug: "slimme-thermostaat-besparing",
   title: "Hoeveel bespaar je met een slimme thermostaat? (rekenvoorbeelden 2026)",
+  seoTitle: "Slimme thermostaat besparing: rekenvoorbeelden 2026",
   description:
     "Een slimme thermostaat belooft flinke energiebesparing. Maar klopt dat? Met echte rekenvoorbeelden laten we zien hoeveel je kunt besparen in 2026.",
   image: "/images/blog/beste-slimme-thermostaat.png",
@@ -6950,6 +6969,7 @@ export const blogPosts = [
 {
   slug: "aqara-vs-philips-hue-sensoren",
   title: "Aqara vs Philips Hue sensoren (2026): welke Zigbee sensoren zijn beter?",
+  seoTitle: "Aqara vs Philips Hue sensoren: welke zijn beter?",
   description:
     "Aqara of Philips Hue sensoren? We vergelijken prijs, nauwkeurigheid, batterijduur en compatibiliteit van de populairste Zigbee bewegingssensoren.",
   image: "/images/blog/aqara-vs-philips-hue-sensoren.png",
@@ -7125,6 +7145,7 @@ export const blogPosts = [
 {
   slug: "smart-home-beveiliging-tips",
   title: "Smart home beveiliging: zo voorkom je hackers en datalekken (2026)",
+  seoTitle: "Smart home beveiliging: voorkom hackers en datalekken",
   description:
     "Is jouw smart home veilig? Met deze 5 concrete stappen bescherm je je apparaten, netwerk en privacydata tegen hackers en datalekken.",
   image: "/images/blog/smart-home-beveiliging.png",

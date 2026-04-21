@@ -3,6 +3,10 @@ import Link from "next/link";
 import { getProductBySlug } from "@/data/products";
 import { getBolUrl } from "@/lib/bol-api";
 
+function getCoolblueSearchUrl(name) {
+  return `https://www.coolblue.nl/zoeken?query=${encodeURIComponent(name)}`;
+}
+
 export default function RelatedProducts({ slugs = [], title = "Producten die je nodig hebt" }) {
   const products = slugs
     .map((slug) => getProductBySlug(slug))
@@ -27,6 +31,7 @@ export default function RelatedProducts({ slugs = [], title = "Producten die je 
       >
         {products.map((p) => {
           const bolUrl = getBolUrl(p);
+          const coolblueUrl = p.coolblueUrl || getCoolblueSearchUrl(p.name);
           return (
             <article
               key={p.slug}
@@ -69,25 +74,6 @@ export default function RelatedProducts({ slugs = [], title = "Producten die je 
               )}
 
               <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap", marginTop: "auto" }}>
-                {p.affiliateUrl && (
-                  <a
-                    href={p.affiliateUrl}
-                    target="_blank"
-                    rel="noopener noreferrer sponsored"
-                    style={{
-                      display: "inline-block",
-                      padding: "0.45rem 0.85rem",
-                      borderRadius: "8px",
-                      background: "#f59e0b",
-                      color: "#1a1a1a",
-                      fontWeight: 700,
-                      fontSize: "0.82rem",
-                      textDecoration: "none",
-                    }}
-                  >
-                    Amazon →
-                  </a>
-                )}
                 {bolUrl && (
                   <a
                     href={bolUrl}
@@ -104,7 +90,45 @@ export default function RelatedProducts({ slugs = [], title = "Producten die je 
                       textDecoration: "none",
                     }}
                   >
-                    bol.com →
+                    🔒 bol.com
+                  </a>
+                )}
+                {coolblueUrl && (
+                  <a
+                    href={coolblueUrl}
+                    target="_blank"
+                    rel="noopener noreferrer sponsored"
+                    style={{
+                      display: "inline-block",
+                      padding: "0.45rem 0.85rem",
+                      borderRadius: "8px",
+                      background: "#003d8f",
+                      color: "#fff",
+                      fontWeight: 700,
+                      fontSize: "0.82rem",
+                      textDecoration: "none",
+                    }}
+                  >
+                    🔒 Coolblue
+                  </a>
+                )}
+                {p.affiliateUrl && (
+                  <a
+                    href={p.affiliateUrl}
+                    target="_blank"
+                    rel="noopener noreferrer sponsored"
+                    style={{
+                      display: "inline-block",
+                      padding: "0.45rem 0.85rem",
+                      borderRadius: "8px",
+                      background: "#f59e0b",
+                      color: "#1a1a1a",
+                      fontWeight: 700,
+                      fontSize: "0.82rem",
+                      textDecoration: "none",
+                    }}
+                  >
+                    🔒 Amazon
                   </a>
                 )}
                 <Link

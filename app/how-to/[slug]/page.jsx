@@ -25,13 +25,13 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: article.title,
+    title: article.seoTitle || article.title,
     description: article.description,
     alternates: {
       canonical: `https://slimhuiswonen.nl/how-to/${article.slug}`,
     },
     openGraph: {
-      title: article.title,
+      title: article.seoTitle || article.title,
       description: article.description,
       url: `https://slimhuiswonen.nl/how-to/${article.slug}`,
       siteName: "SlimHuisWonen",

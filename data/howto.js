@@ -667,6 +667,7 @@ export const howto = [
 {
   slug: "lamp-automatisch-aan-bij-beweging",
   title: "Lamp automatisch aan bij beweging: zo stel je het in (stap voor stap)",
+  seoTitle: "Lamp automatisch aan bij beweging instellen",
   categories: ["verlichting", "sensor", "automatisering"],
   shortAnswer:
     "Koppel een bewegingssensor en een slimme lamp aan dezelfde app of hub. Maak een automatisering: als beweging → lamp aan. Voeg een tijdvoorwaarde toe zodat de lamp alleen 's avonds aangaat en na 3-5 minuten vanzelf uitgaat.",
@@ -841,6 +842,7 @@ export const howto = [
 {
   slug: "slimme-verlichting-koppelen-lukt-niet",
   title: "Slimme verlichting koppelen lukt niet? Zo los je het op (stap voor stap)",
+  seoTitle: "Slimme verlichting koppelen lukt niet? Zo los je op",
   categories: ["wifi", "verlichting"],
   shortAnswer:
     "Controleer of je lamp op 2.4 GHz wifi zit en niet op 5 GHz. Reset de lamp door hem 5 keer kort aan en uit te zetten. Bij Zigbee-lampen: houd de lamp dicht bij de hub tijdens de eerste koppeling.",
@@ -1455,6 +1457,7 @@ export const howto = [
 {
   slug: "homey-automatisering-maken",
   title: "Hoe maak je een automatisering in Homey? (flows stap voor stap)",
+  seoTitle: "Automatisering maken in Homey (flows uitgelegd)",
   categories: ["hub", "automatisering"],
   shortAnswer:
     "Open de Homey-app, ga naar Flows en tik op de plusknop. Kies een trigger (bijv. beweging), voeg optioneel een voorwaarde toe (bijv. alleen 's avonds) en stel de actie in (bijv. lamp aan).",
@@ -2216,6 +2219,7 @@ export const howto = [
 {
   slug: "hoe-maak-je-automatisering-home-assistant",
   title: "Hoe maak je een automatisering in Home Assistant? (stap voor stap)",
+  seoTitle: "Automatisering maken in Home Assistant (2026)",
   categories: ["hub", "automatisering"],
   description:
     "Stap-voor-stap uitleg voor het maken van automatiseringen in Home Assistant. Van eenvoudige triggers tot geavanceerde condities.",

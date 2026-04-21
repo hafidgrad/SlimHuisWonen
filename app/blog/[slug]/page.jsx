@@ -22,13 +22,13 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: post.title,
+    title: post.seoTitle || post.title,
     description: post.description,
     alternates: {
       canonical: `https://slimhuiswonen.nl/blog/${post.slug}`,
     },
     openGraph: {
-      title: post.title,
+      title: post.seoTitle || post.title,
       description: post.description,
       url: `https://slimhuiswonen.nl/blog/${post.slug}`,
       images: [

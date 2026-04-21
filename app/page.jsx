@@ -155,7 +155,7 @@ export async function generateMetadata() {
   return {
     title: { absolute: "SlimHuisWonen – Slim huis starten zonder gedoe" },
     description:
-      "Slim huis beginnen? Ontdek de beste smart home producten, koopgidsen, tips, blogs en how-to handleidingen voor slimme verlichting, sensoren, camera’s, hubs en automatiseringen.",
+      "Slim huis beginnen? Ontdek de beste smart home producten, koopgidsen en tips voor slimme verlichting, sensoren, camera’s en hubs. Onafhankelijk en praktisch.",
     alternates: {
       canonical: "https://slimhuiswonen.nl",
     },
