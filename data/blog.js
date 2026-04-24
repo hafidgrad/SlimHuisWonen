@@ -7497,13 +7497,13 @@ export const blogPosts = [
             name: "Neon ledstrip 6m RGBIC",
             price: "€19,95",
             desc: "Neon-stijl ledstrip met RGBIC — meerdere kleuren tegelijk. Online exclusief.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2Flsc-smart-connect-neon-ledstrip",
+            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879165217%2Flsc-smart-connect-neon-ledstrip",
           },
           {
             name: "Slimme ledstrip 20m RGBIC",
             price: "€24,95",
             desc: "Twintig meter RGBIC-strip. Online exclusief, ideaal voor grote ruimtes.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2Flsc-smart-connect-slimme-ledstrip",
+            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879165194%2Flsc-smart-connect-slimme-ledstrip",
           },
           {
             name: "HDMI sync box ledstrip 2,6m",
@@ -7665,7 +7665,7 @@ export const blogPosts = [
             name: "Solar wandlamp met camera 3MP",
             price: "€34,95",
             desc: "Buitenlamp én beveiligingscamera in één. Werkt op zonne-energie.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2Flsc-smart-connect-solar-wandlamp-met-camera",
+            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879165415%2Flsc-smart-connect-solar-wandlamp-met-camera",
           },
           {
             name: "Videodeurbel met chime 3MP",
@@ -7725,13 +7725,14 @@ export const blogPosts = [
             name: "Babyfoon met camera groen 1080p",
             price: "€24,95",
             desc: "Slimme babyfoon met 1080p camera, nachtzicht en tweeweg audio. App-bediening.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2Flsc-smart-connect-babyfoon-met-camera-groen",
+            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fb%2Flsc-smart-connect",
+            btnText: "Bekijk LSC babyfoons bij Action →",
           },
           {
             name: "Babyfoon met camera wit 1080p",
             price: "",
             desc: "Zelfde als de groene variant maar in neutrale witte kleur.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2Flsc-smart-connect-babyfoon-met-camera-wit",
+            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879165347%2Flsc-smart-connect-babyfoon-met-camera-wit",
           },
         ].map((p) => (
           <div key={p.name} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "1rem", padding: "0.75rem 1rem", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "10px", background: "rgba(255,255,255,0.02)", flexWrap: "wrap" }}>
@@ -7741,7 +7742,7 @@ export const blogPosts = [
               <p style={{ margin: "0.2rem 0 0", fontSize: "0.88rem", opacity: 0.65 }}>{p.desc}</p>
             </div>
             <a href={p.url} target="_blank" rel="nofollow noopener sponsored" style={{ display: "inline-block", padding: "0.45rem 1rem", borderRadius: "8px", background: "#003082", color: "#fff", fontWeight: 700, fontSize: "0.82rem", textDecoration: "none", whiteSpace: "nowrap" }}>
-              Bekijk bij Action →
+              {p.btnText || "Bekijk bij Action →"}
             </a>
           </div>
         ))}
