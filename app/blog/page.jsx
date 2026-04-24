@@ -14,9 +14,9 @@ export const metadata = {
 };
 
 export default function BlogOverviewPage() {
-  const posts = (Array.isArray(blogPosts) ? blogPosts : []).filter(
-    (p) => p?.available
-  );
+  const posts = (Array.isArray(blogPosts) ? blogPosts : [])
+    .filter((p) => p?.available)
+    .sort((a, b) => new Date(b.datePublished || 0) - new Date(a.datePublished || 0));
 
   const headerImg = "/images/blog/blog-header.png";
 
