@@ -1991,6 +1991,9 @@ relatedGuides: [
       image: "/images/products/lsc/slimme-ledlamp-e27.png",
       href: "/aanraders/alle-lsc-smart-connect-producten-action",
       badges: ["€7,95", "RGB", "Geen hub"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bledlamp%2BE27",
+      coolblueUrl: null,
+      amazonUrl: null,
       actionUrl:
         "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3224260%2Flsc-smart-connect-slimme-ledlamp%2F",
     },
@@ -2001,6 +2004,9 @@ relatedGuides: [
       image: "/images/products/lsc/slimme-gu10-spots-3-pack.png",
       href: "/aanraders/alle-lsc-smart-connect-producten-action",
       badges: ["€12,95", "3-pack", "GU10"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2BGU10%2Bspots",
+      coolblueUrl: null,
+      amazonUrl: null,
       actionUrl:
         "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3208076%2Flsc-smart-connect-slimme-spots%2F",
     },
@@ -2011,6 +2017,9 @@ relatedGuides: [
       image: "/images/products/lsc/ledstrip-3-meter.png",
       href: "/aanraders/alle-lsc-smart-connect-producten-action",
       badges: ["€14,95", "RGB", "3m"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bledstrip",
+      coolblueUrl: null,
+      amazonUrl: null,
       actionUrl:
         "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3200654%2Flsc-smart-connect-ledstrip%2F",
     },
@@ -2021,6 +2030,9 @@ relatedGuides: [
       image: "/images/products/lsc/slimme-stekker-max-3680w.png",
       href: "/aanraders/alle-lsc-smart-connect-producten-action",
       badges: ["€6,49", "Energiemeting", "3680W"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bslimme%2Bstekker",
+      coolblueUrl: null,
+      amazonUrl: null,
       actionUrl:
         "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3202087%2Flsc-smart-connect-slimme-stekker%2F",
     },
@@ -2031,6 +2043,9 @@ relatedGuides: [
       image: "/images/products/lsc/indoor-ip-camera-1080p.png",
       href: "/aanraders/alle-lsc-smart-connect-producten-action",
       badges: ["€9,95", "1080p", "Nachtzicht"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bindoor%2Bcamera",
+      coolblueUrl: null,
+      amazonUrl: null,
       actionUrl:
         "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3215672%2Flsc-smart-connect-smart-indoor-ip-camera%2F",
     },
@@ -2041,6 +2056,9 @@ relatedGuides: [
       image: "/images/products/lsc/buitencamera-1080p.png",
       href: "/aanraders/alle-lsc-smart-connect-producten-action",
       badges: ["€25,95", "Buiten", "IR 20m"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bbuitencamera",
+      coolblueUrl: null,
+      amazonUrl: null,
       actionUrl:
         "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3202092%2Flsc-smart-connect-ip-camera-voor-buiten%2F",
     },
@@ -2051,6 +2069,9 @@ relatedGuides: [
       image: "/images/products/lsc/videodeurbel-met-chime-3mp.png",
       href: "/aanraders/alle-lsc-smart-connect-producten-action",
       badges: ["3MP", "Chime inbegrepen", "Tweeweg audio"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bvideodeurbel",
+      coolblueUrl: null,
+      amazonUrl: null,
       actionUrl:
         "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879164500%2Flsc-smart-connect-videodeurbel",
     },
@@ -2061,6 +2082,9 @@ relatedGuides: [
       image: "/images/products/lsc/slimme-voederbak-met-camera-4l.png",
       href: "/aanraders/alle-lsc-smart-connect-producten-action",
       badges: ["€59,95", "4 liter", "Camera"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fb%2Flsc-smart-connect%2F606566673%2F",
+      coolblueUrl: null,
+      amazonUrl: null,
       actionUrl:
         "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879164302%2Flsc-smart-connect-slimme-voederbak",
     },
@@ -2071,6 +2095,9 @@ relatedGuides: [
       image: "/images/products/lsc/babyfoon-met-camera-wit-1080p.png",
       href: "/aanraders/alle-lsc-smart-connect-producten-action",
       badges: ["€24,95", "1080p", "Nachtzicht"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bbabyfoon",
+      coolblueUrl: null,
+      amazonUrl: null,
       actionUrl:
         "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879165347%2Flsc-smart-connect-babyfoon-met-camera-wit",
     },
@@ -2081,6 +2108,9 @@ relatedGuides: [
       image: "/images/products/lsc/lichtslinger-buiten-13,5m.png",
       href: "/aanraders/alle-lsc-smart-connect-producten-action",
       badges: ["13,5m", "Buiten", "IP44"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Blichtslinger",
+      coolblueUrl: null,
+      amazonUrl: null,
       actionUrl:
         "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879155010%2Flsc-smart-connect-lichtslinger-voor-buiten",
     },

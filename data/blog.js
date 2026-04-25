@@ -7431,6 +7431,15 @@ export const blogPosts = [
         complete assortiment op een rij.
       </p>
 
+      <div style={{ marginTop: "1rem", marginBottom: "1.25rem", padding: "0.9rem 1.1rem", background: "rgba(0,48,130,0.1)", border: "1px solid rgba(0,48,130,0.3)", borderRadius: "10px" }}>
+        <p style={{ margin: 0, fontSize: "0.95rem" }}>
+          <strong>Zoek je directe kooplinks?</strong>{" "}
+          <Link href="/aanraders/alle-lsc-smart-connect-producten-action">
+            Bekijk de complete LSC Smart Connect koopgids →
+          </Link>
+        </p>
+      </div>
+
       <h2>Wat is LSC Smart Connect?</h2>
       <p>
         LSC Smart Connect is het smart home huismerk van Action. De producten werken via de{" "}
@@ -7446,311 +7455,85 @@ export const blogPosts = [
       </ul>
 
       <h2>Alle LSC Smart Connect producten bij Action</h2>
+      <p className="muted" style={{ fontSize: "0.9rem" }}>
+        Directe kooplinks vind je in de{" "}
+        <Link href="/aanraders/alle-lsc-smart-connect-producten-action">LSC Smart Connect koopgids</Link>.
+      </p>
 
       {/* Verlichting Binnen */}
       <h3>Verlichting — binnen</h3>
-      <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem", marginBottom: "1.5rem" }}>
-        {[
-          {
-            name: "Slimme ledlamp E27, 7W, 600lm",
-            price: "€7,95",
-            desc: "Standaard fitting, dimbaar, 16 miljoen kleuren. Perfecte instapper.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3224260%2Flsc-smart-connect-slimme-ledlamp%2F",
-          },
-          {
-            name: "Slimme ledlampen 3-pack, 700lm",
-            price: "€12,95",
-            desc: "Drie E27 lampen in één pakket — ideaal voor woonkamer of slaapkamer.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3208075%2Flsc-smart-connect-slimme-ledlampen%2F",
-          },
-          {
-            name: "Slimme GU10 spots 3-pack, 390lm",
-            price: "€12,95",
-            desc: "GU10 fitting voor inbouwspots. Drie spots voor minder dan €13.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3208076%2Flsc-smart-connect-slimme-spots%2F",
-          },
-          {
-            name: "Slimme ledpanelen 6-pack 12×12cm",
-            price: "€17,95",
-            desc: "Zelfklevende RGB-panelen voor op de muur. Maakbaar patroon.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3216802%2Flsc-smart-connect-slimme-ledpanelen%2F",
-          },
-          {
-            name: "Plafonnière Ø29cm, 22W, 1800lm",
-            price: "€14,95",
-            desc: "Complete slimme plafondlamp, direct monteerbaar. Warm tot koud wit plus kleur.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3218147%2Flsc-smart-connect-plafonniere%2F",
-          },
-          {
-            name: "Ledstrip 3 meter",
-            price: "€14,95",
-            desc: "RGB ledstrip voor achter tv of onder meubels.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3200654%2Flsc-smart-connect-ledstrip%2F",
-          },
-          {
-            name: "XXL ledstrip 10 meter",
-            price: "€19,95",
-            desc: "Tien meter strip voor grotere ruimtes of hele kamers.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3202086%2Flsc-smart-connect-xxl-ledstrip%2F",
-          },
-          {
-            name: "Neon ledstrip 6m RGBIC",
-            price: "€19,95",
-            desc: "Neon-stijl ledstrip met RGBIC — meerdere kleuren tegelijk. Online exclusief.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879165217%2Flsc-smart-connect-neon-ledstrip",
-          },
-          {
-            name: "Slimme ledstrip 20m RGBIC",
-            price: "€24,95",
-            desc: "Twintig meter RGBIC-strip. Online exclusief, ideaal voor grote ruimtes.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879165194%2Flsc-smart-connect-slimme-ledstrip",
-          },
-          {
-            name: "HDMI sync box ledstrip 2,6m",
-            price: "€34,95",
-            desc: "Ledstrip die synchroniseert met je tv-beeld via HDMI. Ambilight-effect voor elke tv.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3207950%2Fslimme-hdmi-sync-box-ledstrip%2F",
-          },
-        ].map((p) => (
-          <div key={p.name} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "1rem", padding: "0.75rem 1rem", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "10px", background: "rgba(255,255,255,0.02)", flexWrap: "wrap" }}>
-            <div style={{ flex: 1, minWidth: "180px" }}>
-              <strong>{p.name}</strong>
-              <span style={{ marginLeft: "0.5rem", opacity: 0.7 }}>{p.price}</span>
-              <p style={{ margin: "0.2rem 0 0", fontSize: "0.88rem", opacity: 0.65 }}>{p.desc}</p>
-            </div>
-            <a href={p.url} target="_blank" rel="nofollow noopener sponsored" style={{ display: "inline-block", padding: "0.45rem 1rem", borderRadius: "8px", background: "#003082", color: "#fff", fontWeight: 700, fontSize: "0.82rem", textDecoration: "none", whiteSpace: "nowrap" }}>
-              Bekijk bij Action →
-            </a>
-          </div>
-        ))}
-      </div>
+      <ul>
+        <li><strong>Slimme ledlamp E27, 7W, 600lm</strong> — €7,95 — dimbaar, RGB, E27 fitting</li>
+        <li><strong>Slimme ledlampen 3-pack, 700lm</strong> — €12,95 — drie E27 in één pakket</li>
+        <li><strong>Slimme GU10 spots 3-pack, 390lm</strong> — €12,95 — voor inbouwspots</li>
+        <li><strong>Slimme ledpanelen 6-pack 12×12cm</strong> — €17,95 — zelfklevende RGB-wandpanelen</li>
+        <li><strong>Plafonnière Ø29cm, 22W, 1800lm</strong> — €14,95 — direct monteerbaar, kleur + wit</li>
+        <li><strong>Ledstrip 3 meter</strong> — €14,95 — RGB, voor achter tv of onder meubels</li>
+        <li><strong>XXL ledstrip 10 meter</strong> — €19,95 — RGB, voor grotere ruimtes</li>
+        <li><strong>Neon ledstrip 6m RGBIC</strong> — €19,95 — neoneffect, online exclusief</li>
+        <li><strong>Slimme ledstrip 20m RGBIC</strong> — €24,95 — twintig meter, online exclusief</li>
+        <li><strong>HDMI sync box ledstrip 2,6m</strong> — €34,95 — synchroniseert met tv-beeld</li>
+      </ul>
 
       {/* Verlichting Buiten */}
       <h3>Verlichting — buiten</h3>
-      <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem", marginBottom: "1.5rem" }}>
-        {[
-          {
-            name: "Buitenverlichting lichtslinger 13 meter",
-            price: "€19,95",
-            desc: "Weerbestendige lichtslinger voor tuin of terras. App-bediening.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3224396%2Flsc-smart-connect-buitenverlichting%2F",
-          },
-          {
-            name: "Lichtslinger buiten 13,5m",
-            price: "",
-            desc: "Uitgebreide outdoor lichtslinger voor grotere tuinen.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879155010%2Flsc-smart-connect-lichtslinger-voor-buiten",
-          },
-          {
-            name: "Buiten wandlamp kubus RGB",
-            price: "€18,95",
-            desc: "Stijlvolle kubus wandlamp voor buiten. RGB kleuren, weerbestendig.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879151593%2Flsc-smart-connect-outdoor-wandlamp",
-          },
-          {
-            name: "Klassieke lantaarn met filament",
-            price: "",
-            desc: "Nostalgisch design met slimme bediening. Voor tuin of oprit.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879157694%2Flsc-smart-connect-klassieke-lantaarn",
-          },
-          {
-            name: "Tuinlampen zwart",
-            price: "",
-            desc: "Set tuinlampen in zwart. Strak design, geschikt voor paden en borders.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879157670%2Flsc-smart-connect-tuinlampen-zwart",
-          },
-          {
-            name: "Tuinspots 3 stuks 24V",
-            price: "",
-            desc: "Set van 3 grondspots op 24V voor tuin of oprit. Kleur instelbaar via app.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879154488%2Flsc-smart-connect-tuinspots",
-          },
-          {
-            name: "Grondspotjes 10 stuks RGB",
-            price: "",
-            desc: "Tien kleine grondspots met RGB verlichting voor opritten of paden.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879157502%2Flsc-smart-connect-grondspotjes",
-          },
-        ].map((p) => (
-          <div key={p.name} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "1rem", padding: "0.75rem 1rem", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "10px", background: "rgba(255,255,255,0.02)", flexWrap: "wrap" }}>
-            <div style={{ flex: 1, minWidth: "180px" }}>
-              <strong>{p.name}</strong>
-              {p.price && <span style={{ marginLeft: "0.5rem", opacity: 0.7 }}>{p.price}</span>}
-              <p style={{ margin: "0.2rem 0 0", fontSize: "0.88rem", opacity: 0.65 }}>{p.desc}</p>
-            </div>
-            <a href={p.url} target="_blank" rel="nofollow noopener sponsored" style={{ display: "inline-block", padding: "0.45rem 1rem", borderRadius: "8px", background: "#003082", color: "#fff", fontWeight: 700, fontSize: "0.82rem", textDecoration: "none", whiteSpace: "nowrap" }}>
-              Bekijk bij Action →
-            </a>
-          </div>
-        ))}
-      </div>
+      <ul>
+        <li><strong>Buitenverlichting lichtslinger 13 meter</strong> — €19,95 — weerbestendig, app-bediening</li>
+        <li><strong>Lichtslinger buiten 13,5m</strong> — voor grotere tuinen</li>
+        <li><strong>Buiten wandlamp kubus RGB</strong> — €18,95 — weerbestendig, RGB kleuren</li>
+        <li><strong>Klassieke lantaarn met filament</strong> — nostalgisch design voor tuin of oprit</li>
+        <li><strong>Tuinlampen zwart</strong> — set voor paden en borders</li>
+        <li><strong>Tuinspots 3 stuks 24V</strong> — kleur instelbaar via app</li>
+        <li><strong>Grondspotjes 10 stuks RGB</strong> — voor opritten of paden</li>
+      </ul>
 
       {/* Stekkers */}
       <h3>Stekkers</h3>
-      <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem", marginBottom: "1.5rem" }}>
-        {[
-          {
-            name: "Slimme stekker max. 3680W",
-            price: "€6,49",
-            desc: "Aan/uit via app of stem. Energiemeting ingebouwd. Max. 3680W.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3202087%2Flsc-smart-connect-slimme-stekker%2F",
-          },
-          {
-            name: "Slimme stekkers 3-pack met energiemeting",
-            price: "",
-            desc: "Drie stekkers in één pakket — ideaal om meerdere apparaten te monitoren.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879162506%2Flsc-smart-connect-stekker",
-          },
-          {
-            name: "Slimme stekkerdoos",
-            price: "",
-            desc: "Stekkerdoos met meerdere aansluitingen. Per groep of geheel bedienbaar via app.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879159049%2Flsc-smart-connect-stekkerdoos",
-          },
-          {
-            name: "Outdoor duo-stopcontact waterdicht",
-            price: "",
-            desc: "Waterdicht buitenstopcontact met twee aansluitingen. Ideaal voor tuin of terras.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8718964105045%2Flsc-smart-connect-outdoor-duo-stopcontact",
-          },
-        ].map((p) => (
-          <div key={p.name} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "1rem", padding: "0.75rem 1rem", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "10px", background: "rgba(255,255,255,0.02)", flexWrap: "wrap" }}>
-            <div style={{ flex: 1, minWidth: "180px" }}>
-              <strong>{p.name}</strong>
-              {p.price && <span style={{ marginLeft: "0.5rem", opacity: 0.7 }}>{p.price}</span>}
-              <p style={{ margin: "0.2rem 0 0", fontSize: "0.88rem", opacity: 0.65 }}>{p.desc}</p>
-            </div>
-            <a href={p.url} target="_blank" rel="nofollow noopener sponsored" style={{ display: "inline-block", padding: "0.45rem 1rem", borderRadius: "8px", background: "#003082", color: "#fff", fontWeight: 700, fontSize: "0.82rem", textDecoration: "none", whiteSpace: "nowrap" }}>
-              Bekijk bij Action →
-            </a>
-          </div>
-        ))}
-      </div>
+      <ul>
+        <li><strong>Slimme stekker max. 3680W</strong> — €6,49 — aan/uit via app, energiemeting ingebouwd</li>
+        <li><strong>Slimme stekkers 3-pack met energiemeting</strong> — drie stekkers in één pakket</li>
+        <li><strong>Slimme stekkerdoos</strong> — meerdere aansluitingen, per groep bedienbaar</li>
+        <li><strong>Outdoor duo-stopcontact waterdicht</strong> — voor tuin of terras</li>
+      </ul>
 
       {/* Beveiliging */}
       <h3>Beveiliging</h3>
-      <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem", marginBottom: "1.5rem" }}>
-        {[
-          {
-            name: "Indoor IP camera 1080p",
-            price: "€9,95",
-            desc: "Binnencamera met bewegingsdetectie, nachtzicht en tweeweg audio.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3215672%2Flsc-smart-connect-smart-indoor-ip-camera%2F",
-          },
-          {
-            name: "Draaibare camera 1296p",
-            price: "€17,97",
-            desc: "360° draaibaar, 1296p resolutie, automatische tracking van beweging.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3007325%2Flsc-smart-connect-draaibare-camera%2F",
-          },
-          {
-            name: "Buitencamera 1080p",
-            price: "€25,95",
-            desc: "Weerbestendig, IR nachtzicht tot 20m, bewegingsalarm met pushmelding.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3202092%2Flsc-smart-connect-ip-camera-voor-buiten%2F",
-          },
-          {
-            name: "Draadloze buitencamera solar 1080p",
-            price: "€38,95",
-            desc: "Volledig draadloos op zonne-energie. Geen stroomkabel of stopcontact nodig.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879163534%2Flsc-smart-connect-draadloze-camera-voor-buiten",
-          },
-          {
-            name: "Solar IP camera 1080p",
-            price: "€29,95",
-            desc: "Zonne-energie camera voor tuin of oprit. Geen kabel nodig.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3222494%2Flsc-smart-connect-solar-ip-camera%2F",
-          },
-          {
-            name: "Solar wandlamp met camera 3MP",
-            price: "€34,95",
-            desc: "Buitenlamp én beveiligingscamera in één. Werkt op zonne-energie.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879165415%2Flsc-smart-connect-solar-wandlamp-met-camera",
-          },
-          {
-            name: "Videodeurbel met chime 3MP",
-            price: "",
-            desc: "Slimme deurbel met camera en draadloze bel. Bekijk wie er aan de deur staat via je telefoon.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879164500%2Flsc-smart-connect-videodeurbel",
-          },
-        ].map((p) => (
-          <div key={p.name} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "1rem", padding: "0.75rem 1rem", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "10px", background: "rgba(255,255,255,0.02)", flexWrap: "wrap" }}>
-            <div style={{ flex: 1, minWidth: "180px" }}>
-              <strong>{p.name}</strong>
-              {p.price && <span style={{ marginLeft: "0.5rem", opacity: 0.7 }}>{p.price}</span>}
-              <p style={{ margin: "0.2rem 0 0", fontSize: "0.88rem", opacity: 0.65 }}>{p.desc}</p>
-            </div>
-            <a href={p.url} target="_blank" rel="nofollow noopener sponsored" style={{ display: "inline-block", padding: "0.45rem 1rem", borderRadius: "8px", background: "#003082", color: "#fff", fontWeight: 700, fontSize: "0.82rem", textDecoration: "none", whiteSpace: "nowrap" }}>
-              Bekijk bij Action →
-            </a>
-          </div>
-        ))}
-      </div>
+      <ul>
+        <li><strong>Indoor IP camera 1080p</strong> — €9,95 — bewegingsdetectie, nachtzicht, tweeweg audio</li>
+        <li><strong>Draaibare camera 1296p</strong> — €17,97 — 360° draaibaar, automatische bewegingstracking</li>
+        <li><strong>Buitencamera 1080p</strong> — €25,95 — weerbestendig, IR nachtzicht tot 20m</li>
+        <li><strong>Draadloze buitencamera solar 1080p</strong> — €38,95 — volledig draadloos op zonne-energie</li>
+        <li><strong>Solar IP camera 1080p</strong> — €29,95 — voor tuin of oprit, geen kabel nodig</li>
+        <li><strong>Solar wandlamp met camera 3MP</strong> — €34,95 — buitenlamp + beveiligingscamera in één</li>
+        <li><strong>Videodeurbel met chime 3MP</strong> — slimme deurbel met draadloze bel</li>
+      </ul>
 
       {/* Huisdieren */}
       <h3>Huisdieren</h3>
-      <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem", marginBottom: "1.5rem" }}>
-        {[
-          {
-            name: "Slimme voederbak met camera 4L",
-            price: "€59,95",
-            desc: "Automatische voederbak met ingebouwde camera. Plan voedertijden via de app en bekijk je huisdier live.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879164302%2Flsc-smart-connect-slimme-voederbak",
-          },
-          {
-            name: "Slimme voederbak voor traktaties",
-            price: "",
-            desc: "Gooi traktaties op afstand via de app. Met ingebouwde camera om je huisdier te bekijken.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879162698%2Flsc-smart-connect-slimme-voederbak-voor-traktaties",
-          },
-        ].map((p) => (
-          <div key={p.name} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "1rem", padding: "0.75rem 1rem", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "10px", background: "rgba(255,255,255,0.02)", flexWrap: "wrap" }}>
-            <div style={{ flex: 1, minWidth: "180px" }}>
-              <strong>{p.name}</strong>
-              {p.price && <span style={{ marginLeft: "0.5rem", opacity: 0.7 }}>{p.price}</span>}
-              <p style={{ margin: "0.2rem 0 0", fontSize: "0.88rem", opacity: 0.65 }}>{p.desc}</p>
-            </div>
-            <a href={p.url} target="_blank" rel="nofollow noopener sponsored" style={{ display: "inline-block", padding: "0.45rem 1rem", borderRadius: "8px", background: "#003082", color: "#fff", fontWeight: 700, fontSize: "0.82rem", textDecoration: "none", whiteSpace: "nowrap" }}>
-              Bekijk bij Action →
-            </a>
-          </div>
-        ))}
-      </div>
+      <ul>
+        <li><strong>Slimme voederbak met camera 4L</strong> — €59,95 — automatisch voeren, live camera</li>
+        <li><strong>Slimme voederbak voor traktaties</strong> — traktaties gooien via app, met camera</li>
+      </ul>
 
       {/* Baby */}
       <h3>Baby</h3>
-      <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem", marginBottom: "1.5rem" }}>
-        {[
-          {
-            name: "Babyfoon met camera groen 1080p",
-            price: "€24,95",
-            desc: "Slimme babyfoon met 1080p camera, nachtzicht en tweeweg audio. App-bediening.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fb%2Flsc-smart-connect",
-            btnText: "Bekijk LSC babyfoons bij Action →",
-          },
-          {
-            name: "Babyfoon met camera wit 1080p",
-            price: "",
-            desc: "Zelfde als de groene variant maar in neutrale witte kleur.",
-            url: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879165347%2Flsc-smart-connect-babyfoon-met-camera-wit",
-          },
-        ].map((p) => (
-          <div key={p.name} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "1rem", padding: "0.75rem 1rem", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "10px", background: "rgba(255,255,255,0.02)", flexWrap: "wrap" }}>
-            <div style={{ flex: 1, minWidth: "180px" }}>
-              <strong>{p.name}</strong>
-              {p.price && <span style={{ marginLeft: "0.5rem", opacity: 0.7 }}>{p.price}</span>}
-              <p style={{ margin: "0.2rem 0 0", fontSize: "0.88rem", opacity: 0.65 }}>{p.desc}</p>
-            </div>
-            <a href={p.url} target="_blank" rel="nofollow noopener sponsored" style={{ display: "inline-block", padding: "0.45rem 1rem", borderRadius: "8px", background: "#003082", color: "#fff", fontWeight: 700, fontSize: "0.82rem", textDecoration: "none", whiteSpace: "nowrap" }}>
-              {p.btnText || "Bekijk bij Action →"}
-            </a>
-          </div>
-        ))}
-      </div>
+      <ul>
+        <li><strong>Babyfoon met camera groen 1080p</strong> — €24,95 — nachtzicht, tweeweg audio, app-bediening</li>
+        <li><strong>Babyfoon met camera wit 1080p</strong> — zelfde functies, neutrale kleur</li>
+      </ul>
 
-      <p style={{ fontSize: "0.82rem", opacity: 0.5, marginTop: "-0.5rem" }}>
-        * Prijzen en beschikbaarheid kunnen afwijken. Controleer altijd de actuele prijs op shop.action.com.
+      <p className="muted" style={{ fontSize: "0.82rem", marginTop: "-0.25rem" }}>
+        * Prijzen en beschikbaarheid kunnen afwijken. Controleer de actuele prijs op shop.action.com.
       </p>
+
+      <div style={{ marginTop: "1.25rem", padding: "1rem 1.25rem", background: "rgba(0,48,130,0.1)", border: "1px solid rgba(0,48,130,0.3)", borderRadius: "10px" }}>
+        <p style={{ margin: 0, fontSize: "0.95rem" }}>
+          <strong>Directe kooplinks per product?</strong>{" "}
+          <Link href="/aanraders/alle-lsc-smart-connect-producten-action">
+            Bekijk de complete LSC Smart Connect koopgids met Action- en bol.com links →
+          </Link>
+        </p>
+      </div>
 
       <h2>LSC Smart Connect webshop vs Action winkel</h2>
       <p>

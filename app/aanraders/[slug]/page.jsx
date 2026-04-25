@@ -94,20 +94,23 @@ export default function AanraderDetailPage({ params }) {
     const slug = pick.href?.replace("/producten/", "");
     const product = slug ? getProductBySlug(slug) : null;
     const searchQuery = encodeURIComponent(pick.title.replace(/^[^:]+:\s*/, ""));
+    const hasActionUrl = !!pick.actionUrl;
     return {
       ...pick,
-      amazonUrl:
-        product?.affiliateUrl ||
-        pick.amazonUrl ||
-        `https://www.amazon.nl/s?k=${searchQuery}&tag=slimhuiswonen-21`,
+      amazonUrl: hasActionUrl
+        ? null
+        : product?.affiliateUrl ||
+          pick.amazonUrl ||
+          `https://www.amazon.nl/s?k=${searchQuery}&tag=slimhuiswonen-21`,
       bolUrl:
         product?.bolUrl ||
         pick.bolUrl ||
-        `https://www.bol.com/nl/nl/s/?searchtext=${searchQuery}`,
-      coolblueUrl:
-        product?.coolblueUrl ||
-        pick.coolblueUrl ||
-        `https://www.coolblue.nl/zoeken?query=${searchQuery}`,
+        (hasActionUrl ? null : `https://www.bol.com/nl/nl/s/?searchtext=${searchQuery}`),
+      coolblueUrl: hasActionUrl
+        ? null
+        : product?.coolblueUrl ||
+          pick.coolblueUrl ||
+          `https://www.coolblue.nl/zoeken?query=${searchQuery}`,
       priceHint: product?.priceHint || null,
     };
   });

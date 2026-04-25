@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import PrijsDisclaimer from "@/components/PrijsDisclaimer";
@@ -42,6 +43,7 @@ export default function BuyGuideProductCard({
           fill
           sizes="120px"
           style={{ objectFit: "contain" }}
+          onError={(e) => { e.target.src = "/images/product-placeholder.png"; }}
         />
       </div>
 
