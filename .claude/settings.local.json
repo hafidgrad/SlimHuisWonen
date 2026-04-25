@@ -56,7 +56,8 @@
       "Bash(cp 4.png philips-hue-bridge-nodig.png)",
       "Bash(cp 5.png tado-vs-netatmo.png)",
       "Bash(grep -v \"^$\")",
-      "Bash(python _lsc_rewrite.py)"
+      "Bash(python _lsc_rewrite.py)",
+      "Bash(python _lsc_picks.py)"
     ]
   }
 }

@@ -57,77 +57,346 @@ export const aanraders = [
     ],
   },
   picks: [
+    /* ── Verlichting binnen (10) ── */
     {
-      title: "Beste binnencamera voor de meeste mensen: Eufy Indoor Cam",
+      title: "LSC Slimme ledlamp E27 — beste instapper",
       description:
-        "Betaalbare binnencamera met lokale opslag, goede beeldkwaliteit en geen verplicht abonnement. Ideaal voor binnengebruik, huisdieren of extra toezicht in huis.",
-      image: "/images/products/eufy-indoor-cam.png",
-      href: "/producten/eufy-indoor-cam",
-      badges: ["Beste keuze", "Binnen", "Geen abonnement"],
+        "Voor €7,95 heb je een dimbare RGB-lamp in E27 fitting. Werkt direct via de LSC app zonder hub. Perfecte eerste stap voor smart home op een budgetprijs.",
+      image: "/images/products/lsc/slimme-ledlamp-e27.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€7,95", "RGB", "Geen hub"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bledlamp%2BE27",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3224260%2Flsc-smart-connect-slimme-ledlamp%2F",
     },
     {
-      title: "Beste buitencamera op wifi: Eufy Solo Outdoor",
+      title: "LSC Slimme Ledlampen 3-pack — €4,32 per lamp",
       description:
-        "Weerbestendige buitencamera met accu en lokale opslag. Handig als je geen kabel wilt trekken en toch een flexibele buitencamera zoekt.",
-      image: "/images/products/eufy-solo-outdoor.png",
-      href: "/producten/eufy-solo-outdoor-cam",
-      badges: ["Buiten", "Accu", "Wi-Fi"],
+        "Drie slimme E27 lampen voor €12,95 — slechts €4,32 per stuk. 700 lumen, RGB kleuren. Ideaal om meerdere kamers in één keer slim te maken.",
+      image: "/images/products/lsc/slimme-ledlamp-e27.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€12,95", "E27", "3-pack"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bledlampen%2B3-pack",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3208075%2Flsc-smart-connect-slimme-ledlampen%2F",
     },
     {
-      title: "Beste PoE camera: Reolink PoE Camera",
+      title: "LSC Slimme GU10 spots 3-pack — voor inbouwspots",
       description:
-        "Bekabelde camera met maximale stabiliteit en lokale opslag via NVR. Ideaal als je betrouwbaarheid belangrijker vindt dan eenvoudige installatie.",
-      image: "/images/products/reolink-poe-camera.png",
-      href: "/producten/reolink-poe-camera",
-      badges: ["PoE", "Maximale stabiliteit", "Lokaal"],
+        "Drie slimme GU10 inbouwspots voor €12,95. 390 lumen, RGB. Ideaal voor keuken of badkamer. Eenvoudig te vervangen door bestaande GU10 spots.",
+      image: "/images/products/lsc/slimme-gu10-spots-3-pack.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€12,95", "GU10", "3-pack"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2BGGU10%2Bspots",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3208076%2Flsc-smart-connect-slimme-spots%2F",
     },
     {
-      title: "Beste budget slimme camera: TP-Link Tapo C200",
+      title: "LSC Slimme Ledpanelen 6-pack — muurpanelen met RGB",
       description:
-        "Goede wifi camera voor binnen met verrassend veel functies voor de prijs. Een slimme keuze als je goedkoop wilt beginnen.",
-      image: "/images/products/tapo-c200.png",
-      href: "/producten/tapo-c200",
-      badges: ["Budget", "Wi-Fi", "Binnen"],
+        "Zes zelfklevende RGB-wandpanelen van 12×12cm. Plak in elk patroon op de muur en bedien ze via de app. Leuk voor slaapkamer of gamerkamer.",
+      image: "/images/products/lsc/slimme-ledpanelen-6-pack.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€17,95", "Panelen", "Zelfklevend"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bledpanelen",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3216802%2Flsc-smart-connect-slimme-ledpanelen%2F",
     },
     {
-      title: "Beste privacyvriendelijke slimme camera: Eve Cam",
+      title: "LSC Plafonnière Ø29cm — complete slimme plafondlamp",
       description:
-        "Premium binnencamera met focus op privacy en lokale verwerking via HomeKit Secure Video. Interessant voor Apple-gebruikers die privacy belangrijk vinden.",
-      image: "/images/products/eve-cam.png",
-      href: "/producten/eve-cam",
-      badges: ["Privacy", "HomeKit", "Premium"],
+        "Complete slimme plafonnière van 22W en 1800 lumen. Directe vervanger voor een gewone plafondlamp. Warm tot koud wit plus kleur via de app.",
+      image: "/images/products/lsc/plafonnière-Ø29cm.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€14,95", "22W", "1800lm"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bplafonniere",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3218147%2Flsc-smart-connect-plafonniere%2F",
     },
     {
-      title: "Beste budget binnencamera met pan-tilt: Tapo C220",
+      title: "LSC Ledstrip 3 meter — sfeer achter de tv",
       description:
-        "2K binnencamera met pan-tilt functie en AI-detectie voor een scherpe prijs. Ideaal als je een beweegbare binnencamera wilt zonder duur abonnement.",
-      image: "/images/products/tapo-c220-beveiligingscamera-binnen-2k-4mp-qhd-pan.jpg",
-      href: "/producten/tapo-c220-beveiligingscamera-binnen-2k-4mp-qhd-pan",
-      badges: ["Budget", "2K", "Pan-tilt"],
+        "Slimme RGB-ledstrip van 3 meter voor €14,95. Plak achter je tv of onder een kast voor sfeerverlichting. Kleur en helderheid instelbaar via de app.",
+      image: "/images/products/lsc/ledstrip-3-meter.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€14,95", "RGB", "3m"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bledstrip",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3200654%2Flsc-smart-connect-ledstrip%2F",
     },
     {
-      title: "Beste binnencamera met babyfoon functie: Tapo C230",
+      title: "LSC XXL Ledstrip 10 meter — voor grote ruimtes",
       description:
-        "3K binnencamera die huilgeluiden herkent en als babyfoon werkt. Handig als je één camera wilt die meer doet dan bewaken.",
-      image: "/images/products/tp-link-tapo-c230.png",
-      href: "/producten/tp-link-tapo-c230",
-      badges: ["3K", "Babyfoon", "Wi-Fi"],
+        "Tien meter slimme RGBIC ledstrip voor €19,95. Per 25cm een andere kleur instelbaar. Met afstandsbediening. Ideaal voor woonkamer of slaapkamer.",
+      image: "/images/products/lsc/xxl-ledstrip-10-meter.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€19,95", "10m", "RGBIC"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2BXXL%2Bledstrip",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3202086%2Flsc-smart-connect-xxl-ledstrip%2F",
     },
     {
-      title: "Beste budget buitencamera met 360° rotatie: Tapo C500",
+      title: "LSC Neon Ledstrip 6 meter — neoneffect aan de muur",
       description:
-        "Betaalbare buitencamera met volledige rotatie, nachtzicht en bewegingsdetectie. Goede keuze als je een eenvoudige buitencamera wil zonder veel gedoe.",
-      image: "/images/products/tp-link-tapo-c500.png",
-      href: "/producten/tp-link-tapo-c500",
-      badges: ["Buiten", "360°", "Budget"],
+        "Flexibele neon-look ledstrip van 6m met 432 LED's. Elke 15cm een andere kleur. Buigbaar in elke vorm. Online exclusief bij shop.action.com.",
+      image: "/images/products/lsc/neon-ledstrip-6m-rgbic.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€19,95", "Neon", "6m"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bneon%2Bledstrip",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879165217%2Flsc-smart-connect-neon-ledstrip",
     },
     {
-      title: "Beste buitencamera met hoge resolutie: Tapo C530WS",
+      title: "LSC Slimme Ledstrip 20 meter — langste in het assortiment",
       description:
-        "Weerbestendige buitencamera met 3K kwaliteit, automatische bewegingstracking en ingebouwde spotlights. Sterk voor wie premium beeldkwaliteit wil op een middenprijspunt.",
-      image: "/images/products/tp-link-tapo-c530ws.png",
-      href: "/producten/tp-link-tapo-c530ws",
-      badges: ["Buiten", "3K", "Spotlights"],
+        "Twintig meter RGBIC ledstrip voor €24,95. Per 30 LED's een kleur instelbaar. Online exclusief. Ideaal voor grote ruimtes of meerdere zones.",
+      image: "/images/products/lsc/slimme-ledstrip-20m-rgbic.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€24,95", "20m", "RGBIC"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bledstrip%2B20%2Bmeter",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879165194%2Flsc-smart-connect-slimme-ledstrip",
+    },
+    {
+      title: "LSC HDMI Sync Box Ledstrip — tv-kleuren op de muur",
+      description:
+        "Ledstrip van 2,6m die tv-kleuren synchroniseert via HDMI. 18W, geschikt voor tv's tot 65 inch. Ambilight-effect voor elke tv. Plug & play.",
+      image: "/images/products/lsc/d7d0201c-062a-43e3-b3f3-9ad019a65d25.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€34,95", "HDMI", "TV-sync"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2BHDMI%2Bsync",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3207950%2Fslimme-hdmi-sync-box-ledstrip%2F",
+    },
+
+    /* ── Verlichting buiten (7) ── */
+    {
+      title: "LSC Buitenverlichting 13 meter — tuin en terras",
+      description:
+        "Slimme lichtsnoer voor buiten van 13m. Waterdicht, RGB, app-bedienbaar. Ideaal voor tuin of terras. Dimbaar en in te stellen via timer.",
+      image: "/images/products/lsc/lichtslinger-buiten-13,5m.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€19,95", "13m", "Waterdicht"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bbuitenverlichting",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3224396%2Flsc-smart-connect-buitenverlichting%2F",
+    },
+    {
+      title: "LSC Lichtslinger buiten 13,5m — sfeer in de tuin",
+      description:
+        "Weerbestendige lichtslinger van 13,5 meter voor tuin of terras. Dimbaar en via de app te bedienen. Perfect voor zomeravonden buiten.",
+      image: "/images/products/lsc/lichtslinger-buiten-13,5m.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["13,5m", "Buiten", "IP44"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Blichtslinger",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879155010%2Flsc-smart-connect-lichtslinger-voor-buiten",
+    },
+    {
+      title: "LSC Buiten Wandlamp Kubus — stijlvol met RGB",
+      description:
+        "Stijlvolle slimme buitenwandlamp van 6,5W met 2×330lm. RGB instelbaar, weerbestendig. Met verstelbare shutters voor gerichte verlichting.",
+      image: "/images/products/lsc/buiten-wandlamp-kubus-rgb.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€18,95", "Wandlamp", "RGB"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bwandlamp%2Bkubus",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879151593%2Flsc-smart-connect-outdoor-wandlamp",
+    },
+    {
+      title: "LSC Klassieke Lantaarn — nostalgisch slim design",
+      description:
+        "Klassieke tuin-lantaarn met slimme filamentlamp. Verbindt via wifi, app-bedienbaar. Stijlvol voor tuin, oprit of terras.",
+      image: "/images/products/lsc/klassieke-lantaarn-met-filament.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["Lantaarn", "Filament", "Tuin"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Blantaarn",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879157694%2Flsc-smart-connect-klassieke-lantaarn",
+    },
+    {
+      title: "LSC Tuinlampen Zwart — sfeervol langs het pad",
+      description:
+        "Slimme tuinlampen in strak zwart design. RGB kleuren, te monteren in de grond of aan een muur. Geschikt voor paden en borders.",
+      image: "/images/products/lsc/tuinlampen-zwart.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["Tuin", "RGB", "Set"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Btuinlampen",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879157670%2Flsc-smart-connect-tuinlampen-zwart",
+    },
+    {
+      title: "LSC Tuinspots 3 stuks 24V — kleurrijke grondspots",
+      description:
+        "Set van 3 slimme tuinspots op 24V. Te monteren in de grond of op een muur. RGB kleuren instelbaar via de app.",
+      image: "/images/products/lsc/tuinspots-3-stuks-24v.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["Tuin", "3 stuks", "24V"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Btuinspots",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879154488%2Flsc-smart-connect-tuinspots",
+    },
+    {
+      title: "LSC Grondspotjes 10 stuks RGB — complete tuinverlichting",
+      description:
+        "Tien slimme grondspotjes voor tuin, oprit of pad. RGB en warm-wit, met 10m aansluitkabel. Compleet systeem voor een verlichte tuin.",
+      image: "/images/products/lsc/grondspotjes-10-stuks-rgb.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["10 stuks", "RGB", "Tuin"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bgrondspotjes",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879157502%2Flsc-smart-connect-grondspotjes",
+    },
+
+    /* ── Stekkers (4) ── */
+    {
+      title: "LSC Slimme stekker max 3680W — energiemeting inbegrepen",
+      description:
+        "Voor €6,49 maak je elk stopcontact slim. Aan/uit via app of stem, met energiemeting. De goedkoopste manier om stroomverbruik te monitoren.",
+      image: "/images/products/lsc/slimme-stekker-max-3680w.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€6,49", "Energiemeting", "3680W"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bslimme%2Bstekker",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3202087%2Flsc-smart-connect-slimme-stekker%2F",
+    },
+    {
+      title: "LSC Slimme Stekkers 3-pack met energiemeting",
+      description:
+        "Drie slimme stekkers met ingebouwde energiemeting in één pakket. Monitor het stroomverbruik van meerdere apparaten tegelijk via de app.",
+      image: "/images/products/lsc/slimme-stekkers-3-pack-met-energiemeting.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["3-pack", "Energiemeting", "Wifi"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bstekker%2B3-pack",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879162506%2Flsc-smart-connect-stekker",
+    },
+    {
+      title: "LSC Slimme Stekkerdoos — meerdere apparaten slim",
+      description:
+        "Slimme stekkerdoos met individueel bedienbare stopcontacten. Timer en planning via de app. Handig voor bureau, entertainment of keuken.",
+      image: "/images/products/lsc/slimme-stekkerdoos.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["Stekkerdoos", "Timer", "Wifi"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bstekkerdoos",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879159049%2Flsc-smart-connect-stekkerdoos",
+    },
+    {
+      title: "LSC Outdoor Duo-Stopcontact — waterdicht buiten",
+      description:
+        "Waterdicht slim buitenstopcontact met twee aansluitingen. Ideaal voor tuingebruik. Bediening via app en spraakassistenten.",
+      image: "/images/products/lsc/0utdoor-duo-stopcontact-waterdicht.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["Buiten", "Waterdicht", "Dubbel"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Boutdoor%2Bstopcontact",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8718964105045%2Flsc-smart-connect-outdoor-duo-stopcontact",
+    },
+
+    /* ── Beveiliging (5) ── */
+    {
+      title: "LSC Indoor IP camera 1080p — goedkoopste binnencamera",
+      description:
+        "Voor €9,95 een volwaardige binnencamera met bewegingsdetectie, nachtzicht en tweeweg audio. Ideaal als eerste beveiligingscamera.",
+      image: "/images/products/lsc/indoor-ip-camera-1080p.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€9,95", "1080p", "Nachtzicht"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bindoor%2Bcamera",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3215672%2Flsc-smart-connect-smart-indoor-ip-camera%2F",
+    },
+    {
+      title: "LSC Draaibare Camera 1296p — pan-tilt binnencamera",
+      description:
+        "Slimme draaibare binnencamera met 1296p resolutie. Pan en tilt via de app. Automatische bewegingstracking met pushmelding.",
+      image: "/images/products/lsc/draaibare-camera-1296p.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€17,97", "Pan-tilt", "1296p"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bdraaibare%2Bcamera",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3007325%2Flsc-smart-connect-draaibare-camera%2F",
+    },
+    {
+      title: "LSC Buitencamera 1080p — weerbestendige bewaking",
+      description:
+        "Weerbestendige buitencamera voor €25,95. IR nachtzicht tot 20m, bewegingsdetectie met pushmelding. Betaalbare beveiliging voor buiten.",
+      image: "/images/products/lsc/buitencamera-1080p.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€25,95", "Buiten", "IR 20m"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bbuitencamera",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3202092%2Flsc-smart-connect-ip-camera-voor-buiten%2F",
+    },
+    {
+      title: "LSC Draadloze Solar Buitencamera — geen kabel nodig",
+      description:
+        "Volledig draadloze buitencamera op zonne-energie. 1080p, accu-backup, geen stopcontact nodig. Overal te plaatsen.",
+      image: "/images/products/lsc/draadloze-buitencamera-solar-1080p.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€38,95", "Solar", "Draadloos"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bsolar%2Bcamera",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879163534%2Flsc-smart-connect-draadloze-camera-voor-buiten",
+    },
+    {
+      title: "LSC Videodeurbel met chime 3MP — slim aan de deur",
+      description:
+        "Slimme deurbel met 3MP camera en draadloze bel (chime). Bekijk wie aan de deur staat via je smartphone, met tweeweg communicatie.",
+      image: "/images/products/lsc/videodeurbel-met-chime-3mp.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["3MP", "Chime inbegrepen", "Tweeweg audio"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bvideodeurbel",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879164500%2Flsc-smart-connect-videodeurbel",
+    },
+
+    /* ── Huisdieren (2) ── */
+    {
+      title: "LSC Slimme voederbak met camera 4L — voor je huisdier",
+      description:
+        "Automatische voederbak van 4 liter met ingebouwde camera. Plan voedertijden via de app en bekijk je kat of hond live.",
+      image: "/images/products/lsc/slimme-voederbak-met-camera-4l.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€59,95", "4 liter", "Camera"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fb%2Flsc-smart-connect%2F606566673%2F",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879164302%2Flsc-smart-connect-slimme-voederbak",
+    },
+    {
+      title: "LSC Slimme Voederbak voor Traktaties — beloon op afstand",
+      description:
+        "Slimme traktatiedispenser met camera. Beloon je huisdier op afstand via de app. Tweeweg audio zodat je ook kunt praten met je huisdier.",
+      image: "/images/products/lsc/slimme-voederbak-voor-traktaties.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["Huisdier", "Traktaties", "Camera"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bvoederbak%2Btraktaties",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879162698%2Flsc-smart-connect-slimme-voederbak-voor-traktaties",
+    },
+
+    /* ── Baby (2) ── */
+    {
+      title: "LSC Babyfoon met camera wit 1080p — slim in de kinderkamer",
+      description:
+        "Slimme babyfoon met 1080p camera, nachtzicht en tweeweg audio. Bekijk en luister naar je baby via de app, waar je ook bent.",
+      image: "/images/products/lsc/babyfoon-met-camera-wit-1080p.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€24,95", "1080p", "Nachtzicht"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bbabyfoon",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879165347%2Flsc-smart-connect-babyfoon-met-camera-wit",
+    },
+    {
+      title: "LSC Babyfoon met camera groen 1080p — kleurrijke variant",
+      description:
+        "Zelfde functies als de witte variant maar in een opvallend groen design. 1080p camera, nachtzicht en tweeweg audio via de app.",
+      image: "/images/products/lsc/babyfoon-met-camera-groen-1080p.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€24,95", "1080p", "Groen"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DLSC%2BSmart%2BConnect%2Bbabyfoon",
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fb%2Flsc-smart-connect",
     },
   ],
 
