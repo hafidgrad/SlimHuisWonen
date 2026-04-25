@@ -7874,6 +7874,16 @@ export const blogPosts = [
         de <Link href="/aanraders/beste-slimme-stekkers">beste slimme stekkers</Link> vergelijking.
       </p>
 
+      <div style={{ marginTop: "1.5rem", padding: "1rem 1.25rem", background: "rgba(0,48,130,0.1)", border: "1px solid rgba(0,48,130,0.3)", borderRadius: "10px" }}>
+        <p style={{ margin: 0, fontSize: "0.95rem" }}>
+          <strong>Zoek je het complete productoverzicht met prijzen?</strong>{" "}
+          Bekijk onze{" "}
+          <Link href="/aanraders/alle-lsc-smart-connect-producten-action">
+            LSC Smart Connect koopgids met alle producten →
+          </Link>
+        </p>
+      </div>
+
       <div style={{ marginTop: "2rem" }}>
         <h2>Veelgestelde vragen</h2>
         <div style={{ marginBottom: "1.25rem" }}>

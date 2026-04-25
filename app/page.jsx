@@ -638,6 +638,7 @@ export default function HomePage() {
                 { slug: "beste-slimme-producten-voor-kinderen", title: "Smart home voor kinderen" },
                 { slug: "beste-smart-home-huurwoning", title: "Smart home voor huurwoning" },
                 { slug: "goedkoopste-smart-home-beginners", title: "Goedkoop smart home beginnen" },
+                { slug: "alle-lsc-smart-connect-producten-action", title: "Alle LSC Smart Connect producten" },
               ].map(({ slug, title }) => (
                 <Link key={slug} href={`/aanraders/${slug}`} className="card">
                   <h3>{title}</h3>

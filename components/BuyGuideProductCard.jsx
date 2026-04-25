@@ -11,6 +11,7 @@ export default function BuyGuideProductCard({
   amazonUrl,
   bolUrl,
   coolblueUrl,
+  actionUrl,
   priceHint,
 }) {
   return (
@@ -76,6 +77,17 @@ export default function BuyGuideProductCard({
         </p>
 
         <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", alignItems: "center" }}>
+          {actionUrl && (
+            <a
+              href={actionUrl}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="product-btn"
+              style={{ fontSize: "0.88rem", padding: "0.55rem 1rem", whiteSpace: "nowrap", background: "#003082", color: "#fff", fontWeight: 700, borderRadius: "8px", textDecoration: "none", display: "inline-block" }}
+            >
+              🔒 Kopen bij Action
+            </a>
+          )}
           {bolUrl && (
             <a
               href={bolUrl}
@@ -112,13 +124,15 @@ export default function BuyGuideProductCard({
             </a>
           )}
 
-          <Link
-            href={href}
-            className="product-details-link"
-            style={{ fontSize: "0.88rem", padding: "0.55rem 0.9rem" }}
-          >
-            Meer info
-          </Link>
+          {!actionUrl && (
+            <Link
+              href={href}
+              className="product-details-link"
+              style={{ fontSize: "0.88rem", padding: "0.55rem 0.9rem" }}
+            >
+              Meer info
+            </Link>
+          )}
         </div>
 
         {[bolUrl, coolblueUrl, amazonUrl].filter(Boolean).length >= 2 && <PrijsDisclaimer />}

@@ -1922,4 +1922,196 @@ relatedGuides: [
     },
   ],
 },
+
+{
+  slug: "alle-lsc-smart-connect-producten-action",
+  title: "LSC Smart Connect koopgids: alle producten van Action (2026)",
+  description:
+    "Compleet overzicht van alle LSC Smart Connect producten bij Action. Slimme lampen, ledstrips, stekkers, camera's, babyfoons en meer — met directe links naar shop.action.com.",
+  image: "/images/blog/lsc-smart-connect-van-action.png",
+
+  intro:
+    "LSC Smart Connect is het goedkoopste smart home merk van Nederland. Via Action en shop.action.com haal je slimme lampen, stekkers, camera's en meer in huis vanaf €6,49. In deze koopgids vind je de beste picks per categorie met directe links.",
+
+  whoIsThisFor: [
+    "Beginners die willen starten met smart home voor een lage prijs",
+    "Studenten en huurders zonder groot smart home budget",
+    "Google Home of Amazon Alexa gebruikers",
+    "Wie al regelmatig bij Action shopt en slim wil uitbreiden",
+  ],
+
+  buyingAdviceIntro:
+    "LSC Smart Connect werkt op het Tuya-platform en vereist alleen wifi (2.4GHz). Geen hub nodig. Apple HomeKit wordt niet ondersteund. Voor complexe automatiseringen heb je Homey of Home Assistant nodig.",
+
+  whatToLookFor: [
+    "Zorg dat je router 2.4GHz wifi uitzendt — 5GHz wordt niet ondersteund",
+    "Download de LSC Smart Connect app vóór aankoop om kennis te maken",
+    "Wil je energiemeting? Kies de slimme stekker max 3680W of de 3-pack",
+    "Camera buitenshuis? Kies de weerbestendige buitencamera of een solar variant",
+    "Wil je kleurverandering? Let op RGB of RGBIC in de productnaam",
+    "Volledige assortiment is alleen online via shop.action.com beschikbaar",
+  ],
+
+  relatedBlogs: ["lsc-smart-connect-action-smart-home", "slim-huis-budget"],
+  relatedGuides: [
+    "beste-slimme-verlichting",
+    "beste-slimme-stekkers",
+    "beste-slimme-camera",
+    "goedkoopste-smart-home-beginners",
+  ],
+
+  comparisonTable: {
+    headers: ["Product", "Categorie", "Prijs", "Kenmerk"],
+    rows: [
+      ["Slimme ledlamp E27", "Verlichting", "€7,95", "RGB, dimbaar"],
+      ["Slimme ledlampen 3-pack", "Verlichting", "€12,95", "3× E27"],
+      ["Slimme GU10 spots 3-pack", "Verlichting", "€12,95", "Inbouwspot"],
+      ["Slimme ledpanelen 6-pack", "Verlichting", "€17,95", "Wandpanelen RGB"],
+      ["Plafonnière Ø29cm 22W", "Verlichting", "€14,95", "1800lm, kleur"],
+      ["Ledstrip 3 meter", "LED strips", "€14,95", "RGB"],
+      ["XXL ledstrip 10 meter", "LED strips", "€19,95", "RGB, groot"],
+      ["Neon ledstrip 6m RGBIC", "LED strips", "€19,95", "Neoneffect"],
+      ["Slimme ledstrip 20m RGBIC", "LED strips", "€24,95", "Extra lang"],
+      ["Slimme stekker max 3680W", "Stekkers", "€6,49", "Energiemeting"],
+      ["Slimme stekkerdoos", "Stekkers", "–", "Meerdere poorten"],
+      ["Outdoor duo-stopcontact", "Stekkers", "–", "Waterdicht"],
+      ["Indoor IP camera 1080p", "Beveiliging", "€9,95", "Binnenshuis"],
+      ["Buitencamera 1080p", "Beveiliging", "€25,95", "Weerbestendig"],
+      ["Solar buitencamera 1080p", "Beveiliging", "€38,95", "Geen kabel"],
+      ["Videodeurbel met chime 3MP", "Beveiliging", "–", "Met draadloze bel"],
+      ["Babyfoon met camera 1080p", "Baby & dier", "€24,95", "Nachtzicht"],
+    ],
+  },
+
+  picks: [
+    {
+      title: "LSC Slimme ledlamp E27 — beste instapper",
+      description:
+        "Voor €7,95 heb je een dimbare RGB-lamp in E27 fitting. Werkt direct via de LSC app zonder hub. Perfecte eerste stap voor smart home op een budgetprijs.",
+      image: "/images/products/lsc/slimme-ledlamp-e27.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€7,95", "RGB", "Geen hub"],
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3224260%2Flsc-smart-connect-slimme-ledlamp%2F",
+    },
+    {
+      title: "LSC Slimme GU10 spots 3-pack — voor inbouwspots",
+      description:
+        "Drie GU10 spots voor €12,95. Geschikt voor inbouwspots in het plafond. RGB en dimbaar via de app.",
+      image: "/images/products/lsc/slimme-gu10-spots-3-pack.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€12,95", "3-pack", "GU10"],
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3208076%2Flsc-smart-connect-slimme-spots%2F",
+    },
+    {
+      title: "LSC Ledstrip 3 meter — sfeer achter de tv",
+      description:
+        "Slimme RGB-ledstrip van 3 meter voor €14,95. Plak achter je tv of onder een kast voor sfeerverlichting. Kleur en helderheid instelbaar via de app.",
+      image: "/images/products/lsc/ledstrip-3-meter.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€14,95", "RGB", "3m"],
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3200654%2Flsc-smart-connect-ledstrip%2F",
+    },
+    {
+      title: "LSC Slimme stekker max 3680W — energiemeting inbegrepen",
+      description:
+        "Voor €6,49 maak je elk stopcontact slim. Aan/uit via app of stem, met energiemeting. De goedkoopste manier om verbruik te monitoren.",
+      image: "/images/products/lsc/slimme-stekker-max-3680w.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€6,49", "Energiemeting", "3680W"],
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3202087%2Flsc-smart-connect-slimme-stekker%2F",
+    },
+    {
+      title: "LSC Indoor IP camera 1080p — goedkoopste binnencamera",
+      description:
+        "Voor €9,95 een volwaardige binnencamera met bewegingsdetectie, nachtzicht en tweeweg audio. Ideaal als eerste beveiligingscamera.",
+      image: "/images/products/lsc/indoor-ip-camera-1080p.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€9,95", "1080p", "Nachtzicht"],
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3215672%2Flsc-smart-connect-smart-indoor-ip-camera%2F",
+    },
+    {
+      title: "LSC Buitencamera 1080p — weerbestendige bewaking",
+      description:
+        "Weerbestendige buitencamera voor €25,95. IR nachtzicht tot 20m, bewegingsdetectie met pushmelding. Betaalbare beveiliging voor buiten.",
+      image: "/images/products/lsc/buitencamera-1080p.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€25,95", "Buiten", "IR 20m"],
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F3202092%2Flsc-smart-connect-ip-camera-voor-buiten%2F",
+    },
+    {
+      title: "LSC Videodeurbel met chime 3MP — slim aan de deur",
+      description:
+        "Slimme deurbel met 3MP camera en draadloze bel (chime). Bekijk wie aan de deur staat via je smartphone, met tweeweg communicatie.",
+      image: "/images/products/lsc/videodeurbel-met-chime-3mp.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["3MP", "Chime inbegrepen", "Tweeweg audio"],
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879164500%2Flsc-smart-connect-videodeurbel",
+    },
+    {
+      title: "LSC Slimme voederbak met camera 4L — voor je huisdier",
+      description:
+        "Automatische voederbak van 4 liter met ingebouwde camera. Plan voedertijden via de app en bekijk je kat of hond live.",
+      image: "/images/products/lsc/slimme-voederbak-met-camera-4l.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€59,95", "4 liter", "Camera"],
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879164302%2Flsc-smart-connect-slimme-voederbak",
+    },
+    {
+      title: "LSC Babyfoon met camera wit 1080p — slim in de kinderkamer",
+      description:
+        "Slimme babyfoon met 1080p camera, nachtzicht en tweeweg audio. Bekijk en luister naar je baby via de app, waar je ook bent.",
+      image: "/images/products/lsc/babyfoon-met-camera-wit-1080p.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["€24,95", "1080p", "Nachtzicht"],
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879165347%2Flsc-smart-connect-babyfoon-met-camera-wit",
+    },
+    {
+      title: "LSC Lichtslinger buiten 13,5m — sfeer in de tuin",
+      description:
+        "Weerbestendige lichtslinger van 13,5 meter voor tuin of terras. Dimbaar en via de app te bedienen. Perfect voor zomeravonden.",
+      image: "/images/products/lsc/lichtslinger-buiten-13,5m.png",
+      href: "/aanraders/alle-lsc-smart-connect-producten-action",
+      badges: ["13,5m", "Buiten", "IP44"],
+      actionUrl:
+        "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fp%2F8712879155010%2Flsc-smart-connect-lichtslinger-voor-buiten",
+    },
+  ],
+
+  faq: [
+    {
+      question: "Zijn LSC Smart Connect producten ook in de winkel verkrijgbaar?",
+      answer:
+        "Het basisassortiment (lampen, ledstrips, stekkers) ligt in de Action winkels. Het volledige assortiment — inclusief camerasystemen, babyfoons en online-exclusieve ledstrips — vind je alleen op shop.action.com.",
+    },
+    {
+      question: "Werkt LSC Smart Connect met Google Home?",
+      answer:
+        "Ja. Voeg de LSC Smart Connect service toe in de Google Home app en bedien alle apparaten via stemcommando's met 'Hey Google'.",
+    },
+    {
+      question: "Heeft LSC Smart Connect een hub nodig?",
+      answer:
+        "Nee. Alle LSC Smart Connect producten werken direct via wifi (2.4GHz) en de LSC Smart Connect app. Geen bridge of hub nodig.",
+    },
+    {
+      question: "Werkt LSC met Apple HomeKit?",
+      answer:
+        "Nee. LSC Smart Connect ondersteunt geen Apple HomeKit. Kijk dan naar Philips Hue of Eve voor HomeKit-compatibele producten.",
+    },
+    {
+      question: "Wat kost bezorging via shop.action.com?",
+      answer:
+        "Bezorging aan huis kost €5,99. Afhalen in de Action winkel is gratis, maar online-exclusieve producten zijn niet in de winkel beschikbaar.",
+    },
+  ],
+},
 ];
