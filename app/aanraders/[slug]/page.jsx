@@ -367,7 +367,32 @@ export default function AanraderDetailPage({ params }) {
 
           {/* Niet gevonden? Zoek op de drie grote webshops */}
           <hr style={{ marginTop: "2rem" }} />
-          <AmazonSearchCta searchTerm={amazonSearchTerm} />
+          {guide.slug === "alle-lsc-smart-connect-producten-action" ? (
+            <div className="amazonCtaBox">
+              <p className="muted">Nog meer LSC producten bekijken?</p>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "0.6rem", marginTop: "0.5rem" }}>
+                <a
+                  href="https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fs%2F%3Fsearchterm%3DLSC%2BSmart%2BConnect"
+                  target="_blank"
+                  rel="nofollow sponsored noopener"
+                  style={{ fontSize: "0.9rem", display: "inline-block", padding: "0.55rem 1rem", borderRadius: "8px", background: "#003082", color: "#fff", fontWeight: 700, textDecoration: "none" }}
+                >
+                  Bekijk alle LSC producten bij Action →
+                </a>
+                <a
+                  href="https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fb%2Flsc-smart-connect%2F606566673%2F"
+                  target="_blank"
+                  rel="nofollow sponsored noopener"
+                  className="btn btn-bol"
+                  style={{ fontSize: "0.9rem" }}
+                >
+                  Zoek op bol.com →
+                </a>
+              </div>
+            </div>
+          ) : (
+            <AmazonSearchCta searchTerm={amazonSearchTerm} />
+          )}
         </div>
       </main>
 
