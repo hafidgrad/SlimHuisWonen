@@ -5,7 +5,7 @@ import Image from "next/image";
 import { blogPosts } from "@/data/blog";
 
 export const metadata = {
-  title: "Smart Home Blog: uitleg, tips en vergelijkingen",
+  title: "Smart Home Blog: uitleg en tips",
   description:
     "Smart home blog met handige uitleg, vergelijkingen en koopgidsen over slimme verlichting, hubs, Zigbee, Matter en meer.",
   alternates: {
@@ -16,7 +16,7 @@ export const metadata = {
 const blogCollectionSchema = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  name: "Smart Home Blog: uitleg, tips en vergelijkingen",
+  name: "Smart Home Blog: uitleg en tips",
   description: "Smart home blog met handige uitleg, vergelijkingen en koopgidsen over slimme verlichting, hubs, Zigbee, Matter en meer.",
   url: "https://slimhuiswonen.nl/blog",
 };

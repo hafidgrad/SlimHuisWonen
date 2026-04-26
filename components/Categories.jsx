@@ -8,11 +8,14 @@ export default function Categories() {
       <div className="container">
         {/* ✅ Banner */}
         <div className="banner-center">
-          <div className="categorie-banner">
-            <img
+          <div className="categorie-banner" style={{ position: "relative", overflow: "hidden" }}>
+            <Image
               src="/images/banner_categorieen_slimme_producten.png"
               alt="Categorieën slimme producten"
               className="banner-img"
+              fill
+              sizes="100vw"
+              style={{ objectFit: "cover" }}
             />
           </div>
         </div>

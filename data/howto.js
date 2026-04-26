@@ -842,7 +842,7 @@ export const howto = [
 {
   slug: "slimme-verlichting-koppelen-lukt-niet",
   title: "Slimme verlichting koppelen lukt niet? Zo los je het op (stap voor stap)",
-  seoTitle: "Slimme verlichting koppelen lukt niet? Zo los je op",
+  seoTitle: "Slimme verlichting koppelen lukt niet",
   categories: ["wifi", "verlichting"],
   shortAnswer:
     "Controleer of je lamp op 2.4 GHz wifi zit en niet op 5 GHz. Reset de lamp door hem 5 keer kort aan en uit te zetten. Bij Zigbee-lampen: houd de lamp dicht bij de hub tijdens de eerste koppeling.",
@@ -1162,7 +1162,7 @@ export const howto = [
 {
   slug: "smart-home-zonder-hub-instellen",
   title: "Smart home zonder hub instellen: zo werkt het stap voor stap",
-  seoTitle: "Smart home zonder hub instellen: zo doe je dat",
+  seoTitle: "Smart home zonder hub instellen",
   categories: ["basis", "wifi"],
   shortAnswer:
     "Wifi-apparaten zoals Tapo-lampen en slimme stekkers werken direct via de app zonder hub. Koppel ze aan je 2.4 GHz netwerk en stel schema's en automatiseringen in via de fabrieksapp.",
@@ -1460,7 +1460,7 @@ export const howto = [
 {
   slug: "homey-automatisering-maken",
   title: "Hoe maak je een automatisering in Homey? (flows stap voor stap)",
-  seoTitle: "Automatisering maken in Homey (flows uitgelegd)",
+  seoTitle: "Homey automatisering maken",
   categories: ["hub", "automatisering"],
   shortAnswer:
     "Open de Homey-app, ga naar Flows en tik op de plusknop. Kies een trigger (bijv. beweging), voeg optioneel een voorwaarde toe (bijv. alleen 's avonds) en stel de actie in (bijv. lamp aan).",
@@ -1637,7 +1637,7 @@ export const howto = [
 {
   slug: "hoe-installeer-je-een-slimme-deurbel",
   title: "Hoe installeer je een slimme deurbel? (stap voor stap)",
-  seoTitle: "Slimme deurbel installeren: stap voor stap",
+  seoTitle: "Slimme deurbel installeren: stappenplan",
   categories: ["veiligheid", "basis"],
   description:
     "Stap-voor-stap uitleg voor het installeren van een slimme deurbel. Leer het verschil tussen bedraad en accu en welke deurbel bij jou past.",
@@ -1793,7 +1793,7 @@ export const howto = [
 {
   slug: "hoe-stel-je-een-slimme-thermostaat-in",
   title: "Hoe stel je een slimme thermostaat in? (stap voor stap)",
-  seoTitle: "Slimme thermostaat instellen: stap voor stap",
+  seoTitle: "Slimme thermostaat instellen: stappenplan",
   categories: ["basis", "energie"],
   description:
     "Stap-voor-stap uitleg voor het installeren en instellen van een slimme thermostaat. Leer hoe je geofencing, schema's en energiebesparing instelt.",
@@ -1940,7 +1940,7 @@ export const howto = [
 {
   slug: "hoe-koppel-je-philips-hue-aan-google-home",
   title: "Hoe koppel je Philips Hue aan Google Home? (stap voor stap)",
-  seoTitle: "Philips Hue koppelen aan Google Home: zo doe je dat",
+  seoTitle: "Philips Hue koppelen aan Google Home",
   categories: ["verlichting", "basis"],
   description:
     "Koppel Philips Hue aan Google Home en bedien je lampen via spraak. Stap-voor-stap uitleg inclusief tips voor automatiseringen en routines.",
@@ -2085,7 +2085,7 @@ export const howto = [
 {
   slug: "hoe-installeer-je-een-tapo-camera",
   title: "Hoe installeer je een Tapo camera? (stap voor stap)",
-  seoTitle: "Tapo camera installeren: complete handleiding",
+  seoTitle: "Tapo camera installeren: handleiding",
   categories: ["veiligheid", "basis"],
   description:
     "Stap-voor-stap uitleg voor het installeren van een TP-Link Tapo beveiligingscamera. Van koppelen tot bewegingsdetectie en opslag instellen.",
@@ -2226,7 +2226,7 @@ export const howto = [
 {
   slug: "hoe-maak-je-automatisering-home-assistant",
   title: "Hoe maak je een automatisering in Home Assistant? (stap voor stap)",
-  seoTitle: "Automatisering maken in Home Assistant (2026)",
+  seoTitle: "Home Assistant automatisering maken",
   categories: ["hub", "automatisering"],
   description:
     "Stap-voor-stap uitleg voor het maken van automatiseringen in Home Assistant. Van eenvoudige triggers tot geavanceerde condities.",
@@ -2369,7 +2369,7 @@ export const howto = [
 {
   slug: "hoe-verbind-je-zigbee-apparaten",
   title: "Hoe verbind je Zigbee apparaten? (stap voor stap)",
-  seoTitle: "Zigbee apparaten verbinden: stap voor stap",
+  seoTitle: "Zigbee apparaten verbinden: stappenplan",
   categories: ["hub", "basis"],
   description:
     "Hoe werkt Zigbee en hoe koppel je Zigbee apparaten aan een hub? Stap-voor-stap uitleg voor Homey, Home Assistant en Aqara.",
@@ -2521,7 +2521,7 @@ export const howto = [
 {
   slug: "hoe-stel-je-een-slimme-stekker-in-met-schema",
   title: "Slimme stekker instellen met tijdschema: zo werkt het",
-  seoTitle: "Slimme stekker schema instellen: zo doe je dat",
+  seoTitle: "Slimme stekker schema instellen",
   categories: ["basis", "energie"],
   description:
     "Leer hoe je een tijdschema instelt op een slimme stekker. Automatisch aan bij zonsondergang, uit om 23:00 — stap voor stap uitgelegd.",

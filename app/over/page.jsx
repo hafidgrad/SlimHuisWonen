@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Over SlimHuisWonen | Smart Home door Hafid",
+  title: "Over SlimHuisWonen – Smart Home door Hafid",
   description:
     "Ik ben Hafid, oprichter van SlimHuisWonen.nl. Ik deel mijn ervaringen met smart home zodat jij makkelijker kunt starten met een slim huis.",
   alternates: {

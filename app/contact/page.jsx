@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Contact | SlimHuisWonen – Smart Home Advies",
+  title: "Contact – Smart Home Advies",
   description:
     "Heb je vragen of suggesties over smart home? Neem contact op met SlimHuisWonen via info@slimhuiswonen.nl.",
   alternates: {
@@ -10,9 +10,21 @@ export const metadata = {
   },
 };
 
+const contactSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  name: "Contact | SlimHuisWonen",
+  url: "https://slimhuiswonen.nl/contact",
+  description: "Neem contact op met SlimHuisWonen voor vragen over smart home producten en koopgidsen.",
+};
+
 export default function ContactPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+      />
       <Header />
       <main className="section">
         <div className="container article">
