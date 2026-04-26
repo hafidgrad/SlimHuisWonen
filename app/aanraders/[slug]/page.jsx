@@ -95,6 +95,10 @@ export default function AanraderDetailPage({ params }) {
     const product = slug ? getProductBySlug(slug) : null;
     const searchQuery = encodeURIComponent(pick.title.replace(/^[^:]+:\s*/, ""));
     const hasActionUrl = !!pick.actionUrl;
+
+    const awinBolFallback = `https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=${encodeURIComponent(`https://www.bol.com/nl/nl/s/?searchtext=${searchQuery}`)}`;
+    const awinCoolblueFallback = `https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=${encodeURIComponent(`https://www.coolblue.nl/zoeken?query=${searchQuery}`)}`;
+
     return {
       ...pick,
       amazonUrl: hasActionUrl
@@ -105,12 +109,12 @@ export default function AanraderDetailPage({ params }) {
       bolUrl:
         product?.bolUrl ||
         pick.bolUrl ||
-        (hasActionUrl ? null : `https://www.bol.com/nl/nl/s/?searchtext=${searchQuery}`),
+        (hasActionUrl ? null : awinBolFallback),
       coolblueUrl: hasActionUrl
         ? null
         : product?.coolblueUrl ||
           pick.coolblueUrl ||
-          `https://www.coolblue.nl/zoeken?query=${searchQuery}`,
+          awinCoolblueFallback,
       priceHint: product?.priceHint || null,
     };
   });

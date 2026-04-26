@@ -57,7 +57,8 @@
       "Bash(cp 5.png tado-vs-netatmo.png)",
       "Bash(grep -v \"^$\")",
       "Bash(python _lsc_rewrite.py)",
-      "Bash(python _lsc_picks.py)"
+      "Bash(python _lsc_picks.py)",
+      "Bash(python3 -)"
     ]
   }
 }

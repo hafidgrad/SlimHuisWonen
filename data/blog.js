@@ -392,6 +392,8 @@ export const blogPosts = [
         <li>Slimme sloten en deurbellen</li>
         <li>Thermostaten en klimaatregeling</li>
         <li>Sensoren (beweging, deur, raam)</li>
+        <li>Camera's en videodeurbellen (Matter 1.5, 2025)</li>
+        <li>Robotstofzuigers (Matter 1.4)</li>
       </ul>
       <p>
         Bekijk voor specifieke aanbevelingen onze{" "}
@@ -458,6 +460,21 @@ export const blogPosts = [
           het verschil tussen Home Assistant en Homey
         </Link>
         .
+      </p>
+
+      <h2>Matter 1.5: nu ook camera's en deurbellen (2025)</h2>
+      <p>
+        In 2025 is Matter 1.5 uitgebracht. De grootste toevoeging: officiële ondersteuning voor
+        <strong> camera's en videodeurbellen</strong>. Dit betekent dat slimme beveiligingscamera's
+        straks werken met Google Home, Apple Home en Alexa — zonder aparte app of cloud-afhankelijkheid per merk.
+      </p>
+      <ul>
+        <li>Camera's en videodeurbellen: live beeld in elke Matter-app</li>
+        <li>Betere privacycontrole: lokale verwerking mogelijk</li>
+        <li>Merken als Aqara en Eve Camera ondersteunen Matter 1.5 al</li>
+      </ul>
+      <p>
+        Matter 1.4 (2024) voegde al robotstofzuigers toe. De standaard wordt dus snel volwassener.
       </p>
 
       <h2>Veelgestelde vragen over Matter</h2>
@@ -2421,10 +2438,10 @@ export const blogPosts = [
 // ✅ NIEUW: Beste slimme thermostaat
 {
   slug: "beste-slimme-thermostaat",
-  title: "Beste slimme thermostaat 2025: Tado, Netatmo of Nest?",
-  seoTitle: "Beste slimme thermostaat (2026)",
+  title: "Beste slimme thermostaat 2026: Tado, Netatmo of Nest?",
+  seoTitle: "Beste slimme thermostaat: Tado vs Netatmo",
   description:
-    "Vergelijk de beste slimme thermostaten van 2025. Tado, Netatmo, Nest en Honeywell — welke past bij jouw huis en verwarmingssysteem?",
+    "Vergelijk de beste slimme thermostaten van 2026. Tado, Netatmo, Nest en Honeywell — welke past bij jouw huis en verwarmingssysteem?",
   image: "/images/blog/beste-slimme-thermostaat.png",
   category: "Vergelijking",
   available: true,
@@ -2490,9 +2507,13 @@ export const blogPosts = [
       </p>
       <ul>
         <li><strong>Sterk:</strong> geofencing, energiebesparingsmodus, kamerregeling</li>
-        <li><strong>Zwak:</strong> sommige functies vereisen een betaald abonnement</li>
+        <li><strong>AI Assist:</strong> slimme planning op basis van weersvoorspelling en aanwezigheid</li>
+        <li><strong>Zwak:</strong> AI Assist en sommige andere functies vereisen een betaald abonnement</li>
         <li><strong>Compatibel met:</strong> Alexa, Google Home, Apple HomeKit, Homey</li>
       </ul>
+      <p>
+        Tado heeft in 2024 de naam "Auto-Assist" gewijzigd naar <strong>AI Assist</strong>. De functionaliteit is uitgebreid met slimmere planning op basis van lokale weersdata en gedragspatronen. Voor de meeste basisfuncties heb je geen abonnement nodig — AI Assist is een betaalde aanvulling.
+      </p>
 
       <h3>Netatmo</h3>
       <p>
@@ -2784,6 +2805,7 @@ export const blogPosts = [
       </p>
       <ul>
         <li><strong>Sterk:</strong> slimme zoekopdrachten, Android-integratie, Google Kalender</li>
+        <li><strong>Matter-ondersteuning:</strong> ja, via Google Home app en Nest-speakers als Thread border router</li>
         <li><strong>Zwak:</strong> minder smart home integraties dan Alexa</li>
         <li><strong>Hardwaremerken:</strong> Google Nest Hub, Nest Mini, Nest Audio</li>
       </ul>
@@ -2796,6 +2818,7 @@ export const blogPosts = [
       </p>
       <ul>
         <li><strong>Sterk:</strong> meeste smart home integraties, goedkope hardware</li>
+        <li><strong>Matter-ondersteuning:</strong> ja, Echo-apparaten (4e gen+) fungeren als Matter controller</li>
         <li><strong>Zwak:</strong> minder sterke zoekopdrachten dan Google</li>
         <li><strong>Hardwaremerken:</strong> Echo Dot, Echo Show, Echo Pop</li>
       </ul>
@@ -2853,10 +2876,12 @@ export const blogPosts = [
       <h2>En Apple HomeKit dan?</h2>
       <p>
         Apple HomeKit is het derde grote platform, maar alleen voor
-        iPhone-gebruikers. Het heeft minder integraties maar is het
-        meest privacyvriendelijk. Lees meer in ons artikel over{" "}
-        <Link href="/blog/wat-is-matter">Matter</Link> — de nieuwe
-        standaard die alle platforms beter laat samenwerken.
+        iPhone-gebruikers. Het heeft minder integraties dan Google en Alexa,
+        maar is het meest privacyvriendelijk: alles wordt lokaal verwerkt.
+        Dankzij <Link href="/blog/wat-is-matter">Matter</Link> worden de
+        grenzen tussen platforms kleiner. Apple Home ondersteunt Matter volledig
+        — een Matter-apparaat werkt dus ook gewoon in HomeKit. Voor wie privacy
+        én brede compatibiliteit wil, is HomeKit + Matter een sterke combinatie.
       </p>
 
       <h2>Conclusie</h2>

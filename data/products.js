@@ -1871,7 +1871,7 @@ export const products = [
       "Vereist Aqara hub",
     ],
     affiliateUrl: "https://www.amazon.nl/Aqara-Aanwezigheidssensor-Bewegingssensor-ondersteunt-SmartThings/dp/B0D5QPH3T6?tag=slimhuiswonen-21",
-    bolUrl: "https://partner.bol.com/click/click?p=61&t=url&s=1515439&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Faqara-presence-sensor-fp1e%2F9300000184492428%2F",
+    bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Faqara-presence-sensor-fp1e%2F9300000184492428%2F",
     
     youtubeId: "M9FEJ5c2j8c",
     priceHint: "€49,99",
@@ -1898,7 +1898,7 @@ export const products = [
       "Compact formaat",
     ],
     affiliateUrl: "https://www.amazon.nl/SONOFF-SNZB-03P-ZigBee-bewegingssensor-3-0-detector-Zigbee-bridge/dp/B0C1GB4DVR?tag=slimhuiswonen-21",
-    bolUrl: "https://partner.bol.com/click/click?p=61&t=url&s=1515439&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Fsonoff-zigbee-bewegingssensor-snzb-03p-voor-huisbeveiliging-%2F9300000189727787%2F",
+    bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Fsonoff-zigbee-bewegingssensor-snzb-03p-voor-huisbeveiliging-%2F9300000189727787%2F",
     
     youtubeId: "XX2byg88Sp0",
     priceHint: "€44,99",
@@ -1925,7 +1925,7 @@ export const products = [
       "Magnetische montage",
     ],
     affiliateUrl: "https://www.amazon.nl/SONOFF-SNZB-04P-deurcontactalarmsysteem-huisdeursensor-intelligente/dp/B0C1G7W72B?tag=slimhuiswonen-21",
-    bolUrl: "https://partner.bol.com/click/click?p=61&t=url&s=1515439&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Fsonoff-zigbee-openingssensor-voor-smart-home-systeem-met-bat%2F9300000192511370%2F",
+    bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Fsonoff-zigbee-openingssensor-voor-smart-home-systeem-met-bat%2F9300000192511370%2F",
     
     youtubeId: "3gYyQRAUz8o",
     priceHint: "€9,99",
@@ -1952,7 +1952,7 @@ export const products = [
       "Batterij CR2450",
     ],
     affiliateUrl: "https://www.amazon.nl/Aqara-verschillende-handelingen-Home-apparaten-ondersteunt/dp/B0BHWS3VTZ?tag=slimhuiswonen-21",
-    bolUrl: "https://partner.bol.com/click/click?p=61&t=url&s=1515439&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Faqara-cube-t1-pro%2F9300000135991859%2F",
+    bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Faqara-cube-t1-pro%2F9300000135991859%2F",
     
     youtubeId: "RaE9ylNAI-4",
     priceHint: "€22,99",
@@ -1973,7 +1973,7 @@ export const products = [
     description: "Tapo C220 Beveiligingscamera binnen - 2K 4MP QHD - Pan Tilt",
     features: [],
     affiliateUrl: "https://www.amazon.nl/Tapo-C220-WiFi-beveiligingscamera-AI-detecties-privacymodus/dp/B0CF2RRBW5?tag=slimhuiswonen-21",
-    bolUrl: "https://partner.bol.com/click/click?p=61&t=url&s=1515439&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Ftapo-c220-beveiligingscamera-binnen-2k-4mp-qhd-pan-tilt%2F9300000162714113%2F",
+    bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Ftapo-c220-beveiligingscamera-binnen-2k-4mp-qhd-pan-tilt%2F9300000162714113%2F",
     
     youtubeId: "rpqeOAkQLdA",
     priceHint: "€43,99",
