@@ -269,21 +269,21 @@ export default function HomePage() {
         <section className="section">
           <div className="container">
             <div className="about-founder__grid">
-              <div className="about-founder__image-wrap">
-                <Image
-                  src="/images/hafid-laptop.png"
-                  alt="Hafid van SlimHuisWonen"
-                  className="about-founder__image"
-                  width={600}
-                  height={400}
-                  style={{ width: "100%", height: "auto" }}
-                />
-              </div>
-
               <div className="about-founder__content">
-                <span className="about-founder__eyebrow">
-                  Over SlimHuisWonen
-                </span>
+                <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "0.75rem" }}>
+                  <div style={{ width: 56, height: 56, borderRadius: "50%", overflow: "hidden", flexShrink: 0, position: "relative" }}>
+                    <Image
+                      src="/profielfoto.jpeg"
+                      alt="Hafid – SlimHuisWonen"
+                      fill
+                      sizes="56px"
+                      style={{ objectFit: "cover" }}
+                    />
+                  </div>
+                  <span className="about-founder__eyebrow" style={{ margin: 0 }}>
+                    Over SlimHuisWonen
+                  </span>
+                </div>
                 <h2>Waarom ik SlimHuisWonen ben gestart</h2>
 
                 <p>
