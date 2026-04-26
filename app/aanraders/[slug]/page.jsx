@@ -320,7 +320,7 @@ export default function AanraderDetailPage({ params }) {
             ))}
           </div>
 
-          <div style={{ display: "grid", gap: "1rem", marginTop: "1rem" }}>
+          <div className={`aanraders-grid${guide.slug === "alle-lsc-smart-connect-producten-action" ? " drie-kolommen" : ""}`}>
             {enrichedPicks.map((pick) => (
               <BuyGuideProductCard key={pick.title} {...pick} />
             ))}

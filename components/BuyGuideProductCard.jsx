@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import PrijsDisclaimer from "@/components/PrijsDisclaimer";
 
 export default function BuyGuideProductCard({
   title,
@@ -16,76 +15,42 @@ export default function BuyGuideProductCard({
   priceHint,
 }) {
   return (
-    <article
-      className="buyGuideCard"
-      style={{
-        display: "grid",
-        gridTemplateColumns: "120px 1fr",
-        gap: "1rem",
-        padding: "1rem",
-        border: "1px solid rgba(255,255,255,0.08)",
-        borderRadius: "16px",
-        background: "rgba(255,255,255,0.02)",
-      }}
-    >
-      <div
-        style={{
-          borderRadius: "12px",
-          overflow: "hidden",
-          background: "#0b0f1a",
-          aspectRatio: "1 / 1",
-          position: "relative",
-        }}
-      >
+    <article className="buyGuideCard">
+      {/* Image — square, top of card */}
+      <div className="buyGuideCard__imgWrap">
         <Image
           src={image}
           alt={title}
           fill
-          sizes="120px"
+          sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 33vw"
           style={{ objectFit: "contain" }}
           onError={(e) => { e.target.src = "/images/product-placeholder.png"; }}
         />
       </div>
 
-      <div>
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            gap: "0.5rem",
-            marginBottom: "0.5rem",
-          }}
-        >
-          {badges.map((b) => (
-            <span
-              key={b}
-              style={{
-                fontSize: "0.8rem",
-                padding: "0.25rem 0.5rem",
-                borderRadius: "999px",
-                border: "1px solid rgba(255,255,255,0.12)",
-                opacity: 0.9,
-              }}
-            >
-              {b}
-            </span>
-          ))}
-        </div>
+      {/* Content */}
+      <div className="buyGuideCard__content">
+        {/* Badges */}
+        {badges.length > 0 && (
+          <div className="buyGuideCard__badges">
+            {badges.map((b) => (
+              <span key={b} className="buyGuideCard__badge">{b}</span>
+            ))}
+          </div>
+        )}
 
-        <h3 style={{ margin: 0, marginBottom: "0.35rem" }}>{title}</h3>
+        <h3 className="buyGuideCard__title">{title}</h3>
 
-        <p className="muted" style={{ margin: 0, marginBottom: "0.75rem" }}>
-          {description}
-        </p>
+        <p className="buyGuideCard__desc">{description}</p>
 
-        <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", alignItems: "center" }}>
+        {/* Buttons — always at bottom */}
+        <div className="buyGuideCard__buttons">
           {actionUrl && (
             <a
               href={actionUrl}
               target="_blank"
               rel="noopener noreferrer sponsored"
-              className="product-btn"
-              style={{ fontSize: "0.88rem", padding: "0.55rem 1rem", whiteSpace: "nowrap", background: "#003082", color: "#fff", fontWeight: 700, borderRadius: "8px", textDecoration: "none", display: "inline-block" }}
+              className="buyGuideCard__btn buyGuideCard__btn--action"
             >
               🔒 Kopen bij Action
             </a>
@@ -95,53 +60,39 @@ export default function BuyGuideProductCard({
               href={bolUrl}
               target="_blank"
               rel="noopener noreferrer sponsored"
-              className="btn btn-bol product-btn"
-              style={{ fontSize: "0.88rem", padding: "0.55rem 1rem", whiteSpace: "nowrap" }}
+              className="buyGuideCard__btn buyGuideCard__btn--bol"
             >
               🔒 Bestellen via bol.com
             </a>
           )}
-
           {coolblueUrl && (
             <a
               href={coolblueUrl}
               target="_blank"
               rel="noopener noreferrer sponsored"
-              className="btn btn-coolblue product-btn"
-              style={{ fontSize: "0.88rem", padding: "0.55rem 1rem", whiteSpace: "nowrap" }}
+              className="buyGuideCard__btn buyGuideCard__btn--coolblue"
             >
               🔒 Bestellen via Coolblue
             </a>
           )}
-
           {amazonUrl && (
             <a
               href={amazonUrl}
               target="_blank"
               rel="noopener noreferrer sponsored"
-              className="btn btn-amazon product-btn"
-              style={{ fontSize: "0.88rem", padding: "0.55rem 1rem", whiteSpace: "nowrap" }}
+              className="buyGuideCard__btn buyGuideCard__btn--amazon"
             >
               🔒 Bestellen via Amazon
             </a>
           )}
-
-          {!actionUrl && (
-            <Link
-              href={href}
-              className="product-details-link"
-              style={{ fontSize: "0.88rem", padding: "0.55rem 0.9rem" }}
-            >
-              Meer info
+          {!actionUrl && href && (
+            <Link href={href} className="buyGuideCard__btn buyGuideCard__btn--info">
+              Meer info →
             </Link>
           )}
         </div>
 
-        {[bolUrl, coolblueUrl, amazonUrl].filter(Boolean).length >= 2 && <PrijsDisclaimer />}
-
-        <p style={{ margin: "0.35rem 0 0", fontSize: "0.72rem", opacity: 0.4 }}>
-          Laatste prijs check: april 2026
-        </p>
+        <p className="buyGuideCard__priceNote">Laatste prijs check: april 2026</p>
       </div>
     </article>
   );
