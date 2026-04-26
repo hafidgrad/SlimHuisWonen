@@ -64,6 +64,14 @@ const CATEGORIES = [
   },
 ];
 
+const tipsCollectionSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Tips & Uitleg | SlimHuisWonen",
+  description: "Praktische tips en uitleg over slimme verlichting, sensoren, hubs en netwerken. Begrijp hoe je smart home werkt en voorkom miskopen.",
+  url: "https://slimhuiswonen.nl/tips",
+};
+
 export default function TipsPage() {
   const allTips = getAllTips();
   const bySlug = Object.fromEntries(allTips.map((t) => [t.slug, t]));
@@ -71,6 +79,10 @@ export default function TipsPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(tipsCollectionSchema) }}
+      />
       <Header />
 
       <main className="section">

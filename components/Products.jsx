@@ -59,7 +59,7 @@ export default function Products({ limit, showHeader = true }) {
                     href={p.affiliateUrl}
                     className="btn btn-amazon product-btn"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="nofollow sponsored noopener noreferrer"
                   >
                     Beste prijs op Amazon
                   </a>

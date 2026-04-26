@@ -18,9 +18,13 @@ export async function generateMetadata({ params }) {
   }
 
   const title = `${product.name} – ${product.brand}`;
-  const description =
-    product.description ||
-    `Bekijk ${product.name} van ${product.brand} op SlimHuisWonen.`;
+  const baseDesc = product.description || "";
+  const description = baseDesc.length >= 120
+    ? baseDesc
+    : (() => {
+        const features = product.features?.slice(0, 2).join(", ") || "";
+        return `${product.name} kopen? Vergelijk prijzen bij bol.com, Coolblue en Amazon.${features ? ` ${features}.` : ""} Onafhankelijk advies van SlimHuisWonen.`;
+      })();
 
   return {
     title,
@@ -249,7 +253,7 @@ export default function ProductPage({ params }) {
                       <a
                         href={bolUrl}
                         target="_blank"
-                        rel="noopener noreferrer sponsored"
+                        rel="nofollow sponsored noopener noreferrer"
                         className="btn btn-bol product-btn"
                         style={{ width: "auto" }}
                       >
@@ -260,7 +264,7 @@ export default function ProductPage({ params }) {
                       <a
                         href={coolblueUrl}
                         target="_blank"
-                        rel="noopener noreferrer sponsored"
+                        rel="nofollow sponsored noopener noreferrer"
                         className="btn btn-coolblue product-btn"
                         style={{ width: "auto" }}
                       >
@@ -271,7 +275,7 @@ export default function ProductPage({ params }) {
                       <a
                         href={amazonUrl}
                         target="_blank"
-                        rel="noopener noreferrer sponsored"
+                        rel="nofollow sponsored noopener noreferrer"
                         className="btn btn-amazon product-btn"
                         style={{ width: "auto" }}
                       >

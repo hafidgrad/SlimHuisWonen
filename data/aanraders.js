@@ -1925,9 +1925,9 @@ relatedGuides: [
 
 {
   slug: "alle-lsc-smart-connect-producten-action",
-  title: "LSC Smart Connect koopgids: alle producten van Action (2026)",
+  title: "LSC Smart Connect Action: alle producten (2026)",
   description:
-    "Compleet overzicht van alle LSC Smart Connect producten bij Action. Slimme lampen, ledstrips, stekkers, camera's, babyfoons en meer — met directe links naar shop.action.com.",
+    "Compleet overzicht LSC Smart Connect producten van Action. Slimme lampen, camera's, stekkers en meer. Directe links naar Action en bol.com.",
   image: "/images/blog/lsc-smart-connect-van-action.png",
 
   intro:

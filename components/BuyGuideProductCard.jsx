@@ -49,7 +49,7 @@ export default function BuyGuideProductCard({
             <a
               href={actionUrl}
               target="_blank"
-              rel="noopener noreferrer sponsored"
+              rel="nofollow sponsored noopener noreferrer"
               className="buyGuideCard__btn buyGuideCard__btn--action"
             >
               🔒 Kopen bij Action
@@ -59,7 +59,7 @@ export default function BuyGuideProductCard({
             <a
               href={bolUrl}
               target="_blank"
-              rel="noopener noreferrer sponsored"
+              rel="nofollow sponsored noopener noreferrer"
               className="buyGuideCard__btn buyGuideCard__btn--bol"
             >
               🔒 Bestellen via bol.com
@@ -69,7 +69,7 @@ export default function BuyGuideProductCard({
             <a
               href={coolblueUrl}
               target="_blank"
-              rel="noopener noreferrer sponsored"
+              rel="nofollow sponsored noopener noreferrer"
               className="buyGuideCard__btn buyGuideCard__btn--coolblue"
             >
               🔒 Bestellen via Coolblue
@@ -79,7 +79,7 @@ export default function BuyGuideProductCard({
             <a
               href={amazonUrl}
               target="_blank"
-              rel="noopener noreferrer sponsored"
+              rel="nofollow sponsored noopener noreferrer"
               className="buyGuideCard__btn buyGuideCard__btn--amazon"
             >
               🔒 Bestellen via Amazon

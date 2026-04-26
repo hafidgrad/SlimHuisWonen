@@ -507,6 +507,7 @@ export const blogPosts = [
   {
   slug: "zigbee-vs-zwave-vs-matter-vs-wifi",
   title: "Zigbee vs Z-Wave vs Matter vs Wi-Fi: wat moet je kiezen?",
+  seoTitle: "Zigbee vs Z-Wave vs Matter vs Wi-Fi: wat kies je?",
   description:
     "Welke smart home techniek past bij jou? Vergelijk Zigbee, Z-Wave, Matter en Wi-Fi op bereik, stabiliteit, energieverbruik en compatibiliteit.",
   image: "/images/blog/zigbee-vs-zwave-vs-matter-vs-wifi.png",
@@ -770,6 +771,7 @@ export const blogPosts = [
   {
   slug: "beste-smart-home-hub",
   title: "Smart home hub kiezen: waar moet je op letten?",
+  seoTitle: "Beste smart home hub (2026): welke past bij jou?",
   description:
     "Welke smart home hub past bij jou? Lees waar je op moet letten bij Homey, Home Assistant en SmartThings: gemak, controle, lokaal werken en uitbreiden.",
   image: "/images/blog/beste-smart-home-hub.png",
@@ -1701,6 +1703,7 @@ export const blogPosts = [
 {
   slug: "beste-slimme-deurbel",
   title: "Slimme deurbel kiezen: waar moet je op letten?",
+  seoTitle: "Beste slimme deurbel (2026): onze aanraders",
   description:
     "Een slimme deurbel kopen? Ontdek waar je op moet letten: accu of bedraad, beeldkwaliteit, wifi, opslag zonder abonnement, privacy en smart home integraties.",
   image: "/images/blog/beste-slimme-deurbel.png",
@@ -1975,6 +1978,7 @@ export const blogPosts = [
 {
   slug: "smart-home-voor-huisdieren",
   title: "Smart Home voor Huisdieren: veiligheid, comfort en controle",
+  seoTitle: "Smart home voor huisdieren: handige producten",
   description:
     "Ontdek hoe je een smart home gebruikt voor huisdieren. Van slimme camera’s en automatische voerbakken tot temperatuurcontrole en notificaties.",
   image: "/images/blog/huisdieren.png",
@@ -2119,6 +2123,7 @@ export const blogPosts = [
 {
   slug: "smart-home-voor-kinderen",
   title: "Smart Home voor Kinderen: meer veiligheid en rust in huis",
+  seoTitle: "Smart home voor kinderen: veilig en handig",
   description:
     "Ontdek hoe je een smart home gebruikt voor jonge kinderen. Van automatische nachtverlichting tot babycamera’s en slimme notificaties.",
   image: "/images/blog/kinderen.png",
@@ -2417,6 +2422,7 @@ export const blogPosts = [
 {
   slug: "beste-slimme-thermostaat",
   title: "Beste slimme thermostaat 2025: Tado, Netatmo of Nest?",
+  seoTitle: "Beste slimme thermostaat: onze top 5 (2026)",
   description:
     "Vergelijk de beste slimme thermostaten van 2025. Tado, Netatmo, Nest en Honeywell — welke past bij jouw huis en verwarmingssysteem?",
   image: "/images/blog/beste-slimme-thermostaat.png",
@@ -3320,6 +3326,7 @@ export const blogPosts = [
 {
   slug: "homey-bridge-vs-homey-pro",
   title: "Homey Bridge of Homey Pro? De eerlijke vergelijking (2026)",
+  seoTitle: "Homey Bridge vs Homey Pro: wat is het verschil?",
   description:
     "Twijfel je tussen de Homey Bridge (€69) en de Homey Pro (€399)? Lees wat het verschil is, wat je wel en niet kunt met de Bridge en wanneer de Pro de moeite waard is.",
   image: "/images/blog/homey-bridge-of-homey-pro.png",
@@ -3689,6 +3696,7 @@ export const blogPosts = [
 {
   slug: "wat-is-thread",
   title: "Wat is Thread? Het slimme protocol naast Matter uitgelegd",
+  seoTitle: "Wat is Thread? Smart home protocol uitgelegd",
   description:
     "Thread is een nieuw draadloos protocol voor smart home dat steeds meer wordt gebruikt naast Matter. Lees wat Thread is, hoe het werkt en of jij het nodig hebt.",
   image: "/images/blog/wat-is-thread.png",
@@ -3763,6 +3771,7 @@ export const blogPosts = [
 {
   slug: "homekit-uitleg",
   title: "Apple HomeKit: smart home voor Apple-gebruikers uitgelegd",
+  seoTitle: "HomeKit uitgelegd: zo werkt Apple HomeKit",
   description:
     "Wat is Apple HomeKit en welke slimme producten werken ermee? Lees hoe je HomeKit instelt, welke apps je gebruikt en wat de voordelen zijn ten opzichte van Google Home en Amazon Alexa.",
   image: "/images/blog/apple-homeKit.png",
@@ -3839,6 +3848,7 @@ export const blogPosts = [
 {
   slug: "p1-meter-uitleg",
   title: "P1 meter: wat is het en hoe lees je je slimme meter uit?",
+  seoTitle: "P1 meter uitleg: wat is het en hoe werkt het?",
   description:
     "Met een P1 meter lees je realtime je energieverbruik uit via de P1-poort van je slimme meter. Lees hoe het werkt, welke P1 meters er zijn en wat je ermee kunt doen.",
   image: "/images/blog/smart-home-energiebesparing.png",
@@ -5377,6 +5387,7 @@ export const blogPosts = [
 {
   slug: "smart-home-huurwoning",
   title: "Smart home in een huurwoning: wat mag en wat werkt? (2026)",
+  seoTitle: "Smart home huurwoning: wat mag en wat werkt?",
   description:
     "Woon je in een huurwoning en wil je toch een slim huis? Ontdek welke slimme producten je kunt plaatsen zonder boren, verbouwen of toestemming van de verhuurder.",
   image: "/images/blog/smart-home-huurwoning.png",
@@ -5860,6 +5871,7 @@ export const blogPosts = [
 {
   slug: "slimme-deurbel-zonder-abonnement",
   title: "Slimme deurbel zonder abonnement: de beste opties in 2026",
+  seoTitle: "Slimme deurbel zonder abonnement (2026)",
   description:
     "Wil je een slimme deurbel zonder maandelijkse kosten? Ontdek welke deurbellen werken zonder abonnement en lokale opslag bieden.",
   image: "/images/blog/beste-slimme-deurbel.png",

@@ -78,7 +78,7 @@ export default function RelatedProducts({ slugs = [], title = "Producten die je 
                   <a
                     href={bolUrl}
                     target="_blank"
-                    rel="noopener noreferrer sponsored"
+                    rel="nofollow sponsored noopener noreferrer"
                     style={{
                       display: "inline-block",
                       padding: "0.45rem 0.85rem",
@@ -97,7 +97,7 @@ export default function RelatedProducts({ slugs = [], title = "Producten die je 
                   <a
                     href={coolblueUrl}
                     target="_blank"
-                    rel="noopener noreferrer sponsored"
+                    rel="nofollow sponsored noopener noreferrer"
                     style={{
                       display: "inline-block",
                       padding: "0.45rem 0.85rem",
@@ -116,7 +116,7 @@ export default function RelatedProducts({ slugs = [], title = "Producten die je 
                   <a
                     href={p.affiliateUrl}
                     target="_blank"
-                    rel="noopener noreferrer sponsored"
+                    rel="nofollow sponsored noopener noreferrer"
                     style={{
                       display: "inline-block",
                       padding: "0.45rem 0.85rem",

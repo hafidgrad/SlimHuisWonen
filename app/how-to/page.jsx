@@ -56,6 +56,14 @@ const CATEGORIES = [
   },
 ];
 
+const howtoCollectionSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "How To Smart Home | SlimHuisWonen",
+  description: "Stap-voor-stap handleidingen voor je smart home. Duidelijke uitleg zonder technisch gedoe voor Homey, Home Assistant en meer.",
+  url: "https://slimhuiswonen.nl/how-to",
+};
+
 export default function HowToPage() {
   const allHowtos = (Array.isArray(howtoData) ? howtoData : []).filter(
     (h) => h?.available
@@ -68,6 +76,10 @@ export default function HowToPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howtoCollectionSchema) }}
+      />
       <Header />
 
       <main className="section">

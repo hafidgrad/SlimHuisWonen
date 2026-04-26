@@ -995,6 +995,7 @@ export const howto = [
 {
   slug: "bewegingssensor-instellen",
   title: "Bewegingssensor instellen: zo werkt het stap voor stap",
+  seoTitle: "Bewegingssensor instellen: stap voor stap",
   categories: ["sensor", "automatisering", "verlichting"],
   relatedProductSlugs: ["aqara-motion-sensor", "eve-motion-matter-bewegingssensor", "tapo-t100"],
   shortAnswer:
@@ -1161,6 +1162,7 @@ export const howto = [
 {
   slug: "smart-home-zonder-hub-instellen",
   title: "Smart home zonder hub instellen: zo werkt het stap voor stap",
+  seoTitle: "Smart home zonder hub instellen: zo doe je dat",
   categories: ["basis", "wifi"],
   shortAnswer:
     "Wifi-apparaten zoals Tapo-lampen en slimme stekkers werken direct via de app zonder hub. Koppel ze aan je 2.4 GHz netwerk en stel schema's en automatiseringen in via de fabrieksapp.",
@@ -1314,6 +1316,7 @@ export const howto = [
 {
   slug: "slimme-stekker-instellen",
   title: "Slimme stekker instellen: zo werkt het stap voor stap",
+  seoTitle: "Slimme stekker instellen: stap voor stap",
   categories: ["basis", "energie"],
   relatedProductSlugs: ["tapo-p115", "tapo-p110", "eve-energy"],
   shortAnswer:
@@ -1634,6 +1637,7 @@ export const howto = [
 {
   slug: "hoe-installeer-je-een-slimme-deurbel",
   title: "Hoe installeer je een slimme deurbel? (stap voor stap)",
+  seoTitle: "Slimme deurbel installeren: stap voor stap",
   categories: ["veiligheid", "basis"],
   description:
     "Stap-voor-stap uitleg voor het installeren van een slimme deurbel. Leer het verschil tussen bedraad en accu en welke deurbel bij jou past.",
@@ -1789,6 +1793,7 @@ export const howto = [
 {
   slug: "hoe-stel-je-een-slimme-thermostaat-in",
   title: "Hoe stel je een slimme thermostaat in? (stap voor stap)",
+  seoTitle: "Slimme thermostaat instellen: stap voor stap",
   categories: ["basis", "energie"],
   description:
     "Stap-voor-stap uitleg voor het installeren en instellen van een slimme thermostaat. Leer hoe je geofencing, schema's en energiebesparing instelt.",
@@ -1935,6 +1940,7 @@ export const howto = [
 {
   slug: "hoe-koppel-je-philips-hue-aan-google-home",
   title: "Hoe koppel je Philips Hue aan Google Home? (stap voor stap)",
+  seoTitle: "Philips Hue koppelen aan Google Home: zo doe je dat",
   categories: ["verlichting", "basis"],
   description:
     "Koppel Philips Hue aan Google Home en bedien je lampen via spraak. Stap-voor-stap uitleg inclusief tips voor automatiseringen en routines.",
@@ -2079,6 +2085,7 @@ export const howto = [
 {
   slug: "hoe-installeer-je-een-tapo-camera",
   title: "Hoe installeer je een Tapo camera? (stap voor stap)",
+  seoTitle: "Tapo camera installeren: complete handleiding",
   categories: ["veiligheid", "basis"],
   description:
     "Stap-voor-stap uitleg voor het installeren van een TP-Link Tapo beveiligingscamera. Van koppelen tot bewegingsdetectie en opslag instellen.",
@@ -2362,6 +2369,7 @@ export const howto = [
 {
   slug: "hoe-verbind-je-zigbee-apparaten",
   title: "Hoe verbind je Zigbee apparaten? (stap voor stap)",
+  seoTitle: "Zigbee apparaten verbinden: stap voor stap",
   categories: ["hub", "basis"],
   description:
     "Hoe werkt Zigbee en hoe koppel je Zigbee apparaten aan een hub? Stap-voor-stap uitleg voor Homey, Home Assistant en Aqara.",
@@ -2513,6 +2521,7 @@ export const howto = [
 {
   slug: "hoe-stel-je-een-slimme-stekker-in-met-schema",
   title: "Slimme stekker instellen met tijdschema: zo werkt het",
+  seoTitle: "Slimme stekker schema instellen: zo doe je dat",
   categories: ["basis", "energie"],
   description:
     "Leer hoe je een tijdschema instelt op een slimme stekker. Automatisch aan bij zonsondergang, uit om 23:00 — stap voor stap uitgelegd.",

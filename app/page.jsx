@@ -94,7 +94,7 @@ function PopulaireProducten() {
                     <a
                       href={bolUrl}
                       target="_blank"
-                      rel="noopener noreferrer sponsored"
+                      rel="nofollow sponsored noopener noreferrer"
                       className="btn btn-bol product-btn"
                       style={{ fontSize: "0.8rem", padding: "0.45rem 0.75rem" }}
                     >
@@ -106,7 +106,7 @@ function PopulaireProducten() {
                     <a
                       href={coolblueUrl}
                       target="_blank"
-                      rel="noopener noreferrer sponsored"
+                      rel="nofollow sponsored noopener noreferrer"
                       className="btn btn-coolblue product-btn"
                       style={{ fontSize: "0.8rem", padding: "0.45rem 0.75rem" }}
                     >
@@ -118,7 +118,7 @@ function PopulaireProducten() {
                     <a
                       href={p.affiliateUrl}
                       target="_blank"
-                      rel="noopener noreferrer sponsored"
+                      rel="nofollow sponsored noopener noreferrer"
                       className="btn btn-amazon product-btn"
                       style={{ fontSize: "0.8rem", padding: "0.45rem 0.75rem" }}
                     >
@@ -162,7 +162,7 @@ export async function generateMetadata() {
     openGraph: {
       title: "SlimHuisWonen.nl – Slim huis starten zonder gedoe",
       description:
-        "De beste smart home producten, tips en automatiseringen op één plek.",
+        "Ontdek de beste smart home producten, koopgidsen en praktische tips. Onafhankelijk advies voor slimme verlichting, camera's, thermostaten en meer.",
       url: "https://slimhuiswonen.nl",
       images: [
         {
@@ -270,10 +270,13 @@ export default function HomePage() {
           <div className="container">
             <div className="about-founder__grid">
               <div className="about-founder__image-wrap">
-                <img
-                  src="/images/hafid-laptop.jpg"
+                <Image
+                  src="/images/hafid-laptop.png"
                   alt="Hafid van SlimHuisWonen"
                   className="about-founder__image"
+                  width={600}
+                  height={400}
+                  style={{ width: "100%", height: "auto" }}
                 />
               </div>
 
@@ -502,11 +505,14 @@ export default function HomePage() {
         <section className="section">
           <div className="container">
             <Link href="/tips" className="banner-center tips-banner-link">
-              <div className="categorie-banner tips-banner">
-                <img
+              <div className="categorie-banner tips-banner" style={{ position: "relative", overflow: "hidden" }}>
+                <Image
                   src="/images/banner_tips_uitleg.png"
                   alt="Tips en uitleg voor je smart home"
                   className="banner-img"
+                  fill
+                  sizes="100vw"
+                  style={{ objectFit: "cover" }}
                 />
               </div>
             </Link>
@@ -529,11 +535,14 @@ export default function HomePage() {
         <section className="section">
           <div className="container">
             <Link href="/how-to" className="banner-center howto-banner-link">
-              <div className="categorie-banner howto-banner">
-                <img
+              <div className="categorie-banner howto-banner" style={{ position: "relative", overflow: "hidden" }}>
+                <Image
                   src="/images/banner_how-to.png"
                   alt="How To Smart Home"
                   className="banner-img"
+                  fill
+                  sizes="100vw"
+                  style={{ objectFit: "cover" }}
                 />
               </div>
             </Link>
@@ -555,11 +564,14 @@ export default function HomePage() {
         <section className="section">
           <div className="container">
             <Link href="/blog" className="banner-center blog-banner-link">
-              <div className="categorie-banner blog-banner">
-                <img
+              <div className="categorie-banner blog-banner" style={{ position: "relative", overflow: "hidden" }}>
+                <Image
                   src="/images/blog/blog-header.png"
                   alt="SlimHuisWonen blog"
                   className="banner-img"
+                  fill
+                  sizes="100vw"
+                  style={{ objectFit: "cover" }}
                 />
               </div>
             </Link>

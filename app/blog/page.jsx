@@ -5,12 +5,20 @@ import Image from "next/image";
 import { blogPosts } from "@/data/blog";
 
 export const metadata = {
-  title: "Blog",
+  title: "Smart Home Blog: uitleg, tips en vergelijkingen",
   description:
     "Smart home blog met handige uitleg, vergelijkingen en koopgidsen over slimme verlichting, hubs, Zigbee, Matter en meer.",
   alternates: {
     canonical: "https://slimhuiswonen.nl/blog",
   },
+};
+
+const blogCollectionSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Smart Home Blog: uitleg, tips en vergelijkingen",
+  description: "Smart home blog met handige uitleg, vergelijkingen en koopgidsen over slimme verlichting, hubs, Zigbee, Matter en meer.",
+  url: "https://slimhuiswonen.nl/blog",
 };
 
 export default function BlogOverviewPage() {
@@ -22,6 +30,10 @@ export default function BlogOverviewPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogCollectionSchema) }}
+      />
       <Header />
 
       <main className="section">
