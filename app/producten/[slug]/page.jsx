@@ -69,6 +69,12 @@ const getAmazonUrl = (p) =>
   p?.url ||
   null;
 
+function parsePriceHint(hint) {
+  if (!hint) return null;
+  const match = hint.replace(",", ".").match(/[\d.]+/);
+  return match ? parseFloat(match[0]) : null;
+}
+
 // Resolve video ID: youtubeId field (new) or extract from youtubeUrl (legacy)
 const getVideoId = (p) =>
   p?.youtubeId ||
@@ -102,6 +108,8 @@ export default function ProductPage({ params }) {
   const coolblueUrl = getCoolblueUrl(product);
   const videoId     = getVideoId(product);
 
+  const parsedPrice = parsePriceHint(priceHint);
+
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -125,8 +133,50 @@ export default function ProductPage({ params }) {
     offers: {
       "@type": "Offer",
       priceCurrency: "EUR",
+      ...(parsedPrice !== null && { price: parsedPrice }),
+      priceValidUntil: "2027-01-01",
       availability: "https://schema.org/InStock",
-      ...(amazonUrl && { url: amazonUrl }),
+      url: `https://slimhuiswonen.nl/producten/${product.slug}`,
+      seller: {
+        "@type": "Organization",
+        name: "SlimHuisWonen",
+      },
+      shippingDetails: {
+        "@type": "OfferShippingDetails",
+        shippingRate: {
+          "@type": "MonetaryAmount",
+          value: "0",
+          currency: "EUR",
+        },
+        shippingDestination: {
+          "@type": "DefinedRegion",
+          addressCountry: "NL",
+        },
+        deliveryTime: {
+          "@type": "ShippingDeliveryTime",
+          handlingTime: {
+            "@type": "QuantitativeValue",
+            minValue: 0,
+            maxValue: 1,
+            unitCode: "DAY",
+          },
+          transitTime: {
+            "@type": "QuantitativeValue",
+            minValue: 1,
+            maxValue: 3,
+            unitCode: "DAY",
+          },
+        },
+      },
+      hasMerchantReturnPolicy: {
+        "@type": "MerchantReturnPolicy",
+        applicableCountry: "NL",
+        returnPolicyCategory:
+          "https://schema.org/MerchantReturnFiniteReturnWindow",
+        merchantReturnDays: 30,
+        returnMethod: "https://schema.org/ReturnByMail",
+        returnFees: "https://schema.org/FreeReturn",
+      },
     },
   };
 
