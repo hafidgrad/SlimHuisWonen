@@ -392,7 +392,7 @@ export const blogPosts = [
         <li>Slimme sloten en deurbellen</li>
         <li>Thermostaten en klimaatregeling</li>
         <li>Sensoren (beweging, deur, raam)</li>
-        <li>Beveiligingscamera's en videodeurbellen (nieuw in Matter 1.5, november 2025)</li>
+        <li>Beveiligingscamera's en videodeurbellen (Matter 1.5, november 2025)</li>
         <li>Robotstofzuigers (Matter 1.4)</li>
       </ul>
       <p>
@@ -462,26 +462,22 @@ export const blogPosts = [
         .
       </p>
 
-      <h2>Nieuws: Matter 1.5 met cameraondersteuning</h2>
+      <h2>Matter 1.5: camera's en deurbellen (november 2025)</h2>
       <p>
-        In november 2025 verscheen Matter 1.5 — de grootste update tot nu toe. Camera's en
-        videodeurbellen worden nu officieel ondersteund.
+        In november 2025 verscheen Matter versie 1.5. De grootste toevoeging: native ondersteuning voor beveiligingscamera's en videodeurbellen.
       </p>
-      <p>Wat Matter 1.5 toevoegt:</p>
+      <p>Matter 1.5 ondersteunt nu:</p>
       <ul>
-        <li>Native cameraondersteuning (binnen/buiten)</li>
+        <li>Beveiligingscamera's binnen en buiten</li>
         <li>Videodeurbellen met tweeweg-audio</li>
         <li>Babyfoons met camera</li>
         <li>Live video streaming via WebRTC</li>
-        <li>Bodemsensoren voor slimme tuinbewatering</li>
-        <li>Realtime energietarieven</li>
       </ul>
       <p>
         De eerste Matter 1.5 camera: <strong>Aqara Camera Hub G350</strong>.
       </p>
       <p>
-        <strong>Let op:</strong> Apple Home ondersteunt Matter 1.5 camera's nog niet (verwacht iOS 27).
-        Google Home en Alexa ondersteunen het al wel.
+        <strong>Let op:</strong> Apple Home ondersteunt Matter 1.5 camera's nog niet (verwacht iOS 27). Google Home en Alexa wel.
       </p>
 
       <h2>Veelgestelde vragen over Matter</h2>
@@ -1063,12 +1059,9 @@ export const blogPosts = [
 
       <p>
         Product tip:{" "}
-        <Link href="/producten/homey-pro-early-2023">
-          Homey Pro (Early 2023 of 2026)
-        </Link>
-      </p>
-      <p>
-        Ook beschikbaar: <Link href="/producten/homey-pro-2026">Homey Pro (2026)</Link> — 4GB RAM, zelfde prijs €399
+        <Link href="/producten/homey-pro-early-2023">Homey Pro (Early 2023)</Link>{" "}
+        of het nieuwere{" "}
+        <Link href="/producten/homey-pro-2026">Homey Pro (2026)</Link> met 4GB RAM — zelfde prijs €399
       </p>
 
       <div style={{ background: "rgba(99,102,241,0.06)", borderLeft: "3px solid #6366f1", padding: "0.75rem 1rem", borderRadius: "0 6px 6px 0", marginBottom: "1rem" }}>
@@ -2535,7 +2528,7 @@ export const blogPosts = [
         <li><strong>Compatibel met:</strong> Alexa, Google Home, Apple HomeKit, Homey</li>
       </ul>
       <p>
-        <strong>Update 2025:</strong> Tado heeft Auto-Assist hernoemd naar <strong>AI Assist</strong> voor Tado X gebruikers. AI Assist gebruikt machine learning en bespaart tot 55% meer energie. Prijs ongewijzigd: €29,99/jaar. Oudere Tado V3+ gebruikers behouden Auto-Assist.
+        <strong>Update 2025:</strong> Tado heeft Auto-Assist hernoemd naar <strong>AI Assist</strong> voor Tado X gebruikers. Prijs ongewijzigd: €29,99/jaar. Oudere Tado V3+ houdt Auto-Assist.
       </p>
 
       <h3>Netatmo</h3>
@@ -3131,7 +3124,7 @@ export const blogPosts = [
       <p>
         Bekijk onze vergelijking:{" "}
         <Link href="/blog/beste-slimme-thermostaat">
-          beste slimme thermostaat 2025
+          beste slimme thermostaat 2026
         </Link>
         .
       </p>
