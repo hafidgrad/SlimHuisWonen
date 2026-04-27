@@ -462,19 +462,27 @@ export const blogPosts = [
         .
       </p>
 
-      <h2>Matter 1.5: nu ook camera's en deurbellen (2025)</h2>
+      <h2>Matter 1.5: nu ook camera's (november 2025)</h2>
       <p>
-        In 2025 is Matter 1.5 uitgebracht. De grootste toevoeging: officiële ondersteuning voor
-        <strong> camera's en videodeurbellen</strong>. Dit betekent dat slimme beveiligingscamera's
-        straks werken met Google Home, Apple Home en Alexa — zonder aparte app of cloud-afhankelijkheid per merk.
+        In november 2025 verscheen Matter versie 1.5 — de grootste update tot nu toe. De belangrijkste
+        toevoeging: <strong>native ondersteuning voor beveiligingscamera's en videodeurbellen</strong>.
       </p>
+      <p>Wat Matter 1.5 nieuw ondersteunt:</p>
       <ul>
-        <li>Camera's en videodeurbellen: live beeld in elke Matter-app</li>
-        <li>Betere privacycontrole: lokale verwerking mogelijk</li>
-        <li>Merken als Aqara en Eve Camera ondersteunen Matter 1.5 al</li>
+        <li>📷 Beveiligingscamera's binnen en buiten</li>
+        <li>🔔 Videodeurbellen met tweeweg-audio</li>
+        <li>👶 Babyfoons met camera</li>
+        <li>🌀 Pan-tilt camera's</li>
+        <li>📡 Live video streaming via WebRTC</li>
+        <li>🌱 Bodemsensoren en irrigatiesystemen</li>
+        <li>⚡ Realtime energietarieven voor automatisering</li>
       </ul>
       <p>
-        Matter 1.4 (2024) voegde al robotstofzuigers toe. De standaard wordt dus snel volwassener.
+        De eerste Matter 1.5 camera is de <strong>Aqara Camera Hub G350</strong>.
+      </p>
+      <p>
+        <strong>Let op:</strong> Apple Home ondersteunt Matter 1.5 camera's nog niet — dit wordt verwacht met iOS 27.
+        Google Home en Amazon Alexa ondersteunen Matter 1.5 al wel.
       </p>
 
       <h2>Veelgestelde vragen over Matter</h2>
@@ -2512,7 +2520,7 @@ export const blogPosts = [
         <li><strong>Compatibel met:</strong> Alexa, Google Home, Apple HomeKit, Homey</li>
       </ul>
       <p>
-        Tado heeft in 2024 de naam "Auto-Assist" gewijzigd naar <strong>AI Assist</strong>. De functionaliteit is uitgebreid met slimmere planning op basis van lokale weersdata en gedragspatronen. Voor de meeste basisfuncties heb je geen abonnement nodig — AI Assist is een betaalde aanvulling.
+        <strong>Update september 2025:</strong> Tado heeft Auto-Assist vervangen door <strong>AI Assist</strong> voor eigenaren van de nieuwe Tado X-serie. AI Assist gebruikt machine learning om je verwarmingspatroon te leren en bespaart tot 55% meer energie. Prijs: €29,99/jaar of €3,99/maand. Heb je een oudere Tado (V3+)? Dan blijft Auto-Assist beschikbaar.
       </p>
 
       <h3>Netatmo</h3>
@@ -2805,7 +2813,7 @@ export const blogPosts = [
       </p>
       <ul>
         <li><strong>Sterk:</strong> slimme zoekopdrachten, Android-integratie, Google Kalender</li>
-        <li><strong>Matter-ondersteuning:</strong> ja, via Google Home app en Nest-speakers als Thread border router</li>
+        <li><strong>Matter-ondersteuning:</strong> koppel apparaten van elk merk direct</li>
         <li><strong>Zwak:</strong> minder smart home integraties dan Alexa</li>
         <li><strong>Hardwaremerken:</strong> Google Nest Hub, Nest Mini, Nest Audio</li>
       </ul>
@@ -2818,7 +2826,7 @@ export const blogPosts = [
       </p>
       <ul>
         <li><strong>Sterk:</strong> meeste smart home integraties, goedkope hardware</li>
-        <li><strong>Matter-ondersteuning:</strong> ja, Echo-apparaten (4e gen+) fungeren als Matter controller</li>
+        <li><strong>Matter-ondersteuning:</strong> groeiend aantal apparaten direct koppelbaar</li>
         <li><strong>Zwak:</strong> minder sterke zoekopdrachten dan Google</li>
         <li><strong>Hardwaremerken:</strong> Echo Dot, Echo Show, Echo Pop</li>
       </ul>
@@ -2876,12 +2884,12 @@ export const blogPosts = [
       <h2>En Apple HomeKit dan?</h2>
       <p>
         Apple HomeKit is het derde grote platform, maar alleen voor
-        iPhone-gebruikers. Het heeft minder integraties dan Google en Alexa,
-        maar is het meest privacyvriendelijk: alles wordt lokaal verwerkt.
-        Dankzij <Link href="/blog/wat-is-matter">Matter</Link> worden de
-        grenzen tussen platforms kleiner. Apple Home ondersteunt Matter volledig
-        — een Matter-apparaat werkt dus ook gewoon in HomeKit. Voor wie privacy
-        én brede compatibiliteit wil, is HomeKit + Matter een sterke combinatie.
+        iPhone-gebruikers. Het heeft minder integraties maar is het
+        meest privacyvriendelijk. Lees meer in ons artikel over{" "}
+        <Link href="/blog/wat-is-matter">Matter</Link> — de nieuwe
+        standaard die alle platforms beter laat samenwerken. Dankzij Matter kun je
+        steeds vaker kiezen: een lamp of sensor van elk merk werkt in Google Home, Alexa én
+        HomeKit tegelijk.
       </p>
 
       <h2>Conclusie</h2>
