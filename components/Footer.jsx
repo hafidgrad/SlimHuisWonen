@@ -21,6 +21,8 @@ export default function Footer() {
           <span aria-hidden="true">·</span>
           <Link href="/disclaimer">Disclaimer</Link>
           <span aria-hidden="true">·</span>
+          <Link href="/retourbeleid">Retourbeleid</Link>
+          <span aria-hidden="true">·</span>
           <Link href="/cookies">Cookies</Link>
           <span aria-hidden="true">·</span>
           <Link href="/sitemap.xml">Sitemap</Link>
