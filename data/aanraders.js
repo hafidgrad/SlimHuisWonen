@@ -64,7 +64,7 @@ export const aanraders = [
       image: "/images/products/eufy-indoor-cam.png",
       href: "/producten/eufy-indoor-cam",
       badges: ["Beste keuze", "Binnen", "Geen abonnement"],
-      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DEufy%2BIndoor%2BCam",
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DEufy%2520Indoor%2520Cam",
     },
     {
       title: "Beste buitencamera op wifi: Eufy Solo Outdoor",
@@ -73,7 +73,7 @@ export const aanraders = [
       image: "/images/products/eufy-solo-outdoor.png",
       href: "/producten/eufy-solo-outdoor-cam",
       badges: ["Buiten", "Accu", "Wi-Fi"],
-      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DEufy%2BSolo%2BOutdoor",
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DEufy%2520Solo%2520Outdoor",
     },
     {
       title: "Beste PoE camera: Reolink PoE Camera",
@@ -82,7 +82,7 @@ export const aanraders = [
       image: "/images/products/reolink-poe-camera.png",
       href: "/producten/reolink-poe-camera",
       badges: ["PoE", "Maximale stabiliteit", "Lokaal"],
-      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DReolink%2BPoE%2BCam",
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DReolink%2520PoE%2520Camera",
     },
     {
       title: "Beste budget slimme camera: TP-Link Tapo C200",
@@ -91,7 +91,7 @@ export const aanraders = [
       image: "/images/products/tapo-c200.png",
       href: "/producten/tapo-c200",
       badges: ["Budget", "Wi-Fi", "Binnen"],
-      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DTapo%2BC200",
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DTapo%2520C200",
     },
     {
       title: "Beste privacyvriendelijke slimme camera: Eve Cam",
@@ -100,7 +100,7 @@ export const aanraders = [
       image: "/images/products/eve-cam.png",
       href: "/producten/eve-cam",
       badges: ["Privacy", "HomeKit", "Premium"],
-      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DEve%2BCam",
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DEve%2520Cam",
     },
     {
       title: "Beste budget binnencamera met pan-tilt: Tapo C220",
@@ -109,7 +109,7 @@ export const aanraders = [
       image: "/images/products/tapo-c220-beveiligingscamera-binnen-2k-4mp-qhd-pan.jpg",
       href: "/producten/tapo-c220-beveiligingscamera-binnen-2k-4mp-qhd-pan",
       badges: ["Budget", "2K", "Pan-tilt"],
-      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DTapo%2BC220",
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DTapo%2520C220",
     },
     {
       title: "Beste binnencamera met babyfoon functie: Tapo C230",
@@ -118,7 +118,7 @@ export const aanraders = [
       image: "/images/products/tp-link-tapo-c230.png",
       href: "/producten/tp-link-tapo-c230",
       badges: ["3K", "Babyfoon", "Wi-Fi"],
-      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DTapo%2BC230",
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DTapo%2520C230",
       coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F960205",
     },
     {
@@ -128,7 +128,7 @@ export const aanraders = [
       image: "/images/products/tp-link-tapo-c500.png",
       href: "/producten/tp-link-tapo-c500",
       badges: ["Buiten", "360°", "Budget"],
-      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DTapo%2BC500",
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DTapo%2520C500",
       coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F924862",
     },
     {
@@ -138,7 +138,7 @@ export const aanraders = [
       image: "/images/products/tp-link-tapo-c530ws.png",
       href: "/producten/tp-link-tapo-c530ws",
       badges: ["Buiten", "3K", "Spotlights"],
-      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DTapo%2BC530WS",
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DTapo%2520C530WS",
       coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F960206",
     },
   ],
@@ -665,6 +665,14 @@ relatedGuides: [
       image: "/images/products/homey-pro-early-2023.png",
       href: "/producten/homey-pro-early-2023",
       badges: ["Beste keuze", "All-in-one", "Gebruiksvriendelijk"],
+    },
+    {
+      title: "Nieuwste Homey Pro: Homey Pro (2026)",
+      description:
+        "De nieuwste versie van Homey Pro uitgebracht in december 2025. 4GB RAM (dubbel t.o.v. 2023), zelfde prijs van €399. Geschikt voor grote smart home setups met meer dan 50 apparaten.",
+      image: "/images/products/homey-pro-early-2023.png",
+      href: "/producten/homey-pro-2026",
+      badges: ["Nieuw 2026", "4GB RAM", "All-in-one"],
     },
     {
       title: "Beste smart home hub voor power users: Home Assistant Green",

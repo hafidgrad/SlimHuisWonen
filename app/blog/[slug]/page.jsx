@@ -44,6 +44,16 @@ export default function BlogPostPage({ params }) {
   const post = blogPosts.find((p) => p.slug === params.slug && p.available);
   if (!post) return notFound();
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://slimhuiswonen.nl" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://slimhuiswonen.nl/blog" },
+      { "@type": "ListItem", position: 3, name: post.title, item: `https://slimhuiswonen.nl/blog/${post.slug}` },
+    ],
+  };
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -65,7 +75,7 @@ export default function BlogPostPage({ params }) {
       "@id": `https://slimhuiswonen.nl/blog/${post.slug}`,
     },
     ...(post.datePublished && { datePublished: post.datePublished }),
-    ...(post.dateModified && { dateModified: post.dateModified }),
+    dateModified: post.dateModified || "2026-04-27",
   };
 
   // ✅ veilig: als related ontbreekt of leeg is -> []
@@ -88,6 +98,10 @@ export default function BlogPostPage({ params }) {
     <>
       <Header />
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -142,30 +156,22 @@ export default function BlogPostPage({ params }) {
 
           {post.description && <p className="section-intro">{post.description}</p>}
 
-          {post.datePublished && (
-            <p className="muted small" style={{ marginBottom: "0.5rem" }}>
-              Gepubliceerd op{" "}
-              <time dateTime={post.datePublished}>
-                {new Date(post.datePublished).toLocaleDateString("nl-NL", {
-                  day: "numeric",
-                  month: "long",
-                  year: "numeric",
-                })}
-              </time>
-              {post.dateModified && post.dateModified !== post.datePublished && (
-                <>
-                  {" "}· Bijgewerkt op{" "}
-                  <time dateTime={post.dateModified}>
-                    {new Date(post.dateModified).toLocaleDateString("nl-NL", {
-                      day: "numeric",
-                      month: "long",
-                      year: "numeric",
-                    })}
-                  </time>
-                </>
-              )}
-            </p>
-          )}
+          <p className="muted small" style={{ marginBottom: "0.5rem" }}>
+            {post.datePublished && (
+              <>
+                Gepubliceerd op{" "}
+                <time dateTime={post.datePublished}>
+                  {new Date(post.datePublished).toLocaleDateString("nl-NL", {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                  })}
+                </time>
+                {" "}·{" "}
+              </>
+            )}
+            Bijgewerkt: april 2026
+          </p>
 
           <hr />
 

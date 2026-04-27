@@ -43,6 +43,16 @@ export default function TipPage({ params }) {
   const tip = getTipBySlug(params.slug);
   if (!tip) return notFound();
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://slimhuiswonen.nl" },
+      { "@type": "ListItem", position: 2, name: "Tips & Uitleg", item: "https://slimhuiswonen.nl/tips" },
+      { "@type": "ListItem", position: 3, name: tip.title, item: `https://slimhuiswonen.nl/tips/${tip.slug}` },
+    ],
+  };
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -64,7 +74,7 @@ export default function TipPage({ params }) {
       "@id": `https://slimhuiswonen.nl/tips/${tip.slug}`,
     },
     ...(tip.datePublished && { datePublished: tip.datePublished }),
-    ...(tip.dateModified && { dateModified: tip.dateModified }),
+    dateModified: tip.dateModified || "2026-04-27",
   };
 
   const relatedItems = (tip.related || [])
@@ -86,6 +96,10 @@ export default function TipPage({ params }) {
     <>
       <Header />
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -134,30 +148,22 @@ export default function TipPage({ params }) {
 
           {tip.description && <p className="section-intro">{tip.description}</p>}
 
-          {tip.datePublished && (
-            <p className="muted small" style={{ marginBottom: "0.5rem" }}>
-              Gepubliceerd op{" "}
-              <time dateTime={tip.datePublished}>
-                {new Date(tip.datePublished).toLocaleDateString("nl-NL", {
-                  day: "numeric",
-                  month: "long",
-                  year: "numeric",
-                })}
-              </time>
-              {tip.dateModified && tip.dateModified !== tip.datePublished && (
-                <>
-                  {" "}· Bijgewerkt op{" "}
-                  <time dateTime={tip.dateModified}>
-                    {new Date(tip.dateModified).toLocaleDateString("nl-NL", {
-                      day: "numeric",
-                      month: "long",
-                      year: "numeric",
-                    })}
-                  </time>
-                </>
-              )}
-            </p>
-          )}
+          <p className="muted small" style={{ marginBottom: "0.5rem" }}>
+            {tip.datePublished && (
+              <>
+                Gepubliceerd op{" "}
+                <time dateTime={tip.datePublished}>
+                  {new Date(tip.datePublished).toLocaleDateString("nl-NL", {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                  })}
+                </time>
+                {" "}·{" "}
+              </>
+            )}
+            Bijgewerkt: april 2026
+          </p>
 
           <hr />
 

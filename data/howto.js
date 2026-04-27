@@ -6,7 +6,7 @@ export const howto = [
     title: "Hoe begin je met een smart home?",
     categories: ["basis", "hub"],
     shortAnswer:
-      "Begin met één apparaat dat je direct dagelijks gebruikt, zoals een slimme lamp of stekker. Kies een protocol (wifi voor gemak, Zigbee voor stabiliteit) en bouw daarna stap voor stap uit.",
+      "Begin met één wifi-apparaat dat je dagelijks gebruikt: een slimme lamp (€8-15) of stekker (€10-15). Download de app, koppel aan 2.4GHz wifi en stel een timer in. Geen hub nodig.",
     description:
       "Stap-voor-stap uitleg om zonder fouten te beginnen met een smart home. Praktisch, duidelijk en zonder technisch gedoe.",
     image: "/images/how-to/beginnen-met-smart-home.png",
@@ -283,7 +283,7 @@ export const howto = [
   title: "Hoe verbeter je wifi voor je smart home?",
   categories: ["wifi", "basis"],
   shortAnswer:
-    "Zorg dat je smart home apparaten op het 2.4 GHz netwerk zitten en niet op 5 GHz. Plaats je router centraal en overweeg een mesh-systeem bij een groter huis of meerdere verdiepingen.",
+    "Smart home apparaten werken op 2.4GHz wifi, niet 5GHz. Controleer dit als eerste. Heb je meer dan 15 apparaten? Overweeg een mesh-systeem zoals TP-Link Deco.",
   description:
     "Verbeter je wifi voor een stabiel smart home. Praktische tips om verbindingsproblemen en uitval te voorkomen.",
   image: "/images/how-to/wifi-verbeteren-voor-smart-home.png",
@@ -670,7 +670,7 @@ export const howto = [
   seoTitle: "Lamp automatisch aan bij beweging instellen",
   categories: ["verlichting", "sensor", "automatisering"],
   shortAnswer:
-    "Koppel een bewegingssensor en een slimme lamp aan dezelfde app of hub. Maak een automatisering: als beweging → lamp aan. Voeg een tijdvoorwaarde toe zodat de lamp alleen 's avonds aangaat en na 3-5 minuten vanzelf uitgaat.",
+    "Koppel een bewegingssensor en slimme lamp aan dezelfde app of hub. Maak een automatisering: sensor detecteert beweging → lamp gaat aan. Voeg een tijdslot toe zodat het alleen 's avonds werkt. Klaar in ~10 minuten.",
   description:
     "Wil je dat je lamp automatisch aangaat bij beweging? Ontdek stap voor stap hoe je een bewegingssensor koppelt aan slimme verlichting.",
   relatedProductSlugs: ["aqara-motion-sensor", "philips-hue-motion-sensor", "tapo-l530e"],

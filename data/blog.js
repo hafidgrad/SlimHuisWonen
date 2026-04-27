@@ -392,7 +392,7 @@ export const blogPosts = [
         <li>Slimme sloten en deurbellen</li>
         <li>Thermostaten en klimaatregeling</li>
         <li>Sensoren (beweging, deur, raam)</li>
-        <li>Camera's en videodeurbellen (Matter 1.5, 2025)</li>
+        <li>Beveiligingscamera's en videodeurbellen (nieuw in Matter 1.5, november 2025)</li>
         <li>Robotstofzuigers (Matter 1.4)</li>
       </ul>
       <p>
@@ -462,27 +462,26 @@ export const blogPosts = [
         .
       </p>
 
-      <h2>Matter 1.5: nu ook camera's (november 2025)</h2>
+      <h2>Nieuws: Matter 1.5 met cameraondersteuning</h2>
       <p>
-        In november 2025 verscheen Matter versie 1.5 — de grootste update tot nu toe. De belangrijkste
-        toevoeging: <strong>native ondersteuning voor beveiligingscamera's en videodeurbellen</strong>.
+        In november 2025 verscheen Matter 1.5 — de grootste update tot nu toe. Camera's en
+        videodeurbellen worden nu officieel ondersteund.
       </p>
-      <p>Wat Matter 1.5 nieuw ondersteunt:</p>
+      <p>Wat Matter 1.5 toevoegt:</p>
       <ul>
-        <li>📷 Beveiligingscamera's binnen en buiten</li>
-        <li>🔔 Videodeurbellen met tweeweg-audio</li>
-        <li>👶 Babyfoons met camera</li>
-        <li>🌀 Pan-tilt camera's</li>
-        <li>📡 Live video streaming via WebRTC</li>
-        <li>🌱 Bodemsensoren en irrigatiesystemen</li>
-        <li>⚡ Realtime energietarieven voor automatisering</li>
+        <li>Native cameraondersteuning (binnen/buiten)</li>
+        <li>Videodeurbellen met tweeweg-audio</li>
+        <li>Babyfoons met camera</li>
+        <li>Live video streaming via WebRTC</li>
+        <li>Bodemsensoren voor slimme tuinbewatering</li>
+        <li>Realtime energietarieven</li>
       </ul>
       <p>
-        De eerste Matter 1.5 camera is de <strong>Aqara Camera Hub G350</strong>.
+        De eerste Matter 1.5 camera: <strong>Aqara Camera Hub G350</strong>.
       </p>
       <p>
-        <strong>Let op:</strong> Apple Home ondersteunt Matter 1.5 camera's nog niet — dit wordt verwacht met iOS 27.
-        Google Home en Amazon Alexa ondersteunen Matter 1.5 al wel.
+        <strong>Let op:</strong> Apple Home ondersteunt Matter 1.5 camera's nog niet (verwacht iOS 27).
+        Google Home en Alexa ondersteunen het al wel.
       </p>
 
       <h2>Veelgestelde vragen over Matter</h2>
@@ -958,6 +957,14 @@ export const blogPosts = [
           text: "Niet verplicht, maar Zigbee en Z-Wave maken je smart home vaak stabieler en energiezuiniger, vooral bij sensoren. Beide hubs ondersteunen dit.",
         },
       },
+      {
+        "@type": "Question",
+        name: "Is Homey Pro 2026 beter dan 2023?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Homey Pro 2026 heeft 4GB RAM (dubbel) voor dezelfde prijs van €399. De extra geheugen maakt het geschikter voor grotere smart home setups met meer dan 50 apparaten.",
+        },
+      },
     ],
   },
 
@@ -1057,9 +1064,17 @@ export const blogPosts = [
       <p>
         Product tip:{" "}
         <Link href="/producten/homey-pro-early-2023">
-          Homey Pro (Early 2023)
+          Homey Pro (Early 2023 of 2026)
         </Link>
       </p>
+      <p>
+        Ook beschikbaar: <Link href="/producten/homey-pro-2026">Homey Pro (2026)</Link> — 4GB RAM, zelfde prijs €399
+      </p>
+
+      <div style={{ background: "rgba(99,102,241,0.06)", borderLeft: "3px solid #6366f1", padding: "0.75rem 1rem", borderRadius: "0 6px 6px 0", marginBottom: "1rem" }}>
+        <strong>Is Homey Pro 2026 beter dan 2023?</strong>
+        <p style={{ margin: "0.35rem 0 0" }}>Homey Pro 2026 heeft 4GB RAM (dubbel) voor dezelfde prijs van €399. De extra geheugen maakt het geschikter voor grotere smart home setups met meer dan 50 apparaten.</p>
+      </div>
 
       <h2>Home Assistant: maximale controle</h2>
       <p>
@@ -2520,7 +2535,7 @@ export const blogPosts = [
         <li><strong>Compatibel met:</strong> Alexa, Google Home, Apple HomeKit, Homey</li>
       </ul>
       <p>
-        <strong>Update september 2025:</strong> Tado heeft Auto-Assist vervangen door <strong>AI Assist</strong> voor eigenaren van de nieuwe Tado X-serie. AI Assist gebruikt machine learning om je verwarmingspatroon te leren en bespaart tot 55% meer energie. Prijs: €29,99/jaar of €3,99/maand. Heb je een oudere Tado (V3+)? Dan blijft Auto-Assist beschikbaar.
+        <strong>Update 2025:</strong> Tado heeft Auto-Assist hernoemd naar <strong>AI Assist</strong> voor Tado X gebruikers. AI Assist gebruikt machine learning en bespaart tot 55% meer energie. Prijs ongewijzigd: €29,99/jaar. Oudere Tado V3+ gebruikers behouden Auto-Assist.
       </p>
 
       <h3>Netatmo</h3>

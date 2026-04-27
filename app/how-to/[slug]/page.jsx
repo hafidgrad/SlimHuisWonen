@@ -155,8 +155,13 @@ const structuredData = [
       name: "Hafid",
       url: "https://slimhuiswonen.nl/over",
     },
+    publisher: {
+      "@type": "Organization",
+      name: "SlimHuisWonen",
+      url: "https://slimhuiswonen.nl",
+    },
     ...(article.datePublished && { datePublished: article.datePublished }),
-    ...(article.dateModified && { dateModified: article.dateModified }),
+    dateModified: article.dateModified || "2026-04-27",
   },
   {
     "@context": "https://schema.org",
@@ -261,30 +266,22 @@ const structuredData = [
           <h1>{article.title}</h1>
           <p className="section-intro">{article.description}</p>
 
-          {article.datePublished && (
-            <p className="muted small" style={{ marginBottom: "0.5rem" }}>
-              Gepubliceerd op{" "}
-              <time dateTime={article.datePublished}>
-                {new Date(article.datePublished).toLocaleDateString("nl-NL", {
-                  day: "numeric",
-                  month: "long",
-                  year: "numeric",
-                })}
-              </time>
-              {article.dateModified && article.dateModified !== article.datePublished && (
-                <>
-                  {" "}· Bijgewerkt op{" "}
-                  <time dateTime={article.dateModified}>
-                    {new Date(article.dateModified).toLocaleDateString("nl-NL", {
-                      day: "numeric",
-                      month: "long",
-                      year: "numeric",
-                    })}
-                  </time>
-                </>
-              )}
-            </p>
-          )}
+          <p className="muted small" style={{ marginBottom: "0.5rem" }}>
+            {article.datePublished && (
+              <>
+                Gepubliceerd op{" "}
+                <time dateTime={article.datePublished}>
+                  {new Date(article.datePublished).toLocaleDateString("nl-NL", {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                  })}
+                </time>
+                {" "}·{" "}
+              </>
+            )}
+            Bijgewerkt: april 2026
+          </p>
          {/* ================= KORT ANTWOORD (AI OPTIMALISATIE) ================= */}
 
 {aiSummary && (

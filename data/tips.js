@@ -203,6 +203,14 @@ export const tips = [
           text: "Ja, vooral als je kamers afzonderlijk wilt verwarmen. Zo verwarm je alleen ruimtes die je gebruikt en bespaar je energie.",
         },
       },
+      {
+        "@type": "Question",
+        name: "Hoeveel bespaar je met een slimme thermostaat?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Gemiddeld 15-25% op stookkosten, afhankelijk van je woning en gedrag. Bij een jaarrekening van €1.500 is dat €225-375.",
+        },
+      },
     ],
   },
 
@@ -283,6 +291,12 @@ export const tips = [
         <li>per kamer regelen</li>
         <li>sluipverbruik meten</li>
       </ul>
+
+      <h2>Veelgestelde vragen</h2>
+      <div style={{ marginBottom: "1rem" }}>
+        <h3>Hoeveel bespaar je met een slimme thermostaat?</h3>
+        <p>Gemiddeld 15-25% op stookkosten, afhankelijk van je woning en gedrag. Bij een jaarrekening van €1.500 is dat €225-375.</p>
+      </div>
 
       <h2>Conclusie</h2>
       <p>
@@ -1319,6 +1333,14 @@ export const tips = [
           text: "Je kunt al starten vanaf €10–€30 met één apparaat. Met meerdere producten zit je vaak rond €50–€150. Een uitgebreid systeem met hub en sensoren kost meestal €200 of meer.",
         },
       },
+      {
+        "@type": "Question",
+        name: "Wat heb je nodig om te beginnen met smart home?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Een wifi-router, een slimme lamp of stekker (bijv. Tapo L530E voor €12) en de bijbehorende app. Een hub is niet nodig om te starten.",
+        },
+      },
     ],
   },
 
@@ -1457,6 +1479,12 @@ export const tips = [
           – goedkoop starten zonder hub
         </li>
       </ul>
+
+      <h2>Veelgestelde vragen</h2>
+      <div style={{ marginBottom: "1rem" }}>
+        <h3>Wat heb je nodig om te beginnen met smart home?</h3>
+        <p>Een wifi-router, een slimme lamp of stekker (bijv. Tapo L530E voor €12) en de bijbehorende app. Een hub is niet nodig om te starten.</p>
+      </div>
 
       <h2>Conclusie</h2>
       <p>

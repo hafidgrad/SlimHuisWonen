@@ -923,6 +923,22 @@ export const products = [
 },
 
 {
+  slug: "homey-pro-2026",
+  brand: "Athom",
+  name: "Homey Pro (2026)",
+  category: "smart-home-hubs",
+  image: "/images/products/homey-pro-early-2023.png",
+  description: "Nieuwste versie van de populaire smart home hub. 4GB RAM (dubbel t.o.v. 2023), zelfde prijs van €399. Ondersteunt Matter, Thread, Zigbee, Z-Wave, Bluetooth, 433MHz, IR en wifi in één apparaat.",
+  features: ["4GB RAM (2x meer dan 2023 versie)", "7 protocollen in één hub", "Lokale verwerking, werkt zonder internet", "Matter en Thread ingebouwd"],
+  affiliateUrl: "https://www.amazon.nl/s?k=Homey+Pro+2026&tag=slimhuiswonen-21",
+  priceHint: "€399",
+  priceLastUpdated: "april 2026",
+  pros: ["4GB RAM — geschikt voor grotere setups", "7 protocollen in één apparaat", "Lokale verwerking, geen cloud vereist", "Ondersteuning gegarandeerd t/m 2031"],
+  cons: ["Duurder dan concurrenten", "Beperkte offline backup-opties"],
+  forWho: ["Voor wie een toekomstbestendige all-in-one hub zoekt", "Voor setups met meer dan 50 apparaten"],
+},
+
+{
   slug: "homey-bridge",
   ean: "8717953223487",
   brand: "Homey",
@@ -1995,11 +2011,11 @@ export const products = [
     features: [],
     affiliateUrl: "https://www.amazon.nl/Tapo-C230-bewakingscamera-KI-detectie-bewegingsdetectie/dp/B0DSW6SF34?tag=slimhuiswonen-21",
     
-    coolblueUrl: "https://www.coolblue.nl/product/960205",
-    
+    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F960205",
+
     priceHint: "€34,99",
     priceLastUpdated: "april 2026",
-    
+
     pros: [],
     cons: [],
     forWho: [],
@@ -2016,7 +2032,7 @@ export const products = [
     features: [],
     affiliateUrl: "https://www.amazon.nl/Tapo-C500-bewakingscamera-bewegingsdetectie-nachtzicht/dp/B0BQJVKVQR?tag=slimhuiswonen-21",
     
-    coolblueUrl: "https://www.coolblue.nl/product/924862",
+    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F924862",
     youtubeId: "yfXoRvY7X2o",
     priceHint: "€34,99",
     priceLastUpdated: "april 2026",
@@ -2037,7 +2053,7 @@ export const products = [
     features: [],
     affiliateUrl: "https://www.amazon.nl/Tapo-C530WS-bewakingscamera-bewegingstracking-microSD-kaart/dp/B0DY94MCLN?tag=slimhuiswonen-21",
     
-    coolblueUrl: "https://www.coolblue.nl/product/960206",
+    coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F960206",
     youtubeId: "lg6pBF37pCQ",
     priceHint: "€57,00",
     priceLastUpdated: "april 2026",

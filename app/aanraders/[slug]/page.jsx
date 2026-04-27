@@ -378,7 +378,7 @@ export default function AanraderDetailPage({ params }) {
                 <a
                   href="https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fs%2F%3Fsearchterm%3DLSC%2BSmart%2BConnect"
                   target="_blank"
-                  rel="nofollow sponsored noopener"
+                  rel="nofollow sponsored noopener noreferrer"
                   style={{ fontSize: "0.9rem", display: "inline-block", padding: "0.55rem 1rem", borderRadius: "8px", background: "#003082", color: "#fff", fontWeight: 700, textDecoration: "none" }}
                 >
                   Bekijk alle LSC producten bij Action →
@@ -386,7 +386,7 @@ export default function AanraderDetailPage({ params }) {
                 <a
                   href="https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fb%2Flsc-smart-connect%2F606566673%2F"
                   target="_blank"
-                  rel="nofollow sponsored noopener"
+                  rel="nofollow sponsored noopener noreferrer"
                   className="btn btn-bol"
                   style={{ fontSize: "0.9rem" }}
                 >

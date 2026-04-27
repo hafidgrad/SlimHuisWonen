@@ -20,7 +20,7 @@ export default function AmazonSearchCta({ searchTerm }) {
         <a
           href={amazonUrl}
           target="_blank"
-          rel="nofollow sponsored noopener"
+          rel="nofollow sponsored noopener noreferrer"
           className="btn btn-amazon"
           style={{ fontSize: "0.9rem" }}
         >
@@ -29,7 +29,7 @@ export default function AmazonSearchCta({ searchTerm }) {
         <a
           href={bolUrl}
           target="_blank"
-          rel="nofollow sponsored noopener"
+          rel="nofollow sponsored noopener noreferrer"
           className="btn btn-bol"
           style={{ fontSize: "0.9rem" }}
         >
@@ -38,7 +38,7 @@ export default function AmazonSearchCta({ searchTerm }) {
         <a
           href={coolblueUrl}
           target="_blank"
-          rel="nofollow sponsored noopener"
+          rel="nofollow sponsored noopener noreferrer"
           className="btn btn-coolblue"
           style={{ fontSize: "0.9rem" }}
         >
