@@ -64,7 +64,9 @@
       "Bash(curl -s http://localhost:3000/blog/beste-slimme-camera)",
       "Bash(curl -s http://localhost:3000/blog/home-assistant-vs-homey)",
       "Bash(curl -s http://localhost:3000/producten/tapo-c200)",
-      "Bash(curl -s http://localhost:3000/retourbeleid)"
+      "Bash(curl -s http://localhost:3000/retourbeleid)",
+      "Bash(curl -s http://localhost:3000/aanraders/beste-slimme-stekkers-2026)",
+      "Bash(curl -s http://localhost:3000/aanraders/beste-robotstofzuigers-2026)"
     ]
   }
 }

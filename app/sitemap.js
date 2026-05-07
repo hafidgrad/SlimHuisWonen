@@ -22,6 +22,7 @@ export default function sitemap() {
     { path: "/privacy", priority: 0.3, changeFrequency: "yearly" },
     { path: "/disclaimer", priority: 0.3, changeFrequency: "yearly" },
     { path: "/cookies", priority: 0.3, changeFrequency: "yearly" },
+    { path: "/retourbeleid", priority: 0.3, changeFrequency: "yearly" },
   ].map(({ path, priority, changeFrequency }) => ({
     url: `${baseUrl}${path}`,
     lastModified,

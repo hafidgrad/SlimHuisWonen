@@ -29,8 +29,22 @@ export default function Header() {
 
         <nav className="main-nav">
           <Link href="/over">Over</Link>
-          <Link href="/#categorieen">Categorieën</Link>
-          <Link href="/aanraders">Koopgidsen</Link>
+
+          <div className="nav-dropdown-wrapper">
+            <Link href="/aanraders">
+              Koopgidsen <span className="nav-caret">▾</span>
+            </Link>
+            <div className="nav-dropdown">
+              <Link href="/aanraders/beste-slimme-verlichting">Verlichting</Link>
+              <Link href="/aanraders/beste-smart-home-hub">Hubs</Link>
+              <Link href="/aanraders/beste-slimme-bewegingssensor">Sensoren</Link>
+              <Link href="/aanraders/beste-slimme-camera">Beveiliging</Link>
+              <Link href="/aanraders/beste-slimme-deurbel">Deurbellen</Link>
+              <Link href="/aanraders/beste-slimme-stekkers-2026">Slimme stekkers</Link>
+              <Link href="/aanraders/beste-robotstofzuigers-2026">Robotstofzuigers</Link>
+            </div>
+          </div>
+
           <Link href="/tips">Tips & uitleg</Link>
           <Link href="/how-to">How To</Link>
           <Link href="/blog">Blog</Link>

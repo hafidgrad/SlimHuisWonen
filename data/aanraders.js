@@ -2399,4 +2399,159 @@ relatedGuides: [
     },
   ],
 },
+
+{
+  slug: "beste-slimme-stekkers-2026",
+  title: "Beste slimme stekkers 2026",
+  description:
+    "De beste slimme stekkers van 2026: schakel apparaten op afstand, meet energieverbruik en automatiseer je huis. Onze top picks voor elk budget.",
+  image: "/images/blog/beste-slimme-stekkers.png",
+  intro:
+    "Een slimme stekker is de makkelijkste manier om elk apparaat slim te maken — zonder installateur en al vanaf €10. Je schakelt via app of stem, stelt timers in en meet soms zelfs het stroomverbruik.",
+  available: true,
+  datePublished: "2026-05-01",
+
+  whoIsThisFor: [
+    "Voor wie wil beginnen met smart home zonder grote investering",
+    "Voor wie bestaande apparaten slim wil maken",
+    "Voor wie inzicht wil in energieverbruik per apparaat",
+    "Voor wie automatisch wil schakelen via timer of automatisering",
+  ],
+
+  whatToLookFor: [
+    "Wifi (2.4GHz) of Zigbee/Z-Wave",
+    "Wel of geen energiemeting",
+    "Enkelvoudige stekker of stekkerdoos",
+    "Maximaal vermogen (watt)",
+    "Compatibiliteit met Google Home, Alexa of Apple HomeKit",
+  ],
+
+  picks: [
+    {
+      title: "Budget pick: TP-Link Tapo P115",
+      description:
+        "Betaalbare slimme stekker met energiemeting, timers en app-bediening. Werkt met Google Home en Alexa. Ideaal instapmodel.",
+      image: "/images/products/tapo-p115.png",
+      href: "/producten/tapo-p115",
+      badges: ["Budget", "Energiemeting", "Populair"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DTapo%2520P115",
+      amazonUrl: "https://www.amazon.nl/s?k=Tapo+P115&tag=slimhuiswonen-21",
+    },
+    {
+      title: "Beste voor Zigbee: IKEA TRÅDFRI stekker",
+      description:
+        "Compacte Zigbee stekker die via de IKEA DIRIGERA hub werkt. Geschikt voor wie al een Zigbee ecosysteem heeft.",
+      image: "/images/products/placeholder.png",
+      href: "/aanraders/beste-smart-home-hub",
+      badges: ["Zigbee", "IKEA"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DIKEA%2520TRADFRI%2520stekker",
+    },
+    {
+      title: "Beste stekkerdoos: TP-Link Tapo P300",
+      description:
+        "Slimme stekkerdoos met 3 schakelbare stopcontacten en 3 USB-poorten. Handig voor bureau, tv-meubel of thuiskantoor.",
+      image: "/images/products/placeholder.png",
+      href: "/producten/tapo-p115",
+      badges: ["Stekkerdoos", "USB", "3 stopcontacten"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DTapo%2520P300",
+      amazonUrl: "https://www.amazon.nl/s?k=Tapo+P300&tag=slimhuiswonen-21",
+    },
+  ],
+
+  faq: [
+    {
+      question: "Wat is het verschil tussen een slimme stekker met en zonder energiemeting?",
+      answer:
+        "Een stekker met energiemeting toont hoeveel watt een apparaat verbruikt en berekent de kosten. Handig om energievreters te spotten. Kost gemiddeld €5 meer dan een stekker zonder meting.",
+    },
+    {
+      question: "Werkt een slimme stekker op 5GHz wifi?",
+      answer:
+        "Nee. De meeste slimme stekkers werken alleen op 2.4GHz wifi. Zorg dat je router dit uitzendt en dat je er niet per ongeluk 5GHz aan koppelt bij de installatie.",
+    },
+    {
+      question: "Hoeveel watt kan een slimme stekker aan?",
+      answer:
+        "De meeste modellen (zoals Tapo P115) ondersteunen maximaal 3680W (16A). Dat is voldoende voor de meeste huishoudelijke apparaten. Vermijd gebruik met grote verwarming of wasmachines boven 3000W.",
+    },
+  ],
+},
+
+{
+  slug: "beste-robotstofzuigers-2026",
+  title: "Beste robotstofzuigers 2026",
+  description:
+    "De beste robotstofzuigers van 2026: slimme navigatie, dweilfunctie en app-bediening. Onze eerlijke aanraders per budget en gebruik.",
+  image: "/images/blog/beste-slimme-camera.png",
+  intro:
+    "Een robotstofzuiger houdt je vloer schoon zonder dat je er zelf bij hoeft te zijn. Moderne modellen navigeren slim via laser, maken een plattegrond van je huis en kun je inplannen via de app.",
+  available: true,
+  datePublished: "2026-05-01",
+
+  whoIsThisFor: [
+    "Voor wie dagelijks wil stofzuigen zonder zelf te doen",
+    "Voor huishoudens met huisdieren (veel haar)",
+    "Voor wie vloeren én tegels wil laten reinigen",
+    "Voor wie een automatische routine wil instellen",
+  ],
+
+  whatToLookFor: [
+    "Navigatie: gyroscoop, camera of LiDAR (laser)",
+    "Zuigkracht (Pa)",
+    "Dweilfunctie: ja of nee",
+    "Zelfledigend basisstation",
+    "Compatibiliteit met Google Home, Alexa of Apple HomeKit",
+  ],
+
+  picks: [
+    {
+      title: "Budget pick: Xiaomi Robot Vacuum E10",
+      description:
+        "Betrouwbare instap-robotstofzuiger met 2500Pa zuigkracht en app-bediening. Geschikt voor vlakke vloeren en kleine ruimtes.",
+      image: "/images/products/placeholder.png",
+      href: "/aanraders/beste-robotstofzuigers-2026",
+      badges: ["Budget", "App-bediening"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DXiaomi%2520Robot%2520Vacuum%2520E10",
+      amazonUrl: "https://www.amazon.nl/s?k=Xiaomi+Robot+Vacuum+E10&tag=slimhuiswonen-21",
+    },
+    {
+      title: "Beste mid-range: Dreame L10s Ultra",
+      description:
+        "LiDAR-navigatie, krachtige zuigkracht en automatisch dweilen. Maakt een gedetailleerde plattegrond en vermijdt obstakels nauwkeurig.",
+      image: "/images/products/placeholder.png",
+      href: "/aanraders/beste-robotstofzuigers-2026",
+      badges: ["LiDAR", "Dweilen", "Beste keuze"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DDreame%2520L10s",
+      amazonUrl: "https://www.amazon.nl/s?k=Dreame+L10s&tag=slimhuiswonen-21",
+    },
+    {
+      title: "Beste voor huishoudens met huisdieren: Roborock S8",
+      description:
+        "Krachtige zuigkracht, dubbele zijborstels en effectieve dweelfunctie. Gaat goed om met dierenhaar en gaat over drempelranden.",
+      image: "/images/products/placeholder.png",
+      href: "/aanraders/beste-robotstofzuigers-2026",
+      badges: ["Huisdieren", "Dweilen", "Roborock"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DRoborock%2520S8",
+      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DRoborock%2BS8",
+    },
+  ],
+
+  faq: [
+    {
+      question: "Wat is het verschil tussen gyroscoop en LiDAR navigatie?",
+      answer:
+        "Gyroscoop-robots rijden in willekeurige patronen of rasters — goedkoper maar minder efficiënt. LiDAR-robots mappen je huis met laser en rijden gestructureerde banen. LiDAR is nauwkeuriger en sneller klaar.",
+    },
+    {
+      question: "Werkt een robotstofzuiger ook als dweiler?",
+      answer:
+        "Alleen modellen met een dweilfunctie dweilen ook. Let op de kwaliteit: goedkope modellen slepen alleen een vochtige doek mee, terwijl duurdere modellen (Dreame, Roborock) de doek actief draaien of wringen.",
+    },
+    {
+      question: "Heeft een robotstofzuiger een wifi-router nodig?",
+      answer:
+        "Ja, voor app-bediening en spraakbesturing wel. De meeste werken op 2.4GHz wifi. Zonder wifi werken ze soms nog wel handmatig via een knop, maar app-functies en planningen werken dan niet.",
+    },
+  ],
+},
 ];

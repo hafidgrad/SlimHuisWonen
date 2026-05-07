@@ -16,7 +16,7 @@ export default function BuyGuideProductCard({
 }) {
   return (
     <article className="buyGuideCard">
-      {/* Image — square, top of card */}
+      {/* Image */}
       <div className="buyGuideCard__imgWrap">
         <Image
           src={image}
@@ -41,9 +41,12 @@ export default function BuyGuideProductCard({
 
         <h3 className="buyGuideCard__title">{title}</h3>
 
-        <p className="buyGuideCard__desc">{description}</p>
+        {/* Price — prominent, above buttons */}
+        {priceHint && (
+          <p className="buyGuideCard__price">{priceHint}</p>
+        )}
 
-        {/* Buttons — always at bottom */}
+        {/* Buttons — above description */}
         <div className="buyGuideCard__buttons">
           {actionUrl && (
             <a
@@ -52,7 +55,7 @@ export default function BuyGuideProductCard({
               rel="nofollow sponsored noopener noreferrer"
               className="buyGuideCard__btn buyGuideCard__btn--action"
             >
-              🔒 Kopen bij Action
+              Bekijk prijs bij Action →
             </a>
           )}
           {bolUrl && (
@@ -62,7 +65,7 @@ export default function BuyGuideProductCard({
               rel="nofollow sponsored noopener noreferrer"
               className="buyGuideCard__btn buyGuideCard__btn--bol"
             >
-              🔒 Bestellen via bol.com
+              Bekijk prijs bij bol.com →
             </a>
           )}
           {coolblueUrl && (
@@ -72,7 +75,7 @@ export default function BuyGuideProductCard({
               rel="nofollow sponsored noopener noreferrer"
               className="buyGuideCard__btn buyGuideCard__btn--coolblue"
             >
-              🔒 Bestellen via Coolblue
+              Bekijk prijs bij Coolblue →
             </a>
           )}
           {amazonUrl && (
@@ -82,7 +85,7 @@ export default function BuyGuideProductCard({
               rel="nofollow sponsored noopener noreferrer"
               className="buyGuideCard__btn buyGuideCard__btn--amazon"
             >
-              🔒 Bestellen via Amazon
+              Bekijk prijs bij Amazon →
             </a>
           )}
           {!actionUrl && href && (
@@ -91,6 +94,8 @@ export default function BuyGuideProductCard({
             </Link>
           )}
         </div>
+
+        <p className="buyGuideCard__desc">{description}</p>
 
         <p className="buyGuideCard__priceNote">Laatste prijs check: april 2026</p>
       </div>
