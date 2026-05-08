@@ -64,6 +64,8 @@ export const aanraders = [
       image: "/images/products/eufy-indoor-cam.png",
       href: "/producten/eufy-indoor-cam",
       badges: ["Beste keuze", "Binnen", "Geen abonnement"],
+      pros: ["Geen abonnement nodig", "Lokale opslag via SD-kaart"],
+      cons: ["Alleen geschikt voor binnen"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DEufy%2520Indoor%2520Cam",
     },
     {
@@ -73,6 +75,8 @@ export const aanraders = [
       image: "/images/products/eufy-solo-outdoor.png",
       href: "/producten/eufy-solo-outdoor-cam",
       badges: ["Buiten", "Accu", "Wi-Fi"],
+      pros: ["Geen kabels nodig", "Lokale opslag zonder abonnement"],
+      cons: ["Accu opladen elke 1–3 maanden"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DEufy%2520Solo%2520Outdoor",
     },
     {
@@ -82,6 +86,8 @@ export const aanraders = [
       image: "/images/products/reolink-poe-camera.png",
       href: "/producten/reolink-poe-camera",
       badges: ["PoE", "Maximale stabiliteit", "Lokaal"],
+      pros: ["Maximale stabiliteit via kabel", "Lokale opslag via NVR"],
+      cons: ["Kabelinstallatie vereist"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DReolink%2520PoE%2520Camera",
     },
     {
@@ -229,6 +235,8 @@ export const aanraders = [
       image: "/images/products/aqara-doorbell-g410-grey.png",
       href: "/producten/aqara-doorbell-g410-grey",
       badges: ["Bedraad", "Matter", "HomeKit"],
+      pros: ["Matter-ondersteuning", "Hoge beeldkwaliteit"],
+      cons: ["Vereist bestaande bedrading"],
     },
     {
       title: "Beste slimme deurbel op accu: Tapo D205",
@@ -237,6 +245,8 @@ export const aanraders = [
       image: "/images/products/tapo-d205.png",
       href: "/producten/tapo-d205",
       badges: ["Accu", "2K", "Eenvoudig"],
+      pros: ["Geen bedrading nodig", "Eenvoudige installatie"],
+      cons: ["Accu opladen elke 1–3 maanden"],
     },
     {
       title: "Beste slimme deurbel zonder abonnement: Tapo D235",
@@ -245,6 +255,8 @@ export const aanraders = [
       image: "/images/products/tapo-d235.png",
       href: "/producten/tapo-d235",
       badges: ["Geen abonnement", "Lokaal", "Slimme keuze"],
+      pros: ["Geen abonnementskosten", "Lokale opslag mogelijk"],
+      cons: ["Minder uitgebreid ecosysteem dan Ring"],
     },
     {
       title: "Beste slimme deurbel voor smart home integratie: Aqara Doorbell G410",
@@ -364,6 +376,8 @@ relatedGuides: [
       image: "/images/products/aqara-motion-sensor.png",
       href: "/producten/aqara-motion-sensor",
       badges: ["Beste keuze", "Zigbee", "Automatisering"],
+      pros: ["Uitstekende prijs-kwaliteit", "Lange batterijduur (tot 2 jaar)"],
+      cons: ["Zigbee hub vereist"],
     },
     {
       title: "Beste deur- en raamsensor (Matter): Eve Door & Window",
@@ -372,6 +386,8 @@ relatedGuides: [
       image: "/images/products/eve-door-window.png",
       href: "/producten/eve-door-window",
       badges: ["Matter", "Privacy", "Beveiliging"],
+      pros: ["Matter-ondersteuning", "Volledig lokale werking, geen cloud"],
+      cons: ["Hogere prijs dan Zigbee alternatieven"],
     },
     {
       title: "Beste premium bewegingssensor: Eve Motion (Matter)",
@@ -380,6 +396,8 @@ relatedGuides: [
       image: "/images/products/eve-motion-matter-bewegingssensor.png",
       href: "/producten/eve-motion-matter-bewegingssensor",
       badges: ["Matter", "Premium", "Lokaal"],
+      pros: ["Matter — geen hub nodig", "Werkt volledig lokaal"],
+      cons: ["Duurder dan Zigbee bewegingssensoren"],
     },
     {
       title: "Beste aanwezigheidssensor voor betrouwbare automatiseringen: Aqara FP1E",
@@ -501,6 +519,8 @@ relatedGuides: [
       image: "/images/products/philips-hue-white-ambiance.png",
       href: "/producten/philips-hue-white-ambiance-starterkit",
       badges: ["Beste keuze", "Meest stabiel", "Ecosysteem"],
+      pros: ["Meest stabiel en betrouwbaar", "Breed ecosysteem met sensoren en schakelaars"],
+      cons: ["Duurder dan wifi-alternatieven"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DPhilips%2BHue%2BWhite%2BAmbiance%2BStarterkit",
       coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DPhilips%2BHue%2BWhite%2BAmbiance%2BStarterkit",
     },
@@ -511,6 +531,8 @@ relatedGuides: [
       image: "/images/products/innr-zigbee-e27.png",
       href: "/producten/innr-zigbee-e27",
       badges: ["Budget", "Zigbee", "Prijs-kwaliteit"],
+      pros: ["Betaalbaar Zigbee alternatief voor Hue", "Stabiele verbinding via hub"],
+      cons: ["Minder uitgebreid ecosysteem dan Philips Hue"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DInnr%2BZigbee%2BE27",
       coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DInnr%2BZigbee%2BE27",
     },
@@ -521,6 +543,8 @@ relatedGuides: [
       image: "/images/products/tapo-l510e.png",
       href: "/producten/tapo-l510e",
       badges: ["Goedkoop", "Geen hub", "Wi-Fi"],
+      pros: ["Geen hub nodig", "Zeer betaalbaar (±€12)"],
+      cons: ["Alleen wit licht, geen kleur"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DTapo%2BL510E",
       coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DTapo%2BL510E",
     },
@@ -665,6 +689,8 @@ relatedGuides: [
       image: "/images/products/homey-pro-early-2023.png",
       href: "/producten/homey-pro-early-2023",
       badges: ["Beste keuze", "All-in-one", "Gebruiksvriendelijk"],
+      pros: ["Werkt met alle protocollen (Zigbee, Z-Wave, Matter)", "Gebruiksvriendelijke app"],
+      cons: ["Abonnement €2,99/maand voor extra functies"],
     },
     {
       title: "Nieuwste Homey Pro: Homey Pro (2026)",
@@ -673,6 +699,8 @@ relatedGuides: [
       image: "/images/products/homey-pro-early-2023.png",
       href: "/producten/homey-pro-2026",
       badges: ["Nieuw 2026", "4GB RAM", "All-in-one"],
+      pros: ["4GB RAM voor grote setups", "Zelfde prijs als vorige versie (€399)"],
+      cons: ["Nieuw model — minder gebruikerservaringen beschikbaar"],
     },
     {
       title: "Beste smart home hub voor power users: Home Assistant Green",
@@ -681,6 +709,8 @@ relatedGuides: [
       image: "/images/products/home-assistant-green.png",
       href: "/producten/home-assistant-green",
       badges: ["Power users", "Lokaal", "Maximale controle"],
+      pros: ["Volledig lokaal en gratis software", "Maximale aanpasbaarheid"],
+      cons: ["Steile leercurve voor beginners"],
     },
     {
       title: "Beste smart home hub voor Samsung-gebruikers: SmartThings Hub",
@@ -773,6 +803,8 @@ relatedGuides: [
       image: "/images/products/tapo-p110.png",
       href: "/producten/tapo-p110",
       badges: ["Beste keuze", "Wi-Fi", "Energiemeting"],
+      pros: ["Energiemeting ingebouwd", "Geen hub nodig"],
+      cons: ["Geen Matter-ondersteuning"],
     },
     {
       title: "Beste slimme stekker voor Zigbee: Aqara Smart Plug",
@@ -781,6 +813,8 @@ relatedGuides: [
       image: "/images/products/aqara-smart-plug.png",
       href: "/producten/aqara-smart-plug",
       badges: ["Zigbee", "Stabiel", "Voor hubs"],
+      pros: ["Stabiele Zigbee verbinding", "Werkt lokaal via hub"],
+      cons: ["Zigbee hub vereist"],
     },
     {
       title: "Beste Matter slimme stekker: SwitchBot Matter Plug Mini",
@@ -789,6 +823,8 @@ relatedGuides: [
       image: "/images/products/switchbot-matter-plug-mini.png",
       href: "/producten/switchbot-matter-plug-mini",
       badges: ["Matter", "Compact", "Energiemeting"],
+      pros: ["Matter-ondersteuning", "Compacte uitvoering"],
+      cons: ["Hogere prijs dan Tapo-alternatieven"],
     },
     {
       title: "Beste slimme buitenstekker: TP-Link Tapo P410M",
@@ -1125,6 +1161,8 @@ relatedGuides: [
       image: "/images/products/tado-smart-thermostat-v3.png",
       href: "/producten/tado-smart-thermostat-v3",
       badges: ["Beste keuze", "Geofencing", "Brede compatibiliteit"],
+      pros: ["Geofencing op telefooonlocatie", "Breed compatibel met alle platforms"],
+      cons: ["AI Assist kost €29,99/jaar extra"],
     },
     {
       title: "Beste keuze zonder abonnement: Netatmo Slimme Thermostaat",
@@ -1133,6 +1171,8 @@ relatedGuides: [
       image: "/images/products/netatmo-slimme-thermostaat.png",
       href: "/producten/netatmo-slimme-thermostaat",
       badges: ["Geen abonnement", "Apple HomeKit", "Strak design"],
+      pros: ["Geen abonnementskosten", "Apple HomeKit ondersteuning"],
+      cons: ["Minder geavanceerde automatisering dan Tado"],
     },
     {
       title: "Beste keuze voor Google Home gebruikers: Google Nest Thermostaat",
@@ -1141,6 +1181,8 @@ relatedGuides: [
       image: "/images/products/google-nest-thermostaat.png",
       href: "/producten/google-nest-thermostaat",
       badges: ["Google Home", "Leergedrag", "Premium"],
+      pros: ["Leert je schema automatisch", "Naadloze Google Home integratie"],
+      cons: ["Enkel zinvol binnen Google-ecosysteem"],
     },
   ],
 
@@ -1226,6 +1268,8 @@ relatedGuides: [
       image: "/images/products/aqara-motion-sensor.png",
       href: "/producten/aqara-motion-sensor",
       badges: ["Beste keuze", "Zigbee", "Lange batterij"],
+      pros: ["Tot 2 jaar batterijduur", "Snelle detectie (0,5 seconde)"],
+      cons: ["Zigbee hub vereist"],
     },
     {
       title: "Beste keuze voor Matter: Eve Motion",
@@ -1234,6 +1278,8 @@ relatedGuides: [
       image: "/images/products/eve-motion-matter-bewegingssensor.png",
       href: "/producten/eve-motion-matter-bewegingssensor",
       badges: ["Matter", "Thread", "HomeKit"],
+      pros: ["Matter — geen hub nodig", "Volledig lokale werking, geen cloud"],
+      cons: ["Duurder dan Zigbee sensoren"],
     },
     {
       title: "Beste keuze voor aanwezigheidsdetectie: Aqara FP2",
@@ -1242,6 +1288,8 @@ relatedGuides: [
       image: "/images/products/aqara-fp2-aanwezigheidssensor.png",
       href: "/producten/aqara-fp2-aanwezigheidssensor",
       badges: ["Aanwezigheidsdetectie", "Radar", "Geavanceerd"],
+      pros: ["Detecteert ook stilzittende personen", "Meerdere zones instelbaar"],
+      cons: ["Hogere prijs, vereist wifi en Aqara hub"],
     },
     {
       title: "Beste budget bewegingssensor: Tapo T100",
@@ -1463,6 +1511,8 @@ relatedGuides: [
       image: "/images/products/nuki-smart-lock-4-pro.png",
       href: "/producten/nuki-smart-lock-4-pro",
       badges: ["Beste keuze", "Populairste model", "WiFi + Bluetooth"],
+      pros: ["Monteert op bestaand slot, geen vervangen", "±6 maanden batterijduur"],
+      cons: ["Hogere aanschafprijs (±€180)"],
     },
     {
       title: "Beste compact slim slot: Yale Linus Smart Lock",
@@ -1471,6 +1521,8 @@ relatedGuides: [
       image: "/images/products/yale-linus-smart-lock.png",
       href: "/producten/yale-linus-smart-lock",
       badges: ["Compact", "Yale betrouwbaarheid", "Alexa & Google"],
+      pros: ["Compact en strak design", "Vertrouwd merk met goede reputatie"],
+      cons: ["Minder integraties dan Nuki"],
     },
     {
       title: "Beste slim slot voor geavanceerde setups: Danalock V3",
@@ -1479,6 +1531,8 @@ relatedGuides: [
       image: "/images/products/danalock-v3.png",
       href: "/producten/danalock-v3",
       badges: ["Z-Wave", "Zigbee", "Home Assistant"],
+      pros: ["Zigbee + Z-Wave voor maximale integratie", "Uitstekend voor Home Assistant"],
+      cons: ["Complexere installatie dan Nuki"],
     },
   ],
 
@@ -1563,6 +1617,8 @@ relatedGuides: [
       image: "/images/products/homewizard-energy-p1-meter.png",
       href: "/producten/homewizard-energy-p1-meter",
       badges: ["Beste keuze", "Eenvoudig", "P1-meter"],
+      pros: ["Gratis app zonder abonnement", "Werkt met Home Assistant en Homey"],
+      cons: ["Alleen P1-poort, geen kabelkastmeting"],
     },
     {
       title: "Beste compact model: HomeWizard Wi-Fi P1 Dongle",
@@ -1571,6 +1627,8 @@ relatedGuides: [
       image: "/images/products/homewizard-wifi-p1-dongle.png",
       href: "/producten/p1-dongle-homewizard-wifi",
       badges: ["Compact", "Budget", "Snel installeren"],
+      pros: ["Kleinste formaat, steekt direct in de meter", "Zeer lage prijs"],
+      cons: ["Minder uitgebreide app dan grotere modellen"],
     },
     {
       title: "Beste keuze voor zonnepanelen en 3-fase: Shelly Pro 3EM",
@@ -1579,6 +1637,8 @@ relatedGuides: [
       image: "/images/products/shelly-pro-3em.png",
       href: "/producten/shelly-pro-3em",
       badges: ["3-fase", "Zonnepanelen", "Home Assistant"],
+      pros: ["3-fase meting", "Uitstekend voor zonnepanelen monitoring"],
+      cons: ["Montage in meterkast vereist"],
     },
   ],
 
@@ -2434,6 +2494,8 @@ relatedGuides: [
       image: "/images/products/tapo-p115.png",
       href: "/producten/tapo-p115",
       badges: ["Budget", "Energiemeting", "Populair"],
+      pros: ["Energiemeting ingebouwd", "Zeer betaalbaar (±€12)"],
+      cons: ["Geen Matter-ondersteuning"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DTapo%2520P115",
       amazonUrl: "https://www.amazon.nl/s?k=Tapo+P115&tag=slimhuiswonen-21",
     },
@@ -2444,6 +2506,8 @@ relatedGuides: [
       image: "/images/products/placeholder.png",
       href: "/aanraders/beste-smart-home-hub",
       badges: ["Zigbee", "IKEA"],
+      pros: ["Compacte Zigbee stekker", "IKEA prijsniveau"],
+      cons: ["Vereist IKEA DIRIGERA hub"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DIKEA%2520TRADFRI%2520stekker",
     },
     {
@@ -2453,6 +2517,8 @@ relatedGuides: [
       image: "/images/products/placeholder.png",
       href: "/producten/tapo-p115",
       badges: ["Stekkerdoos", "USB", "3 stopcontacten"],
+      pros: ["3 stopcontacten + 3 USB-poorten", "Ideaal voor bureau of tv-meubel"],
+      cons: ["Geen energiemeting per stopcontact"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DTapo%2520P300",
       amazonUrl: "https://www.amazon.nl/s?k=Tapo+P300&tag=slimhuiswonen-21",
     },
@@ -2511,6 +2577,8 @@ relatedGuides: [
       image: "/images/products/placeholder.png",
       href: "/aanraders/beste-robotstofzuigers-2026",
       badges: ["Budget", "App-bediening"],
+      pros: ["Lage aanschafprijs", "App-bediening aanwezig"],
+      cons: ["Geen LiDAR, minder nauwkeurige navigatie"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DXiaomi%2520Robot%2520Vacuum%2520E10",
       amazonUrl: "https://www.amazon.nl/s?k=Xiaomi+Robot+Vacuum+E10&tag=slimhuiswonen-21",
     },
@@ -2521,6 +2589,8 @@ relatedGuides: [
       image: "/images/products/placeholder.png",
       href: "/aanraders/beste-robotstofzuigers-2026",
       badges: ["LiDAR", "Dweilen", "Beste keuze"],
+      pros: ["LiDAR navigatie voor nauwkeurige routes", "Automatisch dweilen"],
+      cons: ["Hogere aanschafprijs dan budget modellen"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DDreame%2520L10s",
       amazonUrl: "https://www.amazon.nl/s?k=Dreame+L10s&tag=slimhuiswonen-21",
     },
@@ -2531,6 +2601,8 @@ relatedGuides: [
       image: "/images/products/placeholder.png",
       href: "/aanraders/beste-robotstofzuigers-2026",
       badges: ["Huisdieren", "Dweilen", "Roborock"],
+      pros: ["Uitstekend voor dierenhaar", "Gaat over drempelranden"],
+      cons: ["Hogere prijs in het middensegment"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DRoborock%2520S8",
       coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DRoborock%2BS8",
     },
