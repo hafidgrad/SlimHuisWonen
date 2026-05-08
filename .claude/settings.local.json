@@ -73,7 +73,9 @@
       "Bash(curl -s http://localhost:3000/aanraders/beste-slimme-verlichting)",
       "Bash(python3 -c \"import sys; html=sys.stdin.read\\(\\); print\\('canonical www:', 'www.slimhuiswonen.nl' in html and 'rel=\\\\\"canonical\\\\\"' in html\\)\")",
       "Bash(python3 -c \"import sys; html=sys.stdin.read\\(\\); idx=html.find\\('canonical'\\); print\\(html[idx-10:idx+80] if idx>0 else 'NOT FOUND'\\)\")",
-      "Bash(python3 -c \"import sys; html=sys.stdin.read\\(\\); idx=html.find\\('slimhuiswonen'\\); print\\(html[idx-20:idx+60] if idx>0 else 'NOT FOUND'\\)\")"
+      "Bash(python3 -c \"import sys; html=sys.stdin.read\\(\\); idx=html.find\\('slimhuiswonen'\\); print\\(html[idx-20:idx+60] if idx>0 else 'NOT FOUND'\\)\")",
+      "Bash(curl -s http://localhost:3000/aanraders/beste-slimme-thermostaat)",
+      "Bash(curl -s http://localhost:3000/aanraders/beste-slimme-slot)"
     ]
   }
 }
