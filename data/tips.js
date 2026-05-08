@@ -158,7 +158,7 @@ export const tips = [
 },
   {
   slug: "energie-besparen-met-smart-home",
-  title: "Energie besparen met smart home – slimme thermostaten & stekkers",
+  title: "Energie besparen met smart home",
   description:
     "Energie besparen met een smart home? Ontdek hoe slimme thermostaten, radiatorknoppen en slimme stekkers helpen om je energieverbruik te verlagen.",
   image: "/images/tips/energie-besparen-met-smart-home.png",
@@ -311,7 +311,7 @@ export const tips = [
   // ✅ Beveiliging (nieuw cluster)
   {
   slug: "slim-huis-beveiligen",
-  title: "Slim huis beveiligen: slimme camera’s, deurbellen & sensoren – 2026",
+  title: "Slim huis beveiligen met slimme apparaten",
   description:
     "Hoe beveilig je je huis slim? Complete uitleg over slimme camera’s, videodeurbellen, sensoren en privacy. Praktische tips voor een veilig smart home.",
   image: "/images/tips/slim-huis-beveiligen.png",
@@ -612,7 +612,7 @@ export const tips = [
 },
   {
   slug: "slimme-deurbel-uitleg",
-  title: "Slimme deurbel uitgelegd: werking, privacy & abonnementen – 2026",
+  title: "Slimme deurbel uitgelegd: werking & privacy",
   description:
     "Wat is een slimme deurbel en waar moet je op letten? Uitleg over werking, wifi, privacy, abonnementen en integratie met je smart home.",
   image: "/images/tips/slimme-deurbel-uitleg.png",
@@ -1496,7 +1496,7 @@ export const tips = [
 },
   {
   slug: "merken-combineren-zonder-gedoe",
-  title: "Smart home merken combineren zonder gedoe (Hue, Aqara, Tapo) – 2026",
+  title: "Slimme merken combineren in één smart home",
   description:
     "Verschillende smart home merken combineren zoals Philips Hue, Aqara, IKEA Tradfri en TP-Link Tapo? Zo laat je alles samenwerken via één app, met of zonder hub.",
   image: "/images/tips/merken-combineren.png",
@@ -2115,7 +2115,7 @@ export const tips = [
   // ✅ Hubs
   {
   slug: "wat-is-een-smart-home-hub",
-  title: "Wat is een smart home hub? (+ wanneer je er één nodig hebt) – 2026",
+  title: "Wat is een smart home hub?",
   description:
     "Wat is een smart home hub en heb je er één nodig? Lees wat een hub doet, het verschil met wifi en wanneer Homey, Home Assistant of Hue Bridge slim is.",
   image:
@@ -2292,7 +2292,7 @@ export const tips = [
   // ✅ Wifi / netwerk
  {
   slug: "wifi-verbeteren-voor-smart-home",
-  title: "Wi-Fi verbeteren voor smart home (10 tips voor stabiel slim huis) – 2026",
+  title: "Wi-Fi verbeteren voor smart home: 10 tips",
   description:
     "Smart home valt offline of reageert traag? Verbeter je Wi-Fi met 10 praktische tips: 2.4GHz vs 5GHz, mesh, kanaalkeuze, router-instellingen en vaste IP’s.",
   image:
@@ -2437,7 +2437,7 @@ export const tips = [
 },
   {
   slug: "2-4ghz-vs-5ghz-smart-home",
-  title: "2.4 GHz vs 5 GHz voor smart home – zo voorkom je offline apparaten",
+  title: "2,4 GHz vs 5 GHz voor smart home",
   description:
     "Welke Wi-Fi band is het beste voor smart home? 2.4 GHz is vaak stabieler voor IoT-apparaten en voorkomt offline meldingen en koppelproblemen.",
   image: "/images/tips/2-4-vs-5ghz.png",
@@ -2680,7 +2680,7 @@ export const tips = [
 },
   {
   slug: "wifi-bereik-verbeteren-zonder-nieuwe-router",
-  title: "Wi-Fi bereik verbeteren zonder nieuwe router (7 slimme oplossingen) – 2026",
+  title: "Wi-Fi bereik verbeteren zonder nieuwe router",
   description:
     "Slechte Wi-Fi in huis of slimme apparaten die offline gaan? Verbeter je bereik zonder meteen een nieuwe router te kopen. 7 praktische tips voor stabiel smart home.",
   image:
