@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+﻿import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { categories } from "@/data/categories";
@@ -8,7 +8,7 @@ export const metadata = {
   description:
     "Ontdek slimme producten per categorie zoals verlichting, sensoren, hubs en speakers.",
   alternates: {
-    canonical: "https://slimhuiswonen.nl/categorie",
+    canonical: "https://www.slimhuiswonen.nl/categorie",
   },
 };
 

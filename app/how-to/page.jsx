@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+﻿import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import TipCard from "@/components/TipCard";
 import Image from "next/image";
@@ -9,7 +9,7 @@ export const metadata = {
   description:
     "Stap-voor-stap handleidingen voor je smart home. Duidelijke uitleg zonder technisch gedoe voor Homey, Home Assistant en meer.",
   alternates: {
-    canonical: "https://slimhuiswonen.nl/how-to",
+    canonical: "https://www.slimhuiswonen.nl/how-to",
   },
 };
 
@@ -61,7 +61,7 @@ const howtoCollectionSchema = {
   "@type": "CollectionPage",
   name: "How To Smart Home | SlimHuisWonen",
   description: "Stap-voor-stap handleidingen voor je smart home. Duidelijke uitleg zonder technisch gedoe voor Homey, Home Assistant en meer.",
-  url: "https://slimhuiswonen.nl/how-to",
+  url: "https://www.slimhuiswonen.nl/how-to",
 };
 
 export default function HowToPage() {

@@ -25,15 +25,15 @@ export async function generateMetadata({ params }) {
     title: post.seoTitle || post.title,
     description: post.description,
     alternates: {
-      canonical: `https://slimhuiswonen.nl/blog/${post.slug}`,
+      canonical: `https://www.slimhuiswonen.nl/blog/${post.slug}`,
     },
     openGraph: {
       title: post.seoTitle || post.title,
       description: post.description,
-      url: `https://slimhuiswonen.nl/blog/${post.slug}`,
+      url: `https://www.slimhuiswonen.nl/blog/${post.slug}`,
       images: [
         {
-          url: `https://slimhuiswonen.nl${post.image}`,
+          url: `https://www.slimhuiswonen.nl${post.image}`,
         },
       ],
     },
@@ -48,9 +48,9 @@ export default function BlogPostPage({ params }) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://slimhuiswonen.nl" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://slimhuiswonen.nl/blog" },
-      { "@type": "ListItem", position: 3, name: post.title, item: `https://slimhuiswonen.nl/blog/${post.slug}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.slimhuiswonen.nl" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.slimhuiswonen.nl/blog" },
+      { "@type": "ListItem", position: 3, name: post.title, item: `https://www.slimhuiswonen.nl/blog/${post.slug}` },
     ],
   };
 
@@ -59,20 +59,20 @@ export default function BlogPostPage({ params }) {
     "@type": "Article",
     headline: post.title,
     description: post.description,
-    image: `https://slimhuiswonen.nl${post.image}`,
+    image: `https://www.slimhuiswonen.nl${post.image}`,
     author: {
       "@type": "Person",
       name: "Hafid",
-      url: "https://slimhuiswonen.nl/over",
+      url: "https://www.slimhuiswonen.nl/over",
     },
     publisher: {
       "@type": "Organization",
       name: "SlimHuisWonen.nl",
-      url: "https://slimhuiswonen.nl",
+      url: "https://www.slimhuiswonen.nl",
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://slimhuiswonen.nl/blog/${post.slug}`,
+      "@id": `https://www.slimhuiswonen.nl/blog/${post.slug}`,
     },
     ...(post.datePublished && { datePublished: post.datePublished }),
     dateModified: post.dateModified || "2026-04-27",

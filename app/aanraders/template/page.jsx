@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+﻿import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
@@ -9,7 +9,7 @@ export const metadata = {
   description:
     "Template voor koopgidsen op SlimHuisWonen: structuur, productblokken en interne links.",
   alternates: {
-    canonical: "https://slimhuiswonen.nl/aanraders/template",
+    canonical: "https://www.slimhuiswonen.nl/aanraders/template",
   },
 };
 

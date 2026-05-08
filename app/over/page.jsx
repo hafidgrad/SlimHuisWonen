@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+﻿import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,16 +8,16 @@ export const metadata = {
   description:
     "Ik ben Hafid, oprichter van SlimHuisWonen.nl. Ik deel mijn ervaringen met smart home zodat jij makkelijker kunt starten met een slim huis.",
   alternates: {
-    canonical: "https://slimhuiswonen.nl/over",
+    canonical: "https://www.slimhuiswonen.nl/over",
   },
   openGraph: {
     title: "Over Hafid",
     description:
       "Lees wie SlimHuisWonen runt en waarom Hafid deze site is gestart.",
-    url: "https://slimhuiswonen.nl/over",
+    url: "https://www.slimhuiswonen.nl/over",
     images: [
       {
-        url: "https://slimhuiswonen.nl/profielfoto.jpeg",
+        url: "https://www.slimhuiswonen.nl/profielfoto.jpeg",
         width: 1200,
         height: 630,
       },
@@ -29,9 +29,9 @@ const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Hafid",
-  url: "https://slimhuiswonen.nl/over",
-  image: "https://slimhuiswonen.nl/profielfoto.jpeg",
-  sameAs: ["https://slimhuiswonen.nl"],
+  url: "https://www.slimhuiswonen.nl/over",
+  image: "https://www.slimhuiswonen.nl/profielfoto.jpeg",
+  sameAs: ["https://www.slimhuiswonen.nl"],
   jobTitle: "Oprichter SlimHuisWonen.nl",
   description:
     "Hafid bouwt al jaren aan zijn eigen slimme huis en deelt zijn ervaringen op SlimHuisWonen.nl — praktische koopgidsen, tips en how-to handleidingen voor iedereen die wil beginnen met smart home.",
@@ -56,7 +56,7 @@ const personSchema = {
   worksFor: {
     "@type": "Organization",
     name: "SlimHuisWonen.nl",
-    url: "https://slimhuiswonen.nl",
+    url: "https://www.slimhuiswonen.nl",
   },
 };
 

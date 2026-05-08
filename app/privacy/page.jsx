@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+﻿import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 
@@ -6,7 +6,7 @@ export const metadata = {
   title: "Privacybeleid",
   description:
     "Lees het privacybeleid van SlimHuisWonen.nl. Welke gegevens we verwerken, hoe we omgaan met affiliate-links naar webshops en hoe je je rechten kunt uitoefenen.",
-  alternates: { canonical: "https://slimhuiswonen.nl/privacy" },
+  alternates: { canonical: "https://www.slimhuiswonen.nl/privacy" },
   robots: "index, follow",
 };
 

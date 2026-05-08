@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+﻿import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import TipCard from "@/components/TipCard";
 import Image from "next/image";
@@ -9,7 +9,7 @@ export const metadata = {
   description:
     "Praktische tips en uitleg over slimme verlichting, sensoren, hubs en netwerken. Begrijp hoe je smart home werkt en voorkom miskopen.",
   alternates: {
-    canonical: "https://slimhuiswonen.nl/tips",
+    canonical: "https://www.slimhuiswonen.nl/tips",
   },
 };
 
@@ -69,7 +69,7 @@ const tipsCollectionSchema = {
   "@type": "CollectionPage",
   name: "Tips & Uitleg | SlimHuisWonen",
   description: "Praktische tips en uitleg over slimme verlichting, sensoren, hubs en netwerken. Begrijp hoe je smart home werkt en voorkom miskopen.",
-  url: "https://slimhuiswonen.nl/tips",
+  url: "https://www.slimhuiswonen.nl/tips",
 };
 
 export default function TipsPage() {

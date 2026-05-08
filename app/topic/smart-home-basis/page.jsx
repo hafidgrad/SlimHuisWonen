@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+﻿import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
@@ -11,7 +11,7 @@ export const metadata = {
   description:
     "Alles wat je moet weten om te beginnen met een smart home. Uitleg, tips, handleidingen en koopadvies.",
   alternates: {
-    canonical: "https://slimhuiswonen.nl/topic/smart-home-basis",
+    canonical: "https://www.slimhuiswonen.nl/topic/smart-home-basis",
   },
 };
 

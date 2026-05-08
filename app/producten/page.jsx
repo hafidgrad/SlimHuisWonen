@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+﻿import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
@@ -9,7 +9,7 @@ export const metadata = {
   description:
     "Ontdek alle slimme producten voor een slim huis. Van slimme verlichting en sensoren tot camera's, hubs en energiemonitors. Geschikt voor Homey en Home Assistant.",
   alternates: {
-    canonical: "https://slimhuiswonen.nl/producten",
+    canonical: "https://www.slimhuiswonen.nl/producten",
   },
 };
 

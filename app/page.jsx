@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+﻿import Header from "@/components/Header";
 import TopKoopgidsen from "@/components/TopKoopgidsen";
 import About from "@/components/About";
 import Categories from "@/components/Categories";
@@ -157,16 +157,16 @@ export async function generateMetadata() {
     description:
       "Slim huis beginnen? Ontdek de beste smart home producten, koopgidsen en tips voor slimme verlichting, sensoren, camera’s en hubs. Onafhankelijk en praktisch.",
     alternates: {
-      canonical: "https://slimhuiswonen.nl",
+      canonical: "https://www.slimhuiswonen.nl",
     },
     openGraph: {
       title: "SlimHuisWonen.nl – Slim huis starten zonder gedoe",
       description:
         "Ontdek de beste smart home producten, koopgidsen en praktische tips. Onafhankelijk advies voor slimme verlichting, camera's, thermostaten en meer.",
-      url: "https://slimhuiswonen.nl",
+      url: "https://www.slimhuiswonen.nl",
       images: [
         {
-          url: "https://slimhuiswonen.nl/images/blog/blog-header.png",
+          url: "https://www.slimhuiswonen.nl/images/blog/blog-header.png",
         },
       ],
     },
@@ -177,12 +177,12 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "SlimHuisWonen",
-  url: "https://slimhuiswonen.nl",
+  url: "https://www.slimhuiswonen.nl",
   potentialAction: {
     "@type": "SearchAction",
     target: {
       "@type": "EntryPoint",
-      urlTemplate: "https://slimhuiswonen.nl/zoeken?q={search_term_string}",
+      urlTemplate: "https://www.slimhuiswonen.nl/zoeken?q={search_term_string}",
     },
     "query-input": "required name=search_term_string",
   },
@@ -192,8 +192,8 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "SlimHuisWonen",
-  url: "https://slimhuiswonen.nl",
-  logo: "https://slimhuiswonen.nl/images/logo.png",
+  url: "https://www.slimhuiswonen.nl",
+  logo: "https://www.slimhuiswonen.nl/images/logo.png",
 };
 
 export default function HomePage() {

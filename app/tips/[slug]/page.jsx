@@ -23,13 +23,13 @@ export async function generateMetadata({ params }) {
     title: tip.title,
     description: tip.description,
     alternates: {
-      canonical: `https://slimhuiswonen.nl/tips/${tip.slug}`,
+      canonical: `https://www.slimhuiswonen.nl/tips/${tip.slug}`,
     },
     openGraph: {
       title: tip.title,
       description: tip.description,
-      url: `https://slimhuiswonen.nl/tips/${tip.slug}`,
-      images: [{ url: `https://slimhuiswonen.nl${tip.image}` }],
+      url: `https://www.slimhuiswonen.nl/tips/${tip.slug}`,
+      images: [{ url: `https://www.slimhuiswonen.nl${tip.image}` }],
     },
   };
 }
@@ -47,9 +47,9 @@ export default function TipPage({ params }) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://slimhuiswonen.nl" },
-      { "@type": "ListItem", position: 2, name: "Tips & Uitleg", item: "https://slimhuiswonen.nl/tips" },
-      { "@type": "ListItem", position: 3, name: tip.title, item: `https://slimhuiswonen.nl/tips/${tip.slug}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.slimhuiswonen.nl" },
+      { "@type": "ListItem", position: 2, name: "Tips & Uitleg", item: "https://www.slimhuiswonen.nl/tips" },
+      { "@type": "ListItem", position: 3, name: tip.title, item: `https://www.slimhuiswonen.nl/tips/${tip.slug}` },
     ],
   };
 
@@ -58,20 +58,20 @@ export default function TipPage({ params }) {
     "@type": "Article",
     headline: tip.title,
     description: tip.description,
-    image: `https://slimhuiswonen.nl${tip.image}`,
+    image: `https://www.slimhuiswonen.nl${tip.image}`,
     author: {
       "@type": "Person",
       name: "Hafid",
-      url: "https://slimhuiswonen.nl/over",
+      url: "https://www.slimhuiswonen.nl/over",
     },
     publisher: {
       "@type": "Organization",
       name: "SlimHuisWonen.nl",
-      url: "https://slimhuiswonen.nl",
+      url: "https://www.slimhuiswonen.nl",
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://slimhuiswonen.nl/tips/${tip.slug}`,
+      "@id": `https://www.slimhuiswonen.nl/tips/${tip.slug}`,
     },
     ...(tip.datePublished && { datePublished: tip.datePublished }),
     dateModified: tip.dateModified || "2026-04-27",

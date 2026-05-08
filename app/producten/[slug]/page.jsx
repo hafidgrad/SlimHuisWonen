@@ -30,14 +30,14 @@ export async function generateMetadata({ params }) {
     title,
     description,
     alternates: {
-      canonical: `https://slimhuiswonen.nl/producten/${product.slug}`,
+      canonical: `https://www.slimhuiswonen.nl/producten/${product.slug}`,
     },
     openGraph: {
       title: product.name,
       description,
-      url: `https://slimhuiswonen.nl/producten/${product.slug}`,
+      url: `https://www.slimhuiswonen.nl/producten/${product.slug}`,
       ...(product.image && {
-        images: [{ url: `https://slimhuiswonen.nl${product.image}` }],
+        images: [{ url: `https://www.slimhuiswonen.nl${product.image}` }],
       }),
     },
   };
@@ -120,7 +120,7 @@ export default function ProductPage({ params }) {
       name: brand,
     },
     ...(product.image && {
-      image: `https://slimhuiswonen.nl${product.image}`,
+      image: `https://www.slimhuiswonen.nl${product.image}`,
     }),
     ...(product.rating && {
       aggregateRating: {
@@ -136,7 +136,7 @@ export default function ProductPage({ params }) {
       ...(parsedPrice !== null && { price: parsedPrice }),
       priceValidUntil: "2027-01-01",
       availability: "https://schema.org/InStock",
-      url: `https://slimhuiswonen.nl/producten/${product.slug}`,
+      url: `https://www.slimhuiswonen.nl/producten/${product.slug}`,
       seller: {
         "@type": "Organization",
         name: "SlimHuisWonen",
@@ -184,9 +184,9 @@ export default function ProductPage({ params }) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://slimhuiswonen.nl" },
-      { "@type": "ListItem", position: 2, name: "Producten", item: "https://slimhuiswonen.nl/producten" },
-      { "@type": "ListItem", position: 3, name: product.name, item: `https://slimhuiswonen.nl/producten/${product.slug}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.slimhuiswonen.nl" },
+      { "@type": "ListItem", position: 2, name: "Producten", item: "https://www.slimhuiswonen.nl/producten" },
+      { "@type": "ListItem", position: 3, name: product.name, item: `https://www.slimhuiswonen.nl/producten/${product.slug}` },
     ],
   };
 

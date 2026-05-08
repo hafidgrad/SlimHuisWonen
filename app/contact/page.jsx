@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+﻿import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata = {
@@ -6,7 +6,7 @@ export const metadata = {
   description:
     "Heb je vragen of suggesties over smart home? Neem contact op met SlimHuisWonen via info@slimhuiswonen.nl.",
   alternates: {
-    canonical: "https://slimhuiswonen.nl/contact",
+    canonical: "https://www.slimhuiswonen.nl/contact",
   },
 };
 
@@ -14,7 +14,7 @@ const contactSchema = {
   "@context": "https://schema.org",
   "@type": "ContactPage",
   name: "Contact | SlimHuisWonen",
-  url: "https://slimhuiswonen.nl/contact",
+  url: "https://www.slimhuiswonen.nl/contact",
   description: "Neem contact op met SlimHuisWonen voor vragen over smart home producten en koopgidsen.",
 };
 

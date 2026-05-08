@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+﻿import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
@@ -11,7 +11,7 @@ export const metadata = {
   description:
     "Alles over wifi optimalisatie voor je smart home. Bereik verbeteren, 2.4GHz vs 5GHz en stabiele verbindingen.",
   alternates: {
-    canonical: "https://slimhuiswonen.nl/topic/wifi-netwerk",
+    canonical: "https://www.slimhuiswonen.nl/topic/wifi-netwerk",
   },
 };
 

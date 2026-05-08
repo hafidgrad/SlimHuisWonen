@@ -3,7 +3,7 @@ import Script from "next/script";
 import CookieBanner from "@/components/CookieBanner";
 
 export const metadata = {
-  metadataBase: new URL("https://slimhuiswonen.nl"),
+  metadataBase: new URL("https://www.slimhuiswonen.nl"),
   title: {
     default: "SlimHuisWonen – Slimme spullen voor een slimmer huis",
     template: "%s | SlimHuisWonen",
@@ -19,13 +19,13 @@ export const metadata = {
     title: "SlimHuisWonen – Slimme spullen voor een slimmer huis",
     description:
       "Handleidingen, tips en productaanraders voor een slim huis. Van slimme verlichting tot beveiliging.",
-    url: "https://slimhuiswonen.nl",
+    url: "https://www.slimhuiswonen.nl",
     siteName: "SlimHuisWonen.nl",
     type: "website",
   },
 
   alternates: {
-    canonical: "https://slimhuiswonen.nl",
+    canonical: "https://www.slimhuiswonen.nl",
   },
 };
 

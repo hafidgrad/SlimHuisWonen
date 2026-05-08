@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+﻿import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 
@@ -7,7 +7,7 @@ export const metadata = {
   description:
     "Lees het retourbeleid van SlimHuisWonen. Informatie over retourneren, omruilen en verzendkosten.",
   alternates: {
-    canonical: "https://slimhuiswonen.nl/retourbeleid",
+    canonical: "https://www.slimhuiswonen.nl/retourbeleid",
   },
 };
 
@@ -15,7 +15,7 @@ const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   name: "Retourbeleid",
-  url: "https://slimhuiswonen.nl/retourbeleid",
+  url: "https://www.slimhuiswonen.nl/retourbeleid",
   description: "Retourbeleid van SlimHuisWonen",
 };
 

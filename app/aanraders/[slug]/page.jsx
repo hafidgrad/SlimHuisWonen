@@ -48,15 +48,15 @@ export async function generateMetadata({ params }) {
     title: guide.title,
     description: guide.description,
     alternates: {
-      canonical: `https://slimhuiswonen.nl/aanraders/${guide.slug}`,
+      canonical: `https://www.slimhuiswonen.nl/aanraders/${guide.slug}`,
     },
     openGraph: {
       title: guide.title,
       description: guide.description,
-      url: `https://slimhuiswonen.nl/aanraders/${guide.slug}`,
+      url: `https://www.slimhuiswonen.nl/aanraders/${guide.slug}`,
       images: [
         {
-          url: `https://slimhuiswonen.nl${guide.image}`,
+          url: `https://www.slimhuiswonen.nl${guide.image}`,
         },
       ],
     },
@@ -139,19 +139,19 @@ export default function AanraderDetailPage({ params }) {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://slimhuiswonen.nl",
+        item: "https://www.slimhuiswonen.nl",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Aanraders",
-        item: "https://slimhuiswonen.nl/aanraders",
+        item: "https://www.slimhuiswonen.nl/aanraders",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: guide.title,
-        item: `https://slimhuiswonen.nl/aanraders/${guide.slug}`,
+        item: `https://www.slimhuiswonen.nl/aanraders/${guide.slug}`,
       },
     ],
   };
@@ -166,7 +166,7 @@ export default function AanraderDetailPage({ params }) {
       "@type": "ListItem",
       position: index + 1,
       name: pick.title,
-      url: `https://slimhuiswonen.nl${pick.href}`,
+      url: `https://www.slimhuiswonen.nl${pick.href}`,
     })),
   };
 

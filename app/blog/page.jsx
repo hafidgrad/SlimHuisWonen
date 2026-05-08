@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+﻿import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
@@ -9,7 +9,7 @@ export const metadata = {
   description:
     "Smart home blog met handige uitleg, vergelijkingen en koopgidsen over slimme verlichting, hubs, Zigbee, Matter en meer.",
   alternates: {
-    canonical: "https://slimhuiswonen.nl/blog",
+    canonical: "https://www.slimhuiswonen.nl/blog",
   },
 };
 
@@ -18,7 +18,7 @@ const blogCollectionSchema = {
   "@type": "CollectionPage",
   name: "Smart Home Blog: uitleg en tips",
   description: "Smart home blog met handige uitleg, vergelijkingen en koopgidsen over slimme verlichting, hubs, Zigbee, Matter en meer.",
-  url: "https://slimhuiswonen.nl/blog",
+  url: "https://www.slimhuiswonen.nl/blog",
 };
 
 export default function BlogOverviewPage() {

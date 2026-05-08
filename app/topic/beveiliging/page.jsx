@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+﻿import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
@@ -11,7 +11,7 @@ export const metadata = {
   description:
     "Beveilig je slimme huis met camera’s, deurbellen en sensoren. Handleidingen, uitleg en koopadvies.",
   alternates: {
-    canonical: "https://slimhuiswonen.nl/topic/beveiliging",
+    canonical: "https://www.slimhuiswonen.nl/topic/beveiliging",
   },
 };
 

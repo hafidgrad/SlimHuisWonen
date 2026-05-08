@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+﻿import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
@@ -9,7 +9,7 @@ export const metadata = {
   description:
     "De beste smart home producten van 2026. Onafhankelijke koopgidsen voor verlichting, sensoren, camera’s, hubs en meer.",
   alternates: {
-    canonical: "https://slimhuiswonen.nl/aanraders",
+    canonical: "https://www.slimhuiswonen.nl/aanraders",
   },
 };
 
