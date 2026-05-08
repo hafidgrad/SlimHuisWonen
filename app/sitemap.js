@@ -6,7 +6,7 @@ import { categories } from "@/data/categories";
 import { aanraders } from "@/data/aanraders";
 
 export default function sitemap() {
-  const baseUrl = "https://slimhuiswonen.nl";
+  const baseUrl = "https://www.slimhuiswonen.nl";
   const lastModified = new Date();
 
   // ✅ Statische routes — hoge prioriteit
