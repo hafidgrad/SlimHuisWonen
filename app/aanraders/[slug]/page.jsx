@@ -10,6 +10,8 @@ import BuyGuideProductCard from "@/components/BuyGuideProductCard";
 import AmazonSearchCta from "@/components/AmazonSearchCta";
 import RelatedContent from "@/components/RelatedContent";
 import BannerImage from "@/components/BannerImage";
+import TableOfContents from "@/components/TableOfContents";
+import FaqSection from "@/components/FaqSection";
 
 /* ================= Amazon zoekterm mapping ================= */
 
@@ -89,8 +91,16 @@ export default function AanraderDetailPage({ params }) {
 
   const amazonSearchTerm = getAmazonSearchTerm(params.slug);
 
+  /* Inhoudsopgave items */
+  const tocItems = [
+    { id: "aanraders", label: "Onze aanraders" },
+    ...(guide.comparisonTable ? [{ id: "vergelijking", label: "Vergelijkingstabel" }] : []),
+    ...(guide.whatToLookFor ? [{ id: "waar-op-letten", label: "Waar moet je op letten?" }] : []),
+    ...(guide.faq?.length ? [{ id: "faq", label: "Veelgestelde vragen" }] : []),
+  ];
+
   /* Verrijk picks met affiliateUrl + priceHint vanuit productdata */
-  const enrichedPicks = guide.picks.map((pick) => {
+  const enrichedPicks = guide.picks.map((pick, index) => {
     const slug = pick.href?.replace("/producten/", "");
     const product = slug ? getProductBySlug(slug) : null;
     const searchQuery = encodeURIComponent(pick.title.replace(/^[^:]+:\s*/, ""));
@@ -116,6 +126,7 @@ export default function AanraderDetailPage({ params }) {
           pick.coolblueUrl ||
           awinCoolblueFallback,
       priceHint: product?.priceHint || null,
+      isTopPick: index === 0,
     };
   });
 
@@ -239,6 +250,8 @@ export default function AanraderDetailPage({ params }) {
 
           {guide.intro && <p className="section-intro">{guide.intro}</p>}
 
+          <TableOfContents items={tocItems} />
+
           {guide.whoIsThisFor && guide.whoIsThisFor.length > 0 && (
             <>
               <h2>Voor wie is deze koopgids?</h2>
@@ -254,7 +267,7 @@ export default function AanraderDetailPage({ params }) {
 
           {guide.whatToLookFor && (
             <>
-              <h2>Waar moet je op letten?</h2>
+              <h2 id="waar-op-letten">Waar moet je op letten?</h2>
               <ul>
                 {guide.whatToLookFor.map((item) => (
                   <li key={item}>{item}</li>
@@ -265,7 +278,7 @@ export default function AanraderDetailPage({ params }) {
 
           {guide.comparisonTable && (
             <>
-              <h2>Snelle vergelijking</h2>
+              <h2 id="vergelijking">Snelle vergelijking</h2>
               <div style={{ overflowX: "auto", marginBottom: "1.5rem" }}>
                 <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.9rem" }}>
                   <thead>
@@ -310,7 +323,7 @@ export default function AanraderDetailPage({ params }) {
 
           <hr />
 
-          <h2>Onze aanraders</h2>
+          <h2 id="aanraders">Onze aanraders</h2>
           <p className="muted">
             Alleen producten die betrouwbaar zijn en logisch voor hun
             gebruikssituatie.
@@ -330,27 +343,17 @@ export default function AanraderDetailPage({ params }) {
             ))}
           </div>
 
+          {guide.faq && guide.faq.length > 0 && (
+            <>
+              <hr />
+              <FaqSection faqs={guide.faq} />
+            </>
+          )}
+
           {relatedItems.length > 0 && (
             <>
               <hr />
               <RelatedContent items={relatedItems} basePath="aanraders" />
-            </>
-          )}
-
-          {guide.faq && guide.faq.length > 0 && (
-            <>
-              <hr />
-              <h2>Veelgestelde vragen</h2>
-              <div style={{ display: "grid", gap: "1rem", marginTop: "1rem" }}>
-                {guide.faq.map((item) => (
-                  <div key={item.question}>
-                    <h3 style={{ marginBottom: "0.35rem" }}>{item.question}</h3>
-                    <p className="muted" style={{ marginBottom: 0 }}>
-                      {item.answer}
-                    </p>
-                  </div>
-                ))}
-              </div>
             </>
           )}
 
