@@ -2482,7 +2482,7 @@ relatedGuides: [
   title: "Beste robotstofzuigers 2026",
   description:
     "De beste robotstofzuigers van 2026: slimme navigatie, dweilfunctie en app-bediening. Onze eerlijke aanraders per budget en gebruik.",
-  image: "/images/blog/beste-slimme-camera.png",
+  image: "/images/categories/robotstofzuiger.jfif",
   intro:
     "Een robotstofzuiger houdt je vloer schoon zonder dat je er zelf bij hoeft te zijn. Moderne modellen navigeren slim via laser, maken een plattegrond van je huis en kun je inplannen via de app.",
   available: true,
