@@ -116,7 +116,7 @@ export const products = [
     slug: "tapo-l530e",
     ean: "6935364006167",
     brand: "TP-Link Tapo",
-    name: "Tapo L530E Slimme Wi-Fi Lamp (2-pack)",
+    name: "Tapo L530E Wi-Fi Kleurlamp",
     category: "slimme-verlichting",
     image: "/images/products/tp-link-tapo-l530e.png",
     description:

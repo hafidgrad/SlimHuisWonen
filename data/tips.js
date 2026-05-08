@@ -1107,7 +1107,7 @@ export const tips = [
 },
   {
   slug: "beginnen-met-slimme-verlichting",
-  title: "Beginnen met slimme verlichting – stap voor stap uitgelegd",
+  title: "Beginnen met slimme verlichting",
   description:
     "Wil je beginnen met slimme verlichting? Volg deze stap-voor-stap gids: welke lampen kies je, wifi of Zigbee, heb je een hub nodig en hoe voorkom je beginnersfouten.",
   image: "/images/tips/beginnen-met-slimme-verlichting.png",

@@ -8,7 +8,7 @@ export const howto = [
     shortAnswer:
       "Begin met één wifi-apparaat dat je dagelijks gebruikt: een slimme lamp (€8-15) of stekker (€10-15). Download de app, koppel aan 2.4GHz wifi en stel een timer in. Geen hub nodig.",
     description:
-      "Stap-voor-stap uitleg om zonder fouten te beginnen met een smart home. Praktisch, duidelijk en zonder technisch gedoe.",
+      "Stap-voor-stap uitleg om zonder fouten te beginnen met een smart home. Praktisch, duidelijk en zonder technisch gedoe. Klaar in een middag.",
     image: "/images/how-to/beginnen-met-smart-home.png",
     available: true,
     dateModified: "2026-04-19",
@@ -151,7 +151,7 @@ export const howto = [
     shortAnswer:
       "Draai de slimme lamp in de fitting, download de bijbehorende app en koppel de lamp via 2.4 GHz wifi of een Zigbee hub. Stel daarna een schema of automatisering in via de app.",
     description:
-      "Stap-voor-stap uitleg voor het installeren en instellen van slimme verlichting. Inclusief tips om fouten te voorkomen.",
+      "Stap-voor-stap uitleg voor het installeren van slimme verlichting. Inclusief tips om fouten te voorkomen — van lamp kiezen tot automatisering.",
     image: "/images/how-to/slimme-verlichting-installeren.png",
     available: true,
     dateModified: "2026-04-19",

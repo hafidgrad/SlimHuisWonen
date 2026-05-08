@@ -76,7 +76,8 @@
       "Bash(python3 -c \"import sys; html=sys.stdin.read\\(\\); idx=html.find\\('slimhuiswonen'\\); print\\(html[idx-20:idx+60] if idx>0 else 'NOT FOUND'\\)\")",
       "Bash(curl -s http://localhost:3000/aanraders/beste-slimme-thermostaat)",
       "Bash(curl -s http://localhost:3000/aanraders/beste-slimme-slot)",
-      "Bash(node -e *)"
+      "Bash(node -e *)",
+      "Bash(grep -v \"^\\\\s*//\")"
     ]
   }
 }

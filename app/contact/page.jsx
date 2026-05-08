@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 export const metadata = {
   title: "Contact – Smart Home Advies",
   description:
-    "Heb je vragen of suggesties over smart home? Neem contact op met SlimHuisWonen via info@slimhuiswonen.nl.",
+    "Heb je vragen over smart home, producten of koopgidsen? Neem contact op via info@slimhuiswonen.nl. We reageren binnen 1–2 werkdagen.",
   alternates: {
     canonical: "https://www.slimhuiswonen.nl/contact",
   },

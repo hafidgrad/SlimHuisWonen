@@ -3,7 +3,7 @@ export const blogPosts = [
   // ✅ Protocollen & standaarden
   {
   slug: "wat-is-zigbee",
-  title: "Wat is Zigbee?",
+  title: "Wat is Zigbee? Alles over het smart home protocol",
   description:
     "Wat is Zigbee en waarom gebruiken Philips Hue, IKEA en Aqara het? Lees hoe Zigbee werkt, de voordelen t.o.v. wifi en wanneer je een hub nodig hebt.",
   image: "/images/blog/wat-is-zigbee.png",
@@ -245,7 +245,7 @@ export const blogPosts = [
 },
   {
   slug: "wat-is-matter",
-  title: "Wat is Matter?",
+  title: "Wat is Matter? De nieuwe smart home standaard",
   description:
     "Matter is dé nieuwe smart home standaard. Ontdek wat Matter is, hoe het werkt, wat je eraan hebt en of je nieuwe apparaten nodig hebt.",
   image: "/images/blog/wat-is-matter.png",
@@ -3503,7 +3503,7 @@ export const blogPosts = [
   title: "Philips Hue vs IKEA (2026): welke slimme verlichting kies je?",
   seoTitle: "Philips Hue vs IKEA DIRIGERA",
   description:
-    "Philips Hue of IKEA? Vergelijk prijs, kwaliteit en protocollen — inclusief de nieuwe IKEA KAJPLATS Matter-lijn en het DIRIGERA-ecosysteem. Lees welke keuze bij jou past.",
+    "Philips Hue of IKEA? Vergelijk prijs, kwaliteit en protocollen — inclusief de nieuwe IKEA KAJPLATS Matter-lijn en het DIRIGERA-ecosysteem.",
   image: "/images/blog/beste-slimme-verlichting.png",
   category: "Verlichting",
   available: true,

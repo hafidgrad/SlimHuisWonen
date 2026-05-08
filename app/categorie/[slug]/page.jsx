@@ -59,7 +59,7 @@ export function generateMetadata({ params }) {
     };
   }
 
-  const url = `https://slimhuiswonen.nl/categorie/${category.slug}`;
+  const url = `https://www.slimhuiswonen.nl/categorie/${category.slug}`;
 
   return {
     title: category.name,
@@ -105,8 +105,21 @@ export default function CategoryPage({ params }) {
 
   const amazonSearchTerm = getAmazonSearchTerm(normalizedSlug);
 
+  const collectionSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: category.name,
+    description: category.description,
+    url: `https://www.slimhuiswonen.nl/categorie/${normalizedSlug}`,
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
+      />
+
       <Header />
 
       <main className="section">
