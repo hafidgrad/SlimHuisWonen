@@ -13,9 +13,9 @@ import PrijsDisclaimer from "@/components/PrijsDisclaimer";
 const POPULAIRE_SLUGS = [
   "philips-hue-white-ambiance-starterkit",
   "tapo-l530e",
+  "innr-zigbee-e27",
+  "homey-pro-early-2023",
   "aqara-deur-raamsensor-p2",
-  "tapo-c200",
-  "ring-video-deurbel",
   "tapo-p115",
 ];
 
@@ -391,6 +391,15 @@ export default function HomePage() {
             </p>
 
             <div className="grid-3">
+              <Link href="/aanraders/beste-slimme-verlichting" className="card">
+                <h3>Slimme verlichting</h3>
+                <p>
+                  Alles over Zigbee-lampen, Philips Hue, Innr en hoe je ze
+                  koppelt aan Homey Pro.
+                </p>
+                <span>Bekijk koopgids →</span>
+              </Link>
+
               <Link href="/topic/smart-home-basis" className="card">
                 <h3>Smart Home Basis</h3>
                 <p>
@@ -403,17 +412,8 @@ export default function HomePage() {
               <Link href="/topic/wifi-netwerk" className="card">
                 <h3>Wifi & Netwerk</h3>
                 <p>
-                  Verbeter je wifi en zorg voor een stabiel netwerk voor slimme
-                  lampen, camera’s, sensoren en hubs.
-                </p>
-                <span>Bekijk kenniscluster →</span>
-              </Link>
-
-              <Link href="/topic/beveiliging" className="card">
-                <h3>Beveiliging</h3>
-                <p>
-                  Houd je huis veiliger met slimme camera’s, deurbellen,
-                  meldingen en slimme sensoren.
+                  Verbeter je wifi voor een stabiel netwerk voor slimme lampen,
+                  sensoren en hubs.
                 </p>
                 <span>Bekijk kenniscluster →</span>
               </Link>
@@ -475,48 +475,41 @@ export default function HomePage() {
         {/* ================= CATEGORIEËN ================= */}
         <Categories />
 
-        {/* ================= PROBLEEMGERICHTE INGANGEN ================= */}
+        {/* ================= VERLICHTING PER SITUATIE ================= */}
         <section className="section">
           <div className="container">
-            <h2>Smart home per situatie</h2>
+            <h2>Slimme verlichting per situatie</h2>
 
             <p className="section-intro">
-              Niet iedereen zoekt hetzelfde product. Soms zoek je vooral een
-              oplossing voor een situatie thuis. Begin dan hier.
+              Welke lamp past bij jouw kamer of wens? Begin hier.
             </p>
 
             <div className="grid-3">
-              <Link
-                href="/aanraders/beste-slimme-producten-voor-kinderen"
-                className="card"
-              >
-                <h3>Smart home voor kinderen</h3>
+              <Link href="/aanraders/slimme-verlichting-per-kamer" className="card">
+                <h3>Per kamer de beste lamp</h3>
                 <p>
-                  Nachtverlichting, sensoren, babycamera’s en slimme routines
-                  voor meer veiligheid en rust in huis.
+                  Woonkamer, slaapkamer, keuken of thuiskantoor — per ruimte
+                  de beste slimme lamp uitgelegd.
                 </p>
-                <span>Bekijk oplossingen →</span>
+                <span>Bekijk gids →</span>
               </Link>
 
-              <Link
-                href="/aanraders/beste-slimme-producten-voor-huisdieren"
-                className="card"
-              >
-                <h3>Smart home voor huisdieren</h3>
+              <Link href="/vergelijking/philips-hue-vs-ikea-vs-innr" className="card">
+                <h3>Hue vs IKEA vs Innr</h3>
                 <p>
-                  Toezicht, meldingen en automatiseringen om je hond, kat of
-                  aquarium beter te monitoren.
+                  Twijfel je welk systeem je moet kiezen? Eerlijke vergelijking
+                  op prijs, kwaliteit en compatibiliteit.
                 </p>
-                <span>Bekijk oplossingen →</span>
+                <span>Bekijk vergelijking →</span>
               </Link>
 
-              <Link href="/aanraders/beste-slimme-camera" className="card">
-                <h3>Huis beveiligen</h3>
+              <Link href="/how-to/ikea-zigbee-koppelen-homey-pro" className="card">
+                <h3>IKEA lamp + Homey Pro</h3>
                 <p>
-                  Bekijk slimme camera’s, deurbellen en sensoren voor meer
-                  veiligheid en controle rondom je woning.
+                  Stap voor stap: IKEA Zigbee-lampen koppelen aan je Homey Pro,
+                  inclusief automatiseringen instellen.
                 </p>
-                <span>Bekijk beveiliging →</span>
+                <span>Lees handleiding →</span>
               </Link>
             </div>
           </div>

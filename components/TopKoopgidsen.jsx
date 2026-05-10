@@ -2,8 +2,17 @@ import Link from "next/link";
 import Image from "next/image";
 import { aanraders } from "@/data/aanraders";
 
+const FEATURED_SLUGS = [
+  "beste-slimme-verlichting",
+  "slimme-verlichting-per-kamer",
+  "beste-smart-home-hub",
+  "beste-slimme-stekkers",
+];
+
 export default function TopKoopgidsen() {
-  const topGuides = aanraders.slice(0, 4);
+  const topGuides = FEATURED_SLUGS
+    .map((slug) => aanraders.find((g) => g.slug === slug))
+    .filter(Boolean);
 
   return (
     <section className="section">
@@ -11,12 +20,11 @@ export default function TopKoopgidsen() {
         <h2>🔥 Beste slimme producten van 2026</h2>
 
         <p className="section-intro">
-          Wij hebben de beste smart home producten per categorie voor je
+          Wij hebben de beste verlichtingsproducten en smart home hubs voor je
           geselecteerd — getest op betrouwbaarheid, uitbreidbaarheid en
           prijs-kwaliteit. Geen marketingpraat, alleen slimme keuzes.
         </p>
 
-        {/* Vertrouwen versterken */}
         <div style={{ marginBottom: "1.5rem" }}>
           <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
             <li>✓ Onafhankelijk geselecteerd</li>
@@ -47,10 +55,7 @@ export default function TopKoopgidsen() {
               <div className="cat-card__content">
                 <h3 className="cat-card__title">{guide.title}</h3>
                 <p className="cat-card__desc">{guide.description}</p>
-
-                <span className="cat-card__cta">
-                  Bekijk aanbeveling →
-                </span>
+                <span className="cat-card__cta">Bekijk aanbeveling →</span>
               </div>
             </Link>
           ))}

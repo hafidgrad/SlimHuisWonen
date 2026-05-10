@@ -4,10 +4,36 @@ import Link from "next/link";
 import Image from "next/image";
 import { aanraders as aanradersData } from "@/data/aanraders";
 
+const EXCLUDED_SLUGS = new Set([
+  "beste-slimme-camera",
+  "beste-slimme-deurbel",
+  "beste-slimme-slot",
+  "beste-robotstofzuigers-2026",
+  "beste-slimme-producten-voor-huisdieren",
+  "beste-slimme-producten-voor-kinderen",
+]);
+
+const SLUG_ORDER = [
+  "beste-slimme-verlichting",
+  "slimme-verlichting-per-kamer",
+  "beste-slimme-bewegingssensor",
+  "beste-slimme-sensoren",
+  "beste-smart-home-hub",
+  "beste-slimme-stekkers",
+  "beste-slimme-stekkers-2026",
+  "beste-slimme-thermostaat",
+  "beste-slimme-radiatorkraan",
+  "beste-energie-monitor",
+  "beste-mesh-wifi-systeem",
+  "beste-smart-home-huurwoning",
+  "goedkoopste-smart-home-beginners",
+  "alle-lsc-smart-connect-producten-action",
+];
+
 export const metadata = {
-  title: "Onze slimme aanraders",
+  title: "Slimme verlichtingsgidsen & koopadvies",
   description:
-    "De beste smart home producten van 2026. Onafhankelijke koopgidsen voor verlichting, sensoren, camera’s, hubs en meer.",
+    "Onafhankelijke koopgidsen voor slimme verlichting, hubs, stekkers en sensoren. Eerlijk advies, bijgewerkt 2026.",
   alternates: {
     canonical: "https://www.slimhuiswonen.nl/aanraders",
   },
@@ -55,22 +81,25 @@ const fallbackKoopgidsen = [
 export default function AanradersPage() {
   const headerImg = "/images/aanraders-banner.png";
 
-  /* ✅ Gebruik data/aanraders.js als bron, anders fallback */
-  const koopgidsen =
-    Array.isArray(aanradersData) && aanradersData.length > 0
-      ? aanradersData.map((g) => ({
-          slug: g.slug,
-          title: g.title,
-          description: g.description,
-          image: g.image,
-          category: "Koopgids",
-        }))
-      : fallbackKoopgidsen;
+  /* ✅ Filter en sorteer op vaste volgorde */
+  const filtered = Array.isArray(aanradersData) && aanradersData.length > 0
+    ? aanradersData.filter((g) => !EXCLUDED_SLUGS.has(g.slug))
+    : fallbackKoopgidsen;
 
-  /* ✅ Netjes sorteren (optioneel) */
-  const sortedKoopgidsen = [...koopgidsen].sort((a, b) =>
-    (a.title ?? "").localeCompare(b.title ?? "", "nl")
-  );
+  const sortedKoopgidsen = [...filtered].sort((a, b) => {
+    const ia = SLUG_ORDER.indexOf(a.slug);
+    const ib = SLUG_ORDER.indexOf(b.slug);
+    if (ia === -1 && ib === -1) return 0;
+    if (ia === -1) return 1;
+    if (ib === -1) return -1;
+    return ia - ib;
+  }).map((g) => ({
+    slug: g.slug,
+    title: g.title,
+    description: g.description,
+    image: g.image,
+    category: "Koopgids",
+  }));
 
   return (
     <>
