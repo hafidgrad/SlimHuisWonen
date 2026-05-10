@@ -132,6 +132,12 @@ export default function VergelijkingPage() {
             aan een Homey Pro of Home Assistant. Het nadeel: bij grote installaties (20+ lampen)
             kan de stabiliteit tegenvallen als je geen IKEA-router lampen hebt.
           </p>
+          <p style={{ fontSize: "0.88rem", color: "#6b7280", background: "#f8fafc", border: "1px solid #e2e8f0", borderRadius: "8px", padding: "0.65rem 1rem", margin: "0.5rem 0" }}>
+            <strong>Let op:</strong> IKEA is verkrijgbaar in IKEA-winkels en online op ikea.com,
+            maar niet via de gebruikelijke affiliate shops zoals bol.com of Coolblue.
+            Als je een Zigbee-alternatief zoekt dat wél online via bol.com te bestellen is,
+            kijk dan naar <strong>Innr</strong>.
+          </p>
 
           <p>
             <strong>Innr</strong> is het verborgen pareltje in dit segment. Zigbee, goedkoper dan
