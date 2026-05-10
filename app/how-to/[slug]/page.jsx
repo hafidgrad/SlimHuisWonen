@@ -9,6 +9,7 @@ import { getAllTips } from "@/data/tips";
 import { blogPosts } from "@/data/blog";
 import RelatedProducts from "@/components/RelatedProducts";
 import AuthorCard from "@/components/AuthorCard";
+import TableOfContents from "@/components/TableOfContents";
 
 /* ================= METADATA ================= */
 
@@ -306,6 +307,10 @@ const structuredData = [
 )}
 
 <hr />
+
+{article.toc && article.toc.length > 0 && (
+  <TableOfContents items={article.toc} />
+)}
 
 {article.content}
 

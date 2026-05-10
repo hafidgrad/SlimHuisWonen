@@ -3,7 +3,7 @@ export const categories = [
     slug: "slimme-verlichting",
     name: "Slimme verlichting",
     description:
-      "Lampjes, spots en LED-strips die je bedient met app, sensor of spraak.",
+      "Ontdek de beste slimme verlichting van 2026. Vergelijk Philips Hue, IKEA en Innr op prijs en stabiliteit. Voor elk budget, met of zonder hub.",
     image: "/images/categories/slimme-verlichting.png",
   },
   {

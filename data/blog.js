@@ -3502,6 +3502,15 @@ export const blogPosts = [
   slug: "philips-hue-vs-ikea-tradfri",
   title: "Philips Hue vs IKEA (2026): welke slimme verlichting kies je?",
   seoTitle: "Philips Hue vs IKEA DIRIGERA",
+  toc: [
+    { id: "vergelijking-overzicht", label: "Snel overzicht" },
+    { id: "philips-hue", label: "Philips Hue" },
+    { id: "ikea-zigbee", label: "IKEA Zigbee (TRÅDFRI/DIRIGERA)" },
+    { id: "kosten", label: "Wat kost het in totaal?" },
+    { id: "werken-samen", label: "Werken ze samen?" },
+    { id: "conclusie", label: "Mijn conclusie" },
+    { id: "faq", label: "Veelgestelde vragen" },
+  ],
   description:
     "Philips Hue of IKEA? Vergelijk prijs, kwaliteit en protocollen — inclusief de nieuwe IKEA KAJPLATS Matter-lijn en het DIRIGERA-ecosysteem.",
   image: "/images/blog/beste-slimme-verlichting.png",
@@ -7787,6 +7796,31 @@ export const blogPosts = [
   slug: "mijn-slimme-verlichtingssetup-homey-pro",
   title: "Mijn slimme verlichtingssetup met Homey Pro 2026",
   seoTitle: "Mijn slimme verlichtingssetup met Homey Pro 2026",
+  toc: [
+    { id: "hoe-het-begon", label: "Hoe het begon" },
+    { id: "mijn-huidige-setup", label: "Mijn huidige setup" },
+    { id: "wat-goed-werkt", label: "Wat goed werkt" },
+    { id: "wat-me-tegenviel", label: "Wat me tegenviel" },
+    { id: "anders-doen", label: "Wat ik nu anders zou doen" },
+    { id: "tips-voor-beginners", label: "Tips voor als jij wil beginnen" },
+  ],
+  faq: [
+    {
+      question: "Is IKEA Zigbee goed genoeg voor dagelijks gebruik met Homey Pro?",
+      answer:
+        "Ja, voor de meeste huishoudens (tot 15 lampen) werkt IKEA Zigbee stabiel op een Homey Pro. Ik gebruik het zelf al jaren. Boven de 15 lampen raad ik aan om een IKEA smart plug als Zigbee-router toe te voegen, anders kun je verbindingsproblemen krijgen bij de verste lampen.",
+    },
+    {
+      question: "Kan ik KAKU-schakelaars en IKEA-lampen tegelijk gebruiken op Homey Pro?",
+      answer:
+        "Ja. Dat doe ik zelf. KAKU werkt via 433MHz en IKEA via Zigbee — Homey Pro ondersteunt beide protocollen tegelijk. Je kunt een KAKU-schakelaar als trigger instellen om IKEA-lampen aan of uit te zetten, zonder dat ze hetzelfde protocol hoeven te gebruiken.",
+    },
+    {
+      question: "Wat is het nadeel van de Homey Pro uit 2019 ten opzichte van nieuwere versies?",
+      answer:
+        "Het oudste model (2019) heeft minder RAM (1GB) dan de 2023-versie (2GB) of de 2026-versie (4GB). Bij meer dan 30-40 apparaten of complexe flows kun je traagheid merken. Voor een gemiddeld huishouden met 10-20 verlichting- en stekker-apparaten is het model prima bruikbaar.",
+    },
+  ],
   description:
     "Hoe mijn huis werkt met IKEA Zigbee-lampen, KAKU-schakelaars en een Homey Pro uit 2019. Eerlijk verhaal: wat werkt goed en wat niet.",
   image: "/images/blog/beste-slimme-verlichting.png",
@@ -7803,7 +7837,7 @@ export const blogPosts = [
         gewenst dat ik eerder wist.
       </p>
 
-      <h2>Hoe het begon</h2>
+      <h2 id="hoe-het-begon">Hoe het begon</h2>
       <p>
         Het begon met één IKEA TRÅDFRI lamp in de woonkamer. €9, een app downloaden,
         klaar. Ik vond het leuk dat ik de lamp kon dimmen zonder de schakelaar aan
@@ -7817,7 +7851,7 @@ export const blogPosts = [
         ik nog steeds gebruik.
       </p>
 
-      <h2>Mijn huidige setup</h2>
+      <h2 id="mijn-huidige-setup">Mijn huidige setup</h2>
       <p>In de woonkamer heb ik:</p>
       <ul>
         <li>4 IKEA TRÅDFRI E27-lampen (warm wit, dimbaar) in een plafondlamp</li>
@@ -7834,7 +7868,7 @@ export const blogPosts = [
         Niet alles hoeft slim te zijn.
       </p>
 
-      <h2>Wat goed werkt</h2>
+      <h2 id="wat-goed-werkt">Wat goed werkt</h2>
       <p>
         De combinatie van IKEA Zigbee + Homey Pro werkt dagelijks betrouwbaar.
         Drie dingen die ik niet meer zonder wil:
@@ -7858,7 +7892,7 @@ export const blogPosts = [
         </li>
       </ul>
 
-      <h2>Wat me tegenviel</h2>
+      <h2 id="wat-me-tegenviel">Wat me tegenviel</h2>
       <p>Eerlijk gezegd twee dingen:</p>
       <ul>
         <li>
@@ -7876,7 +7910,7 @@ export const blogPosts = [
         </li>
       </ul>
 
-      <h2>Wat ik nu anders zou doen</h2>
+      <h2 id="anders-doen">Wat ik nu anders zou doen</h2>
       <p>
         Als ik opnieuw zou beginnen: direct een Homey Pro kopen en de IKEA gateway
         overslaan. Homey koppelt IKEA Zigbee-lampen direct — zonder tussenschakel.
@@ -7889,7 +7923,7 @@ export const blogPosts = [
         installaties.
       </p>
 
-      <h2>Mijn tips voor als jij wil beginnen</h2>
+      <h2 id="tips-voor-beginners">Mijn tips voor als jij wil beginnen</h2>
       <ol>
         <li>
           <strong>Begin met 2-3 lampen, niet met 10.</strong> Leer eerst hoe het

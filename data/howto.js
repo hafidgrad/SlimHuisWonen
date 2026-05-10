@@ -148,6 +148,13 @@ export const howto = [
     slug: "slimme-verlichting-installeren",
     title: "Hoe installeer je slimme verlichting?",
     categories: ["verlichting", "basis"],
+    toc: [
+      { id: "stap-1", label: "Stap 1: Kies het juiste type lamp" },
+      { id: "stap-2", label: "Stap 2: Lamp installeren" },
+      { id: "stap-3", label: "Stap 3: App en koppeling" },
+      { id: "stap-4", label: "Stap 4: Automatisering instellen" },
+      { id: "fouten", label: "Veelgemaakte fouten" },
+    ],
     shortAnswer:
       "Draai de slimme lamp in de fitting, download de bijbehorende app en koppel de lamp via 2.4 GHz wifi of een Zigbee hub. Stel daarna een schema of automatisering in via de app.",
     description:
@@ -2660,6 +2667,16 @@ export const howto = [
   title: "IKEA Zigbee-lamp koppelen aan Homey Pro",
   seoTitle: "IKEA Zigbee lamp koppelen aan Homey Pro",
   categories: ["verlichting", "hub"],
+  toc: [
+    { id: "wat-je-nodig-hebt", label: "Wat je nodig hebt" },
+    { id: "stap-1-zigbee-of-matter", label: "Stap 1: Zigbee of Matter?" },
+    { id: "stap-2-reset", label: "Stap 2: Reset de lamp" },
+    { id: "stap-3-toevoegen", label: "Stap 3: Toevoegen in Homey" },
+    { id: "niet-gevonden", label: "Lamp niet gevonden?" },
+    { id: "meerdere-lampen", label: "Meerdere lampen" },
+    { id: "automatisering", label: "Automatisering instellen" },
+    { id: "kaku", label: "Combineren met KAKU" },
+  ],
   shortAnswer:
     "Open de Homey-app, ga naar Apparaten → + → zoek op IKEA, selecteer het lamptype en zet de lamp aan als Homey daarom vraagt. Nieuwe lampen hoef je niet eerst te resetten. Werkt ook met KAKU en andere Zigbee-apparaten in dezelfde setup.",
   description:
@@ -2682,7 +2699,7 @@ export const howto = [
         exacte stappen — inclusief wat je moet doen als het fout gaat.
       </p>
 
-      <h2>Wat je nodig hebt</h2>
+      <h2 id="wat-je-nodig-hebt">Wat je nodig hebt</h2>
       <ul>
         <li>Homey Pro (elk model werkt — ook de 2019 versie)</li>
         <li>IKEA TRÅDFRI lamp (Zigbee — niet KAJPLATS, die is Matter-only)</li>
@@ -2690,7 +2707,7 @@ export const howto = [
         <li>De lamp in een werkende fitting</li>
       </ul>
 
-      <h2>Stap 1: Controleer of je lamp Zigbee of Matter is</h2>
+      <h2 id="stap-1-zigbee-of-matter">Stap 1: Controleer of je lamp Zigbee of Matter is</h2>
       <p>
         TRÅDFRI lampen zijn Zigbee. KAJPLATS lampen zijn Matter. Je herkent het
         aan de verpakking: op Zigbee-lampen staat het Zigbee-logo, Matter-lampen
@@ -2702,7 +2719,7 @@ export const howto = [
         DIRIGERA integratie in Homey toevoegen.
       </p>
 
-      <h2>Stap 2: Reset de lamp (alleen bij eerder gebruikte lampen)</h2>
+      <h2 id="stap-2-reset">Stap 2: Reset de lamp (alleen bij eerder gebruikte lampen)</h2>
       <p>
         Voor een <strong>nieuwe lamp</strong> uit de doos is dit niet nodig — sla
         deze stap over. Voor een lamp die al ergens aan gekoppeld was: zet hem
@@ -2710,7 +2727,7 @@ export const howto = [
         knippert kort als hij gereset is en klaar is om opnieuw te koppelen.
       </p>
 
-      <h2>Stap 3: Voeg de lamp toe in Homey</h2>
+      <h2 id="stap-3-toevoegen">Stap 3: Voeg de lamp toe in Homey</h2>
       <ol>
         <li>Open de Homey app op je telefoon</li>
         <li>Ga naar <strong>Apparaten</strong> → tik op het <strong>+</strong> icoon</li>
@@ -2724,7 +2741,7 @@ export const howto = [
         tijdens het koppelen. Daarna kun je de lamp verplaatsen.
       </p>
 
-      <h2>Wat als de lamp niet gevonden wordt?</h2>
+      <h2 id="niet-gevonden">Wat als de lamp niet gevonden wordt?</h2>
       <ul>
         <li>Zorg dat de lamp minder dan 10 meter van de Homey staat bij koppeling</li>
         <li>Reset de lamp opnieuw (6× aan/uit)</li>
@@ -2733,7 +2750,7 @@ export const howto = [
         <li>Probeer het nog een keer: Zigbee-koppeling kan soms twee pogingen nodig hebben</li>
       </ul>
 
-      <h2>Meerdere lampen toevoegen</h2>
+      <h2 id="meerdere-lampen">Meerdere lampen toevoegen</h2>
       <p>
         Voeg lampen één voor één toe, niet tegelijk. Na koppeling kun je ze
         samenvoegen in een <strong>Zone</strong> (kamer) voor gelijktijdig schakelen.
@@ -2746,7 +2763,7 @@ export const howto = [
         netwerk versterken — gebruik die als je meer dan 10 lampen hebt.
       </p>
 
-      <h2>Automatisering: lamp aan bij zonsondergang</h2>
+      <h2 id="automatisering">Automatisering: lamp aan bij zonsondergang</h2>
       <p>
         Nu de lamp gekoppeld is, kun je hem automatiseren. Een simpel voorbeeld
         in Homey:
@@ -2761,7 +2778,7 @@ export const howto = [
         wil aansturen of condities wil toevoegen (bijv. alleen als niemand thuis is).
       </p>
 
-      <h2>Combineren met KAKU-apparaten</h2>
+      <h2 id="kaku">Combineren met KAKU-apparaten</h2>
       <p>
         Ik gebruik zelf IKEA Zigbee-lampen in combinatie met KAKU-schakelaars op
         de Homey Pro. Dat werkt prima — Homey ondersteunt meerdere protocollen

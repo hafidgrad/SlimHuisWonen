@@ -187,6 +187,10 @@ export default function BlogPostPage({ params }) {
 
           <hr />
 
+          {post.toc && post.toc.length > 0 && (
+            <TableOfContents items={post.toc} />
+          )}
+
           {post.content}
 
           {post.faq && post.faq.length > 0 && (
