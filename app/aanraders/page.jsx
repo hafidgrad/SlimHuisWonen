@@ -1,8 +1,9 @@
-﻿import Header from "@/components/Header";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
 import { aanraders as aanradersData } from "@/data/aanraders";
+import { getProductBySlug } from "@/data/products";
 
 const EXCLUDED_SLUGS = new Set([
   "beste-slimme-camera",
@@ -39,67 +40,46 @@ export const metadata = {
   },
 };
 
-/* ✅ Fallback lijst (jouw huidige hardcoded koopgidsen) */
-const fallbackKoopgidsen = [
-  {
-    slug: "beste-slimme-verlichting",
-    title: "Beste slimme verlichting",
-    description: "Hue, IKEA, Tapo & Govee vergeleken",
-    image: "/images/blog/beste-slimme-verlichting.png",
-    category: "Koopgids",
-  },
-  {
-    slug: "beste-slimme-stekkers",
-    title: "Beste slimme stekkers",
-    description: "Met en zonder energiemeting",
-    image: "/images/blog/beste-slimme-stekkers.png",
-    category: "Koopgids",
-  },
-  {
-    slug: "beste-slimme-camera",
-    title: "Beste slimme camera",
-    description: "Binnen, buiten & privacy",
-    image: "/images/blog/beste-slimme-camera.png",
-    category: "Koopgids",
-  },
-  {
-    slug: "beste-slimme-deurbel",
-    title: "Beste slimme deurbel",
-    description: "Bedraad, accu & abonnementen",
-    image: "/images/blog/beste-slimme-deurbel.png",
-    category: "Koopgids",
-  },
-  {
-    slug: "beste-smart-home-hub",
-    title: "Beste smart home hub",
-    description: "Homey, Home Assistant & SmartThings",
-    image: "/images/blog/beste-smart-home-hub.png",
-    category: "Koopgids",
-  },
-];
+/* Dezelfde enrichment-logica als in [slug]/page.jsx */
+function getTopPick(guide) {
+  if (!guide.picks?.length) return null;
+  const pick = guide.picks[0];
+  const productSlug = pick.href?.replace("/producten/", "");
+  const product = productSlug && !pick.href?.startsWith("/aanraders")
+    ? getProductBySlug(productSlug)
+    : null;
+  const searchQuery = encodeURIComponent(pick.title.replace(/^[^:]+:\s*/, ""));
+  const hasActionUrl = !!pick.actionUrl;
+  const awinId = process.env.NEXT_PUBLIC_AWIN_PUBLISHER_ID;
+
+  const awinBolFallback = `https://www.awin1.com/cread.php?awinaffid=${awinId}&awinmid=13926&p=${encodeURIComponent(`https://www.bol.com/nl/nl/s/?searchtext=${searchQuery}`)}`;
+  const awinCoolblueFallback = `https://www.awin1.com/cread.php?awinaffid=${awinId}&awinmid=13813&ued=${encodeURIComponent(`https://www.coolblue.nl/zoeken?query=${searchQuery}`)}`;
+
+  return {
+    title: pick.title.replace(/^[^:]+:\s*/, ""),
+    priceHint: product?.priceHint || pick.priceHint || null,
+    actionUrl: pick.actionUrl || null,
+    bolUrl: hasActionUrl ? null : (product?.bolUrl || pick.bolUrl || awinBolFallback),
+    coolblueUrl: hasActionUrl ? null : (product?.coolblueUrl || pick.coolblueUrl || awinCoolblueFallback),
+    amazonUrl: hasActionUrl ? null : (product?.affiliateUrl || pick.amazonUrl || `https://www.amazon.nl/s?k=${searchQuery}&tag=slimhuiswonen-21`),
+  };
+}
 
 export default function AanradersPage() {
   const headerImg = "/images/aanraders-banner.png";
 
-  /* ✅ Filter en sorteer op vaste volgorde */
   const filtered = Array.isArray(aanradersData) && aanradersData.length > 0
     ? aanradersData.filter((g) => !EXCLUDED_SLUGS.has(g.slug))
-    : fallbackKoopgidsen;
+    : [];
 
-  const sortedKoopgidsen = [...filtered].sort((a, b) => {
+  const guides = [...filtered].sort((a, b) => {
     const ia = SLUG_ORDER.indexOf(a.slug);
     const ib = SLUG_ORDER.indexOf(b.slug);
     if (ia === -1 && ib === -1) return 0;
     if (ia === -1) return 1;
     if (ib === -1) return -1;
     return ia - ib;
-  }).map((g) => ({
-    slug: g.slug,
-    title: g.title,
-    description: g.description,
-    image: g.image,
-    category: "Koopgids",
-  }));
+  });
 
   return (
     <>
@@ -107,20 +87,12 @@ export default function AanradersPage() {
 
       <main className="section">
         <div className="container article">
-          {/* 🔥 Exact dezelfde blogBanner */}
           <div
             className="blogBanner"
             style={{ "--blog-bg": `url(${headerImg})` }}
           >
-            <div
-              className="blogBannerBlur blogBannerBlurLeft"
-              style={{ backgroundImage: "var(--blog-bg)" }}
-            />
-            <div
-              className="blogBannerBlur blogBannerBlurRight"
-              style={{ backgroundImage: "var(--blog-bg)" }}
-            />
-
+            <div className="blogBannerBlur blogBannerBlurLeft" style={{ backgroundImage: "var(--blog-bg)" }} />
+            <div className="blogBannerBlur blogBannerBlurRight" style={{ backgroundImage: "var(--blog-bg)" }} />
             <div className="blogBannerInner compact">
               <Image
                 src={headerImg}
@@ -142,50 +114,124 @@ export default function AanradersPage() {
           </p>
 
           <div className="tips-grid">
-            {sortedKoopgidsen.map((item) => (
-              <Link
-                key={item.slug}
-                href={`/aanraders/${item.slug}`}
-                className="tip-card tip-card--media"
-              >
-                {item.image && (
-                  <div className="tip-card__imageWrap">
-                    <Image
-                      src={item.image}
-                      alt={item.title}
-                      fill
-                      className="tip-card__image"
-                      sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 33vw"
-                    />
-                    <div className="tip-card__overlay" />
-                    <div className="tip-card__badge">{item.category}</div>
-                    <div className="tip-card__imgTitle">{item.title}</div>
-                  </div>
-                )}
+            {guides.map((guide) => {
+              const topPick = getTopPick(guide);
+              return (
+                <article
+                  key={guide.slug}
+                  className="tip-card tip-card--media"
+                  style={{ position: "relative" }}
+                >
+                  {/* Stretched link — hele kaart klikbaar behalve knoppen */}
+                  <Link
+                    href={`/aanraders/${guide.slug}`}
+                    aria-label={guide.title}
+                    style={{ position: "absolute", inset: 0, zIndex: 0 }}
+                    tabIndex={-1}
+                  />
 
-                <div className="tip-card__content">
-                  <h2 className="tip-card__title">{item.title}</h2>
-
-                  {item.description && (
-                    <p className="tip-card__desc">{item.description}</p>
+                  {guide.image && (
+                    <div className="tip-card__imageWrap">
+                      <Image
+                        src={guide.image}
+                        alt={guide.title}
+                        fill
+                        className="tip-card__image"
+                        sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 33vw"
+                      />
+                      <div className="tip-card__overlay" />
+                      <div className="tip-card__badge">Koopgids</div>
+                      <div className="tip-card__imgTitle">{guide.title}</div>
+                    </div>
                   )}
 
-                  <span className="tip-card__cta">
-                    Bekijk koopgids <span aria-hidden="true">→</span>
-                  </span>
-                </div>
-              </Link>
-            ))}
+                  <div className="tip-card__content" style={{ position: "relative", zIndex: 1 }}>
+                    <h2 className="tip-card__title">{guide.title}</h2>
+
+                    {guide.description && (
+                      <p className="tip-card__desc">{guide.description}</p>
+                    )}
+
+                    {topPick && (
+                      <div style={{ marginTop: "0.75rem" }}>
+                        <p style={{ fontSize: "0.8rem", color: "#6b7280", margin: "0 0 0.4rem" }}>
+                          Topaanrader: <strong style={{ color: "#374151" }}>{topPick.title}</strong>
+                          {topPick.priceHint && (
+                            <span style={{ marginLeft: "0.5rem", color: "#1d4ed8", fontWeight: 600 }}>
+                              {topPick.priceHint}
+                            </span>
+                          )}
+                        </p>
+
+                        {/* Primaire koopknop */}
+                        {topPick.actionUrl ? (
+                          <a
+                            href={topPick.actionUrl}
+                            target="_blank"
+                            rel="nofollow sponsored noopener noreferrer"
+                            className="btn btn-action"
+                            style={{ display: "block", fontSize: "0.85rem", marginBottom: "0.35rem" }}
+                          >
+                            Bekijk prijs bij Action →
+                          </a>
+                        ) : topPick.bolUrl ? (
+                          <a
+                            href={topPick.bolUrl}
+                            target="_blank"
+                            rel="nofollow sponsored noopener noreferrer"
+                            className="btn btn-bol"
+                            style={{ display: "block", fontSize: "0.85rem", marginBottom: "0.35rem" }}
+                          >
+                            Bekijk prijs bij bol.com →
+                          </a>
+                        ) : null}
+
+                        {/* Secundaire links */}
+                        {!topPick.actionUrl && (topPick.coolblueUrl || topPick.amazonUrl) && (
+                          <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
+                            {topPick.coolblueUrl && (
+                              <a
+                                href={topPick.coolblueUrl}
+                                target="_blank"
+                                rel="nofollow sponsored noopener noreferrer"
+                                style={{ fontSize: "0.78rem", color: "#6b7280", textDecoration: "underline" }}
+                              >
+                                Ook bij Coolblue
+                              </a>
+                            )}
+                            {topPick.amazonUrl && (
+                              <a
+                                href={topPick.amazonUrl}
+                                target="_blank"
+                                rel="nofollow sponsored noopener noreferrer"
+                                style={{ fontSize: "0.78rem", color: "#6b7280", textDecoration: "underline" }}
+                              >
+                                Ook bij Amazon
+                              </a>
+                            )}
+                          </div>
+                        )}
+                      </div>
+                    )}
+
+                    <Link
+                      href={`/aanraders/${guide.slug}`}
+                      className="tip-card__cta"
+                      style={{ display: "inline-block", marginTop: "0.75rem" }}
+                    >
+                      Bekijk koopgids <span aria-hidden="true">→</span>
+                    </Link>
+                  </div>
+                </article>
+              );
+            })}
           </div>
 
           <hr style={{ marginTop: "2rem" }} />
 
           <p className="muted small">
             Twijfel je nog? Bekijk ook onze{" "}
-            <Link href="/blog">
-              smart home blog met uitleg en vergelijkingen
-            </Link>
-            .
+            <Link href="/blog">smart home blog met uitleg en vergelijkingen</Link>.
           </p>
         </div>
       </main>
