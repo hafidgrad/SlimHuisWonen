@@ -22,12 +22,12 @@ export default function MobileMenu() {
         onClick={() => setOpen(false)}
       >
         <Link href="/over">Over</Link>
-        <Link href="/#categorieen">Categorieën</Link>
         <Link href="/aanraders">Koopgidsen</Link>
-        <Link href="/aanraders/beste-slimme-stekkers-2026" style={{ paddingLeft: "1.5rem", fontSize: "0.9rem", opacity: 0.85 }}>↳ Slimme stekkers</Link>
-        <Link href="/aanraders/beste-robotstofzuigers-2026" style={{ paddingLeft: "1.5rem", fontSize: "0.9rem", opacity: 0.85 }}>↳ Robotstofzuigers</Link>
-        <Link href="/tips">Tips & uitleg</Link>
-        <Link href="/how-to">How To</Link>
+        <Link href="/aanraders/beste-slimme-verlichting" style={{ paddingLeft: "1.5rem", fontSize: "0.9rem", opacity: 0.85 }}>↳ Slimme verlichting</Link>
+        <Link href="/blog/philips-hue-vs-ikea-tradfri" style={{ paddingLeft: "1.5rem", fontSize: "0.9rem", opacity: 0.85 }}>↳ Philips Hue vs IKEA</Link>
+        <Link href="/aanraders/beste-smart-home-hub" style={{ paddingLeft: "1.5rem", fontSize: "0.9rem", opacity: 0.85 }}>↳ Smart home hubs</Link>
+        <Link href="/aanraders/beste-slimme-thermostaat" style={{ paddingLeft: "1.5rem", fontSize: "0.9rem", opacity: 0.85 }}>↳ Slimme thermostaat</Link>
+        <Link href="/how-to">Installatie & uitleg</Link>
         <Link href="/blog">Blog</Link>
         <Link href="/contact">Contact</Link>
         <Link href="/producten" className="nav-highlight">Producten</Link>

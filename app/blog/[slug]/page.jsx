@@ -9,6 +9,17 @@ import { aanraders } from "@/data/aanraders";
 import RelatedContent from "@/components/RelatedContent";
 import AuthorCard from "@/components/AuthorCard";
 import BannerImage from "@/components/BannerImage";
+import FaqSection from "@/components/FaqSection";
+import TableOfContents from "@/components/TableOfContents";
+
+const NOINDEX_BLOG = new Set([
+  "wat-is-een-slimme-camera",
+  "beste-slimme-deurbel",
+  "ring-vs-tapo-deurbel",
+  "eufy-vs-ring-camera",
+  "slimme-deurbel-zonder-abonnement",
+  "smart-home-beveiliging-tips",
+]);
 
 export async function generateMetadata({ params }) {
   const post = blogPosts.find((p) => p.slug === params.slug && p.available);
@@ -24,6 +35,7 @@ export async function generateMetadata({ params }) {
   return {
     title: post.seoTitle || post.title,
     description: post.description,
+    ...(NOINDEX_BLOG.has(post.slug) && { robots: { index: false, follow: true } }),
     alternates: {
       canonical: `https://www.slimhuiswonen.nl/blog/${post.slug}`,
     },
@@ -176,6 +188,13 @@ export default function BlogPostPage({ params }) {
           <hr />
 
           {post.content}
+
+          {post.faq && post.faq.length > 0 && (
+            <>
+              <hr />
+              <FaqSection faqs={post.faq} />
+            </>
+          )}
 
           <AuthorCard />
 

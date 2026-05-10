@@ -3512,6 +3512,34 @@ export const blogPosts = [
 
   related: ["beste-slimme-verlichting", "wat-is-zigbee", "slimme-lampen-zonder-hub", "wat-is-matter"],
 
+  faq: [
+    {
+      question: "Is Philips Hue beter dan IKEA?",
+      answer:
+        "Philips Hue is stabieler en heeft een betere app, maar is ook bijna twee keer zo duur. IKEA is de betere keuze als je wil beginnen met een beperkt budget. Voor grotere installaties (15+ lampen) is Hue merkbaar betrouwbaarder.",
+    },
+    {
+      question: "Kan ik IKEA-lampen koppelen aan de Philips Hue Bridge?",
+      answer:
+        "Ja, oudere TRÅDFRI lampen werken via Zigbee met de Hue Bridge. Let op: IKEA KAJPLATS lampen zijn Matter-only en werken niet via Zigbee. Voor de meest stabiele combinatie gebruik je een onafhankelijke hub zoals Homey Pro.",
+    },
+    {
+      question: "Wat kost het om te beginnen met Philips Hue?",
+      answer:
+        "Een Hue Bridge kost circa €60. Daarna zijn losse E27-lampen (wit) beschikbaar vanaf €20. Een starterkit met bridge + 2 lampen kost rond de €90–110. Daarna kun je individuele lampen toevoegen.",
+    },
+    {
+      question: "Werken IKEA-lampen ook zonder de DIRIGERA hub?",
+      answer:
+        "Ja. Oudere TRÅDFRI lampen werken via Zigbee direct met Homey Pro of Home Assistant, zonder IKEA hub. De DIRIGERA is alleen nodig als je de IKEA Home Smart-app wil gebruiken of Matter-apparaten wil koppelen.",
+    },
+    {
+      question: "Is Innr een goed alternatief voor Philips Hue?",
+      answer:
+        "Ja. Innr gebruikt hetzelfde Zigbee-protocol als Hue, is compatibel met de Hue Bridge en biedt vergelijkbare lichtkleurkwaliteit voor een lagere prijs (€15–18 vs €20–25). Het nadeel is dat Innr geen eigen hub of app heeft.",
+    },
+  ],
+
   faqSchema: {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -7751,6 +7779,148 @@ export const blogPosts = [
           <p>Voor de prijs redelijk. De meeste gebruikers rapporteren 1–3 jaar gebruik.</p>
         </div>
       </div>
+    </>
+  ),
+},
+
+{
+  slug: "mijn-slimme-verlichtingssetup-homey-pro",
+  title: "Mijn slimme verlichtingssetup met Homey Pro 2026",
+  seoTitle: "Mijn slimme verlichtingssetup met Homey Pro 2026",
+  description:
+    "Hoe mijn huis werkt met IKEA Zigbee-lampen, KAKU-schakelaars en een Homey Pro uit 2019. Eerlijk verhaal: wat werkt goed en wat niet.",
+  image: "/images/blog/beste-slimme-verlichting.png",
+  available: true,
+  datePublished: "2026-05-01",
+  dateModified: "2026-05-01",
+  category: "persoonlijk",
+
+  content: (
+    <>
+      <p>
+        Dit is geen productrecensie. Dit is gewoon hoe mijn huis er op dit moment
+        uitziet qua slimme verlichting — wat ik gebruik, waarom, en wat ik had
+        gewenst dat ik eerder wist.
+      </p>
+
+      <h2>Hoe het begon</h2>
+      <p>
+        Het begon met één IKEA TRÅDFRI lamp in de woonkamer. €9, een app downloaden,
+        klaar. Ik vond het leuk dat ik de lamp kon dimmen zonder de schakelaar aan
+        te raken. Niet revolutionair, maar handig genoeg om verder te gaan.
+      </p>
+      <p>
+        Daarna kocht ik een IKEA TRÅDFRI gateway (de voorloper van de DIRIGERA).
+        Toen een paar KAKU-schakelaars voor de buitenverlichting. Op een gegeven
+        moment had ik apparaten van 4 verschillende apps en werd het onoverzichtelijk.
+        Dat is het moment waarop ik een Homey Pro kocht — het model uit 2019, dat
+        ik nog steeds gebruik.
+      </p>
+
+      <h2>Mijn huidige setup</h2>
+      <p>In de woonkamer heb ik:</p>
+      <ul>
+        <li>4 IKEA TRÅDFRI E27-lampen (warm wit, dimbaar) in een plafondlamp</li>
+        <li>1 IKEA ledstrip achter de tv voor sfeerlicht</li>
+        <li>2 KAKU-schakelaars voor de staande lampen</li>
+      </ul>
+      <p>In de slaapkamer:</p>
+      <ul>
+        <li>2 IKEA TRÅDFRI E27-lampen (warm wit) in nachtkastlampen</li>
+        <li>Gekoppeld aan een automatisering: dim naar 10% om 22:30, uit om 23:30</li>
+      </ul>
+      <p>
+        In de keuken en hal gebruik ik gewone LED-lampen — geen slimme verlichting.
+        Niet alles hoeft slim te zijn.
+      </p>
+
+      <h2>Wat goed werkt</h2>
+      <p>
+        De combinatie van IKEA Zigbee + Homey Pro werkt dagelijks betrouwbaar.
+        Drie dingen die ik niet meer zonder wil:
+      </p>
+      <ul>
+        <li>
+          <strong>Automatisch dim bij zonsondergang.</strong> De woonkamer gaat
+          automatisch op 60% zodra de zon ondergaat. Ik heb dit ingesteld via een
+          Homey-flow op basis van zonsondergangtijd. Het werkt elke dag, zonder
+          dat ik er aan denk.
+        </li>
+        <li>
+          <strong>KAKU-schakelaar als trigger.</strong> De fysieke schakelaar bij
+          de voordeur stuurt via Homey alle woonkamerlampen tegelijk aan of uit.
+          Ideaal als je niet je telefoon wil pakken.
+        </li>
+        <li>
+          <strong>Slaapkamer fade-out.</strong> De lampen gaan langzaam donkerder
+          als ik&apos;s avonds ga slapen. Ik heb dit via een simpele timer
+          ingesteld — niets ingewikkelds.
+        </li>
+      </ul>
+
+      <h2>Wat me tegenviel</h2>
+      <p>Eerlijk gezegd twee dingen:</p>
+      <ul>
+        <li>
+          <strong>Zigbee-bereik van IKEA-lampen.</strong> Ik had op een gegeven
+          moment 12 IKEA-lampen en merkte dat de verbinding van de verste lampen
+          soms wegviel. Opgelost door een IKEA smart plug toe te voegen die als
+          Zigbee-router fungeert. Had ik dit eerder geweten, had ik dat direct
+          meegenomen.
+        </li>
+        <li>
+          <strong>IKEA TRÅDFRI gateway is verouderd.</strong> De oude gateway
+          (niet de DIRIGERA) is beperkt in functionaliteit en wordt door IKEA
+          niet meer actief ondersteund. Had ik geweten dat ik toch naar Homey zou
+          gaan, had ik de gateway nooit gekocht.
+        </li>
+      </ul>
+
+      <h2>Wat ik nu anders zou doen</h2>
+      <p>
+        Als ik opnieuw zou beginnen: direct een Homey Pro kopen en de IKEA gateway
+        overslaan. Homey koppelt IKEA Zigbee-lampen direct — zonder tussenschakel.
+        Je bespaart €40 op de DIRIGERA en hebt alles in één app.
+      </p>
+      <p>
+        Voor de lampen zelf zou ik nu deels kiezen voor <strong>Innr</strong> in
+        plaats van alleen IKEA. Innr is iets duurder per lamp (€15–18 vs €8–12),
+        maar de lichtkleur is beter en de verbinding stabieler bij grotere
+        installaties.
+      </p>
+
+      <h2>Mijn tips voor als jij wil beginnen</h2>
+      <ol>
+        <li>
+          <strong>Begin met 2-3 lampen, niet met 10.</strong> Leer eerst hoe het
+          werkt voordat je je huis volhangt.
+        </li>
+        <li>
+          <strong>Koop een Homey Pro als je meer dan één merk wil combineren.</strong>
+          Dan hoef je nooit meer appjes te jongleren.
+        </li>
+        <li>
+          <strong>IKEA is prima voor beginners.</strong> Goedkoop, breed verkrijgbaar,
+          werkt met Homey. Voor grotere installaties of betere kwaliteit: kijk naar Innr.
+        </li>
+        <li>
+          <strong>Niet alles hoeft slim te zijn.</strong> Mijn keuken heeft gewone lampen.
+          Dat is prima. Slim zijn waar het nut heeft, niet overal.
+        </li>
+        <li>
+          <strong>Voeg Zigbee-routers toe bij meer dan 10 lampen.</strong> Een slimme
+          stekker van IKEA of Innr als router kost €15 en voorkomt verbindingsproblemen.
+        </li>
+      </ol>
+
+      <p>
+        Wil je weten welke lampen ik zou aanbevelen?{" "}
+        <Link href="/aanraders/beste-slimme-verlichting">Bekijk de volledige verlichtingskoopgids</Link>{" "}
+        of lees de{" "}
+        <Link href="/vergelijking/philips-hue-vs-ikea-vs-innr">vergelijking van Hue, IKEA en Innr</Link>.
+        Voor de exacte stappen om IKEA-lampen te koppelen aan Homey Pro:{" "}
+        <Link href="/how-to/ikea-zigbee-koppelen-homey-pro">stap-voor-stap handleiding</Link>.
+      </p>
     </>
   ),
 },

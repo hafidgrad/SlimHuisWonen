@@ -2655,4 +2655,145 @@ export const howto = [
   ],
 },
 
+{
+  slug: "ikea-zigbee-koppelen-homey-pro",
+  title: "IKEA Zigbee-lamp koppelen aan Homey Pro",
+  seoTitle: "IKEA Zigbee lamp koppelen aan Homey Pro",
+  categories: ["verlichting", "hub"],
+  shortAnswer:
+    "Open de Homey-app, ga naar Apparaten → + → zoek op IKEA, selecteer het lamptype en zet de lamp aan als Homey daarom vraagt. Nieuwe lampen hoef je niet eerst te resetten. Werkt ook met KAKU en andere Zigbee-apparaten in dezelfde setup.",
+  description:
+    "Zo koppel je IKEA TRÅDFRI Zigbee-lampen aan je Homey Pro. Stap voor stap, inclusief tips als het niet lukt. Werkt ook met KAKU.",
+  image: "/images/how-to/beginnen-met-smart-home.png",
+  available: true,
+  dateModified: "2026-05-01",
+  relatedProductSlugs: [
+    "philips-hue-white-ambiance-starterkit",
+    "innr-zigbee-e27",
+    "homey-pro-early-2023",
+  ],
+
+  content: (
+    <>
+      <p>
+        Je hebt een IKEA TRÅDFRI lamp gekocht en wil hem koppelen aan je Homey Pro.
+        Dat is eenvoudiger dan je denkt, maar er zijn een paar dingen waar je op
+        moet letten. Ik heb dit zelf gedaan met mijn eigen setup en deel hier de
+        exacte stappen — inclusief wat je moet doen als het fout gaat.
+      </p>
+
+      <h2>Wat je nodig hebt</h2>
+      <ul>
+        <li>Homey Pro (elk model werkt — ook de 2019 versie)</li>
+        <li>IKEA TRÅDFRI lamp (Zigbee — niet KAJPLATS, die is Matter-only)</li>
+        <li>De Homey app op je telefoon</li>
+        <li>De lamp in een werkende fitting</li>
+      </ul>
+
+      <h2>Stap 1: Controleer of je lamp Zigbee of Matter is</h2>
+      <p>
+        TRÅDFRI lampen zijn Zigbee. KAJPLATS lampen zijn Matter. Je herkent het
+        aan de verpakking: op Zigbee-lampen staat het Zigbee-logo, Matter-lampen
+        hebben een Matter-logo en verwijzen naar de DIRIGERA hub.
+      </p>
+      <p>
+        Zigbee-lampen werken direct met Homey Pro zonder extra stappen. Matter-lampen
+        vereisen de IKEA DIRIGERA hub als tussenschakel — je kunt ze dan via de
+        DIRIGERA integratie in Homey toevoegen.
+      </p>
+
+      <h2>Stap 2: Reset de lamp (alleen bij eerder gebruikte lampen)</h2>
+      <p>
+        Voor een <strong>nieuwe lamp</strong> uit de doos is dit niet nodig — sla
+        deze stap over. Voor een lamp die al ergens aan gekoppeld was: zet hem
+        6 keer aan en uit met een interval van ongeveer 1 seconde. De lamp
+        knippert kort als hij gereset is en klaar is om opnieuw te koppelen.
+      </p>
+
+      <h2>Stap 3: Voeg de lamp toe in Homey</h2>
+      <ol>
+        <li>Open de Homey app op je telefoon</li>
+        <li>Ga naar <strong>Apparaten</strong> → tik op het <strong>+</strong> icoon</li>
+        <li>Zoek op &quot;IKEA&quot; en selecteer het juiste lamptype (E27, GU10, strip, etc.)</li>
+        <li>Zet de lamp aan als Homey daarom vraagt</li>
+        <li>Homey zoekt automatisch naar de lamp via Zigbee — dit duurt 10–30 seconden</li>
+        <li>Geef de lamp een naam en wijs een kamer toe</li>
+      </ol>
+      <p>
+        Tip: zorg dat je telefoon en de lamp allebei dicht bij de Homey Pro staan
+        tijdens het koppelen. Daarna kun je de lamp verplaatsen.
+      </p>
+
+      <h2>Wat als de lamp niet gevonden wordt?</h2>
+      <ul>
+        <li>Zorg dat de lamp minder dan 10 meter van de Homey staat bij koppeling</li>
+        <li>Reset de lamp opnieuw (6× aan/uit)</li>
+        <li>Verwijder eventuele andere Zigbee-koppelingen (IKEA-hub) eerst — een lamp kan maar aan één hub tegelijk gekoppeld zijn</li>
+        <li>Controleer of je Homey Pro firmware up-to-date is (Homey app → Instellingen → Over Homey)</li>
+        <li>Probeer het nog een keer: Zigbee-koppeling kan soms twee pogingen nodig hebben</li>
+      </ul>
+
+      <h2>Meerdere lampen toevoegen</h2>
+      <p>
+        Voeg lampen één voor één toe, niet tegelijk. Na koppeling kun je ze
+        samenvoegen in een <strong>Zone</strong> (kamer) voor gelijktijdig schakelen.
+        In Homey kun je ook een groep aanmaken zodat je ze als één apparaat kunt
+        aansturen.
+      </p>
+      <p>
+        Let op: boven de 15–20 IKEA-lampen op één Zigbee-netwerk kun je instabiliteit
+        krijgen. IKEA verkoopt smart plugs die als Zigbee-router fungeren en het
+        netwerk versterken — gebruik die als je meer dan 10 lampen hebt.
+      </p>
+
+      <h2>Automatisering: lamp aan bij zonsondergang</h2>
+      <p>
+        Nu de lamp gekoppeld is, kun je hem automatiseren. Een simpel voorbeeld
+        in Homey:
+      </p>
+      <ul>
+        <li><strong>Trigger:</strong> zonsondergang (Homey weet dit automatisch op basis van je locatie)</li>
+        <li><strong>Actie:</strong> zet IKEA-lamp aan op 50% helderheid</li>
+        <li><strong>Extra:</strong> voeg een tweede actie toe om de lamp om 23:00 uit te zetten</li>
+      </ul>
+      <p>
+        Gebruik de <strong>Geavanceerde Flow</strong> als je meerdere lampen tegelijk
+        wil aansturen of condities wil toevoegen (bijv. alleen als niemand thuis is).
+      </p>
+
+      <h2>Combineren met KAKU-apparaten</h2>
+      <p>
+        Ik gebruik zelf IKEA Zigbee-lampen in combinatie met KAKU-schakelaars op
+        de Homey Pro. Dat werkt prima — Homey ondersteunt meerdere protocollen
+        tegelijk. Je kunt een KAKU-schakelaar als trigger gebruiken om je
+        IKEA-lampen aan en uit te zetten, zelfs als ze aan verschillende protocols
+        hangen.
+      </p>
+    </>
+  ),
+
+  faq: [
+    {
+      question: "Werkt IKEA KAJPLATS ook met Homey Pro?",
+      answer:
+        "Ja, maar niet via Zigbee. KAJPLATS is een Matter-apparaat. Je kunt het koppelen via de IKEA DIRIGERA hub die als Matter-controller fungeert, en deze vervolgens integreren met Homey. Directe Zigbee-koppeling werkt niet voor KAJPLATS.",
+    },
+    {
+      question: "Kan ik IKEA-lampen en KAKU-apparaten in dezelfde Homey-setup gebruiken?",
+      answer:
+        "Ja. Homey Pro ondersteunt meerdere protocollen tegelijk, waaronder Zigbee (voor IKEA) en Z-Wave of 433MHz (voor KAKU). Je beheert ze allemaal vanuit dezelfde Homey-app en kunt ze combineren in automatiseringen.",
+    },
+    {
+      question: "Hoeveel IKEA-lampen kan ik koppelen aan één Homey Pro?",
+      answer:
+        "Technisch gezien zijn er geen harde limieten in Homey. Maar het Zigbee-netwerk wordt instabiel boven de 15-20 lampen zonder tussenliggende Zigbee-routers. IKEA verkoopt router-apparaten (zoals de smart plug) die het Zigbee-bereik verlengen. Gebruik die als je meer dan 10 lampen hebt.",
+    },
+    {
+      question: "Verlies ik mijn IKEA-app als ik naar Homey overstap?",
+      answer:
+        "Je kunt de IKEA Home Smart-app niet meer gebruiken voor lampen die je via Homey hebt gekoppeld. Kies dus één systeem: óf IKEA-hub met IKEA-app, óf Homey Pro. De meeste mensen kiezen voor Homey zodra ze meer dan 5 lampen hebben of andere merken willen combineren.",
+    },
+  ],
+},
+
 ];

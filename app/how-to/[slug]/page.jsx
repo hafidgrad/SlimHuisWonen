@@ -12,6 +12,11 @@ import AuthorCard from "@/components/AuthorCard";
 
 /* ================= METADATA ================= */
 
+const NOINDEX_HOWTO = new Set([
+  "hoe-installeer-je-een-slimme-deurbel",
+  "hoe-installeer-je-een-tapo-camera",
+]);
+
 export async function generateMetadata({ params }) {
   const article = howto.find(
     (h) => h.slug === params.slug && h.available
@@ -27,6 +32,7 @@ export async function generateMetadata({ params }) {
   return {
     title: article.seoTitle || article.title,
     description: article.description,
+    ...(NOINDEX_HOWTO.has(article.slug) && { robots: { index: false, follow: true } }),
     alternates: {
       canonical: `https://www.slimhuiswonen.nl/how-to/${article.slug}`,
     },

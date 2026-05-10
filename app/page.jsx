@@ -153,16 +153,16 @@ function PopulaireProducten() {
 
 export async function generateMetadata() {
   return {
-    title: { absolute: "SlimHuisWonen – Slim huis starten zonder gedoe" },
+    title: { absolute: "Slimme verlichting gids 2026 | SlimHuisWonen" },
     description:
-      "Slim huis beginnen? Ontdek de beste smart home producten, koopgidsen en tips voor slimme verlichting, sensoren, camera’s en hubs. Onafhankelijk en praktisch.",
+      "Onafhankelijke gids voor slimme verlichting. Vergelijk Philips Hue, IKEA, Innr en meer. Eerlijk advies van iemand die het zelf gebruikt met Homey Pro en Zigbee.",
     alternates: {
       canonical: "https://www.slimhuiswonen.nl",
     },
     openGraph: {
-      title: "SlimHuisWonen.nl – Slim huis starten zonder gedoe",
+      title: "Slimme verlichting gids 2026 | SlimHuisWonen",
       description:
-        "Ontdek de beste smart home producten, koopgidsen en praktische tips. Onafhankelijk advies voor slimme verlichting, camera's, thermostaten en meer.",
+        "Onafhankelijke gids voor slimme verlichting. Vergelijk Philips Hue, IKEA, Innr en meer. Eerlijk advies van iemand die het zelf gebruikt met Homey Pro en Zigbee.",
       url: "https://www.slimhuiswonen.nl",
       images: [
         {
@@ -218,27 +218,26 @@ export default function HomePage() {
             <div className="container">
               <div className="hero-banner-inner">
                 <div className="hero-banner-left">
-                  <h1>Maak je huis slim — zonder gedoe</h1>
+                  <h1>De eerlijke gids voor slimme verlichting</h1>
 
                   <p>
-                    Slim huis beginnen? Ontdek de beste smart home producten,
-                    praktische tips, koopgidsen en automatiseringen voor slimme
-                    verlichting, sensoren, camera’s, hubs en meer.
+                    Verwar je door de keuze tussen Philips Hue, IKEA of Zigbee?
+                    Ik gebruik het zelf en vertel je wat écht werkt — zonder reclamepraat.
                   </p>
 
                   <div className="hero-banner-actions">
                     <Link
-                      href="/aanraders"
+                      href="/aanraders/beste-slimme-verlichting"
                       className="btn hero-btn hero-primary"
                     >
-                      Bekijk koopgidsen →
+                      Bekijk alle verlichtingsgidsen →
                     </Link>
 
                     <Link
-                      href="/blog"
+                      href="/blog/philips-hue-vs-ikea-tradfri"
                       className="btn hero-btn hero-secondary"
                     >
-                      Lees uitleg & vergelijkingen
+                      Hue vs IKEA vergelijking
                     </Link>
                   </div>
 
@@ -250,11 +249,11 @@ export default function HomePage() {
                 <div className="hero-banner-right">
                   <div className="hero-quote">
                     <p className="hero-quote__heading">
-                      Waar begin je met een slim huis?
+                      Welke lamp past bij jouw huis?
                     </p>
                     <p className="hero-quote__sub">
-                      Volg mijn koopgidsen en tips — speciaal voor mensen die
-                      gewoon willen dat het werkt.
+                      Philips Hue, IKEA of Zigbee — ik leg het uit zonder
+                      technisch jargon.
                     </p>
                   </div>
                 </div>
@@ -287,21 +286,17 @@ export default function HomePage() {
                 <h2>Waarom ik SlimHuisWonen ben gestart</h2>
 
                 <p>
-                  Zo is het bij mij ook begonnen: met één slimme lamp. Daarna
-                  groeide het snel door naar een compleet smart home met slimme
-                  verlichting, sensoren, automatiseringen en een smart home hub.
+                  Ik begon met één IKEA Zigbee lamp. Nu draait mijn hele woning
+                  op Homey Pro met tientallen slimme verlichtingspunten. Op deze
+                  site deel ik wat ik geleerd heb — inclusief de fouten die je
+                  beter kunt vermijden.
                 </p>
 
                 <p>
-                  Toen ik zelf begon, merkte ik hoe onduidelijk smart home soms
-                  kan zijn. Welke producten werken goed samen? Heb je een hub
-                  nodig? Kies je voor wifi, Zigbee of Matter?
-                </p>
-
-                <p>
-                  Daarom ben ik SlimHuisWonen.nl gestart. Op deze website deel
-                  ik mijn ervaringen, tips en aanbevelingen zodat jij makkelijker
-                  kunt starten met jouw eigen slimme huis.
+                  Verlichting is waar het voor de meeste mensen begint: één lamp,
+                  dan een strip, dan een schakelaar. Voor je het weet wil je
+                  automatiseringen. Ik leg stap voor stap uit hoe je dat aanpakt
+                  — zonder technisch gedoe.
                 </p>
 
                 <div className="about-founder__actions">
@@ -325,35 +320,61 @@ export default function HomePage() {
 
             <p className="section-intro">
               Kies direct het onderwerp waar jij nu het meeste aan hebt:
-              verlichting, sensoren, beveiliging, hubs of praktische uitleg.
             </p>
 
             <div className="grid-3">
-              <Link href="/aanraders/beste-slimme-verlichting" className="card">
-                <h3>Beste slimme verlichting</h3>
+              <Link href="/how-to/slimme-verlichting-installeren" className="card">
+                <h3>Beginnen met slimme lampen</h3>
                 <p>
-                  Vergelijk Philips Hue, Innr, Tapo en Govee en ontdek welke
-                  slimme verlichting het beste past bij jouw huis.
+                  Stap voor stap: van eerste lamp tot volledige kamer.
+                  Geen hub nodig om te starten.
                 </p>
-                <span>Bekijk koopgids →</span>
+                <span>Lees uitleg →</span>
               </Link>
 
-              <Link href="/aanraders/beste-slimme-sensoren" className="card">
-                <h3>Beste slimme sensoren</h3>
+              <Link href="/blog/philips-hue-vs-ikea-tradfri" className="card">
+                <h3>Philips Hue vs IKEA Zigbee</h3>
                 <p>
-                  Ontdek welke slimme sensoren nuttig zijn voor automatisering,
-                  veiligheid en energiebesparing.
+                  Wat is het verschil in prijs, kwaliteit en protocol?
+                  Eerlijke vergelijking zonder reclame.
                 </p>
-                <span>Bekijk koopgids →</span>
+                <span>Lees vergelijking →</span>
               </Link>
 
               <Link href="/aanraders/beste-smart-home-hub" className="card">
-                <h3>Beste smart home hub</h3>
+                <h3>Koppelen aan Homey Pro</h3>
                 <p>
-                  Twijfel je tussen Homey, Home Assistant of SmartThings? Bekijk
-                  welke smart home hub bij jou past.
+                  Alle merken in één app — hoe je Zigbee-lampen koppelt
+                  aan Homey Pro en automatiseringen maakt.
                 </p>
                 <span>Bekijk koopgids →</span>
+              </Link>
+
+              <Link href="/tips/beginnen-met-slimme-verlichting" className="card">
+                <h3>Automatisering instellen</h3>
+                <p>
+                  Lamp aan bij beweging, timer voor 's avonds, sfeermodus
+                  bij film kijken — zo stel je het in.
+                </p>
+                <span>Lees tips →</span>
+              </Link>
+
+              <Link href="/aanraders/beste-slimme-verlichting" className="card">
+                <h3>Led-strips en sfeerverlichting</h3>
+                <p>
+                  Govee, Tapo of Philips Hue Lightstrip? Vergelijk de
+                  beste led-strips voor woonkamer en slaapkamer.
+                </p>
+                <span>Bekijk koopgids →</span>
+              </Link>
+
+              <Link href="/tips/energie-besparen-met-smart-home" className="card">
+                <h3>Bespaar op je energierekening</h3>
+                <p>
+                  Slimme verlichting + een goede timer scheelt gemiddeld
+                  €30–60 per jaar op je stroomrekening.
+                </p>
+                <span>Lees tips →</span>
               </Link>
             </div>
           </div>
@@ -604,11 +625,11 @@ export default function HomePage() {
                 <span>Bekijk koopgids →</span>
               </Link>
 
-              <Link href="/aanraders/beste-slimme-deurbel" className="card">
-                <h3>Beste slimme deurbel</h3>
+              <Link href="/aanraders/beste-slimme-stekkers-2026" className="card">
+                <h3>Beste slimme stekkers 2026</h3>
                 <p>
-                  Bekijk de beste slimme deurbellen voor bedraad, accu en
-                  smart home integratie.
+                  Vergelijk wifi-, Zigbee- en Matter-stekkers met energiemeting
+                  voor elk budget.
                 </p>
                 <span>Bekijk koopgids →</span>
               </Link>
@@ -634,20 +655,15 @@ export default function HomePage() {
             </p>
             <div className="grid-3">
               {[
-                { slug: "beste-slimme-camera", title: "Beste slimme camera" },
-                { slug: "beste-slimme-deurbel", title: "Beste slimme deurbel" },
-                { slug: "beste-slimme-sensoren", title: "Beste slimme sensoren" },
                 { slug: "beste-slimme-verlichting", title: "Beste slimme verlichting" },
                 { slug: "beste-smart-home-hub", title: "Beste smart home hub" },
                 { slug: "beste-slimme-stekkers", title: "Beste slimme stekkers" },
                 { slug: "beste-slimme-thermostaat", title: "Beste slimme thermostaat" },
+                { slug: "beste-slimme-sensoren", title: "Beste slimme sensoren" },
                 { slug: "beste-slimme-bewegingssensor", title: "Beste slimme bewegingssensor" },
-                { slug: "beste-mesh-wifi-systeem", title: "Beste mesh wifi systeem" },
-                { slug: "beste-slimme-slot", title: "Beste slimme deurslot" },
                 { slug: "beste-energie-monitor", title: "Beste slimme energiemeter" },
                 { slug: "beste-slimme-radiatorkraan", title: "Beste slimme radiatorkraan" },
-                { slug: "beste-slimme-producten-voor-huisdieren", title: "Smart home voor huisdieren" },
-                { slug: "beste-slimme-producten-voor-kinderen", title: "Smart home voor kinderen" },
+                { slug: "beste-mesh-wifi-systeem", title: "Beste mesh wifi systeem" },
                 { slug: "beste-smart-home-huurwoning", title: "Smart home voor huurwoning" },
                 { slug: "goedkoopste-smart-home-beginners", title: "Goedkoop smart home beginnen" },
                 { slug: "alle-lsc-smart-connect-producten-action", title: "Alle LSC Smart Connect producten" },

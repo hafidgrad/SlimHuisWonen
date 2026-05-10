@@ -343,6 +343,40 @@ export default function AanraderDetailPage({ params }) {
             ))}
           </div>
 
+          {guide.selectionGuide && (
+            <>
+              <hr />
+              <h2>Welk systeem past bij jou?</h2>
+              <div style={{ overflowX: "auto", marginBottom: "1.5rem" }}>
+                <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.9rem" }}>
+                  <thead>
+                    <tr style={{ background: "#f1f5f9" }}>
+                      <th style={{ padding: "0.55rem 0.75rem", textAlign: "left", borderBottom: "2px solid #e2e8f0" }}>Situatie</th>
+                      <th style={{ padding: "0.55rem 0.75rem", textAlign: "left", borderBottom: "2px solid #e2e8f0" }}>Aanbeveling</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {guide.selectionGuide.rows.map(([situation, advice], i) => (
+                      <tr key={i} style={{ background: i % 2 === 1 ? "#f8fafc" : "white" }}>
+                        <td style={{ padding: "0.45rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}>{situation}</td>
+                        <td style={{ padding: "0.45rem 0.75rem", borderBottom: "1px solid #e2e8f0", fontWeight: 600 }}>{advice}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </>
+          )}
+
+          {guide.personalNote && (
+            <>
+              <h2>Mijn eigen setup</h2>
+              <div style={{ background: "#f8fafc", border: "1px solid #e2e8f0", borderLeft: "3px solid #6366f1", borderRadius: "0 8px 8px 0", padding: "1rem 1.25rem", marginBottom: "1.5rem" }}>
+                <p style={{ margin: 0, fontSize: "0.95rem", lineHeight: 1.7 }}>{guide.personalNote}</p>
+              </div>
+            </>
+          )}
+
           {guide.faq && guide.faq.length > 0 && (
             <>
               <hr />

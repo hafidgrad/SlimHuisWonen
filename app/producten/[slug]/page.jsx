@@ -8,6 +8,8 @@ import PrijsDisclaimer from "@/components/PrijsDisclaimer";
 
 export const dynamic = "force-dynamic";
 
+const NOINDEX_CATEGORIES = new Set(["slimme-cameras", "slimme-deurbellen", "slimme-sloten"]);
+
 export async function generateMetadata({ params }) {
   const product = getProductBySlug(params.slug);
 
@@ -26,9 +28,12 @@ export async function generateMetadata({ params }) {
         return `${product.name} kopen? Vergelijk prijzen bij bol.com, Coolblue en Amazon.${features ? ` ${features}.` : ""} Onafhankelijk advies van SlimHuisWonen.`;
       })();
 
+  const shouldNoindex = NOINDEX_CATEGORIES.has(product.category);
+
   return {
     title,
     description,
+    ...(shouldNoindex && { robots: { index: false, follow: true } }),
     alternates: {
       canonical: `https://www.slimhuiswonen.nl/producten/${product.slug}`,
     },

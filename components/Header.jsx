@@ -35,18 +35,16 @@ export default function Header() {
               Koopgidsen <span className="nav-caret">▾</span>
             </Link>
             <div className="nav-dropdown">
-              <Link href="/aanraders/beste-slimme-verlichting">Verlichting</Link>
-              <Link href="/aanraders/beste-smart-home-hub">Hubs</Link>
-              <Link href="/aanraders/beste-slimme-bewegingssensor">Sensoren</Link>
-              <Link href="/aanraders/beste-slimme-camera">Beveiliging</Link>
-              <Link href="/aanraders/beste-slimme-deurbel">Deurbellen</Link>
-              <Link href="/aanraders/beste-slimme-stekkers-2026">Slimme stekkers</Link>
-              <Link href="/aanraders/beste-robotstofzuigers-2026">Robotstofzuigers</Link>
+              <Link href="/aanraders/beste-slimme-verlichting">Slimme verlichting</Link>
+              <Link href="/vergelijking/philips-hue-vs-ikea-vs-innr">Hue vs IKEA vs Innr</Link>
+              <Link href="/aanraders/slimme-verlichting-per-kamer">Verlichting per kamer</Link>
+              <Link href="/aanraders/beste-slimme-stekkers">Slimme stekkers & dimmers</Link>
+              <Link href="/aanraders/beste-smart-home-hub">Smart home hubs</Link>
+              <Link href="/aanraders/beste-slimme-thermostaat">Slimme thermostaat</Link>
             </div>
           </div>
 
-          <Link href="/tips">Tips & uitleg</Link>
-          <Link href="/how-to">How To</Link>
+          <Link href="/how-to">Installatie & uitleg</Link>
           <Link href="/blog">Blog</Link>
           <Link href="/contact">Contact</Link>
           <Link href="/producten" className="nav-highlight">

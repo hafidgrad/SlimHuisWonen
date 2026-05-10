@@ -77,7 +77,16 @@
       "Bash(curl -s http://localhost:3000/aanraders/beste-slimme-thermostaat)",
       "Bash(curl -s http://localhost:3000/aanraders/beste-slimme-slot)",
       "Bash(node -e *)",
-      "Bash(grep -v \"^\\\\s*//\")"
+      "Bash(grep -v \"^\\\\s*//\")",
+      "Bash(sed 's/.*slug: \"//')",
+      "Bash(sed 's/\".*//')",
+      "Bash(sed 's/.*slug: *//')",
+      "Bash(sed 's/[\",].*//')",
+      "Bash(grep -v \"^\\\\s*$\")",
+      "Bash(cat next.config.js)",
+      "Bash(cat next.config.mjs)",
+      "Bash(curl -s http://localhost:3000/)",
+      "Bash(python3 -c \"import sys,re; html=sys.stdin.read\\(\\); tm=re.search\\(r'<title>\\(.*?\\)</title>',html\\); print\\('OK' if tm else 'ERR', tm.group\\(1\\) if tm else 'no title'\\)\")"
     ]
   }
 }

@@ -606,7 +606,43 @@ relatedGuides: [
       badges: ["Neon", "Sfeer", "Decoratie"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DGovee%2BNeon%2BRope%2BLight",
     },
+    {
+      title: "Beste budgetkeuze kleur: IKEA TRÅDFRI LED E27 kleur",
+      description:
+        "De goedkoopste Zigbee-kleurlamp die je kunt kopen. Werkt prima als je al een DIRIGERA hub of Homey Pro hebt. Niet zo stabiel als Hue bij veel lampen, maar voor 2-5 lampen per ruimte volstaat dit prima.",
+      image: "/images/products/placeholder.png",
+      href: "/aanraders/beste-slimme-verlichting",
+      badges: ["Budget", "Kleur", "Zigbee"],
+      pros: ["Goedkoopste kleurlamp op de markt", "Zigbee — werkt met Homey Pro", "Verkrijgbaar bij elke IKEA"],
+      cons: ["Minder stabiel bij grote installaties (15+)", "Beperktere kleurnauwkeurigheid dan Hue"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dikea%2Btradfri%2Bled%2Be27%2Bkleur",
+    },
+    {
+      title: "Beste Zigbee alternatief: Innr Smart Bulb Comfort E27",
+      description:
+        "Zigbee-lamp die werkt met Homey, Home Assistant en de Philips Hue Bridge. Goedkoper dan Hue, betere kwaliteit dan IKEA. Warm tot koud wit (1800K–6500K). Ideaal als je een Zigbee-netwerk al hebt en goedkoop wilt uitbreiden.",
+      image: "/images/products/innr-zigbee-e27.png",
+      href: "/producten/innr-zigbee-e27",
+      badges: ["Zigbee", "Comfort white", "Prijs-kwaliteit"],
+      pros: ["Werkt met elke Zigbee-hub", "Uitstekende lichtkleur (1800K–6500K)", "Langere levensduur dan budget-alternatieven"],
+      cons: ["Geen kleurversie in dit model", "Minder merkbekendheid dan Hue of IKEA"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dinnr%2Bsmart%2Bbulb%2Be27",
+    },
   ],
+
+  selectionGuide: {
+    title: "Welk systeem past bij jou?",
+    rows: [
+      ["Ik wil gewoon beginnen, geen gedoe", "IKEA TRÅDFRI wifi of Tapo"],
+      ["Ik heb al een Zigbee-hub (Homey/HA)", "IKEA TRÅDFRI of Innr"],
+      ["Ik wil het beste, prijs maakt niet uit", "Philips Hue"],
+      ["Ik wil uitbreiden op bestaande Hue", "Innr of Hue zelf"],
+      ["Budget maximaal €30 voor 2 lampen", "IKEA of Tapo"],
+    ],
+  },
+
+  personalNote:
+    "Ik gebruik zelf IKEA Zigbee-lampen in combinatie met een Homey Pro (model 2019). In de woonkamer heb ik 4 E27-lampen gekoppeld, in de slaapkamer 2. De combinatie werkt stabiel, maar ik heb geleerd dat je niet meer dan 15-20 IKEA-lampen op één Zigbee-netwerk zonder router wil hebben. Voor grotere installaties zou ik eerder naar Innr of Hue grijpen. Als je nog maar net begint: start met 2-3 IKEA-lampen en kijk hoe het bevalt.",
 
   faq: [
     {
@@ -2623,6 +2659,117 @@ relatedGuides: [
       question: "Heeft een robotstofzuiger een wifi-router nodig?",
       answer:
         "Ja, voor app-bediening en spraakbesturing wel. De meeste werken op 2.4GHz wifi. Zonder wifi werken ze soms nog wel handmatig via een knop, maar app-functies en planningen werken dan niet.",
+    },
+  ],
+},
+
+{
+  slug: "slimme-verlichting-per-kamer",
+  title: "Slimme verlichting per kamer: wat werkt het best?",
+  description:
+    "Welke slimme lamp is het best voor de woonkamer, slaapkamer of keuken? Praktische gids met aanbevelingen per ruimte en budget.",
+  image: "/images/blog/beste-slimme-verlichting.png",
+  intro:
+    "Niet elke kamer heeft dezelfde verlichtingsbehoefte. De woonkamer vraagt om sfeer en dimmen, de keuken om helder werklicht, de slaapkamer om rustig warm licht. In deze gids leg ik per kamer uit welke slimme lamp het best werkt en welk budget je nodig hebt.",
+  available: true,
+  datePublished: "2026-05-01",
+
+  whoIsThisFor: [
+    "Voor wie slimme verlichting per kamer wil installeren",
+    "Voor wie twijfelt tussen E27, E14 of GU10-fitting",
+    "Voor wie wil weten welk systeem het best past per ruimte",
+    "Voor wie sfeer combineert met energie besparen",
+  ],
+
+  picks: [
+    {
+      title: "Woonkamer: Philips Hue White Ambiance E27",
+      description:
+        "Dimbaar, instelbare kleurtemperatuur (warm tot koud) en stabiel Zigbee-netwerk. Ideaal voor sfeerverlichting en automatische dimming 's avonds. Werkt met Homey, Alexa en Google Home.",
+      image: "/images/products/philips-hue-white-ambiance.png",
+      href: "/producten/philips-hue-white-ambiance-starterkit",
+      badges: ["Woonkamer", "Dimbaar", "Sfeer"],
+      pros: ["Uitstekende lichtkleur voor sfeer", "Stabiel bij grote setups"],
+      cons: ["Bridge vereist (€60 eenmalig)"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DPhilips%2BHue%2BWhite%2BAmbiance%2BE27",
+    },
+    {
+      title: "Woonkamer budget: IKEA TRÅDFRI kleur E27",
+      description:
+        "De goedkoopste Zigbee-kleurlamp. Prima voor 2–5 lampen in de woonkamer als je al een Homey Pro of Zigbee-hub hebt. Minder stabiel bij grote installaties, maar voor een gemiddelde woonkamer voldoende.",
+      image: "/images/products/tapo-l530e.png",
+      href: "/aanraders/beste-slimme-verlichting",
+      badges: ["Budget", "Kleur", "Woonkamer"],
+      pros: ["Goedkoopste kleurlamp", "Zigbee — werkt met Homey"],
+      cons: ["Minder stabiel bij 15+ lampen"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dikea%2Btradfri%2Bled%2Be27",
+    },
+    {
+      title: "Slaapkamer: Philips Hue White Ambiance E27 (los)",
+      description:
+        "Warm wit licht met wake-up functie. Stel in dat de lamp langzaam helderder wordt als wekker. Dimbaar tot 1% voor nachtlampfunctie. Ideaal voor mensen die 's ochtends niet abrupt wakker willen worden.",
+      image: "/images/products/philips-hue-white-ambiance.png",
+      href: "/producten/philips-hue-white-ambiance-starterkit",
+      badges: ["Slaapkamer", "Wake-up licht", "Dimbaar"],
+      pros: ["Wake-up simulatie via app", "Dimbaar tot bijna uit"],
+      cons: ["Duurder dan IKEA-alternatief"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DPhilips%2BHue%2BWhite%2BAmbiance%2BE27",
+    },
+    {
+      title: "Keuken: Innr Smart Spot GU10",
+      description:
+        "GU10-spot voor inbouwspots in de keuken. Zigbee, werkt met Homey Pro en Philips Hue Bridge. Helder wit licht (4000K) voor werklicht. Beter alternatief voor Hue GU10 tegen lagere prijs.",
+      image: "/images/products/innr-zigbee-e27.png",
+      href: "/producten/innr-zigbee-e27",
+      badges: ["Keuken", "GU10", "Werklicht"],
+      pros: ["GU10 fitting voor inbouwspots", "Helder werklicht (4000K)"],
+      cons: ["Alleen online verkrijgbaar"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dinnr%2Bsmart%2Bspot%2Bgu10",
+    },
+    {
+      title: "Thuiskantoor: IKEA TRÅDFRI White Spectrum E27",
+      description:
+        "Tunable white lamp: van warm (2700K) 's ochtends naar koel (4000K) voor focus overdag. Geen kleur, maar instelbare kleurtemperatuur. Goedkoper dan Hue, prima voor thuiswerken.",
+      image: "/images/products/tapo-l510e.png",
+      href: "/producten/tapo-l510e",
+      badges: ["Thuiskantoor", "Tunable white", "Focus"],
+      pros: ["Instelbare kleurtemperatuur voor dag/nacht", "Betaalbaar IKEA-alternatief"],
+      cons: ["Geen kleur, alleen wit-tonen"],
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dikea%2Btradfri%2Bwhite%2Bspectrum",
+    },
+  ],
+
+  selectionGuide: {
+    title: "Aanbeveling per kamer — snel overzicht",
+    rows: [
+      ["Woonkamer", "Hue White Ambiance", "IKEA TRÅDFRI kleur"],
+      ["Slaapkamer", "Hue White Ambiance", "IKEA warm wit"],
+      ["Keuken", "Innr GU10", "IKEA GU10 spots"],
+      ["Thuiskantoor", "Hue White Ambiance", "IKEA White Spectrum"],
+      ["Buiten", "Hue buitenlamp (IP44)", "IKEA buitenspot"],
+    ],
+  },
+
+  faq: [
+    {
+      question: "Welke fitting heb ik nodig: E27, E14 of GU10?",
+      answer:
+        "E27 is de standaard grote schroeffitting — voor staande lampen, hanglampen en plafondlampen. E14 is de kleine schroeffitting voor kandelabers en kleine armaturen. GU10 is de bajonettfitting die je vindt in inbouwspots en keukens. Check de fitting van je armatuur voordat je koopt.",
+    },
+    {
+      question: "Kan ik een slimme lamp gebruiken met een bestaande dimmer?",
+      answer:
+        "Nee. Een traditionele dimmer werkt niet samen met slimme lampen — dit kan de lamp beschadigen of ervoor zorgen dat hij niet correct werkt. Vervang de dimmer door een gewone schakelaar, of gebruik een slimme schakelaar die de dimfunctie via de app regelt.",
+    },
+    {
+      question: "Hoeveel watt heeft een slimme lamp nodig?",
+      answer:
+        "Slimme lampen zijn LED en verbruiken 4–10 watt voor een normale helderheid (400–800 lumen). Dat is vergelijkbaar met een gewone LED-lamp. De extra functionaliteit (wifi of Zigbee chip) verbruikt nauwelijks extra energie.",
+    },
+    {
+      question: "Kan ik verschillende merken per kamer combineren?",
+      answer:
+        "Ja, met een hub zoals Homey Pro kun je Philips Hue in de woonkamer en IKEA in de slaapkamer combineren. Alles wordt dan vanuit één app beheerd. Zonder hub ben je gebonden aan het ecosysteem van één merk per kamer.",
     },
   ],
 },
