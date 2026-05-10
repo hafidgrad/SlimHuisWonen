@@ -7,11 +7,13 @@ export default function AmazonSearchCta({ searchTerm }) {
     searchTerm
   )}&tag=${affiliateTag}`;
 
+  const awinId = process.env.NEXT_PUBLIC_AWIN_PUBLISHER_ID;
+
   const bolTargetUrl = `https://www.bol.com/nl/nl/s/?searchtext=${encodeURIComponent(searchTerm)}`;
-  const bolUrl = `https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=${encodeURIComponent(bolTargetUrl)}`;
+  const bolUrl = `https://www.awin1.com/cread.php?awinaffid=${awinId}&awinmid=13926&p=${encodeURIComponent(bolTargetUrl)}`;
 
   const coolblueTargetUrl = `https://www.coolblue.nl/zoeken?query=${encodeURIComponent(searchTerm)}`;
-  const coolblueUrl = `https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=${encodeURIComponent(coolblueTargetUrl)}`;
+  const coolblueUrl = `https://www.awin1.com/cread.php?awinaffid=${awinId}&awinmid=13813&ued=${encodeURIComponent(coolblueTargetUrl)}`;
 
   return (
     <div className="amazonCtaBox">

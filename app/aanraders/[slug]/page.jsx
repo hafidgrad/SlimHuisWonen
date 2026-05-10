@@ -69,6 +69,8 @@ export default function AanraderDetailPage({ params }) {
   const guide = aanraders.find((g) => g.slug === params.slug);
   if (!guide) return notFound();
 
+  const _awinId = process.env.NEXT_PUBLIC_AWIN_PUBLISHER_ID;
+
   const relatedBlog = blogPosts.find((b) => b.slug === guide.relatedBlog);
 
   const relatedBlogs = guide.relatedBlogs
@@ -106,8 +108,9 @@ export default function AanraderDetailPage({ params }) {
     const searchQuery = encodeURIComponent(pick.title.replace(/^[^:]+:\s*/, ""));
     const hasActionUrl = !!pick.actionUrl;
 
-    const awinBolFallback = `https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=${encodeURIComponent(`https://www.bol.com/nl/nl/s/?searchtext=${searchQuery}`)}`;
-    const awinCoolblueFallback = `https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=${encodeURIComponent(`https://www.coolblue.nl/zoeken?query=${searchQuery}`)}`;
+    const awinId = process.env.NEXT_PUBLIC_AWIN_PUBLISHER_ID;
+    const awinBolFallback = `https://www.awin1.com/cread.php?awinaffid=${awinId}&awinmid=13926&p=${encodeURIComponent(`https://www.bol.com/nl/nl/s/?searchtext=${searchQuery}`)}`;
+    const awinCoolblueFallback = `https://www.awin1.com/cread.php?awinaffid=${awinId}&awinmid=13813&ued=${encodeURIComponent(`https://www.coolblue.nl/zoeken?query=${searchQuery}`)}`;
 
     return {
       ...pick,
@@ -413,7 +416,7 @@ export default function AanraderDetailPage({ params }) {
               <p className="muted">Nog meer LSC producten bekijken?</p>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "0.6rem", marginTop: "0.5rem" }}>
                 <a
-                  href="https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fs%2F%3Fsearchterm%3DLSC%2BSmart%2BConnect"
+                  href={`https://www.awin1.com/cread.php?awinaffid=${_awinId}&awinmid=25288&p=https%3A%2F%2Fshop.action.com%2Fnl-nl%2Fs%2F%3Fsearchterm%3DLSC%2BSmart%2BConnect`}
                   target="_blank"
                   rel="nofollow sponsored noopener noreferrer"
                   style={{ fontSize: "0.9rem", display: "inline-block", padding: "0.55rem 1rem", borderRadius: "8px", background: "#003082", color: "#fff", fontWeight: 700, textDecoration: "none" }}
@@ -421,7 +424,7 @@ export default function AanraderDetailPage({ params }) {
                   Bekijk alle LSC producten bij Action →
                 </a>
                 <a
-                  href="https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fb%2Flsc-smart-connect%2F606566673%2F"
+                  href={`https://www.awin1.com/cread.php?awinaffid=${_awinId}&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fb%2Flsc-smart-connect%2F606566673%2F`}
                   target="_blank"
                   rel="nofollow sponsored noopener noreferrer"
                   className="btn btn-bol"

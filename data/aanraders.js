@@ -125,7 +125,7 @@ export const aanraders = [
       href: "/producten/tp-link-tapo-c230",
       badges: ["3K", "Babyfoon", "Wi-Fi"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DTapo%2520C230",
-      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F960205",
+      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F960205",
     },
     {
       title: "Beste budget buitencamera met 360° rotatie: Tapo C500",
@@ -135,7 +135,7 @@ export const aanraders = [
       href: "/producten/tp-link-tapo-c500",
       badges: ["Buiten", "360°", "Budget"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DTapo%2520C500",
-      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F924862",
+      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F924862",
     },
     {
       title: "Beste buitencamera met hoge resolutie: Tapo C530WS",
@@ -145,7 +145,7 @@ export const aanraders = [
       href: "/producten/tp-link-tapo-c530ws",
       badges: ["Buiten", "3K", "Spotlights"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DTapo%2520C530WS",
-      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F960206",
+      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F960206",
     },
   ],
 
@@ -522,7 +522,7 @@ relatedGuides: [
       pros: ["Meest stabiel en betrouwbaar", "Breed ecosysteem met sensoren en schakelaars"],
       cons: ["Duurder dan wifi-alternatieven"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DPhilips%2BHue%2BWhite%2BAmbiance%2BStarterkit",
-      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DPhilips%2BHue%2BWhite%2BAmbiance%2BStarterkit",
+      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DPhilips%2BHue%2BWhite%2BAmbiance%2BStarterkit",
     },
     {
       title: "Beste budget Zigbee verlichting: Innr",
@@ -534,7 +534,7 @@ relatedGuides: [
       pros: ["Betaalbaar Zigbee alternatief voor Hue", "Stabiele verbinding via hub"],
       cons: ["Minder uitgebreid ecosysteem dan Philips Hue"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DInnr%2BZigbee%2BE27",
-      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DInnr%2BZigbee%2BE27",
+      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DInnr%2BZigbee%2BE27",
     },
     {
       title: "Beste slimme verlichting zonder hub: Tapo L510E",
@@ -546,7 +546,7 @@ relatedGuides: [
       pros: ["Geen hub nodig", "Zeer betaalbaar (±€12)"],
       cons: ["Alleen wit licht, geen kleur"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DTapo%2BL510E",
-      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DTapo%2BL510E",
+      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DTapo%2BL510E",
     },
     {
       title: "Beste wifi kleurverlichting: Tapo L530E",
@@ -556,7 +556,7 @@ relatedGuides: [
       href: "/producten/tapo-l530e",
       badges: ["Kleur", "Wi-Fi", "Sfeer"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DTapo%2BL530E",
-      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DTapo%2BL530E",
+      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DTapo%2BL530E",
     },
     {
       title: "Beste led-strips en sfeerverlichting: Govee",
@@ -575,7 +575,7 @@ relatedGuides: [
       href: "/producten/tp-link-tapo-l535e-wit-en-gekleurd-licht-e27",
       badges: ["Matter", "Kleur", "Energiemeting"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DTapo%2BL535E",
-      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DTapo%2BL535E",
+      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DTapo%2BL535E",
     },
     {
       title: "Beste slimme led-strip met segmentcontrole: Tapo L930-5",
@@ -585,7 +585,7 @@ relatedGuides: [
       href: "/producten/tp-link-tapo-l930-5-lichtstrip-5m",
       badges: ["LED-strip", "Segmentcontrole", "Muziek"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DTapo%2BL930",
-      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DTapo%2BL930",
+      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DTapo%2BL930",
     },
     {
       title: "Beste designverlichting voor de wand: Nanoleaf Lines Starterkit",
@@ -595,7 +595,7 @@ relatedGuides: [
       href: "/producten/nanoleaf-lines-60-degrees-starterkit-slimme-verlic",
       badges: ["Design", "Modulair", "Wandpanelen"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DNanoleaf%2BLines%2BStarterkit",
-      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DNanoleaf%2BLines",
+      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DNanoleaf%2BLines",
     },
     {
       title: "Beste neon sfeerlamp: Govee Neon Rope Light 2",
@@ -1088,7 +1088,7 @@ relatedGuides: [
       href: "/producten/tapo-l510e",
       badges: ["Goedkoop", "Geen hub", "Nachtverlichting"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DTapo%2BL510E",
-      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DTapo%2BL510E",
+      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DTapo%2BL510E",
     },
     {
       title: "Beste bewegingssensor (Zigbee): Aqara Motion Sensor",
@@ -1883,7 +1883,7 @@ relatedGuides: [
       href: "/producten/philips-hue-white-ambiance-starterkit",
       badges: ["Geen installatie", "Meenemen bij verhuizing", "Beste keuze verlichting"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DPhilips%2BHue%2BWhite%2BAmbiance%2BStarterkit",
-      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DPhilips%2BHue%2BWhite%2BAmbiance%2BStarterkit",
+      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DPhilips%2BHue%2BWhite%2BAmbiance%2BStarterkit",
     },
     {
       title: "Beste slimme stekker: Tapo P115",
@@ -2015,7 +2015,7 @@ relatedGuides: [
       href: "/producten/tapo-l530e",
       badges: ["Beste keuze", "Geen hub nodig", "Goedkoop"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DTapo%2BL530E",
-      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DTapo%2BL530E",
+      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DTapo%2BL530E",
     },
     {
       title: "Beste goedkope slimme stekker: Tapo P115",
@@ -2640,7 +2640,7 @@ relatedGuides: [
       pros: ["Uitstekend voor dierenhaar", "Gaat over drempelranden"],
       cons: ["Hogere prijs in het middensegment"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DRoborock%2520S8",
-      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=85161&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DRoborock%2BS8",
+      coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DRoborock%2BS8",
     },
   ],
 
