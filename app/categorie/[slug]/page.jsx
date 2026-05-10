@@ -7,6 +7,35 @@ import { categories } from "@/data/categories";
 import AmazonSearchCta from "@/components/AmazonSearchCta";
 import { getBolUrl, getCoolblueUrl } from "@/lib/bol-api";
 import PrijsDisclaimer from "@/components/PrijsDisclaimer";
+import FaqSection from "@/components/FaqSection";
+import TableOfContents from "@/components/TableOfContents";
+
+const CATEGORY_FAQS = {
+  "slimme-verlichting": {
+    toc: [
+      { id: "beste-keuzes", label: "Beste keuzes" },
+      { id: "meer-producten", label: "Meer producten" },
+      { id: "faq", label: "Veelgestelde vragen" },
+    ],
+    faqs: [
+      {
+        question: "Wat is het verschil tussen wifi- en Zigbee-lampen?",
+        answer:
+          "Wifi-lampen verbinden direct met je router zonder extra hub — eenvoudig te installeren maar belast je wifi-netwerk. Zigbee-lampen werken via een eigen mesh-netwerk en hebben een hub nodig (zoals Homey Pro of de Philips Hue Bridge). Zigbee is stabieler bij grotere installaties en zuiniger in stroomverbruik.",
+      },
+      {
+        question: "Heb ik een hub nodig voor slimme verlichting?",
+        answer:
+          "Niet per se. Wifi-lampen van Tapo, WiZ of Govee werken zonder hub via de bijbehorende app. Wil je Zigbee-lampen (Philips Hue, Innr, IKEA) of wil je lampen van meerdere merken combineren, dan is een hub zoals Homey Pro of de Philips Hue Bridge nodig.",
+      },
+      {
+        question: "Welke slimme lamp is het beste voor beginners?",
+        answer:
+          "Voor beginners zijn wifi-lampen het eenvoudigst: geen hub, gewoon de app downloaden en de lamp erin draaien. De Tapo L530E (kleur, €15) of Tapo L510E (wit, €12) zijn populaire instapkeuzes. Wil je later uitbreiden met een hub, kijk dan naar Innr of Philips Hue als Zigbee-alternatief.",
+      },
+    ],
+  },
+};
 
 export const dynamic = "force-dynamic";
 
@@ -104,6 +133,7 @@ export default function CategoryPage({ params }) {
   const rest = products.slice(3);
 
   const amazonSearchTerm = getAmazonSearchTerm(normalizedSlug);
+  const categoryExtra = CATEGORY_FAQS[normalizedSlug] ?? null;
 
   const collectionSchema = {
     "@context": "https://schema.org",
@@ -143,6 +173,10 @@ export default function CategoryPage({ params }) {
 
           <h1>{category.name}</h1>
           <p className="section-intro">{category.description}</p>
+
+          {categoryExtra?.toc && (
+            <TableOfContents items={categoryExtra.toc} />
+          )}
 
           {products.length === 0 && (
             <p>Er zijn nog geen producten in deze categorie.</p>
@@ -355,6 +389,13 @@ export default function CategoryPage({ params }) {
           {/* ✅ Subtiele Amazon zoek CTA */}
           {products.length > 0 && (
             <AmazonSearchCta searchTerm={amazonSearchTerm} />
+          )}
+
+          {categoryExtra?.faqs && (
+            <>
+              <hr style={{ marginTop: "2rem" }} />
+              <FaqSection faqs={categoryExtra.faqs} />
+            </>
           )}
         </div>
       </main>

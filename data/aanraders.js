@@ -1601,7 +1601,7 @@ relatedGuides: [
   slug: "beste-energie-monitor",
   title: "Beste slimme energiemeter (2026)",
   description:
-    "Zie realtime je energieverbruik en bespaar op je rekening. Vergelijk de beste P1-meters en energiemonitoren voor thuis.",
+    "Zie realtime je energieverbruik en bespaar op je rekening. Vergelijk de beste P1-meters en energiemonitoren voor thuis. Werkt met Home Assistant en Homey.",
   image: "/images/aanraders/beste-energie-monitor.png",
   intro:
     "Wil je weten hoeveel energie je verbruikt — en waar je kunt besparen? Met een slimme energiemeter zie je in realtime je verbruik en teruglevering van zonnepanelen. Onmisbaar als je je energierekening omlaag wilt brengen.",
