@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { aanraders } from "@/data/aanraders";
 import { blogPosts } from "@/data/blog";
 import { getProductBySlug } from "@/data/products";
+import { getBolUrl, getCoolblueUrl } from "@/lib/bol-api";
 import BuyGuideProductCard from "@/components/BuyGuideProductCard";
 import AmazonSearchCta from "@/components/AmazonSearchCta";
 import RelatedContent from "@/components/RelatedContent";
@@ -112,6 +113,10 @@ export default function AanraderDetailPage({ params }) {
     const awinBolFallback = `https://www.awin1.com/cread.php?awinaffid=${awinId}&awinmid=13926&p=${encodeURIComponent(`https://www.bol.com/nl/nl/s/?searchtext=${searchQuery}`)}`;
     const awinCoolblueFallback = `https://www.awin1.com/cread.php?awinaffid=${awinId}&awinmid=13813&ued=${encodeURIComponent(`https://www.coolblue.nl/zoeken?query=${searchQuery}`)}`;
 
+    // getBolUrl/getCoolblueUrl genereren dezelfde partner-links als de productpagina's
+    const resolvedBolUrl = product ? getBolUrl(product) : null;
+    const resolvedCoolblueUrl = product ? getCoolblueUrl(product) : null;
+
     return {
       ...pick,
       amazonUrl: hasActionUrl
@@ -119,15 +124,12 @@ export default function AanraderDetailPage({ params }) {
         : product?.affiliateUrl ||
           pick.amazonUrl ||
           `https://www.amazon.nl/s?k=${searchQuery}&tag=slimhuiswonen-21`,
-      bolUrl:
-        product?.bolUrl ||
-        pick.bolUrl ||
-        (hasActionUrl ? null : awinBolFallback),
+      bolUrl: hasActionUrl
+        ? null
+        : resolvedBolUrl || pick.bolUrl || awinBolFallback,
       coolblueUrl: hasActionUrl
         ? null
-        : product?.coolblueUrl ||
-          pick.coolblueUrl ||
-          awinCoolblueFallback,
+        : resolvedCoolblueUrl || pick.coolblueUrl || awinCoolblueFallback,
       priceHint: product?.priceHint || null,
       isTopPick: index === 0,
     };
