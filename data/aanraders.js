@@ -1709,7 +1709,7 @@ relatedGuides: [
   title: "Beste slimme radiatorkraan (2026)",
   description:
     "Vergelijk de beste slimme radiatorkranen: Tado, Aqara E1 en Tapo KE100. Bespaar tot 25% op je stookkosten en regel elke kamer apart.",
-  image: "/images/categories/slimme-radiatorkraan.jfif",
+  image: "/images/categories/slimme-radiatorkraan.jpg",
   intro:
     "Een slimme radiatorkraan geeft je per kamer controle over de temperatuur. Je stookt alleen waar nodig, wanneer nodig — en dat scheelt flink op de energierekening. In deze koopgids vergelijken we de beste modellen voor 2026.",
   available: true,
