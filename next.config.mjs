@@ -2,6 +2,13 @@
 const nextConfig = {
   reactStrictMode: true,
 
+  images: {
+    remotePatterns: [
+      { protocol: "https", hostname: "media.s-bol.com" },
+      { protocol: "https", hostname: "m.media-amazon.com" },
+    ],
+  },
+
   async redirects() {
     return [
       {

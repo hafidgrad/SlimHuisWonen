@@ -1061,7 +1061,7 @@ export const products = [
   brand: "TP-Link",
   name: "TP-Link Deco XE75 (WiFi 6E Mesh, 3-pack)",
   category: "mesh-wifi",
-  image: "/images/products/tp-link-deco-xe75.png",
+  image: "https://media.s-bol.com/7MMZlGznVBjG/EByApm/550x488.jpg",
   description:
     "Krachtig WiFi 6E mesh-systeem in 3-pack voor een snel en stabiel netwerk in het hele huis. Dekt tot 750 m². Ideaal voor smart home met veel apparaten.",
   features: [
@@ -1085,7 +1085,7 @@ export const products = [
   brand: "Amazon",
   name: "Amazon Eero Pro 6E",
   category: "mesh-wifi",
-  image: "/images/products/eero-pro-6e.png",
+  image: "https://m.media-amazon.com/images/I/61lMn9s2JoL._AC_SX679_.jpg",
   description:
     "Gebruiksvriendelijk mesh-systeem met WiFi 6E en Alexa-integratie. Ideaal als je Amazon-producten combineert.",
   features: [
@@ -1109,7 +1109,7 @@ export const products = [
   brand: "Google",
   name: "Google Nest Wifi Pro",
   category: "mesh-wifi",
-  image: "/images/products/google-nest-wifi-pro.png",
+  image: "https://media.s-bol.com/xyO7BqOxqjB3/l9l7j1/550x253.jpg",
   description:
     "Google's krachtigste mesh-router met WiFi 6E en Matter-ondersteuning ingebouwd. Ideaal voor Google Home gebruikers.",
   features: [
@@ -1534,7 +1534,7 @@ export const products = [
   brand: "TP-Link",
   name: "TP-Link Deco XE75 (2-pack)",
   category: "mesh-wifi",
-  image: "/images/products/tp-link-deco-xe75-2pack.png",
+  image: "https://media.s-bol.com/Y91V7DQXXgJ2/mZM1mpp/550x602.jpg",
   description:
     "WiFi 6E mesh-systeem in een 2-pack voor woningen tot ca. 370 m². Ideaal als fundament voor een betrouwbaar smart home met veel apparaten.",
   features: ["WiFi 6E (tri-band)", "2-pack — tot 370 m²", "Eenvoudig uitbreidbaar"],
