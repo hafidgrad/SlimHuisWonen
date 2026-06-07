@@ -19,7 +19,7 @@ export default function RelatedProducts({ slugs = [], title = "Producten die je 
       <hr />
       <h2 style={{ marginTop: "1.5rem" }}>{title}</h2>
       <p className="muted" style={{ marginBottom: "1rem" }}>
-        Beschikbaar via Amazon en bol.com — jij betaalt niets extra via onze links.
+        Beschikbaar via bol.com en Coolblue — jij betaalt niets extra via onze links.
       </p>
 
       <div
@@ -112,26 +112,7 @@ export default function RelatedProducts({ slugs = [], title = "Producten die je 
                     🔒 Coolblue
                   </a>
                 )}
-                {p.affiliateUrl && (
-                  <a
-                    href={p.affiliateUrl}
-                    target="_blank"
-                    rel="nofollow sponsored noopener noreferrer"
-                    style={{
-                      display: "inline-block",
-                      padding: "0.45rem 0.85rem",
-                      borderRadius: "8px",
-                      background: "#f59e0b",
-                      color: "#1a1a1a",
-                      fontWeight: 700,
-                      fontSize: "0.82rem",
-                      textDecoration: "none",
-                    }}
-                  >
-                    🔒 Amazon
-                  </a>
-                )}
-                <Link
+<Link
                   href={`/producten/${p.slug}`}
                   style={{
                     display: "inline-block",
