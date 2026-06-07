@@ -109,7 +109,9 @@
       "Bash(awk '/slug: \"philips-hue-vs-ikea-tradfri\"/{found=1} found && /content: \\\\\\(/{print NR; exit}' data/blog.js)",
       "Bash(awk 'NR==3586{found=1} found && /^\\\\s*\\\\\\),/{print NR; exit}' data/blog.js)",
       "Bash(python3)",
-      "Bash(python3 scripts/update-hue-ikea.py)"
+      "Bash(python3 scripts/update-hue-ikea.py)",
+      "Bash(cat .env.local)",
+      "Bash(cat .env)"
     ]
   }
 }
