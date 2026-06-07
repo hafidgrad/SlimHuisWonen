@@ -103,7 +103,13 @@
       "Bash(sed -i '6190s/datePublished: \"2026-04-20\"/datePublished: \"2026-03-03\"/' data/blog.js)",
       "Bash(sed -i '6437s/datePublished: \"2026-04-20\"/datePublished: \"2026-04-14\"/' data/blog.js)",
       "Bash(sed -i '2589s/datePublished: \"2026-05-01\"/datePublished: \"2026-05-08\"/' data/aanraders.js)",
-      "Bash(sed -i '2671s/datePublished: \"2026-05-01\"/datePublished: \"2026-05-15\"/' data/aanraders.js)"
+      "Bash(sed -i '2671s/datePublished: \"2026-05-01\"/datePublished: \"2026-05-15\"/' data/aanraders.js)",
+      "Bash(awk -F: '{print NR, $1}')",
+      "Bash(awk '$2 > 3590 {print; exit}')",
+      "Bash(awk '/slug: \"philips-hue-vs-ikea-tradfri\"/{found=1} found && /content: \\\\\\(/{print NR; exit}' data/blog.js)",
+      "Bash(awk 'NR==3586{found=1} found && /^\\\\s*\\\\\\),/{print NR; exit}' data/blog.js)",
+      "Bash(python3)",
+      "Bash(python3 scripts/update-hue-ikea.py)"
     ]
   }
 }

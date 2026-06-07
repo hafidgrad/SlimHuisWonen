@@ -3503,12 +3503,12 @@ export const blogPosts = [
   title: "Philips Hue vs IKEA (2026): welke slimme verlichting kies je?",
   seoTitle: "Philips Hue vs IKEA DIRIGERA",
   toc: [
-    { id: "vergelijking-overzicht", label: "Snel overzicht" },
+    { id: "grootste-verschillen", label: "Grootste verschillen" },
     { id: "philips-hue", label: "Philips Hue" },
-    { id: "ikea-zigbee", label: "IKEA Zigbee (TRÅDFRI/DIRIGERA)" },
-    { id: "kosten", label: "Wat kost het in totaal?" },
-    { id: "werken-samen", label: "Werken ze samen?" },
-    { id: "conclusie", label: "Mijn conclusie" },
+    { id: "ikea-dirigera", label: "IKEA DIRIGERA/Zigbee" },
+    { id: "samen-werken", label: "Werken ze samen?" },
+    { id: "kosten", label: "Wat kost het?" },
+    { id: "eerlijk-advies", label: "Mijn eerlijk advies" },
     { id: "faq", label: "Veelgestelde vragen" },
   ],
   description:
@@ -3523,29 +3523,24 @@ export const blogPosts = [
 
   faq: [
     {
-      question: "Is Philips Hue beter dan IKEA?",
+      question: "Werken Philips Hue en IKEA lampen samen?",
       answer:
-        "Philips Hue is stabieler en heeft een betere app, maar is ook bijna twee keer zo duur. IKEA is de betere keuze als je wil beginnen met een beperkt budget. Voor grotere installaties (15+ lampen) is Hue merkbaar betrouwbaarder.",
+        "Ja, via een hub zoals Homey Pro of Home Assistant werken ze naast elkaar. Via Matter is dit ook mogelijk zonder hub.",
     },
     {
-      question: "Kan ik IKEA-lampen koppelen aan de Philips Hue Bridge?",
+      question: "Heb ik een hub nodig voor IKEA slimme lampen?",
       answer:
-        "Ja, oudere TRÅDFRI lampen werken via Zigbee met de Hue Bridge. Let op: IKEA KAJPLATS lampen zijn Matter-only en werken niet via Zigbee. Voor de meest stabiele combinatie gebruik je een onafhankelijke hub zoals Homey Pro.",
+        "Niet altijd — IKEA-lampen met Matter werken ook zonder hub via je telefoon. Voor automatiseringen en stabiliteit is een hub (DIRIGERA, Homey of HA) wel aan te raden.",
     },
     {
-      question: "Wat kost het om te beginnen met Philips Hue?",
+      question: "Wat is beter voor Homey Pro: Hue of IKEA?",
       answer:
-        "Een Hue Bridge kost circa €60. Daarna zijn losse E27-lampen (wit) beschikbaar vanaf €20. Een starterkit met bridge + 2 lampen kost rond de €90–110. Daarna kun je individuele lampen toevoegen.",
+        "Beide werken uitstekend via Zigbee met Homey Pro. IKEA is goedkoper per lamp, Hue geeft een betere lichtervaring. Persoonlijk gebruik ik IKEA voor basislampen en zou Hue kiezen voor de woonkamer als sfeerverlichting.",
     },
     {
-      question: "Werken IKEA-lampen ook zonder de DIRIGERA hub?",
+      question: "Is Philips Hue de moeite waard?",
       answer:
-        "Ja. Oudere TRÅDFRI lampen werken via Zigbee direct met Homey Pro of Home Assistant, zonder IKEA hub. De DIRIGERA is alleen nodig als je de IKEA Home Smart-app wil gebruiken of Matter-apparaten wil koppelen.",
-    },
-    {
-      question: "Is Innr een goed alternatief voor Philips Hue?",
-      answer:
-        "Ja. Innr gebruikt hetzelfde Zigbee-protocol als Hue, is compatibel met de Hue Bridge en biedt vergelijkbare lichtkleurkwaliteit voor een lagere prijs (€15–18 vs €20–25). Het nadeel is dat Innr geen eigen hub of app heeft.",
+        "Als lichtervaring belangrijk voor je is: ja. De dimkwaliteit, kleurnauwkeurigheid en het assortiment zijn duidelijk beter. Als je gewoon een lamp wilt die je kunt dimmen en automatiseren, is IKEA prima.",
     },
   ],
 
@@ -3555,34 +3550,34 @@ export const blogPosts = [
     mainEntity: [
       {
         "@type": "Question",
-        name: "Is Philips Hue beter dan IKEA?",
+        name: "Werken Philips Hue en IKEA lampen samen?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Philips Hue is kwalitatief beter en heeft een uitgebreidere app en assortiment, maar is aanzienlijk duurder. IKEA DIRIGERA biedt een solide budget-ecosysteem, en de nieuwe IKEA KAJPLATS-lijn (2026) is de goedkoopste manier om Matter-over-Thread verlichting te kopen — vanaf €5 per lamp.",
+          text: "Ja, via een hub zoals Homey Pro of Home Assistant werken ze naast elkaar. Via Matter is dit ook mogelijk zonder hub.",
         },
       },
       {
         "@type": "Question",
-        name: "Wat is IKEA KAJPLATS?",
+        name: "Heb ik een hub nodig voor IKEA slimme lampen?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "KAJPLATS is IKEA's nieuwe verlichtingslijn (april 2026) die werkt via Matter over Thread. Dit maakt de lampen compatibel met elk groot smart home platform — Google Home, Apple HomeKit, Amazon Alexa — zonder exclusieve IKEA-hub. Prijzen starten vanaf €5.",
+          text: "Niet altijd — IKEA-lampen met Matter werken ook zonder hub via je telefoon. Voor automatiseringen en stabiliteit is een hub (DIRIGERA, Homey of HA) wel aan te raden.",
         },
       },
       {
         "@type": "Question",
-        name: "Werkt IKEA Tradfri nog in 2026?",
+        name: "Wat is beter voor Homey Pro: Hue of IKEA?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "De oude Tradfri gateway is end-of-life en wordt niet meer ondersteund. Je Tradfri-lampen werken nog wel, maar dan via de DIRIGERA hub (Zigbee-compatibel). Koppel ze opnieuw via de IKEA Home smart app. Een Matter-upgrade is voor Tradfri-apparaten niet mogelijk.",
+          text: "Beide werken uitstekend via Zigbee met Homey Pro. IKEA is goedkoper per lamp, Hue geeft een betere lichtervaring.",
         },
       },
       {
         "@type": "Question",
-        name: "Werken Philips Hue en IKEA samen?",
+        name: "Is Philips Hue de moeite waard?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Niet direct via hun eigen bridges, maar via Matter kun je beide systemen combineren in Google Home, Apple HomeKit of Amazon Alexa. Via een universele hub zoals Homey of Home Assistant is dit ook mogelijk.",
+          text: "Als lichtervaring belangrijk voor je is: ja. De dimkwaliteit, kleurnauwkeurigheid en het assortiment zijn duidelijk beter. Als je gewoon een lamp wilt die je kunt dimmen en automatiseren, is IKEA prima.",
         },
       },
     ],
@@ -3591,181 +3586,169 @@ export const blogPosts = [
   content: (
     <>
       <p className="section-intro">
-        Philips Hue en IKEA zijn de twee populairste slimme verlichtingssystemen in Nederland.
-        Maar IKEA heeft in 2025-2026 grote stappen gezet: de oude Tradfri-gateway is afgeschaft,
-        het DIRIGERA-ecosysteem is verder uitgebreid, en in april 2026 lanceerde IKEA de
-        gloednieuwe KAJPLATS-lijn met Matter over Thread. Het landschap is compleet veranderd —
-        dit is de actuele vergelijking.
+        Philips Hue of IKEA slimme verlichting — het is de vraag die ik het vaakst krijg.
+        Ik gebruik zelf IKEA Zigbee-lampen gekoppeld aan Homey Pro, maar heb ook
+        Philips Hue uitgebreid getest. In dit artikel leg ik eerlijk uit wat het verschil
+        is, wanneer Hue de meerprijs waard is en wanneer IKEA slim genoeg is.
       </p>
 
-      <h2>Philips Hue — de premium keuze</h2>
+      <h2 id="grootste-verschillen">Wat zijn de grootste verschillen?</h2>
       <p>
-        Philips Hue is marktleider in slimme verlichting. De lampen zijn betrouwbaar, de app is
-        uitstekend en er is een enorm assortiment. Hue-lampen gebruiken Zigbee en werken via de
-        Hue Bridge. Ze zijn ook compatibel met Matter, Apple HomeKit, Google Home en Amazon Alexa.
-      </p>
-      <ul>
-        <li><strong>Kwaliteit:</strong> uitstekend kleurweergave (CRI {'>'} 80)</li>
-        <li><strong>App:</strong> een van de beste in de markt — uitgebreide automatiseringen, scenes en routines</li>
-        <li><strong>Assortiment:</strong> honderden lampen, strips, spotjes, buitenverlichting</li>
-        <li><strong>Prijs:</strong> duur — starterkit ~€60-€80, losse lampen ~€20-€25</li>
-        <li><strong>Protocollen:</strong> Zigbee + Matter (via Hue Bridge als Matter Controller)</li>
-      </ul>
-
-      <h2>IKEA DIRIGERA — het complete budgetecosysteem</h2>
-      <p>
-        IKEA heeft de verouderde Tradfri-gateway volledig vervangen door de{" "}
-        <strong>DIRIGERA hub (€69)</strong>. Dit is een moderne hub die zowel als{" "}
-        <strong>Matter Controller</strong> als <strong>Thread Border Router</strong> fungeert.
-        De app (IKEA Home smart) is functioneel maar beperkter dan de Hue-app. Alle bestaande
-        Tradfri-lampen werken nog via Zigbee op DIRIGERA.
-      </p>
-      <ul>
-        <li><strong>Hub:</strong> DIRIGERA (€69) — Matter Controller + Thread Border Router</li>
-        <li><strong>Kwaliteit:</strong> goed voor de prijs</li>
-        <li><strong>App:</strong> functioneel, basisautomatiseringen, minder uitgebreid dan Hue</li>
-        <li><strong>Prijs lampen:</strong> ~€10-€15 per lamp</li>
-        <li><strong>Protocollen:</strong> Zigbee (bestaande lampen) + Matter</li>
-      </ul>
-
-      <h2>IKEA KAJPLATS — de nieuwste Matter-lijn (april 2026)</h2>
-      <p>
-        In april 2026 lanceerde IKEA de <strong>KAJPLATS</strong>-lijn in Nederland: 21 nieuwe
-        verlichtingsproducten die werken via <strong>Matter over Thread</strong>. Dit betekent dat
-        ze direct compatibel zijn met Google Home, Apple HomeKit en Amazon Alexa — zonder dat je
-        een IKEA-hub nodig hebt.
-      </p>
-      <ul>
-        <li><strong>Prijzen:</strong> vanaf €5 — de goedkoopste Matter-lampen op de markt</li>
-        <li><strong>Protocol:</strong> Matter over Thread (mesh-netwerk, laag stroomverbruik)</li>
-        <li><strong>Geen IKEA-hub nodig:</strong> werkt met elke Matter-compatibele hub</li>
-        <li><strong>Assortiment:</strong> 21 producten — peertjes, spotjes, strips</li>
-        <li><strong>Beschikbaar:</strong> IKEA Nederland, april 2026</li>
-      </ul>
-      <p>
-        KAJPLATS is interessant als je al een Matter-hub hebt (Google Nest Hub, Apple HomePod,
-        Homey Pro) en de goedkoopst mogelijke slimme lampen wilt. Je bent dan niet gebonden aan
-        het IKEA-ecosysteem.
+        Het korte antwoord: Philips Hue is beter in bijna alles — maar kost ook 2 tot 3
+        keer zoveel. IKEA is verrassend goed voor de prijs, zeker als je{" "}
+        <Link href="/blog/wat-is-zigbee">Zigbee</Link> gebruikt via een hub zoals{" "}
+        <Link href="/aanraders/beste-smart-home-hub">Homey Pro of Home Assistant</Link>.
       </p>
 
-      <h2>Wat gebeurt er met IKEA Tradfri?</h2>
-      <p>
-        De oude Tradfri gateway is <strong>end-of-life</strong> en wordt niet langer ondersteund.
-        Wat betekent dit voor jou?
-      </p>
-      <ul>
-        <li>Je Tradfri-lampen werken nog gewoon — ze zijn Zigbee-compatibel met DIRIGERA</li>
-        <li>Koppel ze opnieuw via de IKEA Home smart app aan de DIRIGERA hub</li>
-        <li>Een <strong>Matter-upgrade</strong> voor Tradfri-apparaten is niet mogelijk — ze blijven Zigbee</li>
-        <li>Nieuwe IKEA-aankopen: kies DIRIGERA-lijn of de nieuwe KAJPLATS Matter-lijn</li>
-      </ul>
-
-      <h2>Directe vergelijking: drie opties naast elkaar</h2>
       <div style={{ overflowX: "auto", marginBottom: "1.5rem" }}>
         <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
           <thead>
             <tr style={{ background: "#f1f5f9" }}>
-              <th style={{ padding: "0.6rem 0.75rem", textAlign: "left", borderBottom: "2px solid #e2e8f0" }}>Eigenschap</th>
+              <th style={{ padding: "0.6rem 0.75rem", textAlign: "left", borderBottom: "2px solid #e2e8f0" }}>Onderdeel</th>
               <th style={{ padding: "0.6rem 0.75rem", textAlign: "left", borderBottom: "2px solid #e2e8f0" }}>Philips Hue</th>
-              <th style={{ padding: "0.6rem 0.75rem", textAlign: "left", borderBottom: "2px solid #e2e8f0" }}>IKEA DIRIGERA</th>
-              <th style={{ padding: "0.6rem 0.75rem", textAlign: "left", borderBottom: "2px solid #e2e8f0" }}>IKEA KAJPLATS</th>
+              <th style={{ padding: "0.6rem 0.75rem", textAlign: "left", borderBottom: "2px solid #e2e8f0" }}>IKEA (DIRIGERA)</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}><strong>Lichtkleur</strong></td>
-              <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}>Uitstekend</td>
-              <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}>Goed</td>
-              <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}>Goed</td>
-            </tr>
-            <tr style={{ background: "#f8fafc" }}>
-              <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}><strong>App</strong></td>
-              <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}>Uitstekend</td>
-              <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}>Functioneel</td>
-              <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}>Via Matter-hub</td>
-            </tr>
-            <tr>
-              <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}><strong>Prijs lamp</strong></td>
-              <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}>€20-€25</td>
-              <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}>€10-€15</td>
-              <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}>Vanaf €5</td>
-            </tr>
-            <tr style={{ background: "#f8fafc" }}>
-              <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}><strong>Hub nodig</strong></td>
-              <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}>Hue Bridge (€60)</td>
-              <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}>DIRIGERA (€69)</td>
-              <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}>Elke Matter-hub</td>
-            </tr>
-            <tr>
-              <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}><strong>Protocol</strong></td>
-              <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}>Zigbee + Matter</td>
-              <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}>Zigbee + Matter</td>
-              <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}>Matter over Thread</td>
-            </tr>
-            <tr style={{ background: "#f8fafc" }}>
-              <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}><strong>Assortiment</strong></td>
-              <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}>Enorm (honderden)</td>
-              <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}>Groot</td>
-              <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}>21 producten (groeiend)</td>
-            </tr>
-            <tr>
-              <td style={{ padding: "0.5rem 0.75rem" }}><strong>Integraties</strong></td>
-              <td style={{ padding: "0.5rem 0.75rem" }}>HomeKit, Google, Alexa, Matter</td>
-              <td style={{ padding: "0.5rem 0.75rem" }}>Google, Alexa, Matter</td>
-              <td style={{ padding: "0.5rem 0.75rem" }}>HomeKit, Google, Alexa (Matter)</td>
-            </tr>
+            {[
+              ["Prijs losse lamp (E27)", "~€22–€25", "~€10–€13"],
+              ["Starterkit", "~€65–€80", "~€30–€40"],
+              ["Protocol", "Zigbee + Matter", "Zigbee + Matter"],
+              ["Hub nodig", "Hue Bridge (of Matter)", "DIRIGERA (of Matter)"],
+              ["App kwaliteit", "Uitstekend", "Functioneel"],
+              ["Kleurweergave (CRI)", ">80, rijke kleuren", "Goed, iets minder levendig"],
+              ["Assortiment", "300+ producten", "Beperkt"],
+              ["Compatibiliteit Homey/HA", "Ja", "Ja"],
+              ["Buitenverlichting", "Uitgebreid", "Nauwelijks"],
+              ["Strips en accenten", "Uitgebreid", "Beperkt"],
+            ].map(([feature, hue, ikea], i) => (
+              <tr key={feature} style={{ background: i % 2 === 1 ? "#f8fafc" : "white" }}>
+                <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}><strong>{feature}</strong></td>
+                <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}>{hue}</td>
+                <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}>{ikea}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
 
-      <h2>Wanneer kies je Philips Hue?</h2>
-      <ul>
-        <li>Je wilt de beste lichtervaring, kleurweergave en scenes</li>
-        <li>Je wilt een uitgebreide app met geavanceerde automatiseringen</li>
-        <li>Je wilt een enorm assortiment: strips, buitenverlichting, spotjes, sfeerlampen</li>
-        <li>Kwaliteit staat boven prijs</li>
-      </ul>
-
-      <h2>Wanneer kies je IKEA DIRIGERA?</h2>
-      <ul>
-        <li>Je wilt een compleet budget smart home verlichtingssysteem</li>
-        <li>Je hebt al Tradfri-lampen en wilt die hergebruiken via de nieuwe hub</li>
-        <li>Je wilt basisfuncties: aan/uit, dimmen, schema's — zonder grote investering</li>
-        <li>Je wilt één IKEA-ecosysteem beheren via de IKEA Home smart app</li>
-      </ul>
-
-      <h2>Wanneer kies je IKEA KAJPLATS?</h2>
-      <ul>
-        <li>Je hebt al een Matter-compatibele hub (Google Nest Hub, Apple HomePod, Homey Pro)</li>
-        <li>Je wilt zo goedkoop mogelijk slimme lampen — vanaf €5</li>
-        <li>Je wilt niet gebonden zijn aan één merk of ecosysteem</li>
-        <li>Je wilt toekomstbestendige{" "}<Link href="/blog/wat-is-matter">Matter</Link>-lampen met Thread-mesh</li>
-      </ul>
-
-      <h2>Conclusie: drie richtingen</h2>
+      <h2 id="philips-hue">Philips Hue — wat je krijgt voor de hogere prijs</h2>
       <p>
-        De keuze is niet langer zwart-wit tussen Hue en IKEA. Er zijn nu drie duidelijke opties:
+        Philips Hue is marktleider en dat is niet voor niets. De lampen hebben een
+        hogere kleurnauwkeurigheid, het wit licht is warmer en natureller, en de app
+        is een van de beste in de markt. Wat me persoonlijk opvalt: Hue-lampen dimmen
+        soepeler, zonder dat ze flikker of kleurwisseling tonen bij lage helderheid —
+        iets wat goedkopere lampen wél doen.
       </p>
-      <ul>
-        <li>
-          <strong>Beste kwaliteit:</strong> Philips Hue — ongeëvenaard in lichtervaring, app en assortiment,
-          maar premium geprijsd
-        </li>
-        <li>
-          <strong>Budget-ecosysteem:</strong> IKEA DIRIGERA — degelijk, compleet en goedkoper dan Hue,
-          ideaal als startpunt
-        </li>
-        <li>
-          <strong>Goedkoopste Matter-optie:</strong> IKEA KAJPLATS — perfect als je al een Matter-hub hebt
-          en de laagste prijs per lamp wilt
-        </li>
-      </ul>
       <p>
-        Wil je meer opties vergelijken? Bekijk onze{" "}
-        <Link href="/aanraders/beste-slimme-verlichting">
-          volledige koopgids slimme verlichting
-        </Link>
-        .
+        Het assortiment is enorm: naast E27-lampen zijn er GU10-spots, LED-strips,
+        wandlampen, buitenverlichting, plafondspots en decoratieve lampen. Als je een
+        compleet systeem wilt dat ook buiten en in de badkamer werkt, is Hue de
+        makkelijkste keuze.
+      </p>
+      <p>
+        De Hue Bridge ondersteunt tot 50 lampen en werkt ook zonder internet — dat is
+        een groot voordeel voor automatiseringen.
+      </p>
+      <p><strong>Hue is de beste keuze als:</strong></p>
+      <ul>
+        <li>Je lichtervaring echt belangrijk vindt (kleur, dimmen, sfeer)</li>
+        <li>Je een volledig ecosysteem wilt met spots, strips én buitenverlichting</li>
+        <li>Je de app dagelijks gebruikt en er plezier aan beleeft</li>
+        <li>Budget geen grote rol speelt</li>
+      </ul>
+
+      <h2 id="ikea-dirigera">IKEA DIRIGERA / Zigbee — slimmer dan je denkt</h2>
+      <p>
+        IKEA-verlichting heeft een slechte reputatie die het al een tijdje niet meer
+        verdient. De nieuwe IKEA-lampen (TRÅDFRI en DIRIGERA-lijn) zijn degelijk,
+        verbinden stabiel via{" "}
+        <Link href="/blog/wat-is-zigbee">Zigbee</Link> en werken prima samen met
+        Homey Pro en Home Assistant.
+      </p>
+      <p>
+        Zelf gebruik ik IKEA E27-lampen in de woonkamer en slaapkamer, gekoppeld
+        aan Homey Pro via Zigbee. Die werken al meer dan een jaar zonder één
+        verbindingsprobleem. Voor €12 per lamp is dat uitstekend.
+      </p>
+      <p>
+        Wat IKEA wel mist: een rijk assortiment buiten de basislampen, goede
+        buitenverlichting en de verfijnde app-ervaring van Hue. De DIRIGERA-hub is
+        functioneel maar biedt weinig geavanceerde automatiseringsopties vergeleken
+        met Hue of Homey.
+      </p>
+      <p><strong>IKEA is de beste keuze als:</strong></p>
+      <ul>
+        <li>Je goedkoop wilt starten zonder veel risico</li>
+        <li>Je Zigbee-lampen koppelt aan Homey Pro of Home Assistant</li>
+        <li>Je basisfuncties (aan/uit, dimmen, kleur) voldoende vindt</li>
+        <li>Je meerdere kamers wilt verlichten zonder veel geld uit te geven</li>
+      </ul>
+
+      <h2 id="samen-werken">Kunnen Hue en IKEA samen werken?</h2>
+      <p>
+        Ja — en dit is wat ik zelf doe. Via Homey Pro of Home Assistant werken Hue
+        en IKEA Zigbee-lampen prima naast elkaar. Je kunt ze in dezelfde
+        automatisering gebruiken, dezelfde scènes aansturen en zelfs in dezelfde
+        groep zetten.{" "}
+        <Link href="/blog/wat-is-matter">Matter</Link> maakt dit ook mogelijk zonder
+        hub, maar via Homey of HA heb je veel meer controle.
+      </p>
+      <p>
+        Wil je starten met IKEA en later uitbreiden met Hue-spots in de woonkamer?
+        Dat werkt gewoon.
+      </p>
+
+      <h2 id="kosten">Wat kost het als je een hele woning wilt verlichten?</h2>
+      <p>Stel je wilt 10 lampen in je woonkamer en slaapkamer:</p>
+
+      <div style={{ overflowX: "auto", marginBottom: "1.5rem" }}>
+        <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
+          <thead>
+            <tr style={{ background: "#f1f5f9" }}>
+              <th style={{ padding: "0.6rem 0.75rem", textAlign: "left", borderBottom: "2px solid #e2e8f0" }}>Scenario</th>
+              <th style={{ padding: "0.6rem 0.75rem", textAlign: "left", borderBottom: "2px solid #e2e8f0" }}>Kosten lampen</th>
+              <th style={{ padding: "0.6rem 0.75rem", textAlign: "left", borderBottom: "2px solid #e2e8f0" }}>Hub</th>
+              <th style={{ padding: "0.6rem 0.75rem", textAlign: "left", borderBottom: "2px solid #e2e8f0" }}>Totaal</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ["Philips Hue (10x E27 + Bridge)", "~€220", "~€60", "~€280"],
+              ["IKEA DIRIGERA (10x E27 + hub)", "~€110", "~€70", "~€180"],
+              ["IKEA Zigbee via Homey Pro", "~€110", "~€399", "~€510"],
+              ["IKEA Zigbee via bestaande Homey", "~€110", "€0", "~€110"],
+            ].map(([scenario, lampen, hub, totaal], i) => (
+              <tr key={scenario} style={{ background: i % 2 === 1 ? "#f8fafc" : "white" }}>
+                <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}>{scenario}</td>
+                <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}>{lampen}</td>
+                <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}>{hub}</td>
+                <td style={{ padding: "0.5rem 0.75rem", borderBottom: "1px solid #e2e8f0" }}>{totaal}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        De Homey Pro-optie is duurder in aanschaf, maar als je Homey al hebt of
+        toch een uitgebreid smart home wilt bouwen, zijn de IKEA-lampen de goedkoopste
+        keuze met de beste uitbreidbaarheid.
+      </p>
+
+      <h2 id="eerlijk-advies">Mijn eerlijke advies</h2>
+      <p>
+        Gebruik IKEA als je wilt beginnen of een groot aantal lampen wilt neerzetten
+        zonder veel geld uit te geven — zeker als je ze koppelt aan Homey Pro of
+        Home Assistant. Kies Philips Hue als lichtervaring en een compleet
+        ecosysteem belangrijker zijn dan prijs.
+      </p>
+      <p>
+        En als je twijfelt: begin met 2 IKEA-lampen. Als je na een maand meer wilt
+        en de kwaliteit wil upgraden, kun je altijd nog Hue-lampen toevoegen.
+        Ze werken via{" "}
+        <Link href="/blog/zigbee-vs-wifi-lampen">Zigbee of Matter</Link> gewoon naast
+        elkaar.
       </p>
     </>
   ),
