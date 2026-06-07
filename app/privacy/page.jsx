@@ -59,8 +59,8 @@ export default function PrivacyPage() {
             </li>
             <li>
               <strong>Affiliate-links naar webshops</strong> — als je via een
-              link op deze site naar een webshop (zoals Amazon, bol.com of
-              Coolblue) gaat, verwerkt die webshop je gegevens conform hun eigen
+              link op deze site naar een webshop (zoals bol.com of Coolblue)
+              gaat, verwerkt die webshop je gegevens conform hun eigen
               privacybeleid.
             </li>
           </ul>
@@ -74,7 +74,7 @@ export default function PrivacyPage() {
           <h2>4. Affiliate partnerprogramma's</h2>
           <p>
             SlimHuisWonen.nl neemt deel aan affiliate-programma's van webshops
-            zoals Amazon, bol.com en Coolblue. Dit betekent dat wij een kleine
+            zoals bol.com en Coolblue. Dit betekent dat wij een kleine
             commissie ontvangen als je via onze links een product koopt. Voor
             jou verandert er niets aan de prijs.
           </p>
@@ -93,7 +93,7 @@ export default function PrivacyPage() {
           </p>
           <p>
             Voor vragen over jouw rechten of de verwerking via externe diensten
-            (Google, Amazon, bol.com) kun je contact opnemen via onze{" "}
+            (Google, bol.com, Coolblue) kun je contact opnemen via onze{" "}
             <Link href="/contact">contactpagina</Link>.
           </p>
 

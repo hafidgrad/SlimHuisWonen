@@ -8,30 +8,11 @@ import { blogPosts } from "@/data/blog";
 import { getProductBySlug } from "@/data/products";
 import { getBolUrl, getCoolblueUrl } from "@/lib/bol-api";
 import BuyGuideProductCard from "@/components/BuyGuideProductCard";
-import AmazonSearchCta from "@/components/AmazonSearchCta";
+import SearchCta from "@/components/AmazonSearchCta";
 import RelatedContent from "@/components/RelatedContent";
 import BannerImage from "@/components/BannerImage";
 import TableOfContents from "@/components/TableOfContents";
 import FaqSection from "@/components/FaqSection";
-
-/* ================= Amazon zoekterm mapping ================= */
-
-const KOOPGIDS_AMAZON_TERMS = {
-  "beste-slimme-camera": "slimme beveiligingscamera wifi",
-  "beste-slimme-stekkers": "slimme stekker wifi",
-  "beste-slimme-verlichting": "slimme verlichting",
-  "beste-smart-home-hub": "smart home hub",
-  "beste-slimme-deurbel": "slimme deurbel met camera",
-  "beste-slimme-thermostaat": "slimme thermostaat",
-  "beste-slimme-bewegingssensor": "slimme bewegingssensor zigbee",
-  "beste-mesh-wifi-systeem": "mesh wifi systeem",
-  "beste-slimme-slot": "slim deurslot",
-  "beste-energie-monitor": "slimme energiemeter p1",
-};
-
-function getAmazonSearchTerm(slug) {
-  return KOOPGIDS_AMAZON_TERMS[slug] ?? slug.replace(/-/g, " ");
-}
 
 /* ================= METADATA ================= */
 
@@ -92,7 +73,7 @@ export default function AanraderDetailPage({ params }) {
     ...relatedGuides.map((item) => ({ ...item, basePath: "aanraders" })),
   ];
 
-  const amazonSearchTerm = getAmazonSearchTerm(params.slug);
+  const searchTerm = params.slug.replace(/-/g, " ");
 
   /* Inhoudsopgave items */
   const tocItems = [
@@ -119,11 +100,7 @@ export default function AanraderDetailPage({ params }) {
 
     return {
       ...pick,
-      amazonUrl: hasActionUrl
-        ? null
-        : product?.affiliateUrl ||
-          pick.amazonUrl ||
-          `https://www.amazon.nl/s?k=${searchQuery}&tag=slimhuiswonen-21`,
+      amazonUrl: null,
       bolUrl: hasActionUrl
         ? null
         : resolvedBolUrl || pick.bolUrl || awinBolFallback,
@@ -437,7 +414,7 @@ export default function AanraderDetailPage({ params }) {
               </div>
             </div>
           ) : (
-            <AmazonSearchCta searchTerm={amazonSearchTerm} />
+            <SearchCta searchTerm={searchTerm} />
           )}
         </div>
       </main>

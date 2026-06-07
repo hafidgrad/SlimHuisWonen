@@ -27,7 +27,7 @@ function PopulaireProducten() {
       <div className="container">
         <h2>Populaire producten</h2>
         <p className="section-intro">
-          Bestel via Amazon, bol.com of Coolblue — meest bekeken producten op SlimHuisWonen.
+          Bestel via bol.com of Coolblue — meest bekeken producten op SlimHuisWonen.
         </p>
 
         <div
@@ -114,18 +114,6 @@ function PopulaireProducten() {
                     </a>
                   )}
 
-                  {p.affiliateUrl && (
-                    <a
-                      href={p.affiliateUrl}
-                      target="_blank"
-                      rel="nofollow sponsored noopener noreferrer"
-                      className="btn btn-amazon product-btn"
-                      style={{ fontSize: "0.8rem", padding: "0.45rem 0.75rem" }}
-                    >
-                      Bekijk op Amazon
-                    </a>
-                  )}
-
                   <Link
                     href={`/producten/${p.slug}`}
                     className="product-details-link"
@@ -135,7 +123,7 @@ function PopulaireProducten() {
                   </Link>
                 </div>
                 <div style={{ position: "relative", zIndex: 1 }}>
-                  {[bolUrl, coolblueUrl, p.affiliateUrl].filter(Boolean).length >= 2 && <PrijsDisclaimer />}
+                  {[bolUrl, coolblueUrl].filter(Boolean).length >= 2 && <PrijsDisclaimer />}
                 </div>
               </article>
             );

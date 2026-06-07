@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
     ? baseDesc
     : (() => {
         const features = product.features?.slice(0, 2).join(", ") || "";
-        return `${product.name} kopen? Vergelijk prijzen bij bol.com, Coolblue en Amazon.${features ? ` ${features}.` : ""} Onafhankelijk advies van SlimHuisWonen.`;
+        return `${product.name} kopen? Vergelijk prijzen bij bol.com en Coolblue.${features ? ` ${features}.` : ""} Onafhankelijk advies van SlimHuisWonen.`;
       })();
 
   const shouldNoindex = NOINDEX_CATEGORIES.has(product.category);
@@ -67,13 +67,6 @@ function extractVideoId(url) {
 }
 
 /* ---------- Helpers ---------- */
-const getAmazonUrl = (p) =>
-  p?.affiliateUrl ||
-  p?.amazonUrl ||
-  p?.amazonLink ||
-  p?.url ||
-  null;
-
 function parsePriceHint(hint) {
   if (!hint) return null;
   const match = hint.replace(",", ".").match(/[\d.]+/);
@@ -108,7 +101,6 @@ export default function ProductPage({ params }) {
     compatibility = {},
   } = product;
 
-  const amazonUrl   = getAmazonUrl(product);
   const bolUrl      = getBolUrl(product);
   const coolblueUrl = getCoolblueUrl(product);
   const videoId     = getVideoId(product);
@@ -312,9 +304,9 @@ export default function ProductPage({ params }) {
               </p>
             )}
 
-            {/* ✅ Knoppen: bol.com + Coolblue + Amazon */}
-            {(bolUrl || coolblueUrl || amazonUrl) && (() => {
-              const aantalLinks = [bolUrl, coolblueUrl, amazonUrl].filter(Boolean).length;
+            {/* ✅ Knoppen: bol.com + Coolblue */}
+            {(bolUrl || coolblueUrl) && (() => {
+              const aantalLinks = [bolUrl, coolblueUrl].filter(Boolean).length;
               return (
                 <div style={{ marginTop: "1.5rem" }}>
                   <div className="product-actions" style={{ flexDirection: "row", flexWrap: "wrap" }}>
@@ -338,17 +330,6 @@ export default function ProductPage({ params }) {
                         style={{ width: "auto" }}
                       >
                         Bekijk op Coolblue
-                      </a>
-                    )}
-                    {amazonUrl && (
-                      <a
-                        href={amazonUrl}
-                        target="_blank"
-                        rel="nofollow sponsored noopener noreferrer"
-                        className="btn btn-amazon product-btn"
-                        style={{ width: "auto" }}
-                      >
-                        Bekijk op Amazon
                       </a>
                     )}
                   </div>

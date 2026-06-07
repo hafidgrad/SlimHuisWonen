@@ -59,8 +59,8 @@ export default function CookiesPage() {
 
           <h3>Webshop cookies (derden)</h3>
           <p>
-            Als je klikt op een affiliate-link naar een webshop (zoals Amazon,
-            bol.com of Coolblue), kunnen die webshops cookies plaatsen op je
+            Als je klikt op een affiliate-link naar een webshop (zoals bol.com
+            of Coolblue), kunnen die webshops cookies plaatsen op je
             apparaat. Dit valt buiten onze controle en is onderworpen aan het
             cookiebeleid van de betreffende webshop.
           </p>

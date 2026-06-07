@@ -97,28 +97,16 @@ export default function BuyGuideProductCard({
         </div>
 
         {/* Secondary links */}
-        {!actionUrl && (coolblueUrl || amazonUrl) && (
+        {!actionUrl && coolblueUrl && (
           <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap", marginBottom: "0.5rem" }}>
-            {coolblueUrl && (
-              <a
-                href={coolblueUrl}
-                target="_blank"
-                rel="nofollow sponsored noopener noreferrer"
-                style={{ fontSize: "0.8rem", color: "#6b7280", textDecoration: "underline" }}
-              >
-                Ook bij Coolblue
-              </a>
-            )}
-            {amazonUrl && (
-              <a
-                href={amazonUrl}
-                target="_blank"
-                rel="nofollow sponsored noopener noreferrer"
-                style={{ fontSize: "0.8rem", color: "#6b7280", textDecoration: "underline" }}
-              >
-                Ook bij Amazon
-              </a>
-            )}
+            <a
+              href={coolblueUrl}
+              target="_blank"
+              rel="nofollow sponsored noopener noreferrer"
+              style={{ fontSize: "0.8rem", color: "#6b7280", textDecoration: "underline" }}
+            >
+              Ook bij Coolblue
+            </a>
           </div>
         )}
 

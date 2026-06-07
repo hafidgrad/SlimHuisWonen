@@ -24,7 +24,6 @@ export const products = [
       "Werkt met Alexa, Google en Siri",
       "Uitbreidbaar met extra lampen",
     ],
-    affiliateUrl: "https://www.amazon.nl/dp/B0991VHWSJ?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/pclick.php?p=38561477934&a=2855887&m=13813",
     rating: 4.7,
     priceHint: "€70 – €85",
@@ -46,7 +45,6 @@ export const products = [
     description:
       "Losse slimme E27 lamp met warm wit licht, dimbaar en app-gestuurd.",
     features: ["Warm wit licht", "Dimbaar", "Werkt met Hue Bridge"],
-    affiliateUrl: "https://www.amazon.nl/dp/B09TCNXYXJ?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/pclick.php?p=42367630896&a=2855887&m=13813",
     priceHint: "€15 – €20",
     priceLastUpdated: "april 2026",
@@ -63,7 +61,6 @@ export const products = [
     description:
       "Slimme lamp met wit én gekleurd licht, bedienbaar via Bluetooth of Hue Bridge.",
     features: ["16 miljoen kleuren", "Dimbaar", "Bluetooth & Bridge"],
-    affiliateUrl: "https://www.amazon.nl/dp/B099P3CP1K?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/pclick.php?p=42367630897&a=2855887&m=13813",
     priceHint: "€35 – €45",
     priceLastUpdated: "april 2026",
@@ -84,7 +81,6 @@ export const products = [
     description:
       "Flexibele LED-strip voor indirecte verlichting, uitbreidbaar en dimbaar.",
     features: ["Uitbreidbaar", "Wit & kleur", "Hue ecosysteem"],
-    affiliateUrl: "https://www.amazon.nl/dp/B088RX9CSZ?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F864282%2Fphilips-hue-lightstrip-plus-white-color-bluetooth-2m-basisset.html",
     priceHint: "€55 – €70",
     priceLastUpdated: "april 2026",
@@ -101,7 +97,6 @@ export const products = [
     description:
       "Betaalbare RGBIC LED-strip met app-bediening en muzieksynchronisatie.",
     features: ["RGBIC", "Muzieksync", "Geen hub nodig"],
-    affiliateUrl: "https://www.amazon.nl/dp/B09BN2PSR8?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DGovee%2520RGBIC%2520Pro%2520LED%2520Strip%2520(5%2520m)",
     priceHint: "€20 – €30",
     priceLastUpdated: "april 2026",
@@ -122,7 +117,6 @@ export const products = [
     description:
       "Slimme Wi-Fi lampen met kleur en wit licht, geen hub nodig.",
     features: ["Wi-Fi", "Kleur & wit", "Alexa & Google"],
-    affiliateUrl: "https://www.amazon.nl/dp/B08QRQQ53T?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F956290%2Ftp-link-tapo-l535e-wit-en-gekleurd-licht-e27.html",
     priceHint: "€18 – €25",
     priceLastUpdated: "april 2026",
@@ -143,7 +137,6 @@ export const products = [
     description:
       "Zigbee slimme lampen, compatibel met Philips Hue en SmartThings.",
     features: ["Zigbee", "Dimbaar", "Warm wit"],
-    affiliateUrl: "https://www.amazon.nl/dp/B0CHJQDRSY?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DInnr%2520Zigbee%2520E27%2520LED",
     priceHint: "€40 – €55",
     priceLastUpdated: "april 2026",
@@ -163,7 +156,6 @@ export const products = [
     image: "/images/products/tapo-l510e.png",
     description: "Dimbare slimme Wi-Fi lamp zonder hub.",
     features: ["Wi-Fi", "Dimbaar", "Geen hub nodig"],
-    affiliateUrl: "https://www.amazon.nl/dp/B087RZVBQW?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DTapo%2520L510E%2520Slimme%2520Wi-Fi%2520Lamp",
     priceHint: "€10 – €15",
     priceLastUpdated: "april 2026",
@@ -183,7 +175,6 @@ export const products = [
     image: "/images/products/aqara-deur-en-raamsensor-p2.png",
     description: "Zigbee contactsensor voor deuren en ramen.",
     features: ["Zigbee", "Compact", "Automatiseringen"],
-    affiliateUrl: "https://www.amazon.nl/dp/B0BTL8B72D?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DAqara%2520Deur-%2520%2526%2520Raamsensor",
     priceHint: "€15 – €20",
     priceLastUpdated: "april 2026",
@@ -203,8 +194,6 @@ export const products = [
   description:
     "Slimme bewegingssensor met Matter en Thread ondersteuning.",
   features: ["Bewegingsdetectie", "Matter", "Thread", "Automatisering"],
-  affiliateUrl:
-    "https://www.amazon.nl/Eve-Motion-Matter-bewegingssensor-automatische/dp/B0BZJLJZRM?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DEve%2520Motion%2520(Matter)",
   priceHint: "€35 – €42",
   priceLastUpdated: "april 2026",
@@ -225,7 +214,6 @@ export const products = [
     description:
       "Geavanceerde mmWave aanwezigheidssensor met zone-detectie.",
     features: ["mmWave radar", "Zone-detectie", "Zeer nauwkeurig"],
-    affiliateUrl: "https://www.amazon.nl/dp/B0BXWZMQJ3?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DAqara%2520FP2%2520Aanwezigheidssensor",
     priceHint: "€50 – €60",
     priceLastUpdated: "april 2026",
@@ -246,7 +234,6 @@ export const products = [
     description:
       "Temperatuur- en luchtvochtigheidssensor voor slimme automatiseringen.",
     features: ["Temperatuur", "Luchtvochtigheid", "Zigbee"],
-    affiliateUrl: "https://www.amazon.nl/dp/B0DM23Q1VB?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DAqara%2520Temperatuur%2520%2526%2520RV%2520Sensor%2520T1",
     priceHint: "€14 – €18",
     priceLastUpdated: "april 2026",
@@ -263,7 +250,6 @@ export const products = [
     description:
       "Contactsensor voor deuren en ramen binnen het Tapo ecosysteem.",
     features: ["Deur / raam detectie", "Slimme meldingen", "Automatiseringen"],
-    affiliateUrl: "https://www.amazon.nl/dp/B0BF5MC9QX?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/pclick.php?p=44127004388&a=2855887&m=13813",
     priceHint: "€12 – €15",
     priceLastUpdated: "april 2026",
@@ -279,7 +265,6 @@ export const products = [
     image: "/images/products/aqara-waterleksensor.png",
     description: "Detecteert waterlekken en waarschuwt direct via app.",
     features: ["Waterdetectie", "Zigbee", "Automatiseringen"],
-    affiliateUrl: "https://www.amazon.nl/dp/B0DWXHMFQS?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DAqara%2520Waterleksensor%2520T1",
     priceHint: "€15 – €20",
     priceLastUpdated: "april 2026",
@@ -296,7 +281,6 @@ export const products = [
     description:
       "Slimme temperatuur- en luchtvochtigheidsmeter met display.",
     features: ["Temperatuur", "Luchtvochtigheid", "Display"],
-    affiliateUrl: "https://www.amazon.nl/dp/B0BNYSVV3J?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/pclick.php?p=38840443808&a=2855887&m=13813",
     priceHint: "€18 – €25",
     priceLastUpdated: "april 2026",
@@ -312,7 +296,6 @@ export const products = [
     image: "/images/products/aqara-vibratie-sensor.png",
     description: "Detecteert trillingen, kantelen en schokken.",
     features: ["Trilling detectie", "Kantelen", "Schokken"],
-    affiliateUrl: "https://www.amazon.nl/dp/B07PJT939B?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DAqara%2520Vibratiesensor",
     priceHint: "€15 – €20",
     priceLastUpdated: "april 2026",
@@ -332,7 +315,6 @@ export const products = [
     image: "/images/products/ring-videodeurbel-batterij.png",
     description: "Slimme videodeurbel met live beeld en meldingen.",
     features: ["Live beeld", "Meldingen", "Smartphone bediening"],
-    affiliateUrl: "https://www.amazon.nl/dp/B0BZWQP9Z1?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DRing%2520Video%2520Deurbel%2520(batterij)",
     priceHint: "€85 – €100",
     priceLastUpdated: "april 2026",
@@ -355,7 +337,6 @@ export const products = [
     image: "/images/products/google-thermostaat.png",
     description: "Slimme thermostaat die leert van je leefpatroon.",
     features: ["Zelflerend", "Energie besparen", "Google Home"],
-    affiliateUrl: "https://www.amazon.nl/dp/B0BXRYLMCC?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F671720%2Fgoogle-nest-learning-thermostat-3e-generatie.html",
     priceHint: "€110 – €130",
     priceLastUpdated: "april 2026",
@@ -375,7 +356,6 @@ export const products = [
     image: "/images/products/slimme-thermostaat-combiketel.png",
     description: "Universele slimme thermostaat voor cv-ketels.",
     features: ["Geschikt voor combiketel", "Energie besparen", "Slim schema"],
-    affiliateUrl: "https://www.amazon.nl/dp/B0FHWDBYTF?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DSlimme%2520Thermostaat%2520voor%2520Combiketel",
     priceHint: "€55 – €75",
     priceLastUpdated: "april 2026",
@@ -391,7 +371,6 @@ export const products = [
     image: "/images/products/tp-link-ke100-radiatorknop.png",
     description: "Slimme radiatorknoppen met hub voor energiebesparing.",
     features: ["Radiatorknoppen", "Hub inbegrepen", "Energie besparen"],
-    affiliateUrl: "https://www.amazon.nl/dp/B0CKWFVQZQ?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DTP-Link%2520KE100%2520KIT%2520Radiatorknop",
     priceHint: "€50 – €65",
     priceLastUpdated: "april 2026",
@@ -414,7 +393,6 @@ export const products = [
     image: "/images/products/tp-link-tapo-p115-stekker.png",
     description: "Compacte slimme stekker met energiemeting.",
     features: ["Energieverbruik inzicht", "Wi-Fi", "Geen hub nodig"],
-    affiliateUrl: "https://www.amazon.nl/dp/B09ZBGWYH9?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/pclick.php?p=38561531995&a=2855887&m=13813",
     rating: 4.6,
     priceHint: "€12 – €15",
@@ -435,7 +413,6 @@ export const products = [
     image: "/images/products/tapo-p110.png",
     description: "Populaire slimme stekker met realtime energiemeting.",
     features: ["Realtime energiemeting", "Timers", "Geen hub nodig"],
-    affiliateUrl: "https://www.amazon.nl/dp/B09BFT7NZJ?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F918281%2Ftapo-p115-slimme-stekker.html",
     rating: 4.7,
     priceHint: "€10 – €14",
@@ -452,7 +429,6 @@ export const products = [
     image: "/images/products/eve-energy-matter-thread.png",
     description: "Premium slimme stekker met Matter en Thread.",
     features: ["Matter", "Thread", "Volledig lokaal"],
-    affiliateUrl: "https://www.amazon.nl/dp/B0BYTB11J3?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DEve%2520Energy%2520(Matter%2520%252F%2520Thread)",
     rating: 4.5,
     priceHint: "€35 – €42",
@@ -473,7 +449,6 @@ export const products = [
     image: "/images/products/philips-hue-smartplug.png",
     description: "Slimme stekker binnen het Hue ecosysteem.",
     features: ["Hue integratie", "Bluetooth", "Bridge optioneel"],
-    affiliateUrl: "https://www.amazon.nl/dp/B09CV7QQKB?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/pclick.php?p=38561531997&a=2855887&m=13813",
     priceHint: "€25 – €32",
     priceLastUpdated: "april 2026",
@@ -489,7 +464,6 @@ export const products = [
     image: "/images/products/philips-hue-smart-plug-combipack.png",
     description: "Combipack met slimme stekker en dimmer.",
     features: ["Dimmer switch", "Hue ecosysteem"],
-    affiliateUrl: "https://www.amazon.nl/dp/B09QP98F9W?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F838481%2Fphilips-hue-smart-plug.html",
     priceHint: "€38 – €48",
     priceLastUpdated: "april 2026",
@@ -505,7 +479,6 @@ export const products = [
     image: "/images/products/innr-zigbee-smart-plug.png",
     description: "Slimme stekker voor buitengebruik.",
     features: ["IP54", "Zigbee repeater"],
-    affiliateUrl: "https://www.amazon.nl/dp/B0FL83D4DS?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DInnr%2520Zigbee%2520Outdoor%2520Smart%2520Plug",
     priceHint: "€25 – €32",
     priceLastUpdated: "april 2026",
@@ -525,8 +498,6 @@ export const products = [
     description:
       "Matter slimme stekker met energiemonitoring en brede platformondersteuning.",
     features: ["Matter", "Energiemonitoring", "Wi-Fi & Bluetooth"],
-    affiliateUrl:
-      "https://www.amazon.nl/SwitchBot-Energiemonitoring-Bluetooth-Compatibel-HomeAssistant/dp/B0FFN2FKD6?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DSwitchBot%2520Matter%2520Plug%2520Mini",
     priceHint: "€20 – €28",
     priceLastUpdated: "april 2026",
@@ -543,8 +514,6 @@ export const products = [
     description:
       "Zeer stabiele Zigbee-stekker. Werkt via een Aqara hub en is perfect voor automatiseringen in HomeKit, Home Assistant of Homey.",
     features: ["Zigbee 3.0", "Vereist hub", "Automatiseringen"],
-    affiliateUrl:
-      "https://www.amazon.nl/Aqara-timerstand-spraakbediening-Assistant-SmartThings/dp/B087M8LF63?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DAqara%2520Smart%2520Plug",
     priceHint: "€20 – €28",
     priceLastUpdated: "april 2026",
@@ -569,8 +538,6 @@ export const products = [
     description:
       "Bedrade of draadloze slimme deurbel in het wit met 2K-beeld, ingebouwde Matter hub en HomeKit Secure Video.",
     features: ["2K", "Matter", "Bedraad / Accu"],
-    affiliateUrl:
-      "https://www.amazon.nl/Aqara-ingebouwde-Draadloos-Compatibel-Assistant/dp/B0F6CJF9M9?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DAqara%2520Video%2520Doorbell%2520G410%2520(Wit)",
     priceHint: "€95 – €115",
     priceLastUpdated: "april 2026",
@@ -591,8 +558,6 @@ export const products = [
     description:
       "Slimme deurbel met sterke smart home integratie via Matter, geschikt voor Apple Home, Google en Home Assistant.",
     features: ["2K", "Matter", "Smart home"],
-    affiliateUrl:
-      "https://www.amazon.nl/Aqara-Ingebouwde-Draadloos-Compatibel-Assistant/dp/B0F6CJ93GS?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DAqara%2520Video%2520Doorbell%2520G410%2520(Zwart)",
     priceHint: "€95 – €115",
     priceLastUpdated: "april 2026",
@@ -609,8 +574,6 @@ export const products = [
     description:
       "Draadloze slimme deurbel op accu met scherpe 2K-beelden en eenvoudige installatie.",
     features: ["Accu", "2K", "Geen abonnement"],
-    affiliateUrl:
-      "https://www.amazon.nl/Tapo-D205-video-deurintercom-gezichtsveld-USB-C-aansluiting/dp/B0FHXVX9W9?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DTapo%2520D205",
     priceHint: "€55 – €70",
     priceLastUpdated: "april 2026",
@@ -630,8 +593,6 @@ export const products = [
     description:
       "Slimme deurbel met kleurennachtzicht, brede kijkhoek en zonder verplichte abonnementskosten.",
     features: ["Geen abonnement", "Accu / Bedraad", "2K"],
-    affiliateUrl:
-      "https://www.amazon.nl/Tapo-D235-videodeurbel-gezichtsveld-niet-verwijderbare/dp/B0DDL95M8Z?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/pclick.php?p=38561530908&a=2855887&m=13813",
     priceHint: "€60 – €80",
     priceLastUpdated: "april 2026",
@@ -648,8 +609,6 @@ export const products = [
     description:
       "Premium bedrade deurbel met hoofd-tot-teen beeld, lokale opslag en betrouwbare detectie.",
     features: ["Bedraad", "Lokale opslag", "Premium"],
-    affiliateUrl:
-      "https://www.amazon.nl/Reolink-Videodeurbel-Wi-Fi-camera-beltoon-Hoofd-aan-teen/dp/B0CN95V61Y?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DReolink%2520Video%2520Doorbell%2520Wi-Fi",
     priceHint: "€75 – €95",
     priceLastUpdated: "april 2026",
@@ -674,8 +633,6 @@ export const products = [
   description:
     "Betaalbare binnencamera met lokale opslag en zonder abonnement.",
   features: ["Binnen", "Geen abonnement", "Lokale opslag"],
-  affiliateUrl:
-    "https://www.amazon.nl/eufy-Binnencamera-UHD-bewakingscamera-kleur-nachtzicht-auto-tracking/dp/B0FMRCM9D2?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DEufy%2520Indoor%2520Cam",
   priceHint: "€35 – €50",
   priceLastUpdated: "april 2026",
@@ -695,8 +652,6 @@ export const products = [
   description:
     "Slimme 2K binnencamera met draaifunctie, bewegingsdetectie, tweeweg-audio en privacymodus. Ideaal om huisdieren in de gaten te houden wanneer je niet thuis bent.",
   features: ["2K", "Pan & tilt", "Tweeweg-audio"],
-  affiliateUrl:
-    "https://www.amazon.nl/Tapo-C225-Beveiligingscamera-Intelligente-Compatibel/dp/B0BN4BQ1DM?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/pclick.php?p=38561477674&a=2855887&m=13813",
   priceHint: "€30 – €40",
   priceLastUpdated: "april 2026",
@@ -716,8 +671,6 @@ export const products = [
   description:
     "Weerbestendige buitencamera met accu en lokale opslag.",
   features: ["Buiten", "Accu", "Geen abonnement"],
-  affiliateUrl:
-    "https://www.amazon.nl/eufy-Bewakingscamera-bewakingscamera-zonne-energie-beveiligingscamera/dp/B0DT6WMJD6?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DEufy%2520Solo%2520Outdoor%2520Cam",
   priceHint: "€70 – €90",
   priceLastUpdated: "april 2026",
@@ -738,8 +691,6 @@ export const products = [
   description:
     "Bekabelde PoE camera voor maximale stabiliteit en betrouwbaarheid.",
   features: ["PoE", "Bekabeld", "Lokale opslag"],
-  affiliateUrl:
-    "https://www.amazon.nl/PoE-vandaalbestendig-nachtzicht-Duo-2V/dp/B0D2XQV692?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DReolink%2520PoE%2520Camera",
   priceHint: "€55 – €75",
   priceLastUpdated: "april 2026",
@@ -760,8 +711,6 @@ export const products = [
   description:
     "Budget Wi-Fi camera voor binnen met verrassend veel functies.",
   features: ["Budget", "Wi-Fi", "Binnen"],
-  affiliateUrl:
-    "https://www.amazon.nl/Tapo-C200P2-bewakingscamera-nachtzicht-bewegingsdetectie/dp/B0CDCL38KZ?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F892927%2Ftp-link-tapo-c200.html",
   priceHint: "€22 – €32",
   priceLastUpdated: "april 2026",
@@ -782,8 +731,6 @@ export const products = [
   description:
     "Privacygerichte binnencamera met HomeKit Secure Video en lokale verwerking.",
   features: ["Privacy", "HomeKit", "Binnen"],
-  affiliateUrl:
-    "https://www.amazon.nl/Eve-Cam-beveiligingscamera-iPhone-meldingen-luidspreker/dp/B0CHJCZSJP?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DEve%2520Cam",
   priceHint: "€110 – €130",
   priceLastUpdated: "april 2026",
@@ -808,8 +755,6 @@ export const products = [
   description:
     "Zeer betrouwbare Zigbee bewegingssensor voor automatiseringen.",
   features: ["Zigbee", "Beweging", "Automatiseringen"],
-  affiliateUrl:
-    "https://www.amazon.nl/Aqara-configureerbare-detectie-timeout-waarschuwingssysteem-automatiseringen/dp/B0B9XZ1D51?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DAqara%2520Bewegingssensor",
   priceHint: "€15 – €20",
   priceLastUpdated: "april 2026",
@@ -828,8 +773,6 @@ export const products = [
   description:
     "Slimme buitensensor voor temperatuur en luchtvochtigheid via Thread.",
   features: ["Klimaat", "Thread", "Privacy"],
-  affiliateUrl:
-    "https://www.amazon.nl/Weather-Matter-luchtvochtigheid-IPX4-waterbestendigheid-Siri-spraaktoegang/dp/B0D817K9TL?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DEve%2520Weather",
   priceHint: "€60 – €70",
   priceLastUpdated: "april 2026",
@@ -848,8 +791,6 @@ export const products = [
   description:
     "Compacte bewegingssensor voor beveiliging en slimme automatiseringen.",
   features: ["Beweging", "Automatiseringen", "Slimme meldingen"],
-  affiliateUrl:
-    "https://www.amazon.nl/Tapo-0184500512-T100/dp/B0B7NDJW6J?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/pclick.php?p=38840441964&a=2855887&m=13813",
   priceHint: "€12 – €15",
   priceLastUpdated: "april 2026",
@@ -865,8 +806,6 @@ export const products = [
   description:
     "Premium deur- en raamsensor met focus op privacy en lokale verwerking.",
   features: ["Privacy", "Thread", "Premium"],
-  affiliateUrl:
-    "https://www.amazon.nl/Door-Window-Matter-contactsensor-dicht-detectie/dp/B0BZ8YV5GW?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DEve%2520Door%2520%2526%2520Window",
   priceHint: "€30 – €38",
   priceLastUpdated: "april 2026",
@@ -889,8 +828,6 @@ export const products = [
   description:
     "Werkt als SmartThings hub met ondersteuning voor Zigbee en Z-Wave.",
   features: ["SmartThings", "Zigbee", "Z-Wave"],
-  affiliateUrl:
-    "https://www.amazon.nl/Aeotec-Smart-Home-Hub-SmartThings/dp/B08NDH9NXN?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DAeotec%2520Smart%2520Home%2520Hub%2520(SmartThings)",
   priceHint: "€75 – €90",
   priceLastUpdated: "april 2026",
@@ -910,8 +847,6 @@ export const products = [
   description:
     "Krachtige lokale smart home hub zonder cloud-afhankelijkheid.",
   features: ["Volledig lokaal", "Zigbee", "Z-Wave", "Matter"],
-  affiliateUrl:
-    "https://www.amazon.nl/dp/B0C5R1JS91?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F933660%2Fathom-homey-pro.html",
   priceHint: "€380 – €420",
   priceLastUpdated: "april 2026",
@@ -930,7 +865,6 @@ export const products = [
   image: "/images/products/homey-pro-early-2023.png",
   description: "Nieuwste versie van de populaire smart home hub. 4GB RAM (dubbel t.o.v. 2023), zelfde prijs van €399. Ondersteunt Matter, Thread, Zigbee, Z-Wave, Bluetooth, 433MHz, IR en wifi in één apparaat.",
   features: ["4GB RAM (2x meer dan 2023 versie)", "7 protocollen in één hub", "Lokale verwerking, werkt zonder internet", "Matter en Thread ingebouwd"],
-  affiliateUrl: "https://www.amazon.nl/s?k=Homey+Pro+2026&tag=slimhuiswonen-21",
   priceHint: "€399",
   priceLastUpdated: "april 2026",
   pros: ["4GB RAM — geschikt voor grotere setups", "7 protocollen in één apparaat", "Lokale verwerking, geen cloud vereist", "Ondersteuning gegarandeerd t/m 2031"],
@@ -947,8 +881,6 @@ export const products = [
   image: "/images/products/homey-smart-bridge.png",
   description: "Verbindt slimme apparaten met Homey Cloud.",
   features: ["Homey Cloud", "Uitbreiding Homey"],
-  affiliateUrl:
-    "https://www.amazon.nl/dp/B08FRLQH75?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F897077%2Fathom-homey-bridge.html",
   priceHint: "€55 – €70",
   priceLastUpdated: "april 2026",
@@ -967,8 +899,6 @@ export const products = [
   image: "/images/products/philips-bridge.png",
   description: "Centrale hub voor Philips Hue verlichting.",
   features: ["Hue ecosysteem", "Zigbee", "Lokale automatiseringen"],
-  affiliateUrl:
-    "https://www.amazon.nl/dp/B09CV9F3KR?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F890077%2Fphilips-hue-bridge.html",
   priceHint: "€48 – €58",
   priceLastUpdated: "april 2026",
@@ -988,8 +918,6 @@ export const products = [
   description:
     "Officiële Home Assistant hub voor maximale lokale controle.",
   features: ["Home Assistant OS", "Volledig lokaal"],
-  affiliateUrl:
-    "https://www.amazon.nl/dp/B0CXVKSG19?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DHome%2520Assistant%2520Green",
   priceHint: "€90 – €105",
   priceLastUpdated: "april 2026",
@@ -1018,7 +946,6 @@ export const products = [
     "Compatibel met Homey, Google, Alexa, HomeKit",
     "Energierapport per maand",
   ],
-  affiliateUrl: "https://www.amazon.nl/dp/B07YCMD7ZW?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F817952%2Ftado-slimme-thermostaat-v3.html",
   priceHint: "€85 – €110",
   priceLastUpdated: "april 2026",
@@ -1042,7 +969,6 @@ export const products = [
     "Apple HomeKit ondersteuning",
     "Strak design, eenvoudige installatie",
   ],
-  affiliateUrl: "https://www.amazon.nl/dp/B01DBJP2WO?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F468773%2Fnetatmo-slimme-aan-uit-thermostaat.html",
   priceHint: "€95 – €120",
   priceLastUpdated: "april 2026",
@@ -1069,7 +995,6 @@ export const products = [
     "3-pack — tot 750 m² dekking",
     "Eenvoudig uitbreidbaar",
   ],
-  affiliateUrl: "https://www.amazon.nl/TP-Link-Deco-XE75-3-pack-Gigabit-poorten/dp/B09ZRY9YHB?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/pclick.php?p=43417689963&a=2855887&m=13813",
   priceHint: "€280 – €310",
   priceLastUpdated: "april 2026",
@@ -1093,7 +1018,6 @@ export const products = [
     "Alexa ingebouwd",
     "Eenvoudige app-installatie",
   ],
-  affiliateUrl: "https://www.amazon.nl/eero-6-/dp/B08ZK2T3GS?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DAmazon%2520Eero%2520Pro%25206E",
   priceHint: "€190 – €230",
   priceLastUpdated: "april 2026",
@@ -1117,7 +1041,6 @@ export const products = [
     "Matter hub ingebouwd",
     "Werkt naadloos met Google Home",
   ],
-  affiliateUrl: "https://www.amazon.nl/Google-Nest-Wifi-Pro-2-pack/dp/B0BDKHRGV6?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DGoogle%2520Nest%2520Wifi%2520Pro",
   priceHint: "€210 – €250",
   priceLastUpdated: "april 2026",
@@ -1145,7 +1068,6 @@ export const products = [
     "WiFi, Bluetooth en Matter",
     "Compatibel met Homey, Alexa, Google, HomeKit",
   ],
-  affiliateUrl: "https://www.amazon.nl/Bluetooth-moeiteloze-integratie-elektronisch-vergrendelen/dp/B0DX2FPQFQ?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F940644%2Fnuki-smart-lock-pro-4e-generatie-wit.html",
   priceHint: "€170 – €200",
   priceLastUpdated: "april 2026",
@@ -1170,7 +1092,6 @@ export const products = [
     "Werkt met bestaand slot",
     "Alexa en Google Home integratie",
   ],
-  affiliateUrl: "https://www.amazon.nl/Yale-Sleutelloze-Eenvoudige-installatie-compatibel/dp/B0FTG1L89G?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DYale%2520Linus%2520Smart%2520Lock",
   priceHint: "€120 – €150",
   priceLastUpdated: "april 2026",
@@ -1193,7 +1114,6 @@ export const products = [
     "Werkt met Home Assistant en Homey",
     "Betrouwbare Europese fabrikant",
   ],
-  affiliateUrl: "https://www.amazon.nl/Danalock-Bluettoth-Solution-batterijen-inbegrepen/dp/B0CV18ZTK2?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DDanalock%2520V3",
   priceHint: "€110 – €140",
   priceLastUpdated: "april 2026",
@@ -1225,7 +1145,6 @@ export const products = [
   pros: ["Werkt met Home Assistant en Homey", "Zigbee — stabiel en snel", "Realtime verbruik én teruglevering"],
   cons: ["Vereist Zigbee hub", "P1-kabel niet altijd inbegrepen"],
   forWho: ["Voor wie energieverbruik wil monitoren via Home Assistant of Homey", "Voor zonnepaneelhouders"],
-  affiliateUrl: "https://www.amazon.nl/frient-Elektriciteitsmeter-energieverbruik-elektriciteitsmeters-SmartThings/dp/B0CYZWLX65?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3Dfrient%2520Elektriciteitsmeter%2520Interface%25202%252C%2520P1",
   youtubeUrl: "https://www.youtube.com/watch?v=9HHH6RO3WG0",
 },
@@ -1244,7 +1163,6 @@ export const products = [
     "Werkt met Home Assistant en Homey",
     "Zonnepanelen integratie mogelijk",
   ],
-  affiliateUrl: "https://www.amazon.nl/Shelly-120A-Afstandsbediening-Fotovolta%C3%AFsche-Zonnestelsels/dp/B0BVKZ4NGM?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DShelly%2520Pro%25203EM",
   priceHint: "€90 – €110",
   priceLastUpdated: "april 2026",
@@ -1268,7 +1186,6 @@ export const products = [
     "Realtime data via app",
     "Werkt met Home Assistant",
   ],
-  affiliateUrl: "https://www.amazon.nl/BrosTrend-Mini-AX900-WiFi-USB/dp/B0CYZBT4GM?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DBrosTrend%2520Mini%2520AX900%2520WiFi%25206",
   priceHint: "€35 – €50",
   priceLastUpdated: "april 2026",
@@ -1292,7 +1209,6 @@ export const products = [
   description:
     "Slimme GU10-spots voor badkamer, keuken of hal. Instelbaar wit licht van warm tot koel daglicht, dimbaar via app of bridge.",
   features: ["GU10 fitting", "Instelbaar wit licht", "Dimbaar", "Zigbee & Bluetooth"],
-  affiliateUrl: "https://www.amazon.nl/Philips-Hue-instelbaar-Bluetooth-compatibel-stembediening/dp/B0D6NLJHQ3?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/pclick.php?p=38561477987&a=2855887&m=13813",
   priceHint: "€35 – €45",
   priceLastUpdated: "april 2026",
@@ -1313,7 +1229,6 @@ export const products = [
   description:
     "Draadloze dimschakelaar voor het Hue-systeem. Bevestig magnetisch aan de muur of gebruik als losse afstandsbediening.",
   features: ["Draadloos", "Magnetische muurbevestiging", "4 knoppen", "Zigbee"],
-  affiliateUrl: "https://www.amazon.nl/dp/B08PKMT2DV?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F876977%2Fphilips-hue-draadloze-dimmer-switch.html",
   priceHint: "€25 – €30",
   priceLastUpdated: "april 2026",
@@ -1334,7 +1249,6 @@ export const products = [
   description:
     "Slimme bewegingssensor die automatisch Hue-lampen aan- en uitzet. Met ingebouwde lichtsensor — gaat alleen aan als het donker genoeg is.",
   features: ["Bewegingsdetectie", "Ingebouwde lichtsensor", "Zigbee", "Batterij"],
-  affiliateUrl: "https://www.amazon.nl/Philips-Hue-Bewegingssensor-Ingebouwde-Lichtsensor/dp/B09CV78GV1?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F890049%2Fphilips-hue-bewegingssensor.html",
   priceHint: "€35 – €45",
   priceLastUpdated: "april 2026",
@@ -1355,7 +1269,6 @@ export const products = [
   description:
     "Slimme RGBIC LED-strip van 5 meter met 50 individuele kleurzones, muzieksynchro en app-bediening. Geen hub nodig.",
   features: ["RGBIC — 50 kleurzones", "Muzieksynchro", "Wi-Fi", "Geen hub nodig"],
-  affiliateUrl: "https://www.amazon.nl/dp/B09FSTVWFF?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F956287%2Ftp-link-tapo-l930-5-lichtstrip-5m.html",
   priceHint: "€30 – €40",
   priceLastUpdated: "april 2026",
@@ -1376,7 +1289,6 @@ export const products = [
   description:
     "Weerbestendige RGBIC LED-strip van 10 meter voor tuin, terras of gevel. IP65, app-gestuurd met segmentbediening.",
   features: ["IP65 weerbestendig", "10 meter", "RGBIC segmentbediening", "Muzieksynchro"],
-  affiliateUrl: "https://www.amazon.nl/Govee-app-bediening-segmentcontrole-kleurverandering-muzieksynchronisatie/dp/B0BXKWTDC6?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DGovee%2520Outdoor%2520LED%2520Strip%2520(10m)",
   priceHint: "€40 – €60",
   priceLastUpdated: "april 2026",
@@ -1401,7 +1313,6 @@ export const products = [
   description:
     "Centrale hub voor het Tapo-ecosysteem. Koppelt tot 64 sensoren én 4 camera's. Werkt als deurbel-gong en heeft microSD-opslag voor camerabeelden.",
   features: ["Tot 64 sensoren", "microSD opslag", "Deurbel-gong", "Tapo ecosysteem"],
-  affiliateUrl: "https://www.amazon.nl/Tapo-H200-batterijcameras-Tapo-cameramodellen-Kasa-thermostaat/dp/B0C8BJ9ZLB?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DTapo%2520H200%2520Smart%2520Hub",
   priceHint: "€30 – €40",
   priceLastUpdated: "april 2026",
@@ -1422,7 +1333,6 @@ export const products = [
   description:
     "Geavanceerde Matter/Thread/Zigbee hub voor het Aqara-ecosysteem. Werkt met HomeKit, Google Home, Alexa en Home Assistant. Lokale automatisering zonder cloud.",
   features: ["Matter", "Thread", "Zigbee 3.0", "Lokale automatisering"],
-  affiliateUrl: "https://www.amazon.nl/Aqara-Controller-Bluetooth-ondersteunt-SmartThings/dp/B0CWLHSKYC?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DAqara%2520Hub%2520M3",
   priceHint: "€80 – €100",
   priceLastUpdated: "april 2026",
@@ -1447,7 +1357,6 @@ export const products = [
   description:
     "Bedrade versie van de populaire tado° slimme thermostaat met geofencing. Werkt met OpenTherm, Alexa, Google Home en Apple HomeKit. Geen abonnement vereist voor basisfuncties.",
   features: ["Geofencing", "OpenTherm", "Alexa, Google Home, HomeKit", "Geen verplicht abonnement"],
-  affiliateUrl: "https://www.amazon.nl/tado%C2%B0-Bedrade-Slimme-Thermostaat-verwarmingsaansturing/dp/B01BWUH8W4?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F817952%2Ftado-slimme-thermostaat-v3.html",
   priceHint: "€80 – €110",
   priceLastUpdated: "april 2026",
@@ -1468,7 +1377,6 @@ export const products = [
   description:
     "Slimme radiatorkraan voor kamertemperatuurregeling per ruimte. Werkt met de tado° thermostaat of standalone via internet-bridge.",
   features: ["Per-kamer regeling", "Compatibel met tado° thermostaat", "Geofencing", "OpenWindowDetectie"],
-  affiliateUrl: "https://www.amazon.nl/tado%C2%B0-Slimme-Radiatorknop-intelligente-verwarmingsaansturing/dp/B08LNX3SDN?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F876945%2Ftado-slimme-radiatorknop-uitbreiding.html",
   priceHint: "€60 – €80",
   priceLastUpdated: "april 2026",
@@ -1493,7 +1401,6 @@ export const products = [
   description:
     "Slimme deurslot met ingebouwde WiFi en Matter-ondersteuning. Past op bestaand euro-cilinderslot. Auto Unlock en Auto Lock via geofencing.",
   features: ["WiFi ingebouwd", "Matter", "Auto Unlock & Auto Lock", "Geofencing"],
-  affiliateUrl: "https://www.amazon.nl/Smart-Module-elektronisch-automatisch-digitaal/dp/B09MRWW6WZ?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F895014%2Fnuki-smart-lock-3-0-pro-white.html",
   priceHint: "€280 – €310",
   priceLastUpdated: "april 2026",
@@ -1513,7 +1420,6 @@ export const products = [
   description:
     "Betaalbaar slim deurslot met Matter/Thread, vingerafdruksensor en NFC-kaartje. Werkt met HomeKit, Google Home, Alexa en Home Assistant.",
   features: ["Vingerafdruksensor", "NFC", "Matter & Thread", "HomeKit, Google, Alexa"],
-  affiliateUrl: "https://www.amazon.nl/dp/B0D9Q1WPBT?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DAqara%2520Smart%2520Lock%2520U200%2520Lite",
   priceHint: "€130 – €160",
   priceLastUpdated: "april 2026",
@@ -1538,7 +1444,6 @@ export const products = [
   description:
     "WiFi 6E mesh-systeem in een 2-pack voor woningen tot ca. 370 m². Ideaal als fundament voor een betrouwbaar smart home met veel apparaten.",
   features: ["WiFi 6E (tri-band)", "2-pack — tot 370 m²", "Eenvoudig uitbreidbaar"],
-  affiliateUrl: "https://www.amazon.nl/dp/B09W9FZQKC?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DTP-Link%2520Deco%2520XE75",
   priceHint: "€150 – €200",
   priceLastUpdated: "april 2026",
@@ -1563,7 +1468,6 @@ export const products = [
   description:
     "Slimme P1-meter die je slimme meter uitleest en energieverbruik realtime doorgeeft. Werkt met Zendure SolarFlow en Home Assistant. Geen abonnement.",
   features: ["P1-poort aansluiting", "Realtime energieverbruik", "Home Assistant compatibel", "Geen abonnement"],
-  affiliateUrl: "https://www.amazon.nl/Zendure-Slimme-Meter-P1/dp/B0FL2CQ56X?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DZendure%2520Slimme%2520Meter%2520P1",
   priceHint: "€90 – €110",
   priceLastUpdated: "april 2026",
@@ -1583,7 +1487,6 @@ export const products = [
   description:
     "Energiemeter voor in de meterkast die per fase het verbruik meet. Werkt met Home Assistant, Homey en de eigen Shelly-app. Geschikt voor gevorderde gebruikers.",
   features: ["Per-fase meting", "WiFi", "Home Assistant & Homey", "Meterkast montage"],
-  affiliateUrl: "https://www.amazon.nl/Shelly-Bluetooth-Energiemeter-Schakelbesturing-Vermogensmeting%E2%94%82-Huisautomatisering%E2%94%82/dp/B0CH1JW2CW?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DShelly%2520EM%2520Energiemeter",
   priceHint: "€60 – €75",
   priceLastUpdated: "april 2026",
@@ -1607,7 +1510,6 @@ export const products = [
   description:
     "Slimme Zigbee rookmelder met app-meldingen en integratie in HomeKit, Alexa en Home Assistant. Werkt met de Aqara hub.",
   features: ["Zigbee", "App-meldingen bij rookdetectie", "HomeKit, Alexa, Home Assistant", "LED-indicator"],
-  affiliateUrl: "https://www.amazon.nl/Aqara-Rookmelders-LED-indicator-Batterijduur-Ondersteunt/dp/B0DHZ7LK2M?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DAqara%2520Rookmelder%2520(Zigbee)",
   priceHint: "€35 – €45",
   priceLastUpdated: "april 2026",
@@ -1628,7 +1530,6 @@ export const products = [
   description:
     "Draadloze Zigbee-knop voor het starten van automatiseringen. Ondersteunt druk-, dubbel- en houdklik. Bevestig aan de muur of gebruik als losse afstandsbediening.",
   features: ["Zigbee", "Druk / Dubbel / Houd klik", "Muurbevestiging", "Automatiseringen"],
-  affiliateUrl: "https://www.amazon.nl/Aqara-Schakelaar-Zigbee-verbinding-Bedieningsknop-Home-apparaten/dp/B07D19YXND?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DAqara%2520Mini%2520Switch%2520T1",
   priceHint: "€15 – €22",
   priceLastUpdated: "april 2026",
@@ -1649,7 +1550,6 @@ export const products = [
   description:
     "Slimme waterlekkagesensor met alarm tot 90dB en directe app-melding. IP67 waterbestendig. Vereist Tapo Hub H100 of H200.",
   features: ["90dB alarm", "IP67 waterbestendig", "App-melding", "Vereist Tapo Hub"],
-  affiliateUrl: "https://www.amazon.nl/Tapo-T300-waterlek-sensor-ingebouwde-instelbare/dp/B0CB8Q3X4N?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DTapo%2520T300%2520Waterlekkagesensor",
   priceHint: "€15 – €20",
   priceLastUpdated: "april 2026",
@@ -1674,7 +1574,6 @@ export const products = [
   description:
     "Zigbee GU10-spots compatibel met Philips Hue Bridge en SmartThings. Warm wit licht, dimbaar en geschikt voor badkamer, keuken of hal.",
   features: ["Zigbee", "Compatibel met Philips Hue Bridge", "Dimbaar", "Warm wit", "4-pack"],
-  affiliateUrl: "https://www.amazon.nl/s?k=Innr+Smart+GU10+Zigbee&tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DInnr%2520Smart%2520GU10%2520Zigbee%2520LED",
   priceHint: "€40 – €55",
   priceLastUpdated: "april 2026",
@@ -1698,7 +1597,6 @@ export const products = [
   description:
     "Draadloze 2K videodeurbel op accu zonder Homebase. Inclusief 64GB SD-kaart voor lokale opslag. Eenvoudige installatie zonder boren.",
   features: ["2K beeldkwaliteit", "Accu — geen bedrading nodig", "Geen Homebase vereist", "64GB SD-kaart inbegrepen", "Lokale opslag"],
-  affiliateUrl: "https://www.amazon.nl/s?k=eufy+C30+2K+Videodeurbel&tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3Deufy%2520C30%25202K%2520Draadloze%2520Video%2520Deurbel",
   priceHint: "€80 – €110",
   priceLastUpdated: "april 2026",
@@ -1718,7 +1616,6 @@ export const products = [
     image: "/images/products/philips-hue-go-tafellamp-white-and-color-zwart.png",
     description: "Met de slimme Philips Hue Go draagbare tafellamp op batterij breng je slimme verlichting naar iedere hoek van je huis. Deze kleine staande lamp verplaats je namelijk gemakkelijk dankzij het siliconen handvat. Deze lamp verplaats je gemakkelijk naar waar je het meeste licht nodig hebt, omdat de batterij 48 uur meegaat. Eet je eens buiten maar is het wat donker? De Philips Hue Go is ook geschikt voor buitenshuis gebruik. Deze lamp geeft 16 miljoen verschillende kleuren licht. Je verbindt de lamp via bluetooth of aan het internet met een bridge. Met een bridge bedien je de lampen ook buitenshuis en stel je vaste routines in.",
     features: [],
-    affiliateUrl: "https://www.amazon.nl/Philips-Hue-Tafellamp-Verlichting-Bluetooth/dp/B0B2PV9YX5?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F922837",
     youtubeId: "yhQIaa8hvEg",
     priceHint: "€131,00",
@@ -1738,7 +1635,6 @@ export const products = [
     image: "/images/products/philips-hue-lily-starter-pack-white-and-color-prik.png",
     description: "Met dit Philips Hue Lily Starter Pack heb jij Philips Hue in de tuin of op je terras. Deze basisset bestaat uit 3 armaturen voor buiten en alle onderdelen die je nodig hebt voor het aansluiten. Steek de stekker in het stopcontact en kies uit 1 van de 16 miljoen kleuren of alle tinten wit. De armaturen zijn van aluminium en zijn waterdicht. Je koppelt de slimme buitenlamp aan de Hue bridge (niet meegeleverd). Met de app op je smartphone zet je de lamp op afstand aan en uit, bepaal je de lichtkleur of laat je de lamp automatisch reageren op de zonsondergang. Dankzij geofencing kan de lamp automatisch in- of uitschakelen wanneer je thuiskomt of je woning verlaat. Bovendien is de buitenlamp compatibel met Amazon Alexa, Apple HomeKit of Google Assistant. Let op! Deze Philips Hue buitenverlichting werkt alleen in combinatie met een bridge.",
     features: [],
-    affiliateUrl: "https://www.amazon.nl/Philips-Hue-Tuinspot-3-Lichts-Basis/dp/B07BXT7VHT?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F813432",
     youtubeId: "4JZbVX8kc74",
     priceHint: "€286,00",
@@ -1758,7 +1654,6 @@ export const products = [
     image: "/images/products/philips-hue-play-hdmi-sync-box-8k.png",
     description: "Met de Philips Hue Play HDMI Sync Box 8K laat je jouw Philips Hue smart lampen meekleuren met je televisie. De Sync Box verwerkt 4K beelden op 120Hz en 8K beelden op 60Hz. Je maakt dus de afweging tussen een hogere 8K beeldkwaliteit of extra vloeiend beeld met 120Hz. Als je tv maximaal 4K beeld ondersteunt, kies je altijd voor 4K beeldkwaliteit met 120Hz. De Sync Box heeft 5 HDMI poorten. Eén daarvan is de uitgang naar je tv. De andere 4 gebruik je als ingangen. Zo sluit je bijvoorbeeld een Playstation, laptop en Google Chromecast tegelijk aan. De Sync Box verwerkt het beeld van deze apparaten. In de Philips Hue app stel je in welke lampen meekleuren met je beeldscherm.",
     features: [],
-    affiliateUrl: "https://www.amazon.nl/Philips-Hue-Play-HDMI-sync/dp/B0DGQSY3ZT?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F954033",
     youtubeId: "5jveH90EX14",
     priceHint: "€350,00",
@@ -1778,7 +1673,6 @@ export const products = [
     image: "/images/products/tp-link-tapo-l630-wit-en-gekleurd-licht-gu10-4-pac.png",
     description: "Met het TP-Link Tapo L630 - Wit en Gekleurd Licht - GU10 - 4-pack voorzie je direct een hele kamer van smart spotjes met GU10 fitting. Deze lampen geven gekleurd en alle tinten wit licht. Zo kies je voor ieder moment van de dag het juiste licht. Met de juiste lichtkleur op het juiste moment voel je je vaak beter. Je bedient de lampen ook buitenshuis omdat de lampen via wifi aan je smartphone verbonden zijn. In de Tapo app stel je de lichtkleur en vaste routines in. Wil je de lamp ook met je stem bedienen? Dan koppel je hem aan je slimme assistent. Je verbindt de lamp ook met andere Tapo smart home apparaten zoals schakelaars en stekkers.",
     features: [],
-    affiliateUrl: "https://www.amazon.nl/Tapo-L630-4-Pack-Energiebesparend-Meerkleurig/dp/B0BG64ZG8Q?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F956288",
     youtubeId: "Jq9ePVawrok",
     priceHint: "€45,99",
@@ -1804,7 +1698,6 @@ export const products = [
       "Uitbreidbaar met losse sets",
       "Werkt met Siri, Google, Alexa",
     ],
-    affiliateUrl: "https://www.amazon.nl/Nanoleaf-Lines-Squared-Starterkit-4PK/dp/B0BNJ59PTH?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DNanoleaf%2520Lines%252060%2520Degrees%2520Starterkit%2520-%25209%2520LED%252FRGB%2520Lichtbalken%2520-%2520Siri%252C%2520Google",
     
     youtubeId: "mlAMAE0AWXg",
@@ -1831,7 +1724,6 @@ export const products = [
       "Muzieksynchro",
       "Uitbreidbaar naar eigen wens",
     ],
-    affiliateUrl: "https://www.amazon.nl/Nanoleaf-Expansion-Additional-RGBW-Modular-Assistant/dp/B08K87XT4L?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DNanoleaf%2520Shapes%2520Mini%2520Triangles%2520Uitbreidingspakket%2520-%252010%2520Panelen%2520-%2520Siri%252C%2520Google",
     
     youtubeId: "fX9EES42ZBk",
@@ -1859,7 +1751,6 @@ export const products = [
       "Geen hub nodig",
       "Govee app bediening",
     ],
-    affiliateUrl: "https://www.amazon.nl/Govee-Lights-vormtoewijzing-Assistant-wanddecoratie/dp/B0CQRBC3Y2?tag=slimhuiswonen-21",
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fzoeken%3Fquery%3DGovee%2520Neon%2520Rope%2520Light%25202%2520White%2520(5m)",
     
     youtubeId: "fuvrklEnzWI",
@@ -1886,7 +1777,6 @@ export const products = [
       "Werkt met HomeKit, Home Assistant, Homey",
       "Vereist Aqara hub",
     ],
-    affiliateUrl: "https://www.amazon.nl/Aqara-Aanwezigheidssensor-Bewegingssensor-ondersteunt-SmartThings/dp/B0D5QPH3T6?tag=slimhuiswonen-21",
     bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Faqara-presence-sensor-fp1e%2F9300000184492428%2F",
     
     youtubeId: "M9FEJ5c2j8c",
@@ -1913,7 +1803,6 @@ export const products = [
       "Werkt met Homey, Home Assistant, ZHA",
       "Compact formaat",
     ],
-    affiliateUrl: "https://www.amazon.nl/SONOFF-SNZB-03P-ZigBee-bewegingssensor-3-0-detector-Zigbee-bridge/dp/B0C1GB4DVR?tag=slimhuiswonen-21",
     bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Fsonoff-zigbee-bewegingssensor-snzb-03p-voor-huisbeveiliging-%2F9300000189727787%2F",
     
     youtubeId: "XX2byg88Sp0",
@@ -1940,7 +1829,6 @@ export const products = [
       "Werkt met Homey, Home Assistant, ZHA",
       "Magnetische montage",
     ],
-    affiliateUrl: "https://www.amazon.nl/SONOFF-SNZB-04P-deurcontactalarmsysteem-huisdeursensor-intelligente/dp/B0C1G7W72B?tag=slimhuiswonen-21",
     bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Fsonoff-zigbee-openingssensor-voor-smart-home-systeem-met-bat%2F9300000192511370%2F",
     
     youtubeId: "3gYyQRAUz8o",
@@ -1967,7 +1855,6 @@ export const products = [
       "Vereist Aqara hub",
       "Batterij CR2450",
     ],
-    affiliateUrl: "https://www.amazon.nl/Aqara-verschillende-handelingen-Home-apparaten-ondersteunt/dp/B0BHWS3VTZ?tag=slimhuiswonen-21",
     bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Faqara-cube-t1-pro%2F9300000135991859%2F",
     
     youtubeId: "RaE9ylNAI-4",
@@ -1988,7 +1875,6 @@ export const products = [
     image: "/images/products/tapo-c220-beveiligingscamera-binnen-2k-4mp-qhd-pan.jpg",
     description: "Tapo C220 Beveiligingscamera binnen - 2K 4MP QHD - Pan Tilt",
     features: [],
-    affiliateUrl: "https://www.amazon.nl/Tapo-C220-WiFi-beveiligingscamera-AI-detecties-privacymodus/dp/B0CF2RRBW5?tag=slimhuiswonen-21",
     bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fp%2Ftapo-c220-beveiligingscamera-binnen-2k-4mp-qhd-pan-tilt%2F9300000162714113%2F",
     
     youtubeId: "rpqeOAkQLdA",
@@ -2009,7 +1895,6 @@ export const products = [
     image: "/images/products/tp-link-tapo-c230.png",
     description: "Met de TP-Link Tapo C230 weet je precies wat er thuis gebeurt. Via de Tapo app op je smartphone draai je deze IP camera 360 graden rond en kantel je hem 114 graden omhoog en omlaag. Zo houd je met één camera een hele ruimte in de gaten in haarscherpe 3K resolutie. Omdat de camera het geluid van een huilende baby herkent, gebruik je hem ook als babyfoon. Dankzij de ingebouwde microfoon stel je jouw baby op afstand gerust en houd je een oogje in het zeil. De camera draait automatisch mee met beweging en herkent mensen, dieren en voertuigen. Beelden bewaar je op een SD kaart. Hiervoor heb je geen extra cloudabonnement nodig.",
     features: [],
-    affiliateUrl: "https://www.amazon.nl/Tapo-C230-bewakingscamera-KI-detectie-bewegingsdetectie/dp/B0DSW6SF34?tag=slimhuiswonen-21",
     
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F960205",
 
@@ -2030,7 +1915,6 @@ export const products = [
     image: "/images/products/tp-link-tapo-c500.png",
     description: "Met een TP-Link Tapo C500 beveiligingscamera houd je in de app je omgeving in 360 graden in de gaten. De full hd camera draait namelijk 360 graden horizontaal rond. Hij volgt beweging automatisch, zodat je een ongewenste gast altijd in beeld hebt. Stel een alarm naar wens in, om mensen af te schrikken. Via de app praat je ook met bezoekers. Dankzij nachtvisie heb je ook in het donker helder beeld. Beelden bewaar je op een SD kaart, waarna je ze terugkijkt in de app. De SD kaart is niet meegeleverd. Voor een vast bedrag per maand bewaar je ook beelden in de cloud. Je sluit deze camera op het stopcontact aan. De camera heeft een privacy mode, die de lens fysiek blokkeert.",
     features: [],
-    affiliateUrl: "https://www.amazon.nl/Tapo-C500-bewakingscamera-bewegingsdetectie-nachtzicht/dp/B0BQJVKVQR?tag=slimhuiswonen-21",
     
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F924862",
     youtubeId: "yfXoRvY7X2o",
@@ -2051,7 +1935,6 @@ export const products = [
     image: "/images/products/tp-link-tapo-c530ws.png",
     description: "Beveilig je tuin, garage of oprit met de TP-Link Tapo C530WS. Deze IP camera draait 360 graden rond en kantelt 130 graden omhoog en omlaag. Hij volgt bewegingen, zoals mensen die langslopen, automatisch. Zo mis je geen enkele gebeurtenis. De camera filmt in scherpe 3K kwaliteit. Je koppelt deze beveiligingscamera aan je smartphone via de Tapo app. Hier kijk je live mee met de beelden, kantel en draai je de camera en praat je met bezoekers. Als het buiten te donker is om het beeld scherp te zien, zet je de ingebouwde spotlights aan. Ook kijk je in de app de opgenomen beelden terug. Deze bewaar je op een SD kaart. Heb je geen sterke wifi verbinding op de plek waar je de camera installeert? Dan sluit je een ethernetkabel aan. Let op: de SD kaart en ethernetkabel worden niet meegeleverd.",
     features: [],
-    affiliateUrl: "https://www.amazon.nl/Tapo-C530WS-bewakingscamera-bewegingstracking-microSD-kaart/dp/B0DY94MCLN?tag=slimhuiswonen-21",
     
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F960206",
     youtubeId: "lg6pBF37pCQ",
@@ -2072,7 +1955,6 @@ export const products = [
     image: "/images/products/tp-link-tapo-d210-slimme-video-deurbel.png",
     description: "De TP-Link Tapo D210 is een slimme deurbel die je makkelijk overal plaatst, omdat hij op een batterij werkt. Zo hoef je geen kabels te trekken en kies je zelf de plek bij jouw voordeur. Je bewaart de beelden op een SD kaart, zodat je geen abonnement nodig hebt om beelden terug te kijken. Dankzij de grote kijkhoek zie je bezoekers van top tot teen en houd je goed zicht op jouw stoep of tuin. Met de meegeleverde chime hoor je in huis altijd een geluid als iemand aanbelt. Zo mis je nooit een bezoeker, ook als je telefoon niet bij de hand is.",
     features: [],
-    affiliateUrl: "https://www.amazon.nl/Tapo-D210-Video-deurbel-tweeweg-audio-niet-verwijderbare/dp/B0DN6LZGBW?tag=slimhuiswonen-21",
     
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F969587",
     youtubeId: "NeLH-0hV91k",
@@ -2093,7 +1975,6 @@ export const products = [
     image: "/images/products/tp-link-tapo-c520ws-2-pack-smart-battery-video-doo.png",
     description: "Met de TP-Link Tapo C520WS 2-pack houd je jouw voor- en achtertuin haarscherp in de gaten. De camera's en deurbel filmen alles in 2K kwaliteit. Zo zie je alle details en blijft het beeld scherp als je inzoomt. Je koppelt de apparaten aan de Tapo app op je smartphone. Hier zoom je in en uit met de camera's en draai je ze 360 graden rond. Ook krijg je via de app een melding bij beweging en wanneer iemand aanbelt. Doordat de deurbel op een batterij werkt, plaats je hem makkelijk waar je maar wilt. De bridge van de deurbel is meegeleverd. Als iemand de bel indrukt, hoor je hardop een geluid. Beelden bewaar je op een SD kaart. Hiervoor heb je geen extra cloudabonnement nodig.",
     features: [],
-    affiliateUrl: "https://www.amazon.nl/Tapo-D230S1-Video-deurbel-gezichtsveld-AI-herkenning/dp/B0C8BFXFN6?tag=slimhuiswonen-21",
     
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F953221",
     youtubeId: "4J7qLD3_m-M",
@@ -2114,7 +1995,6 @@ export const products = [
     image: "/images/products/hue-secure-bedrade-videodeurbel.png",
     description: "Met de Hue Secure Bedrade Videodeurbel houd je altijd in de gaten wie er voor de deur staat, dag en nacht. Dankzij de 2K resolutie zie je bezoekers en details extra scherp, terwijl de ingebouwde verlichting zorgt dat beelden ook in het donker helder blijven. Via de microfoon en speaker reageer je direct op wie er aanbelt in de Hue app op je telefoon. De deurbel werkt op vaste bedrading van 12 tot 24 volt en heeft daarvoor een transformator van minimaal 10 VA nodig. Zodra de deurbel beweging herkent, ontvang je direct een melding op je telefoon. Wil je binnen ook een belgeluid horen? Dan heb je de Hue Chime nodig. Koppel de deurbel aan Hue lampen zodat de verlichting automatisch reageert. Beelden sla je op in de Hue cloud met een betaald Hue Secure abonnement. De Hue Chime worden niet meegeleverd.",
     features: [],
-    affiliateUrl: "https://www.amazon.nl/Philips-Hue-Secure-bedrade-videodeurbel/dp/B0FSLX1RKX?tag=slimhuiswonen-21",
     
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F970386",
     youtubeId: "ZxB4RXlLuhM",
@@ -2135,7 +2015,6 @@ export const products = [
     image: "/images/products/hue-secure-bedrade-videodeurbel-chime.png",
     description: "Met de Hue Secure Bedrade Videodeurbel + Chime houd je altijd in de gaten wie er voor de deur staat, dag én nacht. Dankzij de 2K resolutie zie je bezoekers en details extra scherp, terwijl de ingebouwde verlichting zorgt dat beelden ook in het donker helder blijven. Via de microfoon en speaker reageer je direct op wie er aanbelt in de Hue app op je telefoon. De deurbel werkt op vaste bedrading van 12 tot 24 volt en heeft daarvoor een transformator van minimaal 10 VA nodig. Zodra de deurbel beweging herkent, ontvang je direct een melding en hoor je een belgeluid via de meegeleverde Hue Chime. Koppel de deurbel aan Hue lampen zodat de verlichting automatisch reageert. Beelden sla je op in de Hue cloud met een betaald Hue Secure abonnement. De Hue Bridge wordt niet meegeleverd.",
     features: [],
-    affiliateUrl: "https://www.amazon.nl/Philips-Hue-Secure-2K-videoresolutie-Bewegingsdetectie/dp/B0FSLSNH89?tag=slimhuiswonen-21",
     
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F970387",
     youtubeId: "ZxB4RXlLuhM",
@@ -2156,7 +2035,6 @@ export const products = [
     image: "/images/products/tp-link-tapo-l535e-wit-en-gekleurd-licht-e27.png",
     description: "Met de TP-Link Tapo L535E - Wit en Gekleurd Licht - E27 voorzie je een lamp met E27 fitting van smart verlichting. Deze lamp geeft gekleurd en alle tinten wit licht. Zo kies je voor ieder moment van de dag het juiste licht. Met de juiste lichtkleur op het juiste moment voel je je vaak beter. Je bedient de lampen ook buitenshuis omdat de lampen via wifi aan je smartphone verbonden zijn.In de Tapo app stel je de lichtkleur en vaste routines in. Wil je de lamp ook met je stem bedienen? Dan koppel je hem aan je slimme assistent. Je verbindt de lamp ook met andere Tapo smart home apparaten zoals schakelaars en stekkers.",
     features: [],
-    affiliateUrl: "https://www.amazon.nl/Tapo-L535E-gecertificeerd-wifi-gloeilamp-energiebewaking/dp/B0CKXSYYH2?tag=slimhuiswonen-21",
     
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F956290",
     youtubeId: "ElWxMlAcUOg",
@@ -2198,7 +2076,6 @@ export const products = [
     image: "/images/products/tp-link-tapo-l930-5-lichtstrip-5m.png",
     description: "De TP-Link Tapo L930-5 Lichtstrip 5m is een lichtsnoer met verschillende kleurzones. Zo stel je tot 50 verschillende kleuren tegelijk in. Je gebruikt de lightstrip als subtiele sfeerverlichting, of je laat hem juist uitbundig meebewegen met je muziek. De lightstrip reageert op het geluid van je speakers. Met de kleefstrip plak je de lightstrip op de juiste plaats. Je verbindt de lichtstrip via wifi aan je smartphone, waarna je hem in de app bedient. Is de lichtstrip te lang? Dan knip je hem gemakkelijk op maat. Om de lamp met je stem te bedienen, koppel je hem aan je slimme assistent zoals Siri of Google Assistant.",
     features: [],
-    affiliateUrl: "https://www.amazon.nl/Tapo-L930-5-lichtstripsynchronisatie-kleurverandering-segmentcontrole/dp/B0B59RLH4F?tag=slimhuiswonen-21",
     
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F956287",
     youtubeId: "q1ghar1-Kko",
@@ -2219,7 +2096,6 @@ export const products = [
     image: "/images/products/bosch-slimme-kamerthermostaat-2.png",
     description: "Met de Bosch Slimme Kamerthermostaat 2 is het thuis altijd de juiste temperatuur. De thermostaat werkt samen met je Bosch radiatorknoppen. Je koppelt ze aan elkaar via een Bosch Smart Home Controller. Let op: deze krijg je niet meegeleverd. Omdat de thermostaat op batterijen werkt, plaats je hem makkelijk overal. Hij meet de temperatuur op de plek waar je hem neerzet. Via de app stel je jouw gewenste temperatuur in. De thermostaat stuurt de radiatorknoppen dan automatisch aan en zet de verwarming hoger of lager. Naast de temperatuur meet de thermostaat de luchtvochtigheid in huis en geeft een melding als deze te hoog of te laag is. Via de Smart Home Controller koppel je ook andere Bosch apparaten aan de thermostaat. Stel bijvoorbeeld in dat als de luchtvochtigheid te laag is, de thermostaat je luchtbevochtiger aanzet via een Bosch slimme stekker.",
     features: [],
-    affiliateUrl: "https://www.amazon.nl/Bosch-Kamerthermostaat-besturing-slimme-radiatorthermostaten/dp/B0BKLXTWQX?tag=slimhuiswonen-21",
     
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F973110",
     youtubeId: "U9i2RjJdsFk",
@@ -2240,7 +2116,6 @@ export const products = [
     image: "/images/products/bosch-slimme-radiatorknop-2-matter.png",
     description: "Regel de verwarming in huis met de Bosch Slimme Radiatorknop 2 Matter. Met deze slimme radiatorknop regel je de temperatuur in één ruimte. Via de Bosch Smart Home app op je smartphone stel je de temperatuur in of kies je een verwarmingsschema. Zo is het in die ruimte altijd de juiste temperatuur. Zo bespaar je energie, want de verwarming staat nooit onnodig aan. Kies bijvoorbeeld dat de verwarming een uur voordat je uit je werk komt aangaat, zodat je altijd thuiskomt in een warm huis. De knop werkt met Matter, waardoor je hem koppelt aan je andere slimme apparaten. Bijvoorbeeld je smart verlichting. Let op: voor sommige functies, bijvoorbeeld het inzien van verbruik en het instellen van verschillende scenario's, heb je een Bosch Smart Home Controller nodig.",
     features: [],
-    affiliateUrl: "https://www.amazon.nl/Bosch-radiatorknop-Home-systeem-fabrikantonafhankelijk-Matter-systemen/dp/B0DHGR23CN?tag=slimhuiswonen-21",
     
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F964392",
     youtubeId: "kgsgwnrEYN8",
@@ -2261,7 +2136,6 @@ export const products = [
     image: "/images/products/bosch-smart-home-controller-2.png",
     description: "Je bedient al je Bosch smart home apparaten met de Bosch Smart Home Controller 2. Verbind de controller bijvoorbeeld slimme thermostaten, lampen, deursensoren, rookmelders en beveiligingscamera's van Bosch. Dankzij Zigbee en Matter verbind je ook sommige apparaten van andere merken. Je verbindt de controller aan je router en installeert hem via de Bosch app. Daarna vind je hier alle ondersteunde apparaten. Je slaat je gegevens lokaal op, zodat je systeem ook zonder internet werkt. Wil je apparaten met je stem bedienen? Dan koppel je de controller aan Siri, Alexa en Google Assistant.",
     features: [],
-    affiliateUrl: "https://www.amazon.nl/Bosch-controller-besturing-Home-systeem-smartHub/dp/B0BLZL6QLK?tag=slimhuiswonen-21",
     
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F964190",
     youtubeId: "USPzQb37iZ4",
@@ -2282,7 +2156,6 @@ export const products = [
     image: "/images/products/bosch-deur-en-raamcontact-2-matter.png",
     description: "Met de Bosch Deur- en Raamcontact 2 Matter trek je met een veilig gevoel de deur achter je dicht. Je plakt deze sensor op een deur of raam. Als iemand de deur of het raam opent, krijg je een melding via de app. Hier controleer je ook altijd en overal of de deur of het raam dicht is. De sensor werkt met Matter, waardoor je hem koppelt aan je andere slimme apparaten. Zo stel je bijvoorbeeld in dat je beveiligingscamera automatisch begint met filmen zodra iemand een deur of raam opent. Omdat de sensor draadloos is, plaats je hem gemakkelijk op alle soorten deuren of ramen. Bijvoorbeeld de achterdeur of het keukenraam, maar ook een medicijnkastje of tuinpoort.",
     features: [],
-    affiliateUrl: "https://www.amazon.nl/Bosch-energiezuinige-inbraakalarm-fabrikantoverkoepelend-Matter-systemen/dp/B0DK7PQS4T?tag=slimhuiswonen-21",
     
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F964221",
     youtubeId: "thRNnNY02io",
@@ -2303,7 +2176,6 @@ export const products = [
     image: "/images/products/bosch-draadloze-rookmelder-2.png",
     description: "Met de Bosch Draadloze Rookmelder 2 ga je zorgeloos de deur uit. Je koppelt deze slimme rookmelder aan je smartphone via de Bosch Smart Home app. Wanneer de melder rook herkent, gaat de sirene af en stuurt hij je een melding. Ook waarschuw je de brandweer via de app. De rookmelder werkt op een batterij, waardoor je hem gemakkelijk op elke plek ophangt. Je plaatst een rookmelder het liefst zo hoog mogelijk tegen het plafond. Verbind de melder met je andere Bosch smart home apparaten, bijvoorbeeld een IP camera. Wanneer de rookmelder afgaat, kijk je via de app live mee met de camerabeelden. De Bosch rookmelder werkt ook met Philips Hue smart lampen. Bij rookontwikkeling gaan de lampen automatisch aan, zodat je de route naar buiten beter ziet.",
     features: [],
-    affiliateUrl: "https://www.amazon.nl/Bosch-Home-rookmelder-app-functie-compatibel-Homekit/dp/B09XFGPTZY?tag=slimhuiswonen-21",
     
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F964216",
     youtubeId: "l5Bm4MqM6JY",
@@ -2324,7 +2196,6 @@ export const products = [
     image: "/images/products/tp-link-tapo-t30-smart-sensor-kit.png",
     description: "Ga zorgeloos de deur uit met de TP-Link Tapo T30 Smart Sensor Kit. Je koppelt deze slimme sensoren aan je smartphone via de Tapo app. Zo krijg je altijd en overal een melding wanneer iemand langs een bewegingssensor loopt of een deur of raam opent. Ook gaat er op de hub een alarm af. Je verbindt de sensoren aan je andere Tapo apparaten. Op die manier stel je bijvoorbeeld in dat je Tapo beveiligingscamera automatisch begint met filmen als de sensor beweging opmerkt. De sensoren hebben ingebouwde magneten en plakstrips, waardoor je ze makkelijk overal aan vastmaakt. Bijvoorbeeld de deurpost of de muur van de babykamer. De hub sluit je op een centrale plek in huis aan op een stopcontact.",
     features: [],
-    affiliateUrl: "https://www.amazon.nl/Tapo-T30-KIT-bewegingsdetectie-deurbeveiliging/dp/B0DD4F2KXN?tag=slimhuiswonen-21",
     
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F960204",
     youtubeId: "7IzGibqoc8I",
@@ -2345,7 +2216,6 @@ export const products = [
     image: "/images/products/tp-link-tapo-p410m.png",
     description: "Met de TP-Link Tapo P410M slimme stekker bedien je elektrische apparaten buiten veilig en slim. Omdat deze stekker waterdicht is, gebruik je hem ook voor buitenverlichting of een heater in de tuin. De stekker werkt via wifi en verbindt meteen met de Tapo app. In de app zie je hoeveel stroom je apparaten gebruiken en zet je ze aan of uit, ook als je niet thuis bent. Je stelt vaste schema¿s in, zodat apparaten automatisch werken op de momenten die jij kiest. Deze stekker herkent of je stroom verbruikt of teruglevert. Je krijgt hierbij inzicht in wat je zonnepanelen doen. Met Amazon Alexa of Google Assistant bedien je apparaten ook met je stem.",
     features: [],
-    affiliateUrl: "https://www.amazon.nl/Tapo-P410M-stopcontact-stroommeter-afstandsbediening/dp/B0FZCP6BK7?tag=slimhuiswonen-21",
     
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F975143",
     youtubeId: "uc-R7GvTKtc",
@@ -2366,7 +2236,6 @@ export const products = [
     image: "/images/products/bosch-smart-plug-compact.png",
     description: "Met de Bosch Smart Plug Compact schakel je apparaten op afstand in of uit via je smartphone of slimme assistent. Zo zet je bijvoorbeeld de lamp in je woonkamer aan zonder op te staan. Je meet met deze slimme stekker hoeveel stroom een apparaat verbruikt. Hierdoor weet je precies waar je op bespaart. Heb je een plug & play zonnepaneel of mini PV systeem? Dan meet de stekker ook hoeveel energie je bespaart. Dankzij het kleine formaat blijft er ruimte over voor andere stekkers in het stopcontact. Je bedient deze slimme stekker via de Bosch Smart Home app of met je stem via Amazon Alexa of Google Assistant. Of koppel de stekker aan je smart home systeem met Matter. Hij is geschikt voor apparaten tot 3.680 watt.",
     features: [],
-    affiliateUrl: "https://www.amazon.nl/Bosch-energiespaarfunctie-Home-systeem-fabrikantonafhankelijk-Matter-systemen/dp/B0DY9ZPVTT?tag=slimhuiswonen-21",
     
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F964393",
     youtubeId: "99ig_Gu_8yM",
@@ -2387,7 +2256,6 @@ export const products = [
     image: "/images/products/tp-link-deco-be25.png",
     description: "Breid je Deco netwerk uit, of begin met je mesh systeem met de TP-Link Deco BE25. In dit pakket zit één station, waarmee je in een klein appartement overal wifi hebt. Je breidt dit pakket makkelijk uit met extra Deco stations. Dankzij wifi 7 haal je hogere snelheden en heb je minder last van storingen. Als een deel van de verbinding wordt verstoord, blijven de andere banden namelijk gewoon werken. De BE25 router werkt samen via Multi-Link Operation. Zo gebruiken ze meerdere frequenties tegelijk, waarmee je de hoogste snelheden haalt. Deze dual band router gebruikt 2 frequenties: De 5 GHz en de 2.4 GHz frequentie. Op de 5 GHz band haal je snelheden tot 2.882 Mbps. Je verbindt ook andere apparaten bedraad aan het station. Verbind bijvoorbeeld je tv bedraad aan een station, zodat je nooit last hebt van haperingen.",
     features: [],
-    affiliateUrl: "https://www.amazon.nl/TP-Link-Deco-BE25-BE3600Mbps-Ethernet-poorten/dp/B0D6W1FWJG?tag=slimhuiswonen-21",
     
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F967105",
     youtubeId: "xfJQRk9xhDo",
@@ -2408,7 +2276,6 @@ export const products = [
     image: "/images/products/tp-link-deco-be25-2-pack.png",
     description: "Zorg voor een snelle wifi 7 verbinding op één verdieping van je huis met het TP-Link Deco BE25 2-Pack. Voor een stabiele verbinding op meerdere verdiepingen voeg je een station toe. Dankzij wifi 7 haal je hogere snelheden en heb je minder last van storingen. Als een deel van de verbinding wordt verstoord, blijven de andere banden namelijk gewoon werken. De BE25 routers werken samen via Multi-Link Operation. Zo gebruiken ze meerdere frequenties tegelijk, waarmee je de hoogste snelheden haalt. Deze dual band router gebruikt 2 frequenties. De 5 GHz en de 2.4 GHz frequentie. Op de 5 GHz band haal je snelheden tot 2.882 Mbps. De BE25 stations maken draadloos verbinding met elkaar of via een 2.5 Gbps kabelverbinding. Je verbindt ook andere apparaten bedraad aan ieder station. Verbind bijvoorbeeld je tv bedraad aan een station, zodat je nooit last hebt van haperingen.",
     features: [],
-    affiliateUrl: "https://www.amazon.nl/TP-Link-Deco-BE25-BE3600Mbps-Ethernet-poorten/dp/B0D6W3T4M3?tag=slimhuiswonen-21",
     
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F967108",
     youtubeId: "uhr-Jac9nQk",
@@ -2429,7 +2296,6 @@ export const products = [
     image: "/images/products/tp-link-deco-be65-2-pack.png",
     description: "Zorg voor een snelle wifi 7 verbinding op 2 verdiepingen met het TP-Link Deco BE65 2-Pack. Dankzij wifi 7 halen deze routers hogere snelheden. Je hebt minder last van stoorzenders, doordat de frequenties van de banden doorwerken wanneer een deel ervan verstoord wordt. De routers hebben 3 draadloze verbindingen die dankzij Multi-Link Operation samenwerken voor de hoogste snelheid. De 5 GHz band heeft een snelheid van 4320 Mbps en de 6 GHz band verwerkt 5760 Mbps. Hierdoor koppel je zonder moeite al je apparaten aan deze snelle banden. De BE65 stations maken verbinding met elkaar via de 3 snelle frequenties, of via een bekabelde 2.5 Gbps verbinding.",
     features: [],
-    affiliateUrl: "https://www.amazon.nl/TP-Link-Deco-BE65-2-pack-overdrachten/dp/B0CJJ733W3?tag=slimhuiswonen-21",
     
     coolblueUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13813&p=https%3A%2F%2Fwww.coolblue.nl%2Fproduct%2F942270",
     youtubeId: "MSdFzOvPk3k",

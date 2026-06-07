@@ -54,17 +54,6 @@ export default function Products({ limit, showHeader = true }) {
               )}
 
               <div className="product-actions">
-                {p.affiliateUrl && (
-                  <a
-                    href={p.affiliateUrl}
-                    className="btn btn-amazon product-btn"
-                    target="_blank"
-                    rel="nofollow sponsored noopener noreferrer"
-                  >
-                    Beste prijs op Amazon
-                  </a>
-                )}
-
                 <Link
                   href={`/producten/${p.slug}`}
                   className="product-details-link"

@@ -2533,7 +2533,6 @@ relatedGuides: [
       pros: ["Energiemeting ingebouwd", "Zeer betaalbaar (±€12)"],
       cons: ["Geen Matter-ondersteuning"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DTapo%2520P115",
-      amazonUrl: "https://www.amazon.nl/s?k=Tapo+P115&tag=slimhuiswonen-21",
     },
     {
       title: "Beste voor Zigbee: Aqara Smart Plug",
@@ -2556,7 +2555,6 @@ relatedGuides: [
       pros: ["3 stopcontacten + 3 USB-poorten", "Ideaal voor bureau of tv-meubel"],
       cons: ["Geen energiemeting per stopcontact"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DTapo%2520P300",
-      amazonUrl: "https://www.amazon.nl/s?k=Tapo+P300&tag=slimhuiswonen-21",
     },
   ],
 
@@ -2588,7 +2586,7 @@ relatedGuides: [
   intro:
     "Een robotstofzuiger houdt je vloer schoon zonder dat je er zelf bij hoeft te zijn. Moderne modellen navigeren slim via laser, maken een plattegrond van je huis en kun je inplannen via de app.",
   available: true,
-  datePublished: "2026-05-01",
+  datePublished: "2026-05-08",
 
   whoIsThisFor: [
     "Voor wie dagelijks wil stofzuigen zonder zelf te doen",
@@ -2616,7 +2614,6 @@ relatedGuides: [
       pros: ["Lage aanschafprijs", "App-bediening aanwezig"],
       cons: ["Geen LiDAR, minder nauwkeurige navigatie"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DXiaomi%2520Robot%2520Vacuum%2520E10",
-      amazonUrl: "https://www.amazon.nl/s?k=Xiaomi+Robot+Vacuum+E10&tag=slimhuiswonen-21",
     },
     {
       title: "Beste mid-range: Dreame L10s Ultra",
@@ -2628,7 +2625,6 @@ relatedGuides: [
       pros: ["LiDAR navigatie voor nauwkeurige routes", "Automatisch dweilen"],
       cons: ["Hogere aanschafprijs dan budget modellen"],
       bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3DDreame%2520L10s",
-      amazonUrl: "https://www.amazon.nl/s?k=Dreame+L10s&tag=slimhuiswonen-21",
     },
     {
       title: "Beste voor huishoudens met huisdieren: Roborock S8",
@@ -2672,7 +2668,7 @@ relatedGuides: [
   intro:
     "Niet elke kamer heeft dezelfde verlichtingsbehoefte. De woonkamer vraagt om sfeer en dimmen, de keuken om helder werklicht, de slaapkamer om rustig warm licht. In deze gids leg ik per kamer uit welke slimme lamp het best werkt en welk budget je nodig hebt.",
   available: true,
-  datePublished: "2026-05-01",
+  datePublished: "2026-05-15",
 
   whoIsThisFor: [
     "Voor wie slimme verlichting per kamer wil installeren",

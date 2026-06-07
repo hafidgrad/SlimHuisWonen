@@ -46,15 +46,6 @@ export default function TopAanraders() {
               )}
 
               <div className="product-actions">
-                <a
-                  href={product.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-amazon product-btn"
-                >
-                  Bekijk beste prijs bij Amazon
-                </a>
-
                 <Link
                   href={`/producten/${product.slug}`}
                   className="product-details-link"

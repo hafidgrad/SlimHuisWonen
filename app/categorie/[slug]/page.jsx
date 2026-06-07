@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { getProductsByCategory } from "@/data/products";
 import { categories } from "@/data/categories";
-import AmazonSearchCta from "@/components/AmazonSearchCta";
 import { getBolUrl, getCoolblueUrl } from "@/lib/bol-api";
 import PrijsDisclaimer from "@/components/PrijsDisclaimer";
 import FaqSection from "@/components/FaqSection";
@@ -57,24 +56,6 @@ function normalizeCategorySlug(slug) {
 function getCategory(slug) {
   const normalized = normalizeCategorySlug(slug);
   return categories.find((c) => c.slug === normalized);
-}
-
-/* ---------- Amazon zoekterm mapping ---------- */
-const AMAZON_SEARCH_TERMS = {
-  "slimme-verlichting": "slimme verlichting",
-  "slimme-stekkers": "slimme stekker wifi",
-  "slimme-deurbellen": "slimme deurbel met camera",
-  "slimme-cameras": "slimme beveiligingscamera wifi",
-  "sensoren": "bewegingssensor zigbee",
-  "slimme-thermostaten": "slimme thermostaat",
-  "slimme-sloten": "slim deurslot",
-  "smart-home-hubs": "smart home hub homey",
-  "mesh-wifi": "mesh wifi systeem",
-  "energie-monitors": "slimme energiemeter p1",
-};
-
-function getAmazonSearchTerm(slug) {
-  return AMAZON_SEARCH_TERMS[slug] ?? slug.replace("-", " ");
 }
 
 /* ---------- Metadata ---------- */
@@ -132,7 +113,6 @@ export default function CategoryPage({ params }) {
   const topThree = products.slice(0, 3);
   const rest = products.slice(3);
 
-  const amazonSearchTerm = getAmazonSearchTerm(normalizedSlug);
   const categoryExtra = CATEGORY_FAQS[normalizedSlug] ?? null;
 
   const collectionSchema = {
@@ -257,17 +237,6 @@ export default function CategoryPage({ params }) {
                           </a>
                         )}
 
-                        {p.affiliateUrl && (
-                          <a
-                            href={p.affiliateUrl}
-                            target="_blank"
-                            rel="noopener noreferrer sponsored"
-                            className="btn btn-amazon product-btn"
-                          >
-                            Bekijk op Amazon
-                          </a>
-                        )}
-
                         <Link
                           href={`/producten/${p.slug}`}
                           className="product-details-link"
@@ -277,7 +246,7 @@ export default function CategoryPage({ params }) {
                         </Link>
                       </div>
                       <div style={{ position: "relative", zIndex: 1 }}>
-                        {[bolUrl, coolblueUrl, p.affiliateUrl].filter(Boolean).length >= 2 && <PrijsDisclaimer />}
+                        {[bolUrl, coolblueUrl].filter(Boolean).length >= 2 && <PrijsDisclaimer />}
                       </div>
                     </article>
                   );
@@ -357,17 +326,6 @@ export default function CategoryPage({ params }) {
                           </a>
                         )}
 
-                        {p.affiliateUrl && (
-                          <a
-                            href={p.affiliateUrl}
-                            target="_blank"
-                            rel="noopener noreferrer sponsored"
-                            className="btn btn-amazon product-btn"
-                          >
-                            Bekijk op Amazon
-                          </a>
-                        )}
-
                         <Link
                           href={`/producten/${p.slug}`}
                           className="product-details-link"
@@ -377,18 +335,13 @@ export default function CategoryPage({ params }) {
                         </Link>
                       </div>
                       <div style={{ position: "relative", zIndex: 1 }}>
-                        {[bolUrl, coolblueUrl, p.affiliateUrl].filter(Boolean).length >= 2 && <PrijsDisclaimer />}
+                        {[bolUrl, coolblueUrl].filter(Boolean).length >= 2 && <PrijsDisclaimer />}
                       </div>
                     </article>
                   );
                 })}
               </div>
             </>
-          )}
-
-          {/* ✅ Subtiele Amazon zoek CTA */}
-          {products.length > 0 && (
-            <AmazonSearchCta searchTerm={amazonSearchTerm} />
           )}
 
           {categoryExtra?.faqs && (

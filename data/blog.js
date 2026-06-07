@@ -9,7 +9,7 @@ export const blogPosts = [
   image: "/images/blog/wat-is-zigbee.png",
   category: "Protocollen",
   available: true,
-  datePublished: "2025-09-15",
+  datePublished: "2024-09-15",
 
   related: [
     "zigbee-vs-zwave-vs-matter-vs-wifi",
@@ -251,7 +251,7 @@ export const blogPosts = [
   image: "/images/blog/wat-is-matter.png",
   category: "Protocollen",
   available: true,
-  datePublished: "2025-09-22",
+  datePublished: "2024-10-08",
 
   related: [
     "wat-is-zigbee",
@@ -533,7 +533,7 @@ export const blogPosts = [
   image: "/images/blog/zigbee-vs-zwave-vs-matter-vs-wifi.png",
   category: "Protocollen",
   available: true,
-  datePublished: "2025-10-05",
+  datePublished: "2024-10-22",
 
   related: [
     "wat-is-zigbee",
@@ -692,7 +692,7 @@ export const blogPosts = [
   image: "/images/blog/aqara-vs-tapo.png",
   category: "Merken",
   available: true,
-  datePublished: "2025-10-18",
+  datePublished: "2025-04-22",
 
   related: [
     "wat-is-zigbee",
@@ -909,7 +909,7 @@ export const blogPosts = [
   image: "/images/blog/home-assistant-vs-homey.png",
   category: "Hubs",
   available: true,
-  datePublished: "2025-11-08",
+  datePublished: "2025-04-08",
 
   related: [
     "beste-smart-home-hub",
@@ -1118,7 +1118,7 @@ export const blogPosts = [
   image: "/images/blog/beste-slimme-stekkers.png",
   category: "Smart Home",
   available: true,
-  datePublished: "2025-11-15",
+  datePublished: "2024-11-18",
 
   related: [
     "wat-is-zigbee",
@@ -1277,7 +1277,7 @@ export const blogPosts = [
   image: "/images/blog/beste-slimme-verlichting.png",
   category: "Smart Home",
   available: true,
-  datePublished: "2025-11-22",
+  datePublished: "2024-11-05",
 
   related: [
     "wat-is-zigbee",
@@ -1562,7 +1562,7 @@ export const blogPosts = [
   image: "/images/blog/beste-slimme-camera.png",
   category: "Smart Home",
   available: true,
-  datePublished: "2025-12-01",
+  datePublished: "2024-12-02",
 
   related: [
     "beste-slimme-deurbel",
@@ -1742,7 +1742,7 @@ export const blogPosts = [
   image: "/images/blog/beste-slimme-deurbel.png",
   category: "Koopgids",
   available: true,
-  datePublished: "2025-12-10",
+  datePublished: "2025-05-20",
 
   related: [
     "beste-slimme-camera",
@@ -1890,7 +1890,7 @@ export const blogPosts = [
   image: "/images/blog/klikaanklikuit-smart-home.png",
   category: "Smart Home",
   available: true,
-  datePublished: "2025-12-17",
+  datePublished: "2025-05-06",
 
   related: [
     "beste-smart-home-hub",
@@ -2017,7 +2017,7 @@ export const blogPosts = [
   image: "/images/blog/huisdieren.png",
   category: "Smart Home",
   available: true,
-  datePublished: "2026-01-08",
+  datePublished: "2025-02-11",
 
   related: [
     "beste-slimme-camera",
@@ -2162,7 +2162,7 @@ export const blogPosts = [
   image: "/images/blog/kinderen.png",
   category: "Smart Home",
   available: true,
-  datePublished: "2026-01-15",
+  datePublished: "2025-01-28",
 
   related: [
     "beste-slimme-camera",
@@ -2293,7 +2293,7 @@ export const blogPosts = [
   image: "/images/blog/beste-slimme-sensoren.png",
   category: "Smart Home",
   available: true,
-  datePublished: "2026-01-22",
+  datePublished: "2025-03-11",
 
   related: [
     "beste-smart-home-hub",
@@ -2461,7 +2461,7 @@ export const blogPosts = [
   image: "/images/blog/beste-slimme-thermostaat.png",
   category: "Vergelijking",
   available: true,
-  datePublished: "2026-02-05",
+  datePublished: "2025-07-01",
 
   related: [
     "home-assistant-vs-homey",
@@ -2623,7 +2623,7 @@ export const blogPosts = [
   image: "/images/blog/slimme-lampen-zonder-hub.png",
   category: "Verlichting",
   available: true,
-  datePublished: "2026-02-18",
+  datePublished: "2025-06-03",
 
   related: [
     "wat-is-zigbee",
@@ -2765,7 +2765,7 @@ export const blogPosts = [
   image: "/images/blog/google-home-vs-alexa.png",
   category: "Vergelijking",
   available: true,
-  datePublished: "2026-03-01",
+  datePublished: "2025-07-15",
 
   related: [
     "home-assistant-vs-homey",
@@ -2922,7 +2922,7 @@ export const blogPosts = [
   image: "/images/blog/philips-hue-alternatieven.png",
   category: "Verlichting",
   available: true,
-  datePublished: "2026-03-12",
+  datePublished: "2025-08-19",
 
   related: [
     "wat-is-slimme-verlichting",
@@ -3064,7 +3064,7 @@ export const blogPosts = [
   image: "/images/blog/smart-home-energiebesparing.png",
   category: "Energie",
   available: true,
-  datePublished: "2026-03-20",
+  datePublished: "2025-08-05",
 
   related: [
     "beste-slimme-thermostaat",
@@ -3209,7 +3209,7 @@ export const blogPosts = [
   image: "/images/blog/slimme-radiatorkraan.png",
   category: "Energie",
   available: true,
-  datePublished: "2026-04-12",
+  datePublished: "2025-12-23",
 
   related: ["beste-slimme-thermostaat", "smart-home-energiebesparing"],
 
@@ -3373,7 +3373,7 @@ export const blogPosts = [
   image: "/images/blog/homey-bridge-of-homey-pro.png",
   category: "Hubs",
   available: true,
-  datePublished: "2026-04-12",
+  datePublished: "2025-12-09",
 
   related: ["home-assistant-vs-homey", "beste-smart-home-hub", "wat-is-zigbee"],
 
@@ -3516,7 +3516,7 @@ export const blogPosts = [
   image: "/images/blog/beste-slimme-verlichting.png",
   category: "Verlichting",
   available: true,
-  datePublished: "2026-04-12",
+  datePublished: "2025-11-25",
   dateModified: "2026-04-19",
 
   related: ["beste-slimme-verlichting", "wat-is-zigbee", "slimme-lampen-zonder-hub", "wat-is-matter"],
@@ -3780,7 +3780,7 @@ export const blogPosts = [
   image: "/images/blog/wat-is-thread.png",
   category: "Protocollen",
   available: true,
-  datePublished: "2026-04-12",
+  datePublished: "2025-11-11",
 
   related: ["wat-is-matter", "zigbee-vs-zwave-vs-matter-vs-wifi", "beste-smart-home-hub"],
 
@@ -3855,7 +3855,7 @@ export const blogPosts = [
   image: "/images/blog/apple-homeKit.png",
   category: "Ecosystemen",
   available: true,
-  datePublished: "2026-04-12",
+  datePublished: "2025-10-28",
 
   related: ["wat-is-matter", "google-home-vs-alexa", "beste-smart-home-hub"],
 
@@ -3932,7 +3932,7 @@ export const blogPosts = [
   image: "/images/blog/smart-home-energiebesparing.png",
   category: "Energie",
   available: true,
-  datePublished: "2026-04-12",
+  datePublished: "2025-09-30",
 
   related: ["smart-home-energiebesparing", "beste-energie-monitor"],
 
@@ -4037,7 +4037,7 @@ export const blogPosts = [
   image: "/images/blog/ring-deurbel-vs-tapo-deurbel.png",
   category: "Beveiliging",
   available: true,
-  datePublished: "2026-04-12",
+  datePublished: "2025-10-14",
 
   related: ["beste-slimme-deurbel", "beste-slimme-camera"],
 
@@ -4136,7 +4136,7 @@ export const blogPosts = [
   image: "/images/blog/google-home-uitgelegd.png",
   category: "Ecosystemen",
   available: true,
-  datePublished: "2026-04-12",
+  datePublished: "2025-09-16",
 
   related: ["google-home-vs-alexa", "homekit-uitleg", "beste-smart-home-hub"],
 
@@ -4216,7 +4216,7 @@ export const blogPosts = [
   image: "/images/blog/slim-huis-budget.png",
   category: "Smart Home",
   available: true,
-  datePublished: "2026-01-10",
+  datePublished: "2025-01-14",
   dateModified: "2026-04-20",
 
   related: [
@@ -4463,7 +4463,7 @@ export const blogPosts = [
   image: "/images/blog/beste-slimme-verlichting.png",
   category: "Smart Home",
   available: true,
-  datePublished: "2026-01-20",
+  datePublished: "2025-03-25",
   dateModified: "2026-04-20",
 
   related: [
@@ -4714,7 +4714,7 @@ export const blogPosts = [
   image: "/images/blog/philips-hue-bridge-nodig.png",
   category: "Smart Home",
   available: true,
-  datePublished: "2026-02-05",
+  datePublished: "2025-02-25",
   dateModified: "2026-04-20",
 
   related: [
@@ -4943,7 +4943,7 @@ export const blogPosts = [
   image: "/images/blog/tado-vs-netatmo.png",
   category: "Smart Home",
   available: true,
-  datePublished: "2026-02-18",
+  datePublished: "2025-06-17",
   dateModified: "2026-04-20",
 
   related: [
@@ -5200,7 +5200,7 @@ export const blogPosts = [
   image: "/images/blog/beste-slimme-camera.png",
   category: "Beveiliging",
   available: true,
-  datePublished: "2026-03-05",
+  datePublished: "2025-09-02",
   dateModified: "2026-04-20",
 
   related: [
@@ -5471,7 +5471,7 @@ export const blogPosts = [
   image: "/images/blog/smart-home-huurwoning.png",
   category: "Smart Home",
   available: true,
-  datePublished: "2026-04-20",
+  datePublished: "2026-03-31",
 
   related: [
     "beste-smart-home-huurwoning",
@@ -5716,7 +5716,7 @@ export const blogPosts = [
   image: "/images/blog/zigbee-vs-wifi-lampen.png",
   category: "Verlichting",
   available: true,
-  datePublished: "2026-04-20",
+  datePublished: "2026-04-14",
 
   related: [
     "beste-slimme-verlichting",
@@ -5955,7 +5955,7 @@ export const blogPosts = [
   image: "/images/blog/beste-slimme-deurbel.png",
   category: "Beveiliging",
   available: true,
-  datePublished: "2026-04-20",
+  datePublished: "2026-03-17",
 
   related: [
     "beste-slimme-deurbel",
@@ -6187,7 +6187,7 @@ export const blogPosts = [
   image: "/images/blog/homey-uitleg-beginners.png",
   category: "Hubs",
   available: true,
-  datePublished: "2026-04-20",
+  datePublished: "2026-03-03",
 
   related: [
     "beste-smart-home-hub",
@@ -6434,7 +6434,7 @@ export const blogPosts = [
   image: "/images/blog/slimme-stekker-energiebesparing.png",
   category: "Energie",
   available: true,
-  datePublished: "2026-04-20",
+  datePublished: "2026-04-16",
 
   related: [
     "beste-slimme-stekkers",
@@ -6694,7 +6694,7 @@ export const blogPosts = [
   image: "/images/blog/matter-vs-zigbee.png",
   category: "Protocollen",
   available: true,
-  datePublished: "2026-04-20",
+  datePublished: "2026-02-17",
 
   related: [
     "wat-is-matter",
@@ -6872,7 +6872,7 @@ export const blogPosts = [
   image: "/images/blog/beste-slimme-thermostaat.png",
   category: "Energie",
   available: true,
-  datePublished: "2026-04-20",
+  datePublished: "2026-02-03",
 
   related: [
     "beste-slimme-thermostaat",
@@ -7065,7 +7065,7 @@ export const blogPosts = [
   image: "/images/blog/aqara-vs-philips-hue-sensoren.png",
   category: "Merken",
   available: true,
-  datePublished: "2026-04-20",
+  datePublished: "2026-01-20",
 
   related: [
     "beste-slimme-sensoren",
@@ -7241,7 +7241,7 @@ export const blogPosts = [
   image: "/images/blog/smart-home-beveiliging.png",
   category: "Beveiliging",
   available: true,
-  datePublished: "2026-04-20",
+  datePublished: "2026-01-06",
 
   related: [
     "beste-slimme-camera",

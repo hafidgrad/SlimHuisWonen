@@ -1,12 +1,6 @@
 import React from "react";
 
 export default function AmazonSearchCta({ searchTerm }) {
-  const affiliateTag = "slimhuiswonen-21";
-
-  const amazonUrl = `https://www.amazon.nl/s?k=${encodeURIComponent(
-    searchTerm
-  )}&tag=${affiliateTag}`;
-
   const awinId = process.env.NEXT_PUBLIC_AWIN_PUBLISHER_ID;
 
   const bolTargetUrl = `https://www.bol.com/nl/nl/s/?searchtext=${encodeURIComponent(searchTerm)}`;
@@ -19,15 +13,6 @@ export default function AmazonSearchCta({ searchTerm }) {
     <div className="amazonCtaBox">
       <p className="muted">Niet gevonden wat je zoekt?</p>
       <div style={{ display: "flex", flexWrap: "wrap", gap: "0.6rem", marginTop: "0.5rem" }}>
-        <a
-          href={amazonUrl}
-          target="_blank"
-          rel="nofollow sponsored noopener noreferrer"
-          className="btn btn-amazon"
-          style={{ fontSize: "0.9rem" }}
-        >
-          Bekijk op Amazon →
-        </a>
         <a
           href={bolUrl}
           target="_blank"

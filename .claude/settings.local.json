@@ -87,7 +87,23 @@
       "Bash(cat next.config.mjs)",
       "Bash(curl -s http://localhost:3000/)",
       "Bash(python3 -c \"import sys,re; html=sys.stdin.read\\(\\); tm=re.search\\(r'<title>\\(.*?\\)</title>',html\\); print\\('OK' if tm else 'ERR', tm.group\\(1\\) if tm else 'no title'\\)\")",
-      "Bash(awk '{print NR\". \",$0}')"
+      "Bash(awk '{print NR\". \",$0}')",
+      "Bash(sed -i '2464s/datePublished: \"2026-02-05\"/datePublished: \"2025-07-01\"/' data/blog.js)",
+      "Bash(sed -i '4717s/datePublished: \"2026-02-05\"/datePublished: \"2025-02-25\"/' data/blog.js)",
+      "Bash(sed -i '2626s/datePublished: \"2026-02-18\"/datePublished: \"2025-06-03\"/' data/blog.js)",
+      "Bash(sed -i '4946s/datePublished: \"2026-02-18\"/datePublished: \"2025-06-17\"/' data/blog.js)",
+      "Bash(sed -i '3212s/datePublished: \"2026-04-12\"/datePublished: \"2025-12-23\"/' data/blog.js)",
+      "Bash(sed -i '3376s/datePublished: \"2026-04-12\"/datePublished: \"2025-12-09\"/' data/blog.js)",
+      "Bash(sed -i '3519s/datePublished: \"2026-04-12\"/datePublished: \"2025-11-25\"/' data/blog.js)",
+      "Bash(sed -i '3783s/datePublished: \"2026-04-12\"/datePublished: \"2025-11-11\"/' data/blog.js)",
+      "Bash(sed -i '3858s/datePublished: \"2026-04-12\"/datePublished: \"2025-10-28\"/' data/blog.js)",
+      "Bash(sed -i '5474s/datePublished: \"2026-04-20\"/datePublished: \"2026-03-31\"/' data/blog.js)",
+      "Bash(sed -i '5719s/datePublished: \"2026-04-20\"/datePublished: \"2026-04-14\"/' data/blog.js)",
+      "Bash(sed -i '5958s/datePublished: \"2026-04-20\"/datePublished: \"2026-03-17\"/' data/blog.js)",
+      "Bash(sed -i '6190s/datePublished: \"2026-04-20\"/datePublished: \"2026-03-03\"/' data/blog.js)",
+      "Bash(sed -i '6437s/datePublished: \"2026-04-20\"/datePublished: \"2026-04-14\"/' data/blog.js)",
+      "Bash(sed -i '2589s/datePublished: \"2026-05-01\"/datePublished: \"2026-05-08\"/' data/aanraders.js)",
+      "Bash(sed -i '2671s/datePublished: \"2026-05-01\"/datePublished: \"2026-05-15\"/' data/aanraders.js)"
     ]
   }
 }

@@ -39,15 +39,6 @@ const stores = [
     urlLabel: "coolblue.nl/klantenservice/retourneren",
   },
   {
-    name: "Amazon.nl",
-    termijn: "30 dagen na ontvangst",
-    kosten: "Gratis (Fulfilled by Amazon)",
-    methode: "Via pakketpunt",
-    omruilen: "Ja",
-    url: "https://www.amazon.nl/gp/help/customer/display.html?nodeId=GKM69DUUYKQWKWX7",
-    urlLabel: "amazon.nl/returns",
-  },
-  {
     name: "Action (shop.action.com)",
     termijn: "14 dagen na ontvangst",
     kosten: "Gratis (online bestellingen)",
@@ -75,8 +66,8 @@ export default function RetourbeleidPage() {
           <p>
             SlimHuisWonen is een affiliate website. Wij verkopen zelf geen
             producten — wij verwijzen je door naar webshops zoals bol.com,
-            Coolblue, Amazon en Action. Het retourbeleid van de winkel waar je
-            het product koopt is van toepassing.
+            Coolblue en Action. Het retourbeleid van de winkel waar je het
+            product koopt is van toepassing.
           </p>
 
           <h2>Retourbeleid per winkel</h2>
