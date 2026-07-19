@@ -27,6 +27,12 @@ const nextConfig = {
         destination: "/aanraders/beste-slimme-verlichting",
         permanent: true,
       },
+      // Keyword-kannibalisatie fix: beste-slimme-stekkers-2026 → canonieke pagina
+      {
+        source: "/aanraders/beste-slimme-stekkers-2026",
+        destination: "/aanraders/beste-slimme-stekkers",
+        permanent: true,
+      },
       {
         source: "/aanraders/beste-slimme-deurbel",
         destination: "/aanraders/beste-slimme-sensoren",

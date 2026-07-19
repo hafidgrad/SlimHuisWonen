@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import { getProductBySlug, getAllProducts } from "@/data/products";
 import { getBolUrl, getCoolblueUrl } from "@/lib/bol-api";
 import Header from "@/components/Header";
@@ -98,6 +99,7 @@ export default function ProductPage({ params }) {
     cons = [],
     forWho = [],
     personalNote,
+    successorSlug,
     compatibility = {},
   } = product;
 
@@ -274,6 +276,27 @@ export default function ProductPage({ params }) {
                     </ul>
                   </div>
                 )}
+              </div>
+            )}
+
+            {/* Opvolger-melding */}
+            {successorSlug && (
+              <div
+                style={{
+                  marginTop: "1.5rem",
+                  padding: "1rem 1.25rem",
+                  borderLeft: "3px solid #f59e0b",
+                  background: "rgba(245,158,11,0.07)",
+                  borderRadius: "0 8px 8px 0",
+                }}
+              >
+                <strong>⚠️ Opvolger beschikbaar:</strong>
+                <p style={{ margin: "0.4rem 0 0 0" }}>
+                  Er is een nieuwere versie van dit product.{" "}
+                  <Link href={`/producten/${successorSlug}`} style={{ color: "#f59e0b" }}>
+                    Bekijk de opvolger →
+                  </Link>
+                </p>
               </div>
             )}
 

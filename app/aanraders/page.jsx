@@ -9,6 +9,7 @@ const EXCLUDED_SLUGS = new Set([
   "beste-slimme-deurbel",
   "beste-slimme-slot",
   "beste-robotstofzuigers-2026",
+  "beste-slimme-stekkers-2026",
   "beste-slimme-producten-voor-huisdieren",
   "beste-slimme-producten-voor-kinderen",
 ]);
@@ -20,7 +21,6 @@ const SLUG_ORDER = [
   "beste-slimme-sensoren",
   "beste-smart-home-hub",
   "beste-slimme-stekkers",
-  "beste-slimme-stekkers-2026",
   "beste-slimme-thermostaat",
   "beste-slimme-radiatorkraan",
   "beste-energie-monitor",

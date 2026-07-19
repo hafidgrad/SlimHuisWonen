@@ -14,7 +14,7 @@ const POPULAIRE_SLUGS = [
   "philips-hue-white-ambiance-starterkit",
   "tapo-l530e",
   "innr-zigbee-e27",
-  "homey-pro-early-2023",
+  "homey-pro-2026",
   "aqara-deur-raamsensor-p2",
   "tapo-p115",
 ];
@@ -602,15 +602,6 @@ export default function HomePage() {
                 <p>
                   Vergelijk wifi, Zigbee en Matter slimme stekkers met en zonder
                   energiemeting.
-                </p>
-                <span>Bekijk koopgids →</span>
-              </Link>
-
-              <Link href="/aanraders/beste-slimme-stekkers-2026" className="card">
-                <h3>Beste slimme stekkers 2026</h3>
-                <p>
-                  Vergelijk wifi-, Zigbee- en Matter-stekkers met energiemeting
-                  voor elk budget.
                 </p>
                 <span>Bekijk koopgids →</span>
               </Link>

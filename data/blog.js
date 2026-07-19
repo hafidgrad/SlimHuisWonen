@@ -791,7 +791,7 @@ export const blogPosts = [
   {
   slug: "beste-smart-home-hub",
   title: "Smart home hub kiezen: waar moet je op letten?",
-  seoTitle: "Beste smart home hub (2026)",
+  seoTitle: "Smart home hub kiezen: Homey, Home Assistant of SmartThings? (2026)",
   description:
     "Welke smart home hub past bij jou? Lees waar je op moet letten bij Homey, Home Assistant en SmartThings: gemak, controle, lokaal werken en uitbreiden.",
   image: "/images/blog/beste-smart-home-hub.png",

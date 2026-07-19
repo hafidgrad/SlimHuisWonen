@@ -11,6 +11,30 @@ const REDIRECTED_AANRADERS = new Set([
   "beste-slimme-deurbel",
   "beste-slimme-camera",
   "beste-slimme-slot",
+  "beste-slimme-stekkers-2026",
+]);
+
+// Productcategorieën met noindex meta-tag — niet in sitemap opnemen
+const NOINDEX_PRODUCT_CATEGORIES = new Set([
+  "slimme-cameras",
+  "slimme-deurbellen",
+  "slimme-sloten",
+]);
+
+// Blog-slugs met noindex meta-tag — niet in sitemap opnemen
+const NOINDEX_BLOG_SLUGS = new Set([
+  "wat-is-een-slimme-camera",
+  "beste-slimme-deurbel",
+  "ring-vs-tapo-deurbel",
+  "eufy-vs-ring-camera",
+  "slimme-deurbel-zonder-abonnement",
+  "smart-home-beveiliging-tips",
+]);
+
+// How-to-slugs met noindex meta-tag — niet in sitemap opnemen
+const NOINDEX_HOWTO_SLUGS = new Set([
+  "hoe-installeer-je-een-slimme-deurbel",
+  "hoe-installeer-je-een-tapo-camera",
 ]);
 
 const REDIRECTED_CATEGORIES = new Set([
@@ -80,7 +104,7 @@ export default function sitemap() {
 
   const blogArray = Array.isArray(blogPosts) ? blogPosts : [];
   const blogRoutes = blogArray
-    .filter((b) => b?.available && b?.slug)
+    .filter((b) => b?.available && b?.slug && !NOINDEX_BLOG_SLUGS.has(b.slug))
     .map((b) => ({
       url: `${baseUrl}/blog/${b.slug}`,
       lastModified,
@@ -99,7 +123,7 @@ export default function sitemap() {
 
   const allProducts = typeof getAllProducts === "function" ? getAllProducts() : [];
   const productRoutes = (Array.isArray(allProducts) ? allProducts : [])
-    .filter((p) => p?.slug)
+    .filter((p) => p?.slug && !NOINDEX_PRODUCT_CATEGORIES.has(p.category))
     .map((p) => ({
       url: `${baseUrl}/producten/${p.slug}`,
       lastModified,
@@ -109,7 +133,7 @@ export default function sitemap() {
 
   const howtoArray = Array.isArray(howto) ? howto : [];
   const howtoRoutes = howtoArray
-    .filter((h) => h?.available && h?.slug)
+    .filter((h) => h?.available && h?.slug && !NOINDEX_HOWTO_SLUGS.has(h.slug))
     .map((h) => ({
       url: `${baseUrl}/how-to/${h.slug}`,
       lastModified,

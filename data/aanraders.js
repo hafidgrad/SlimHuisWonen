@@ -719,13 +719,13 @@ relatedGuides: [
   },
   picks: [
     {
-      title: "Beste smart home hub voor de meeste mensen: Homey Pro",
+      title: "Beste smart home hub voor de meeste mensen: Homey Pro (2026)",
       description:
-        "Gebruiksvriendelijke alles-in-één hub met ondersteuning voor Zigbee, Z-Wave, Matter, Wi-Fi en veel integraties. Ideaal als je meerdere merken wilt combineren zonder technisch gedoe.",
+        "Gebruiksvriendelijke alles-in-één hub met ondersteuning voor Zigbee, Z-Wave, Matter, Wi-Fi en veel integraties. Nieuwste versie (2026) met 4GB RAM — ideaal als je meerdere merken wilt combineren zonder technisch gedoe.",
       image: "/images/products/homey-pro-early-2023.png",
-      href: "/producten/homey-pro-early-2023",
-      badges: ["Beste keuze", "All-in-one", "Gebruiksvriendelijk"],
-      pros: ["Werkt met alle protocollen (Zigbee, Z-Wave, Matter)", "Gebruiksvriendelijke app"],
+      href: "/producten/homey-pro-2026",
+      badges: ["Beste keuze", "All-in-one", "Nieuwste versie"],
+      pros: ["Werkt met alle protocollen (Zigbee, Z-Wave, Matter)", "4GB RAM — geschikt voor grote setups"],
       cons: ["Abonnement €2,99/maand voor extra functies"],
     },
     {
@@ -983,11 +983,11 @@ relatedGuides: [
       badges: ["Zigbee", "Stabiel", "Automatisering"],
     },
     {
-      title: "Beste smart hub voor automatisering: Homey Pro",
+      title: "Beste smart hub voor automatisering: Homey Pro (2026)",
       description:
         "Combineer camera’s, sensoren en stekkers in slimme scenario’s zoals meldingen bij beweging, temperatuurcontrole en automatische routines.",
       image: "/images/products/homey-pro-early-2023.png",
-      href: "/producten/homey-pro-early-2023",
+      href: "/producten/homey-pro-2026",
       badges: ["Geavanceerd", "Automatisering", "All-in-one"],
     },
   ],
@@ -1107,11 +1107,11 @@ relatedGuides: [
       badges: ["Privacy", "Sensor", "Veiligheid"],
     },
     {
-      title: "Beste smart hub voor routines: Homey Pro",
+      title: "Beste smart hub voor routines: Homey Pro (2026)",
       description:
         "Maak slimme routines zoals nachtmodus, automatische verlichting en meldingen op vaste tijden. Ideaal om meerdere apparaten samen te laten werken.",
       image: "/images/products/homey-pro-early-2023.png",
-      href: "/producten/homey-pro-early-2023",
+      href: "/producten/homey-pro-2026",
       badges: ["Automatisering", "All-in-one", "Smart home"],
     },
   ],

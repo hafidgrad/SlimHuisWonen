@@ -111,7 +111,8 @@
       "Bash(python3)",
       "Bash(python3 scripts/update-hue-ikea.py)",
       "Bash(cat .env.local)",
-      "Bash(cat .env)"
+      "Bash(cat .env)",
+      "Bash(2>&1)"
     ]
   }
 }

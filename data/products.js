@@ -853,7 +853,8 @@ export const products = [
   pros: ["Volledig lokaal — geen cloud nodig", "Ondersteunt Zigbee, Z-Wave, Matter, BLE, 433MHz", "Intuïtieve flow-editor voor automatiseringen"],
   cons: ["Duurste hub in dit overzicht", "Minder flexibel dan Home Assistant voor geavanceerde gebruikers"],
   forWho: ["Voor wie maximale controle wil zonder technisch gedoe", "Voor gebruikers die bereid zijn te investeren in de beste gebruikservaring"],
-  personalNote: "De beste plug-and-play smart home hub. Homey Pro heeft een superieure gebruikerservaring vergeleken met concurrenten. De hoge prijs is gerechtvaardigd als je een zorgeloos slim huis wilt.",
+  personalNote: "Let op: dit is de Early 2023-versie. De opvolger Homey Pro (2026) heeft 4GB RAM (dubbel) voor dezelfde prijs van €399 — dat is de versie die wij nu aanbevelen. De Early 2023 is nog steeds een uitstekende hub, maar als je nu koopt is de 2026-versie de betere keuze.",
+  successorSlug: "homey-pro-2026",
   youtubeUrl: "https://www.youtube.com/shorts/yIQxbRQHTRo",
 },
 
