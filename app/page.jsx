@@ -274,9 +274,11 @@ export default function HomePage() {
                 <h2>Waarom ik SlimHuisWonen ben gestart</h2>
 
                 <p>
-                  Ik begon met één IKEA Zigbee lamp. Nu draait mijn hele woning
-                  op Homey Pro met tientallen slimme verlichtingspunten. Op deze
-                  site deel ik wat ik geleerd heb — inclusief de fouten die je
+                  Ik begon met één IKEA Zigbee lamp. Inmiddels draait mijn hele
+                  woning op Home Assistant, met een eigen Zigbee-netwerk en een
+                  aantal Matter- en wifi-apparaten, en tientallen slimme
+                  verlichtingspunten. Op deze site deel ik wat ik geleerd heb —
+                  inclusief de fouten die je
                   beter kunt vermijden.
                 </p>
 
