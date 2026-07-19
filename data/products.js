@@ -863,7 +863,7 @@ export const products = [
   brand: "Athom",
   name: "Homey Pro (2026)",
   category: "smart-home-hubs",
-  image: "/images/products/homey-pro-early-2023.png",
+  image: "/images/products/homey-pro-2026.png",
   description: "Nieuwste versie van de populaire smart home hub. 4GB RAM (dubbel t.o.v. 2023), zelfde prijs van €399. Ondersteunt Matter, Thread, Zigbee, Z-Wave, Bluetooth, 433MHz, IR en wifi in één apparaat.",
   features: ["4GB RAM (2x meer dan 2023 versie)", "7 protocollen in één hub", "Lokale verwerking, werkt zonder internet", "Matter en Thread ingebouwd"],
   priceHint: "€399",

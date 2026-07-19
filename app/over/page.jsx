@@ -165,10 +165,10 @@ export default function OverPage() {
                   "Ik heb Eufy en Tapo camera's in huis. Binnencamera voor als we op vakantie zijn, buitencamera bij de voordeur. Daarna kwamen de Aqara deur- en raamsensoren — handig als er iemand binnengaat als wij er niet zijn.",
               },
               {
-                jaar: "Volgende stap",
-                titel: "Home Assistant staat op de planning",
+                jaar: "Migratie",
+                titel: "Overstap naar Home Assistant",
                 tekst:
-                  "Ik ben van plan om Home Assistant te installeren op een Raspberry Pi of NUC. Volledig lokaal, geen cloud-afhankelijkheid. Nog niet gedaan, maar ik schrijf er al over — want ik leer graag hardop.",
+                  "Ik ben inmiddels volledig overgestapt van Homey Pro naar Home Assistant. Ik heb een eigen Zigbee-netwerk opgebouwd en gebruik daarnaast een aantal Matter- en wifi-apparaten. Volledig lokaal, geen cloud-afhankelijkheid meer.",
               },
             ].map(({ jaar, titel, tekst }) => (
               <div
@@ -234,11 +234,11 @@ export default function OverPage() {
 
           <ul>
             <li>
-              <strong>Hub:</strong> Homey Pro — het hart van alles
+              <strong>Hub:</strong> Home Assistant — volledig lokaal, geen cloud-afhankelijkheid
             </li>
             <li>
               <strong>Verlichting:</strong> mix van Philips Hue en IKEA
-              Tradfri, via Homey gekoppeld
+              Tradfri, via mijn eigen Zigbee-netwerk
             </li>
             <li>
               <strong>Camera's:</strong> Eufy binnencamera + Tapo buitencamera
@@ -251,8 +251,8 @@ export default function OverPage() {
               enkele apparaten
             </li>
             <li>
-              <strong>Protocol:</strong> voornamelijk Zigbee via Homey, aangevuld
-              met wifi voor camera's en stekkers
+              <strong>Protocol:</strong> voornamelijk Zigbee via mijn eigen netwerk, aangevuld
+              met Matter en wifi voor camera's en stekkers
             </li>
           </ul>
 

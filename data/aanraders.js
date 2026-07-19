@@ -722,7 +722,7 @@ relatedGuides: [
       title: "Beste smart home hub voor de meeste mensen: Homey Pro (2026)",
       description:
         "Gebruiksvriendelijke alles-in-één hub met ondersteuning voor Zigbee, Z-Wave, Matter, Wi-Fi en veel integraties. Nieuwste versie (2026) met 4GB RAM — ideaal als je meerdere merken wilt combineren zonder technisch gedoe.",
-      image: "/images/products/homey-pro-early-2023.png",
+      image: "/images/products/homey-pro-2026.png",
       href: "/producten/homey-pro-2026",
       badges: ["Beste keuze", "All-in-one", "Nieuwste versie"],
       pros: ["Werkt met alle protocollen (Zigbee, Z-Wave, Matter)", "4GB RAM — geschikt voor grote setups"],
@@ -732,7 +732,7 @@ relatedGuides: [
       title: "Nieuwste Homey Pro: Homey Pro (2026)",
       description:
         "De nieuwste versie van Homey Pro uitgebracht in december 2025. 4GB RAM (dubbel t.o.v. 2023), zelfde prijs van €399. Geschikt voor grote smart home setups met meer dan 50 apparaten.",
-      image: "/images/products/homey-pro-early-2023.png",
+      image: "/images/products/homey-pro-2026.png",
       href: "/producten/homey-pro-2026",
       badges: ["Nieuw 2026", "4GB RAM", "All-in-one"],
       pros: ["4GB RAM voor grote setups", "Zelfde prijs als vorige versie (€399)"],
@@ -986,7 +986,7 @@ relatedGuides: [
       title: "Beste smart hub voor automatisering: Homey Pro (2026)",
       description:
         "Combineer camera’s, sensoren en stekkers in slimme scenario’s zoals meldingen bij beweging, temperatuurcontrole en automatische routines.",
-      image: "/images/products/homey-pro-early-2023.png",
+      image: "/images/products/homey-pro-2026.png",
       href: "/producten/homey-pro-2026",
       badges: ["Geavanceerd", "Automatisering", "All-in-one"],
     },
@@ -1110,7 +1110,7 @@ relatedGuides: [
       title: "Beste smart hub voor routines: Homey Pro (2026)",
       description:
         "Maak slimme routines zoals nachtmodus, automatische verlichting en meldingen op vaste tijden. Ideaal om meerdere apparaten samen te laten werken.",
-      image: "/images/products/homey-pro-early-2023.png",
+      image: "/images/products/homey-pro-2026.png",
       href: "/producten/homey-pro-2026",
       badges: ["Automatisering", "All-in-one", "Smart home"],
     },
