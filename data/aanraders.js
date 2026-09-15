@@ -615,7 +615,7 @@ relatedGuides: [
       badges: ["Budget", "Kleur", "Zigbee"],
       pros: ["Werkt met Homey Pro en Hue Bridge", "Online te bestellen via bol.com"],
       cons: ["Minder naamsbekendheid dan Hue of IKEA"],
-      bolUrl: "https://www.awin1.com/cread.php?awinmid=13926&ued=https://www.bol.com/nl/nl/s/?searchtext=innr+smart+bulb+colour+e27",
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dinnr%2Bsmart%2Bbulb%2Bcolour%2Be27",
     },
     {
       title: "Beste Zigbee alternatief: Innr Smart Bulb Comfort E27",
@@ -2698,7 +2698,7 @@ relatedGuides: [
       badges: ["Budget", "Kleur", "Woonkamer"],
       pros: ["Betaalbare kleurlamp via bol.com", "Zigbee — werkt met Homey"],
       cons: ["Iets duurder dan IKEA, maar online bestelbaar"],
-      bolUrl: "https://www.awin1.com/cread.php?awinmid=13926&ued=https://www.bol.com/nl/nl/s/?searchtext=innr+smart+bulb+colour+e27",
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dinnr%2Bsmart%2Bbulb%2Bcolour%2Be27",
     },
     {
       title: "Slaapkamer: Philips Hue White Ambiance E27 (los)",
@@ -2731,7 +2731,7 @@ relatedGuides: [
       badges: ["Thuiskantoor", "Tunable white", "Focus"],
       pros: ["Instelbare kleurtemperatuur (2700K–6500K)", "Zigbee — werkt met Homey"],
       cons: ["Geen kleur, alleen wit-tonen"],
-      bolUrl: "https://www.awin1.com/cread.php?awinmid=13926&ued=https://www.bol.com/nl/nl/s/?searchtext=innr+smart+bulb+e27",
+      bolUrl: "https://www.awin1.com/cread.php?awinaffid=2855887&awinmid=13926&p=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dinnr%2Bsmart%2Bbulb%2Be27",
     },
   ],
 
