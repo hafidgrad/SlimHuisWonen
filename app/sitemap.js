@@ -5,6 +5,98 @@ import { howto } from "@/data/howto";
 import { categories } from "@/data/categories";
 import { aanraders } from "@/data/aanraders";
 
+// Productslugs die 301-redirecten naar een aanraders-gids (zie PRODUCT_REDIRECTS
+// in next.config.mjs) — niet in sitemap opnemen
+const REDIRECTED_PRODUCT_SLUGS = new Set([
+  "aqara-cube-t1-pro",
+  "aqara-deur-raamsensor-p2",
+  "aqara-fp2-aanwezigheidssensor",
+  "aqara-hub-m3",
+  "aqara-mini-switch-t1",
+  "aqara-motion-sensor",
+  "aqara-presence-sensor-fp1e",
+  "aqara-rookmelder",
+  "aqara-smart-plug",
+  "aqara-temperatuur-rv-t1",
+  "aqara-vibratiesensor",
+  "aqara-waterleksensor-t1",
+  "bosch-deur-en-raamcontact-2-matter",
+  "bosch-draadloze-rookmelder-2",
+  "bosch-slimme-kamerthermostaat-2",
+  "bosch-slimme-radiatorknop-2-matter",
+  "bosch-smart-home-controller-2",
+  "bosch-smart-plug-compact",
+  "brostrend-mini-ax900-wifi-6",
+  "eero-pro-6e",
+  "eve-door-window",
+  "eve-energy",
+  "eve-motion-matter-bewegingssensor",
+  "eve-weather",
+  "frient-elektriciteitsmeter-interface-2-p1",
+  "google-nest-thermostaat",
+  "google-nest-wifi-pro",
+  "govee-neon-rope-light-2-white-5m",
+  "govee-outdoor-ledstrip",
+  "govee-rgbic-ledstrip",
+  "home-assistant-green",
+  "homey-bridge",
+  "homey-pro-2026",
+  "homey-pro-early-2023",
+  "innr-smart-gu10-zigbee-4pack",
+  "innr-zigbee-e27",
+  "innr-zigbee-outdoor-smart-plug",
+  "nanoleaf-lines-60-degrees-starterkit-slimme-verlic",
+  "nanoleaf-shapes-mini-triangles-uitbreidingspakket-",
+  "netatmo-slimme-thermostaat",
+  "philips-hue-bridge",
+  "philips-hue-color-ambiance-e27",
+  "philips-hue-dimmer-switch-v2",
+  "philips-hue-go-tafellamp-white-and-color-zwart",
+  "philips-hue-gu10-white-ambiance",
+  "philips-hue-lightstrip-plus",
+  "philips-hue-lily-starter-pack-white-and-color-prik",
+  "philips-hue-motion-sensor",
+  "philips-hue-play-hdmi-sync-box-8k",
+  "philips-hue-smart-plug",
+  "philips-hue-smart-plug-combipack",
+  "philips-hue-white-ambiance-starterkit",
+  "philips-hue-white-e27",
+  "samsung-smartthings-hub",
+  "shelly-em",
+  "shelly-pro-3em",
+  "slimme-thermostaat-combiketel",
+  "sonoff-zigbee-bewegingssensor-snzb-03p-voor-huisbe",
+  "sonoff-zigbee-openingssensor-voor-smart-home-syste",
+  "switchbot-matter-plug-mini",
+  "tado-radiatorkraan-v3-plus",
+  "tado-smart-thermostat-v3",
+  "tado-smart-thermostat-v3-bedraad",
+  "tapo-h200-smart-hub",
+  "tapo-ke100-kit",
+  "tapo-l510e",
+  "tapo-l530e",
+  "tapo-l920-5-ledstrip",
+  "tapo-p110",
+  "tapo-p115",
+  "tapo-t100",
+  "tapo-t110",
+  "tapo-t300-waterlekkagesensor",
+  "tapo-t315",
+  "tp-link-deco-be25",
+  "tp-link-deco-be25-2-pack",
+  "tp-link-deco-be65-2-pack",
+  "tp-link-deco-x10-3-pack",
+  "tp-link-deco-xe75",
+  "tp-link-deco-xe75-2pack",
+  "tp-link-tapo-l535e-wit-en-gekleurd-licht-e27",
+  "tp-link-tapo-l535e-wit-en-gekleurd-licht-e27-4-pac",
+  "tp-link-tapo-l630-wit-en-gekleurd-licht-gu10-4-pac",
+  "tp-link-tapo-l930-5-lichtstrip-5m",
+  "tp-link-tapo-p410m",
+  "tp-link-tapo-t30-smart-sensor-kit",
+  "zendure-slimme-meter-p1",
+]);
+
 // Slugs die nu redirecten — weghouden uit sitemap
 const REDIRECTED_AANRADERS = new Set([
   "beste-robotstofzuigers-2026",
@@ -123,7 +215,12 @@ export default function sitemap() {
 
   const allProducts = typeof getAllProducts === "function" ? getAllProducts() : [];
   const productRoutes = (Array.isArray(allProducts) ? allProducts : [])
-    .filter((p) => p?.slug && !NOINDEX_PRODUCT_CATEGORIES.has(p.category))
+    .filter(
+      (p) =>
+        p?.slug &&
+        !NOINDEX_PRODUCT_CATEGORIES.has(p.category) &&
+        !REDIRECTED_PRODUCT_SLUGS.has(p.slug)
+    )
     .map((p) => ({
       url: `${baseUrl}/producten/${p.slug}`,
       lastModified,
