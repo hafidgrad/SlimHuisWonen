@@ -178,6 +178,12 @@ const nextConfig = {
         destination: "/aanraders/beste-slimme-stekkers",
         permanent: true,
       },
+      // Keyword-kannibalisatie fix: blogpost samengevoegd met aanraders-gids
+      {
+        source: "/blog/smart-home-huurwoning",
+        destination: "/aanraders/beste-smart-home-huurwoning",
+        permanent: true,
+      },
       {
         source: "/aanraders/beste-slimme-deurbel",
         destination: "/aanraders/beste-slimme-sensoren",

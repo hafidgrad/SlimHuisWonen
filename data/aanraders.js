@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const aanraders = [
   {
   slug: "beste-slimme-camera",
@@ -1935,6 +1937,87 @@ relatedGuides: [
     },
   ],
 
+  extraContent: (
+    <>
+      <h2>Wat mag je als huurder wel en niet?</h2>
+      <p>
+        Als huurder mag je in principe alles plaatsen wat <em>geen permanente
+        wijziging</em> aanbrengt aan de woning:
+      </p>
+      <ul>
+        <li>Slimme lampen wisselen mag altijd — je schroeft ze gewoon in</li>
+        <li>Slimme stekkers en stekkerdozen mag je overal gebruiken</li>
+        <li>Sensoren bevestigen met nano-tape of zelfklevende strips mag</li>
+        <li>Thermostaat vervangen mag in de meeste gevallen bij terugplaatsing</li>
+      </ul>
+      <p>
+        Wat je <strong>niet zomaar mag</strong>: gaten boren voor kabels, vaste
+        installatiewerk aan elektrische bedrading, externe camera&apos;s
+        bevestigen aan de gevel, of de intercominstallatie aanpassen zonder
+        toestemming van de verhuurder.
+      </p>
+
+      <h2>Waar je op moet letten per productcategorie</h2>
+      <p>
+        <strong>Slimme thermostaat:</strong> vervangt je bestaande thermostaat
+        zonder boren, maar bewaar de originele zodat je die bij vertrek
+        terugplaatst. Bekijk de{" "}
+        <Link href="/aanraders/beste-slimme-thermostaat">
+          koopgids slimme thermostaten
+        </Link>
+        .
+      </p>
+      <p>
+        <strong>Slimme deurbel:</strong> kies een draadloze accu-deurbel die je
+        met dubbelzijdig tape of een klem bevestigt. Bedrade deurbellen vereisen
+        elektriciteitswerk en zijn niet geschikt voor huurders.
+      </p>
+      <p>
+        <strong>Buitencamera:</strong> binnencamera&apos;s zijn altijd
+        toegestaan, maar buitencamera&apos;s aan de gevel vereisen meestal
+        toestemming van de verhuurder. Gebruik eventueel een camera op een
+        raamhouder binnenshuis, gericht naar buiten.
+      </p>
+      <p>
+        Meer over bevestigen zonder schade: onze{" "}
+        <Link href="/aanraders/beste-slimme-sensoren">
+          koopgids slimme sensoren
+        </Link>
+        .
+      </p>
+
+      <h2>Checklist: alles meenemen als je verhuist</h2>
+      <p>
+        Een groot voordeel van slim starten als huurder: je neemt alles mee. In
+        de nieuwe woning hervat je de installatie in minder dan een uur.
+      </p>
+      <ul>
+        <li>Bewaar de originele thermostaat in de doos</li>
+        <li>Maak foto&apos;s van hoe sensoren bevestigd waren</li>
+        <li>Exporteer of noteer je app-configuratie</li>
+        <li>Verwijder nano-tape voorzichtig om schade te voorkomen</li>
+      </ul>
+
+      <h2>Voorbeeldsetup onder €150</h2>
+      <ul>
+        <li>2x Tapo L530E lamp: ~€30</li>
+        <li>2x Tapo P115 stekker: ~€26</li>
+        <li>2x Aqara bewegingssensor: ~€36</li>
+        <li>1x Tapo D205 accu-deurbel: ~€55</li>
+        <li>
+          <strong>Totaal: ~€147</strong>
+        </li>
+      </ul>
+      <p>
+        Wil je nog goedkoper starten? Lees:{" "}
+        <Link href="/blog/slim-huis-budget">
+          slim huis beginnen onder €100
+        </Link>
+        .
+      </p>
+    </>
+  ),
+
   faq: [
     {
       question: "Mag je smart home producten plaatsen in een huurwoning?",
@@ -1950,6 +2033,16 @@ relatedGuides: [
       question: "Heb je internet nodig voor smart home in een huurwoning?",
       answer:
         "Voor de meeste producten wel. Wifi-producten werken via je router. Zigbee-producten hebben een hub nodig die via wifi communiceert. Zonder internet zijn sommige functies beperkt.",
+    },
+    {
+      question: "Mag ik een slimme thermostaat plaatsen in een huurwoning?",
+      answer:
+        "In de meeste gevallen wel, als je de bestaande thermostaat terugplaatst bij vertrek. Tado en Netatmo zijn ontworpen voor eenvoudige zelfinstallatie zonder permanente wijzigingen. Vraag bij twijfel toestemming aan je verhuurder.",
+    },
+    {
+      question: "Heb ik toestemming nodig voor slimme lampen?",
+      answer:
+        "Nee. Slimme lampen vervangen gewone lampen en laten geen sporen achter. Je kunt ze gewoon meenemen bij vertrek. Geen toestemming nodig.",
     },
   ],
 },

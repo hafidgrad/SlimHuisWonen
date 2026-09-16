@@ -325,6 +325,13 @@ export default function AanraderDetailPage({ params }) {
             ))}
           </div>
 
+          {guide.extraContent && (
+            <>
+              <hr />
+              {guide.extraContent}
+            </>
+          )}
+
           {guide.selectionGuide && (
             <>
               <hr />
